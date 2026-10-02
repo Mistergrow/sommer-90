@@ -1,0 +1,94 @@
+{
+  "schema": "sommer90.quest-manifest.v1",
+  "comment": "NPC-Questpakete; QuestDefinitionCatalog ist der autoritative Loader.",
+  "packages": [
+    {
+      "owner": "npc_achim",
+      "path": "res://data/quests/achim.json"
+    },
+    {
+      "owner": "npc_alex",
+      "path": "res://data/quests/alex.json"
+    },
+    {
+      "owner": "npc_basti",
+      "path": "res://data/quests/basti.json"
+    },
+    {
+      "owner": "npc_daniel",
+      "path": "res://data/quests/daniel.json"
+    },
+    {
+      "owner": "npc_gruber",
+      "path": "res://data/quests/gruber.json"
+    },
+    {
+      "owner": "npc_habel",
+      "path": "res://data/quests/habel.json"
+    },
+    {
+      "owner": "npc_haendler",
+      "path": "res://data/quests/haendler.json"
+    },
+    {
+      "owner": "npc_krause",
+      "path": "res://data/quests/krause.json"
+    },
+    {
+      "owner": "npc_lisa",
+      "path": "res://data/quests/lisa.json"
+    },
+    {
+      "owner": "npc_joerg",
+      "path": "res://data/quests/joerg.json"
+    },
+    {
+      "owner": "npc_mike",
+      "path": "res://data/quests/mike.json"
+    },
+    {
+      "owner": "npc_mutter",
+      "path": "res://data/quests/mutter.json"
+    },
+    {
+      "owner": "npc_oez",
+      "path": "res://data/quests/oez.json"
+    },
+    {
+      "owner": "npc_pixie",
+      "path": "res://data/quests/pixie.json"
+    },
+    {
+      "owner": "npc_rocky",
+      "path": "res://data/quests/rocky.json"
+    },
+    {
+      "owner": "npc_stefan",
+      "path": "res://data/quests/stefan.json"
+    },
+    {
+      "owner": "npc_sven",
+      "path": "res://data/quests/sven.json"
+    },
+    {
+      "owner": "npc_sysop",
+      "path": "res://data/quests/sysop.json"
+    },
+    {
+      "owner": "npc_tobias",
+      "path": "res://data/quests/tobias.json"
+    },
+    {
+      "owner": "npc_vater",
+      "path": "res://data/quests/vater.json"
+    },
+    {
+      "owner": "npc_voss",
+      "path": "res://data/quests/voss.json"
+    },
+    {
+      "owner": "npc_wolf",
+      "path": "res://data/quests/wolf.json"
+    }
+  ]
+}

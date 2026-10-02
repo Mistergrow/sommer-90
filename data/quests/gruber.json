@@ -1,0 +1,236 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_gruber",
+  "quests": [
+    {
+      "id": "q_praktikum",
+      "title": "Das Schülerpraktikum",
+      "giver": "npc_gruber",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "praktikum_offer_intro"
+      },
+      "on_start": [
+        {
+          "type": "flag",
+          "flag": "gruber_workshop_basic",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Gruber trägt dich für das Schülerpraktikum ein und erlaubt dir erstmals den abgesperrten Werkstattbereich — nur unter Aufsicht."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zeig genug Grundwissen für einen Praktikumsplatz (Wissen 8).",
+          "goal": {
+            "wissen_min": 8
+          }
+        },
+        {
+          "desc": "Komm am eingetragenen Dienstag mittags oder nachmittags zu Gruber und absolvier die betreute Werkstattschicht.",
+          "map_location": "computer_shop",
+          "job_id": "job_praktikum_shift",
+          "goal": {
+            "action": "job:job_praktikum_shift"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 15
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_gruber",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "praktikum_done"
+        },
+        {
+          "type": "flag",
+          "flag": "voss_known"
+        },
+        {
+          "type": "toast",
+          "text": "Praktikum geschafft. Herr Voss, dein Mathe- und Klassenlehrer, unterschreibt die Bescheinigung; Gruber lobt deine Arbeit hinter der Ladentheke."
+        }
+      ],
+      "teaches": "jobs_wissen"
+    },
+    {
+      "id": "q_ausbildung",
+      "title": "Ein Ausbildungsplatz",
+      "giver": "npc_gruber",
+      "prereq": {
+        "year_min": 1993,
+        "needs": [
+          "schulabschluss"
+        ],
+        "flag": "ausbildung_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Gruber legt einen geöffneten Rechner auf die ESD-Matte: »Du willst hier lernen? Dann zeig mir erst, dass du sorgfältig arbeitest — nicht nur schnell.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zeig fachliches Können (Wissen 22).",
+          "goal": {
+            "wissen_min": 22
+          }
+        },
+        {
+          "desc": "Besteh Grubers praktische Arbeitsprobe am Serviceplatz.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "job:job_ausbildung_probe"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 25
+        },
+        {
+          "type": "flag",
+          "flag": "ausbildung_start"
+        },
+        {
+          "type": "toast",
+          "text": "Du hast einen Ausbildungsplatz — Lehre + Berufsschule beginnen."
+        }
+      ]
+    },
+    {
+      "id": "q_tut_diskcare",
+      "title": "Wenn eine Diskette nicht liest",
+      "giver": "npc_gruber",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "diskcare_intro"
+      },
+      "on_start": [
+        {
+          "type": "drive_dirt",
+          "value": 0.35
+        },
+        {
+          "type": "toast",
+          "text": "Eine Diskette meldet Lesefehler. Erst reinigen und prüfen — nichts aufschrauben."
+        }
+      ],
+      "required_items": [
+        {
+          "id": "reinigungsdiskette",
+          "count": 1,
+          "from_stage": 0,
+          "through_stage": 0,
+          "recovery_text": "Gruber hat dir für die erste sichere Wartung eine Reinigungsdiskette zurückgelegt. Sie liegt im Lager."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause: Lager → Reinigungsdiskette prüfen, dann den Amiga anklicken → Lesekopf reinigen. Öffne weder Laufwerk noch Monitor.",
+          "map_location": "room",
+          "goal": {
+            "minigame_done": "drive_clean"
+          }
+        },
+        {
+          "desc": "Frag Gruber im Computerladen nach dem Unterschied zwischen Reinigen, Einstellen und Reparieren.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "ask_gruber_repair_limits"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "safe_diskcare_learned",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Du kannst jetzt sicher reinigen und diagnostizieren. Einstellen und Reparieren bleiben Facharbeit."
+        }
+      ],
+      "teaches": "sichere_diskettenpflege"
+    },
+    {
+      "id": "q_gruber_abschied",
+      "title": "Neustart hinter dem Tresen",
+      "giver": "npc_gruber",
+      "prereq": {
+        "year_min": 1996,
+        "needs": [
+          "gruber_weg"
+        ],
+        "flag": "gruber_abschied_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Herr Gruber übergibt die Werkstatt an Jan. Beim ersten gemeinsamen Servicefall sollst du Fehlerbild, Messwerte und Gegenprobe sauber dokumentieren."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Begleite Jan beim ersten übernommenen Kundenrechner: Fehlerbild aufnehmen, mindestens zwei sichere Messungen durchführen und den Befund mit einer Gegenprobe bestätigen.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "minigame:shop_diagnosis"
+          }
+        },
+        {
+          "desc": "Bring das Übergabeprotokoll zu Jan hinter den Tresen. Klärt gemeinsam, wie Werkstatt, Ersatzteile und Amiga-Service weitergeführt werden.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "jan_handover_confirmed"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 50
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_gruber",
+          "value": 4
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_jan_gruber",
+          "value": 4
+        },
+        {
+          "type": "flag",
+          "flag": "gruber_legacy"
+        },
+        {
+          "type": "flag",
+          "flag": "jan_service_handover"
+        },
+        {
+          "type": "toast",
+          "text": "Die Übergabe ist besiegelt: Jan übernimmt Laden und Werkstatt. Herr Gruber genießt seinen Ruhestand und schaut gelegentlich auf dem Flohmarkt vorbei."
+        }
+      ]
+    }
+  ]
+}

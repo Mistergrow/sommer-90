@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://chochboxebxm0"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="BargainLab" unique_id=421966469 instance=ExtResource("1")]
+minigame_id = "bargain"

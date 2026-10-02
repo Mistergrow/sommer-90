@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "profiles": {
+    "label_design": {"variants":["scene_logo","archive","repair","collector"],"input":["pointer","keyboard","controller"],"access":["no_timer","symbols","high_contrast","reduced_motion"],"audio":["paper","marker","stamp","printer"]},
+    "box_sort": {"variants":["12_slot","24_slot","archive","mixed_condition"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","symbols","natural_names","reduced_motion"],"audio":["lid","insert","swap","latch"]},
+    "drive_clean": {"variants":["df0","df1","a1011","aged_mechanism"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","pressure_meter","haptic_optional","reduced_motion"],"audio":["motor","head","felt","latch"]},
+    "joystick_repair": {"variants":["competition_pro","zipstik","quickshot","generic_db9"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","shape_codes","heat_meter","reduced_motion"],"audio":["wire","solder","relay","test"]},
+    "monitor_tune": {"variants":["commodore_1084s","commodore_1901","philips_cm8833","aged_crt"],"input":["pointer","keyboard","controller"],"access":["no_timer","shape_test","colorblind_labels","reduced_motion"],"audio":["knob","degauss","relay","crt"]},
+    "cable_untangle": {"variants":["audio","power","serial","mixed_bundle"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","letter_codes","one_hand","reduced_motion"],"audio":["plug","cable","impact","crate"]},
+    "bargain": {"variants":["collector","parent","dealer","casual_seller"],"input":["pointer","keyboard","controller"],"access":["no_timer","tell_text","economy_preview","reduced_motion"],"audio":["card","coin","crowd","seller"]},
+    "bbs_link": {"variants":["v21","v22","v22bis","noisy_longline"],"input":["pointer","keyboard","controller"],"access":["signal_shape","signal_text","audio_optional","reduced_motion"],"audio":["dial","handshake","carrier","retrain"]},
+    "tracker_pattern": {"variants":["groove","bassline","breakbeat","demo_song"],"input":["pointer","keyboard","controller"],"access":["no_timer","channel_shapes","visual_metronome","reduced_motion"],"audio":["kick","snare","hat","bass"]},
+    "paint": {"variants":["scene_logo","demo_backdrop","sprite_sheet","disk_cover"],"input":["pointer","keyboard","controller"],"access":["no_timer","grid","palette_labels","reduced_motion"],"audio":["pixel","fill","shape","save"]},
+    "room_tidy": {"variants":["school_week","club_night","repair_day","collector_room"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","zone_symbols","one_hand","reduced_motion"],"audio":["cloth","plastic","paper","drop"]},
+    "hardware_assembly": {"variants":["amiga_500","amiga_600","amiga_1200","external_drive"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","part_labels","esd_meter","reduced_motion"],"audio":["screw","socket","case","power"]},
+    "listing_type": {"variants":["basic","amos","c","assembly"],"input":["keyboard","pointer","controller"],"access":["no_timer","high_contrast","error_location","reduced_motion"],"audio":["key","return","paper","compile"]},
+    "scene_patch": {"variants":["checksum","parity","mirror","sequence"],"input":["pointer","keyboard","controller"],"access":["no_timer","safe_fiction","high_contrast","reduced_motion"],"audio":["analyse","matrix","boot","intro"]},
+    "disk_rescue": {"variants":["dd","adf","ofs","ffs"],"input":["pointer","keyboard","controller"],"access":["no_timer","sector_shapes","risk_text","reduced_motion"],"audio":["motor","seek","retry","verify"]},
+    "disk_media_repair": {"variants":["hub","felt","shell","shutter"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","component_icons","damage_map","damage_shapes","reduced_motion"],"audio":["tile","shell","repair","verify"]},
+    "printer_align": {"variants":["9pin_mono","24pin_mono","24pin_color","worn_tractor"],"input":["pointer","keyboard","controller"],"access":["no_timer","cmy_labels","pattern_shapes","reduced_motion"],"audio":["head","tractor","paper","beep"]},
+    "mixtape": {"variants":["c46","c60","c90","chrome"],"input":["pointer","keyboard","controller"],"access":["no_timer","waveform","peak_text","reduced_motion"],"audio":["transport","cue","tape","relay"]},
+    "cracktro_opt": {"variants":["a500_512k","a500_1m","a1200","slow_chip"],"input":["pointer","keyboard","controller"],"access":["no_timer","budget_text","quality_preview","reduced_motion"],"audio":["profile","apply","overrun","preview"]},
+		"shop_diagnosis": {"variants":["power","signal","memory","drive","monitor","user"],"input":["pointer","touch","keyboard","controller"],"access":["no_timer","probe_labels","evidence_text","reduced_motion"],"audio":["probe","meter","relay","customer"]},
+		"job_shift": {"variants":["paper_route","flyer_route","stockroom","repair_bench","code_build"],"input":["pointer","keyboard","controller"],"access":["no_timer","number_keys","shape_codes","reduced_motion"],"audio":["route","scanner","relay","compile","coins"]},
+		"household_sprint": {"variants":["material_sort","room_organize","dish_sequence","vacuum_path","shopping_list","car_detail","lawn_route"],"input":["pointer","drag","touch","keyboard","controller"],"access":["no_timer","one_hand","large_targets","number_keys","shape_codes","reduced_motion"],"audio":["focus","action","error","coins"]}
+	}
+}

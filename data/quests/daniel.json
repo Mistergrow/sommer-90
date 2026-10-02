@@ -1,0 +1,241 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_daniel",
+  "quests": [
+    {
+      "id": "q_y2k_prep",
+      "title": "Y2K-Vorsorge",
+      "giver": "npc_daniel",
+      "prereq": {
+        "year_min": 1999,
+        "flag": "y2k_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Daniel: »Sichere eine wichtige Quelle vor dem Jahrtausendwechsel - eine vollstaendige, verifizierte Archivkopie reicht.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "GENAU 1 BACKUP, NICHT ALLE: Zu Hause Amiga einschalten -> Werkbank -> Diskettenbox -> eine wichtige belegte Quelle waehlen -> BACKUP. In X-COPY 1 echte Leerdiskette als Ziel einlegen; der vollstaendige Verify zaehlt als Y2K-Vorsorge.",
+          "map_location": "room",
+          "goal": {
+            "action": "y2k_backup"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "flag",
+          "flag": "y2k_prepared",
+          "value": true
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "money",
+          "value": 10
+        },
+        {
+          "type": "toast",
+          "text": "Gut vorbereitet ins neue Jahrtausend. Daniel nickt zufrieden."
+        }
+      ],
+      "memory": "Vor dem Jahr 2000 alles doppelt gesichert (Y2K)."
+    },
+    {
+      "id": "q_homepage",
+      "title": "Deine Heimseite im Netz",
+      "giver": "npc_daniel",
+      "prereq": {
+        "year_min": 1998,
+        "needs": [
+          "internet_normal"
+        ],
+        "flag": "homepage_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Daniel dreht den Café-Monitor zu dir: »Im Netz bist du nicht nur Zuschauer. Bau eine Seite, die nach dir aussieht — und veröffentliche sie erst, wenn jeder Link sitzt.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Fahr ins Internetcafé, klick den freien Terminalplatz an und öffne den Homepage-Baukasten. Seite gestalten, prüfen und veröffentlichen.",
+          "map_location": "internetcafe",
+          "goal": {
+            "action": "publish_homepage"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 20
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "homepage_online"
+        },
+        {
+          "type": "toast",
+          "text": "Deine GeoCities-Seite ist online — Grüße aus dem World Wide Web."
+        }
+      ]
+    },
+    {
+      "id": "q_tut_listing",
+      "title": "Abgetippt aus dem Heft",
+      "giver": "npc_daniel",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "tut_listing_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Daniel: »Willst du programmieren lernen? Tipp ein Listing aus dem Heft ab — Zeile für Zeile, so fängt jeder an.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause: Zeitschriften anklicken → die Ausgabe mit PROGRAMM-WERKSTATT öffnen → »LISTING ABTIPPEN«. Übertrage den Heftcode fehlerfrei.",
+          "map_location": "room",
+          "goal": {
+            "creation": "listing"
+          }
+        },
+        {
+          "desc": "Starte Sommer BASIC, öffne das abgetippte Projekt und führe den unveränderten Heftcode aus. Ausgabe und Grafik müssen dem Soll-Lauf entsprechen.",
+          "map_location": "room",
+          "goal": {
+            "action": "sommer_basic_verify"
+          }
+        },
+        {
+          "desc": "Lies die Redaktionsaufgabe im Projektkopf, erweitere den Quelltext und starte ihn erneut. Der alte Soll-Lauf muss dabei erhalten bleiben.",
+          "map_location": "room",
+          "goal": {
+            "action": "sommer_basic_improve"
+          }
+        },
+        {
+          "desc": "Wenn die Verbesserung fehlerfrei läuft, wähle in Sommer BASIC »IMPLEMENTIEREN«. Erst dann gehört das Kapitel zum Jahresprojekt.",
+          "map_location": "room",
+          "goal": {
+            "action": "sommer_basic_implement"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 3
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_daniel",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "listing_editor_mastered"
+        },
+        {
+          "type": "toast",
+          "text": "Heftcode verstanden, erweitert und implementiert — jetzt ist es dein erstes echtes Sommer-BASIC-Projekt."
+        }
+      ],
+      "teaches": "listing_editor"
+    },
+    {
+      "id": "q_sommer_copy_92",
+      "title": "Dein eigener Diskettenkopierer",
+      "giver": "npc_daniel",
+      "prereq": {
+        "year_min": 1992,
+        "flag": "listing_editor_mastered"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Daniel legt eine Skizze neben den Amiga: »X-COPY ist stark. Aber wenn wir verstehen, wie Puffer, Laufwerke und Verify zusammenspielen, bauen wir unser eigenes Werkzeug — sauber und ohne fremde Clubdisk.«"
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "sommer_copy_92",
+          "from_stage": 2,
+          "through_stage": 2,
+          "grant_missing": true,
+          "recovery_text": "Der gebaute Sommer-Copy-Prototyp liegt wieder in deiner Sommerbench-Projektschublade."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Analysiere das Original: Starte X-COPY von seiner Programmdisk und fertige mit mindestens 1 MB RAM eine verifizierte Arbeitskopie in genau einem Speicherdurchgang an.",
+          "map_location": "room",
+          "goal": {
+            "action": "xcopy_standard_verified"
+          }
+        },
+        {
+          "desc": "Öffne die Juli-Ausgabe 1992 und tippe »Kanalwache« ab. Führe den Soll-Lauf aus, ergänze die runde Statuslampe und wähle erst nach grünem Test »IMPLEMENTIEREN«.",
+          "map_location": "room",
+          "goal": {
+            "flag": "sommer_basic_implemented_sb_kanalwache_v1"
+          }
+        },
+        {
+          "desc": "Starte »Sommer Copy 92« in Sommerbench. Kopiere eine echte Quelle auf eine Leerdiskette; der Prototyp muss die komplette DD in einem Durchgang puffern und fehlerfrei verifizieren.",
+          "map_location": "room",
+          "goal": {
+            "action": "sommer_copy_prototype_verified"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "disk_template",
+          "id": "sommer_copy_92_disk",
+          "memory": "1992 selbst entwickelt, getestet und als Masterdisk geschrieben"
+        },
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 5
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_daniel",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "sommer_copy_92_mastered"
+        },
+        {
+          "type": "toast",
+          "text": "Sommer Copy 92 ist gemastert. Die blaue Eigenbau-Disk bootet direkt; die installierte Fassung bleibt in Sommerbench."
+        }
+      ],
+      "teaches": "disk_tool_development"
+    }
+  ]
+}

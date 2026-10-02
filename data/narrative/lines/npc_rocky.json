@@ -1,0 +1,236 @@
+{
+	"npc": "npc_rocky",
+	"comment": "Zeilen-Pool fuer npc_rocky. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "roc_b01",
+			"text": "Du willst mehr aus der Kiste holen? Ich kenn mich aus."
+		},
+		{
+			"id": "roc_b02",
+			"text": "Regel eins: erst Strom raus, dann schrauben."
+		},
+		{
+			"id": "roc_b03",
+			"text": "Statisch entladen, sonst grillst du dir die Chips."
+		},
+		{
+			"id": "roc_b04",
+			"text": "Schrauben ist wie Kochen — Rezept befolgen und nichts anbrennen lassen."
+		},
+		{
+			"id": "roc_b05",
+			"text": "Bring mir dein Gerät, ich schau, was geht."
+		},
+		{
+			"id": "roc_b06",
+			"text": "Ein sauberer Innenraum läuft kühler und länger."
+		},
+		{
+			"id": "roc_b07",
+			"text": "Ich hab schon alles aufgeschraubt, was Strom zieht."
+		},
+		{
+			"id": "roc_b08",
+			"text": "Speicher ist wie Platz im Zimmer — man hat nie genug."
+		},
+		{
+			"id": "roc_b09",
+			"text": "Vorsicht mit den Pins, die sind empfindlich wie ein Mimöschen."
+		},
+		{
+			"id": "roc_b10",
+			"text": "Ich löte lieber selbst, als Pfusch zu kaufen."
+		},
+		{
+			"id": "roc_b11",
+			"text": "Wenn's raucht, hast du was falsch gemacht. Meistens ich nicht."
+		},
+		{
+			"id": "roc_b12",
+			"text": "Werkzeug ordentlich, Handgriff sicher — dann geht nichts schief."
+		},
+		{
+			"id": "roc_b13",
+			"text": "Ich erklär's dir, aber fass nichts an, solange ich rede."
+		},
+		{
+			"id": "roc_b14",
+			"text": "Ein gutes Netzteil ist die halbe Miete. Spar da nicht."
+		},
+		{
+			"id": "roc_b15",
+			"text": "Kontakte reinigen wirkt Wunder, glaub mir."
+		},
+		{
+			"id": "roc_b16",
+			"text": "Ich hab Ersatzteile für Sachen, die's offiziell nicht mehr gibt."
+		},
+		{
+			"id": "roc_b17",
+			"text": "Schrauber-Ehre: Was ich anfass, läuft danach besser."
+		},
+		{
+			"id": "roc_b18",
+			"text": "Geduld beim Basteln, sonst zahlst du drauf."
+		},
+		{
+			"id": "roc_b19",
+			"text": "Zeig her, wo klemmt's? Ich hör das Ding schon husten."
+		},
+		{
+			"id": "roc_b20",
+			"text": "Ich mess erst, dann tausch ich. Raten ist teuer."
+		},
+		{
+			"id": "roc_b21",
+			"text": "Ein aufgeräumter Arbeitsplatz rettet dir die Nerven."
+		},
+		{
+			"id": "roc_b22",
+			"text": "Kabel beschriften, dann verzweifelst du später nicht."
+		},
+		{
+			"id": "roc_b23",
+			"text": "Ich bau lieber langsam und richtig als schnell und kaputt."
+		},
+		{
+			"id": "roc_b24",
+			"text": "Die Hardware verzeiht keine Hektik. Immer schön ruhig."
+		},
+		{
+			"id": "roc_b25",
+			"text": "Frag mich alles über Schrauben, Löten, Aufrüsten. Das ist mein Element."
+		},
+		{
+			"id": "roc_b26",
+			"text": "Ein zufriedenes Brummen — so klingt ein gesundes Gerät."
+		},
+		{
+			"id": "roc_b27",
+			"text": "Ich hab Narben vom Löten. Trag ich mit Stolz."
+		},
+		{
+			"id": "roc_b28",
+			"text": "Bring Kekse mit, dann schraub ich noch lieber für dich."
+		},
+		{
+			"id": "roc_b29",
+			"text": "Nichts läuft ewig, aber vieles länger, wenn man's pflegt."
+		},
+		{
+			"id": "roc_b30",
+			"text": "Was hast du dabei? Lass mal auf den Tisch legen."
+		},
+		{
+			"id": "ro_ram",
+			"to": 1996,
+			"topic": "hardware",
+			"text": "Speicher ist wie Platz im Zimmer — man hat nie genug. Rüste auf, du wirst's nicht bereuen."
+		},
+		{
+			"id": "ro_pc",
+			"from": 1994,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "pc",
+			"text": "Ich bau gerade meinen ersten PC zusammen. Einzelteile, wie Lego für Erwachsene. Der Amiga war einfacher, ehrlich."
+		},
+		{
+			"id": "ro_3d",
+			"from": 1998,
+			"needs": [
+				"grafikkarten_hype"
+			],
+			"topic": "hardware",
+			"text": "Diese 3D-Karten sind der Wahnsinn. Ich übertakte meine bis sie glüht — nur nicht zu weit, sonst raucht's."
+		},
+		{
+			"id": "ro_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Ich hab jede Kiste der letzten zehn Jahre aufgeschraubt. Und weißt du was? Der Amiga war die eleganteste."
+		},
+		{
+			"id": "roc_x01",
+			"topic": "hardware",
+			"text": "Du willst mehr aus der Kiste holen? Speicher, Laufwerk, später 'ne Festplatte. Ich kenn jeden Kniff."
+		},
+		{
+			"id": "roc_x02",
+			"topic": "hardware",
+			"text": "Regel eins: erst Strom raus, dann schrauben. Regel zwei: statisch entladen. Regel drei: nie beim Löten husten."
+		},
+		{
+			"id": "roc_x03",
+			"topic": "hardware",
+			"text": "Ein zufriedenes Brummen — so klingt ein gesundes Gerät. Man muss nur hinhören lernen."
+		},
+		{
+			"id": "roc_x04",
+			"topic": "hardware",
+			"text": "Ich hab Narben vom Löten. Trag ich mit Stolz, wie andere ihre Tattoos."
+		},
+		{
+			"id": "roc_x05",
+			"topic": "hardware",
+			"text": "Kabel beschriften, dann verzweifelst du später nicht. Klingt spießig, rettet Nerven."
+		},
+		{
+			"id": "roc_x06",
+			"topic": "hardware",
+			"text": "Ich mess erst, dann tausch ich. Raten ist teuer, Messen ist billig. Merk dir das."
+		},
+		{
+			"id": "roc_x07",
+			"topic": "hardware",
+			"text": "Bring Kekse mit, dann schraub ich noch lieber für dich. Bestechung wirkt, gib's zu."
+		},
+		{
+			"id": "roc_x08",
+			"topic": "hardware",
+			"text": "Ein gutes Netzteil ist die halbe Miete. Spar da nicht, sonst raucht dir alles ab."
+		},
+		{
+			"id": "roc_x09",
+			"topic": "hardware",
+			"text": "Nichts läuft ewig, aber vieles länger, wenn man's pflegt. Wie 'ne Ehe, sagt mein Onkel."
+		},
+		{
+			"id": "roc_x10",
+			"topic": "hardware",
+			"text": "Die Hardware verzeiht keine Hektik. Immer schön ruhig, dann geht nichts kaputt."
+		},
+		{
+			"id": "roc_x11",
+			"from": 0,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "aera",
+			"text": "Ich bau grad meinen ersten PC zusammen. Einzelteile, wie Lego für Erwachsene. Der Amiga war ehrlicher."
+		},
+		{
+			"id": "roc_x12",
+			"from": 0,
+			"needs": [
+				"grafikkarten_hype"
+			],
+			"topic": "aera",
+			"text": "Diese 3D-Karten sind der Wahnsinn. Ich übertakte meine, bis sie glüht — nur nicht zu weit, sonst weint sie."
+		},
+		{
+			"id": "roc_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Ich hab jede Kiste der Dekade aufgeschraubt. Und weißt du was? Der Amiga war die eleganteste."
+		}
+	]
+}

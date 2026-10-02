@@ -1,0 +1,22 @@
+{
+	"comment": "Perspektivische Cover-Platzierung auf MAGAZINE_MASTER_V02 (Single Source). Ecken TL,TR,BR,BL als Anteile 0..1 der Masterfläche. Bearbeitet im Magazin-Editor.",
+	"master": "res://assets/backgrounds/layers/MAGAZINE_MASTER_V02.png",
+	"cover_quad": [
+		[
+			0.1067,
+			-0.0043
+		],
+		[
+			0.9097,
+			-0.0008
+		],
+		[
+			1.0028,
+			0.9875
+		],
+		[
+			0.0314,
+			0.9884
+		]
+	]
+}

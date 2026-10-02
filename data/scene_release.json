@@ -1,0 +1,98 @@
+{
+  "comment": "BYTEWERK ist eine rein fiktive P-8-Logiksimulation. Hexwerte sind abstrakte Spielsteine, keine realen Adressen, Opcodes oder Umgehungsanleitung. Sichtbare Personenbezeichnungen kommen ausschließlich aus BBS-Handles.",
+  "version": 1,
+  "protection_revisions": {
+    "1": {"name":"P-8 CLASSIC","from":1990,"to":1992,"extra_rows":0,"steps":["PHASENMATRIX"],"boot_faults":["PHASE UNSTABLE","STARTSIGNATUR FEHLT"]},
+    "2": {"name":"P-8 SYNC","from":1993,"to":1995,"extra_rows":1,"steps":["PHASENMATRIX","STARTIMPULS-SYNC"],"boot_faults":["BOOTBLOCK 02","SIGNATURWECHSEL","SCHWARZER SCHIRM NACH INTRO"]},
+    "3": {"name":"P-8 MIRROR","from":1996,"to":1999,"extra_rows":2,"steps":["PHASENMATRIX","STARTIMPULS-SYNC","SCHUTZSPIEGEL"],"boot_faults":["BOOTBLOCK 03","PRUEFSUMMEN-DRIFT","NEUSTART-FALLE"]}
+  },
+  "boards": [
+    {"id":"bbs_nachtschicht", "from":1993, "to":1998, "recognition_factor":1.0},
+    {"id":"bbs_datenautobahn", "from":1996, "to":1999, "recognition_factor":1.2}
+  ],
+  "difficulties": {
+    "entspannt": {"rows":4, "score":72, "stability":82},
+    "standard": {"rows":5, "score":86, "stability":91},
+    "szene": {"rows":6, "score":100, "stability":98}
+  },
+  "handle_parts": {
+    "prefix": ["NEON", "ZERO", "NIBBLE", "NIGHT", "PIXEL", "RASTER", "PHASE", "BYTE"],
+    "suffix": ["FOX", "WAVE", "KID", "RIDER", "PULSE", "GHOST", "UNIT", "CORE"]
+  },
+  "logos": [
+    {"id":"chrome", "name":"Chrom-Keil", "tags":["technical","contrast"]},
+    {"id":"raster", "name":"Raster-Schrift", "tags":["visual","classic"]},
+    {"id":"outline", "name":"Neon-Kontur", "tags":["visual","music"]},
+    {"id":"stamp", "name":"Pixel-Stempel", "tags":["distribution","classic"]}
+  ],
+  "palettes": [
+    {"id":"amber_night", "name":"Amber Night", "colors":["#080B18","#27305C","#F08A24","#FFE19A"], "tags":["contrast","classic"]},
+    {"id":"violet_cyan", "name":"Violet Cyan", "colors":["#09051A","#52207A","#16C9C1","#D8FFF7"], "tags":["visual","technical"]},
+    {"id":"steel_red", "name":"Steel Red", "colors":["#0A0D12","#394554","#C7423D","#F1D1B5"], "tags":["technical","contrast"]},
+    {"id":"green_terminal", "name":"Green Terminal", "colors":["#06110B","#174A2A","#49C96B","#D8FFB5"], "tags":["distribution","classic"]},
+    {"id":"sunset_disk", "name":"Sunset Disk", "colors":["#160A1D","#68305A","#E76D3B","#FFD37A"], "tags":["visual","music"]}
+  ],
+  "effects": [
+    {"id":"copperbars", "name":"Copper-Balken", "tags":["visual","classic"]},
+    {"id":"starfield", "name":"Sternenfeld", "tags":["visual","classic"]},
+    {"id":"vectorgrid", "name":"Vektorgitter", "tags":["technical"]},
+    {"id":"bobs", "name":"BOB-Orbit", "tags":["technical","visual"]},
+    {"id":"rasterlogo", "name":"Raster-Logo", "tags":["visual","contrast"]},
+    {"id":"sinescroll", "name":"Sinus-Scroller", "tags":["distribution","music","classic"]}
+  ],
+  "scrollers": [
+    {"id":"sc01","from":1990,"to":1992,"text":"{PRESENTING} PRESENTS {TITLE}. FRESH FROM THE WORKBENCH. GREETINGS TO ALL DREAMERS!","tags":["classic"]},
+    {"id":"sc02","from":1990,"to":1993,"text":"ANOTHER {HANDLE} RELEASE. TESTED THREE TIMES. KEEP THE CREDITS INTACT!","tags":["technical"]},
+    {"id":"sc03","from":1990,"to":1994,"text":"HELLO DISK PEOPLE! {TITLE} IS READY. SPREAD THE WORD, NOT THE RUMOURS.","tags":["distribution"]},
+    {"id":"sc04","from":1990,"to":1995,"text":"{PRESENTING} SENDS RESPECT TO CODERS, PIXEL CREWS, MUSICIANS AND SYSOPS.","tags":["classic"]},
+    {"id":"sc05","from":1991,"to":1994,"text":"INSERT DISK, TURN UP THE MONITOR, WATCH THE COPPER SHINE. SIGNED {HANDLE}.","tags":["visual"]},
+    {"id":"sc06","from":1991,"to":1996,"text":"NO EFFECT WITHOUT STYLE. NO RELEASE WITHOUT CREDIT. {PRESENTING} IN {YEAR}.","tags":["visual"]},
+    {"id":"sc07","from":1991,"to":1997,"text":"A SMALL INTRO FOR A BIG NIGHT. {TITLE} VERIFIED AND READY TO TRAVEL.","tags":["distribution"]},
+    {"id":"sc08","from":1992,"to":1995,"text":"THE DRIVE RATTLED, THE PIXELS DANCED, THE TESTBOOT PASSED. HELLO FROM {HANDLE}!","tags":["technical"]},
+    {"id":"sc09","from":1992,"to":1997,"text":"{PRESENTING} LIGHTS UP THE SCREEN. GREETINGS TO EVERY FAIR TRADER OUT THERE.","tags":["classic","distribution"]},
+    {"id":"sc10","from":1992,"to":1998,"text":"FOUR CHANNELS IN OUR HEARTS, SIXTEEN COLORS IN OUR DREAMS. {TITLE} ARRIVES.","tags":["music","visual"]},
+    {"id":"sc11","from":1993,"to":1996,"text":"CALL YOUR LOCAL BOARD AFTER DARK. {HANDLE} HAS A NEW RELEASE ONLINE.","tags":["distribution"]},
+    {"id":"sc12","from":1993,"to":1999,"text":"CARRIER UP, LIGHTS DOWN, SCROLLER ON. {PRESENTING} SALUTES THE NIGHT SHIFT.","tags":["distribution","classic"]},
+    {"id":"sc13","from":1993,"to":1997,"text":"QUALITY BEFORE SPEED: CLEAN COPY, CLEAN CREDITS, CLEAN STYLE. {HANDLE}.","tags":["technical"]},
+    {"id":"sc14","from":1993,"to":1998,"text":"WELCOME TO {TITLE}. ART, CODE AND SOUND UNITED UNDER BLINKING MODEM LIGHTS.","tags":["music","visual"]},
+    {"id":"sc15","from":1994,"to":1999,"text":"{PRESENTING} IS BACK WITH FRESH PIXELS AND A VERY LONG NIGHT BEHIND IT.","tags":["visual"]},
+    {"id":"sc16","from":1994,"to":1999,"text":"RESPECT THE MAKERS, REMEMBER THE HANDLES, SHARE THE RELEASE RESPONSIBLY.","tags":["distribution"]},
+    {"id":"sc17","from":1994,"to":1997,"text":"THE MAILBOX IS BUSY AGAIN. WHILE YOU REDIAL, ENJOY THIS INTRO BY {HANDLE}.","tags":["distribution","classic"]},
+    {"id":"sc18","from":1995,"to":1999,"text":"NEW HARDWARE, SAME ATTITUDE: MAKE SOMETHING WORTH REMEMBERING. {PRESENTING}.","tags":["technical"]},
+    {"id":"sc19","from":1995,"to":1999,"text":"FROM THE SCHOOLYARD TO THE BOARDS: {TITLE} CARRIES THE MARK OF {HANDLE}.","tags":["distribution"]},
+    {"id":"sc20","from":1995,"to":1999,"text":"FAST MODEM, SLOW NIGHT, PERFECT RASTER. GREETINGS FROM {PRESENTING}.","tags":["visual","distribution"]},
+    {"id":"sc21","from":1996,"to":1999,"text":"THE WEB MAY BE COMING, BUT TONIGHT THE DISK STILL RULES. {HANDLE} PRESENTS.","tags":["classic"]},
+    {"id":"sc22","from":1996,"to":1999,"text":"UPLOAD COMPLETE. CREDITS COMPLETE. {PRESENTING} KEEPS THE OLD SCHOOL ALIVE.","tags":["distribution"]},
+    {"id":"sc23","from":1997,"to":1999,"text":"LAN CABLES EVERYWHERE, YET THE INTRO STILL STARTS WITH A SCROLLER.","tags":["classic","technical"]},
+    {"id":"sc24","from":1998,"to":1999,"text":"END OF A DECADE, NOT THE END OF THE SCENE. {PRESENTING} REMEMBERS {YEAR}.","tags":["classic"]},
+    {"id":"sc25","from":1999,"to":1999,"text":"BEFORE THE CLOCK TURNS, ONE MORE RELEASE: {TITLE}, SIGNED {HANDLE}.","tags":["classic"]},
+    {"id":"sc26","from":1990,"to":1999,"text":"{PRESENTING} PRESENTS {TITLE}. THREE GREEN LIGHTS. ONE GOOD DISK. ZERO CLEAR NAMES.","tags":["technical","classic"]}
+  ],
+  "contributors": [
+    {"actor_id":"npc_daniel", "role":"CODE", "min_trust":25, "from":1990, "to":1999, "tags":["technical"]},
+    {"actor_id":"npc_tobias", "role":"TOOLS", "min_trust":30, "from":1990, "to":1999, "tags":["technical","distribution"]},
+    {"actor_id":"npc_lisa", "role":"ARTWORK", "min_trust":25, "from":1990, "to":1999, "tags":["visual"]},
+    {"actor_id":"npc_pixie", "role":"PIXELS", "min_trust":25, "from":1991, "to":1999, "tags":["visual"]},
+    {"actor_id":"npc_basti", "role":"MUSIC", "min_trust":25, "from":1991, "to":1999, "tags":["music"]},
+    {"actor_id":"npc_stefan", "role":"TESTING", "min_trust":35, "from":1990, "to":1999, "tags":["classic"]}
+  ],
+  "tiers": [
+    {"min":0,"id":"unknown","name":"UNBEKANNT"},
+    {"min":15,"id":"noticed","name":"BEMERKT"},
+    {"min":30,"id":"guest","name":"GASTBEITRAG"},
+    {"min":50,"id":"partner","name":"PARTNER"},
+    {"min":70,"id":"allied","name":"VERBÜNDET"}
+  ],
+  "groups": [
+    {"id":"radiant","name":"RADIANT","from":1990,"to":1999,"representative":"PRISM","preferences":["visual","contrast"],"offer_text":"PRISM fragt nach einem Gastlogo für das nächste RADIANT-Intro."},
+    {"id":"vectorlords","name":"VECTORLORDS","from":1990,"to":1999,"representative":"VLX","preferences":["technical"],"offer_text":"VLX bietet einen gemeinsamen technischen Testlauf an."},
+    {"id":"phantom_duo","name":"PHANTOM DUO","from":1990,"to":1999,"representative":"SHADE","preferences":["distribution","classic"],"offer_text":"SHADE möchte dein Handle in einer gemeinsamen Distribution sehen."},
+    {"id":"mirage","name":"DIGITAL MIRAGE","from":1992,"to":1999,"representative":"OASIS","preferences":["music","visual"],"offer_text":"OASIS schlägt ein gemeinsames Musik-Intro vor."}
+  ],
+  "reactions": [
+    "{REP} / {GROUP}: CLEAN RELEASE. HANDLE NOTED.",
+    "{REP} / {GROUP}: NICE STYLE, KEEP THE CREDITS ROLLING.",
+    "{REP} / {GROUP}: THREE TESTBOOTS? THAT IS HOW IT SHOULD BE.",
+    "{REP} / {GROUP}: YOUR SERIAL JUST REACHED OUR BOARD. RESPECT."
+  ]
+}

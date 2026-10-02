@@ -1,0 +1,243 @@
+{
+	"npc": "npc_pixie",
+	"comment": "Zeilen-Pool fuer npc_pixie. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "pix_b01",
+			"text": "Ich pixel grad ein Logo. Jeder Punkt zählt, weißt du."
+		},
+		{
+			"id": "pix_b02",
+			"text": "Fang klein an — ein Icon, ein Logo. Und mal deine eigene Grafik."
+		},
+		{
+			"id": "pix_b03",
+			"text": "Ein guter Verlauf ist Schwerstarbeit, glaub mir."
+		},
+		{
+			"id": "pix_b04",
+			"text": "Ich seh Bilder, wo andere nur ein leeres Raster sehen."
+		},
+		{
+			"id": "pix_b05",
+			"text": "Kunst braucht Mut. Trau dich, hässlich anzufangen."
+		},
+		{
+			"id": "pix_b06",
+			"text": "Zeig mir was, das du gemalt hast. Ich beiß nicht."
+		},
+		{
+			"id": "pix_b07",
+			"text": "Beschränkung zwingt zur Idee. Wenig Farben, viel Kopf."
+		},
+		{
+			"id": "pix_b08",
+			"text": "Ich lösch mehr, als ich behalte. Gehört dazu."
+		},
+		{
+			"id": "pix_b09",
+			"text": "Ein Bild lebt, wenn das Auge darin spazieren geht."
+		},
+		{
+			"id": "pix_b10",
+			"text": "Ich arbeite am liebsten nachts. Da ist der Kopf klar."
+		},
+		{
+			"id": "pix_b11",
+			"text": "Farbe ist Gefühl. Ein Rot kann schreien oder flüstern."
+		},
+		{
+			"id": "pix_b12",
+			"text": "Übung schlägt Talent. Jeden Tag ein Pixel besser."
+		},
+		{
+			"id": "pix_b13",
+			"text": "Ich hab ein Skizzenbuch voll Ideen für schlechte Tage."
+		},
+		{
+			"id": "pix_b14",
+			"text": "Der letzte Schliff macht den Unterschied. Immer."
+		},
+		{
+			"id": "pix_b15",
+			"text": "Manche halten Pixeln für Spielerei. Ihr Problem."
+		},
+		{
+			"id": "pix_b16",
+			"text": "Wenn du willst, zeig ich dir einen Trick mit Schatten."
+		},
+		{
+			"id": "pix_b17",
+			"text": "Ich verlier mich in Details. Fluch und Segen zugleich."
+		},
+		{
+			"id": "pix_b18",
+			"text": "Ein sauberer Umriss ist die halbe Grafik."
+		},
+		{
+			"id": "pix_b19",
+			"text": "Ich mal, seit ich denken kann. Hört nie auf."
+		},
+		{
+			"id": "pix_b20",
+			"text": "Kritik macht besser, auch wenn sie wehtut. Bring sie."
+		},
+		{
+			"id": "pix_b21",
+			"text": "Das Auge täuscht. Man muss gegenprüfen."
+		},
+		{
+			"id": "pix_b22",
+			"text": "Geduld ist meine wichtigste Farbe."
+		},
+		{
+			"id": "pix_b23",
+			"text": "Ich verschenk gern kleine Grafiken. Freude wächst dabei."
+		},
+		{
+			"id": "pix_b24",
+			"text": "Ein Logo muss auch klein noch wirken. Kunst der Reduktion."
+		},
+		{
+			"id": "pix_b25",
+			"text": "Ich träum in Farbverläufen. Berufskrankheit."
+		},
+		{
+			"id": "pix_b26",
+			"text": "Zeig mir deine Lieblingsfarbe, ich mal dir was draus."
+		},
+		{
+			"id": "pix_b27",
+			"text": "Ein Bild ist fertig, wenn nichts mehr fehlt und nichts zu viel ist."
+		},
+		{
+			"id": "pix_b28",
+			"text": "Ich hab Respekt vor jedem leeren Bildschirm. Da entsteht alles."
+		},
+		{
+			"id": "pix_b29",
+			"text": "Man sieht einer Grafik an, ob Liebe drinsteckt."
+		},
+		{
+			"id": "pix_b30",
+			"text": "Setz dich dazu, aber pust mir nicht auf den Bildschirm."
+		},
+		{
+			"id": "px_amiga",
+			"to": 1996,
+			"topic": "pixel",
+			"text": "Die Amiga-Palette ist begrenzt, klar. Aber genau das macht's zur Kunst. Beschränkung zwingt zur Idee."
+		},
+		{
+			"id": "px_scanner",
+			"from": 1994,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "technik",
+			"text": "Mit dem Handscanner les ich Skizzen ein und übermal sie Pixel für Pixel. Halb Foto, halb Handwerk."
+		},
+		{
+			"id": "px_hires",
+			"from": 1996,
+			"needs": [
+				"pc_umbruch"
+			],
+			"topic": "wandel",
+			"text": "Am PC gibt's jetzt tausende Farben. Schön — aber irgendwie fehlt die Seele der 32."
+		},
+		{
+			"id": "px_cover",
+			"from": 1999,
+			"needs": [
+				"pixie_cover"
+			],
+			"once": true,
+			"topic": "szene",
+			"text": "Mein Zeug ist überall — Cover, Intros, Diskettenlabels. Ich lebe von Pixeln. Wer hätte das gedacht?"
+		},
+		{
+			"id": "px_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Meine ersten Grafiken waren furchtbar. Aber Pixel verzeihen — man setzt einfach den nächsten besser."
+		},
+		{
+			"id": "pix_x01",
+			"topic": "pixel",
+			"text": "Ich pixel grad ein Logo. Weißt du, wie schwer ein guter Verlauf ist? Jeder Punkt eine Entscheidung."
+		},
+		{
+			"id": "pix_x02",
+			"topic": "pixel",
+			"text": "Beschränkung zwingt zur Idee. Wenig Farben, viel Kopf — so entsteht Kunst."
+		},
+		{
+			"id": "pix_x03",
+			"topic": "pixel",
+			"text": "Ich arbeite am liebsten nachts. Da ist der Kopf klar und der Bildschirm das hellste im Raum."
+		},
+		{
+			"id": "pix_x04",
+			"topic": "pixel",
+			"text": "Kunst braucht Mut. Trau dich, hässlich anzufangen — schön wird's beim Aufräumen."
+		},
+		{
+			"id": "pix_x05",
+			"topic": "pixel",
+			"text": "Ein Logo muss auch klein noch wirken. Das ist die hohe Schule: Reduktion."
+		},
+		{
+			"id": "pix_x06",
+			"topic": "pixel",
+			"text": "Ich lösch mehr, als ich behalte. Gehört dazu. Der Papierkorb ist mein bester Lehrer."
+		},
+		{
+			"id": "pix_x07",
+			"topic": "pixel",
+			"text": "Das Auge täuscht. Man muss immer gegenprüfen, sonst kippt das ganze Bild."
+		},
+		{
+			"id": "pix_x08",
+			"topic": "pixel",
+			"text": "Ich träum in Farbverläufen. Berufskrankheit, sag ich dann. Aber ich lächle dabei."
+		},
+		{
+			"id": "pix_x09",
+			"topic": "pixel",
+			"text": "Zeig mir deine Lieblingsfarbe, ich mal dir was draus. Farben verraten viel über einen."
+		},
+		{
+			"id": "pix_x10",
+			"topic": "pixel",
+			"text": "Man sieht einer Grafik an, ob Liebe drin steckt. Immer. Man kann das nicht faken."
+		},
+		{
+			"id": "pix_x11",
+			"to": 1996,
+			"topic": "pixel",
+			"text": "Die Amiga-Palette ist begrenzt — genau das macht's zur Kunst. Wer alles kann, wird faul."
+		},
+		{
+			"id": "pix_x12",
+			"from": 0,
+			"needs": [
+				"pixie_cover"
+			],
+			"topic": "aera",
+			"text": "Mein Zeug ist überall — Cover, Intros, Diskettenlabels. Ich lebe von Pixeln. Verrückt, oder?"
+		},
+		{
+			"id": "pix_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Meine ersten Grafiken waren furchtbar. Aber Pixel verzeihen — man setzt einfach den nächsten besser."
+		}
+	]
+}

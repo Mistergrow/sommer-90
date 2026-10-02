@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "comment": "Zeitkosten der Handlungen in Spielminuten. Kalibriert aus den vorhandenen Ankerzeiten: 8:10 bis 23:10 sind exakt 900 Handlungsminuten (290+160+230+220). Zielvorgabe 10 Realminuten je Spieltag bei ~44 s je Handlung ergibt ~13,6 Handlungen und damit ~66 Spielminuten je Handlung im Mittel. Kostenleiter, immer Vielfache von 5: Atemzug 5, kleine Handlung 15, mittlere 25-30, Sitzung 45-60, Arbeit 60-120, Tagwerk 180-300.",
+
+  "global_minute_scale": 1.0,
+  "_global_minute_scale": "DER EINE REGLER. Weicht die Telemetrie vom Ziel ab, wird NICHT diese Tabelle angefasst, sondern nur dieser Wert. Weniger Handlungen je Tag gewuenscht = erhoehen, mehr = senken.",
+
+  "night_budget_minutes": 170,
+  "_night_budget_minutes": "Die Nacht ab 23:10 bekommt 170 Minuten bis 02:00. Auf 0 gesetzt steht die Uhr am Nachtanker still — exakt das Verhalten vor der Umstellung. Die Uhr beendet den Tag NIE von selbst; das tut nur der Spieler im Bett.",
+
+  "fallback_minutes_per_energy": 5.0,
+  "_fallback_minutes_per_energy": "Wechselkurs fuer alle use_energy-Aufrufe ohne eigene Kennung. Hergeleitet: von den 900 Tagesminuten sind rund 500 echte Arbeitsminuten (Reisen, Erholung und der leise Abend kosten keine Energie); 500 geteilt durch 100 Energiepunkte ergibt 5. Damit kosten alle 34 bestehenden Aufrufstellen sofort Zeit, ohne dass eine davon angefasst werden muss.",
+
+  "action_minutes": {
+    "_comment": "Ausreisser, bei denen der Wechselkurs danebenliegt. Alles andere laeuft bewusst auf dem Fallback und wird erst nach der Telemetrie-Messung nachgezogen.",
+    "paint_save": 5,
+    "label_print": 20,
+    "room_tidy": 45,
+    "internetcafe_hour": 60,
+    "bbs_session": 60,
+    "disk_copy": 25,
+    "disk_check": 15,
+    "drive_clean": 30,
+		"joystick_repair": 45,
+		"job_commit": 0,
+		"listing_type": 25,
+    "flea_browse": 45,
+    "magazine_read": 45,
+    "window_gaze": 5,
+    "snack": 15
+  }
+}

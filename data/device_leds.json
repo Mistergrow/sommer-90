@@ -1,0 +1,1072 @@
+{
+	"comment": "Marker je Objekt-Modell (Idle-Leben/Beleuchtung). Key = Asset-Basisname ohne _Vxx. leds = Liste {type: led|light|steam|key; x,y: Mitte als Anteil des Sprites; w,h: Groesse; shape: rect|round; color; blink}. blink: power|drive|steady|slow|rx|tx|off. power_domain: mains|strip|monitor|amiga. Modelle ohne Leuchtmittel tragen explizit no_led: true. Bearbeitbar im LED-Editor (B Blink, D Domaene, N ohne LED).",
+	"models": {
+		"MODEM_2400_MASTER": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.132,
+					"y": 0.736,
+					"w": 0.015,
+					"h": 0.04,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.178,
+					"y": 0.734,
+					"w": 0.015,
+					"h": 0.038,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.223,
+					"y": 0.734,
+					"w": 0.016,
+					"h": 0.038,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.268,
+					"y": 0.734,
+					"w": 0.015,
+					"h": 0.04,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.315,
+					"y": 0.735,
+					"w": 0.016,
+					"h": 0.039,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.363,
+					"y": 0.733,
+					"w": 0.016,
+					"h": 0.04,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.413,
+					"y": 0.733,
+					"w": 0.017,
+					"h": 0.038,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.483,
+					"y": 0.735,
+					"w": 0.016,
+					"h": 0.04,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.75,
+						0.3
+					],
+					"blink": "rx"
+				},
+				{
+					"x": 0.545,
+					"y": 0.737,
+					"w": 0.018,
+					"h": 0.047,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.4,
+						0.35
+					],
+					"blink": "tx"
+				}
+			]
+		},
+		"MODEM_9600_MASTER": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.176,
+					"y": 0.733,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.239,
+					"y": 0.73,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.301,
+					"y": 0.732,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.363,
+					"y": 0.731,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.425,
+					"y": 0.729,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "slow"
+				},
+				{
+					"x": 0.486,
+					"y": 0.729,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.549,
+					"y": 0.733,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						0.45,
+						0.7,
+						1.0
+					],
+					"blink": "rx"
+				},
+				{
+					"x": 0.612,
+					"y": 0.734,
+					"w": 0.03,
+					"h": 0.03,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.4,
+						0.35
+					],
+					"blink": "tx"
+				}
+			]
+		},
+		"MODEM_14400_MASTER": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.111,
+					"y": 0.756,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.139,
+					"y": 0.763,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.168,
+					"y": 0.766,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.197,
+					"y": 0.772,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "slow"
+				},
+				{
+					"x": 0.226,
+					"y": 0.777,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.255,
+					"y": 0.78,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.284,
+					"y": 0.779,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						0.45,
+						0.7,
+						1.0
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.314,
+					"y": 0.783,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						0.45,
+						0.7,
+						1.0
+					],
+					"blink": "steady"
+				},
+				{
+					"x": 0.343,
+					"y": 0.789,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						0.45,
+						0.7,
+						1.0
+					],
+					"blink": "rx"
+				},
+				{
+					"x": 0.373,
+					"y": 0.787,
+					"w": 0.012,
+					"h": 0.052,
+					"shape": "round",
+					"color": [
+						1.0,
+						0.4,
+						0.35
+					],
+					"blink": "tx"
+				}
+			]
+		},
+		"COMPUTER_AMIGA500": {
+			"power_domain": "amiga",
+			"leds": [
+				{
+					"x": 0.927,
+					"y": 0.32,
+					"w": 0.032,
+					"h": 0.015,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.3,
+						0.3
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.927,
+					"y": 0.347,
+					"w": 0.033,
+					"h": 0.017,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "drive"
+				}
+			]
+		},
+		"COMPUTER_AMIGA600": {
+			"power_domain": "amiga",
+			"leds": [
+				{
+					"x": 0.876,
+					"y": 0.625,
+					"w": 0.023,
+					"h": 0.019,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.3,
+						0.3
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.869,
+					"y": 0.688,
+					"w": 0.023,
+					"h": 0.019,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "drive"
+				}
+			]
+		},
+		"COMPUTER_AMIGA1200": {
+			"power_domain": "amiga",
+			"leds": [
+				{
+					"x": 0.842,
+					"y": 0.292,
+					"w": 0.012,
+					"h": 0.014,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.55,
+						0.2
+					],
+					"blink": "drive"
+				},
+				{
+					"x": 0.86,
+					"y": 0.292,
+					"w": 0.012,
+					"h": 0.014,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "drive"
+				},
+				{
+					"x": 0.878,
+					"y": 0.292,
+					"w": 0.012,
+					"h": 0.014,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				}
+			]
+		},
+		"MONITOR_COMMODORE_1084S": {
+			"power_domain": "monitor",
+			"leds": [
+				{
+					"x": 0.812,
+					"y": 0.867,
+					"w": 0.019,
+					"h": 0.008,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				}
+			]
+		},
+		"MONITOR_COMMODORE_1901": {
+			"power_domain": "monitor",
+			"leds": [
+				{
+					"x": 0.279,
+					"y": 0.956,
+					"w": 0.015,
+					"h": 0.012,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				}
+			]
+		},
+		"MONITOR_COMMODORE_1942": {
+			"power_domain": "monitor",
+			"leds": [
+				{
+					"x": 0.785,
+					"y": 0.868,
+					"w": 0.012,
+					"h": 0.013,
+					"shape": "rect",
+					"color": [
+						0.55,
+						1.0,
+						0.48
+					],
+					"blink": "power"
+				}
+			]
+		},
+		"MONITOR_MULTISYNC_17": {
+			"power_domain": "monitor",
+			"leds": [
+				{
+					"x": 0.78,
+					"y": 0.804,
+					"w": 0.01,
+					"h": 0.012,
+					"shape": "round",
+					"color": [
+						0.38,
+						1.0,
+						0.42
+					],
+					"blink": "power"
+				}
+			]
+		},
+		"DESK_LAMP_CLASSIC": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"type": "light",
+					"x": 0.747,
+					"y": 0.315,
+					"w": 0.118,
+					"h": 0.059,
+					"shape": "round",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				}
+			]
+		},
+		"DRIVE_COMMODORE_A1011": {
+			"power_domain": "amiga",
+			"leds": [
+				{
+					"x": 0.911,
+					"y": 0.705,
+					"w": 0.035,
+					"h": 0.04,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "drive"
+				}
+			]
+		},
+		"PRINTER_DOT_MATRIX_9PIN": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.645,
+					"y": 0.819,
+					"w": 0.011,
+					"h": 0.021,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.696,
+					"y": 0.815,
+					"w": 0.013,
+					"h": 0.025,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "drive"
+				},
+				{
+					"type": "led",
+					"x": 0.674,
+					"y": 0.816,
+					"w": 0.011,
+					"h": 0.025,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				}
+			]
+		},
+		"PRINTER_DOT_MATRIX_24PIN_MONO": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.625,
+					"y": 0.621,
+					"w": 0.01,
+					"h": 0.014,
+					"shape": "round",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.663,
+					"y": 0.632,
+					"w": 0.008,
+					"h": 0.014,
+					"shape": "round",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "drive"
+				},
+				{
+					"type": "led",
+					"x": 0.701,
+					"y": 0.641,
+					"w": 0.008,
+					"h": 0.012,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "led",
+					"x": 0.738,
+					"y": 0.65,
+					"w": 0.008,
+					"h": 0.014,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				}
+			]
+		},
+		"PRINTER_DOT_MATRIX_24PIN_COLOR": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.553,
+					"y": 0.665,
+					"w": 0.013,
+					"h": 0.022,
+					"shape": "round",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"type": "led",
+					"x": 0.497,
+					"y": 0.68,
+					"w": 0.015,
+					"h": 0.012,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "led",
+					"x": 0.515,
+					"y": 0.675,
+					"w": 0.014,
+					"h": 0.013,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "led",
+					"x": 0.534,
+					"y": 0.671,
+					"w": 0.009,
+					"h": 0.008,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				}
+			]
+		},
+		"STEREO_COMPACT_CASSETTE": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.693,
+					"y": 0.396,
+					"w": 0.011,
+					"h": 0.017,
+					"shape": "round",
+					"color": [
+						1.0,
+						0.3,
+						0.3
+					],
+					"blink": "power"
+				}
+			]
+		},
+		"STEREO_COMPONENT_CASSETTE": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.347,
+					"y": 0.105,
+					"w": 0.011,
+					"h": 0.014,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.548,
+					"y": 0.105,
+					"w": 0.01,
+					"h": 0.014,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.78,
+						0.3
+					],
+					"blink": "slow"
+				}
+			]
+		},
+		"STEREO_COMPACT_CD": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.335,
+					"y": 0.352,
+					"w": 0.012,
+					"h": 0.01,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.3,
+						0.3
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.335,
+					"y": 0.383,
+					"w": 0.012,
+					"h": 0.01,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.3,
+						0.3
+					],
+					"blink": "slow"
+				},
+				{
+					"x": 0.335,
+					"y": 0.414,
+					"w": 0.012,
+					"h": 0.01,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.3,
+						0.3
+					],
+					"blink": "drive"
+				}
+			]
+		},
+		"STEREO_DUAL_CD": {
+			"power_domain": "strip",
+			"leds": [
+				{
+					"x": 0.5,
+					"y": 0.144,
+					"w": 0.012,
+					"h": 0.018,
+					"shape": "rect",
+					"color": [
+						0.45,
+						0.7,
+						1.0
+					],
+					"blink": "power"
+				},
+				{
+					"x": 0.603,
+					"y": 0.486,
+					"w": 0.012,
+					"h": 0.018,
+					"shape": "round",
+					"color": [
+						0.45,
+						0.7,
+						1.0
+					],
+					"blink": "slow"
+				}
+			]
+		},
+		"MOUSE_AMIGA": {
+			"power_domain": "amiga",
+			"no_led": true,
+			"leds": []
+		},
+		"JOYSTICK_COMPETITION_PRO": {
+			"power_domain": "amiga",
+			"no_led": true,
+			"leds": []
+		},
+		"AMIGA_POWER_SUPPLY_MASTER": {
+			"power_domain": "strip",
+			"no_led": true,
+			"leds": []
+		},
+		"TELEPHONE_MASTER": {
+			"leds": [
+				{
+					"type": "key",
+					"x": 0.491,
+					"y": 0.364,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.526,
+					"y": 0.449,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.566,
+					"y": 0.525,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.603,
+					"y": 0.618,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.682,
+					"y": 0.576,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.641,
+					"y": 0.493,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.613,
+					"y": 0.406,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.57,
+					"y": 0.326,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.651,
+					"y": 0.306,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.687,
+					"y": 0.376,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.722,
+					"y": 0.457,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "key",
+					"x": 0.759,
+					"y": 0.549,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				}
+			]
+		},
+		"COFFEE_MUG_BEIGE": {
+			"leds": [
+				{
+					"type": "steam",
+					"x": 0.366,
+					"y": 0.239,
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				}
+			]
+		},
+		"PRINTER_COLOR_INKJET_CJ300": {
+			"leds": [
+				{
+					"type": "led",
+					"x": 0.894,
+					"y": 0.574,
+					"w": 0.016,
+					"h": 0.009,
+					"shape": "rect",
+					"color": [
+						0.4,
+						1.0,
+						0.5
+					],
+					"blink": "steady"
+				},
+				{
+					"type": "led",
+					"x": 0.898,
+					"y": 0.597,
+					"w": 0.016,
+					"h": 0.006,
+					"shape": "rect",
+					"color": [
+						1.0,
+						0.35,
+						0.35
+					],
+					"blink": "steady"
+				}
+			]
+		}
+	}
+}

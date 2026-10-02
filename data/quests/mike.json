@@ -1,0 +1,104 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_mike",
+  "quests": [
+    {
+      "id": "q_fuehrerschein",
+      "title": "Der Führerschein",
+      "giver": "npc_mike",
+      "activation_policy": "prereq_immediate",
+      "prereq": {
+        "year_min": 1993,
+        "age_min": 17,
+        "flag": "fuehrerschein_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Mike wedelt mit einem zerknitterten Fahrschulprospekt: »Noch dürfen wir nur planen. Wenn du jetzt sparst, können wir mit 18 direkt loslegen.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Spare 900 DM für Fahrschule und Prüfungen. Die Anmeldung ist ab 18 möglich.",
+          "goal": {
+            "money_min": 900,
+            "age_min": 18
+          }
+        },
+        {
+          "desc": "Halte 900 DM bar bereit. Fahr zu Mikes Zimmer, sprich Mike an und wähle »Führerschein«. Beantworte beide Fragen richtig und bezahle danach die Fahrschule.",
+          "map_location": "mike_home",
+          "goal": {
+            "action": "license_exam"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "flag",
+          "flag": "has_license"
+        },
+        {
+          "type": "toast",
+          "text": "Führerschein bestanden! Jetzt darfst du fahren. Für das eigene Auto kannst du später gezielt Sammlungs-OVPs verkaufen."
+        }
+      ],
+      "teaches": "auto_reisen"
+    },
+    {
+      "id": "q_lan_nacht",
+      "title": "Kabelsalat bis Sonnenaufgang",
+      "giver": "npc_mike",
+      "prereq": {
+        "year_min": 1996,
+        "needs": [
+          "lan_partys"
+        ],
+        "flag": "lan_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Mike plant eine Netzwerk-Nacht: Rechner, Kabel, Cola und kein Schlaf."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause X-COPY starten und von einer Spielquelle eine frische, lauffähige Kopie für die LAN-Nacht ziehen.",
+          "map_location": "room",
+          "goal": {
+            "action": "make_copy"
+          }
+        },
+        {
+          "desc": "Fahr zu Mike und nimm an der LAN-Nacht teil.",
+          "map_location": "mike_home",
+          "goal": {
+            "action": "lan_attend"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 4
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_mike",
+          "value": 5
+        },
+        {
+          "type": "flag",
+          "flag": "first_lan"
+        },
+        {
+          "type": "toast",
+          "text": "Die Sonne geht auf, das Netzwerk steht – und keiner will als Erster nach Hause."
+        }
+      ]
+    }
+  ]
+}

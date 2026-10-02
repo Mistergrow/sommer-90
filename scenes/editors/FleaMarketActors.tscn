@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dp6rbipf8dd2w"]
+
+[ext_resource type="Texture2D" uid="uid://dok06n1ct2rpd" path="res://assets/backgrounds/locations/LOCATION_FLEA_MARKET_MASTER_V01.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://bpv4feff83lnl" path="res://assets/backgrounds/story_props/DEALER_WITH_TEST_RIG_V01.png" id="2_dealer"]
+
+[node name="FleaMarketActors" type="Control" unique_id=163200932]
+editor_description = "LEVEL-EDITOR (Defaults): BlackMarketDealer auswählen, mit W verschieben und mit S bzw. Transform > Scale skalieren. Diese Szene ist die EINZIGE Quelle für Standardposition, Größe und Klickzone des Händlers — im Code steht dazu keine Zahlenkopie. Wer ihn im Spiel per F6/F8 verschiebt, erzeugt einen Override in data/location_actor_layouts.json, der diese Szene überstimmt; steht er wieder exakt auf dem Default, verschwindet der Override von selbst."
+custom_minimum_size = Vector2(1672, 941)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1672.0
+offset_bottom = 941.0
+
+[node name="MarketBackground" type="TextureRect" parent="." unique_id=1314168422]
+layout_mode = 0
+offset_right = 1672.0
+offset_bottom = 941.0
+mouse_filter = 2
+texture = ExtResource("1_bg")
+expand_mode = 1
+
+[node name="BlackMarketDealer" type="TextureRect" parent="." unique_id=954295557]
+editor_description = "SPIELAKTOR: Diesen Knoten im 2D-Editor verschieben (W) und über Transform > Scale skalieren. DealerInteractionArea ist ein Kind und folgt jeder Transformation.
+
+ACHTUNG BODENKONTAKT: Das Sprite hat 13,5 % leeren Rand unten — die Füße sitzen NICHT an der Rechteckunterkante. Der Pivot ist deshalb auf die gemessene Standfläche gesetzt (74,5 / 186,8 statt mittig-unten). Erst dadurch bleibt der Bodenkontakt beim Skalieren stehen. Beim Ändern der Rechteckgröße den Pivot mitziehen: x = 0,611 · Breite, y = 0,865 · Höhe.
+
+MASSSTAB: Sichtbar sind nur 80,6 % der Rechteckhöhe. Das aktuelle Rechteck 122 × 216 ergibt eine 174 px hohe Figur mit Fußlinie bei y = 322 (nicht 351)."
+layout_mode = 0
+offset_left = 687.0
+offset_top = 135.0
+offset_right = 809.0
+offset_bottom = 351.0
+pivot_offset = Vector2(74.5, 186.8)
+tooltip_text = "Händler: frei verschieben und über Transform > Scale skalieren. Pivot sitzt auf der Standfläche, die Klickzone folgt automatisch."
+texture = ExtResource("2_dealer")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DealerInteractionArea" type="ColorRect" parent="BlackMarketDealer" unique_id=815312503]
+editor_description = "KLICKZONE: Liegt auf Kopf und Rumpf des Händlers — bewusst NICHT auf dem vollen Rechteck. Der leere Rand unten und der Werkzeugkoffer am Boden sind damit nicht mehr anklickbar. Werte aus der Alpha-Maske des Sprites gemessen (x 0,404–0,854 / y 0,060–0,600 der Rechteckseiten). Sie folgt Position und Skalierung des Elternknotens automatisch."
+show_behind_parent = true
+layout_mode = 0
+offset_left = 49.3
+offset_top = 13.0
+offset_right = 104.2
+offset_bottom = 129.6
+tooltip_text = "Klickzone des Händlers — Kopf und Rumpf, folgt jeder Skalierung."
+mouse_filter = 1
+color = Color(1, 0.55, 0.1, 0.16)
+
+[node name="EditorHint" type="Label" parent="BlackMarketDealer/DealerInteractionArea" unique_id=1460623132]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -9.0
+offset_right = 60.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.82, 0.48, 0.9)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 12
+text = "KLICKZONE"
+horizontal_alignment = 1

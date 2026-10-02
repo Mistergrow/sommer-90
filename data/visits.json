@@ -1,0 +1,314 @@
+{
+	"comment": "Freunde besuchen dich zu Hause (VisitManager): es klopft, jemand steht in der Tür, bringt Diskette/Neuigkeit/Mini-Quest. Trigger: zu Hause, Nachmittag/Abend, Vertrauen. Era-Gating über year_from/year_to (robust); needs nur wo der Fakt sicher existiert (daniel_apfel). effects = EventManager-Effekt-DSL. once=true → nur einmal. knock = Türspruch, text = was er sagt, wenn du reinlässt.",
+	"visits": [
+		{
+			"id": "visit_daniel_listing",
+			"npc": "npc_daniel",
+			"speaker": "Daniel",
+			"day_from": 2,
+			"year_from": 1991,
+			"campaign_quest": "q_tut_listing",
+			"requires_flag": "club_project_intro",
+			"unless_flag": "tut_listing_intro",
+			"priority": true,
+			"once": true,
+			"weight": 1,
+			"knock": "Hier ist Daniel — Stefan sagt, du hast jetzt einen Amiga?",
+			"dialogue": "visit_daniel_listing",
+			"text": "Spiele kaufen ist teuer. Selber schreiben ist umsonst!",
+			"effects": []
+		},
+		{
+			"id": "visit_alex_risky_1992",
+			"npc": "npc_alex",
+			"speaker": "Alex",
+			"year_from": 1992,
+			"campaign_quest": "q_alex_risky_1992",
+			"day_from": 20,
+			"requires_flag": "eigenes_spiel_intro",
+			"unless_flag": "alex_risky_intro",
+			"priority": true,
+			"once": true,
+			"weight": 1,
+			"knock": "Alex hier — die schwarze Disk aus der Wühlkiste macht komische Sachen.",
+			"dialogue": "visit_alex_risky",
+			"text": "Eine unbeschriftete Diskette gehört erst geprüft, dann gebootet.",
+			"effects": []
+		},
+		{
+			"id": "visit_basti_tracker",
+			"npc": "npc_basti",
+			"speaker": "Basti",
+			"year_from": 1991,
+			"campaign_quest": "q_tut_tracker",
+			"requires_flag": "booted_amiga",
+			"unless_flag": "tut_tracker_intro",
+			"priority": true,
+			"once": true,
+			"weight": 1,
+			"knock": "Basti hier! Ich hab die Tracker-Arbeitsdisk dabei.",
+			"dialogue": "visit_basti_tracker",
+			"text": "Du kennst MODs längst — Basti zeigt dir jetzt, wie du selbst eines baust.",
+			"effects": []
+		},
+		{
+			"id": "visit_alex_mystery",
+			"npc": "npc_alex",
+			"speaker": "Alex",
+			"year_from": 1991,
+			"campaign_quest": "q_alex_find",
+			"requires_flag": "booted_amiga",
+			"unless_flag": "alex_intro",
+			"priority": true,
+			"once": true,
+			"weight": 1,
+			"knock": "Alex hier. Ich such was ganz Bestimmtes …",
+			"dialogue": "visit_alex_mystery",
+			"text": "Disketten ohne Etikett — Mystery! Da kann ALLES drauf sein.",
+			"effects": []
+		},
+		{
+			"id": "stefan_tausch",
+			"npc": "npc_stefan",
+			"speaker": "Stefan",
+			"trust_min": 10,
+			"year_to": 1994,
+			"weight": 3,
+			"knock": "Ich hab was zum Tauschen dabei!",
+			"text": "Frisch von der Tausch-Party — zieh dir 'ne Kopie, bevor's der halbe Club hat!",
+			"effects": [
+				{
+					"type": "disk_template",
+					"id": "game_alien_bitmap",
+					"memory": "von Stefan getauscht"
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_stefan",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "stefan_pc",
+			"npc": "npc_stefan",
+			"speaker": "Stefan",
+			"trust_min": 10,
+			"year_from": 1995,
+			"year_to": 1997,
+			"weight": 2,
+			"knock": "Du glaubst nicht, was ich mir geholt hab.",
+			"text": "Ich hab jetzt 'nen PC. Windows, Soundkarte, das ganze Programm. Musst du dir ansehen!",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_stefan",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "stefan_firma",
+			"npc": "npc_stefan",
+			"speaker": "Stefan",
+			"trust_min": 15,
+			"year_from": 1997,
+			"campaign_quest": "q_firma_talent",
+			"priority": true,
+			"unless_flag": "firma_intro",
+			"once": true,
+			"weight": 2,
+			"knock": "Hast du kurz Zeit? Geschäftlich.",
+			"text": "Meine Firma sucht jemanden, der Spiele testet. Wär das nichts für dich? Meld dich mal.",
+			"effects": [
+				{
+					"type": "expect_call",
+					"npc": "npc_stefan",
+					"id": "visit_stefan_firma",
+					"title": "Stefan wegen der Teststelle sprechen",
+					"dialogue": "call_stefan_firma"
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_stefan",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "mike_duell",
+			"npc": "npc_mike",
+			"speaker": "Mike",
+			"trust_min": 10,
+			"weight": 3,
+			"knock": "Ich fordere dich raus!",
+			"text": "Neuer Highscore bei mir zu Hause — da kommst du NIE ran. Hier, üb schon mal.",
+			"effects": [
+				{
+					"type": "disk_template",
+					"id": "game_turbo_kart",
+					"memory": "Mikes Rennspiel geliehen"
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_mike",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "mike_konsole",
+			"npc": "npc_mike",
+			"speaker": "Mike",
+			"trust_min": 10,
+			"year_from": 1996,
+			"weight": 2,
+			"knock": "Vergiss deinen Computer.",
+			"text": "Ich hab jetzt 'ne Konsole. Modul rein, an — keine Diskettenwechselei. Sag's aber nicht im Club.",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_mike",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "sven_hang",
+			"npc": "npc_sven",
+			"speaker": "Sven",
+			"trust_min": 10,
+			"year_to": 1994,
+			"weight": 3,
+			"knock": "Langweilig hier — lass zocken!",
+			"text": "Hab ein neues Spiel mitgebracht. Zusammen macht's mehr Spaß. Los!",
+			"effects": [
+				{
+					"type": "disk_template",
+					"id": "game_monkey_adventure",
+					"memory": "mit Sven gezockt"
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_sven",
+					"value": 2
+				}
+			]
+		},
+		{
+			"id": "alex_fund",
+			"npc": "npc_alex",
+			"speaker": "Alex",
+			"trust_min": 10,
+			"weight": 3,
+			"knock": "Guck, was ich gefunden hab!",
+			"text": "Flohmarkt-Fund, kein Etikett, keine Ahnung was drauf ist. Prüf du das mal — du hast den Blick.",
+			"effects": [
+				{
+					"type": "disk_template",
+					"id": "mystery_unlabeled",
+					"memory": "Flohmarkt-Fund von Alex"
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_alex",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "alex_museum",
+			"npc": "npc_alex",
+			"speaker": "Alex",
+			"trust_min": 15,
+			"year_from": 1998,
+			"weight": 2,
+			"knock": "Wir müssen das alles aufheben!",
+			"text": "In dreißig Jahren ist das hier Geschichte. Ich sammel alles — Boxen, Anleitungen, den ganzen Kram.",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_alex",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "daniel_bbs",
+			"npc": "npc_daniel",
+			"speaker": "Daniel",
+			"trust_min": 10,
+			"year_from": 1993,
+			"year_to": 1996,
+			"weight": 2,
+			"knock": "Neue Nummer für dich.",
+			"text": "Es gibt 'ne frische Mailbox in der Stadt. Schnelles Modem, gute Leute. Merk dir die Nummer.",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_daniel",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "daniel_apple",
+			"npc": "npc_daniel",
+			"speaker": "Daniel",
+			"trust_min": 10,
+			"needs": "daniel_apfel",
+			"weight": 2,
+			"knock": "Die Zukunft, ich sag's dir …",
+			"text": "Eine Firma mit 'nem angebissenen Apfel. Telefone, die ins Internet gehen. Das haben irgendwann ALLE.",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_daniel",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "lisa_cover",
+			"npc": "npc_lisa",
+			"speaker": "Lisa",
+			"trust_min": 10,
+			"weight": 3,
+			"knock": "Hab dir was mitgebracht.",
+			"text": "Neue Coverdisk aus dem Heft — ein paar hübsche Sachen drauf. Kannst du behalten.",
+			"effects": [
+				{
+					"type": "disk_template",
+					"id": "coverdisk_amiga_kurier",
+					"memory": "Coverdisk von Lisa"
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_lisa",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "basti_mod",
+			"npc": "npc_basti",
+			"speaker": "Basti",
+			"trust_min": 10,
+			"weight": 3,
+			"knock": "Das musst du HÖREN!",
+			"text": "Neues Modul fertig, vier Kanäle, geht ab. Und ein paar Etiketten hab ich übrig — hier, für dich.",
+			"effects": [
+				{
+					"type": "item",
+					"item": "etiketten",
+					"value": 3
+				},
+				{
+					"type": "npc_trust",
+					"npc": "npc_basti",
+					"value": 1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,313 @@
+{
+  "comment": "WERKBANK-KOMPONENTEN (Chips/Module/Karten) für die kommenden Systeme WorkbenchManager/RepairManager/HardwareManager/CollectionManager. Diskrete, sammelbare, einbaubare Hardware — im Gegensatz zu ganzen Geräten in hardware_db.json. 'asset' = GROSS_V01-Master unter assets/backgrounds/layers/. Zustände/Varianten/Timeline sind Vorrat für die physische Werkbank-Simulation (bei Sven). RECHT: reale Namen als nicht-kommerzielle Homage; Credits/Marken klärt der Nutzer.",
+  "components": {
+    "kickstart_rom": {
+      "name": "Kickstart ROM",
+      "asset": "KICKSTART_ROM_MASTER_V01",
+      "category": "rom",
+      "package": "DIP",
+      "pin_count": 40,
+      "collectible": true,
+      "stackable": true,
+      "price": 35,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true,
+        "inspect": true, "clean_pins": true, "test": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_600", "amiga_2000"],
+      "sources": ["computer_shop", "flea_market", "alex_home", "sven_home", "musikladen_keller", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "OxidizedPins", "Dirty", "Damaged", "Dead"],
+      "variants": [
+        {"id": "kickstart_12", "name": "Kickstart 1.2", "year_from": 1990, "rarity": "uncommon"},
+        {"id": "kickstart_13", "name": "Kickstart 1.3", "year_from": 1990, "rarity": "common"},
+        {"id": "kickstart_204", "name": "Kickstart 2.04", "year_from": 1991, "rarity": "uncommon"},
+        {"id": "kickstart_205", "name": "Kickstart 2.05", "year_from": 1992, "rarity": "uncommon"},
+        {"id": "kickstart_31", "name": "Kickstart 3.1", "year_from": 1995, "rarity": "rare"},
+        {"id": "blank_eprom", "name": "Leeres EPROM", "year_from": 1990, "rarity": "rare"}
+      ],
+      "timeline": {
+        "1990": "kickstart_13",
+        "1991": "kickstart_204",
+        "1992": "kickstart_205",
+        "1995": "kickstart_31",
+        "1997": "collector",
+        "1999": "rare_collector"
+      },
+      "note": "Der Boot-ROM des Amiga. Einsetzen/Kerbe prüfen/Pins richten/reinigen/Boot testen — später als ruhige Bastel-Simulation an Svens Werkbank."
+    },
+    "ram_expansion": {
+      "name": "RAM-Erweiterung (Amiga 500)",
+      "category": "memory",
+      "collectible": true,
+      "source_url": "https://www.veemax.be/blog/amiga-500-ram-upgrade/",
+      "stock_chip_ram_kb": 512,
+      "chip_vs_slow": "Trapdoor-RAM ist mit Serien-Agnus KEIN echtes Chip-RAM: nur die CPU greift darauf zu, mit derselben Contention wie Chip-RAM → 'Slow RAM' / 'Pseudo-Fast'. Erst ECS-Agnus + Jumper macht es zu echtem Chip-RAM.",
+      "pcb_support": "Nicht alle A500-Revisionen unterstützen den internen Ausbau; REV6A hat die leeren RAM-Slots und wird ausdrücklich unterstützt.",
+      "paths": {
+        "trapdoor": {
+          "name": "Trapdoor-Erweiterung (A501-kompatibel)",
+          "location": "Klappe an der Unterseite",
+          "adds_kb": 512,
+          "ram_type": "slow",
+          "tools": [],
+          "note": "Steckplatz unter dem Gerät: Commodore A501 oder kompatible Platine → +512 KB (Slow-RAM). Kein Löten."
+        },
+        "internal_1mb": {
+          "name": "Interner Umbau (leere Mainboard-Slots)",
+          "chips_needed": 4,
+          "chip_models": ["Siemens HYB514256B-70", "TI TMS44C256-10N"],
+          "chip_orig_faster": "HYB514256B-60 (etwas schneller, nicht nötig)",
+          "install": ["gesockelt", "direkt gelötet"],
+          "steps": [
+            "4 RAM-Chips (oder Sockel) in die leeren Mainboard-Slots löten.",
+            "JP7A: Standard 1-2 verbunden/offen → Lötbrücke auf Pins 2-3 → 512 KB Chip-RAM + 512 KB Slow-RAM.",
+            "JP2 (rechts neben der Motorola-68000-CPU, dem größten Chip): Verbindung 1-2 mit Skalpell/Exacto auftrennen (Vorsicht: keine Leiterbahnen durchtrennen!), dann Lötbrücke auf Pins 2-3 → insgesamt 1 MB Chip-RAM."
+          ],
+          "requires_for_true_chip_ram": "Späterer ECS-Agnus + Speicher-Layout-Jumper (sonst bleibt der Zusatz Slow-RAM).",
+          "tools": ["Lötkolben", "Lötzinn", "Skalpell/Exacto"],
+          "warnings": [
+            "Skalpell: keine fremden Leiterbahnen durchtrennen.",
+            "Nach dem ersten Einschalten Chips auf Überhitzung prüfen — heiße Chips = Defekt oder Einbaufehler."
+          ],
+          "result_jp7a": "512 KB Chip + 512 KB Slow-RAM",
+          "result_jp2": "1 MB echtes Chip-RAM (mit ECS-Agnus)"
+		},
+		"chipram_2mb_workshop": {
+		  "name": "2-MB-Chip-RAM-Werkstattumbau",
+		  "year_from": 1992,
+		  "requires": ["A501-kompatible 512-KB-Erweiterung", "2-MB-fähiger Agnus samt A500-Adapterplatine"],
+		  "tools": ["Lötkolben", "Entlötstation", "ESD-Schutz", "Speichertest-Diskette"],
+		  "steps": [
+			"Agnus-/Mainboard-Revision bestimmen; inkompatible Boards nicht blind umbauen.",
+			"Adapter und zusätzliche Speicherbestückung fachgerecht einsetzen bzw. verlöten.",
+			"Adress-/Jumperführung nach Adaptervorgabe ändern und alle Lötstellen prüfen.",
+			"Kaltstart und vollständigen 2-MB-Speichertest durchführen."
+		  ],
+		  "note": "Vier zusätzliche DRAMs allein machen aus einem Serien-A500 keine 2 MB Chip-RAM. Diese Stufe ist deshalb ein später, teurer Werkstattumbau statt eines 1990er Steckriegels."
+        }
+      },
+      "agnus_note": "Die Chip-RAM-Obergrenze hängt vom Agnus ab; laut Quelle macht ein späterer ECS-Agnus + Jumper aus dem Trapdoor-RAM echtes 1-MB-Chip-RAM.",
+      "agnus_models_needs_verification": {
+        "8371": "512 KB Chip-RAM",
+        "8372": "1 MB Chip-RAM (Fat Agnus)",
+        "8375": "2 MB Chip-RAM"
+      },
+      "note": "Quellenbelegte Umbau-Prozedur (veemax.be). Zwei Wege: (A) Trapdoor A501 = einfach, +512 KB Slow. (B) Interner Umbau + Jumper JP7A/JP2 (+ ECS-Agnus) = echtes 1 MB Chip-RAM. Treibt später die Werkbank-Simulation (Chips in leere Slots setzen, Jumper mit Lötbrücke/Skalpell, Boot-Test)."
+    },
+    "dram_chip": {
+      "name": "DRAM-Speicherchip",
+      "asset": "DRAM_CHIP_MASTER_V01",
+      "category": "memory",
+      "technology": "DRAM",
+      "package": "DIP",
+      "pin_count": 20,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": false,
+      "price": 8,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "straighten_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_600", "amiga_1200", "amiga_2000"],
+      "sources": ["computer_shop", "repair_shop", "flea_market", "electronics_store", "sven_home", "alex_home", "scrap_box", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "BentPins", "CorrodedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "dram_256kbit", "name": "256 Kbit", "rarity": "common"},
+        {"id": "dram_1mbit", "name": "1 Mbit", "rarity": "common"},
+        {"id": "dram_4mbit", "name": "4 Mbit", "rarity": "uncommon"},
+        {"id": "dram_fastpage", "name": "Fast Page", "rarity": "uncommon"},
+        {"id": "dram_standard", "name": "Standard-DRAM", "rarity": "common"},
+        {"id": "dram_lowpower", "name": "Low Power", "rarity": "uncommon"},
+        {"id": "dram_prototype", "name": "Prototyp", "rarity": "rare"}
+      ],
+      "gameplay": ["ReplaceMemoryChip", "RepairMemory", "DiagnoseMemoryFault", "CleanPins", "StraightenPins", "TestMemory", "IdentifyChip", "HardwareCollection", "Trading"],
+      "used_in": "ram_expansion.internal_1mb",
+      "note": "Der eigentliche RAM-Baustein für den internen A500-Umbau (4× in die leeren Slots, s. ram_expansion). Passende 256K×4-Typen (1 Mbit) sind HYB514256 / TMS44C256."
+    },
+    "cpu_68000": {
+      "name": "CPU 68000",
+      "asset": "CPU_68000_MASTER_V01",
+      "category": "processor",
+      "package": "DIP",
+      "pin_count": 64,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": true,
+      "price": 25,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "straighten_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_600", "amiga_2000"],
+      "compatible_note": "A1200 hat einen 68020, nicht den 68000 — daher NICHT kompatibel.",
+      "sources": ["computer_shop", "repair_shop", "flea_market", "sven_home", "alex_home", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "BentPins", "CorrodedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "m68000_7mhz", "name": "68000 7 MHz", "rarity": "common"},
+        {"id": "m68000_8mhz", "name": "68000 8 MHz", "rarity": "uncommon"},
+        {"id": "m68000_ceramic_proto", "name": "Keramik-Prototyp", "rarity": "rare"},
+        {"id": "m68000_eng_sample", "name": "Engineering Sample", "rarity": "rare"},
+        {"id": "m68000_gold", "name": "Gold-Pin-Edition", "rarity": "rare"}
+      ],
+      "gameplay": ["ReplaceCPU", "UpgradeCPU", "DiagnoseCPUFault", "CleanPins", "StraightenPins", "TestCPU", "HardwareCollection", "Trading"],
+      "note": "Die Motorola-68000-CPU (der größte Chip im A500; rechts daneben sitzt JP2 fürs RAM-Upgrade). 64-Pin-DIP."
+    },
+    "cia_chip": {
+      "name": "CIA-Chip (8520)",
+      "asset": "CIA_CHIP_MASTER_V01",
+      "category": "interface_controller",
+      "package": "DIP",
+      "pin_count": 40,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": false,
+      "price": 15,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "straighten_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_600", "amiga_1200", "amiga_2000"],
+      "count_per_board": 2,
+      "roles_note": "Der Amiga hat ZWEI 8520-CIAs mit geteilten Aufgaben: Tastatur, Maus-/Joystick-Ports, serielle Handshakes, Diskettensteuerung, Timer/Interrupts.",
+      "sources": ["computer_shop", "repair_shop", "flea_market", "electronics_store", "sven_home", "alex_home", "scrap_box", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "BentPins", "CorrodedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "cia_8520a", "name": "CIA 8520A", "rarity": "common"},
+        {"id": "cia_8520b", "name": "CIA 8520B", "rarity": "common"},
+        {"id": "cia_early", "name": "Frühe Revision", "rarity": "uncommon"},
+        {"id": "cia_late", "name": "Späte Revision", "rarity": "uncommon"},
+        {"id": "cia_ceramic_proto", "name": "Keramik-Prototyp", "rarity": "rare"}
+      ],
+      "gameplay": ["ReplaceCIA", "DiagnoseInputFault", "DiagnoseSerialFault", "DiagnoseFloppyFault", "DiagnoseTimerFault", "CleanPins", "StraightenPins", "TestChip", "HardwareCollection", "Trading"],
+      "fault_symptoms": {
+        "input": "Maus oder Joystick reagieren nicht (mehr) richtig.",
+        "serial": "Serielle Übertragung / Modem-Handshake fehlerhaft.",
+        "floppy": "Diskettenlaufwerk arbeitet nicht mehr korrekt.",
+        "timer": "Timer-/Interrupt-Funktionen fallen aus."
+      },
+      "note": "Interface-Controller mit SUBTILEN Fehlern statt Totalausfall → echte Diagnosearbeit (Symptom → verdächtiger CIA) statt bloßem Teiletausch. Ideal fürs Multimeter/Test-Gameplay an der Werkbank."
+    },
+    "agnus_chip": {
+      "name": "Agnus (Fat Agnus)",
+      "asset": "AGNUS_CHIP_MASTER_V01",
+      "category": "custom_chip",
+      "package": "PLCC",
+      "pin_count": 84,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": true,
+      "price": 45,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_2000"],
+      "sources": ["repair_shop", "computer_shop", "flea_market", "alex_home", "musikladen_keller", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "agnus_ocs", "name": "OCS Agnus (512 KB Chip-RAM)", "rarity": "common"},
+        {"id": "agnus_ecs", "name": "ECS Agnus (1 MB Chip-RAM)", "rarity": "uncommon", "source_note": "Laut veemax.be macht ein späterer ECS-Agnus + Jumper das Trapdoor-RAM zu echtem 1-MB-Chip-RAM."}
+      ],
+      "models_needs_verification": ["8370", "8371", "8372A", "8375"],
+      "gameplay": ["ReplaceAgnus", "UpgradeChipRAM", "DiagnoseGraphicsFault", "CleanPins", "TestChip", "HardwareCollection", "Trading"],
+      "used_in": "ram_expansion.internal_1mb (Voraussetzung für echtes 1-MB-Chip-RAM)",
+      "note": "Der quadratische PLCC-Custom-Chip im A500 (gesockelt, mit Pin-1-Ecke). Bestimmt die Chip-RAM-Obergrenze — Kernstück des RAM-Upgrades. Modellnummern noch zu verifizieren."
+    },
+    "denise_chip": {
+      "name": "Denise",
+      "asset": "DENISE_CHIP_MASTER_V01",
+      "asset_note": "V01 abgeleitet aus CPU_68000-Foto (28→21 Pins/Seite gekürzt, nahtlos) — kann jederzeit durch eine Neugenerierung ersetzt werden (DIP-48, NICHT PLCC!).",
+      "category": "custom_chip",
+      "package": "DIP",
+      "pin_count": 48,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": true,
+      "price": 35,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "straighten_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_2000"],
+      "sources": ["repair_shop", "computer_shop", "flea_market", "alex_home", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "BentPins", "CorrodedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "denise_ocs", "name": "OCS Denise", "rarity": "common"},
+        {"id": "denise_super", "name": "Super Denise (ECS)", "rarity": "uncommon"}
+      ],
+      "models_needs_verification": ["8362", "8373"],
+      "gameplay": ["ReplaceDenise", "DiagnoseVideoFault", "CleanPins", "StraightenPins", "TestChip", "HardwareCollection", "Trading"],
+      "fault_symptoms": {
+        "video": "Bildfehler: falsche Farben, fehlende Bitplanes, gestörte Sprites — der Rechner läuft, aber das Bild stimmt nicht."
+      },
+      "note": "Der Video-Custom-Chip des Amiga (Bildaufbau/Farben/Sprites). Im A500 ein gesockelter 48-Pin-DIP — auf dem Mainboard-Asset als DENISE-Sockel beschriftet."
+    },
+    "paula_chip": {
+      "name": "Paula",
+      "asset": "PAULA_CHIP_MASTER_V01",
+      "asset_note": "V01 abgeleitet aus CPU_68000-Foto (Schnitt Lücke 4/5 → eigenes Kratzer-Muster) — jederzeit durch Neugenerierung ersetzbar (DIP-48).",
+      "category": "custom_chip",
+      "package": "DIP",
+      "pin_count": 48,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": false,
+      "price": 35,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "straighten_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_2000"],
+      "sources": ["repair_shop", "computer_shop", "flea_market", "alex_home", "musikladen_keller", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "BentPins", "CorrodedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "paula_std", "name": "Paula", "rarity": "common"},
+        {"id": "paula_ceramic_proto", "name": "Keramik-Prototyp", "rarity": "rare"}
+      ],
+      "models_needs_verification": ["8364"],
+      "gameplay": ["ReplacePaula", "DiagnoseAudioFault", "DiagnoseFloppyFault", "CleanPins", "StraightenPins", "TestChip", "HardwareCollection", "Trading"],
+      "fault_symptoms": {
+        "audio": "Kein Sound oder verzerrte/fehlende Kanäle — die MODs klingen falsch.",
+        "floppy": "Diskettenzugriff gestört (Paula sitzt im Floppy-Datenpfad) — Diagnose-Verwechslung mit dem CIA möglich!"
+      },
+      "note": "Der Audio-Chip des Amiga (4 Kanäle) — auch am Floppy-Datenpfad und der seriellen Schnittstelle beteiligt. Für SOMMER '90 doppelt wichtig: ohne Paula keine MODs. 48-Pin-DIP, PAULA-Sockel auf dem Board."
+    },
+    "gary_chip": {
+      "name": "Gary",
+      "asset": "GARY_CHIP_MASTER_V01",
+      "asset_note": "V01 abgeleitet aus CPU_68000-Foto (Schnitt Lücke 16/17 → eigenes, sauberes Finish) — jederzeit durch Neugenerierung ersetzbar (DIP-48).",
+      "category": "custom_chip",
+      "package": "DIP",
+      "pin_count": 48,
+      "collectible": true,
+      "stackable": true,
+      "upgradeable": false,
+      "price": 25,
+      "workbench": {
+        "insert": true, "remove": true, "replace": true, "inspect": true,
+        "clean_pins": true, "straighten_pins": true, "test": true, "identify": true
+      },
+      "compatible": ["amiga_500", "amiga_500_plus", "amiga_2000"],
+      "sources": ["repair_shop", "computer_shop", "flea_market", "alex_home", "scrap_box", "mystery_box"],
+      "conditions": ["FactoryNew", "Excellent", "Good", "Used", "Dirty", "OxidizedPins", "BentPins", "CorrodedPins", "Damaged", "Faulty", "Burned"],
+      "variants": [
+        {"id": "gary_std", "name": "Gary", "rarity": "common"}
+      ],
+      "models_needs_verification": ["5719"],
+      "gameplay": ["ReplaceGary", "DiagnoseSystemFault", "CleanPins", "StraightenPins", "TestChip", "HardwareCollection", "Trading"],
+      "fault_symptoms": {
+        "system": "Rechner startet nicht oder stürzt unberechenbar ab — die Glue-Logic steuert Adress-/Steuersignale, ohne sie läuft nichts sauber."
+      },
+      "note": "Die Glue-Logic des Amiga (Adressdekodierung/Steuersignale). Unscheinbar, aber wenn Gary spinnt, wirkt ALLES kaputt — fieser Diagnose-Kandidat. 48-Pin-DIP, GARY-Sockel auf dem Board."
+    }
+  },
+  "boards": {
+    "amiga_500_mainboard": {
+      "name": "Amiga-500-Mainboard",
+      "asset_front": "AMIGA_500_MAINBOARD_MASTER_V01",
+      "asset_back": "AMIGA_500_MAINBOARD_MASTER_V01B",
+      "note": "Werkbank-Basis (Vorder-/Rückseite, freigestellt). Siebdruck auf dem Asset: CPU · FAT AGNUS (PLCC-Sockel) · ROM · ODD CIA (A) · EVEN CIA (B) · DENISE · PAULA · GARY · 512K/1M RAM · CLOCK · BATTERY · RS232 · FLOPPY · AUDIO FILTER · RESET · X1 OSC · DATA PATH · B52/ROCK LOBSTER. Alle Haupt-Sockel LEER → perfekt für die Einsetz-Simulation. Sockel-Positionen setzt der kommende Werkbank-Editor (workbench_layout.json)."
+    }
+  }
+}

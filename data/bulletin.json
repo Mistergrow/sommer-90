@@ -1,0 +1,49 @@
+{
+	"comment": "Schwarze Bretter je Location. Postings sind era-/faktengegated (year_from/year_to/needs). cat steuert Farbe+Label im Fenster. by = Aushänger (Szene-Handles am Club). Spieler-Pins liegen in GameManager.flags['bulletin_pins'] (persistiert via GameManager).",
+	"boards": {
+		"club": {"title": "SCHWARZES BRETT · COMPUTER-CLUB", "rumors": "board"},
+		"kiosk": {"title": "SCHWARZES BRETT · KIOSK", "rumors": "board"},
+		"musikladen": {"title": "SCHWARZES BRETT · PLATTENLADEN", "rumors": "board"},
+		"internetcafe": {"title": "AUSHANG · INTERNETCAFÉ"},
+		"postamt": {"title": "SCHWARZES BRETT · POSTAMT"},
+		"schoolyard": {"title": "SCHWARZES BRETT · SCHULHOF", "rumors": "board"}
+	},
+	"postings": [
+		{"board": "club", "cat": "compo", "title": "GRAFIK-COMPO am Freitag", "text": "Beste 32-Farben-Zeichnung gewinnt eine Packung neuer DD-Leerdisketten. Anmeldung am Tauschtisch.", "by": "Vorstand", "year_from": 1991, "year_to": 1994, "needs": "club_mitglied"},
+		{"board": "club", "cat": "tausch", "title": "Tausche C64- gegen Amiga-Titel", "text": "Habe Kiste voll 64er-Zeug, suche alles für den Freund mit der Maus. Zettel an SIRIUS.", "by": "SIRIUS", "year_to": 1993},
+		{"board": "club", "cat": "gesuch", "title": "Suchen MUSIKER (ProTracker)", "text": "Gruppe sucht jemanden für Modules. Nur wer Noten aus dem Kopf klopft. — PHANTOM DUO", "by": "PHANTOM DUO", "year_from": 1992},
+		{"board": "club", "cat": "party", "title": "DEMO-NACHT bei RADIANT", "text": "Freitag ab acht, bring deine besten Disks mit. Großbildfernseher und zwei Zusatzmonitore sind organisiert.", "by": "RADIANT", "year_from": 1991, "year_to": 1996, "needs": "club_mitglied"},
+		{"board": "club", "cat": "info", "title": "Vereinsregel-Erinnerung", "text": "Am Tauschtisch KEINE Vollpreis-Raubkopien verhökern. Wir wollen den Laden behalten. *zwinker*", "by": "Vorstand"},
+		{"board": "club", "cat": "party", "title": "RADIANT goes PC — wer kommt mit?", "text": "Wir steigen um. Amiga-Leute trotzdem willkommen, aber die Zukunft ist beige.", "by": "RADIANT", "year_from": 1996},
+		{"board": "club", "cat": "gesuch", "title": "Wer hat schon eine HOMEPAGE?", "text": "Treffen zum Erfahrungsaustausch im Internetcafé. HTML ist gar nicht so schwer.", "by": "DATAWOLF", "year_from": 1998},
+
+		{"board": "kiosk", "cat": "kleinanzeige", "title": "Fahrrad zu verkaufen", "text": "3-Gang, wenig gefahren, Klingel neu. 40 DM. Fragen beim Kioskbesitzer.", "by": "Fam. Bergmann"},
+		{"board": "kiosk", "cat": "kleinanzeige", "title": "Nachhilfe Mathe (8. Kl.)", "text": "Geduldig, 5 DM/Std. Auch Physik. Telefonnummer am Zettel unten.", "by": "Kerstin"},
+		{"board": "kiosk", "cat": "info", "title": "Fundsache: Schlüsselbund", "text": "Am Spielplatz gefunden, mit rotem Anhänger. Beim Kiosk abzuholen.", "by": "Kiosk"},
+		{"board": "kiosk", "cat": "kleinanzeige", "title": "Suche gebrauchten Walkman", "text": "Zahle fair, Zustand egal solange er läuft. Zettel abreißen.", "by": "Timo"},
+		{"board": "kiosk", "cat": "kleinanzeige", "title": "Verkaufe SNES + 3 Module", "text": "Super Mario, F-Zero, ein Prügelspiel. Alles zusammen 120 DM.", "by": "Andi", "year_from": 1993},
+		{"board": "kiosk", "cat": "kleinanzeige", "title": "Handy (C-Netz) abzugeben", "text": "Klotz, aber funktioniert. Brauche keins mehr. VB.", "by": "Herr Sö.", "year_from": 1997},
+
+		{"board": "musikladen", "cat": "party", "title": "Konzert im Jugendzentrum", "text": "Lokale Bands, Samstag 20 Uhr, Eintritt 3 DM. Ohren mitbringen.", "by": "JZ-Team"},
+		{"board": "musikladen", "cat": "gesuch", "title": "Band sucht BASSISTEN", "text": "Einflüsse: alles mit Krach und Herz. Proberaum vorhanden. Meldet euch an der Theke.", "by": "die Jungs"},
+		{"board": "musikladen", "cat": "kleinanzeige", "title": "Plattenspieler + 200 Singles", "text": "Sammlung löse ich auf. Komplett oder einzeln. Kommt vorbei.", "by": "Opa Werner"},
+		{"board": "musikladen", "cat": "info", "title": "CDs jetzt auch gebraucht", "text": "Ankauf & Verkauf an der Theke. Kratzer werden geprüft.", "by": "Laden", "year_from": 1993},
+		{"board": "musikladen", "cat": "gesuch", "title": "Suche MOD-Sammler zum Tauschen", "text": "Amiga-Module, gern seltenes Zeug. Klopf an, wenn du Ahnung hast.", "by": "BEATBOY", "year_from": 1991},
+
+		{"board": "internetcafe", "cat": "kurs", "title": "Das Internet für Einsteiger", "text": "Dienstags 18 Uhr, 10 DM inkl. eine Stunde am Terminal. Anmeldung am Tresen.", "by": "Café-Team", "year_from": 1998},
+		{"board": "internetcafe", "cat": "kurs", "title": "Workshop: eigene Homepage", "text": "HTML von Hand, Samstag nachmittag. Bring eine Diskette für deine Dateien mit.", "by": "DATAWOLF", "year_from": 1998},
+		{"board": "internetcafe", "cat": "info", "title": "Neue 33.6k-Modems", "text": "Terminal 3 bis 5 sind jetzt schneller. Ladet ruhig auch mal ein Bild.", "by": "Café-Team", "year_from": 1998},
+		{"board": "internetcafe", "cat": "party", "title": "IRC-Stammtisch", "text": "Donnerstags treffen wir uns hier UND im Kanal. Frag nach dem Servernamen.", "by": "die Regulars", "year_from": 1998},
+
+		{"board": "postamt", "cat": "amtlich", "title": "WICHTIG: Postleitzahlen werden 5-stellig", "text": "Ab dem 1. Juli 1993 gilt das neue Format. Alte 4-stellige PLZ bitte nicht mehr verwenden.", "by": "Deutsche Bundespost", "year_from": 1993, "year_to": 1994},
+		{"board": "postamt", "cat": "info", "title": "Neue Paketmarken erhältlich", "text": "Am Schalter. Bitte Sendungen ausreichend frankieren.", "by": "Postamt"},
+		{"board": "postamt", "cat": "kleinanzeige", "title": "Briefmarken-Sammlertreffen", "text": "Jeden 1. Sonntag im Monat, Nebenraum der Gaststätte. Tauschen erwünscht.", "by": "Philatelistenverein"},
+		{"board": "postamt", "cat": "amtlich", "title": "Feiertags-Öffnungszeiten", "text": "Über die Feiertage geänderte Zeiten. Aushang am Eingang beachten.", "by": "Postamt"},
+
+		{"board": "schoolyard", "cat": "kleinanzeige", "title": "Tausche Panini-Sticker", "text": "Doppelte hinter der Turnhalle. Ich suche noch die halbe Nationalmannschaft.", "by": "Basti"},
+		{"board": "schoolyard", "cat": "info", "title": "Klassenfahrt-Zettel abgeben!", "text": "Bis Freitag beim Klassenlehrer. Wer's vergisst, bleibt daheim.", "by": "SV"},
+		{"board": "schoolyard", "cat": "kleinanzeige", "title": "Wer hat Turrican durch?", "text": "Brauche einen Tipp für den Endgegner. Tausche gegen Kaugummi.", "by": "anonym"},
+		{"board": "schoolyard", "cat": "kleinanzeige", "title": "Mixtape-Tausch", "text": "Bring eine Leerkassette, ich nehm dir was Gutes auf. Kein Schlager.", "by": "Nina"},
+		{"board": "schoolyard", "cat": "info", "title": "Computer-AG gegründet", "text": "Mittwochs im Werkraum. Wir programmieren und zocken. Jeder darf.", "by": "AG-Leitung", "year_from": 1995}
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"schema": "coverdisk.v1",
+	"category": "coverdisk",
+	"note": "Master-Datenbank. Waechst nur durch Inhalt. Struktur spiegelt bei Bedarf das Software-Modell (A-Z).",
+	"entries": []
+}

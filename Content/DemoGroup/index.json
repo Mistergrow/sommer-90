@@ -1,0 +1,6 @@
+{
+	"schema": "demogroup.v1",
+	"category": "demogroup",
+	"note": "Master-Datenbank. Waechst nur durch Inhalt. Struktur spiegelt bei Bedarf das Software-Modell (A-Z).",
+	"entries": []
+}

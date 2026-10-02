@@ -1,0 +1,404 @@
+{
+  "schema": "sommer90.scene_presentations.v2",
+  "intro": [
+    {
+      "id": "summer90_cracktro",
+      "label": {"de": "SOMMER '90 INTRO", "en": "SUMMER '90 INTRO"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "NIGHTSHIFT CREW",
+        "release_id": "S90-001",
+        "release_status": {"de": "GEPRUEFT · ENTCRUNCHT · STARTKLAR", "en": "CHECKED · DECRUNCHED · READY"},
+        "authenticity": {"de": "FIKTIVE SZENEFASSUNG · EIGENER CODE", "en": "FICTIONAL SCENE EDITION · ORIGINAL CODE"},
+        "machine": "A500 · OCS · PAL · DF0: · 4CH",
+        "palette": "violet_cyan",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroll_speed": 96,
+        "bpm": 125,
+        "scroller": {
+          "de": "TRACK 00 IST GELADEN ... FREITAG, 6. JULI 1990 ... DIE SCHULTUER FAELLT INS SCHLOSS ... ZU HAUSE WARTEN EIN AMIGA, LEERE DISKETTEN UND EIN GANZER SOMMER ... NIGHTSHIFT CREW PRAESENTIERT ZEHN JAHRE FREUNDSCHAFT, CODE UND CHAOS ... GREETINGS AN ALLE CODER, TRACKER, PIXELKUENSTLER UND NACHTSCHWAERMER ... DISKETTEN ZURUECKGEBEN ... FIRE DRUECKEN ...",
+          "en": "TRACK 00 IS LOADED ... FRIDAY, 6 JULY 1990 ... THE SCHOOL DOOR FALLS SHUT ... AT HOME AN AMIGA, EMPTY DISKS AND A WHOLE SUMMER ARE WAITING ... NIGHTSHIFT CREW PRESENTS TEN YEARS OF FRIENDSHIP, CODE AND CHAOS ... GREETINGS TO EVERY CODER, TRACKER, PIXEL ARTIST AND NIGHT OWL ... RETURN BORROWED DISKS ... PRESS FIRE ..."
+        },
+        "parts": [
+          {
+            "name": "ONE FILE CRACKTRO",
+            "duration": 15.5,
+            "title": "SOMMER '90",
+            "group": {"de": "NIGHTSHIFT CREW PRAESENTIERT", "en": "NIGHTSHIFT CREW PRESENTS"},
+            "palette": "violet_cyan",
+            "transition": "fade",
+            "transition_duration": 0.9,
+            "transition_on_start": true,
+            "title_style": "cracktro",
+            "title_motion": "sine",
+            "title_size": 88,
+            "tagline": {"de": "TRAINED · FIXED · GEPACKT · 1990–1999", "en": "TRAINED · FIXED · CRUNCHED · 1990–1999"},
+            "layers": [
+              {"effect": "copperbars", "opacity": 0.31, "speed": 0.54, "intensity": 1.08},
+              {"effect": "starfield", "opacity": 0.92, "speed": 0.92, "intensity": 1.2},
+              {"effect": "vectorgrid", "opacity": 0.48, "speed": 0.48, "intensity": 0.82},
+              {"effect": "bobs", "opacity": 0.62, "speed": 0.78, "intensity": 0.9},
+              {"effect": "rasterbars", "opacity": 0.48, "speed": 0.72, "intensity": 0.78}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "summer90_copper_unit",
+      "label": {"de": "COPPER UNIT RELEASE", "en": "COPPER UNIT RELEASE"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "COPPER UNIT",
+        "release_id": "CU-0713",
+        "release_status": {"de": "TRACK 00 · SYNC OK · FIRE BEREIT", "en": "TRACK 00 · SYNC OK · FIRE READY"},
+        "authenticity": {"de": "FIKTIVE CREW · ORIGINALGRAFIK UND CODE", "en": "FICTIONAL CREW · ORIGINAL ART AND CODE"},
+        "machine": "A500 · OCS · PAL · COPPER · BLITTER",
+        "palette": "night_copper",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroll_speed": 88,
+        "bpm": 118,
+        "scroller": {
+          "de": "COPPER UNIT MELDET SICH AUS DEM KINDERZIMMER ... DER FERNSEHER IST BELEGT, DAS TELEFONKABEL ZU KURZ UND DIE ERSTE LEERDISK SCHON VOLL ... ALSO LICHT AUS, MONITOR AN UND DEN SOMMER SELBST PROGRAMMIEREN ... GRUESSE AN DIE FREUNDE IM CLUB, AM KIOSK UND AM WALDRAND ... WER DAS HIER LIEST, MUSS DIE NAECHSTE DISK MITBRINGEN ... FIRE ...",
+          "en": "COPPER UNIT REPORTING FROM THE BEDROOM ... THE TELEVISION IS TAKEN, THE PHONE CABLE IS TOO SHORT AND THE FIRST BLANK DISK IS ALREADY FULL ... SO LIGHTS OFF, MONITOR ON, AND CODE THE SUMMER YOURSELF ... GREETINGS TO FRIENDS AT THE CLUB, THE KIOSK AND THE EDGE OF THE WOODS ... IF YOU READ THIS, BRING THE NEXT DISK ... FIRE ..."
+        },
+        "parts": [
+          {
+            "name": "COPPER NIGHT",
+            "duration": 15.8,
+            "title": "SOMMER '90",
+            "group": {"de": "COPPER UNIT · EINE DISK · KEIN SCHLAF", "en": "COPPER UNIT · ONE DISK · NO SLEEP"},
+            "palette": "night_copper",
+            "transition": "curtain",
+            "transition_duration": 0.75,
+            "transition_on_start": true,
+            "title_style": "cracktro",
+            "title_motion": "bounce",
+            "title_size": 84,
+            "tagline": {"de": "COPPER IM TAKT · BLITTER AUF ANSCHLAG", "en": "COPPER IN SYNC · BLITTER AT FULL TILT"},
+            "layers": [
+              {"effect": "copperbars", "opacity": 0.72, "speed": 0.82, "intensity": 1.3},
+              {"effect": "rotozoomer", "opacity": 0.36, "speed": 0.58, "intensity": 0.9},
+              {"effect": "line_twister", "opacity": 0.62, "speed": 0.92, "intensity": 1.0},
+              {"effect": "starfield", "opacity": 0.7, "speed": 1.16, "intensity": 0.88},
+              {"effect": "rasterbars", "opacity": 0.58, "speed": 0.68, "intensity": 0.92}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "summer90_nightline_2400",
+      "label": {"de": "NIGHTLINE 2400", "en": "NIGHTLINE 2400"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "NIGHTLINE 2400",
+        "release_id": "NL-2400",
+        "release_status": {"de": "CARRIER · 2400 BAUD · DOWNLOAD FERTIG", "en": "CARRIER · 2400 BAUD · DOWNLOAD COMPLETE"},
+        "authenticity": {"de": "FIKTIVES MAILBOX-INTRO · EIGENER CODE", "en": "FICTIONAL BBS INTRO · ORIGINAL CODE"},
+        "machine": "A500 · OCS · PAL · MODEM · 4CH",
+        "palette": "green_terminal",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroll_speed": 82,
+        "bpm": 112,
+        "scroller": {
+          "de": "CONNECT 2400 ... WILLKOMMEN AUF NIGHTLINE ... EIN ANRUF, ZWEI KNOTEN, KEIN INTERNET UND JEDE DATEI HAT EINE GESCHICHTE ... NEUE NACHRICHT VON STEFAN: TREFFEN IM CLUB ... NEUE NACHRICHT VON ALEX: BRING LEERDISKS MIT ... SYSOP SAGT: FAIR BLEIBEN UND NACH DEM DOWNLOAD AUCH ETWAS HOCHLADEN ... LOGOFF IST SPAETER ... JETZT BEGINNT DER SOMMER ...",
+          "en": "CONNECT 2400 ... WELCOME TO NIGHTLINE ... ONE CALL, TWO NODES, NO INTERNET, AND EVERY FILE HAS A STORY ... NEW MESSAGE FROM STEFAN: MEET AT THE CLUB ... NEW MESSAGE FROM ALEX: BRING BLANK DISKS ... SYSOP SAYS: PLAY FAIR AND UPLOAD SOMETHING AFTER YOU DOWNLOAD ... LOGOFF CAN WAIT ... SUMMER STARTS NOW ..."
+        },
+        "parts": [
+          {
+            "name": "BBS LOGIN",
+            "duration": 16.2,
+            "title": "SOMMER '90",
+            "group": "NIGHTLINE 2400 · NODE 1/2",
+            "palette": "green_terminal",
+            "transition": "checker",
+            "transition_duration": 0.85,
+            "transition_on_start": true,
+            "title_style": "cracktro",
+            "title_motion": "static",
+            "title_size": 82,
+            "tagline": {"de": "CONNECT · SHARE · LOGOFF SPAETER", "en": "CONNECT · SHARE · LOG OFF LATER"},
+            "layers": [
+              {"effect": "moire_rings", "opacity": 0.64, "speed": 0.48, "intensity": 1.12},
+              {"effect": "vectorgrid", "opacity": 0.54, "speed": 0.44, "intensity": 0.86},
+              {"effect": "sine_scroller", "opacity": 0.42, "speed": 0.7, "intensity": 0.9},
+              {"effect": "starfield", "opacity": 0.48, "speed": 0.72, "intensity": 0.72},
+              {"effect": "rasterbars", "opacity": 0.34, "speed": 0.56, "intensity": 0.68}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "summer90_vector_kids",
+      "label": {"de": "VECTOR KIDS INTRO", "en": "VECTOR KIDS INTRO"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "VECTOR KIDS",
+        "release_id": "VK-1990",
+        "release_status": {"de": "VEKTOREN GELADEN · FRAME 0 · LOS", "en": "VECTORS LOADED · FRAME 0 · GO"},
+        "authenticity": {"de": "FIKTIVE SZENE-CREW · ORIGINALROUTINEN", "en": "FICTIONAL SCENE CREW · ORIGINAL ROUTINES"},
+        "machine": "A500 · OCS · PAL · 512K+ · 4CH",
+        "palette": "violet_ice",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroll_speed": 102,
+        "bpm": 132,
+        "scroller": {
+          "de": "VECTOR KIDS PRAESENTIEREN: DER KUERZESTE WEG VON DER SCHULE INS ALL ... EIN JOYSTICK, VIER KANALE UND MEHR IDEEN ALS CHIP-RAM ... WIR BAUEN SPIELE, TAUSCHEN MODULE UND DISKUTIEREN BIS DER MORGENBUS FAHRT ... GRUESSE AN ALLE, DIE AUS PUNKTEN WELTEN UND AUS RAUSCHEN MUSIK MACHEN ... DIE ZUKUNFT PASST NOCH AUF EINE DISK ... FIRE DRUECKEN UND LOS ...",
+          "en": "VECTOR KIDS PRESENT: THE SHORTEST ROUTE FROM SCHOOL TO OUTER SPACE ... ONE JOYSTICK, FOUR CHANNELS, AND MORE IDEAS THAN CHIP RAM ... WE BUILD GAMES, TRADE MODULES, AND ARGUE UNTIL THE MORNING BUS ARRIVES ... GREETINGS TO EVERYONE WHO TURNS DOTS INTO WORLDS AND NOISE INTO MUSIC ... THE FUTURE STILL FITS ON ONE DISK ... PRESS FIRE AND GO ..."
+        },
+        "parts": [
+          {
+            "name": "VECTOR FLIGHT",
+            "duration": 15.4,
+            "title": "SOMMER '90",
+            "group": {"de": "VECTOR KIDS · DIREKT AUS DEM CHIP-RAM", "en": "VECTOR KIDS · STRAIGHT FROM CHIP RAM"},
+            "palette": "violet_ice",
+            "transition": "wipe_left",
+            "transition_duration": 0.78,
+            "transition_on_start": true,
+            "title_style": "cracktro",
+            "title_motion": "orbit",
+            "title_size": 86,
+            "tagline": {"de": "PUNKTE WERDEN WELTEN", "en": "DOTS BECOME WORLDS"},
+            "layers": [
+              {"effect": "tunnel", "opacity": 0.72, "speed": 0.96, "intensity": 1.18},
+              {"effect": "vectorgrid", "opacity": 0.74, "speed": 0.7, "intensity": 1.12},
+              {"effect": "shadebobs", "opacity": 0.48, "speed": 1.04, "intensity": 0.82},
+              {"effect": "starfield", "opacity": 0.84, "speed": 1.34, "intensity": 1.0},
+              {"effect": "rasterbars", "opacity": 0.36, "speed": 0.76, "intensity": 0.74}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "summer90_side_zero",
+      "label": {"de": "SIDE ZERO INTRO", "en": "SIDE ZERO INTRO"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "SIDE ZERO",
+        "release_id": "SZ-0000",
+        "release_status": {"de": "DF0: BEREIT · SIDE 0 · KEINE FEHLER", "en": "DF0: READY · SIDE 0 · NO ERRORS"},
+        "authenticity": {"de": "FIKTIVES DISK-INTRO · EIGENE ASSETS", "en": "FICTIONAL DISK INTRO · ORIGINAL ASSETS"},
+        "machine": "A500 · OCS · PAL · DF0: · BLITTER",
+        "palette": "acid_sunset",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroll_speed": 92,
+        "bpm": 125,
+        "scroller": {
+          "de": "SIDE ZERO HAT DIE DISK GEDREHT ... AUF SEITE A: SPIELE, MODULE UND VIEL ZU WENIG FREIER SPEICHER ... AUF SEITE B: FREUNDE, FLOHMARKT UND DIE FRAGE, OB DAS ETIKETT WIRKLICH TROCKEN IST ... KEIN HANDBUCH VERRAET DIR, WAS DIESER SOMMER BRINGT ... ABER WIR HABEN EIN BACKUP GEMACHT ... WILLKOMMEN IM JAHR 1990 ... FIRE ...",
+          "en": "SIDE ZERO TURNED THE DISK ... ON SIDE A: GAMES, MODULES, AND FAR TOO LITTLE FREE MEMORY ... ON SIDE B: FRIENDS, THE FLEA MARKET, AND THE QUESTION WHETHER THE LABEL IS REALLY DRY ... NO MANUAL CAN TELL YOU WHAT THIS SUMMER WILL BRING ... BUT WE MADE A BACKUP ... WELCOME TO 1990 ... FIRE ..."
+        },
+        "parts": [
+          {
+            "name": "SIDE ZERO",
+            "duration": 15.9,
+            "title": "SOMMER '90",
+            "group": {"de": "SIDE ZERO · BITTE NICHT UEBERSCHREIBEN", "en": "SIDE ZERO · DO NOT OVERWRITE"},
+            "palette": "acid_sunset",
+            "transition": "dissolve",
+            "transition_duration": 0.82,
+            "transition_on_start": true,
+            "title_style": "cracktro",
+            "title_motion": "sine",
+            "title_size": 90,
+            "tagline": {"de": "SIDE A · SIDE B · DEINE GESCHICHTE", "en": "SIDE A · SIDE B · YOUR STORY"},
+            "layers": [
+              {"effect": "rotozoomer", "opacity": 0.54, "speed": 0.74, "intensity": 1.04},
+              {"effect": "copperbars", "opacity": 0.42, "speed": 0.62, "intensity": 0.88},
+              {"effect": "bobs", "opacity": 0.72, "speed": 0.94, "intensity": 1.08},
+              {"effect": "line_twister", "opacity": 0.58, "speed": 0.82, "intensity": 0.92},
+              {"effect": "starfield", "opacity": 0.56, "speed": 1.06, "intensity": 0.8}
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "demo_finale": [
+    {
+      "id": "demo_year_zero",
+      "label": {"de": "JAHR-NULL-FINALE", "en": "YEAR ZERO FINALE"},
+      "project": {
+        "title": "1990 COMPLETE",
+        "group": "SOMMER '90 DEMO",
+        "palette": "night_copper",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroller": {
+          "de": "DU HAST DEN ERSTEN SOMMER GESCHAFFT ... DEINE DISKETTEN DEINE FREUNDE DEINE GESCHICHTE ... NEUN SOMMER WARTEN IN DER VOLLVERSION ...",
+          "en": "YOU COMPLETED THE FIRST SUMMER ... YOUR DISKS YOUR FRIENDS YOUR STORY ... NINE MORE SUMMERS AWAIT IN THE FULL VERSION ..."
+        },
+        "parts": [
+          {
+            "name": "YEAR COMPLETE", "duration": 4.4,
+            "title": "1990 COMPLETE", "group": "ONE SUMMER ON DISK",
+            "palette": "night_copper", "transition": "checker", "transition_on_start": true,
+            "title_motion": "bounce",
+            "layers": [
+              {"effect": "copperbars", "intensity": 1.28, "speed": 0.9},
+              {"effect": "starfield", "opacity": 0.72, "speed": 1.25},
+              {"effect": "vectorgrid", "opacity": 0.62, "speed": 0.72}
+            ]
+          },
+          {
+            "name": "NINE SUMMERS", "duration": 4.6,
+            "title": {"de": "NEUN SOMMER WARTEN", "en": "NINE SUMMERS AWAIT"},
+            "group": "1991 > 1999", "palette": "violet_ice", "transition": "wipe_left",
+            "title_motion": "sine",
+            "layers": [
+              {"effect": "tunnel", "intensity": 1.22, "speed": 1.05},
+              {"effect": "shadebobs", "opacity": 0.78, "speed": 1.2},
+              {"effect": "rasterbars", "opacity": 0.52}
+            ]
+          },
+          {
+            "name": "FULL VERSION", "duration": 4.8,
+            "title": {"de": "DIE GESCHICHTE GEHT WEITER", "en": "THE STORY CONTINUES"},
+            "group": "SOMMER '90", "palette": "acid_sunset", "transition": "curtain",
+            "title_motion": "orbit",
+            "layers": [
+              {"effect": "plasma", "intensity": 1.2, "speed": 0.82},
+              {"effect": "bobs", "opacity": 0.82, "speed": 1.18},
+              {"effect": "line_twister", "opacity": 0.66}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "demo_disk_future",
+      "label": {"de": "DISKETTE DER ZUKUNFT", "en": "DISK OF THE FUTURE"},
+      "project": {
+        "title": "SIDE A COMPLETE",
+        "group": "NIGHTSHIFT",
+        "palette": "green_terminal",
+        "loop": false,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroller": {
+          "de": "SIDE A COMPLETE ... BITTE DISKETTE WENDEN ... SIDE B ENTHAELT 1991 BIS 1999 ... DIE VOLLVERSION SETZT DEIN ABENTEUER FORT ...",
+          "en": "SIDE A COMPLETE ... PLEASE TURN THE DISK ... SIDE B CONTAINS 1991 TO 1999 ... THE FULL VERSION CONTINUES YOUR ADVENTURE ..."
+        },
+        "parts": [
+          {
+            "name": "SIDE A", "duration": 4.3,
+            "title": "SIDE A COMPLETE", "group": "SUMMER 1990 SAVED",
+            "palette": "green_terminal", "transition": "dissolve", "transition_on_start": true,
+            "title_motion": "static",
+            "layers": [
+              {"effect": "moire_rings", "intensity": 1.16, "speed": 0.68},
+              {"effect": "rasterbars", "opacity": 0.6},
+              {"effect": "starfield", "opacity": 0.44, "speed": 0.9}
+            ]
+          },
+          {
+            "name": "TURN DISK", "duration": 4.7,
+            "title": {"de": "DISKETTE WENDEN", "en": "TURN THE DISK"},
+            "group": "SIDE B · 1991–1999", "palette": "steel_red", "transition": "checker",
+            "title_motion": "bounce",
+            "layers": [
+              {"effect": "rotozoomer", "intensity": 1.18, "speed": 0.86},
+              {"effect": "copperbars", "opacity": 0.7},
+              {"effect": "sine_scroller", "opacity": 0.56}
+            ]
+          },
+          {
+            "name": "CONTINUE", "duration": 4.8,
+            "title": {"de": "HOL DIR DIE VOLLVERSION", "en": "GET THE FULL VERSION"},
+            "group": "KEEP THE SCENE ALIVE", "palette": "violet_cyan", "transition": "fade",
+            "title_motion": "sine",
+            "layers": [
+              {"effect": "plasma", "intensity": 1.22, "speed": 0.78},
+              {"effect": "shadebobs", "opacity": 0.76},
+              {"effect": "vectorgrid", "opacity": 0.58, "speed": 0.9}
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "credits": [
+    {
+      "id": "credits_vector_archive",
+      "label": {"de": "VEKTOR-ARCHIV", "en": "VECTOR ARCHIVE"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "PRODUCTION CREDITS",
+        "palette": "steel_blue",
+        "loop": true,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroller": {"de": "DANKE FUERS SPIELEN ... KEEP THE CREDITS INTACT ...", "en": "THANK YOU FOR PLAYING ... KEEP THE CREDITS INTACT ..."},
+        "parts": [
+          {"duration": 12.0, "title": "SOMMER '90", "group": "A PLAYABLE MEMORY", "palette": "steel_blue", "layers": [{"effect": "vectorgrid", "opacity": 0.72}, {"effect": "starfield", "opacity": 0.8}], "transition": "fade"},
+          {"duration": 12.0, "title": "1990 - 1999", "group": "TEN SUMMERS", "palette": "violet_cyan", "layers": [{"effect": "line_twister", "opacity": 0.72}, {"effect": "bobs", "opacity": 0.64}], "transition": "curtain"}
+        ]
+      }
+    },
+    {
+      "id": "credits_copper_roll",
+      "label": {"de": "COPPER-ROLLE", "en": "COPPER ROLL"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "BLOCKCHAIN RECORDS",
+        "palette": "night_copper",
+        "loop": true,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroller": {"de": "CODE ... PIXEL ... MUSIK ... TEST ... DANKE AN DIE AMIGA BBS UND DEMOSZENE ...", "en": "CODE ... PIXELS ... MUSIC ... TEST ... THANKS TO THE AMIGA BBS AND DEMOSCENE ..."},
+        "parts": [
+          {"duration": 11.0, "title": "PRODUCTION", "group": "MISTER FLOPPY", "palette": "night_copper", "layers": [{"effect": "copperbars", "intensity": 1.22}, {"effect": "rasterbars", "opacity": 0.58}], "transition": "dissolve"},
+          {"duration": 13.0, "title": "SPECIAL THANKS", "group": "KEEP THE CREDITS INTACT", "palette": "sunset_disk", "layers": [{"effect": "sine_scroller", "opacity": 0.62}, {"effect": "starfield", "opacity": 0.66}], "transition": "checker"}
+        ]
+      }
+    },
+    {
+      "id": "credits_aga_moire",
+      "label": {"de": "AGA-MOIRE", "en": "AGA MOIRE"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "AGA FAREWELL",
+        "palette": "violet_ice",
+        "loop": true,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroller": {"de": "DIE DISKETTE DREHT SICH WEITER ... WIR SEHEN UNS IM NAECHSTEN SOMMER ...", "en": "THE DISK KEEPS SPINNING ... SEE YOU NEXT SUMMER ..."},
+        "parts": [
+          {"duration": 12.0, "title": "CREATIVE CREW", "group": "BLOCKCHAIN RECORDS", "palette": "violet_ice", "layers": [{"effect": "moire_rings", "intensity": 1.18}, {"effect": "shadebobs", "opacity": 0.64}], "transition": "fade"},
+          {"duration": 12.0, "title": "THANK YOU", "group": "FOR PLAYING", "palette": "acid_sunset", "layers": [{"effect": "rotozoomer", "opacity": 0.7}, {"effect": "plasma", "opacity": 0.38}], "transition": "wipe"}
+        ]
+      }
+    },
+    {
+      "id": "credits_terminal_night",
+      "label": {"de": "TERMINAL-NACHT", "en": "TERMINAL NIGHT"},
+      "project": {
+        "title": "SOMMER '90",
+        "group": "FINAL CONNECTION",
+        "palette": "green_terminal",
+        "loop": true,
+        "studio_hud": false,
+        "reduced_flash": true,
+        "scroller": {"de": "NO CARRIER ... ABER DIE ERINNERUNG BLEIBT ... DANKE FUERS SPIELEN ...", "en": "NO CARRIER ... BUT THE MEMORY REMAINS ... THANK YOU FOR PLAYING ..."},
+        "parts": [
+          {"duration": 11.0, "title": "CREDITS ONLINE", "group": "2400 BAUD", "palette": "green_terminal", "layers": [{"effect": "moire_rings", "opacity": 0.72}, {"effect": "rasterbars", "opacity": 0.48}], "transition": "dissolve"},
+          {"duration": 13.0, "title": "NO CARRIER", "group": "SEE YOU AGAIN", "palette": "steel_red", "layers": [{"effect": "tunnel", "opacity": 0.74}, {"effect": "line_twister", "opacity": 0.58}], "transition": "curtain"}
+        ]
+      }
+    }
+  ]
+}

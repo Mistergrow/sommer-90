@@ -1,0 +1,105 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_habel",
+	"dialogues": {
+		"habel_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Frau Habel",
+					"text": "Postamt, Schalter drei. Wenn Sie etwas bestellt haben, kommt es hierher. Bitte den Abholschein bereithalten.",
+					"choices": [
+						{
+							"text": "Masterdisk, Archivnachweis und Etikett sind fertig.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_habel_masterdisk",
+									"stage": 2
+								}
+							},
+							"next": "n_handoff",
+							"id": "reply_0"
+						},
+						{
+							"text": "Wie verschickt man eine wichtige Masterdisk sicher?",
+							"cond": [
+								{
+									"year_min": 1995
+								},
+								{
+									"not_flag": "habel_masterdisk_intro"
+								}
+							],
+							"next": "n_quest_intro",
+							"id": "reply_1"
+						},
+						{
+							"text": "Ist ein Paket für mich da?",
+							"next": "n2",
+							"id": "reply_2"
+						},
+						{
+							"text": "Danke, alles klar.",
+							"next": null,
+							"id": "reply_3"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_quest_intro": {
+					"speaker": "Frau Habel",
+					"text": "Nicht mit einem Filzstift und Hoffnung. Eine ausgewählte Masterdisk, eine geprüfte Archivkopie und ein Etikett mit Version und Rückadresse. Eine Disk genügt — ich verlange nicht Ihre ganze Sammlung.",
+					"choices": [
+						{
+							"text": "Ich sichere genau eine Masterdisk und komme wieder.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "habel_masterdisk_intro",
+									"value": true
+								},
+								{
+									"type": "memory_once",
+									"id": "habel_masterdisk_started"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				},
+				"n_handoff": {
+					"speaker": "Frau Habel",
+					"text": "Version, Absender und Archivnachweis stimmen. Ich versiegle die Sendung gegen Feuchtigkeit und Stöße. Hier ist Ihr Einlieferungsbeleg — den heben Sie besser auf als manche Diskette.",
+					"choices": [
+						{
+							"text": "Beleg eingesteckt. Die Sendung kann auf Reisen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "habel_masterdisk_handoff"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Frau Habel",
+					"text": "Moment... nein, heute nichts. Bestellungen brauchen ihre Zeit, junger Mann. Geduld ist auch eine Tugend.",
+					"choices": [
+						{
+							"text": "Ich komme wieder.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		}
+	}
+}

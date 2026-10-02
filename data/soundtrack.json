@@ -1,0 +1,903 @@
+{
+  "schema": 1,
+  "generator": "tools/build_original_soundtrack.py",
+  "provenance": "res://assets/audio/soundtrack/PROVENANCE.txt",
+  "tracks": [
+    {
+      "id": "sommerfenster",
+      "title": "Sommerfenster",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/sommerfenster.mod",
+      "origin": "project-generated",
+      "bpm": 116,
+      "channels": 4,
+      "duration_seconds": 132.41,
+      "era": [
+        1989,
+        1994
+      ],
+      "mood": "pop",
+      "sha256": "940b5594df4592d644cd36e4be51869b2ed0786e2228b01bb3ebcd3d9ccb4246"
+    },
+    {
+      "id": "diskettenpost",
+      "title": "Diskettenpost",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/diskettenpost.mod",
+      "origin": "project-generated",
+      "bpm": 128,
+      "channels": 4,
+      "duration_seconds": 120.0,
+      "era": [
+        1991,
+        1997
+      ],
+      "mood": "break",
+      "sha256": "90e1c705414769b2a779aca1230e11a6e4b4ff4ff541a2e160b4c7438a998de3"
+    },
+    {
+      "id": "kioskkassette",
+      "title": "Kioskkassette",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/kioskkassette.mod",
+      "origin": "project-generated",
+      "bpm": 108,
+      "channels": 4,
+      "duration_seconds": 142.22,
+      "era": [
+        1989,
+        1994
+      ],
+      "mood": "funk",
+      "sha256": "76cb7e515c02629b645be83ad2509e99fac4642590c6f93def868471af90e1a5"
+    },
+    {
+      "id": "nachtschicht",
+      "title": "Nachtschicht",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/nachtschicht.mod",
+      "origin": "project-generated",
+      "bpm": 96,
+      "channels": 4,
+      "duration_seconds": 160.0,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "slow",
+      "sha256": "2037993f2c85ac60401fa2f508ef05dbb7c0c94bc2596e58d25620a582d36201"
+    },
+    {
+      "id": "kupferdraht",
+      "title": "Kupferdraht",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/kupferdraht.mod",
+      "origin": "project-generated",
+      "bpm": 134,
+      "channels": 4,
+      "duration_seconds": 114.63,
+      "era": [
+        1991,
+        1997
+      ],
+      "mood": "electro",
+      "sha256": "3a66b851e05c0e2a9cc29ba5dc372fdc399ae0170118d9af7a23453334243ba1"
+    },
+    {
+      "id": "freibadlicht",
+      "title": "Freibadlicht",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/freibadlicht.mod",
+      "origin": "project-generated",
+      "bpm": 120,
+      "channels": 4,
+      "duration_seconds": 128.0,
+      "era": [
+        1989,
+        1994
+      ],
+      "mood": "pop",
+      "sha256": "19d88c712c2281a8e001fbd28fe5871c3e1696d4fd5bb91d1bbe66986ea1c050"
+    },
+    {
+      "id": "bernsteinbus",
+      "title": "Bernsteinbus",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/bernsteinbus.mod",
+      "origin": "project-generated",
+      "bpm": 104,
+      "channels": 4,
+      "duration_seconds": 147.69,
+      "era": [
+        1989,
+        1994
+      ],
+      "mood": "funk",
+      "sha256": "dfcda0e65bea2053c3d9b7157dc34f0057bf9ef9d8d690a960903610f347149f"
+    },
+    {
+      "id": "pixelpromenade",
+      "title": "Pixelpromenade",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/pixelpromenade.mod",
+      "origin": "project-generated",
+      "bpm": 142,
+      "channels": 4,
+      "duration_seconds": 108.17,
+      "era": [
+        1991,
+        1997
+      ],
+      "mood": "electro",
+      "sha256": "eebaa2e40feef026ffd32775a7216d00edbbdd503fe1ca5a25782d5d9720d19e"
+    },
+    {
+      "id": "regenleitung",
+      "title": "Regenleitung",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/regenleitung.mod",
+      "origin": "project-generated",
+      "bpm": 88,
+      "channels": 4,
+      "duration_seconds": 174.55,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "slow",
+      "sha256": "19702df8ee1bd86ac86a996e8ea4ba7e3b87b478505fb41d73864af082df290b"
+    },
+    {
+      "id": "hofpausen",
+      "title": "Hofpausen",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/hofpausen.mod",
+      "origin": "project-generated",
+      "bpm": 112,
+      "channels": 4,
+      "duration_seconds": 137.14,
+      "era": [
+        1991,
+        1997
+      ],
+      "mood": "break",
+      "sha256": "f8901d1e0b6194bde257c9d3d38a700ce5f442de37a316d0806aa1e62b0c009b"
+    },
+    {
+      "id": "spulenwind",
+      "title": "Spulenwind",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/spulenwind.mod",
+      "origin": "project-generated",
+      "bpm": 124,
+      "channels": 4,
+      "duration_seconds": 123.87,
+      "era": [
+        1989,
+        1994
+      ],
+      "mood": "funk",
+      "sha256": "2e1bb89ff0cab56749b2145ebb069de513964a1e4d204e0b2cbe1e166a0fa5c9"
+    },
+    {
+      "id": "morgenport",
+      "title": "Morgenport",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/morgenport.mod",
+      "origin": "project-generated",
+      "bpm": 100,
+      "channels": 4,
+      "duration_seconds": 153.6,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "slow",
+      "sha256": "9cef105e329cddacca86ce426aad338c6f3e643ed193e1364d916a4d7bf080e3"
+    },
+    {
+      "id": "bolzplatzhelden",
+      "title": "Bolzplatzhelden",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/bolzplatzhelden.mod",
+      "origin": "project-generated",
+      "bpm": 132,
+      "channels": 4,
+      "duration_seconds": 87.27,
+      "era": [
+        1989,
+        1991
+      ],
+      "mood": "upbeat",
+      "sha256": "5d45feeeff3cf8ef1e5d804bd15f2cc6ab82dc13fd80d15ac858c7820e50f1a6"
+    },
+    {
+      "id": "kellerkinder",
+      "title": "Kellerkinder",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/kellerkinder.mod",
+      "origin": "project-generated",
+      "bpm": 118,
+      "channels": 4,
+      "duration_seconds": 97.63,
+      "era": [
+        1989,
+        1991
+      ],
+      "mood": "demo",
+      "sha256": "5b8be7090bae62f79fb06b5646aa3e3aff16dbdec569f15e28f4cc93977c2b4c"
+    },
+    {
+      "id": "joystickfieber",
+      "title": "Joystickfieber",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/joystickfieber.mod",
+      "origin": "project-generated",
+      "bpm": 148,
+      "channels": 4,
+      "duration_seconds": 77.84,
+      "era": [
+        1989,
+        1992
+      ],
+      "mood": "action",
+      "sha256": "e8149de0ee5f0b8f77911b75ae556f1e84b248f0ac48815e004b062a261c3f17"
+    },
+    {
+      "id": "taschengeld",
+      "title": "Taschengeld",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/taschengeld.mod",
+      "origin": "project-generated",
+      "bpm": 104,
+      "channels": 4,
+      "duration_seconds": 110.77,
+      "era": [
+        1989,
+        1992
+      ],
+      "mood": "jazzy",
+      "sha256": "6b866a21ba5cb8a70959684a22748026ea23d6571e195f1c91fd25d78c3c0151"
+    },
+    {
+      "id": "kassettendeck",
+      "title": "Kassettendeck",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/kassettendeck.mod",
+      "origin": "project-generated",
+      "bpm": 110,
+      "channels": 4,
+      "duration_seconds": 104.73,
+      "era": [
+        1989,
+        1991
+      ],
+      "mood": "funk",
+      "sha256": "c23060ec1a861305537294aaa7b05b1ca1dfc3eadb27b3be74920927bd6b5d9c"
+    },
+    {
+      "id": "schulbusblues",
+      "title": "Schulbusblues",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/schulbusblues.mod",
+      "origin": "project-generated",
+      "bpm": 100,
+      "channels": 4,
+      "duration_seconds": 115.2,
+      "era": [
+        1989,
+        1993
+      ],
+      "mood": "blues",
+      "sha256": "903a903b1449c6d6d752d85a1f5ec75705f5a6d0084c432ec9ab782b7903400b"
+    },
+    {
+      "id": "waehlscheibe",
+      "title": "Wählscheibe",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/waehlscheibe.mod",
+      "origin": "project-generated",
+      "bpm": 96,
+      "channels": 4,
+      "duration_seconds": 100.0,
+      "era": [
+        1989,
+        1993
+      ],
+      "mood": "mystery",
+      "sha256": "05bad7e15fc26eef09a3164baf2e9f594ee041937e25100498f3e97abac472a3"
+    },
+    {
+      "id": "lagerhallenrave",
+      "title": "Lagerhallenrave",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/lagerhallenrave.mod",
+      "origin": "project-generated",
+      "bpm": 138,
+      "channels": 4,
+      "duration_seconds": 111.3,
+      "era": [
+        1992,
+        1993
+      ],
+      "mood": "rave",
+      "sha256": "a5a19c5a01204064e83aabda7a5630f89e980015122e1b582ae06ebc683c5196"
+    },
+    {
+      "id": "saeurebad",
+      "title": "Säurebad",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/saeurebad.mod",
+      "origin": "project-generated",
+      "bpm": 128,
+      "channels": 4,
+      "duration_seconds": 120.0,
+      "era": [
+        1992,
+        1994
+      ],
+      "mood": "acid",
+      "sha256": "a32deeb0ea08db28450112d6a021cfe9874c80f756987a5abb9556a5aebf735d"
+    },
+    {
+      "id": "pausenhofbreak",
+      "title": "Pausenhofbreak",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/pausenhofbreak.mod",
+      "origin": "project-generated",
+      "bpm": 150,
+      "channels": 4,
+      "duration_seconds": 102.4,
+      "era": [
+        1992,
+        1994
+      ],
+      "mood": "hardcore",
+      "sha256": "a974bd5275467a09b45468953ab6f15a683eb2622c9f1716ee744be5624b5303"
+    },
+    {
+      "id": "neonnebel",
+      "title": "Neonnebel",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/neonnebel.mod",
+      "origin": "project-generated",
+      "bpm": 122,
+      "channels": 4,
+      "duration_seconds": 125.9,
+      "era": [
+        1992,
+        1994
+      ],
+      "mood": "house",
+      "sha256": "c08090e97ca387062115e50168329991cf9769b965cb350b09b03234336161ad"
+    },
+    {
+      "id": "discoblitz",
+      "title": "Discoblitz",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/discoblitz.mod",
+      "origin": "project-generated",
+      "bpm": 140,
+      "channels": 4,
+      "duration_seconds": 109.71,
+      "era": [
+        1993,
+        1995
+      ],
+      "mood": "eurodance",
+      "sha256": "627bd20c4313602eb1ef8c80704550293ae0b8c1dd59bca364da1d7135a08997"
+    },
+    {
+      "id": "dschungelfunk",
+      "title": "Dschungelfunk",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/dschungelfunk.mod",
+      "origin": "project-generated",
+      "bpm": 170,
+      "channels": 4,
+      "duration_seconds": 90.35,
+      "era": [
+        1994,
+        1996
+      ],
+      "mood": "jungle",
+      "sha256": "a9a8c6cca21fc1bcc73dd3e5427165404e4038ffe5dff5cff20d8913d147d005"
+    },
+    {
+      "id": "modemrauschen",
+      "title": "Modemrauschen",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/modemrauschen.mod",
+      "origin": "project-generated",
+      "bpm": 132,
+      "channels": 4,
+      "duration_seconds": 116.36,
+      "era": [
+        1993,
+        1995
+      ],
+      "mood": "techno",
+      "sha256": "e1ead4cea3228864d2eaa7ba5d0c068d8ad7f7b51733e9532b6859937b965f02"
+    },
+    {
+      "id": "freibadsprung",
+      "title": "Freibadsprung",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/freibadsprung.mod",
+      "origin": "project-generated",
+      "bpm": 124,
+      "channels": 4,
+      "duration_seconds": 123.87,
+      "era": [
+        1993,
+        1995
+      ],
+      "mood": "happy",
+      "sha256": "e721933292687b0650d97e918eff11a9e813112a84e9db900c0ce35bbcc9e1bc"
+    },
+    {
+      "id": "mondscheinmodem",
+      "title": "Mondscheinmodem",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/mondscheinmodem.mod",
+      "origin": "project-generated",
+      "bpm": 138,
+      "channels": 4,
+      "duration_seconds": 111.3,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "trance",
+      "sha256": "f5aca832db94659a07b3a4cf1620234c5dd8a43f7abde7a4fc8cf2a2afc0d6cb"
+    },
+    {
+      "id": "regenschirmgroove",
+      "title": "Regenschirmgroove",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/regenschirmgroove.mod",
+      "origin": "project-generated",
+      "bpm": 88,
+      "channels": 4,
+      "duration_seconds": 109.09,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "triphop",
+      "sha256": "138a842f9b473bbcfa7d57a5122566dc463ea348f247f04cbff1fcbb358055d7"
+    },
+    {
+      "id": "blechdosenbeat",
+      "title": "Blechdosenbeat",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/blechdosenbeat.mod",
+      "origin": "project-generated",
+      "bpm": 112,
+      "channels": 4,
+      "duration_seconds": 102.86,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "bigbeat",
+      "sha256": "e0b1ab7594eb720d70d18ce13e3f6a4e666c2321b7871afbaa4270beb2c048af"
+    },
+    {
+      "id": "sternwarte",
+      "title": "Sternwarte",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/sternwarte.mod",
+      "origin": "project-generated",
+      "bpm": 110,
+      "channels": 4,
+      "duration_seconds": 87.27,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "ambient",
+      "sha256": "ecd57f5c2f3a62e2d30af0b532d96d4db5ab8a96153451e229a24259b5028924"
+    },
+    {
+      "id": "zweitaktzirkus",
+      "title": "Zweitaktzirkus",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/zweitaktzirkus.mod",
+      "origin": "project-generated",
+      "bpm": 132,
+      "channels": 4,
+      "duration_seconds": 116.36,
+      "era": [
+        1996,
+        1997
+      ],
+      "mood": "garage",
+      "sha256": "a1d5810d78f3d82523011f9434fa61647911446b5b760b72f6b8cf15ed21ef93"
+    },
+    {
+      "id": "jahrtausendwende",
+      "title": "Jahrtausendwende",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/jahrtausendwende.mod",
+      "origin": "project-generated",
+      "bpm": 136,
+      "channels": 4,
+      "duration_seconds": 112.94,
+      "era": [
+        1996,
+        1997
+      ],
+      "mood": "anthem",
+      "sha256": "6f7f535cd1d75a07e8ff091b11de4dbd94db4a480f913977cea33fd2053355f9"
+    },
+    {
+      "id": "fluessigkristall",
+      "title": "Flüssigkristall",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/fluessigkristall.mod",
+      "origin": "project-generated",
+      "bpm": 172,
+      "channels": 4,
+      "duration_seconds": 89.3,
+      "era": [
+        1996,
+        1997
+      ],
+      "mood": "liquid",
+      "sha256": "14edfabf3e055e3ada2b887677a26837e184cbac1f94a4a7225e1359cda73867"
+    },
+    {
+      "id": "sonntagsstille",
+      "title": "Sonntagsstille",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/sonntagsstille.mod",
+      "origin": "project-generated",
+      "bpm": 84,
+      "channels": 4,
+      "duration_seconds": 114.29,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "calm",
+      "sha256": "44efe14d2e611bb9188b07c435c38cb1bb3ccf024d08f4e39525477f2c3ef8fa"
+    },
+    {
+      "id": "letztediskette",
+      "title": "Letzte Diskette",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/letztediskette.mod",
+      "origin": "project-generated",
+      "bpm": 92,
+      "channels": 4,
+      "duration_seconds": 104.35,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "melancholy",
+      "sha256": "30067c9241a0e964362f8fbaa720c5a23264c83ff63c363f8b9d7fc0e0c12d2b"
+    },
+    {
+      "id": "hafenlichter",
+      "title": "Hafenlichter",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/hafenlichter.mod",
+      "origin": "project-generated",
+      "bpm": 138,
+      "channels": 8,
+      "duration_seconds": 180.87,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "uplifting trance",
+      "sha256": "bbc9b8b42c49aab4b28cedc7b20b6aaa198f24fd0db2e862f555c37f11bf3e91"
+    },
+    {
+      "id": "turbokassette",
+      "title": "Turbokassette",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/turbokassette.mod",
+      "origin": "project-generated",
+      "bpm": 150,
+      "channels": 4,
+      "duration_seconds": 128.0,
+      "era": [
+        1989,
+        1991
+      ],
+      "mood": "heroic game theme",
+      "sha256": "997ac972afa31a03e62e98f2e23186dfc0b6054264f37c9d2a92594493f6ac1c"
+    },
+    {
+      "id": "diskettenfieber",
+      "title": "Diskettenfieber",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/diskettenfieber.mod",
+      "origin": "project-generated",
+      "bpm": 128,
+      "channels": 4,
+      "duration_seconds": 135.0,
+      "era": [
+        1989,
+        1991
+      ],
+      "mood": "demoscene intro",
+      "sha256": "7cb55fcde891e4ceb1089317c155aeb64156246952a3ca9c9dcb3a651dac0ece"
+    },
+    {
+      "id": "endgegner",
+      "title": "Endgegner",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/endgegner.mod",
+      "origin": "project-generated",
+      "bpm": 164,
+      "channels": 4,
+      "duration_seconds": 99.51,
+      "era": [
+        1989,
+        1992
+      ],
+      "mood": "boss battle",
+      "sha256": "bca11d1599a0899e05fb90d2be390f92e2ef6ea0012884283b474a55abcc6e94"
+    },
+    {
+      "id": "feierabendmodem",
+      "title": "Feierabendmodem",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/feierabendmodem.mod",
+      "origin": "project-generated",
+      "bpm": 104,
+      "channels": 6,
+      "duration_seconds": 158.27,
+      "era": [
+        1990,
+        1993
+      ],
+      "mood": "jazz funk",
+      "sha256": "b20b68317ce37cc0544c9cf3af11dc3cf202f9fe3fd62236a8140b24f9f9c367"
+    },
+    {
+      "id": "sommergewitter",
+      "title": "Sommergewitter",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/sommergewitter.mod",
+      "origin": "project-generated",
+      "bpm": 132,
+      "channels": 6,
+      "duration_seconds": 138.18,
+      "era": [
+        1990,
+        1993
+      ],
+      "mood": "storm level",
+      "sha256": "0791411dca7cab4fa0b9c0ab25e38127ad2c2edd1961d7cf4263cad6c49196ac"
+    },
+    {
+      "id": "laserlicht",
+      "title": "Laserlicht",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/laserlicht.mod",
+      "origin": "project-generated",
+      "bpm": 136,
+      "channels": 8,
+      "duration_seconds": 183.53,
+      "era": [
+        1992,
+        1993
+      ],
+      "mood": "rave anthem",
+      "sha256": "11634a1a3d13b9b83f53a887a56d14f5e87d7bbbf5111272b1b99319e736796a"
+    },
+    {
+      "id": "nebelmaschine",
+      "title": "Nebelmaschine",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/nebelmaschine.mod",
+      "origin": "project-generated",
+      "bpm": 124,
+      "channels": 8,
+      "duration_seconds": 170.32,
+      "era": [
+        1992,
+        1994
+      ],
+      "mood": "progressive house",
+      "sha256": "d92fec3f5ace7c8db2d191090af9b351fef1598bf5d173dc4cb85a3e2cf0f12e"
+    },
+    {
+      "id": "pixelregen",
+      "title": "Pixelregen",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/pixelregen.mod",
+      "origin": "project-generated",
+      "bpm": 155,
+      "channels": 8,
+      "duration_seconds": 130.06,
+      "era": [
+        1992,
+        1994
+      ],
+      "mood": "breakbeat hardcore",
+      "sha256": "18657bb964d2cfc8922f43a99a40a364a1051923ecbbca16234b55b349ba2cf1"
+    },
+    {
+      "id": "bildschirmschoner",
+      "title": "Bildschirmschoner",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/bildschirmschoner.mod",
+      "origin": "project-generated",
+      "bpm": 112,
+      "channels": 6,
+      "duration_seconds": 138.39,
+      "era": [
+        1992,
+        1995
+      ],
+      "mood": "ambient techno",
+      "sha256": "6d9aa35fc282d1bc7bfa344e1449064bb88721cb65020199bf9d7443db50318d"
+    },
+    {
+      "id": "ueberholspur",
+      "title": "Überholspur",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/ueberholspur.mod",
+      "origin": "project-generated",
+      "bpm": 140,
+      "channels": 8,
+      "duration_seconds": 157.71,
+      "era": [
+        1994,
+        1995
+      ],
+      "mood": "eurodance anthem",
+      "sha256": "0eb998ece47398b972d8702857cc1949ed6618a6f57a856754014257503444c9"
+    },
+    {
+      "id": "datenautobahn",
+      "title": "Datenautobahn",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/datenautobahn.mod",
+      "origin": "project-generated",
+      "bpm": 134,
+      "channels": 8,
+      "duration_seconds": 143.28,
+      "era": [
+        1994,
+        1996
+      ],
+      "mood": "techno",
+      "sha256": "3d3b17da035e5d1431b81df6df9d93ef3ccbc25b06a4f856bbd49df66b395e51"
+    },
+    {
+      "id": "kellerbass",
+      "title": "Kellerbass",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/kellerbass.mod",
+      "origin": "project-generated",
+      "bpm": 168,
+      "channels": 8,
+      "duration_seconds": 108.57,
+      "era": [
+        1994,
+        1996
+      ],
+      "mood": "jungle",
+      "sha256": "2537a0edef69bf8557b81fae1c22eb23d0133c7933c002c50815f365e6982ae4"
+    },
+    {
+      "id": "sonnenbrillenhouse",
+      "title": "Sonnenbrillenhouse",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/sonnenbrillenhouse.mod",
+      "origin": "project-generated",
+      "bpm": 124,
+      "channels": 8,
+      "duration_seconds": 154.84,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "filter house",
+      "sha256": "2c3a63bdf79551efb677290ca361e6f87ccb04363481ec59b1e7c865881497d3"
+    },
+    {
+      "id": "mitternachtsmodem",
+      "title": "Mitternachtsmodem",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/mitternachtsmodem.mod",
+      "origin": "project-generated",
+      "bpm": 132,
+      "channels": 8,
+      "duration_seconds": 189.09,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "deep trance",
+      "sha256": "a9bd3e508b58aaa4968da40ef0e02e4762bacf6d6dd5579a80eac963109624c5"
+    },
+    {
+      "id": "goldeneroktober",
+      "title": "Goldener Oktober",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/goldeneroktober.mod",
+      "origin": "project-generated",
+      "bpm": 86,
+      "channels": 6,
+      "duration_seconds": 135.58,
+      "era": [
+        1995,
+        1997
+      ],
+      "mood": "trip-hop",
+      "sha256": "c385a0ca2a3e1765b64fd694faf4230eb97671e891cd1f6fe7d99da301195373"
+    },
+    {
+      "id": "zeitmaschine",
+      "title": "Zeitmaschine",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/zeitmaschine.mod",
+      "origin": "project-generated",
+      "bpm": 118,
+      "channels": 8,
+      "duration_seconds": 154.58,
+      "era": [
+        1996,
+        1997
+      ],
+      "mood": "big beat",
+      "sha256": "4d7bbaf48e5cfadfe82809cc41b531d0c55c0077ea94f06bd20b769bf0ebc83d"
+    },
+    {
+      "id": "nachtbus",
+      "title": "Nachtbus",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/nachtbus.mod",
+      "origin": "project-generated",
+      "bpm": 132,
+      "channels": 8,
+      "duration_seconds": 130.95,
+      "era": [
+        1996,
+        1997
+      ],
+      "mood": "uk garage",
+      "sha256": "e87760edbb90e5dbbd0bd2caaae49438938a1f05f9da392c0054a5e9c97ba526"
+    },
+    {
+      "id": "abspannlicht",
+      "title": "Abspannlicht",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/abspannlicht.mod",
+      "origin": "project-generated",
+      "bpm": 96,
+      "channels": 8,
+      "duration_seconds": 191.46,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "finale",
+      "sha256": "60ab21c11504ade6917e72f74dfd565c4740eeaa2bce951285b7e8dda3784383"
+    },
+    {
+      "id": "hausaufgaben",
+      "title": "Hausaufgaben",
+      "author": "Sommer '90 · Original Soundtrack",
+      "file": "res://assets/audio/soundtrack/hausaufgaben.mod",
+      "origin": "project-generated",
+      "bpm": 88,
+      "channels": 4,
+      "duration_seconds": 132.5,
+      "era": [
+        1989,
+        1997
+      ],
+      "mood": "lofi calm",
+      "sha256": "631c088585383a7c632e92c6c6f3f624a1b9dc84e8de44610a586d60960dcb29"
+    }
+  ]
+}

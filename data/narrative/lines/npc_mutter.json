@@ -1,0 +1,234 @@
+{
+	"npc": "npc_mutter",
+	"comment": "Zeilen-Pool fuer npc_mutter. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "mut_b01",
+			"text": "Da bist du ja. Hast du eigentlich schon was gegessen?"
+		},
+		{
+			"id": "mut_b02",
+			"text": "Nicht wieder die halbe Nacht vor der Kiste, hörst du?"
+		},
+		{
+			"id": "mut_b03",
+			"text": "Dein Zimmer sieht aus wie ein Schlachtfeld. Diese Disketten überall!"
+		},
+		{
+			"id": "mut_b04",
+			"text": "Es gibt gleich was Warmes. Wasch dir die Hände."
+		},
+		{
+			"id": "mut_b05",
+			"text": "Ruf mal deine Oma an, die freut sich so über dich."
+		},
+		{
+			"id": "mut_b06",
+			"text": "Geh doch mal raus an die frische Luft, das Wetter ist schön."
+		},
+		{
+			"id": "mut_b07",
+			"text": "Ich versteh ja nicht viel von dem Kram, aber du scheinst gut darin zu sein."
+		},
+		{
+			"id": "mut_b08",
+			"text": "Hast du warme Socken an? Der Boden ist kalt."
+		},
+		{
+			"id": "mut_b09",
+			"text": "Trink nicht so viel von der Brause, das ist ungesund."
+		},
+		{
+			"id": "mut_b10",
+			"text": "Deine Freunde sind nette Jungs. Bring sie ruhig mal mit."
+		},
+		{
+			"id": "mut_b11",
+			"text": "Hast du deine Hausaufgaben gemacht? Erst die Pflicht."
+		},
+		{
+			"id": "mut_b12",
+			"text": "Ich hab dir Wäsche gewaschen, sie liegt auf dem Bett."
+		},
+		{
+			"id": "mut_b13",
+			"text": "Sitz nicht so krumm vor dem Bildschirm, du kriegst noch einen Buckel."
+		},
+		{
+			"id": "mut_b14",
+			"text": "Iss wenigstens einen Apfel, wenn du schon nicht runterkommst."
+		},
+		{
+			"id": "mut_b15",
+			"text": "Ich mach mir manchmal Sorgen, dass du zu viel allein bist."
+		},
+		{
+			"id": "mut_b16",
+			"text": "Der Nachbar hat gefragt, was das für Geräusche sind. Ich wusste's auch nicht."
+		},
+		{
+			"id": "mut_b17",
+			"text": "Räum wenigstens die Tassen aus dem Zimmer, ja?"
+		},
+		{
+			"id": "mut_b18",
+			"text": "Du wächst mir zu schnell, mein Junge."
+		},
+		{
+			"id": "mut_b19",
+			"text": "Vergiss nicht, dich zu bewegen. Der Rücken dankt es dir."
+		},
+		{
+			"id": "mut_b20",
+			"text": "Wenn du Kummer hast, kannst du immer mit mir reden."
+		},
+		{
+			"id": "mut_b21",
+			"text": "Ich hab Kuchen gebacken. Nimm dir ein Stück, aber teil mit den Freunden."
+		},
+		{
+			"id": "mut_b22",
+			"text": "Nicht so laut, der Papa schläft gleich."
+		},
+		{
+			"id": "mut_b23",
+			"text": "Zieh dir was Ordentliches an, wenn du rausgehst."
+		},
+		{
+			"id": "mut_b24",
+			"text": "Ich freu mich, wenn du glücklich bist mit deinem Hobby. Ehrlich."
+		},
+		{
+			"id": "mut_b25",
+			"text": "Hast du genug geschlafen? Du siehst müde aus."
+		},
+		{
+			"id": "mut_b26",
+			"text": "Deine Zimmertür stand offen, ich hab nur kurz gelüftet."
+		},
+		{
+			"id": "mut_b27",
+			"text": "Pass auf dein Taschengeld auf, es wächst nicht nach."
+		},
+		{
+			"id": "mut_b28",
+			"text": "Ein warmer Tee? Ich stell dir einen hin."
+		},
+		{
+			"id": "mut_b29",
+			"text": "Sei nett zu deinen Freunden, gute Freunde sind selten."
+		},
+		{
+			"id": "mut_b30",
+			"text": "Komm mir nicht zu spät nach Hause, ja?"
+		},
+		{
+			"id": "mu_teuer",
+			"to": 1995,
+			"topic": "geld",
+			"text": "Der Herr Gruber sagt, diese Geräte kosten ein Vermögen. Muss das denn alles sein?"
+		},
+		{
+			"id": "mu_telefon",
+			"from": 1995,
+			"needs": [
+				"modem_boom"
+			],
+			"topic": "telefon",
+			"text": "Der Papa regt sich über die Telefonrechnung auf. Was machst du nachts nur mit dem Apparat?"
+		},
+		{
+			"id": "mu_internet",
+			"from": 1996,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "netz",
+			"text": "Jetzt reden alle von diesem Internet. Ist das auch sicher für dich, mein Junge?"
+		},
+		{
+			"id": "mu_stolz",
+			"from": 1998,
+			"topic": "stolz",
+			"text": "Weißt du... anfangs hab ich's nicht verstanden. Aber du bist gut in dem, was du tust. Das sieht man."
+		},
+		{
+			"id": "mut_x01",
+			"topic": "familie",
+			"text": "Hast du dich warm angezogen? Der Frühling ist verräterisch, das weißt du."
+		},
+		{
+			"id": "mut_x02",
+			"topic": "familie",
+			"text": "Ich hab dir eine Stulle gemacht. Nimm sie mit, auch wenn du 'zu alt für Stullen' bist."
+		},
+		{
+			"id": "mut_x03",
+			"topic": "familie",
+			"text": "Deine Freunde sind gut erzogen. Bring sie ruhig öfter mit, ich back was."
+		},
+		{
+			"id": "mut_x04",
+			"topic": "familie",
+			"text": "Ich versteh das alles nicht, dieses Gepiepe und Geflacker. Aber ich seh, wie glücklich es dich macht."
+		},
+		{
+			"id": "mut_x05",
+			"topic": "familie",
+			"text": "Nicht so nah an den Bildschirm, du kriegst noch viereckige Augen."
+		},
+		{
+			"id": "mut_x06",
+			"topic": "familie",
+			"text": "Ruf die Oma an, sie fragt jede Woche nach dir. Zehn Minuten, mehr will sie gar nicht."
+		},
+		{
+			"id": "mut_x07",
+			"topic": "familie",
+			"text": "Ich hab deine Lieblingssocken gewaschen. Die mit den Löchern, ich weiß, ich weiß."
+		},
+		{
+			"id": "mut_x08",
+			"topic": "familie",
+			"text": "Du wächst mir zu schnell, mein Junge. Gestern noch im Sandkasten, heute Fachchinesisch."
+		},
+		{
+			"id": "mut_x09",
+			"topic": "familie",
+			"text": "Iss einen Apfel. Einen! Dann darfst du wieder an deine Kiste."
+		},
+		{
+			"id": "mut_x10",
+			"topic": "familie",
+			"text": "Wenn dich mal was drückt — ich bin in der Küche. Immer."
+		},
+		{
+			"id": "mut_x11",
+			"topic": "familie",
+			"text": "Der Papa tut streng, aber er ist stolz auf dich. Er sagt's nur nicht, Männer eben."
+		},
+		{
+			"id": "mut_x12",
+			"topic": "familie",
+			"text": "Räum wenigstens die Tassen raus, es sieht aus wie in einer Räuberhöhle."
+		},
+		{
+			"id": "mut_x13",
+			"from": 0,
+			"needs": [
+				"modem_boom"
+			],
+			"topic": "aera",
+			"text": "Diese Telefonrechnung, Kind! Was machst du nachts nur mit dem Apparat?"
+		},
+		{
+			"id": "mut_x14",
+			"from": 0,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "aera",
+			"text": "Jetzt reden alle von diesem Internet. Ist das auch sicher für dich, mein Großer?"
+		}
+	]
+}

@@ -1,0 +1,381 @@
+{
+	"npc": "npc_gruber",
+	"comment": "Zeilen-Pool fuer npc_gruber. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "gru_b01",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Willkommen im Fachgeschäft! Und Finger weg von den Vorführgeräten."
+		},
+		{
+			"id": "gru_b02",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Leerdisketten sind im Angebot. Qualität hat ihren Preis."
+		},
+		{
+			"id": "gru_b03",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Bei mir kriegen Sie nur Ware, hinter der ich stehe."
+		},
+		{
+			"id": "gru_b04",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Schauen Sie sich um, aber vorsichtig, das ist alles teuer."
+		},
+		{
+			"id": "gru_b05",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich berate ehrlich, auch wenn ich weniger dran verdiene."
+		},
+		{
+			"id": "gru_b06",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ein zufriedener Kunde kommt wieder. Das ist mein Geschäft."
+		},
+		{
+			"id": "gru_b07",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Für Stammkunden lässt sich beim Preis reden. Manchmal."
+		},
+		{
+			"id": "gru_b08",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich führ nur Marken, die was taugen. Kein Billigkram."
+		},
+		{
+			"id": "gru_b09",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Handbuch immer mitnehmen, das erspart Ihnen Ärger."
+		},
+		{
+			"id": "gru_b10",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich steh seit Jahren hinter diesem Tresen. Man kennt mich."
+		},
+		{
+			"id": "gru_b11",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Garantie ist Garantie. Bei Problemen kommen Sie zu mir."
+		},
+		{
+			"id": "gru_b12",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ein gutes Gerät ist eine Investition, kein Wegwerfartikel."
+		},
+		{
+			"id": "gru_b13",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich pack's Ihnen ordentlich ein, damit nichts passiert."
+		},
+		{
+			"id": "gru_b14",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Fragen kostet nichts. Ich erklär Ihnen alles."
+		},
+		{
+			"id": "gru_b15",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ordnung im Laden, Ordnung im Geschäft."
+		},
+		{
+			"id": "gru_b16",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich hab schon Ihren Vater beraten, damals."
+		},
+		{
+			"id": "gru_b17",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Kein Kauf ohne Bedenkzeit, bei so viel Geld."
+		},
+		{
+			"id": "gru_b18",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich lager nur, was ich auch selbst benutzen würde."
+		},
+		{
+			"id": "gru_b19",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ein ehrlicher Händler hält länger als ein billiger."
+		},
+		{
+			"id": "gru_b20",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Vorführung gefällig? Aber lassen Sie mich das Gerät bedienen."
+		},
+		{
+			"id": "gru_b21",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Zahlen Sie bar oder mit Scheck, ganz wie Sie mögen."
+		},
+		{
+			"id": "gru_b22",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich rechne fair. Wer feilscht, muss auch kaufen."
+		},
+		{
+			"id": "gru_b23",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Die Technik ändert sich schnell, aber guter Service bleibt."
+		},
+		{
+			"id": "gru_b24",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Nehmen Sie den Beleg mit, den brauchen Sie für die Garantie."
+		},
+		{
+			"id": "gru_b25",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich hab hier Sachen, die kriegen Sie sonst nirgends."
+		},
+		{
+			"id": "gru_b26",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Beratung ist bei mir inklusive. Kostet nix extra."
+		},
+		{
+			"id": "gru_b27",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ein Fachgeschäft lebt vom Vertrauen. Ich enttäusch keins."
+		},
+		{
+			"id": "gru_b28",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Kommen Sie wieder, wenn Sie zufrieden sind. Und sagen Sie's weiter."
+		},
+		{
+			"id": "gru_b29",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Womit kann ich dienen? Aber überlegt kaufen."
+		},
+		{
+			"id": "gru_b30",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"text": "Ich schließ um sechs. Bis dahin bin ich ganz für Sie da."
+		},
+		{
+			"id": "gr_ever1",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Willkommen im Fachgeschäft! Und Finger weg von den Vorführgeräten, ja?"
+		},
+		{
+			"id": "gr_ever2",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Leerdisketten sind im Angebot. Qualität hat ihren Preis, aber bei Ihnen drück ich ein Auge zu."
+		},
+		{
+			"id": "gr_cdrom",
+			"from": 1993,
+			"to": 1996,
+			"needs": [
+				"cd_rom_da"
+			],
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "hardware",
+			"text": "Ein CD-ROM-Laufwerk, frisch reingekommen. Die Zukunft, sag ich Ihnen. Kostet aber auch die Zukunft."
+		},
+		{
+			"id": "gr_uebergabe",
+			"from": 1996,
+			"needs": [
+				"gruber_weg"
+			],
+			"once": true,
+			"topic": "abschied",
+			"text": "Ich übergeb den Laden an meinen Neffen. Zeit für die Rente. Er führt jetzt PC-Kram — die Zeiten ändern sich."
+		},
+		{
+			"id": "gr_rente_nachklang",
+			"from": 1996,
+			"needs": [
+				"gruber_weg"
+			],
+			"topic": "abschied",
+			"text": "Der Laden ist übergeben, aber an Ihren ersten Rechner erinnere ich mich noch. Behalten Sie die alten Teile — irgendwann erzählt jedes davon eine Geschichte."
+		},
+		{
+			"id": "gru_x01",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Willkommen im Fachgeschäft. Und Finger weg von den Vorführgeräten, ja? Die sind für die Augen."
+		},
+		{
+			"id": "gru_x02",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Bei mir kriegen Sie nur Ware, hinter der ich stehe. Kein Billigkram, dafür ist mein Name zu gut."
+		},
+		{
+			"id": "gru_x03",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Handbuch immer mitnehmen. Das erspart Ihnen Ärger und mir Ihre Reklamationen."
+		},
+		{
+			"id": "gru_x04",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Ein gutes Gerät ist eine Investition, kein Wegwerfartikel. Das versteht heute kaum noch wer."
+		},
+		{
+			"id": "gru_x05",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Für Stammkunden lässt sich beim Preis reden. Manchmal. Wenn der Tag gut war."
+		},
+		{
+			"id": "gru_x06",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Ich hab schon Ihren Vater beraten, damals beim ersten Rechner. Große Augen hatte der."
+		},
+		{
+			"id": "gru_x07",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Garantie ist Garantie. Bei Problemen kommen Sie zu mir, nicht ins Internet oder was weiß ich."
+		},
+		{
+			"id": "gru_x08",
+			"to": 1996,
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "laden",
+			"text": "Ein Fachgeschäft lebt vom Vertrauen. Ich enttäusch keins, dafür bin ich zu alt und zu stolz."
+		},
+		{
+			"id": "gru_x09",
+			"from": 1993,
+			"to": 1996,
+			"needs": [
+				"cd_rom_da"
+			],
+			"forbids": [
+				"gruber_weg"
+			],
+			"topic": "aera",
+			"text": "Ein CD-ROM-Laufwerk, frisch reingekommen. Die Zukunft, sag ich Ihnen. Kostet aber auch die Zukunft."
+		}
+	]
+}

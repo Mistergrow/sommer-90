@@ -1,0 +1,1824 @@
+{
+  "comment": "Zentrale Asset-Registry (Produktionsregel: jede Grafik braucht eine ID). Ein Datensatz pro produziertem Asset; Platzierung (Anker/Pivot/Breite) steht in room_anchors.json, die Registry dokumentiert Herkunft, Zustand und Verwendung.",
+  "assets": [
+    {
+      "asset_id": "DEALER_WITH_TEST_RIG_V01", "display_name": "Mysteriöser Händler mit FDD-Prüfkoffer",
+      "category": "StoryProp", "years": "1990-1999", "anchor": "wald/flea_market hotspot", "layer": 6,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert",
+      "path": "res://assets/backgrounds/story_props/DEALER_WITH_TEST_RIG_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; NPC-DNA und Waldrand-Master als Referenzen; Chroma-Matte",
+      "notes": "Flatcap, Sonnenbrille, Stoppelbart; historischer Laufwerkskoffer, Kleinoszilloskop und Kopfhörer. Anwesenheit folgt NPCManager."
+    },
+    {
+      "asset_id": "STARTER_CARTON_CLOSED_V01", "display_name": "Kartons vom Vater · geschlossen",
+      "category": "StoryProp", "years": "1990", "anchor": "floor_prop_right", "layer": 12,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert",
+      "path": "res://assets/backgrounds/story_props/STARTER_CARTON_CLOSED_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; Amiga/CRT/Netzteil-Master als Referenzen; Chroma-Matte",
+      "notes": "Quest q_tut_karton, Zustand vor starter_carton_opened."
+    },
+    {
+      "asset_id": "FLEA_MYSTERY_CARTON_CLOSED_V01", "display_name": "Versiegelter Mystery-Karton vom Trödelmarkt",
+      "category": "HistoricalFleaProduct", "years": "1990-1999", "anchor": "", "layer": 0,
+      "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert",
+      "path": "res://assets/backgrounds/story_props/FLEA_MYSTERY_CARTON_CLOSED_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-14; Starter-Karton und Flohmarkt-Master als Stilreferenzen; Chroma-Matte",
+      "notes": "Versiegelter, gebrauchter Wellpappkarton mit Fragezeichen und rotem Preispunkt. Reines Artikelbild im Flohmarkt-Kaufmenü (58px-Listensymbol und große Vorschau), genau wie Eis oder Kaffee; kein Welt-Prop und kein Bestandteil von FleaMarketActors.tscn."
+    },
+    {
+      "asset_id": "STARTER_CARTON_OPEN_V01", "display_name": "Kartons vom Vater · geöffnet",
+      "category": "StoryProp", "years": "1990", "anchor": "floor_prop_right", "layer": 12,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert",
+      "path": "res://assets/backgrounds/story_props/STARTER_CARTON_OPEN_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; Amiga/CRT/Netzteil-Master als Referenzen; Chroma-Matte",
+      "notes": "Zwischenzustand nach Öffnen bis booted_amiga."
+    },
+    {
+      "asset_id": "FDD_ALIGNMENT_BENCH_V01", "display_name": "Grubers FDD-Justagebank",
+      "category": "StoryProp", "years": "1990-1999", "anchor": "computer_shop repair", "layer": 6,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert",
+      "path": "res://assets/backgrounds/story_props/FDD_ALIGNMENT_BENCH_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; A1011 und Werkstatt als Referenzen; Chroma-Matte",
+      "notes": "Offenes 3,5-Zoll-Laufwerk, Analogmessgerät, Oszilloskop, Referenzdisk und Werkzeug; nur bei fdd_needs_service."
+    },
+    {
+      "asset_id": "BROKEN_CRT_REPAIR_BENCH_V01", "display_name": "Defekter CRT an Svens Lötplatz",
+      "category": "StoryProp", "years": "1990-1999", "anchor": "sven_home workbench", "layer": 6,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert",
+      "path": "res://assets/backgrounds/story_props/BROKEN_CRT_REPAIR_BENCH_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; 1084S und Sven-Raum als Referenzen; Chroma-Matte",
+      "notes": "Zusammengefallene horizontale Rasterlinie, periodische Löt-/Messausstattung; nur bei monitor_needs_repair."
+    },
+    {
+      "asset_id": "ROOM_BASE_1992_EMPTY_DESK_V01",
+      "display_name": "Jugendzimmer 1992 (leerer Schreibtisch)",
+      "category": "RoomBase",
+      "years": "1990-1994",
+      "anchor": "FULL_CANVAS",
+      "layer": 0,
+      "pivot": "FullCanvas",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "deprecated",
+      "replaced_by": "ROOM_EMPTY_SHELVES_MASTER_V02",
+      "notes": "v2-Referenzplate (Kamera-Wahrheit, Art-Bible Kap. 1). Quelle 1672x941, auf 1920x1080 skaliert/beschnitten. Lampe, Pflanze, Tasse, Notizblock, Fensterregen sind Teil des Bilds. | Abgeloest durch ROOM_MASTER_1992_V01 (Frontkamera); bleibt als Fallback-Basis installiert."
+    },
+    {
+      "asset_id": "OVERLAY_SHADOWS_V01",
+      "display_name": "Kontaktschatten-Overlay (Monitor)",
+      "category": "Overlay",
+      "anchor": "FULL_CANVAS",
+      "layer": 22,
+      "pivot": "FullCanvas",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "ersetzt durch V02",
+      "notes": "Prozedural erzeugt (weiche Ellipse unter monitor_base). In der Engine mit z=8 unter der Hardware gerendert."
+    },
+    {
+      "asset_id": "OVERLAY_SHADOWS_V02",
+      "display_name": "Kontaktschatten-Overlay (Monitor + Amiga 500)",
+      "category": "Overlay",
+      "anchor": "FULL_CANVAS",
+      "layer": 22,
+      "pivot": "FullCanvas",
+      "transparent": true,
+      "animated": false,
+      "version": "V02",
+      "status": "ersetzt durch V03",
+      "notes": "Ellipsen unter monitor_base und computer_base."
+    },
+    {
+      "asset_id": "OVERLAY_SHADOWS_V03",
+      "display_name": "Kontaktschatten-Overlay (alle Desk-Geräte)",
+      "category": "Overlay",
+      "anchor": "FULL_CANVAS",
+      "layer": 22,
+      "pivot": "FullCanvas",
+      "transparent": true,
+      "version": "V03",
+      "status": "abgeschlossen",
+      "notes": "Ellipsen unter Monitor, Amiga 500, Maus, Joystick und angelehnter Diskette. Engine-z 8 (unter Hardware). | Abgeloest durch OVERLAY_SHADOWS_V04 (Kontaktschatten-Positionen des Master-Rooms, Sonne von hinten-links)."
+    },
+    {
+      "asset_id": "MOUSE_AMIGA_V01",
+      "display_name": "Commodore Amiga Mouse",
+      "category": "Mouse",
+      "manufacturer": "Commodore",
+      "model": "Amiga Mouse",
+      "release_year": 1987,
+      "last_production_year": 1994,
+      "game_available_from": 1990,
+      "game_available_to": 1999,
+      "anchor": "mouse_position (Registry: MOUSE_SLOT)",
+      "layer": 13,
+      "pivot": "BottomCenter",
+      "lighting_profile": "WarmDeskLamp",
+      "transparent": true,
+      "shadow": "Separate (OVERLAY_SHADOWS_V03)",
+      "cable": "CABLE_MOUSE_LIGHTGRAY_V01 (separates dynamisches Asset)",
+      "animated": {
+        "click_left": true,
+        "click_right": true,
+        "move": true
+      },
+      "compatible_systems": [
+        "COMPUTER_AMIGA500_V01",
+        "COMPUTER_AMIGA500_PLUS_V01",
+        "COMPUTER_AMIGA600_V01",
+        "COMPUTER_AMIGA1200_V03"
+      ],
+      "state": {
+        "dust": "Low",
+        "yellowing": "Slight",
+        "scratches": "VeryLight",
+        "broken": false
+      },
+      "hotspot": "Mouse_Click",
+      "game_functions": [
+        "Click",
+        "DoubleClick",
+        "Drag",
+        "Select",
+        "MoveCursor"
+      ],
+      "sound_profile": [
+        "Mouse_Click",
+        "Mouse_Move"
+      ],
+      "version": "V01",
+      "status": "abgeschlossen",
+      "notes": "Von Weiß freigestellt; eingebackenes Schattenband unten per Spannweiten-Analyse entfernt (265x321). Zielbreite im Raum: width=115. Klick-/Move-Animationen: Engine-FX, folgt mit dem Interaktions-Update. | Neu freigestellt aus dem Originalbild (weisser BG) per v5-Matte + Zeilen/Spalten-Konvexfuellung: die fast weissen Tasten wurden vorher von der Matte gefressen (wirkten im Spiel schwarz) — jetzt vollstaendig. 327x369."
+    },
+    {
+      "asset_id": "JOYSTICK_COMPETITION_PRO_V01",
+      "display_name": "Competition Pro Joystick",
+      "category": "InputDevice",
+      "sub_category": "DigitalJoystick",
+      "manufacturer": "Competition Pro",
+      "model": "Competition Pro",
+      "release_year": 1983,
+      "last_production_year": 1998,
+      "game_available_from": 1990,
+      "game_available_to": 1999,
+      "anchor": "joystick_position (Registry: JOYSTICK_SLOT)",
+      "layer": 14,
+      "pivot": "BottomCenter",
+      "lighting_profile": "WarmDeskLamp",
+      "transparent": true,
+      "shadow": "Separate (OVERLAY_SHADOWS_V03)",
+      "cable": "CABLE_JOYSTICK_BLACK_V01 (separates dynamisches Asset)",
+      "animated": {
+        "stick_directions": true,
+        "fire_left": true,
+        "fire_right": true
+      },
+      "compatible_systems": [
+        "COMPUTER_AMIGA500_V01",
+        "COMPUTER_AMIGA500_PLUS_V01",
+        "COMPUTER_AMIGA600_V01",
+        "COMPUTER_AMIGA1200_V03",
+        "COMPUTER_ATARI_ST_V01",
+        "COMPUTER_C64_V01"
+      ],
+      "state": {
+        "dust": "Low",
+        "scratches": "VeryLight",
+        "plastic_wear": "Low",
+        "broken": false
+      },
+      "hotspot": "Joystick_Click",
+      "game_functions": [
+        "PlayGame",
+        "Calibrate",
+        "TestJoystick"
+      ],
+      "sound_profile": [
+        "Stick_Click",
+        "FireButton_Click"
+      ],
+      "physics": {
+        "can_move": true,
+        "can_rotate": true
+      },
+      "version": "V01",
+      "status": "abgeschlossen",
+      "notes": "Anlieferung auf eingebackenem Schachbrettmuster + Schlagschatten; per Neutralton-Matte freigestellt (657x774), nur zeilenkonvexe Füllung (Ball breiter als Schaft). Keine Logos. Zielbreite: width=165. Stick-/Feuer-Animationsphasen (Idle/4 Richtungen/Fire): als Sprite-Varianten V02+ oder Engine-Verformung — offen."
+    },
+    {
+      "asset_id": "FLOPPY_35_DD_BLUE_FRONT_V01",
+      "display_name": "3.5\" Double Density Floppy Disk (Front)",
+      "category": "StorageMedia",
+      "sub_category": "FloppyDisk",
+      "type": "DoubleDensity",
+      "capacity": {
+        "formatted": "720 KB (PC) / 880 KB (Amiga)",
+        "unformatted": "737280 Bytes"
+      },
+      "size_mm": {
+        "width": 90,
+        "height": 94,
+        "thickness": 3.3
+      },
+      "release_year": 1984,
+      "last_production_year": 2000,
+      "game_available_from": 1990,
+      "game_available_to": 1999,
+      "shell_color": "Blue",
+      "shutter": "Brushed Steel",
+      "label": "Blank",
+      "visible_characteristics": {
+        "write_protect_hole": "LowerLeft",
+        "density_hole": false,
+        "metal_shutter": true,
+        "blank_label": true,
+        "corner_cut": "UpperRight"
+      },
+      "anchor": "floppy_lean (Registry: FLOPPY_SLOT)",
+      "layer": 20,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "shadow": "Separate (OVERLAY_SHADOWS_V03)",
+      "animated": {
+        "insert": true,
+        "remove": true
+      },
+      "state": {
+        "write_protected": false,
+        "formatted": true,
+        "bootable": false
+      },
+      "hotspot": "Floppy_Click",
+      "game_functions": [
+        "InsertIntoDrive",
+        "RemoveFromDrive",
+        "Duplicate",
+        "Label",
+        "Archive",
+        "Trade",
+        "Sell",
+        "Delete"
+      ],
+      "compatible_drives": [
+        "DRIVE_INTERNAL_AMIGA_DD_V01",
+        "DRIVE_A1011_V01",
+        "DRIVE_PC_35_DD_V01"
+      ],
+      "sound_profile": [
+        "Floppy_Insert",
+        "Floppy_Eject"
+      ],
+      "version": "V01",
+      "status": "abgeschlossen",
+      "notes": "Von Weiß freigestellt inkl. Schattenband-Trim (652x701). Leeres Etikett — perfekt für spätere dynamische Label-Beschriftung durch die Engine (DiskManager.label_disk). Im Raum an den Monitor gelehnt (width=115); dient zugleich als Vorlage für BLACK/RED-Varianten. | Umbenannt von FLOPPY_35_DD_BLUE_V01: zeigt die FRONT (Shutter + Label-Flaeche); Rueckseite = FLOPPY_35_DD_BLUE_BACK_V01 (Asset 005B). Raum-Layer floppy_lean nutzt die Front.",
+      "side": "Front"
+    },
+    {
+      "asset_id": "DRIVE_COMMODORE_A1011_V01",
+      "display_name": "Commodore A1011 · frontale Desk-Perspektive",
+      "category": "Storage",
+      "sub_category": "FloppyDrive",
+      "manufacturer": "Commodore",
+      "model": "A1011",
+      "drive_type": "3.5\" Double Density",
+      "capacity": {
+        "formatted": "880 KB (AmigaDOS)",
+        "pc_equivalent": "720 KB"
+      },
+      "release_year": 1987,
+      "last_production_year": 1992,
+      "game_available_from": 1990,
+      "game_available_to": 1999,
+      "compatible_systems": [
+        "COMPUTER_AMIGA500_V02",
+        "COMPUTER_AMIGA600_V01",
+        "COMPUTER_AMIGA1200_V03"
+      ],
+      "anchor": "left_drive_position (Registry: LEFT_DRIVE_SLOT)",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "lighting_profile": "WarmDeskLamp",
+      "transparent": true,
+      "path": "res://assets/backgrounds/layers/DRIVE_COMMODORE_A1011_V01.png",
+      "size_px": [
+        2280,
+        928
+      ],
+      "shadow": "Separate + bedingt (OVERLAY_SHADOW_DRIVE_V01, erscheint mit dem Kauf)",
+      "cable": "CABLE_DRIVE_BEIGE_V01 (80cm, beige, dynamisch)",
+      "animated": {
+        "led": true,
+        "floppy_insert": true,
+        "floppy_eject": true
+      },
+      "upgradeable": true,
+      "supports": [
+        "FLOPPY_35_DD_BLUE_V01",
+        "FLOPPY_35_DD_BLACK_V01",
+        "FLOPPY_35_DD_RED_V01",
+        "FLOPPY_35_DD_GREEN_V01"
+      ],
+      "state": {
+        "dust": "Low",
+        "yellowing": "Slight",
+        "scratches": "VeryLight",
+        "broken": false
+      },
+      "hotspot": "Drive_Click",
+      "game_functions": [
+        "InsertDisk",
+        "RemoveDisk",
+        "ReadDisk",
+        "WriteDisk",
+        "VerifyDisk",
+        "FormatDisk",
+        "DuplicateDisk",
+        "CleanDrive"
+      ],
+      "sound_profile": [
+        "DriveMotor",
+        "HeadSeek",
+        "DiskInsert",
+        "DiskEject",
+        "DriveClick"
+      ],
+      "audio_files_expected": [
+        "Floppy_Insert.wav",
+        "Floppy_Eject.wav",
+        "Drive_Click.wav",
+        "Head_Seek.wav",
+        "Motor_Start.wav",
+        "Motor_Stop.wav"
+      ],
+      "animations_expected": [
+        "Idle",
+        "LED_On",
+        "LED_Off",
+        "InsertDisk",
+        "EjectDisk",
+        "ReadActivity",
+        "WriteActivity"
+      ],
+      "version": "V01",
+      "status": "integriert · einzige V01",
+      "source": "OpenAI built-in imagegen, 2026-07-11; User-Referenz, Soft-Chroma-Matte, 1px Edge-Contract, gezieltes Spill-Cleanup und 2× Lanczos-HQ",
+      "notes": "Fast strikte Frontansicht mit nur schmal sichtbarer Oberseite, einem frontalen 3,5-Zoll-Schacht, Auswurftaste und Status-LED. Explizit ohne eingebranntes Kabel; Kabel und Kontaktschatten bleiben dynamische Engine-Geometrie. Die früheren falschen, pixeligen und zu schrägen V01/V02-Raster wurden gelöscht; dieses Asset ist die einzige kanonische Laufwerksversion."
+    },
+    {
+      "asset_id": "CABLE_DRIVE_BEIGE_V01",
+      "display_name": "Laufwerkskabel (beige, dynamisch)",
+      "category": "Cable",
+      "type": "Dynamic",
+      "render_mode": "VerletSpline (CableRenderer)",
+      "segments": 24,
+      "color": "Beige",
+      "start_anchor": "drive_cable_exit",
+      "end_anchor": "computer_floppy_port",
+      "version": "V01",
+      "status": "abgeschlossen (prozedural)",
+      "notes": "Erscheint nur mit gekauftem externem Laufwerk (requires_hardware) und vorhandenem Laufwerks-Asset (requires_asset)."
+    },
+    {
+      "asset_id": "OVERLAY_SHADOW_DRIVE_V01",
+      "display_name": "Kontaktschatten A1011 (bedingt)",
+      "category": "Overlay",
+      "anchor": "FULL_CANVAS",
+      "layer": 22,
+      "transparent": true,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "notes": "Eigenes Overlay statt Teil von OVERLAY_SHADOWS_V03, weil der Schatten an den Kaufzustand gebunden ist (requires_hardware=external_drive, Engine-z 8). Muster für alle künftigen kaufbaren Geräte. | Abgeloest durch V02 (Laufwerksposition left_drive_position [675,610] im Master-Room)."
+    },
+    {
+      "asset_id": "CABLE_MOUSE_LIGHTGRAY_V01",
+      "display_name": "Mauskabel (hellgrau, dynamisch)",
+      "category": "Cable",
+      "type": "Dynamic",
+      "render_mode": "VerletSpline (CableRenderer)",
+      "segments": 24,
+      "thickness": "4px (Master)",
+      "material": "Rubber",
+      "color": "WarmLightGray",
+      "physics": {
+        "soft": true,
+        "gravity": "Low",
+        "can_move": true,
+        "can_swing": true,
+        "can_bounce": true
+      },
+      "start_anchor": "mouse_cable_exit",
+      "end_anchor": "computer_mouse_port",
+      "version": "V01",
+      "status": "abgeschlossen (prozedural, kein Bild-Asset nötig)",
+      "notes": "Kein PNG — wird von scripts/gfx/cable_renderer.gd live gerendert (Verlet, gepinnte Enden, Ambient-Sway, poke()-API für Anstoß-Impulse). Wiederverwendbar: dieselbe Maus + dasselbe Kabel funktionieren später an 486/Pentium/Macintosh — nur end_anchor umhängen."
+    },
+    {
+      "asset_id": "CABLE_JOYSTICK_BLACK_V01",
+      "display_name": "Joystickkabel (schwarz, dynamisch)",
+      "category": "Cable",
+      "type": "Dynamic",
+      "render_mode": "VerletSpline (CableRenderer)",
+      "segments": 24,
+      "thickness": "4px (Master)",
+      "color": "Black",
+      "physics": {
+        "soft": true,
+        "gravity": "Low",
+        "can_move": true,
+        "can_swing": true,
+        "can_bounce": true
+      },
+      "start_anchor": "joystick_cable_exit",
+      "end_anchor": "computer_joystick_port",
+      "version": "V01",
+      "status": "abgeschlossen (prozedural)",
+      "notes": "Konfiguration in room_anchors.json ('cables'); erscheint nur, wenn das Gerät-Asset existiert (requires_asset)."
+    },
+    {
+      "asset_id": "MONITOR_COMMODORE_1084S_V01",
+      "display_name": "Commodore 1084S CRT Monitor",
+      "category": "Monitor",
+      "manufacturer": "Commodore",
+      "model": "1084S",
+      "years": "1987-1995",
+      "type": "CRT",
+      "anchor": "monitor_base (Registry: MONITOR_SLOT)",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "scale": 1.0,
+      "transparent": true,
+      "animated": false,
+      "crt_overlay": true,
+      "screen_replaceable": true,
+      "upgradeable": false,
+      "version": "V01",
+      "used_by": [
+        "Amiga 500",
+        "Amiga 500+",
+        "Amiga 600",
+        "Amiga 1200",
+        "spätere PC-Konfigurationen"
+      ],
+      "status": "abgeschlossen",
+      "notes": "Anlieferung mit Grau-Verlauf-Hintergrund; per Silhouetten-Matte freigestellt (634x574, echtes Alpha). Bildschirm schwarz/aus, keine Logos. Zielbreite im Raum: width=440 (room_anchors.json). QA-Hinweis: exakt frontal statt Dreiviertel — bei V02 leicht von schräg oben rendern (Konsistenzblock A.0). | Neu freigestellt (v5-Union statt alter Konvexfuellung): Verlaufs-Fransen an den Raendern beseitigt, Standfuss jetzt komplett. 639x601."
+    },
+    {
+      "asset_id": "COMPUTER_AMIGA500_V01",
+      "display_name": "Commodore Amiga 500",
+      "category": "Computer",
+      "manufacturer": "Commodore",
+      "model": "Amiga 500",
+      "release_year": 1987,
+      "last_production_year": 1991,
+      "game_available_from": 1990,
+      "game_available_to": 1994,
+      "generation": "Home Computer",
+      "architecture": "Motorola 68000",
+      "cpu": "Motorola 68000 @ 7.14 MHz",
+      "chipset": "OCS / ECS",
+      "memory": {
+        "base": "512 KB",
+        "upgrade": "1 MB"
+      },
+      "storage": {
+        "internal": [
+          "3.5 DD Floppy Drive"
+        ],
+        "external": [
+          "A1010",
+          "A1011"
+        ]
+      },
+      "operating_system": [
+        "Kickstart",
+        "Amiga Workbench"
+      ],
+      "anchor": "computer_base (Registry: COMPUTER_SLOT)",
+      "layer": 10,
+      "pivot": "BottomCenter",
+      "scale": 1.0,
+      "lighting_profile": "WarmDeskLamp",
+      "perspective": "Front, leicht erhöht",
+      "transparent": true,
+      "shadow": "Separate (OVERLAY_SHADOWS_V02)",
+      "reflection": "Separate",
+      "animated": {
+        "power_led": true,
+        "disk_led": false
+      },
+      "upgradeable": true,
+      "compatible_monitor": [
+        "MONITOR_COMMODORE_1084S_V01",
+        "MONITOR_PHILIPS_CM8833_V01"
+      ],
+      "compatible_mouse": [
+        "MOUSE_AMIGA_V01"
+      ],
+      "compatible_joystick": [
+        "JOYSTICK_COMPETITION_PRO_V01",
+        "JOYSTICK_QUICKSHOTII_V01"
+      ],
+      "compatible_drive": [
+        "DRIVE_A1011_V01"
+      ],
+      "compatible_disks": [
+        "FLOPPY_35_DD_BLUE_V01",
+        "FLOPPY_35_DD_BLACK_V01",
+        "FLOPPY_35_DD_RED_V01"
+      ],
+      "state": {
+        "dust": "Low",
+        "yellowing": "Slight",
+        "scratches": "VeryLight",
+        "broken": false
+      },
+      "hotspot": "Computer_Click",
+      "game_functions": [
+        "BootWorkbench",
+        "BootGame",
+        "BootDemo",
+        "BootTracker",
+        "BootTerminal",
+        "InsertDisk",
+        "RemoveDisk",
+        "PowerOn",
+        "PowerOff"
+      ],
+      "sound_profile": [
+        "AMIGA_BOOT",
+        "FLOPPY_INSERT",
+        "FLOPPY_EJECT",
+        "KEYBOARD",
+        "POWER_SWITCH"
+      ],
+      "version": "V01",
+      "used_by": [
+        "Startkonfiguration 1992"
+      ],
+      "status": "abgeschlossen",
+      "notes": "Anlieferung mit Grau-Verlauf und 'AMIGA'-Wordmark + Badge auf dem Gehäuse — beides gemäß Content-Richtlinie (GDD 18 / Art-Bible 7) wegretuschiert, dann per Silhouetten-Matte freigestellt (1061x371). Keycap-Beschriftung ist unleserliches Pseudo-Glyphen-Muster: ok. Hinterste Lüftungsrippe minimal gekappt (bei Spielgröße unsichtbar). Zielbreite im Raum: width=620. Power-LED-Animation: Engine-FX, folgt mit dem Interaktions-Update. | Neu freigestellt (v5): Union aus Flaechen-Flood + Kantenkontur, Deck-Band zwischen Lueftungsrippen und Tastatur per vertikalem Closing geschlossen — Rippen UND glatte Flaechen jetzt vollstaendig, kein Glow-Halo. AMIGA-Wordmark + Badge weiterhin wegretuschiert (patch_fill). 1067x428."
+    },
+    {
+      "asset_id": "ROOM_MASTER_1992_V01",
+      "display_name": "Master Bedroom Desk Environment 1992",
+      "category": "Environment",
+      "sub_category": "MasterRoom",
+      "type": "StaticBackground",
+      "years": "1990-1999",
+      "anchor": "FULL_CANVAS",
+      "layer": 0,
+      "pivot": "TopLeft",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "perspective": "FixedFrontDeskView (35mm, Sitzposition)",
+      "lighting": "WarmDaylight, TimeOfDayBakedIn: Day, WeatherBakedIn: false, SupportsOverlays: true",
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 14_59_19.png",
+      "notes": "Ersetzt ROOM_BASE_1992_EMPTY_DESK_V01 als Basis (base_patterns: ROOM_MASTER_{year} zuerst). Pruefbefunde: 1) Quelldatei war 1672x941 statt 1920x1080 wie in der DB angegeben — per Lanczos auf Master-Norm skaliert (Seitenverhaeltnis passte). 2) DoesNotContain verifiziert: keine Hardware/UI eingebacken. 3) Vier Ankerkorrekturen noetig: MONITOR_SLOT y505 lag auf dem Heizkoerper -> 600; LAMP_SLOT [360,520] schwebte neben dem Tisch -> [390,618]; MODEM_SLOT y590 und MUG_SLOT y610 lagen hinter der Tisch-Hinterkante -> 608/618. Tischplatte: y590 (hinten) bis y775 (vorn), Massstab ~8.2 px/cm. 4) Sonnenstreifen auf der Platte sind eingebacken — Hinweis fuer Nacht-Grading in docs/VFX_BIBLE.md (EFFECT_001)."
+    },
+    {
+      "asset_id": "NOTEBOOK_OPEN_V01",
+      "display_name": "Aufgeschlagenes Notizbuch (Spiralbindung)",
+      "category": "DeskObject",
+      "sub_category": "Stationery",
+      "years": "1990-1999",
+      "anchor": "notebook_slot",
+      "layer": 12,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "size_px": [
+        938,
+        674
+      ],
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 14_42_57.png",
+      "game_functions": [
+        "Contacts",
+        "DiskCatalog",
+        "BBSNumbers",
+        "Passwords",
+        "ShoppingList",
+        "HardwareWishlist",
+        "QuestLog",
+        "DailyNotes",
+        "Ideas",
+        "Cheats"
+      ],
+      "notes": "Freigestellt per Union-Matte v5 (Flood+Kontur), weisser BG. Draufsicht-Asset — im Raum per height=52 auf die Frontperspektive gestaucht (width 245). Winzige Ecken-Rundung oben rechts von der Matte gekappt (<5px bei Zielgroesse, unkritisch). GameFunctions = geplantes Notizbuch-UI (SavePersistent, ContentEditable) — Slot fuer Kontakte/QuestLog, noch nicht implementiert."
+    },
+    {
+      "asset_id": "COFFEE_MUG_BEIGE_V01",
+      "display_name": "Beige Ceramic Coffee Mug",
+      "category": "DeskObject",
+      "sub_category": "Drinkware",
+      "years": "1990-1999",
+      "anchor": "mug_slot",
+      "layer": 12,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "size_px": [
+        781,
+        728
+      ],
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 14_46_11.png",
+      "states_planned": [
+        "Empty",
+        "Coffee",
+        "Tea",
+        "Cocoa",
+        "Cola",
+        "Water",
+        "Dirty"
+      ],
+      "notes": "V01 = Kaffee-Zustand (FillLevel 70%). Checker-Matte mit Einschluss-Erkennung: Henkel-Loch war fast reinweiss (lum 251) — Flachweiss-Regel ergaenzt, Loch jetzt transparent. Schlagschatten separat (OVERLAY_SHADOWS_V04). Steam-Animation (SteamSmall/Medium/Large) + DrinkCoffee-Hotspot folgen mit EFFECT-Stack P2 (docs/VFX_BIBLE.md)."
+    },
+    {
+      "asset_id": "DESK_LAMP_CLASSIC_V01",
+      "display_name": "Classic Architect Desk Lamp",
+      "category": "DeskObject",
+      "sub_category": "Lighting",
+      "years": "1990-1999",
+      "anchor": "lamp_slot",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "size_px": [
+        755,
+        1105
+      ],
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 14_50_50.png",
+      "states_planned": [
+        "Off",
+        "WarmLight",
+        "Flicker",
+        "BrokenBulb"
+      ],
+      "notes": "V01 = AUS-Zustand, passt zur Tageslicht-Platte des Master-Rooms. Checker-Matte v2: Zwischenraeume der Federarme transparent (Kacheldichte-Test). Netzkabel laeuft dynamisch als CABLE_LAMP_DARKGRAY_V01 (Verlet). AN-Zustand + LIGHT_CONE_SMALL/MEDIUM/LARGE + SoftShadow = EFFECT_004 (P1) in docs/VFX_BIBLE.md. Anker-Korrektur: geliefertes LAMP_SLOT [360,520] lag in der Luft -> Fuss auf Platte [390,618]."
+    },
+    {
+      "asset_id": "CABLE_LAMP_DARKGRAY_V01",
+      "display_name": "Lampen-Netzkabel (dunkelgrau)",
+      "category": "Cable",
+      "sub_category": "DynamicSpline",
+      "years": "1990-1999",
+      "anchor": "lamp_cable_exit -> lamp_power_outlet",
+      "layer": 5,
+      "pivot": "-",
+      "transparent": true,
+      "animated": true,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "notes": "Kein Bitmap — prozeduraler Verlet-Spline (CableRenderer, 24 Segmente, slack 1.3). Laeuft vom Lampenfuss zur Wandsteckdose links hinter dem Tisch."
+    },
+    {
+      "asset_id": "OVERLAY_SHADOWS_V04",
+      "display_name": "Kontaktschatten Master-Room (alle Desk-Objekte)",
+      "category": "Overlay",
+      "sub_category": "Shadow",
+      "years": "1990-1999",
+      "anchor": "FULL_CANVAS",
+      "layer": 8,
+      "pivot": "FullCanvas",
+      "transparent": true,
+      "animated": false,
+      "version": "V04",
+      "status": "abgeschlossen",
+      "notes": "Prozedural (PIL): weiche Ellipsen unter Monitor, A500, Maus, Joystick, Diskette, Notizbuch, Tasse, Lampenfuss; Versatz +4x/+5y passend zur eingebackenen Sonne."
+    },
+    {
+      "asset_id": "OVERLAY_SHADOW_DRIVE_V02",
+      "display_name": "Kontaktschatten externes Laufwerk (kaufabhaengig)",
+      "category": "Overlay",
+      "sub_category": "Shadow",
+      "years": "1990-1999",
+      "anchor": "FULL_CANVAS",
+      "layer": 8,
+      "pivot": "FullCanvas",
+      "transparent": true,
+      "animated": false,
+      "version": "V02",
+      "status": "abgeschlossen",
+      "notes": "Erscheint nur mit requires_hardware external_drive, Position [675,610]."
+    },
+    {
+      "asset_id": "FLOPPY_35_DD_BLUE_BACK_V01",
+      "display_name": "3.5\" Double Density Floppy Disk (Back)",
+      "category": "StorageMedia",
+      "sub_category": "FloppyDisk",
+      "side": "Back",
+      "years": "1990-1999",
+      "anchor": "floppy_lean (nur Fallback)",
+      "layer": 20,
+      "pivot": "Center",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "size_px": [
+        961,
+        968
+      ],
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 15_44_43.png",
+      "capacity": "720KB (DD), 90x94x3.3mm, Metall-Hub, Schnittecke oben",
+      "variants_planned": [
+        "BLACK_BACK",
+        "RED_BACK",
+        "GREEN_BACK",
+        "GRAY_BACK",
+        "WHITE_BACK"
+      ],
+      "notes": "Seitenpaar zu FLOPPY_35_DD_BLUE_FRONT_V01 — gedacht fuer Flip/Inspect im Disketten-UI (GameFunctions: Flip, Inspect, InsertIntoDrive, RemoveFromDrive), im Raum nur Fallback. Checker-Matte OHNE Einschluss-Entfernung (Hub/Shutter sind neutrales Metall und waeren sonst gefaehrdet), alle Loecher gefuellt. Hinweis: Schnittecke erscheint oben LINKS (spiegelbildlich zur Front) — physikalisch korrekt fuer die Rueckseite, DB sagt UpperRight."
+    },
+    {
+      "asset_id": "MAGAZINE_MASTER_V01",
+      "display_name": "Computer Magazine Master",
+      "category": "ReadingMaterial",
+      "sub_category": "Magazine",
+      "type": "MasterAsset",
+      "origin": "Germany",
+      "release_year": 1990,
+      "last_production_year": 1999,
+      "game_available_from": 1990,
+      "game_available_to": 1999,
+      "years": "1990-1999",
+      "anchor": "magazine_slot",
+      "layer": 24,
+      "pivot": "Center",
+      "scale": 1.0,
+      "perspective": "SlightTopDown",
+      "camera": {
+        "lens": "50mm",
+        "rotation": "0deg"
+      },
+      "background": "Transparent",
+      "transparent": true,
+      "shadow": "Separate",
+      "reflection": "Separate",
+      "animated": {
+        "open": true,
+        "close": true,
+        "turn_page": true
+      },
+      "upgradeable": false,
+      "version": "V01",
+      "status": "deprecated",
+      "replaced_by": "MAGAZINE_MASTER_V02",
+      "size_px": [
+        844,
+        796
+      ],
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 17_28_03.png",
+      "file_name": "MAGAZINE_MASTER_V01.png",
+      "format": {
+        "paper": "A4",
+        "width_mm": 210,
+        "height_mm": 297,
+        "thickness_mm": 6
+      },
+      "binding": "PerfectBound",
+      "material": {
+        "cover": "GlossCoatedPaper",
+        "pages": "OffsetPaper"
+      },
+      "paper_color": {
+        "cover": "White",
+        "pages": "WarmCream"
+      },
+      "condition": {
+        "dust": "Low",
+        "scratches": "None",
+        "folded_corner": "None",
+        "yellowing": "Low"
+      },
+      "hotspot": "Magazine_Click",
+      "game_functions": [
+        "PickUp",
+        "Read",
+        "Flip",
+        "Zoom"
+      ],
+      "material_system": [
+        "CoverMaterial",
+        "PaperMaterial",
+        "SpineMaterial",
+        "ShadowLayer",
+        "AO",
+        "Roughness",
+        "Normal"
+      ],
+      "procedural_layers": [
+        "MagazineLogo",
+        "CoverArtwork",
+        "IssueNumber",
+        "Month",
+        "Year",
+        "Barcode",
+        "Price",
+        "Sticker",
+        "Publisher",
+        "SpecialEdition",
+        "Wear",
+        "Dirt",
+        "FoldedCorner"
+      ],
+      "supports": [
+        "FrontCover",
+        "BackCover",
+        "Spine",
+        "PageSystem",
+        "CoverDisk",
+        "AdvertisementPages",
+        "ArticlePages",
+        "ClassifiedAds",
+        "HardwareReviews",
+        "CheatPages",
+        "DemoPages",
+        "ReaderLetters"
+      ],
+      "default_pages": [
+        "Cover",
+        "Index",
+        "News",
+        "Hardware",
+        "Games",
+        "Reviews",
+        "Tips",
+        "Cheats",
+        "Advertisements",
+        "CoverDiskInfo",
+        "BackCover"
+      ],
+      "asset_dependencies": [
+        "MAGAZINE_MASTER_V01",
+        "Cover Template",
+        "Issue Template",
+        "Page Template",
+        "Advertisement Template",
+        "Article Template",
+        "Coverdisk Template"
+      ],
+      "master_parts": [
+        "FrontCover",
+        "BackCover",
+        "Spine",
+        "PageBlock",
+        "MaterialMasks"
+      ],
+      "variants_planned": [
+        "MAGAZINE_ASM_1992_05",
+        "MAGAZINE_POWERPLAY_1991_11",
+        "MAGAZINE_AMIGAJOKER_1993_07",
+        "MAGAZINE_PCPLAYER_1995_02",
+        "MAGAZINE_64ER_1990_09",
+        "MAGAZINE_STFORMAT_1994_01",
+        "MAGAZINE_SHAREWARE_NEWS_1992_03",
+        "MAGAZINE_COMPUTERCLUB_1991_01"
+      ],
+      "notes": "Master-Geometrie fuer ALLE Magazin-Ausgaben — wie bei den Disketten entstehen Varianten ohne neue Geometrie (MATERIAL_SYSTEM.md Kap. 7). Angenommene Ergaenzung des Users: Cover, Ruecken, Rueckseite und Seitenblock werden NICHT eingebacken, sondern als eigene Ebenen + Masken produziert (Front/Back/Spine/PageBlock) — damit sind Umdrehen, Ruecken-im-Regal und Anzeigen-Rueckseite moeglich; prozedurale Cover-Ebenen (Logo, Artwork, Ausgabe, Monat/Jahr, Barcode, Preis, Sticker) folgen als MagazineCompositor (geplant). Fiktive Titel gemaess Content-Richtlinie (keine echten Marken). Verknuepft mit Zeitschrift-lesen-Gameplay (bildgenauer Schreibtisch-Hotspot, InventoryManager 'magazine')."
+    },
+    {
+      "asset_id": "TELEPHONE_MASTER_V01",
+      "display_name": "Desktop Landline Telephone Master (warm-beige)",
+      "category": "Communication",
+      "sub_category": "LandlineTelephone",
+      "type": "MasterAsset",
+      "years": "1990-1999",
+      "anchor": "telephone_position",
+      "layer": 11,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "size_px": [
+        823,
+        568
+      ],
+      "source": "Downloads/ChatGPT Image 5. Juli 2026, 19_30_31.png",
+      "variants_planned": [
+        "TELEPHONE_BEIGE_HOME",
+        "TELEPHONE_DARK_BEIGE_HOME",
+        "TELEPHONE_WHITE_HOME",
+        "TELEPHONE_BLACK_OFFICE",
+        "TELEPHONE_GRAY_OFFICE",
+        "TELEPHONE_RED_SPECIAL"
+      ],
+      "notes": "Master-Geometrie fuer alle Telefon-Varianten — Farben nur ueber plastic_color (MATERIAL_SYSTEM.md), Nummern-/Marken-/Sticker-Overlays prozedural geplant. Leitung laeuft dynamisch als CABLE_PHONE_BEIGE_V01 hinter die Tischkante. Gameplay-Funktionen (ReceiveCall/MakeCall/ContactBook/BBSDial) verzahnen mit NPC-Kontakten und dem geplanten Modem/BBS-System; Audio-Profil (RingClassic etc.) folgt mit dem AudioManager. Union-Matte v5 gegen Verlaufs-BG mit Glow — sauber, Schatten separat (dynamischer Kontaktschatten)."
+    },
+    {
+      "asset_id": "MODEM_2400_MASTER_V01",
+      "display_name": "External 2400 Baud Modem Master (warm-beige)",
+      "category": "Communication",
+      "sub_category": "DialUpModem",
+      "type": "MasterAsset",
+      "years": "1993-1994 (Master; Varianten 9600-56k spaeter)",
+      "anchor": "modem_position",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "animated": false,
+      "version": "V01",
+      "status": "abgeschlossen",
+      "size_px": [
+        952,
+        372
+      ],
+      "source": "Downloads/ChatGPT Image 6. Juli 2026, 14_22_07.png",
+      "variants_planned": [
+        "MODEM_9600",
+        "MODEM_14400",
+        "MODEM_28800",
+        "MODEM_33600",
+        "MODEM_56000"
+      ],
+      "notes": "DAS transformative Asset: schaltet das BBS-Gameplay frei (BBSManager, data/bbs_boards.json). Erscheint im Raum nach Shop-Kauf (requires_hardware modem, GameAvailableFrom 1993). LEDs (Power/AA/CD/OH/SD/RD/TR/HS) sind spaeter eigene animierte Layer. Zwei dynamische Kabel: serielles Datenkabel zum A500, TAE-Telefonleitung hinter die Tischkante. Sounds (Dial/Connect_2400/Carrier/HangUp) im Audio-Inventar (README). Union-Matte v5, Verlaufs-BG mit Glow, Schatten dynamisch. Varianten nur ueber Material + LED-Anordnung + Baudrate."
+    },
+    {
+      "asset_id": "LOCATION_COMPUTER_SHOP_MASTER_V01",
+      "display_name": "Computerladen (Herr Gruber)",
+      "category": "Location",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "background",
+      "layer": 0,
+      "pivot": "top_left",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Vollbild-Hintergrund fuer den Ort computer_shop. Datei = asset_id: assets/backgrounds/locations/LOCATION_COMPUTER_SHOP_MASTER_V01.png (LocationBase laedt automatisch, cover-Modus; Jahresvarianten via _JAHR_Vnn). Hotspots im Bildraster 1672x941: Regale, Auslage, Tresen, Bestellkatalog, Tuer. ACHTUNG: Artwork enthaelt echte Markenlogos (Commodore/Amiga/Verbatim/BASF/3M) — spaeter ggf. durch marken-neutrale Fassung ersetzen."
+    },
+    {
+      "asset_id": "LOCATION_FRIEND_ROOM_MASTER_V01",
+      "display_name": "Freundes-Zimmer (Stefan/Template)",
+      "category": "Location",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "background",
+      "layer": 0,
+      "pivot": "top_left",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Vollbild-Hintergrund fuer friend_cellar. Datei = asset_id: assets/backgrounds/locations/LOCATION_FRIEND_ROOM_MASTER_V01.png (cover-Modus). Jugendzimmer, dient laut DB als Vorlage fuer alle Freunde. VisitSystem umgesetzt: Freund nicht immer daheim -> Zimmer wird abgedunkelt, Quest bleibt unblockiert. Prozedurale Moeblierung/Sammlung noch offen. Markenlogos wie oben."
+    },
+    {
+      "asset_id": "SFX_FLOPPY_INSERT_V01",
+      "display_name": "Diskette einlegen",
+      "category": "Audio",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "sfx",
+      "layer": 0,
+      "pivot": "n/a",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Freesound-Community, CC0. Genutzt vom AudioManager (pool). Ausgeloest bei Pruefen/Kopieren/Backup/Starten/Download."
+    },
+    {
+      "asset_id": "SFX_FLOPPY_READ_A_V01",
+      "display_name": "Diskette lesen (A)",
+      "category": "Audio",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "sfx",
+      "layer": 0,
+      "pivot": "n/a",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Freesound-Community, CC0. Genutzt vom AudioManager (pool). Ausgeloest bei Pruefen/Kopieren/Backup/Starten/Download."
+    },
+    {
+      "asset_id": "SFX_FLOPPY_READ_B_V01",
+      "display_name": "Diskette lesen (B)",
+      "category": "Audio",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "sfx",
+      "layer": 0,
+      "pivot": "n/a",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Freesound-Community, CC0. Genutzt vom AudioManager (pool). Ausgeloest bei Pruefen/Kopieren/Backup/Starten/Download."
+    },
+    {
+      "asset_id": "SFX_FLOPPY_EJECT_V01",
+      "display_name": "Diskette auswerfen",
+      "category": "Audio",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "sfx",
+      "layer": 0,
+      "pivot": "n/a",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Freesound-Community, CC0. Genutzt vom AudioManager (pool). Ausgeloest bei Pruefen/Kopieren/Backup/Starten/Download."
+    },
+    {
+      "asset_id": "SFX_VACUUM_CLEANER_LOOP_V01",
+      "display_name": "Staubsauger-Motorloop",
+      "category": "Audio",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "sfx",
+      "layer": 0,
+      "pivot": "n/a",
+      "transparent": false,
+      "animated": true,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Freesound 76618: Tb6_002.wav von digitopia, Sampling+ 1.0. Bearbeiteter 15-s-OGG-Loop (mono/44,1 kHz, Headroom, Crossfade), im Staubsauger-Hausauftrag exakt an gehaltene Werkzeugaktion gekoppelt. Attribution: assets/audio/README.md."
+    },
+    {
+      "asset_id": "LOCATION_SCHOOLYARD_MASTER_V01",
+      "display_name": "Schulhof (soziales Zentrum)",
+      "category": "Location",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "background",
+      "layer": 0,
+      "pivot": "top_left",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Vollbild-Hintergrund fuer den Ort schoolyard. Datei = asset_id in assets/backgrounds/locations/. Hotspots im Raster 1672x941 = Gespraechszonen (Bank/Eingang/Fahrradstaender/Mauer/Schwarzes Brett) fuer das Geruechte-Netzwerk (RumorManager). Markenlogos-Hinweis wie andere LOCATION_*."
+    },
+    {
+      "asset_id": "LOCATION_SCHOOLYARD_AFTER_SCHOOL_V01",
+      "display_name": "Schulhof — nachmittags (leer)",
+      "category": "LocationState",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "background",
+      "layer": 0,
+      "pivot": "top_left",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Zeit-Variante von LOCATION_SCHOOLYARD_MASTER. Wird nachmittags (Slot Nachmittag) geladen: leerer Hof, warmes Licht. Wer dann da ist, entscheidet der NPC-Tagesplan (NPCManager.present_at)."
+    },
+    {
+      "asset_id": "MUSIC_LIBRARY",
+      "display_name": "MOD-Bibliothek (160 Tracks)",
+      "category": "Music",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "stereo",
+      "layer": 0,
+      "pivot": "n/a",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "160 ProTracker-.mod (32 Highlights + 128 Club), nativ vom ModPlayer gespielt. Details/Attribution je Track in data/music.json. Club-Pool erscheint per Living Timeline; Standort-Themes fuer Flohmarkt/Schulhof/Computerclub. Export: Include-Filter *.mod. Lizenzen laufen."
+    },
+    {
+      "asset_id": "LOCATION_COMPUTER_CLUB_MASTER_V01",
+      "display_name": "Computerclub · Vereinswerkstatt",
+      "category": "Location",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "background",
+      "layer": 0,
+      "pivot": "top_left",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert · live",
+      "path": "res://assets/backgrounds/locations/LOCATION_COMPUTER_CLUB_MASTER_V01.png",
+      "size_px": [1672, 941],
+      "notes": "Vollbild-Hintergrund fuer Ort computer_club (Vereinsheim, warmes Licht). Hotspots 1672x941: Diskettentisch=MOD-Bibliothek, Mitglieder=Gerüchte, Schwarzes Brett, Kaffee-Ecke, Tuer. Markenlogos-Hinweis wie andere LOCATION_*."
+    },
+    {
+      "asset_id": "LOCATION_FLEA_MARKET_MASTER_V01",
+      "display_name": "Flohmarkt (samstags)",
+      "category": "Location",
+      "years": [
+        1990,
+        2000
+      ],
+      "anchor": "background",
+      "layer": 0,
+      "pivot": "top_left",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "notes": "Vollbild-Hintergrund fuer Ort flea_market (Aussen-Aisle, Kaffee/Bratwurst). Persistenter Markt via FleaMarketManager: Staende + Mystery-Kartons, woechentliche Entwicklung. Hotspots 1672x941. Markenlogos-Hinweis wie andere LOCATION_*."
+    },
+    {
+      "asset_id": "UI_MINIGAME_BOX_SORT_BOARD_V01",
+      "display_name": "Sortier-Minispiel · offene 12-Fach-Diskettenbox",
+      "category": "MinigameUI",
+      "years": [1990, 2000],
+      "anchor": "box_sort_board",
+      "layer": 0,
+      "pivot": "center",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "Arbeitsquelle; zugeschnittene V02 integriert",
+      "path": "res://assets/ui/minigames/box_sort_board_v01.png",
+      "notes": "Unbeschnittene Masterquelle des Top-down-Pixel-Art-Bretts. Warme Tischlampe plus kühles CRT-Kantenlicht."
+    },
+    {
+      "asset_id": "UI_MINIGAME_BOX_SORT_BOARD_V02",
+      "display_name": "Sortier-Minispiel · 12-Fach-Diskettenbox (Gameplay-Crop)",
+      "category": "MinigameUI",
+      "years": [1990, 2000],
+      "anchor": "box_sort_board",
+      "layer": 0,
+      "pivot": "center",
+      "transparent": false,
+      "animated": false,
+      "version": "V02",
+      "status": "integriert",
+      "path": "res://assets/ui/minigames/box_sort_board_v02.png",
+      "notes": "Gameplay-Crop 1470x820. Zwölf Fächer bilden die echten Drag-/Klick-Zonen; Diskettenkarten, Zielnummern, Auswahlglow und Erfolgslicht werden in GDScript darüber gerendert."
+    },
+    {
+      "asset_id": "UI_MINIGAME_DRIVE_CLEAN_BOARD_V01",
+      "display_name": "Laufwerksreinigung · 3,5-Zoll-DD-Laufwerk (Draufsicht)",
+      "category": "MinigameUI",
+      "years": [1990, 2000],
+      "anchor": "drive_clean_board",
+      "layer": 0,
+      "pivot": "center",
+      "transparent": false,
+      "animated": false,
+      "version": "V01",
+      "status": "integriert",
+      "path": "res://assets/ui/minigames/drive_clean_board_v01.png",
+      "source": "OpenAI imagegen, 2026-07-10; visuell an ROOM_MASTER_1992_V01 und UI_MINIGAME_BOX_SORT_BOARD_V02 ausgerichtet",
+      "usage": "Statischer Gameplay-Untergrund des Minispiels Laufwerkskopf reinigen; Reinigungsdiskette, Flüssigkeits-/Schmutzstatus, Kopfweg, Trefferzonen und Feedback werden in GDScript darüber gerendert.",
+      "notes": "Authentische Draufsicht auf ein geöffnetes 3,5-Zoll-DD-Diskettenlaufwerk im warm-kühlen Hybrid-Pixel-Art-Stil des Jugendzimmers. Keine eingebrannten Texte, Logos, Hände oder UI-Elemente."
+    },
+    {
+      "asset_id": "ROOM_EMPTY_SHELVES_MASTER_V02",
+      "display_name": "Jugendzimmer · leere Regal-/Hintergrundplatte",
+      "category": "Environment",
+      "sub_category": "RoomFarPlate",
+      "years": "1990-1999",
+      "anchor": "FULL_CANVAS",
+      "layer": 0,
+      "pivot": "TopLeft",
+      "transparent": false,
+      "animated": false,
+      "version": "V02",
+      "status": "integriert",
+      "path": "res://assets/backgrounds/layers/ROOM_EMPTY_SHELVES_MASTER_V02.png",
+      "size_px": [3072, 1728],
+      "source": "OpenAI built-in imagegen, 2026-07-11; präzise Objektentfernung aus ROOM_MASTER_1992_V01",
+      "notes": "Tisch und alle losen Regalobjekte entfernt; Regale leer, verdeckter Boden/Teppich/Heizkörper rekonstruiert. Ferne 2,5D-Platte."
+    },
+    {
+      "asset_id": "ROOM_DESK_MASTER_V02",
+      "display_name": "Jugendzimmer · starrer Schreibtischmaster",
+      "category": "Environment",
+      "sub_category": "DeskSurface",
+      "years": "1990-1999",
+      "anchor": "desk_bottom_center",
+      "layer": 4,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "animated": false,
+      "version": "V02",
+      "status": "integriert",
+      "path": "res://assets/backgrounds/layers/ROOM_DESK_MASTER_V02.png",
+      "size_px": [3136, 1152],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Eigene starre Desk-Surface; Tischobjekte, Schatten und Hotspots teilen exakt ihre Projektion."
+    },
+    {
+      "asset_id": "COMPUTER_AMIGA500_V02",
+      "display_name": "Amiga-500-Klasse · Desk-Perspektive",
+      "category": "Computer",
+      "model": "Amiga 500",
+      "years": "1990-1994",
+      "anchor": "computer_base",
+      "layer": 10,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "version": "V02",
+      "status": "integriert · Startmodell",
+      "path": "res://assets/backgrounds/layers/COMPUTER_AMIGA500_V02.png",
+      "size_px": [2544, 1092],
+      "model_id": "amiga_500",
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Volltastatur und Nummernblock; fester 35-mm-Sitzwinkel; keine Logos; Kabel separat."
+    },
+    {
+      "asset_id": "COMPUTER_AMIGA600_V01",
+      "display_name": "Amiga-600-Klasse · Desk-Perspektive",
+      "category": "Computer",
+      "model": "Amiga 600",
+      "years": "1992-1996",
+      "anchor": "computer_base",
+      "layer": 10,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "version": "V01",
+      "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/COMPUTER_AMIGA600_V01.png",
+      "size_px": [2420, 1316],
+      "model_id": "amiga_600",
+      "source": "OpenAI built-in imagegen, 2026-07-11; User-Referenz, Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Kompaktes schmales Gehäuse ohne Nummernblock; internes Laufwerk rechts."
+    },
+    {
+      "asset_id": "COMPUTER_AMIGA1200_V02",
+      "display_name": "Amiga-1200-Klasse · Desk-Perspektive",
+      "category": "Computer",
+      "model": "Amiga 1200",
+      "years": "1992-1997",
+      "anchor": "computer_base",
+      "layer": 10,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "version": "V02",
+      "status": "deprecated",
+      "replaced_by": "COMPUTER_AMIGA1200_V03",
+      "path": "res://assets/backgrounds/layers/COMPUTER_AMIGA1200_V02.png",
+      "size_px": [2698, 1054],
+      "model_id": "amiga_1200",
+      "source": "OpenAI built-in imagegen edit, 2026-07-11; User-Referenz, abgestimmte Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Alte schraege Produktperspektive; durch den strikt frontalen V03-Raummaster ersetzt."
+    },
+    {
+      "asset_id": "COMPUTER_AMIGA1200_V03",
+      "display_name": "Amiga-1200-Klasse · frontaler Desk-Master",
+      "category": "Computer",
+      "model": "Amiga 1200",
+      "years": "1992-1997",
+      "anchor": "computer_base",
+      "layer": 10,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "version": "V03",
+      "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/COMPUTER_AMIGA1200_V03.png",
+      "size_px": [3276, 1160],
+      "model_id": "amiga_1200",
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-26; Magenta-Chroma, Soft-Matte, Despill und 2x Lanczos-HQ",
+      "notes": "Null-Yaw/Null-Roll, waagerechte Frontkante, symmetrische A1200-Klasse mit separatem Cursorblock, Nummernblock, zehn Funktionstastenpositionen und drei Status-LEDs. Internes Laufwerk bleibt korrekt in der rechten Seitenwand und ist frontal nicht als Top-Slot sichtbar."
+    },
+    {
+      "asset_id": "MONITOR_COMMODORE_1084S_V02",
+      "display_name": "1084S-Klasse · Desk-Perspektive",
+      "category": "Monitor",
+      "model": "Commodore 1084S",
+      "years": "1990-1995",
+      "anchor": "monitor_base",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "screen_replaceable": true,
+      "version": "V02",
+      "status": "integriert · Startmodell",
+      "path": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1084S_V02.png",
+      "size_px": [2080, 1988],
+      "model_id": "commodore_1084s",
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Strikte Frontansicht mit schwarzer leerer Röhre; modellbezogene screen_frac in data/monitors.json."
+    },
+    {
+      "asset_id": "MONITOR_COMMODORE_1901_V01",
+      "display_name": "1901-Klasse · Desk-Perspektive",
+      "category": "Monitor",
+      "model": "Commodore 1901",
+      "years": "1990-1993",
+      "anchor": "monitor_base",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "screen_replaceable": true,
+      "version": "V01",
+      "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1901_V01.png",
+      "size_px": [1784, 1724],
+      "model_id": "commodore_1901",
+      "source": "OpenAI built-in imagegen, 2026-07-11; User-Referenz, Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Strikte Frontansicht der kompakten Röhre; die modelltypische Seitenlüftung ist aus diesem Kamerawinkel nicht sichtbar. Eigene CRT-Kalibrierung in data/monitors.json."
+    },
+    {
+      "asset_id": "MONITOR_COMMODORE_1942_V01",
+      "display_name": "Commodore 1942 Multisync · Desk-Perspektive",
+      "category": "Monitor",
+      "model": "Commodore 1942",
+      "years": "1993-1997",
+      "anchor": "monitor_base",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "screen_replaceable": true,
+      "version": "V01",
+      "status": "integriert · Multisync-Modellslot",
+      "path": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1942_V01.png",
+      "size_px": [1283, 1226],
+      "model_id": "commodore_1942",
+      "source": "OpenAI built-in imagegen, 2026-07-26; Referenz-Style, Chroma-Matte",
+      "notes": "Frontaler 14-Zoll-Multisync-Cutout; 15/31-kHz-Baender, 0,28-mm-Maske und modellbezogene Bildschirmflaeche in data/monitors.json."
+    },
+    {
+      "asset_id": "MONITOR_MULTISYNC_17_V01",
+      "display_name": "17-Zoll Multisync HiRes · Desk-Perspektive",
+      "category": "Monitor",
+      "model": "17-Zoll Multisync HiRes",
+      "years": "1996-1999",
+      "anchor": "monitor_base",
+      "layer": 9,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "screen_replaceable": true,
+      "version": "V01",
+      "status": "integriert · A1200-HiRes-Modellslot",
+      "path": "res://assets/backgrounds/layers/MONITOR_MULTISYNC_17_V01.png",
+      "size_px": [1310, 1200],
+      "model_id": "multisync_17",
+      "source": "OpenAI built-in imagegen, 2026-07-26; Referenz-Style, Chroma-Matte",
+      "notes": "Spaeter professioneller CRT-Cutout mit feiner 0,25-mm-Maske, groesserer Workbench-Flaeche und stark reduzierten Interlace-Artefakten."
+    },
+    {
+      "asset_id": "MOUSE_AMIGA_V02",
+      "display_name": "Amiga-Zweitastenmaus · Desk-Perspektive",
+      "category": "Mouse",
+      "years": "1990-1999",
+      "anchor": "mouse_position",
+      "layer": 13,
+      "pivot": "BottomCenter",
+      "transparent": true,
+      "version": "V02",
+      "status": "integriert",
+      "path": "res://assets/backgrounds/layers/MOUSE_AMIGA_V02.png",
+      "size_px": [1532, 1472],
+      "model_id": "amiga_mouse",
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Ohne Kabel; Kabel bleibt dynamische Engine-Geometrie."
+    },
+    {
+      "asset_id": "MAGAZINE_MASTER_V02", "display_name": "Leeres Magazin · Desk-Perspektive",
+      "category": "Prop", "years": "1990-1999", "anchor": "magazine_slot", "layer": 19,
+      "pivot": "Center", "transparent": true, "version": "V02", "status": "integriert",
+      "path": "res://assets/backgrounds/layers/MAGAZINE_MASTER_V02.png", "size_px": [1796, 2236],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Perspektivischer leerer Magazinträger; Monatscover wird zur Laufzeit in magazine_layout.json-Quad komponiert."
+    },
+    {
+      "asset_id": "MODEM_9600_MASTER_V01", "display_name": "9600-Baud-Modem · Desk-Perspektive",
+      "category": "Modem", "model_id": "modem_9600", "years": "1992-1996", "anchor": "modem_position", "layer": 9,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/MODEM_9600_MASTER_V01.png", "size_px": [2678, 896],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Kabellos; Status-LEDs sind Bestandteil des Gehäuses."
+    },
+    {
+      "asset_id": "MODEM_14400_MASTER_V01", "display_name": "14400-Baud-Modem · Desk-Perspektive",
+      "category": "Modem", "model_id": "modem_14400", "years": "1994-1998", "anchor": "modem_position", "layer": 9,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/MODEM_14400_MASTER_V01.png", "size_px": [3706, 824],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Flacheres späteres Gehäuse; Kabel bleibt Engine-Geometrie hinter der Tischkante."
+    },
+    {
+      "asset_id": "PRINTER_DOT_MATRIX_9PIN_V01", "display_name": "9-Nadel-Drucker · Regalperspektive",
+      "category": "Printer", "model_id": "dot_matrix_9pin", "years": "1990-1996", "anchor": "printer_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/PRINTER_DOT_MATRIX_9PIN_V01.png", "size_px": [2804, 1272],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Ohne Papier, Kabel, Logo oder eingebrannten Schatten."
+    },
+    {
+      "asset_id": "PRINTER_DOT_MATRIX_24PIN_MONO_V01", "display_name": "24-Nadel-Monodrucker · Regalperspektive",
+      "category": "Printer", "model_id": "dot_matrix_24_mono", "years": "1991-1998", "anchor": "printer_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/PRINTER_DOT_MATRIX_24PIN_MONO_V01.png", "size_px": [2764, 1404],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Breiter professioneller LQ-Korpus; Papier und Kabel separat."
+    },
+    {
+      "asset_id": "PRINTER_DOT_MATRIX_24PIN_COLOR_V01", "display_name": "24-Nadel-Farbdrucker · Regalperspektive",
+      "category": "Printer", "model_id": "dot_matrix_24_color", "years": "1992-1997", "anchor": "printer_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/PRINTER_DOT_MATRIX_24PIN_COLOR_V01.png", "size_px": [2664, 1332],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Periodengerechte zurückhaltende CMYK-Kennung; kein moderner Tintenstrahler."
+    },
+    {
+      "asset_id": "PRINTER_COLOR_INKJET_CJ300_V01", "display_name": "Farb-Tintenstrahler CJ-300 · Regalperspektive",
+      "category": "Printer", "model_id": "color_inkjet", "years": "1993-1999", "anchor": "printer_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/PRINTER_COLOR_INKJET_CJ300_V01.png", "size_px": [2198, 1982],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte", "notes": "Hoher Einzelblatteinzug, CMY-Tasten und zeitgerechtes beiges Gehäuse."
+    },
+    {
+      "asset_id": "PRINTER_LASER_MONO_V01", "display_name": "Laserdrucker · Regalperspektive",
+      "category": "Printer", "model_id": "laser_mono", "years": "1992-1998", "anchor": "printer_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/PRINTER_LASER_MONO_V01.png", "size_px": [2382, 1366],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte", "notes": "Kompakter monochromer Desktop-Laser ohne eingebrannten Schatten."
+    },
+    {
+      "asset_id": "STEREO_COMPACT_CASSETTE_V01", "display_name": "Kompaktanlage · Radio/Doppelkassette",
+      "category": "Audio", "model_id": "compact_cassette", "years": "1990-1994", "anchor": "stereo_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Startmodell",
+      "path": "res://assets/backgrounds/layers/STEREO_COMPACT_CASSETTE_V01.png", "size_px": [2666, 1102],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Strikte Frontansicht, kein CD-Laufwerk, keine Kabel."
+    },
+    {
+      "asset_id": "STEREO_COMPONENT_CASSETTE_V01", "display_name": "Hi-Fi-Komponentenanlage · Kassette",
+      "category": "Audio", "model_id": "component_cassette", "years": "1990-1994", "anchor": "stereo_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/STEREO_COMPONENT_CASSETTE_V01.png", "size_px": [2820, 1368],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Tuner, Verstärker, Equalizer und Doppelkassette; kein CD-Laufwerk."
+    },
+    {
+      "asset_id": "STEREO_COMPACT_CD_V01", "display_name": "Kompaktanlage · Single-CD",
+      "category": "Audio", "model_id": "compact_cd", "years": "1992-1996", "anchor": "stereo_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/STEREO_COMPACT_CD_V01.png", "size_px": [2676, 1324],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Frühe erschwingliche CD-Kompaktanlage mit Kassettendeck."
+    },
+    {
+      "asset_id": "STEREO_DUAL_CD_V01", "display_name": "Stereoanlage · Doppel-CD",
+      "category": "Audio", "model_id": "dual_cd", "years": "1995-1999", "anchor": "stereo_position", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Modellslot",
+      "path": "res://assets/backgrounds/layers/STEREO_DUAL_CD_V01.png", "size_px": [2554, 1210],
+      "source": "OpenAI built-in imagegen, 2026-07-11; Chroma-Matte und 2× Lanczos-HQ", "notes": "Mitte-90er Doppel-CD-Ausbau, ohne moderne Funktechnik."
+    },
+    {
+      "asset_id": "DISKBOX_12_SMOKED_V02", "display_name": "3,5-Zoll-Diskettenbox · 12 Plätze",
+      "category": "Storage", "model_id": "diskbox_12", "years": "1990-1999", "anchor": "diskbox_12_shelf", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V02", "status": "integriert · Startbox",
+      "path": "res://assets/backgrounds/layers/DISKBOX_12_SMOKED_V02.png", "size_px": [2382, 1480],
+      "source": "OpenAI built-in imagegen, 2026-07-11; reale 3,5-Zoll-Maße, Chroma-Matte und 2× Lanczos-HQ", "notes": "Sichtbreite im Raum 108 px aus ca. 110 mm realer Gehäusebreite."
+    },
+    {
+      "asset_id": "DISKBOX_80_ARCHIVE_V01", "display_name": "3,5-Zoll-Archivbox · 80 Plätze",
+      "category": "Storage", "model_id": "diskbox_80", "years": "1990-1999", "anchor": "diskbox_80_shelf", "layer": 5,
+      "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · Ausbau",
+      "path": "res://assets/backgrounds/layers/DISKBOX_80_ARCHIVE_V01.png", "size_px": [2192, 1740],
+      "source": "OpenAI built-in imagegen, 2026-07-11; reale 3,5-Zoll-Maße, Chroma-Matte und 2× Lanczos-HQ", "notes": "Ca. 115 × 200 × 115 mm; Kauf erhöht Kapazität tatsächlich um 80 statt nur optisch."
+    },
+    {
+      "asset_id": "LOCATION_DEALER_CLEARING_MASTER_V01", "display_name": "Versteckte Händlerlichtung hinter dem Bolzplatz",
+      "category": "LocationMaster", "years": "1990-1999", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V01", "status": "integriert · live",
+      "path": "res://assets/backgrounds/locations/LOCATION_DEALER_CLEARING_MASTER_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; LOCATION_WALDRAND_MASTER als Kamera-/Lichtreferenz",
+      "notes": "Kartenversteckter Unterort; Zugang ausschließlich über den Trampelpfad. Freie Actor-Zone für npc_haendler."
+    },
+    {
+      "asset_id": "LOCATION_DEALER_CLEARING_FOREGROUND_V01", "display_name": "Händlerlichtung · 2,5D-Near-Plane",
+      "category": "LocationForeground", "years": "1990-1999", "anchor": "FULL_CANVAS", "layer": 6,
+      "pivot": "FullCanvas", "transparent": true, "version": "V01", "status": "integriert · live",
+      "path": "res://assets/backgrounds/foregrounds/LOCATION_DEALER_CLEARING_FOREGROUND_V01.png",
+      "source": "OpenAI built-in imagegen, 2026-07-12; Chroma-Matte",
+      "notes": "Seitliche Nahblätter mit eigenem foreground_gain; Mitte bleibt für Händler, Prüfplatz und Hotspots frei."
+    },
+    {
+      "asset_id": "LOCATION_KIOSK_MASTER_V02", "display_name": "Kiosk am Markt · leere Zeitungsauslagen",
+      "category": "LocationMaster", "years": "1990-1999", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/backgrounds/locations/LOCATION_KIOSK_MASTER_V02.png", "size_px": [1672, 941],
+      "source": "OpenAI built-in imagegen edit, 2026-07-13; LOCATION_KIOSK_MASTER_V01 als invariant erhaltenes Edit-Target",
+      "notes": "Nur die beiden unteren langen Zeitungsauslagen wurden geleert und als blanke geneigte Metallfächer rekonstruiert. Architektur, Licht, obere Ordner, Postkarten, Süßwaren, Getränke, Lose und Eistruhe unverändert. V01 bleibt als Rückfall erhalten; dynamische Monatscover rendert kiosk_magazine_layer.gd. Identische V02-Kopie im Layer-Ordner für Editor-/Assetwerkzeuge."
+    },
+    {
+      "asset_id": "KIOSK_MAGAZINE_SHELF_FRAME_V01", "display_name": "Kiosk-Magazinauslage · vordere Regalmaske",
+      "category": "LocationForeground", "years": "1990-1999", "anchor": "kiosk_magazine_shelf", "layer": 31,
+      "pivot": "VirtualRect", "transparent": true, "version": "V01", "status": "integriert · live + Editor",
+      "path": "res://assets/backgrounds/layers/KIOSK_MAGAZINE_SHELF_FRAME_V01.png", "size_px": [1671, 941],
+      "source": "OpenAI built-in imagegen edit, 2026-07-13; Chroma-Matte via tools/chroma_key_png.gd",
+      "notes": "Regalfront wird nach den dynamischen Monatscovern gezeichnet: transparente Fachoeffnungen, schmale Metallstege und Frontkanten erzeugen echte Verdeckung. Feste 1920x1080-Regalverankerung folgt derselben 2,5D-Projektion wie die Cover. Editor kann die Maske per Button oder F ausblenden; Auswahlgriffe bleiben immer davor."
+    },
+    {
+      "asset_id": "TELEPHONE_MASTER_V02", "display_name": "Tastentelefon 1990 · lesbare Ziffern",
+      "category": "Communication", "years": "1990-1999", "anchor": "telephone_position", "layer": 11,
+      "pivot": "BottomCenter", "transparent": true, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/backgrounds/layers/TELEPHONE_MASTER_V02.png", "size_px": [1510, 1042],
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-13; TELEPHONE_MASTER_V01 als Geometrie-/Perspektivreferenz; lokale Alpha-Matte",
+      "notes": "Vollstaendiges korrekt geordnetes 1-9/*0#-Tastenfeld; RoomAssets waehlt V02 automatisch. Gehaeusewinkel, Tischanker und Kabelvertrag bleiben unveraendert."
+    },
+    {
+      "asset_id": "KIOSK_CAPRI_SONNE_ORANGE_1990_V01", "display_name": "Capri-Sonne Orange · 1990er Trinkbeutel",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_CAPRI_SONNE_ORANGE_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Zeitfenster und Umbenennung 2017 stehen datengetrieben in history_shops.json."
+    },
+    {
+      "asset_id": "KIOSK_RAIDER_1990_V01", "display_name": "Raider-Riegel · 1990",
+      "category": "HistoricalKioskProduct", "years": "1990", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_RAIDER_1990_V01.png", "size_px": [1710, 919],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Nur 1990 sichtbar; wird 1991 durch KIOSK_TWIX_1991 ersetzt."
+    },
+    {
+      "asset_id": "KIOSK_TWIX_1991_V01", "display_name": "Twix-Riegel · 1991er Namenswechsel",
+      "category": "HistoricalKioskProduct", "years": "1991-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_TWIX_1991_V01.png", "size_px": [1665, 945],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Fruehe weisse 1991er Packungslesart; exactes Verfuegbarkeitsfenster im Katalog."
+    },
+    {
+      "asset_id": "KIOSK_PUNICA_1990_V01", "display_name": "Punica-Fruchtgetraenk · Pfandglas",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_PUNICA_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Bleibt korrekt durch 1999; Museumstext nennt die Produktionspause 2022–2024 und die Rueckkehr."
+    },
+    {
+      "asset_id": "KIOSK_LIFT_APFELSCHORLE_1990_V01", "display_name": "Lift Apfelschorle · Mehrwegflasche",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_LIFT_APFELSCHORLE_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Gruene 0,5-l-Mehrwegflasche im fruehen 1990er Kioskstil."
+    },
+    {
+      "asset_id": "KIOSK_MEZZO_MIX_1990_V01", "display_name": "Mezzo Mix · Mehrwegflasche",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_MEZZO_MIX_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "0,33-l-Glasflasche als deutscher Cola-Orange-Zeitmarker."
+    },
+    {
+      "asset_id": "KIOSK_BANJO_1990_V01", "display_name": "Banjo Haselnuss · Goldpackung",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_BANJO_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Verschwundener Haselnuss-Waffelriegel; Produktionsende steht im Museumskatalog."
+    },
+    {
+      "asset_id": "KIOSK_BALISTO_1990_V01", "display_name": "Balisto Korn-Mix · Gruenpackung",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_BALISTO_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Historische Korn-Mix-Packungslesart."
+    },
+    {
+      "asset_id": "KIOSK_LILA_PAUSE_1990_V01", "display_name": "Milka Lila Pause · 1990",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_LILA_PAUSE_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Lila Riegelpackung; Einfuehrung 1986 und spaetere Einstellung datengetrieben dokumentiert."
+    },
+    {
+      "asset_id": "KIOSK_APPLAUSE_1990_V01", "display_name": "Applause · Schokoriegel",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_APPLAUSE_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Produktionsstart 1987; heute verschwundener Riegel."
+    },
+    {
+      "asset_id": "KIOSK_TRIPPLE_CHOC_1992_V01", "display_name": "Tripple Choc · 1992",
+      "category": "HistoricalKioskProduct", "years": "1992-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_TRIPPLE_CHOC_1992_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen plus provenance cleanup, 2026-07-13; Chroma-Matte", "notes": "Erscheint im Spiel erst ab dem dokumentierten Produktionsstart; unbelegtes Herstellerzeichen vor Integration entfernt."
+    },
+    {
+      "asset_id": "KIOSK_POM_BAER_1990_V01", "display_name": "POM-BÄR Original · fruehe Tuete",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_POM_BAER_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Rote 1987/1990er Packungslesart."
+    },
+    {
+      "asset_id": "KIOSK_CRUNCHIPS_1992_V01", "display_name": "Crunchips Paprika · Bahlsen Picanterie",
+      "category": "HistoricalKioskProduct", "years": "1992-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_CRUNCHIPS_1992_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen plus precise label edit, 2026-07-13; Chroma-Matte", "notes": "Fruehe blaue Paprika-Tuete; falsches modernes Markenfeld im Generat wurde vor Integration ersetzt."
+    },
+    {
+      "asset_id": "KIOSK_NICNACS_1993_V01", "display_name": "NicNac’s · 1993",
+      "category": "HistoricalKioskProduct", "years": "1993-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_NICNACS_1993_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Dunkelblaue Startdekaden-Packung; erst ab 1993 sichtbar."
+    },
+    {
+      "asset_id": "KIOSK_NOGGER_1990_V01", "display_name": "Langnese Nogger · 1990",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_NOGGER_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Altes rechteckiges Langnese-Zeichen statt modernem Herz."
+    },
+    {
+      "asset_id": "KIOSK_CORNETTO_1990_V01", "display_name": "Cornetto Haselnuss · 1990",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_CORNETTO_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Konische Papierhuelle im historischen Markenstil."
+    },
+    {
+      "asset_id": "KIOSK_FLUTSCHFINGER_1990_V01", "display_name": "Flutschfinger · 1990",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_FLUTSCHFINGER_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Rotes Hand-Wassereis, dokumentierter Start 1982."
+    },
+    {
+      "asset_id": "KIOSK_MAGNUM_1990_V01", "display_name": "Magnum Classic · fruehe Packung",
+      "category": "HistoricalKioskProduct", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_MAGNUM_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Fruehe Premium-Packungslesart mit periodischem Langnese-Zeichen."
+    },
+    {
+      "asset_id": "KIOSK_BRAUNER_BAER_1995_V01", "display_name": "Brauner Bär · Comeback 1995/96",
+      "category": "HistoricalKioskProduct", "years": "1995-1996", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/KIOSK_BRAUNER_BAER_1995_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen plus precise period-logo edit, 2026-07-13; Chroma-Matte", "notes": "Nur im belegten 1995/96-Comeback-Fenster sichtbar; modernes Herzzeichen vor Integration durch das alte rechteckige Langnese-Zeichen ersetzt."
+    },
+    {
+      "asset_id": "IMBISS_BRATWURST_1990_V01", "display_name": "Bratwurst · Papierschale",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_BRATWURST_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Einzelgericht und Pommes-Kombination teilen denselben Master."
+    },
+    {
+      "asset_id": "IMBISS_FRIKADELLE_1990_V01", "display_name": "Frikadelle · Papierschale",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_FRIKADELLE_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Handgeformte gebratene Frikadellen ohne moderne Box."
+    },
+    {
+      "asset_id": "IMBISS_SCHASCHLIK_1990_V01", "display_name": "Schaschlik in Sauce · Papierschale",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_SCHASCHLIK_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Fleisch-Zwiebel-Paprika-Spiess in roter Sauce."
+    },
+    {
+      "asset_id": "IMBISS_SCHNITZEL_1990_V01", "display_name": "Schnitzel · Papierschale",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_SCHNITZEL_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Kleines paniertes Budenschnitzel mit Zitronenspalte."
+    },
+    {
+      "asset_id": "IMBISS_SAUCEN_EXTRAS_1990_V01", "display_name": "Ketchup, Mayonnaise, Senf und Currysauce",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_SAUCEN_EXTRAS_1990_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Markenfreie wiederbefuellbare Quetschflaschen; gemeinsame Vorschau fuer klassische Extras."
+    },
+    {
+      "asset_id": "IMBISS_POMMES_V01", "display_name": "Pommes frites · Papierschale und Zweizackgabel",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_POMMES_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Direkt in Hier-essen-/Mitnehmen-Ablauf und Inventar verdrahtet."
+    },
+    {
+      "asset_id": "IMBISS_CURRYWURST_V01", "display_name": "Currywurst · Papierschale",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · HistoryShop",
+      "path": "res://assets/backgrounds/layers/IMBISS_CURRYWURST_V01.png", "size_px": [1536, 1024],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Einzelgericht und Kombi-Menue verwenden denselben realen Master ohne Duplikat."
+    },
+    {
+      "asset_id": "IMBISS_ZIGEUNERSAUCE_1990_V01", "display_name": "Paprikasauce · historisches 1990er Etikett",
+      "category": "HistoricalFood", "years": "1990-1999", "pivot": "BottomCenter", "transparent": true, "version": "V01", "status": "integriert · kontextualisiert",
+      "path": "res://assets/backgrounds/layers/IMBISS_ZIGEUNERSAUCE_1990_V01.png", "size_px": [1024, 1536],
+      "source": "OpenAI built-in imagegen, 2026-07-13; Chroma-Matte", "notes": "Historischer Wortlaut nur im Museumskontext; keine Person, Karikatur oder Ethnostereotype. UI erklaert die Umbenennung 2020 und nennt Paprikasauce als heutige Bezeichnung."
+    },
+    {
+      "asset_id": "LOCATION_IMBISS_MASTER_V01", "display_name": "Pommes-Palast · Erinnerungsimbiss 1990",
+      "category": "LocationMaster", "years": "1990-1999", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V01", "status": "integriert · live",
+      "path": "res://assets/backgrounds/locations/LOCATION_IMBISS_MASTER_V01.png", "size_px": [1672, 941],
+      "source": "OpenAI built-in imagegen, 2026-07-13", "notes": "Frontale 16:9-Kamera, leere dynamische Bestellzone, echte 1990er Materialien und getrennte 2,5D-Nahkante."
+    },
+    {
+      "asset_id": "LOCATION_IMBISS_MASTER_V02", "display_name": "Pommes-Palast · dynamische Wanduhr",
+      "category": "LocationMaster", "years": "1990-1999", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/backgrounds/locations/LOCATION_IMBISS_MASTER_V02.png", "size_px": [1672, 941],
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-13; weich maskierte Uhrflaeche auf V01",
+      "notes": "Nur die eingebrannten Uhrzeiger wurden entfernt; Zifferblatt, Pivot und Gehaeuse bleiben. LocationAnalogClock25D rendert Stunden-/Minutenzeiger ausschliesslich aus TimeManager (keine zweite Echtzeit-Sekundenquelle) und folgt der Wandprojektion."
+    },
+    {
+      "asset_id": "LOCATION_IMBISS_FOREGROUND_V01", "display_name": "Pommes-Palast · 2,5D-Near-Plane",
+      "category": "LocationForeground", "years": "1990-1999", "anchor": "FULL_CANVAS", "layer": 6,
+      "pivot": "FullCanvas", "transparent": true, "version": "V01", "status": "integriert · live",
+      "path": "res://assets/backgrounds/foregrounds/LOCATION_IMBISS_FOREGROUND_V01.png", "size_px": [1672, 941],
+      "source": "OpenAI built-in imagegen precise extraction, 2026-07-13; Chroma-Matte", "notes": "Nur die beiden nahen Resopal-Stehtischkanten; pixelgleich zur Masterkamera ausgerichtet."
+    },
+    {
+      "asset_id": "HARDWARE_SERVICE_A500_OPEN_V02", "display_name": "Gruber Servicebench · Amiga 500 offen",
+      "category": "MinigameUI", "years": "1990", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/ui/minigames/HARDWARE_SERVICE_A500_OPEN_V02.png", "size_px": [1586, 992],
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-26; COMPUTER_AMIGA500_V02 als Formreferenz",
+      "notes": "Geoeffneter A500-Serviceplatz mit separater RAM-/FDD-Ablage, ESD-Band, Netztrennung und Werkzeugzonen. Schrift und Interaktion werden ausschliesslich zur Laufzeit gezeichnet."
+    },
+    {
+      "asset_id": "HARDWARE_SERVICE_A1011_OPEN_V02", "display_name": "Gruber Servicebench · A1011 offen",
+      "category": "MinigameUI", "years": "1991", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/ui/minigames/HARDWARE_SERVICE_A1011_OPEN_V02.png", "size_px": [1586, 992],
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-26; DRIVE_COMMODORE_A1011_V01 als Formreferenz",
+      "notes": "Geoeffnete DD-Laufwerksmechanik mit Controller, Kopfwagen, Ersatzmechanik, Kabel, Schrauben und ESD-Band. Der Auftrag fordert bewusst kein RAM."
+    },
+    {
+      "asset_id": "HARDWARE_SERVICE_A600_OPEN_V02", "display_name": "Gruber Servicebench · Amiga 600 offen",
+      "category": "MinigameUI", "years": "1992-1993", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/ui/minigames/HARDWARE_SERVICE_A600_OPEN_V02.png", "size_px": [1586, 992],
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-26; COMPUTER_AMIGA600_V01 als Formreferenz",
+      "notes": "Kompakte geoeffnete ECS-Werkbank mit A601-/Chip-RAM-Zone, internem DD-Laufwerk, Schirmblech, Werkzeug und ESD-Band."
+    },
+    {
+      "asset_id": "HARDWARE_SERVICE_A1200_OPEN_V02", "display_name": "Gruber Servicebench · Amiga 1200 offen",
+      "category": "MinigameUI", "years": "1994-1996", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "version": "V02", "status": "integriert · live",
+      "path": "res://assets/ui/minigames/HARDWARE_SERVICE_A1200_OPEN_V02.png", "size_px": [1586, 992],
+      "source": "OpenAI built-in imagegen precise edit, 2026-07-26; COMPUTER_AMIGA1200_V02 als Formreferenz",
+      "notes": "Breite AGA-Servicebench mit Fast-RAM-/IDE-/FDD-Zonen. Ab 1994 aktiv; die Gesellenpruefung 1995 erzwingt diese Plattform und Level 4."
+    },
+    {
+      "asset_id": "CODE_RED_GEO_DASHBOARD_BLANK_V03", "display_name": "CODE RED · blanke GEO-Engineering-Konsole",
+      "category": "MinigameUI", "years": "1962-2034 · fiktionale Simulation", "anchor": "FULL_CANVAS", "layer": 0,
+      "pivot": "FullCanvas", "transparent": false, "animated": true, "version": "V03", "status": "integriert · live",
+      "path": "res://assets/ui/games/code_red/geo_dashboard_blank_v03.png", "size_px": [320, 256],
+      "source": "V02-Blanko, 2026-07-25 über den gemeinsamen OCS-Compiler auf 32 Hardwarefarben gebacken",
+      "notes": "Reine OCS-Amiga-Instrumententafel ohne eingebrannte Schrift, Werte oder Schiebergriff. CodeRedGame zeichnet Texte, Balken, Kartenmarker, Warnungen und den situationsabhaengigen 0-100-Prozent-Hebel zur Laufzeit; PRESET_FULL_RECT im Monitor-Host."
+    },
+    {
+      "asset_id": "A1200_HDD_25_IDE_80MB_V01", "display_name": "A1200 · interne 2,5-Zoll-IDE-HDD 80 MB",
+      "category": "HardwareUpgrade", "years": "1993-1997", "anchor": "ShopPreview", "layer": 0,
+      "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · Shop/Upgradebaum",
+      "path": "res://assets/backgrounds/layers/A1200_HDD_25_IDE_80MB_V01.png", "size_px": [2798, 2248],
+      "source": "OpenAI built-in imagegen, 2026-07-26; A600-HDD-Master als Stilreferenz; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "2,5-Zoll-IDE-Platte mit A1200-Einbaurahmen und 44-Pin-Kabel; rechnergebundener DH0:-Ausbau."
+    },
+    {
+      "asset_id": "A1200_FASTRAM_4MB_RTC_V01", "display_name": "A1200 · 4-MB-Fast-RAM-Karte mit RTC",
+      "category": "HardwareUpgrade", "years": "1993-1997", "anchor": "ShopPreview", "layer": 0,
+      "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · Shop/Upgradebaum",
+      "path": "res://assets/backgrounds/layers/A1200_FASTRAM_4MB_RTC_V01.png", "size_px": [3398, 1852],
+      "source": "OpenAI built-in imagegen, 2026-07-26; A600-RAM-Master als Stilreferenz; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Vier bestückte Speicherpositionen, freie zweite Bank, Echtzeituhr und lokaler Erweiterungsstecker."
+    },
+    {
+      "asset_id": "A1200_FASTRAM_8MB_RTC_V01", "display_name": "A1200 · 8-MB-Fast-RAM-Karte mit RTC",
+      "category": "HardwareUpgrade", "years": "1994-1997", "anchor": "ShopPreview", "layer": 0,
+      "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · Shop/Upgradebaum",
+      "path": "res://assets/backgrounds/layers/A1200_FASTRAM_8MB_RTC_V01.png", "size_px": [3396, 1852],
+      "source": "OpenAI built-in imagegen edit, 2026-07-26; 4-MB-Karte als Formreferenz; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Voll bestückte Variante der gleichen Kartenfamilie; zusammen mit 2 MB Chip-RAM ergibt sie 10 MB."
+    },
+    {
+      "asset_id": "A1200_ACCEL_68030_16MB_V01", "display_name": "A1200 · 68030-Turbokarte 40 MHz mit 16 MB",
+      "category": "HardwareUpgrade", "years": "1995-1997", "anchor": "ShopPreview", "layer": 0,
+      "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · Shop/Upgradebaum",
+      "path": "res://assets/backgrounds/layers/A1200_ACCEL_68030_16MB_V01.png", "size_px": [3396, 1852],
+      "source": "OpenAI built-in imagegen, 2026-07-26; A1200-RAM-Kartenfamilie als Stilreferenz; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "68030-Klasse, 40 MHz und 16 MB Fast-RAM; CPU-, Speed- und RAM-Anzeige wechseln gemeinsam."
+    },
+    {
+      "asset_id": "AMIGAOS31_UPGRADE_KIT_V01", "display_name": "AmigaOS 3.1 · ROM-/Disketten-/Handbuch-Kit",
+      "category": "SoftwareUpgrade", "years": "1995-1997", "anchor": "ShopPreview", "layer": 0,
+      "pivot": "Center", "transparent": true, "version": "V01", "status": "integriert · Shop/Upgradebaum",
+      "path": "res://assets/backgrounds/layers/AMIGAOS31_UPGRADE_KIT_V01.png", "size_px": [3072, 2048],
+      "source": "OpenAI built-in imagegen, 2026-07-26; Kickstart-ROM-Master als Stilreferenz; Chroma-Matte und 2× Lanczos-HQ",
+      "notes": "Zwei ROM-Chips, sechs generische Systemdisketten und zwei technische Handbücher; keine Marken- oder Platzhalterbeschriftung."
+    },
+    {
+      "asset_id": "LOCATION_RETRO_MUSEUM_MASTER_V01",
+      "display_name": "Privates Retro-Museum · Dekadenabschluss 1999",
+      "category": "LocationBackground",
+      "years": "1999+",
+      "anchor": "FULL_CANVAS",
+      "layer": 0,
+      "pivot": "FullCanvas",
+      "transparent": false,
+      "animated": true,
+      "version": "V01",
+      "status": "integriert · live",
+      "path": "res://assets/backgrounds/locations/LOCATION_RETRO_MUSEUM_MASTER_V01.png",
+      "size_px": [1672, 941],
+      "sha256": "47e3ef683ccb5cc7479fa0af4ac4543e9a89faa0e87a2535cbf9a7bcbd0d878c",
+      "source": "OpenAI built-in imagegen, 2026-07-30; neu erzeugtes RGB-Hintergrundmaster ohne externe Referenzbilder",
+      "notes": "Frontaler 16:9-Ausstellungsraum im gewachsenen Jugendzimmer: OVP-Glasvitrine, Trophäenwand, drei Rechnerstationen, MOD-Hörplatz und Dekadenregale. Laufzeit ergänzt 2,5D-Parallaxe, CRT-Leben, Glasreflexe, Licht, Staub und datengetriebene Hotspots."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "sommer90.dialogue-manifest.v1",
+  "comment": "NPC-Dialogpakete; DialogueDefinitionCatalog ist der autoritative Loader.",
+  "packages": [
+    {
+      "owner": "npc_achim",
+      "path": "res://data/dialogues/achim.json"
+    },
+    {
+      "owner": "npc_alex",
+      "path": "res://data/dialogues/alex.json"
+    },
+    {
+      "owner": "npc_basti",
+      "path": "res://data/dialogues/basti.json"
+    },
+    {
+      "owner": "npc_daniel",
+      "path": "res://data/dialogues/daniel.json"
+    },
+    {
+      "owner": "npc_gruber",
+      "path": "res://data/dialogues/gruber.json"
+    },
+    {
+      "owner": "npc_habel",
+      "path": "res://data/dialogues/habel.json"
+    },
+    {
+      "owner": "npc_jan_gruber",
+      "path": "res://data/dialogues/jan_gruber.json"
+    },
+    {
+      "owner": "npc_joerg",
+      "path": "res://data/dialogues/joerg.json"
+    },
+    {
+      "owner": "npc_krause",
+      "path": "res://data/dialogues/krause.json"
+    },
+    {
+      "owner": "npc_lisa",
+      "path": "res://data/dialogues/lisa.json"
+    },
+    {
+      "owner": "npc_mike",
+      "path": "res://data/dialogues/mike.json"
+    },
+    {
+      "owner": "npc_mutter",
+      "path": "res://data/dialogues/mutter.json"
+    },
+    {
+      "owner": "npc_oez",
+      "path": "res://data/dialogues/oez.json"
+    },
+    {
+      "owner": "npc_pixie",
+      "path": "res://data/dialogues/pixie.json"
+    },
+    {
+      "owner": "npc_rocky",
+      "path": "res://data/dialogues/rocky.json"
+    },
+    {
+      "owner": "npc_stefan",
+      "path": "res://data/dialogues/stefan.json"
+    },
+    {
+      "owner": "npc_sven",
+      "path": "res://data/dialogues/sven.json"
+    },
+    {
+      "owner": "npc_sysop",
+      "path": "res://data/dialogues/sysop.json"
+    },
+    {
+      "owner": "npc_tobias",
+      "path": "res://data/dialogues/tobias.json"
+    },
+    {
+      "owner": "npc_vater",
+      "path": "res://data/dialogues/vater.json"
+    },
+    {
+      "owner": "npc_voss",
+      "path": "res://data/dialogues/voss.json"
+    },
+    {
+      "owner": "npc_wolf",
+      "path": "res://data/dialogues/wolf.json"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+	"npc": "npc_voss",
+	"comment": "Zeilen-Pool fuer npc_voss. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "vos_b01",
+			"text": "Ah, unser Computer-Enthusiast. Wie steht's mit der Mathenote?"
+		},
+		{
+			"id": "vos_b02",
+			"text": "Ordnung im Heft, Ordnung im Kopf. Das gilt auch für Ihre Disketten."
+		},
+		{
+			"id": "vos_b03",
+			"text": "Solange die schulischen Leistungen stimmen, soll's mir recht sein."
+		},
+		{
+			"id": "vos_b04",
+			"text": "Wissen ist die einzige Investition, die sich immer auszahlt, junger Mann."
+		},
+		{
+			"id": "vos_b05",
+			"text": "Pünktlichkeit, Sauberkeit, Fleiß — die drei tragen ein Leben lang."
+		},
+		{
+			"id": "vos_b06",
+			"text": "Ich beobachte Sie. Im positiven Sinne, versteht sich."
+		},
+		{
+			"id": "vos_b07",
+			"text": "Ihre Aufsätze könnten mehr Struktur vertragen. Wie Ihr Zimmer vermutlich auch."
+		},
+		{
+			"id": "vos_b08",
+			"text": "Ein kluger Kopf verschwendet seine Zeit nicht mit Unsinn."
+		},
+		{
+			"id": "vos_b09",
+			"text": "Haben Sie das Buch gelesen, das ich empfohlen habe? Nein? Schade."
+		},
+		{
+			"id": "vos_b10",
+			"text": "Disziplin ist Freiheit. Das werden Sie noch verstehen."
+		},
+		{
+			"id": "vos_b11",
+			"text": "In meiner Klasse wird nicht geträumt, sondern gelernt."
+		},
+		{
+			"id": "vos_b12",
+			"text": "Sie haben Talent. Verschwenden Sie es nicht, das wäre ein Jammer."
+		},
+		{
+			"id": "vos_b13",
+			"text": "Ein guter Schüler stellt Fragen. Trauen Sie sich ruhig."
+		},
+		{
+			"id": "vos_b14",
+			"text": "Rechtschreibung, junger Mann. Auch im Computerzeitalter."
+		},
+		{
+			"id": "vos_b15",
+			"text": "Ich war auch mal jung. Man glaubt es kaum, nicht wahr?"
+		},
+		{
+			"id": "vos_b16",
+			"text": "Fleiß schlägt Talent, wenn Talent nicht fleißig ist. Merken Sie sich das."
+		},
+		{
+			"id": "vos_b17",
+			"text": "Kommen Sie mir nicht zu spät. Zeit ist Respekt."
+		},
+		{
+			"id": "vos_b18",
+			"text": "Bildung öffnet Türen, die Ihnen sonst verschlossen bleiben."
+		},
+		{
+			"id": "vos_b19",
+			"text": "Ich erwarte von Ihnen mehr als von anderen. Nehmen Sie das als Kompliment."
+		},
+		{
+			"id": "vos_b20",
+			"text": "Was man gründlich lernt, vergisst man nie ganz."
+		},
+		{
+			"id": "vos_b21",
+			"text": "Ein aufgeräumter Arbeitsplatz ist ein aufgeräumter Geist."
+		},
+		{
+			"id": "vos_b22",
+			"text": "Sie haben Potenzial. Ob Sie es nutzen, liegt an Ihnen."
+		},
+		{
+			"id": "vos_b23",
+			"text": "Zu meiner Zeit gab's Rechenschieber. Und trotzdem sind Menschen zum Mond geflogen."
+		},
+		{
+			"id": "vos_b24",
+			"text": "Höflichkeit kostet nichts und bringt viel, merken Sie sich das."
+		},
+		{
+			"id": "vos_b25",
+			"text": "Lesen Sie mehr. Ein Buch schadet nie."
+		},
+		{
+			"id": "vos_b26",
+			"text": "Ich frage nicht nach Ausreden, ich frage nach Ergebnissen."
+		},
+		{
+			"id": "vos_b27",
+			"text": "Sie dürfen Fehler machen. Aber lernen Sie daraus."
+		},
+		{
+			"id": "vos_b28",
+			"text": "Ehrgeiz ist gut. Überheblichkeit nicht. Halten Sie die Balance."
+		},
+		{
+			"id": "vos_b29",
+			"text": "Grüßen Sie Ihre Eltern von mir. Anständige Leute."
+		},
+		{
+			"id": "vos_b30",
+			"text": "Am Ende zählt der Charakter, nicht die Note. Aber die Note hilft."
+		},
+		{
+			"id": "vo_geld",
+			"to": 1996,
+			"topic": "skepsis",
+			"text": "Ich sage es Ihnen frei heraus: Mit Computern verdient man später sowieso kein Geld."
+		},
+		{
+			"id": "vo_internet",
+			"from": 1996,
+			"to": 1997,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "skepsis",
+			"text": "Dieses Internet ist eine Spielerei. In fünf Jahren redet kein Mensch mehr davon, merken Sie sich das."
+		},
+		{
+			"id": "vo_informatik",
+			"from": 1998,
+			"topic": "wandel",
+			"text": "Nun... ich unterrichte jetzt 'Informatik'. Man muss mit der Zeit gehen. Sagen Sie's nicht weiter."
+		},
+		{
+			"id": "vo_zugeben",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "einsicht",
+			"text": "Vielleicht... vielleicht hatte ich damals nicht ganz recht. Aber das bleibt unter uns, verstanden?"
+		},
+		{
+			"id": "vos_x01",
+			"topic": "schule",
+			"text": "Ah, unser Technik-Enthusiast. Wie steht es um die Rechtschreibung? Auch im Computerzeitalter zählt sie."
+		},
+		{
+			"id": "vos_x02",
+			"topic": "schule",
+			"text": "Disziplin ist Freiheit, junger Mann. Das werden Sie noch begreifen."
+		},
+		{
+			"id": "vos_x03",
+			"topic": "schule",
+			"text": "Ich beobachte Sie. Im positiven Sinne — Sie haben mehr Kopf als Sie zeigen."
+		},
+		{
+			"id": "vos_x04",
+			"topic": "schule",
+			"text": "Fleiß schlägt Talent, wenn Talent nicht fleißig ist. Schreiben Sie sich das über den Bildschirm."
+		},
+		{
+			"id": "vos_x05",
+			"topic": "schule",
+			"text": "Zu meiner Zeit gab's Rechenschieber. Und trotzdem flog man zum Mond. Werkzeug ist nicht alles."
+		},
+		{
+			"id": "vos_x06",
+			"topic": "schule",
+			"text": "Ein aufgeräumter Arbeitsplatz ist ein aufgeräumter Geist. Ihr Ranzen widerspricht dieser These."
+		},
+		{
+			"id": "vos_x07",
+			"topic": "schule",
+			"text": "Lesen Sie mehr. Ein Buch hat noch keinem geschadet, auch keinem Programmierer."
+		},
+		{
+			"id": "vos_x08",
+			"topic": "schule",
+			"text": "Ich frage nicht nach Ausreden. Ich frage nach Ergebnissen. Das ist der Unterschied."
+		},
+		{
+			"id": "vos_x09",
+			"topic": "schule",
+			"text": "Grüßen Sie Ihre Eltern. Anständige Leute, wie man hört."
+		},
+		{
+			"id": "vos_x10",
+			"topic": "schule",
+			"text": "Ehrgeiz ist gut, Überheblichkeit nicht. Halten Sie die Balance, dann wird was aus Ihnen."
+		},
+		{
+			"id": "vos_x11",
+			"to": 1996,
+			"topic": "skepsis",
+			"text": "Mit Computern verdient später kein Mensch sein Brot. Das sage ich Ihnen als Ihr Lehrer."
+		},
+		{
+			"id": "vos_x12",
+			"from": 1996,
+			"to": 1997,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "skepsis",
+			"text": "Dieses Internet ist eine Modeerscheinung. In fünf Jahren kräht kein Hahn mehr danach."
+		},
+		{
+			"id": "vos_x13",
+			"from": 0,
+			"needs": [
+				"grafikkarten_hype"
+			],
+			"topic": "aera",
+			"text": "Nun... ich unterrichte jetzt 'Informatik'. Man muss mit der Zeit gehen. Behalten Sie das für sich."
+		},
+		{
+			"id": "vos_x14",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Vielleicht hatte ich damals nicht ganz recht. Aber das bleibt unter uns, verstanden?"
+		}
+	]
+}

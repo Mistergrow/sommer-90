@@ -1,0 +1,461 @@
+{
+	"comment": "Nebenjobs (JobManager). Jeder Auftrag kostet Energie und exakte Minuten; minigame-Auftraege zahlen erst nach bestandener kompletter Schicht atomar. Felder: id, name, desc, location, days, slots, pay [min,max] DM, energy, minutes_cost, cooldown_days, daily_limit, year_from/year_to, needs_npc, min_trust, min_wissen, effects, minigame und success_lines.",
+	"jobs": [
+		{
+			"id": "job_newspapers",
+			"name": "Zeitungen austragen",
+			"desc": "Frueh raus, die Runde drehen, Briefkaesten fuettern. Kein Ruhm, aber verlaesslich.",
+			"location": "kiosk",
+			"days": [
+				"mon",
+				"tue",
+				"wed",
+				"thu",
+				"fri",
+				"sat"
+			],
+			"slots": [
+				0,
+				1
+			],
+			"pay": [
+				6,
+				10
+			],
+			"energy": 25,
+			"minutes_cost": 75,
+			"daily_limit": 1,
+			"minigame": "job_shift",
+			"skill_bonus_max": 4,
+			"repeat_pay_decay": 0.04,
+			"min_pay_factor": 0.75,
+			"success_lines": [
+				"Der letzte Briefkasten klappert zu. Der Kioskbesitzer nickt: kein Haus ausgelassen.",
+				"Nasse Strasse, trockene Zeitungen. Die Runde war schneller als der erste Bus.",
+				"Eine Nachbarin winkt vom Fenster. Heute steckt jede Zeitung richtig herum."
+			],
+			"effects": [
+				{
+					"type": "stat",
+					"stat": "eltern_toleranz",
+					"value": 1
+				}
+			],
+			"cooldown_days": 1
+		},
+		{
+			"id": "job_gruber_help",
+			"name": "Ladenhilfe bei Gruber",
+			"desc": "Regale einraeumen, Kartons schleppen, Vorfuehrgeraete abstauben. Gruber zahlt fair.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				12,
+				20
+			],
+			"energy": 25,
+			"minutes_cost": 90,
+			"minigame": "job_shift",
+			"skill_bonus_max": 6,
+			"repeat_pay_decay": 0.06,
+			"min_pay_factor": 0.65,
+			"success_lines": [
+				"Gruber prueft zwei Regalfächer und findet nichts zu meckern. Das ist beinahe ein Lob.",
+				"Alle Netzteile liegen beschriftet. Gruber stellt wortlos eine Limonade auf den Tresen.",
+				"Der Wareneingang stimmt bis auf die letzte Seriennummer. Feierabend ohne Suchaktion."
+			],
+			"year_to": 1996,
+			"needs_npc": "npc_gruber",
+			"requires_flag": "gruber_ladenhilfe_erlaubt",
+			"min_trust": {
+				"npc": "npc_gruber",
+				"value": 8
+			},
+			"cooldown_days": 2,
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_gruber",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "job_gruber_cables",
+			"name": "Grubers Kabelkiste",
+			"desc": "Eine Kiste voller Monitor-, Drucker- und Joystickkabel entwirren, pruefen und sauber aufwickeln.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				16,
+				28
+			],
+			"energy": 18,
+			"minutes_cost": 80,
+			"year_to": 1995,
+			"needs_npc": "npc_gruber",
+			"requires_flag": "gruber_workshop_basic",
+			"min_trust": {
+				"npc": "npc_gruber",
+				"value": 5
+			},
+			"cooldown_days": 4,
+			"repeat_pay_decay": 0.08,
+			"min_pay_factor": 0.6,
+			"minigame": "cable_untangle",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_gruber",
+					"value": 1
+				},
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 1
+				}
+			],
+			"group": "gruber_workshop"
+		},
+		{
+			"id": "job_gruber_assembly",
+			"name": "Hardware-Montage mit ESD",
+			"desc": "RAM und Laufwerke sicher auf Grubers Servicebench montieren, pruefen und erst danach einschalten.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				18,
+				30
+			],
+			"energy": 20,
+			"minutes_cost": 100,
+			"year_to": 1996,
+			"needs_npc": "npc_gruber",
+			"requires_flag": "praktikum_done",
+			"min_trust": {
+				"npc": "npc_gruber",
+				"value": 8
+			},
+			"cooldown_days": 4,
+			"repeat_pay_decay": 0.1,
+			"min_pay_factor": 0.55,
+			"minigame": "hardware_assembly",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_gruber",
+					"value": 1
+				},
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 1
+				}
+			],
+			"group": "gruber_workshop"
+		},
+		{
+			"id": "job_gruber_diagnosis",
+			"name": "Übergabediagnose durchführen",
+			"desc": "Mit Jan den ersten übernommenen Kundenrechner prüfen, sichere Messungen durchführen und den Befund gemeinsam gegenprüfen.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				20,
+				34
+			],
+			"energy": 22,
+			"minutes_cost": 110,
+			"year_to": 1996,
+			"needs_npc": "npc_jan_gruber",
+			"requires_quest_active": "q_gruber_abschied",
+			"min_wissen": 5,
+			"cooldown_days": 4,
+			"repeat_pay_decay": 0.1,
+			"min_pay_factor": 0.5,
+			"minigame": "shop_diagnosis",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_jan_gruber",
+					"value": 1
+				},
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 2
+				}
+			],
+			"group": "gruber_workshop"
+		},
+		{
+			"id": "job_shop_help",
+			"name": "Aushilfe im Computerladen",
+			"desc": "Der Neffe fuehrt den Laden jetzt mit PC-Kram. Aushilfe ist immer gesucht.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				16,
+				24
+			],
+			"energy": 25,
+			"minutes_cost": 100,
+			"year_from": 1996,
+			"minigame": "job_shift",
+			"skill_bonus_max": 7,
+			"repeat_pay_decay": 0.06,
+			"min_pay_factor": 0.65,
+			"success_lines": [
+				"Jan findet sogar den Karton mit den verschwundenen Mauspads. Die Inventurliste ist endlich gruen.",
+				"Amiga links, PC rechts, Kabel dazwischen sauber beschriftet. Kein Kunde muss morgen suchen.",
+				"Die Ladentuer ist zu, die Kasse stimmt und kein Vorfuehrgeraet blieb eingeschaltet."
+			],
+			"cooldown_days": 2,
+			"effects": [
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "job_rocky_repair",
+			"name": "Reparaturhilfe bei Rocky",
+			"desc": "Loeten, tauschen, testen. Wer ruhige Haende hat, verdient hier ordentlich.",
+			"location": "computer_shop",
+			"slots": [
+				2,
+				3
+			],
+			"pay": [
+				22,
+				36
+			],
+			"energy": 30,
+			"minutes_cost": 120,
+			"year_from": 1995,
+			"minigame": "job_shift",
+			"skill_bonus_max": 10,
+			"repeat_pay_decay": 0.05,
+			"min_pay_factor": 0.7,
+			"success_lines": [
+				"Rocky dreht das reparierte Board gegen das Licht: sauber gemessen, sauber dokumentiert.",
+				"Der Rechner besteht den warmen Dauertest. Rocky streicht den roten Zettel durch.",
+				"Kein Teiletausch auf Verdacht. Rocky zahlt lieber fuer einen echten Befund."
+			],
+			"needs_npc": "npc_rocky",
+			"requires_flag": "gesellenbrief",
+			"min_wissen": 8,
+			"cooldown_days": 3,
+			"effects": [
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 2
+				}
+			],
+			"risk": {"chance": 0.0, "text": "", "pay_factor": 1.0}
+		},
+		{
+			"id": "job_club_flyer",
+			"name": "Flyer verteilen (Club)",
+			"desc": "Achim braucht jemand, der Party-Flyer in der Stadt verteilt. Gut fuer den Szene-Ruf.",
+			"location": "computer_club",
+			"slots": [
+				2,
+				3
+			],
+			"pay": [
+				10,
+				16
+			],
+			"energy": 25,
+			"minutes_cost": 70,
+			"needs_npc": "npc_achim",
+			"minigame": "job_shift",
+			"skill_bonus_max": 5,
+			"repeat_pay_decay": 0.05,
+			"min_pay_factor": 0.7,
+			"success_lines": [
+				"Achim zaehlt die Restflyer: genau genug fuer die Clubtuer. Die Stadt ist versorgt.",
+				"Am Plattenladen haengt schon der erste Flyer. Zwei Leute fragen nach dem Termin.",
+				"Kein Laternenpfahl doppelt, kein Jugendtreff vergessen. Achim hebt den Daumen."
+			],
+			"cooldown_days": 2,
+			"effects": [
+				{
+					"type": "stat",
+					"stat": "ruf",
+					"value": 2
+				}
+			]
+		},
+		{
+			"id": "job_code_gig",
+			"name": "Programmier-Auftrag",
+			"desc": "Stefans echter Code-Auftrag: ein kleines Tool auf Bestellung fertigstellen, testen und im Club abliefern.",
+			"location": "computer_club",
+			"days": [
+				"wed",
+				"fri"
+			],
+			"slots": [
+				2,
+				3
+			],
+			"pay": [
+				30,
+				50
+			],
+			"energy": 35,
+			"minutes_cost": 140,
+			"year_from": 1997,
+			"minigame": "job_shift",
+			"skill_bonus_max": 15,
+			"repeat_pay_decay": 0.04,
+			"min_pay_factor": 0.8,
+			"success_lines": [
+				"Stefan startet den Build zweimal. Kein Absturz, keine Ausrede, Auftrag abgenommen.",
+				"Der letzte Testfall wird gruen. Stefan schiebt den Umschlag mit dem Honorar herueber.",
+				"Kleine Datei, klare Bedienung, sauberes Readme. Genau deshalb war es ein echter Auftrag."
+			],
+			"min_wissen": 25,
+			"requires_quest_active": "q_erster_job",
+			"cooldown_days": 3,
+			"effects": [
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 3
+				},
+				{
+					"type": "stat",
+					"stat": "ruf",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "job_praktikum_shift",
+			"name": "Praktikumsschicht bei Gruber",
+			"desc": "Dienstags hinter der Theke: Wareneingang prüfen, Kabel nach Signalweg und Lage ordnen und den Prüfplatz sauber übergeben.",
+			"location": "computer_shop",
+			"days": [
+				"tue"
+			],
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				8,
+				12
+			],
+			"energy": 24,
+			"minutes_cost": 110,
+			"year_from": 1991,
+			"year_to": 1992,
+			"needs_npc": "npc_gruber",
+			"requires_quest_active": "q_praktikum",
+			"min_wissen": 8,
+			"cooldown_days": 7,
+			"minigame": "cable_untangle",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_gruber",
+					"value": 2
+				},
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 1
+				}
+			],
+			"story": true
+		},
+		{
+			"id": "job_ausbildung_probe",
+			"name": "Arbeitsprobe für die Ausbildung",
+			"desc": "Einen unbekannten Kundenfehler systematisch eingrenzen und den Befund fachgerecht dokumentieren.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				18,
+				26
+			],
+			"energy": 24,
+			"minutes_cost": 120,
+			"year_from": 1993,
+			"year_to": 1994,
+			"needs_npc": "npc_gruber",
+			"requires_quest_active": "q_ausbildung",
+			"min_wissen": 22,
+			"cooldown_days": 7,
+			"minigame": "shop_diagnosis",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_gruber",
+					"value": 3
+				},
+				{
+					"type": "stat",
+					"stat": "wissen",
+					"value": 2
+				}
+			],
+			"story": true
+		},
+		{
+			"id": "job_gesellenpruefung",
+			"name": "Praktische Gesellenprüfung",
+			"desc": "Montage, ESD-Sicherheit und Funktionstest unter Rockys prüfendem Blick.",
+			"location": "computer_shop",
+			"slots": [
+				1,
+				2
+			],
+			"pay": [
+				1,
+				1
+			],
+			"energy": 30,
+			"minutes_cost": 150,
+			"year_from": 1995,
+			"year_to": 1995,
+			"needs_npc": "npc_rocky",
+			"requires_quest_active": "q_gesellenpruefung",
+			"min_wissen": 38,
+			"cooldown_days": 7,
+			"minigame": "hardware_assembly",
+			"effects": [
+				{
+					"type": "npc_trust",
+					"npc": "npc_rocky",
+					"value": 3
+				}
+			],
+			"story": true
+		}
+	]
+}

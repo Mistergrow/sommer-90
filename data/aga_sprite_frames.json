@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "atlases": {
+    "household_props": {
+      "label": "Haushalt · Gegenstände",
+      "texture": "res://assets/ui/minigames/household/atlases/HOUSEHOLD_PROPS_ATLAS_AGA_V02.png",
+      "frames": {
+        "book": {"region": [42, 73, 268, 241], "pivot": [0.5, 0.5], "scale": 1.0},
+        "newspapers": {"region": [333, 83, 287, 231], "pivot": [0.5, 0.5], "scale": 1.0},
+        "floppy": {"region": [646, 84, 267, 227], "pivot": [0.5, 0.5], "scale": 1.0},
+        "shirt": {"region": [941, 83, 266, 231], "pivot": [0.5, 0.5], "scale": 1.0},
+        "paper_bin": {"region": [57, 372, 219, 247], "pivot": [0.5, 0.5], "scale": 1.0},
+        "recycling_crate": {"region": [329, 355, 285, 272], "pivot": [0.5, 0.5], "scale": 1.0},
+        "refuse_bin": {"region": [646, 343, 294, 284], "pivot": [0.5, 0.5], "scale": 1.0},
+        "laundry_basket": {"region": [940, 314, 268, 303], "pivot": [0.5, 0.5], "scale": 1.0},
+        "sponge": {"region": [38, 664, 256, 276], "pivot": [0.5, 0.5], "scale": 1.0},
+        "hose": {"region": [329, 627, 265, 313], "pivot": [0.5, 0.5], "scale": 1.0},
+        "chamois": {"region": [627, 671, 313, 269], "pivot": [0.5, 0.5], "scale": 1.0},
+        "dish_set": {"region": [940, 663, 275, 277], "pivot": [0.5, 0.5], "scale": 1.0},
+        "dustpan": {"region": [0, 940, 296, 314], "pivot": [0.5, 0.5], "scale": 1.0},
+        "bucket": {"region": [336, 940, 229, 238], "pivot": [0.5, 0.5], "scale": 1.0},
+        "binbag": {"region": [627, 940, 313, 232], "pivot": [0.5, 0.5], "scale": 1.0},
+        "sorting_items": {"region": [940, 940, 314, 314], "pivot": [0.5, 0.5], "scale": 1.0}
+      }
+    },
+    "household_groceries": {
+      "label": "Haushalt · Einkäufe",
+      "texture": "res://assets/ui/minigames/household/atlases/HOUSEHOLD_GROCERIES_ATLAS_AGA_V01.png",
+      "frames": {
+        "milk": {"region": [0, 0, 285, 418], "pivot": [0.5, 0.5], "scale": 1.0},
+        "bread": {"region": [352, 164, 275, 254], "pivot": [0.5, 0.5], "scale": 1.0},
+        "juice": {"region": [627, 76, 240, 342], "pivot": [0.5, 0.5], "scale": 1.0},
+        "peas": {"region": [962, 0, 292, 418], "pivot": [0.5, 0.5], "scale": 1.0},
+        "noodles": {"region": [48, 418, 253, 418], "pivot": [0.5, 0.5], "scale": 1.0},
+        "soap": {"region": [341, 552, 274, 216], "pivot": [0.5, 0.5], "scale": 1.0},
+        "flour": {"region": [660, 455, 280, 381], "pivot": [0.5, 0.5], "scale": 1.0},
+        "apples": {"region": [940, 481, 267, 299], "pivot": [0.5, 0.5], "scale": 1.0},
+        "cocoa": {"region": [0, 836, 275, 418], "pivot": [0.5, 0.5], "scale": 1.0},
+        "butter": {"region": [314, 904, 313, 233], "pivot": [0.5, 0.5], "scale": 1.0},
+        "rice": {"region": [652, 836, 245, 329], "pivot": [0.5, 0.5], "scale": 1.0},
+        "tea": {"region": [940, 900, 314, 354], "pivot": [0.5, 0.5], "scale": 1.0}
+      }
+    },
+    "job_shift_props": {
+      "label": "Jobs · Arbeitsgegenstände",
+      "texture": "res://assets/ui/minigames/job_shift/atlases/JOB_SHIFT_PROPS_ATLAS_AGA_V01.png",
+      "frames": {
+        "mailbox": {"region": [71, 94, 210, 294], "pivot": [0.5, 1.0], "scale": 1.0},
+        "newspaper": {"region": [355, 124, 249, 253], "pivot": [0.5, 0.5], "scale": 1.0},
+        "flyer": {"region": [642, 132, 264, 246], "pivot": [0.5, 0.5], "scale": 1.0},
+        "parcel": {"region": [954, 135, 262, 242], "pivot": [0.5, 0.5], "scale": 1.0},
+        "screwdriver": {"region": [55, 467, 231, 369], "pivot": [0.5, 0.5], "scale": 1.0},
+        "meter_probes": {"region": [348, 467, 246, 277], "pivot": [0.5, 0.5], "scale": 1.0},
+        "soldering_iron": {"region": [635, 456, 305, 304], "pivot": [0.5, 0.5], "scale": 1.0},
+        "component_tray": {"region": [940, 489, 281, 252], "pivot": [0.5, 0.5], "scale": 1.0},
+        "circuit_board": {"region": [0, 836, 305, 418], "pivot": [0.5, 0.5], "scale": 1.0},
+        "antistatic_strap": {"region": [335, 852, 267, 255], "pivot": [0.5, 0.5], "scale": 1.0},
+        "keycap_puller": {"region": [639, 848, 301, 261], "pivot": [0.5, 0.5], "scale": 1.0},
+        "patch_cards": {"region": [940, 846, 314, 408], "pivot": [0.5, 0.5], "scale": 1.0}
+      }
+    }
+  }
+}

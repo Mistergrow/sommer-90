@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "comment": "Single Source fuer Big-Box-Cover und Diskettenbadge. Vierpunkt-Projektion: TL, TR, BR, BL. Bearbeitet mit scenes/editors/BoxLayoutEditor.tscn.",
+  "master": "res://assets/backgrounds/layers/GAME_WHITE_BIGBOX_MASTER_V01.png",
+  "front": {
+    "cover": {
+      "x": 0.486,
+      "y": 0.518,
+      "w": 0.728,
+      "h": 0.839,
+      "quad": [
+        [
+          0.122,
+          0.098
+        ],
+        [
+          0.85,
+          0.102
+        ],
+        [
+          0.841,
+          0.938
+        ],
+        [
+          0.127,
+          0.907
+        ]
+      ]
+    },
+    "disk_badge": {
+      "x": 0.65,
+      "y": 0.851,
+      "w": 0.263,
+      "h": 0.072,
+      "quad": [
+        [
+          0.518,
+          0.817
+        ],
+        [
+          0.781,
+          0.815
+        ],
+        [
+          0.781,
+          0.887
+        ],
+        [
+          0.52,
+          0.879
+        ]
+      ]
+    }
+  },
+  "back": {
+    "cover": {
+      "x": 0.486,
+      "y": 0.513,
+      "w": 0.734,
+      "h": 0.835,
+      "quad": [
+        [
+          0.119,
+          0.099
+        ],
+        [
+          0.853,
+          0.096
+        ],
+        [
+          0.851,
+          0.931
+        ],
+        [
+          0.128,
+          0.908
+        ]
+      ]
+    },
+    "disk_badge": {
+      "x": 0.694,
+      "y": 0.778,
+      "w": 0.255,
+      "h": 0.072,
+      "quad": [
+        [
+          0.566,
+          0.742
+        ],
+        [
+          0.821,
+          0.742
+        ],
+        [
+          0.821,
+          0.814
+        ],
+        [
+          0.566,
+          0.806
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cy0jyhbtoxhfm"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="DiskRescueLab" unique_id=2048744861 instance=ExtResource("1")]
+minigame_id = "disk_rescue"

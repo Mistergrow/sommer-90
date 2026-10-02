@@ -1,0 +1,75 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_sven",
+  "quests": [
+    {
+      "id": "q_sven_gift",
+      "title": "Ein Abschiedsgeschenk fuer Sven",
+      "giver": "npc_sven",
+      "prereq": {
+        "year_min": 1995,
+        "needs": [
+          "sven_weg"
+        ],
+        "flag": "sven_gift_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Sven zieht bald weg. Zieh ihm eine persönliche Turbo-Kart-Kopie; deine Quelle und dein Original bleiben im Archiv."
+        }
+      ],
+      "required_disks": [
+        {
+          "software_id": "turbo_kart_deluxe",
+          "player_copy_only": true,
+          "from_stage": 0,
+          "through_stage": 1,
+          "grant_missing": false,
+          "protect_text": "Diese selbst erstellte Turbo-Kart-Kopie ist Svens Abschiedsgeschenk. Das Original bleibt bei dir."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause Turbo Kart in X-COPY als Quelle wählen und auf eine blaue Leerdiskette kopieren. Behalte Quelle und Original; Sven bekommt nur deine selbst erstellte Kopie.",
+          "map_location": "room",
+          "goal": {
+            "has_player_copy_of": "turbo_kart_deluxe"
+          },
+          "reward": [
+            {
+              "type": "expect_call",
+              "npc": "npc_sven",
+              "id": "tip_sven_gift_ready",
+              "title": "Sven anrufen — Turbo Kart ist bereit zum Verschicken",
+              "dialogue": "call_sven_receive_gift"
+            }
+          ]
+        },
+        {
+          "desc": "Zu Hause das Telefon öffnen, Sven anrufen und die vorbereitete Kopie zur Post geben.",
+          "map_location": "room",
+          "goal": {
+            "action": "deliver_sven_gift"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "npc_trust",
+          "npc": "npc_sven",
+          "value": 5
+        },
+        {
+          "type": "flag",
+          "flag": "sven_gift"
+        },
+        {
+          "type": "toast",
+          "text": "Sven: »Mann... das vergess ich dir nie. Bleib, wie du bist!«"
+        }
+      ],
+      "memory": "Sven vor seinem Umzug ein Abschiedsgeschenk gemacht."
+    }
+  ]
+}

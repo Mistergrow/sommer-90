@@ -1,0 +1,28 @@
+# Godot and Python caches
+.godot/
+.import/
+.import_cache/
+*.import
+__pycache__/
+*.pyc
+
+# Builds and production material
+build/
+dist/
+distribution/
+exports/
+out/
+out2/
+out3/
+out4/
+tmp/
+vita/
+development/
+.codex-patches/
+
+# Private/deployment material
+mods/
+deploy/
+.env
+.env.*
+export_credentials.cfg

@@ -1,0 +1,10 @@
+{
+	"comment": "Platzierung des Spiel-Labels auf der Master-Diskette (Single Source). Bearbeitet im Disk-Editor.",
+	"master": "res://assets/backgrounds/layers/FLOPPY_35_DD_BLUE_FRONT_V01.png",
+	"label": {
+		"x": 0.496,
+		"y": 0.696,
+		"w": 0.79,
+		"h": 0.594
+	}
+}

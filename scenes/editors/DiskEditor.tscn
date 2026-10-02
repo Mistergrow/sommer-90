@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://84dv6io5c40s"]
+
+[ext_resource type="Script" uid="uid://bhxj6sn6amc5d" path="res://scripts/gfx/disk_editor.gd" id="1_disk"]
+
+[node name="DiskEditor" type="Control" unique_id=1751908462]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_disk")

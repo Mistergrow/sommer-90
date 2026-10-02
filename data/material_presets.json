@@ -1,0 +1,15 @@
+{
+  "comment": "MaterialPresets fuer shaders/material_variants.gdshader (docs/MATERIAL_SYSTEM.md). Layer-Eintraege in room_anchors.json nutzen sie via \"material\": {\"preset\": \"...\", \"plastic_color\": [r,g,b]}. Werte 0-1; fehlende Parameter = Shader-Default.",
+  "presets": {
+    "FactoryNew":    {"yellowing_amount": 0.0,  "dust_amount": 0.0,  "scratch_amount": 0.0,  "metal_wear": 0.0,  "paper_age": 0.0,  "plastic_brightness": 1.05},
+    "SlightlyUsed":  {"yellowing_amount": 0.08, "dust_amount": 0.08, "scratch_amount": 0.10, "metal_wear": 0.08, "paper_age": 0.08},
+    "WellUsed":      {"yellowing_amount": 0.22, "dust_amount": 0.20, "scratch_amount": 0.35, "metal_wear": 0.25, "paper_age": 0.25, "plastic_brightness": 0.95},
+    "Collector":     {"yellowing_amount": 0.03, "dust_amount": 0.02, "scratch_amount": 0.03, "metal_wear": 0.02, "paper_age": 0.10, "plastic_brightness": 1.02},
+    "Yellowed":      {"yellowing_amount": 0.45, "dust_amount": 0.10, "scratch_amount": 0.12, "metal_wear": 0.12, "paper_age": 0.30},
+    "HeavyYellowed": {"yellowing_amount": 0.80, "dust_amount": 0.18, "scratch_amount": 0.22, "metal_wear": 0.22, "paper_age": 0.55, "plastic_brightness": 0.92},
+    "Dusty":         {"yellowing_amount": 0.12, "dust_amount": 0.55, "scratch_amount": 0.10, "metal_wear": 0.15, "paper_age": 0.15},
+    "GarageStored":  {"yellowing_amount": 0.35, "dust_amount": 0.75, "scratch_amount": 0.30, "metal_wear": 0.45, "paper_age": 0.45, "plastic_brightness": 0.88},
+    "SmokerRoom":    {"yellowing_amount": 0.65, "dust_amount": 0.30, "scratch_amount": 0.15, "metal_wear": 0.20, "paper_age": 0.50, "plastic_brightness": 0.90},
+    "SunBleached":   {"yellowing_amount": 0.25, "dust_amount": 0.10, "scratch_amount": 0.15, "metal_wear": 0.10, "paper_age": 0.40, "plastic_brightness": 1.15, "plastic_saturation": 0.55}
+  }
+}

@@ -1,0 +1,105 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Sommer '90"
+config/description="Nostalgisches Managementspiel über die Heimcomputer-Ära 1990-1999 — eine spielbare Erinnerung."
+config/version="0.1.0"
+run/main_scene="res://scenes/Startup.tscn"
+config/features=PackedStringArray("4.7")
+config/icon="res://assets/icons/favicon.svg"
+config/full_version_url="https://sommer90.vibechain.rocks/"
+
+[autoload]
+
+PlayerStats="*res://scripts/autoload/player_stats.gd"
+PlayerIdentity="*res://scripts/autoload/player_identity.gd"
+TimeManager="*res://scripts/autoload/time_manager.gd"
+TownManager="*res://scripts/autoload/town_manager.gd"
+TimelineManager="*res://scripts/autoload/timeline_manager.gd"
+CultureManager="*res://scripts/autoload/culture_manager.gd"
+InventoryManager="*res://scripts/autoload/inventory_manager.gd"
+RoomManager="*res://scripts/autoload/room_manager.gd"
+DiskManager="*res://scripts/autoload/disk_manager.gd"
+NPCManager="*res://scripts/autoload/npc_manager.gd"
+BBSManager="*res://scripts/autoload/bbs_manager.gd"
+DialogueManager="*res://scripts/autoload/dialogue_manager.gd"
+ShopManager="*res://scripts/autoload/shop_manager.gd"
+OrderManager="*res://scripts/autoload/order_manager.gd"
+HardwareManager="*res://scripts/autoload/hardware_manager.gd"
+EventManager="*res://scripts/autoload/event_manager.gd"
+WeatherManager="*res://scripts/autoload/weather_manager.gd"
+RumorManager="*res://scripts/autoload/rumor_manager.gd"
+FleaMarketManager="*res://scripts/autoload/flea_manager.gd"
+SaveManager="*res://scripts/autoload/save_manager.gd"
+UIManager="*res://scripts/autoload/ui_manager.gd"
+CursorManager="*res://scripts/autoload/cursor_manager.gd"
+AudioManager="*res://scripts/autoload/audio_manager.gd"
+MusicManager="*res://scripts/autoload/music_manager.gd"
+SettingsManager="*res://scripts/autoload/settings_manager.gd"
+ProgramLibrary="*res://scripts/autoload/program_library.gd"
+SoftwareBible="*res://scripts/autoload/software_bible.gd"
+HardwareBible="*res://scripts/autoload/hardware_bible.gd"
+MODBible="*res://scripts/autoload/mod_bible.gd"
+RumorSources="*res://scripts/autoload/rumor_sources.gd"
+MemoryManager="*res://scripts/autoload/memory_manager.gd"
+GameManager="*res://scripts/autoload/game_manager.gd"
+SommerGameManager="*res://scripts/autoload/sommer_game_manager.gd"
+AmbientManager="*res://scripts/autoload/ambient_manager.gd"
+PhoneManager="*res://scripts/autoload/phone_manager.gd"
+NarrativeManager="*res://scripts/autoload/narrative_manager.gd"
+PostcardManager="*res://scripts/autoload/postcard_manager.gd"
+BankManager="*res://scripts/autoload/bank_manager.gd"
+TaskManager="*res://scripts/autoload/task_manager.gd"
+CopyTradeManager="*res://scripts/autoload/copy_trade_manager.gd"
+BBSScene="*res://scripts/autoload/bbs_scene.gd"
+SceneReleaseManager="*res://scripts/autoload/scene_release_manager.gd"
+JobManager="*res://scripts/autoload/job_manager.gd"
+QuestManager="*res://scripts/autoload/quest_manager.gd"
+AchievementManager="*res://scripts/autoload/achievement_manager.gd"
+MinigameManager="*res://scripts/autoload/minigame_manager.gd"
+AmigaGameManager="*res://scripts/autoload/amiga_game_manager.gd"
+PhotoManager="*res://scripts/autoload/photo_manager.gd"
+IntegrityManager="*res://scripts/autoload/integrity_manager.gd"
+BulletinManager="*res://scripts/autoload/bulletin_manager.gd"
+VisitManager="*res://scripts/autoload/visit_manager.gd"
+DealerManager="*res://scripts/autoload/dealer_manager.gd"
+RaidManager="*res://scripts/autoload/raid_manager.gd"
+DemoManager="*res://scripts/autoload/demo_manager.gd"
+VirusManager="*res://scripts/autoload/virus_manager.gd"
+HomepageManager="*res://scripts/autoload/homepage_manager.gd"
+ChoreManager="*res://scripts/autoload/chore_manager.gd"
+ExportHealth="*res://scripts/autoload/export_health.gd"
+PlaytestTelemetry="*res://scripts/autoload/playtest_telemetry.gd"
+Localization="*res://scripts/autoload/localization.gd"
+
+[display]
+
+window/size/viewport_width=1440
+window/size/viewport_height=810
+window/size/mode=2
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/export_runtime_assets/plugin.cfg")
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://locale/game.de.translation", "res://locale/game.en.translation")
+locale/fallback="de"
+locale/allow_fallback=false
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

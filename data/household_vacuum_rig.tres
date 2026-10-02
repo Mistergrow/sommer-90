@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/gfx/vacuum_rig_profile.gd" id="1_profile"]
+
+[resource]
+script = ExtResource("1_profile")
+sprite_size_far = Vector2(154, 179)
+sprite_size_near = Vector2(218, 253)
+depth_top = 0.43
+depth_bottom = 0.92
+floor_head_anchor = Vector2(0.805, 0.925)
+power_socket_anchor = Vector2(0.075, 0.65)
+shadow_anchor = Vector2(0.475, 0.925)
+hose_canister_anchor = Vector2(0.455, 0.715)
+hose_wand_anchor = Vector2(0.735, 0.145)

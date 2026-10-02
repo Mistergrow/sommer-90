@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dpre2gva2kdy1"]
+
+[ext_resource type="Script" uid="uid://dop14oy4sx2kb" path="res://scripts/gfx/location_preview.gd" id="1_prev"]
+
+[node name="SchoolyardAfterPreview" type="Control" unique_id=688633180]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_prev")
+location_id = "schoolyard"
+slot = 2

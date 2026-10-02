@@ -1,0 +1,167 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_sysop",
+  "quests": [
+    {
+      "id": "q_ins_bbs",
+      "title": "Die erste Mailbox-Reise",
+      "giver": "npc_sysop",
+      "prereq": {
+        "year_min": 1993,
+        "flag": "bbs_intro"
+      },
+      "intro_via": {
+        "npc": "npc_mike",
+        "handoff_to": "npc_sysop",
+        "text": "Mike gibt Nummer und Modem-Hinweis; der Sysop stellt beim ersten CONNECT die Regeln und schließt die Aufnahme ab."
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Mike gibt dir den Modem-Tipp. Der Sysop entscheidet beim ersten CONNECT, ob du dich in seiner Box benehmen kannst."
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 2,
+          "through_stage": 2,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Für den ersten Upload wurde deine Szene-Studio-Arbeitsdisk wieder bereitgelegt.",
+          "blocked_text": "Für die Szene-Studio-Arbeitsdisk fehlt ein Platz; das Programm bleibt für den Upload auf der Werkbank erreichbar.",
+          "protect_text": "Das Szene-Studio wird noch für deinen ersten Upload benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 2,
+          "through_stage": 2,
+          "recovery_text": "SZENE-STUDIO wurde für deinen ersten eigenen Upload wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Besorg bei Gruber ein Modem. Zu Hause: Amiga starten → Modem-Terminal → NACHTSCHICHT BOARD (0201-778899) → CONNECT.",
+          "map_location": "room",
+          "goal": {
+            "action": "bbs_login:bbs_nachtschicht"
+          }
+        },
+        {
+          "desc": "Im verbundenen NACHTSCHICHT BOARD: Begrüßung des Sysops lesen und die Mailbox-Regeln bestätigen.",
+          "map_location": "room",
+          "goal": {
+            "action": "bbs_rules_ack"
+          }
+        },
+        {
+          "desc": "Noch kein eigener Master? Im Zimmer das Szene-Studio öffnen, Demo/Intro/Spiel bauen, testen und auf eine leere DD-Disk freezen. Danach NACHTSCHICHT BOARD → Eigene Releases → Master hochladen; die Disk bleibt in deiner Box.",
+          "map_location": "room",
+          "goal": {
+            "action": "bbs_upload"
+          }
+        },
+        {
+          "desc": "Im Modem-Terminal das NACHTSCHICHT BOARD erneut öffnen → Nachrichten → gespeicherte Antwort auf deinen Upload lesen.",
+          "map_location": "room",
+          "goal": {
+            "action": "bbs_read_reaction"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 3
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_sysop",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Dein Release ist draußen und jemand außerhalb des Clubs hat geantwortet. Die Mailbox ist jetzt ein echter Verbreitungsweg."
+        }
+      ],
+      "teaches": "modem_bbs"
+    },
+    {
+      "id": "q_bbs_farewell",
+      "title": "Die letzte Nacht der Mailbox",
+      "giver": "npc_sysop",
+      "prereq": {
+        "year_min": 1996,
+        "needs": [
+          "sysop_verliert"
+        ],
+        "flag": "bbs_farewell_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Der Sysop: »Das Internet frisst uns die Anrufer weg. Hilf mir, die Mailbox zu sichern.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 1,
+          "through_stage": 1,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Die Szene-Studio-Arbeitsdisk für den Abschiedsrelease wurde wieder bereitgelegt.",
+          "blocked_text": "Für die Szene-Studio-Arbeitsdisk fehlt ein Platz; das Programm bleibt auf der Werkbank erreichbar.",
+          "protect_text": "Das Szene-Studio wird noch für den Abschiedsrelease benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 1,
+          "through_stage": 1,
+          "recovery_text": "SZENE-STUDIO wurde für den Abschiedsrelease wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "PFLICHT 1/1: Zu Hause Amiga → Modem-Terminal → [AUFTRAG] NACHTSCHICHT BOARD → DATEIEN → genau einmal NACHTSCHICHT-KOMPLETTARCHIV herunterladen. Nur diese eine Datei zählt für den Auftrag und beschreibt eine Leerdiskette als lokalen Archivbestand. Alle Downloads im PROGRAMM-ARCHIV sind optional.",
+          "map_location": "room",
+          "goal": {
+            "action": "bbs_farewell_archive_downloaded"
+          }
+        },
+        {
+          "desc": "Erst im Szene-Studio einen Demo-Master auf leere DD-Disk freezen. Danach Modem-Terminal → [AUFTRAG] NACHTSCHICHT BOARD → EIGENE RELEASES → den Abschiedsgruß hochladen.",
+          "map_location": "room",
+          "goal": {
+            "action": "bbs_farewell_release_uploaded"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 3
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_sysop",
+          "value": 5
+        },
+        {
+          "type": "flag",
+          "flag": "bbs_archived"
+        },
+        {
+          "type": "toast",
+          "text": "Die Mailbox ist nicht vergessen: Dateien, Nachrichten und dein Abschiedsrelease sind gesichert."
+        }
+      ]
+    }
+  ]
+}

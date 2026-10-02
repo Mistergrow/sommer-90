@@ -1,0 +1,41 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_vater",
+  "quests": [
+    {
+      "id": "q_tut_karton",
+      "title": "Der Karton vom Vater",
+      "giver": "npc_vater",
+      "prereq": {
+        "year_min": 1990
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Aufgabe: Öffne den Karton vom Vater auf dem Boden und bau Amiga, Monitor, Maus und Netzteil auf — dann starte den Rechner."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Schließ Amiga, Monitor und Netzteil an und starte die Sommerbench.",
+          "map_location": "room",
+          "goal": {
+            "flag": "booted_amiga"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Der Amiga läuft — die Kickstart-Hand winkt, die Sommerbench ist da. Los geht's."
+        }
+      ],
+      "teaches": "aufbau_boot"
+    }
+  ]
+}

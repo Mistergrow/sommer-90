@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "comment": "Sammlerwand der Zimmer-Gegenansicht. Bearbeitet mit scenes/editors/RoomEditor.tscn. Alle Rechtecke sind normalisierte x/y/w/h-Werte relativ zum 1672x941-Raummaster.",
+  "background": "res://assets/backgrounds/layers/ROOM_REVERSE_MASTER_1992_V01.png",
+  "objects": {
+    "cabinet": {
+      "asset": "res://assets/backgrounds/layers/ROOM_GAME_DISPLAY_CABINET_MASTER_V01.png",
+      "rect": {"x": 0.590, "y": 0.055, "w": 0.255, "h": 0.880}
+    },
+    "monitor_commodore_1084s": {
+      "asset": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1084S_REAR_V01.png",
+      "rect": {"x": 0.250, "y": 0.790, "w": 0.280, "h": 0.330}
+    },
+    "monitor_commodore_1901": {
+      "asset": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1901_REAR_V01.png",
+      "rect": {"x": 0.250, "y": 0.790, "w": 0.280, "h": 0.330}
+    }
+  }
+}

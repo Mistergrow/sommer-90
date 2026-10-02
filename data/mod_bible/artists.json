@@ -1,0 +1,385 @@
+{
+ "_meta": "MOD-Bible — permanent, ENGINE FIRST. NUR vom Nutzer/Quellen bestaetigte Daten; Unbekanntes bleibt needs_verification=true. Claude erfindet nichts (Genauigkeit vor Vollstaendigkeit). Verifizierte Metadaten kommen ueber den gamescraper/Nutzer. Ziel-Groessen (Roadmap): ~30 Legenden, ~150 bekannt, ~600 Szene, Gesamt-Pool 5000-15000 (physische MODs separat in music.json).",
+ "styles": [
+  "Ambient",
+  "Dance",
+  "Techno",
+  "House",
+  "Trance",
+  "Rock",
+  "Metal",
+  "Jazz",
+  "Pop",
+  "Chip",
+  "Demo",
+  "Game",
+  "Intro",
+  "Menu",
+  "Loading",
+  "Ending"
+ ],
+ "trackers": [
+  "SoundTracker",
+  "NoiseTracker",
+  "ProTracker",
+  "StarTrekker",
+  "OctaMED",
+  "FastTracker",
+  "Scream Tracker",
+  "Impulse Tracker"
+ ],
+ "artists": {
+  "4_mat": {
+   "name": "4-Mat",
+   "tier": "legend",
+   "real_name": "Matt Simmonds",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "jester": {
+   "name": "Jester",
+   "tier": "legend",
+   "groups": [
+    "sanity"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "skaven": {
+   "name": "Skaven",
+   "tier": "legend",
+   "groups": [
+    "future_crew",
+    "epic_megagames"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "purple_motion": {
+   "name": "Purple Motion",
+   "tier": "legend",
+   "groups": [
+    "future_crew",
+    "epic_megagames"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "lizardking": {
+   "name": "Lizardking",
+   "tier": "legend",
+   "groups": [
+    "cncd"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "heatbeat": {
+   "name": "Heatbeat",
+   "tier": "legend",
+   "groups": [
+    "spaceballs"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "necros": {
+   "name": "Necros",
+   "tier": "legend",
+   "groups": [
+    "triton"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "basehead": {
+   "name": "Basehead",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "captain": {
+   "name": "Captain",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "romeo_knight": {
+   "name": "Romeo Knight",
+   "tier": "legend",
+   "groups": [
+    "the_silents"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "jazzcat": {
+   "name": "Jazzcat",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "walkman": {
+   "name": "Walkman",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "dr_awesome": {
+   "name": "Dr. Awesome",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "tip": {
+   "name": "Tip",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "nuke": {
+   "name": "Nuke",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "moby": {
+   "name": "Moby",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "rebb": {
+   "name": "Rebb",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "zodiak": {
+   "name": "Zodiak",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "dreamfish": {
+   "name": "Dreamfish",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "mellow_d": {
+   "name": "Mellow-D",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "radix": {
+   "name": "Radix",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "scorpik": {
+   "name": "Scorpik",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "xtd": {
+   "name": "XTD",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "dune": {
+   "name": "Dune",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "firefox": {
+   "name": "FireFox",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "dubmood": {
+   "name": "Dubmood",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "wildfire": {
+   "name": "Wildfire",
+   "tier": "legend",
+   "groups": [
+    "future_crew"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "mahoney": {
+   "name": "Mahoney",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "mantronix": {
+   "name": "Mantronix",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "tip_mantronix": {
+   "name": "Tip & Mantronix",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "jogeir_liljedahl": {
+   "name": "Jogeir Liljedahl",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "sll": {
+   "name": "SLL",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "subtune": {
+   "name": "Subtune",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "laxity": {
+   "name": "Laxity",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "makke": {
+   "name": "Makke",
+   "tier": "legend",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "jesper_kyd": {
+   "name": "Jesper Kyd",
+   "tier": "composer",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "allister_brimble": {
+   "name": "Allister Brimble",
+   "tier": "composer",
+   "groups": [
+    "pinnacle"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "chris_h_lsbeck": {
+   "name": "Chris Hülsbeck",
+   "tier": "composer",
+   "groups": [
+    "rainbow_arts"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "jochen_hippel": {
+   "name": "Jochen Hippel",
+   "tier": "composer",
+   "groups": [
+    "rainbow_arts"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "charles_deenen": {
+   "name": "Charles Deenen",
+   "tier": "composer",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "barry_leitch": {
+   "name": "Barry Leitch",
+   "tier": "composer",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "olof_gustafsson": {
+   "name": "Olof Gustafsson",
+   "tier": "composer",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "richard_joseph": {
+   "name": "Richard Joseph",
+   "tier": "composer",
+   "groups": [
+    "psygnosis"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "david_whittaker": {
+   "name": "David Whittaker",
+   "tier": "composer",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  },
+  "tim_wright": {
+   "name": "Tim Wright",
+   "tier": "composer",
+   "real_name": "CoLD SToRAGE",
+   "groups": [
+    "psygnosis"
+   ],
+   "styles": [],
+   "needs_verification": true
+  },
+  "rob_hubbard": {
+   "name": "Rob Hubbard",
+   "tier": "composer",
+   "groups": [],
+   "styles": [],
+   "needs_verification": true
+  }
+ }
+}

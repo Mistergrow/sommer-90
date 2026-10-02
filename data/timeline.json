@@ -1,0 +1,148 @@
+{
+ "comment": "Living Timeline: eine Datenschicht pro Jahr 1990-1999. KANON (Sommer-90-Bibel): Spielstart Freitag, 6. Juli 1990 - letzter Grundschultag, Beginn der Sommerferien. price_factor wirkt auf Shop-Preise, headline/news erscheinen als Jahreswechsel-Ereignis. Die themes steuern spaeter Deko, Musik-Playlist und NPC-Gespraechsthemen.",
+ "start_year": 1990,
+ "start_month": 7,
+ "start_day": 6,
+ "years": {
+  "1990": {
+   "headline": "Die Heimcomputer regieren!",
+   "news": [
+    "Amiga, C64 und Atari ST dominieren die Jugendzimmer.",
+    "3,5-Zoll-Disketten setzen sich durch, 5,25 Zoll verschwindet langsam.",
+    "Mailboxen? Das ist was fuer echte Nerds mit teuren Modems."
+   ],
+   "price_factor": 1.15,
+   "themes": [
+    "heimcomputer",
+    "disketten",
+    "clubs_klein"
+   ]
+  },
+  "1991": {
+   "headline": "Die Szene waechst.",
+   "news": [
+    "Neue Computerzeitschriften ueberall am Kiosk.",
+    "Erste grosse Computerboersen ziehen Massen an.",
+    "Bessere Maeuse, mehr Joysticks, mehr Zubehoer."
+   ],
+   "price_factor": 1.1,
+   "themes": [
+    "magazine",
+    "boersen",
+    "demoscene_fruh"
+   ]
+  },
+  "1992": {
+   "headline": "Das goldene Amiga-Jahr.",
+   "news": [
+    "Die Demoscene explodiert - Wettbewerbe in den Computerclubs!",
+    "Externe Laufwerke werden zum Statussymbol.",
+    "Die ersten richtig grossen Spiele erscheinen auf vielen Disketten."
+   ],
+   "price_factor": 1.0,
+   "themes": [
+    "amiga_gold",
+    "demoscene",
+    "clubs_zentral"
+   ]
+  },
+  "1993": {
+   "headline": "Die Technik wird sichtbar schneller.",
+   "news": [
+    "Mehr RAM, groessere Festplatten, neue Grafikstandards.",
+    "Die ersten CD-ROM-Laufwerke tauchen in den Laeden auf.",
+    "Immer mehr PCs - die Szene beginnt sich aufzuteilen."
+   ],
+   "price_factor": 0.95,
+   "themes": [
+    "cdrom_fruh",
+    "pc_aufstieg",
+    "festplatten"
+   ]
+  },
+  "1994": {
+   "headline": "Multimedia! Multimedia! Multimedia!",
+   "news": [
+    "Multimedia-PCs und Soundkarten sind das grosse Thema.",
+    "Grosse Spiele brauchen ploetzlich deutlich mehr Speicher.",
+    "In den Magazinen tauchen die ersten Internet-Artikel auf."
+   ],
+   "price_factor": 0.9,
+   "themes": [
+    "multimedia",
+    "soundkarten",
+    "internet_geruecht"
+   ]
+  },
+  "1995": {
+   "headline": "Ein riesiger Umbruch.",
+   "news": [
+    "Ein neues Betriebssystem sorgt UEBERALL fuer Gespraeche.",
+    "Ploetzlich besitzen Freunde PCs. Die Laeden bauen Windows-Ecken auf.",
+    "Modems verkaufen sich besser denn je - die ersten gehen online."
+   ],
+   "price_factor": 0.85,
+   "themes": [
+    "win95",
+    "pc_boom",
+    "modem_boom"
+   ]
+  },
+  "1996": {
+   "headline": "Das Netz wird langsam normal.",
+   "news": [
+    "LAN-Partys entstehen - Patchkabel liegen ploetzlich ueberall.",
+    "Mailboxen verlieren an Bedeutung, Online-Communities wachsen.",
+    "Die Computerwelt wirkt auf einmal viel groesser."
+   ],
+   "price_factor": 0.8,
+   "themes": [
+    "internet",
+    "lan_partys",
+    "bbs_ende"
+   ]
+  },
+  "1997": {
+   "headline": "Die Musik wird digital.",
+   "news": [
+    "Digitale Musikformate sind das Gespraechsthema auf dem Schulhof.",
+    "CD-Brenner werden langsam erschwinglich, Rohlinge begehrt.",
+    "Die grosse Frage: Beim Amiga bleiben - oder umsteigen?"
+   ],
+   "price_factor": 0.75,
+   "themes": [
+    "mp3",
+    "cd_brenner",
+    "amiga_frage"
+   ]
+  },
+  "1998": {
+   "headline": "3D dominiert alles.",
+   "news": [
+    "Neue Grafikkarten erscheinen im Monatstakt.",
+    "LAN-Partys werden riesig, die ersten Internetcafes eroeffnen.",
+    "Die Ladenregale sehen komplett anders aus als vor fuenf Jahren."
+   ],
+   "price_factor": 0.7,
+   "themes": [
+    "3d_hype",
+    "internetcafe",
+    "lan_gross"
+   ]
+  },
+  "1999": {
+   "headline": "Das Jahrzehnt endet.",
+   "news": [
+    "Das Internet gehoert zum Alltag, digitale Musik ist ueberall.",
+    "Das Jugendzimmer ist kaum wiederzuerkennen: ein Raum voller Technik, Erinnerungen und Geschichten.",
+    "Jedes Objekt erzaehlt eine Geschichte. Zeit, zurueckzublicken."
+   ],
+   "price_factor": 0.65,
+   "themes": [
+    "rueckblick",
+    "retro_gefuehl",
+    "archiv"
+   ]
+  }
+ }
+}

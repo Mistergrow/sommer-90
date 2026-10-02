@@ -1,0 +1,114 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_sven",
+	"dialogues": {
+		"sven_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Sven",
+					"text": "Ey! Läuft dein Amiga wieder? Ich hab 'ne neue Diskette zum Tauschen — aber erst nach dem Kicken.",
+					"choices": [
+						{
+							"text": "Was hast'n da?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Später, Mann.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Sven",
+					"text": "Ein Jump'n'Run, Marke Eigenbau von 'nem Typ aus'm Club. Läuft bei mir perfekt. Bring am Samstag was zum Tauschen mit!",
+					"choices": [
+						{
+							"text": "Mach ich!",
+							"next": null,
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_sven",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_sven_neuestadt": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Sven",
+					"text": "Mensch, endlich! Die neue Stadt ist … okay. Aber weißt du, was mir fehlt? Unsere Zock-Abende. Turbo Kart! Erinnerst du dich?",
+					"choices": [
+						{
+							"text": "Turbo Kart! Das waren Zeiten.",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "sad"
+				},
+				"n2": {
+					"speaker": "Sven",
+					"text": "Hier kriegt man das NIRGENDS mehr. Wenn du irgendwo eine Kopie auftreibst und sie mir schickst … ich würd dich feiern, ehrlich.",
+					"choices": [
+						{
+							"text": "Ich treib dir Turbo Kart auf. Versprochen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "sven_gift_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Besorg Turbo Kart für Sven — ein Geschenk für den alten Freund."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "sad"
+				}
+			}
+		},
+		"call_sven_receive_gift": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Sven",
+					"text": "Du hast wirklich eine eigene Turbo-Kart-Kopie für mich gezogen? Pack genau diese Kopie gut ein – deine Quelle und dein Original behältst du.",
+					"choices": [
+						{
+							"text": "Sie geht heute noch zur Post.",
+							"next": null,
+							"effects": [
+								{
+									"type": "take_player_copy_of",
+									"software_id": "turbo_kart_deluxe"
+								},
+								{
+									"type": "quest_action",
+									"action": "deliver_sven_gift"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

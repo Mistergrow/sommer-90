@@ -1,0 +1,89 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_sysop",
+	"dialogues": {
+		"sysop_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Der Sysop",
+					"text": "Du bist neu in meiner Mailbox. Regeln: höflich bleiben, was du lädst, lädst du auch hoch, und keine Sperenzchen.",
+					"choices": [
+						{
+							"text": "Was gibt es hier?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Alles klar, Chef.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n2": {
+					"speaker": "Der Sysop",
+					"text": "Bretter, Nachrichten, ein bisschen PD-Software. Und Leute, die nachts wach sind wie du. Ruf einfach mal an — die Nummer kennst du ja jetzt.",
+					"choices": [
+						{
+							"text": "Bis später im Netz.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				}
+			}
+		},
+		"bbs_sysop_welcome": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Der Sysop",
+					"channel": "bbs",
+					"text": "Willkommen in der Box. Du bist nicht nur eine Nummer: Lies erst die Regeln, grüß die Leute und lade irgendwann auch selbst etwas hoch.",
+					"choices": [
+						{
+							"text": "Verstanden. Ich lese erst, grüße die Leute und lade nicht nur herunter.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "bbs_rules_ack"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"bbs_sysop_farewell": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Der Sysop",
+					"channel": "bbs",
+					"text": "Früher war jede Nacht besetzt. Jetzt gehen alle ins Internet. Bevor ich die Leitung aufgebe, will ich die besten Dateien und Nachrichten sichern.",
+					"choices": [
+						{
+							"text": "Ich helfe beim Archiv – und lade noch einen letzten Gruß hoch.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "sad"
+				}
+			}
+		}
+	}
+}

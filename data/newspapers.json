@@ -1,0 +1,659 @@
+{
+	"comment": "Aus den Cover-JSONs extrahierte Schlagzeilen (AUFMACHER + ZEITGEIST-MELDUNGEN + Preis) je Zeitung/Jahr/Saison. front=Sommer/Standard, fruehling, herbst. NewspaperWindow liest das + zeigt das Cover-PNG.",
+	"papers": {
+		"tagesbote": {
+			"name": "Der Tagesbote",
+			"kind": "Tageszeitung"
+		},
+		"stadtblitz": {
+			"name": "Der Stadtblitz",
+			"kind": "Boulevard-Zeitung"
+		}
+	},
+	"editions": {
+		"tagesbote": {
+			"1990": {
+				"front": {
+					"headline": "Heimcomputer erobern die Kinderzimmer",
+					"meldungen": [
+						"Amiga, C64 und Atari ST dominieren die Jugendzimmer",
+						"3,5-Zoll-Disketten setzen sich gegen alte Formate durch",
+						"Mailboxen bleiben ein Thema für teure Modems und Geduld"
+					],
+					"price": "1,20 DM",
+					"cover": "tagesbote_1990_front.png"
+				},
+				"fruehling": {
+					"headline": "Computerbörse im Bürgerhaus: Jugendliche tauschen Disketten und Tipps",
+					"meldungen": [
+						"Der Computerclub meldet mehr Besucher als Sitzplätze",
+						"Eltern wundern sich über neue Diskettenboxen auf den Schreibtischen",
+						"Kleine Anzeigen suchen Joysticks, Monitore und Speichererweiterungen"
+					],
+					"price": "1,20 DM",
+					"cover": "tagesbote_1990_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Mailbox-Abend im Jugendzentrum: Modems pfeifen bis spät",
+					"meldungen": [
+						"Teure Telefonminuten bremsen die Neugier auf elektronische Post",
+						"Ein lokaler Bastler erklärt Akustikkoppler und Modemkabel",
+						"Kleinanzeigen warnen vor vollen Disketten und verlorenen Labels"
+					],
+					"price": "1,20 DM",
+					"cover": "tagesbote_1990_front_herbst.png"
+				}
+			},
+			"1991": {
+				"front": {
+					"headline": "Die Szene wächst: Computerbörsen füllen die Stadthalle",
+					"meldungen": [
+						"Neue Computerzeitschriften liegen am Kiosk aus",
+						"Computerbörsen ziehen Sammler, Bastler und Jugendliche an",
+						"Mäuse, Joysticks und Zubehör werden zum Stadtgespräch"
+					],
+					"price": "1,27 DM",
+					"cover": "tagesbote_1991_front.png"
+				},
+				"fruehling": {
+					"headline": "Mehr Mäuse, mehr Kabel: Zubehörhändler baut Kiosk-Ecke aus",
+					"meldungen": [
+						"Neue Mausmatten, Druckerkabel und Diskettenboxen füllen die Regale",
+						"Computerzeitschriften berichten über immer größere Programmsammlungen",
+						"Schüler vergleichen Joysticks auf dem Pausenhof"
+					],
+					"price": "1,27 DM",
+					"cover": "tagesbote_1991_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Stadthalle plant zweiten Computermarkt nach großem Andrang",
+					"meldungen": [
+						"Sammler suchen gebrauchte Monitore und externe Laufwerke",
+						"Vereine diskutieren erste Kurse für Textverarbeitung",
+						"Kinder bringen Wunschzettel mit Disketten und Spielen nach Hause"
+					],
+					"price": "1,27 DM",
+					"cover": "tagesbote_1991_front_herbst.png"
+				}
+			},
+			"1992": {
+				"front": {
+					"headline": "Das goldene Amiga-Jahr: Demos und Disketten im Mittelpunkt",
+					"meldungen": [
+						"Demoscene-Wettbewerbe sorgen in Computerclubs für Betrieb",
+						"Externe Laufwerke werden zum Statussymbol",
+						"Große Spiele erscheinen auf immer mehr Disketten"
+					],
+					"price": "1,34 DM",
+					"cover": "tagesbote_1992_front.png"
+				},
+				"fruehling": {
+					"headline": "Demos laufen die ganze Nacht: Clubraum wird zum Pixelkino",
+					"meldungen": [
+						"Grafik- und Musikdemos locken neue Zuschauer in den Kellerraum",
+						"Externe Laufwerke gelten als heimlicher Stolz der Szene",
+						"Disketten mit Etiketten und Listen werden sorgfältig sortiert"
+					],
+					"price": "1,34 DM",
+					"cover": "tagesbote_1992_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Spiele auf fünf Disketten: Geduld wird zur neuen Tugend",
+					"meldungen": [
+						"Ladezeiten sorgen für Diskussionen über zweite Laufwerke",
+						"Computerläden werben mit Speicher und schnelleren Diskettenlaufwerken",
+						"Im Jugendzimmer stapeln sich Handbücher, Hüllen und Kopierzettel"
+					],
+					"price": "1,34 DM",
+					"cover": "tagesbote_1992_front_herbst.png"
+				}
+			},
+			"1993": {
+				"front": {
+					"headline": "Die Zukunft ist silbern: CD-ROM verspricht ganze Bibliotheken",
+					"meldungen": [
+						"Mehr RAM, größere Festplatten und schnellere Rechner prägen die Anzeigen",
+						"Erste CD-ROM-Laufwerke tauchen in den Läden der Stadt auf",
+						"Immer mehr Familien schauen auf den Personal Computer"
+					],
+					"price": "1,41 DM",
+					"cover": "tagesbote_1993_front.png"
+				},
+				"fruehling": {
+					"headline": "Silberscheiben im Schaufenster: CD-ROM macht die Stadt neugierig",
+					"meldungen": [
+						"Ein Computerladen zeigt Lexikonseiten und Fotos von der neuen Scheibe",
+						"Familien fragen nach Laufwerken, bleiben aber beim Preis vorsichtig",
+						"Festplatten und mehr Arbeitsspeicher stehen auf vielen Merkzetteln"
+					],
+					"price": "1,41 DM",
+					"cover": "tagesbote_1993_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Schnellere Rechner, größere Platten: Der PC rückt näher",
+					"meldungen": [
+						"486-Angebote tauchen häufiger in den Kleinanzeigen auf",
+						"Heimcomputerfreunde diskutieren über Umstieg oder Treue",
+						"Mailbox-Nutzer teilen erste Listen mit Programmadressen"
+					],
+					"price": "1,41 DM",
+					"cover": "tagesbote_1993_front_herbst.png"
+				}
+			},
+			"1994": {
+				"front": {
+					"headline": "Multimedia! Soundkarten und CD-ROMs ziehen ein",
+					"meldungen": [
+						"Multimedia-PCs und Soundkarten werden laut beworben",
+						"Spiele und Lernprogramme brauchen plötzlich viel Speicher",
+						"Erste Internet-Artikel machen die Runde"
+					],
+					"price": "1,48 DM",
+					"cover": "tagesbote_1994_front.png"
+				},
+				"fruehling": {
+					"headline": "Multimedia-Vorführung im Kaufhaus: Der PC soll sprechen lernen",
+					"meldungen": [
+						"Soundkarten und Lautsprecher locken Neugierige in die Technikabteilung",
+						"CD-ROM-Lernprogramme werden als neues Familienargument beworben",
+						"Ein kurzer Internet-Vortrag bleibt vielen Besuchern rätselhaft"
+					],
+					"price": "1,48 DM",
+					"cover": "tagesbote_1994_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Schule prüft Computerraum: Lernsoftware statt Karteikasten",
+					"meldungen": [
+						"Elternbeirat diskutiert Anschaffung moderner PCs",
+						"Lehrer wünschen robuste Drucker und einfache Bedienung",
+						"Schüler hoffen auf Pausen am Rechner"
+					],
+					"price": "1,48 DM",
+					"cover": "tagesbote_1994_front_herbst.png"
+				}
+			},
+			"1995": {
+				"front": {
+					"headline": "Windows-Fieber: Der Personal Computer wird Massenware",
+					"meldungen": [
+						"Ein neues Betriebssystem sorgt überall für Gespräche",
+						"PC-Ecken wachsen in den Computerläden",
+						"Modems verkaufen sich besser denn je"
+					],
+					"price": "1,55 DM",
+					"cover": "tagesbote_1995_front.png"
+				},
+				"fruehling": {
+					"headline": "Neues Betriebssystem wirft Schatten voraus: Händler rechnen mit Andrang",
+					"meldungen": [
+						"Computerläden räumen Platz für Komplettpakete und Zubehör",
+						"Kunden fragen nach mehr Speicher und größeren Festplatten",
+						"Modemangebote stehen erstmals direkt neben PC-Paketen"
+					],
+					"price": "1,55 DM",
+					"cover": "tagesbote_1995_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Startknopf in aller Munde: PC-Abende im Verein ausgebucht",
+					"meldungen": [
+						"Ein Einführungskurs erklärt Fenster, Symbole und Dateinamen",
+						"Ältere Rechner wirken plötzlich langsam",
+						"Modems bleiben teuer, aber die Neugier wächst"
+					],
+					"price": "1,55 DM",
+					"cover": "tagesbote_1995_front_herbst.png"
+				}
+			},
+			"1996": {
+				"front": {
+					"headline": "Was ist dieses Internet? Die Stadt geht online",
+					"meldungen": [
+						"Patchkabel und Mehrspielerabende tauchen in Jugendzimmern auf",
+						"Mailboxen verlieren langsam an Bedeutung",
+						"Online-Communities lassen die Computerwelt größer wirken"
+					],
+					"price": "1,62 DM",
+					"cover": "tagesbote_1996_front.png"
+				},
+				"fruehling": {
+					"headline": "Erste Stadtseiten im Netz: Rathaus testet elektronische Informationen",
+					"meldungen": [
+						"Besucher dürfen an einem Vorführrechner die neue Adresse eintippen",
+						"Mailbox-Betreiber sehen die Entwicklung mit gemischten Gefühlen",
+						"Patchkabel werden im Jugendzentrum plötzlich knapp"
+					],
+					"price": "1,62 DM",
+					"cover": "tagesbote_1996_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "3-D-Karten im Gespräch: Spiele sehen plötzlich räumlicher aus",
+					"meldungen": [
+						"Händler erklären Zusatzkarten und Pass-Through-Kabel",
+						"Spieler diskutieren Bildrate, Auflösung und neue Treiber",
+						"LAN-Abende wandern aus Kinderzimmern in Vereinsräume"
+					],
+					"price": "1,62 DM",
+					"cover": "tagesbote_1996_front_herbst.png"
+				}
+			},
+			"1997": {
+				"front": {
+					"headline": "Digitale Musik und CD-Brenner verändern den Schulhof",
+					"meldungen": [
+						"Digitale Musikformate werden auf dem Schulhof diskutiert",
+						"CD-Brenner und Rohlinge werden begehrter",
+						"Viele fragen sich, ob sie beim Heimcomputer bleiben"
+					],
+					"price": "1,69 DM",
+					"cover": "tagesbote_1997_front.png"
+				},
+				"fruehling": {
+					"headline": "Musikdateien statt Mixtape? Schulhof rätselt über digitale Klänge",
+					"meldungen": [
+						"Computerfreunde sprechen über neue komprimierte Musikformate",
+						"CD-Brenner bleiben teuer, aber Wunschlisten werden länger",
+						"Modemnutzer tauschen Tipps zu langen Downloads"
+					],
+					"price": "1,69 DM",
+					"cover": "tagesbote_1997_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Netztreff im Hinterzimmer: Jugendliche erklären Suchmaschinen",
+					"meldungen": [
+						"Ein Café stellt stundenweise einen Online-Rechner bereit",
+						"Eltern fragen nach Telefonkosten und Sicherheit",
+						"Computerzeitschriften drucken immer mehr Web-Adressen"
+					],
+					"price": "1,69 DM",
+					"cover": "tagesbote_1997_front_herbst.png"
+				}
+			},
+			"1998": {
+				"front": {
+					"headline": "3D-Grafik und Internetcafés: Die Computerwelt wird schneller",
+					"meldungen": [
+						"Neue 3D-Grafikkarten erscheinen in rascher Folge",
+						"LAN-Partys werden größer und organisierter",
+						"Die ersten Internetcafés öffnen in der Umgebung"
+					],
+					"price": "1,76 DM",
+					"cover": "tagesbote_1998_front.png"
+				},
+				"fruehling": {
+					"headline": "Grafikkarten im Monatstakt: Händler erklären den 3-D-Dschungel",
+					"meldungen": [
+						"Käufer vergleichen Speicher, Treiber und Beschleunigerkarten",
+						"LAN-Partys brauchen plötzlich größere Tische",
+						"Internetcafés werden als neue Treffpunkte diskutiert"
+					],
+					"price": "1,76 DM",
+					"cover": "tagesbote_1998_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Neues PC-System, neue Fragen: USB, Treiber und das Netz",
+					"meldungen": [
+						"Kunden hoffen auf einfachere Anschlüsse",
+						"Techniker warnen vor unausgereiften Treibern",
+						"Web-Adressen stehen inzwischen auf Vereinszetteln"
+					],
+					"price": "1,76 DM",
+					"cover": "tagesbote_1998_front_herbst.png"
+				}
+			},
+			"1999": {
+				"front": {
+					"headline": "Angst vor dem Jahr-2000-Fehler: Sind unsere Rechner sicher?",
+					"meldungen": [
+						"Das Internet gehört für viele inzwischen zum Alltag",
+						"Digitale Musik ist überall Gesprächsthema",
+						"Viele Betriebe prüfen ihre Rechner vor dem Jahreswechsel"
+					],
+					"price": "1,80 DM",
+					"cover": "tagesbote_1999_front.png"
+				},
+				"fruehling": {
+					"headline": "Betriebe prüfen alte Programme: Das Datum wird zur Chefsache",
+					"meldungen": [
+						"Verwaltung und Firmen testen Rechner vor dem Jahreswechsel",
+						"Computerläden bieten Sicherungen und Prüfprotokolle an",
+						"Zuhause wächst die Frage, was wirklich passieren kann"
+					],
+					"price": "1,80 DM",
+					"cover": "tagesbote_1999_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Countdown für Computer: Stadt will zum Jahreswechsel bereit sein",
+					"meldungen": [
+						"Rathaus, Banken und Händler melden abgeschlossene Tests",
+						"Internet und digitale Musik prägen den Rückblick auf das Jahrzehnt",
+						"Viele sichern Disketten, Fotos und Briefe auf neue Weise"
+					],
+					"price": "1,80 DM",
+					"cover": "tagesbote_1999_front_herbst.png"
+				}
+			}
+		},
+		"stadtblitz": {
+			"1990": {
+				"front": {
+					"headline": "Computer-Wahnsinn im Kinderzimmer!",
+					"meldungen": [
+						"Eltern staunen über Monitore, Joysticks und volle Diskettenboxen",
+						"Computerclub verspricht Hilfe für Einsteiger",
+						"Kleine Anzeigen suchen gebrauchte Heimcomputer"
+					],
+					"price": "0,80 DM",
+					"cover": "stadtblitz_1990_front.png"
+				},
+				"fruehling": {
+					"headline": "Disketten-Alarm im Bürgerhaus: Jugend tauscht Tipps bis zum Abend",
+					"meldungen": [
+						"Eltern warten vor dem Saal zwischen Monitoren und Kabelkisten",
+						"Computerclub zeigt, wie Disketten richtig beschriftet werden",
+						"Kleine Händler bieten Joysticks und gebrauchte Netzteile an"
+					],
+					"price": "0,80 DM",
+					"cover": "stadtblitz_1990_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Modem piept, Eltern zahlen: Neue Neugier auf die Mailbox",
+					"meldungen": [
+						"Telefonkosten sorgen für Streit am Küchentisch",
+						"Bastler erklären Modemkabel im Jugendzentrum",
+						"Viele wollen wissen, was elektronische Post sein soll"
+					],
+					"price": "0,80 DM",
+					"cover": "stadtblitz_1990_front_herbst.png"
+				}
+			},
+			"1991": {
+				"front": {
+					"headline": "Stadthalle voll: Alle wollen Computer!",
+					"meldungen": [
+						"Computerbörse meldet Gedränge zwischen Kabeln und Kisten",
+						"Schüler vergleichen Mäuse, Joysticks und Diskettenhüllen",
+						"Händler wittern ein gutes Jahr für Zubehör"
+					],
+					"price": "0,85 DM",
+					"cover": "stadtblitz_1991_front.png"
+				},
+				"fruehling": {
+					"headline": "Maus-Mangel im Laden: Zubehör wird plötzlich heiß begehrt",
+					"meldungen": [
+						"Händler bestellen Kabel, Matten und Diskettenboxen nach",
+						"Schüler streiten über den besten Joystick",
+						"Zeitschriftenstapel wachsen am Kiosk"
+					],
+					"price": "0,85 DM",
+					"cover": "stadtblitz_1991_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Computer-Andrang: Stadthalle plant nächsten Markt",
+					"meldungen": [
+						"Sammler suchen Monitore, Laufwerke und Ersatzkabel",
+						"Vereine sprechen über Kurse für Textverarbeitung",
+						"Wunschzettel mit Spielen und Disketten werden länger"
+					],
+					"price": "0,85 DM",
+					"cover": "stadtblitz_1991_front_herbst.png"
+				}
+			},
+			"1992": {
+				"front": {
+					"headline": "Disketten-Fieber: Schüler tauschen Spiele und Tricks",
+					"meldungen": [
+						"Nächtliche Demos lassen den Clubraum flimmern",
+						"Spiele auf immer mehr Disketten nerven Ungeduldige",
+						"Externe Laufwerke werden zum heimlichen Star"
+					],
+					"price": "0,90 DM",
+					"cover": "stadtblitz_1992_front.png"
+				},
+				"fruehling": {
+					"headline": "Pixel-Party im Keller: Demos laufen bis tief in die Nacht",
+					"meldungen": [
+						"Grafik und Musik locken neue Zuschauer in den Clubraum",
+						"Ein zweites Laufwerk gilt als großer Wunsch",
+						"Diskettenlisten werden wie Schätze gehütet"
+					],
+					"price": "0,90 DM",
+					"cover": "stadtblitz_1992_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Fünf Disketten für ein Spiel: Ladepause macht Spieler mürbe",
+					"meldungen": [
+						"Computerläden werben mit mehr Speicher",
+						"Viele fragen nach schnelleren Laufwerken",
+						"Handbücher und Zettel stapeln sich neben dem Monitor"
+					],
+					"price": "0,90 DM",
+					"cover": "stadtblitz_1992_front_herbst.png"
+				}
+			},
+			"1993": {
+				"front": {
+					"headline": "CD-ROM-Wunder: Passt ein Lexikon auf eine Scheibe?",
+					"meldungen": [
+						"Silberne Scheiben locken Familien in den Computerladen",
+						"Festplatten und mehr Speicher stehen auf Wunschzetteln",
+						"Der PC drängt lauter ins Wohnzimmer"
+					],
+					"price": "0,95 DM",
+					"cover": "stadtblitz_1993_front.png"
+				},
+				"fruehling": {
+					"headline": "Silber-Sensation: Händler zeigt Bilder von der CD-ROM",
+					"meldungen": [
+						"Familien staunen über Lexikonseiten auf einer Scheibe",
+						"Der Preis lässt viele Besucher noch zögern",
+						"Mehr Speicher steht auf fast jedem Merkzettel"
+					],
+					"price": "0,95 DM",
+					"cover": "stadtblitz_1993_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "PC drängt nach vorn: Große Platten, schnelle Chips, neue Fragen",
+					"meldungen": [
+						"Kleinanzeigen nennen immer öfter 486-Rechner",
+						"Heimcomputerfreunde diskutieren den Umstieg",
+						"Mailbox-Listen sammeln erste Programmadressen"
+					],
+					"price": "0,95 DM",
+					"cover": "stadtblitz_1993_front_herbst.png"
+				}
+			},
+			"1994": {
+				"front": {
+					"headline": "Multimedia-Boom: Der PC lernt reden",
+					"meldungen": [
+						"Soundkarten, Lautsprecher und CD-Laufwerke werden vorgeführt",
+						"Lernprogramme sollen den Familien-PC rechtfertigen",
+						"Das Netz bleibt für viele noch ein Rätsel"
+					],
+					"price": "1,00 DM",
+					"cover": "stadtblitz_1994_front.png"
+				},
+				"fruehling": {
+					"headline": "Der PC macht Krach: Soundkarten locken ins Kaufhaus",
+					"meldungen": [
+						"Lautsprecher und CD-Laufwerke ziehen Schaulustige an",
+						"Lernsoftware wird als Familienargument beworben",
+						"Ein Netz-Vortrag lässt viele ratlos zurück"
+					],
+					"price": "1,00 DM",
+					"cover": "stadtblitz_1994_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Computerraum statt Kreidetafel? Schule prüft neue PCs",
+					"meldungen": [
+						"Elternbeirat diskutiert Preise und Nutzen",
+						"Lehrer wünschen einfache Bedienung",
+						"Schüler hoffen auf Pausen am Rechner"
+					],
+					"price": "1,00 DM",
+					"cover": "stadtblitz_1994_front_herbst.png"
+				}
+			},
+			"1995": {
+				"front": {
+					"headline": "Startknopf-Fieber: Neuer PC-Rausch in der Stadt",
+					"meldungen": [
+						"Computerläden räumen Platz für neue Komplettpakete",
+						"Kunden fragen nach Speicher, Modem und größerer Festplatte",
+						"Vereine planen erste Abende für PC-Einsteiger"
+					],
+					"price": "1,05 DM",
+					"cover": "stadtblitz_1995_front.png"
+				},
+				"fruehling": {
+					"headline": "Neues System kommt: Händler räumen die Regale frei",
+					"meldungen": [
+						"Komplettpakete mit mehr Speicher werden vorbereitet",
+						"Modems stehen plötzlich neben den PCs",
+						"Einsteigerkurse sind schon vorab gefragt"
+					],
+					"price": "1,05 DM",
+					"cover": "stadtblitz_1995_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Startknopf überall: Stadt redet nur noch vom neuen PC-Gefühl",
+					"meldungen": [
+						"Vereinsabende erklären Fenster, Symbole und Dateien",
+						"Ältere Rechner wirken plötzlich lahm",
+						"Modems bleiben teuer, aber die Neugier wächst"
+					],
+					"price": "1,05 DM",
+					"cover": "stadtblitz_1995_front_herbst.png"
+				}
+			},
+			"1996": {
+				"front": {
+					"headline": "Internet-Alarm: Wer geht jetzt online?",
+					"meldungen": [
+						"Rathaus testet Seiten im Netz",
+						"Jugendliche reden über Online-Namen und lange Telefonrechnungen",
+						"3-D-Karten tauchen in den ersten Spiele-PCs auf"
+					],
+					"price": "1,10 DM",
+					"cover": "stadtblitz_1996_front.png"
+				},
+				"fruehling": {
+					"headline": "Rathaus im Netz: Bürger tippen die erste Adresse ein",
+					"meldungen": [
+						"Vorführrechner zeigt Seiten mit Stadtinformationen",
+						"Mailbox-Fans schauen mit gemischten Gefühlen zu",
+						"Patchkabel werden im Jugendzentrum knapp"
+					],
+					"price": "1,10 DM",
+					"cover": "stadtblitz_1996_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "3-D-Schock am Monitor: Spiele wirken plötzlich räumlich",
+					"meldungen": [
+						"Händler erklären Zusatzkarten und neue Treiber",
+						"Spieler vergleichen Bildrate und Auflösung",
+						"LAN-Abende ziehen in Vereinsräume um"
+					],
+					"price": "1,10 DM",
+					"cover": "stadtblitz_1996_front_herbst.png"
+				}
+			},
+			"1997": {
+				"front": {
+					"headline": "Musik aus dem Modem: Neue Dateien sorgen für Gespräch",
+					"meldungen": [
+						"Downloads dauern lange und sorgen trotzdem für Neugier",
+						"CD-Brenner bleiben teuer, aber begehrt",
+						"Netztreffs erklären Suchmaschinen und Adressen"
+					],
+					"price": "1,15 DM",
+					"cover": "stadtblitz_1997_front.png"
+				},
+				"fruehling": {
+					"headline": "Musik ohne Kassette: Schulhof staunt über neue Dateien",
+					"meldungen": [
+						"Downloads dauern lange und bleiben Gesprächsthema",
+						"CD-Brenner stehen auf teuren Wunschlisten",
+						"Modemnutzer tauschen Tipps für lange Nächte"
+					],
+					"price": "1,15 DM",
+					"cover": "stadtblitz_1997_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Netz im Hinterzimmer: Café-Rechner zieht Jugendliche an",
+					"meldungen": [
+						"Suchmaschinen werden am Bildschirm erklärt",
+						"Eltern fragen nach Telefonkosten und Sicherheit",
+						"Immer mehr Zettel tragen Web-Adressen"
+					],
+					"price": "1,15 DM",
+					"cover": "stadtblitz_1997_front_herbst.png"
+				}
+			},
+			"1998": {
+				"front": {
+					"headline": "3D-Karten und Netzcafés: So schnell war Spielen nie",
+					"meldungen": [
+						"Grafikkarten-Vergleiche füllen die Schaufenster",
+						"LAN-Partys brauchen mehr Tische und Kabel",
+						"Internetcafés werden zum neuen Treffpunkt"
+					],
+					"price": "1,20 DM",
+					"cover": "stadtblitz_1998_front.png"
+				},
+				"fruehling": {
+					"headline": "3-D-Dschungel im Laden: Welche Karte macht Spiele schneller?",
+					"meldungen": [
+						"Käufer vergleichen Speicher, Treiber und Preise",
+						"LAN-Partys brauchen größere Räume",
+						"Netzcafés werden als Treffpunkt gehandelt"
+					],
+					"price": "1,20 DM",
+					"cover": "stadtblitz_1998_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Neue Anschlüsse, neue Pannen: PC-Käufer kämpfen mit Treibern",
+					"meldungen": [
+						"Kunden hoffen auf einfachere Kabel",
+						"Techniker warnen vor unausgereifter Software",
+						"Web-Adressen stehen inzwischen auf Vereinszetteln"
+					],
+					"price": "1,20 DM",
+					"cover": "stadtblitz_1998_front_herbst.png"
+				}
+			},
+			"1999": {
+				"front": {
+					"headline": "Millennium-Angst: Stoppt der Datumsfehler unsere Rechner?",
+					"meldungen": [
+						"Firmen testen alte Programme vor dem Jahreswechsel",
+						"Sicherungen verkaufen sich besser denn je",
+						"Internet und digitale Musik bestimmen den Jahrzehnt-Rückblick"
+					],
+					"price": "1,25 DM",
+					"cover": "stadtblitz_1999_front.png"
+				},
+				"fruehling": {
+					"headline": "Datums-Angst in Betrieben: Alte Programme müssen zum Test",
+					"meldungen": [
+						"Verwaltung und Firmen prüfen Rechner vor dem Jahreswechsel",
+						"Computerläden verkaufen Sicherungen und Checklisten",
+						"Zuhause fragen viele, was wirklich passieren kann"
+					],
+					"price": "1,25 DM",
+					"cover": "stadtblitz_1999_front_fruehling.png"
+				},
+				"herbst": {
+					"headline": "Countdown im Rathaus: Ist die Stadt bereit für 2000?",
+					"meldungen": [
+						"Banken, Händler und Verwaltung melden Tests",
+						"Internet und digitale Musik prägen den Rückblick",
+						"Viele sichern Disketten, Briefe und Fotos"
+					],
+					"price": "1,25 DM",
+					"cover": "stadtblitz_1999_front_herbst.png"
+				}
+			}
+		}
+	}
+}

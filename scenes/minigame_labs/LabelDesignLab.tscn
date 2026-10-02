@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cquhwrffh4fbm"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="LabelDesignLab" unique_id=605356342 instance=ExtResource("1")]
+minigame_id = "label_design"

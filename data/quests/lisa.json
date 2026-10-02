@@ -1,0 +1,117 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_lisa",
+  "quests": [
+    {
+      "id": "q_tut_paint",
+      "title": "Pixel für Pixel",
+      "giver": "npc_lisa",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "tut_paint_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Lisa: »Meine Deluxe-Malen-Arbeitsdisk liegt jetzt in deiner Box. Starte sie am Amiga – oder komm zu mir und arbeite an meinem Rechner.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "deluxe_malen_workdisk",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "memory": "1991 von Lisa zum Pixeln bekommen",
+          "recovery_text": "Lisas Deluxe-Malen-Arbeitsdisk liegt jetzt in deiner Diskettenbox.",
+          "blocked_text": "Lisa kann dir die Arbeitsdisk erst geben, wenn in deiner Diskettenbox ein Platz frei ist. Alternativ kannst du an ihrem Amiga malen.",
+          "protect_text": "Lisas Deluxe-Malen-Arbeitsdisk wird noch für den aktiven Auftrag benötigt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause: Amiga starten → Werkbank → Disketten → »Deluxe Malen II« → START. Oder Lisas Zimmer besuchen und ihren Amiga anklicken. Mindestens 48 Pixel und zwei Farben setzen, dann »Bild sichern«.",
+          "map_locations": [
+            "room",
+            "lisa_home"
+          ],
+          "goal": {
+            "creation": "paint"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_lisa",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Dein erstes Pixelbild ist fertig — jetzt siehst du die Welt in 32×32."
+        },
+        {
+          "type": "flag",
+          "flag": "paint_gelernt",
+          "value": true
+        }
+      ],
+      "teaches": "paint_studio"
+    },
+    {
+      "id": "q_webring",
+      "title": "Ein Platz im Webring",
+      "giver": "npc_lisa",
+      "prereq": {
+        "year_min": 1998,
+        "flag": "webring_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Lisa findet deine Seite technisch okay – aber noch ohne eigene Handschrift."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Überarbeite und veröffentliche deine bestehende Homepage erneut.",
+          "map_location": "internetcafe",
+          "goal": {
+            "action": "update_homepage"
+          }
+        },
+        {
+          "desc": "Erreich mit Webring und Gästebuch mindestens 50 Besucher.",
+          "goal": {
+            "homepage_visitors_min": 50
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 4
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_lisa",
+          "value": 5
+        },
+        {
+          "type": "flag",
+          "flag": "webring_member"
+        },
+        {
+          "type": "toast",
+          "text": "Deine Seite hängt im Webring. Fremde Handles hinterlassen echte Grüße im Gästebuch."
+        }
+      ]
+    }
+  ]
+}

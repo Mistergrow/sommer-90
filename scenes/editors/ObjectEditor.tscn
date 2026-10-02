@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bfig6ha7m083n"]
+
+[ext_resource type="Script" uid="uid://bjql45js0c2s" path="res://scripts/gfx/object_editor.gd" id="1_object"]
+
+[node name="ObjectEditor" type="Control" unique_id=628325433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_object")

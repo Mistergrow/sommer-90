@@ -1,0 +1,86 @@
+SOMMER '90 — ORIGINAL TRACKER SOUNDTRACK
+Created for this project on 2026-09-05 with AI coding assistance.
+
+The 56 MOD files were generated from newly specified scores. Generation 1
+(twelve tracks, 2026-09-05) keeps its score in tools/build_original_soundtrack.py
+and is individually arranged by tools/soundtrack_legacy.py (revision 2026-09-24).
+Generation 2 (24 tracks, 2026-09-24) is written as chord progressions and
+melody bars in tools/soundtrack_songs.py, arranged into ProTracker patterns by
+tools/soundtrack_arranger.py. Generation 3 (20 tracks, 2026-09-24) consists of
+fully arranged 4/6/8-channel productions scored in tools/soundtrack_songs_v3.py
+and produced by tools/soundtrack_studio.py (separate drum voices, builds, drops,
+key changes, counter voices, fades). All embedded instrument PCM samples are
+computed by tools/soundtrack_synth.py
+using oscillators, Karplus-Strong strings, FM, filters, noise, a small
+Schroeder reverb and envelopes.
+No third-party recordings, sample banks, module patterns or melody sequences
+are inputs to the generator. The original MOD archive is never read by it.
+
+These are project-created assets, not licensed recordings of the historical
+musicians named in the game's collectible catalog. No third-party music
+license is relied on for these generated assets. This provenance record does
+not claim a human composer, exclusive copyright, or legal certification of
+musical uniqueness. The project's owner controls distribution of the project.
+
+Reproduce: python tools/build_original_soundtrack.py
+Verify:   python tools/build_original_soundtrack.py --check
+Manifest: data/soundtrack.json (file SHA-256, titles, tempos, durations)
+
+Craft calibration (generation 3, 2026-09-24): aggregate technique statistics
+(effect frequencies such as portamento/vibrato, interval profiles, repetition,
+timbre changes per channel) were measured on a local, never-distributed archive
+of 1990s tracker modules to decide WHICH techniques the arranger should use.
+No notes, patterns, orders or samples of those modules were read into, copied
+or reproduced by any generator; the analysis script only emits counts.
+
+Slot mapping: tools/assign_soundtrack_slots.py assigns each historical slot a
+soundtrack MOD whose era fits the slot year (python tools/assign_soundtrack_slots.py --check).
+
+The old catalog keeps historical slot titles/years for story progression and
+matching player-provided MODs. Those recordings are not part of the soundtrack
+or the exported game. The in-game now-playing display credits the actual file.
+
+Personal MOD files: Options > MOD folder & soundtrack. Add lawfully usable
+ProTracker .mod files (4/6/8 channels), then Rescan. Unmatched files are available
+as personal stereo tracks. Missing/invalid slot overrides use the soundtrack.
+
+Production revision (2026-09-24): all 56 files regenerated reproducibly.
+The twelve founding scores retain themes, keys, tempos and 64-bar duration,
+with individual instrument palettes. Generation 1/2 gains phrase dynamics,
+explicit releases and whole-mix endings. Synthesis corrects plucked-string
+feedback tuning and adds attack ramps before unchanged sustain loops.
+The studio arranger corrects shared-channel handoffs, percussion collisions,
+volume articulation and final fades. No reference score/sample is imported.
+See docs/SOUNDTRACK_REVIEW_2026-09-24.md for comparison, measured validation
+and the limits of a technical (rather than subjective listening) assessment.
+
+Musical revision (second pass, 2026-09-24): shaped oscillator attacks and
+spectral decay, revised original drum synthesis, newly written call/response
+phrases and individual closing responses, voice-led bass registers and
+whole-phrase octave placement. Studio counter voices leave passing notes
+un-doubled; automatic ornaments are confined to phrase endings.
+The six historical modules were analyzed for general musical techniques and
+sample envelopes. No historical sample, pattern or melody is a generator input.
+Local reference listening excerpts live only under out/, outside shipped assets.
+See docs/SOUNDTRACK_MUSICAL_REVISION_2026-09-24.md and the local level-matched
+review at out/soundtrack-musical-review-2026-09-24/index.html.
+
+Intro revision (2026-09-25): original opening signatures, instrument dialogues,
+harmonically written middle episodes and motif reprises. The title cue now
+introduces its identity at the start of the visible cracktro. Its main theme
+enters after four bars rather than eight. Tempos, lengths and channel counts
+remain unchanged. Existing synthesized instruments remain the sound basis.
+Nine historical modules were inspected for general opening/form techniques;
+none of their melodies, patterns or samples are read by the generators.
+See docs/INTRO_REFERENCE_ANALYSIS_2026-09-25.md and
+docs/SOUNDTRACK_INTRO_REVISION_2026-09-25.md for evidence and listening review.
+
+Techno/rave revision (2026-09-25, following the intro revision): selected dance
+scores gain original multi-bar bass conversations, syncopated piano/rave chord
+stabs, authored drum variations and contrasting breaks/builds/returns. The
+title theme gains a piano-house groove while retaining its immediate motif.
+New oscillator-generated resonant acid samples have closed/open/accent colors
+and sustained loops for classic tracker portamento. No commercial recording,
+sample pack, historical riff or drum-break recording is used as generator input.
+See docs/SOUNDTRACK_RAVE_REVISION_2026-09-25.md and
+out/soundtrack-rave-review-2026-09-25/index.html for the comparison and checks.

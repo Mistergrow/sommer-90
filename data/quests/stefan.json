@@ -1,0 +1,568 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_stefan",
+  "quests": [
+    {
+      "id": "q_stefan_space",
+      "title": "Stefans Herzenswunsch",
+      "giver": "npc_stefan",
+      "early_after_quest": "q_tut_karton",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "space_quest_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefan: »Wenn du irgendwo das Weltraumspiel auftreibst — ich dreh durch!«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Finde das Weltraumspiel Space Lemming Trouble auf dem Flohmarkt. Krause stellt samstags Kisten mit gebrauchten Disketten auf.",
+          "map_location": "flea_market",
+          "goal": {
+            "has_template": "game_space_lemming"
+          }
+        },
+        {
+          "desc": "Sichere die rote Masterdisk: Zuhause den Amiga starten, X-COPY booten, die rote Quelle wählen und auf eine blaue Leerdiskette kopieren.",
+          "map_location": "room",
+          "goal": {
+            "has_player_copy_of": "space_lemming_trouble"
+          }
+        },
+        {
+          "desc": "Die rote Masterdisk bleibt in deiner Box. Bring Stefan die selbst erstellte blaue Kopie persönlich in sein Zimmer.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "deliver_space_game"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 12
+        },
+        {
+          "type": "music_track",
+          "id": "6beat"
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_stefan",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "helped_stefan"
+        },
+        {
+          "type": "toast",
+          "text": "Stefan legt eine Diskette ein: »Vier Kanäle, alles aus dem Amiga.« Dann wird er leiser: »Tobias zeigt Freitag im Club eine Demo. Als Gast darfst du mit.«"
+        },
+        {
+          "type": "flag",
+          "flag": "summerdisk_intro",
+          "value": true
+        },
+        {
+          "type": "expect_call",
+          "npc": "npc_tobias",
+          "id": "tip_tobias_bytewerk",
+          "title": "Tobias „TRSi“ anrufen — Stefan: »Er nimmt dich als Gast mit in den Club.«",
+          "dialogue": "call_tobias_bytewerk"
+        }
+      ],
+      "teaches": "flohmarkt_reisen"
+    },
+    {
+      "id": "q_stefan_turbo",
+      "title": "Eine Runde fuer Stefan",
+      "giver": "npc_stefan",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "turbo_stunt_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefans zweiter Wunsch: Turbo Kart Deluxe finden, selbst pruefen und ihm eine Kopie bringen."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Finde Turbo Kart Deluxe auf dem Flohmarkt. Stefan hat versprochen, dir Fund und Muehe hinterher zu bezahlen.",
+          "map_location": "flea_market",
+          "goal": {
+            "has_template": "game_turbo_kart"
+          }
+        },
+        {
+          "desc": "Pruefe den Fund wirklich: Starte Turbo Kart zuhause und beende mindestens ein Rennen. Eigene Strecken darfst du dabei ebenfalls bauen.",
+          "map_location": "room",
+          "goal": {
+            "flag": "turbo_kart_played"
+          }
+        },
+        {
+          "desc": "Stefan bekommt nicht deine Quelle. Erstelle mit X-COPY auf einer Leerdiskette eine eigene Arbeitskopie von Turbo Kart.",
+          "map_location": "room",
+          "goal": {
+            "has_player_copy_of": "turbo_kart_deluxe"
+          }
+        },
+        {
+          "desc": "Bring Stefan die selbst erstellte Turbo-Kart-Kopie in sein Zimmer. Deine Flohmarktquelle bleibt in deiner Diskettenbox.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "deliver_turbo_stunt"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 12
+        },
+        {
+          "type": "disk_template",
+          "id": "disk_blank_dd",
+          "memory": "Von Stefan als Ersatz fuer die Turbo-Kart-Kopie bekommen"
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_stefan",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "quest_turbo_stunt",
+          "value": "done"
+        },
+        {
+          "type": "toast",
+          "text": "Stefan zahlt 12 DM und ersetzt deine Leerdiskette. Deine Turbo-Kart-Quelle bleibt bei dir."
+        }
+      ]
+    },
+    {
+      "id": "q_stefan_code_red",
+      "title": "Die schwarze Geheimakte",
+      "giver": "npc_stefan",
+      "early_after_quest": "q_stefan_turbo",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "code_red_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefan: »Krause hat eine schwarze Strategiespiel-Disk. Finde sie und pruef, ob sie wirklich so tief ist.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Finde Code Red: Protokoll 2034 auf dem Flohmarkt. Zum Original gehoert ein rotes Handbuch.",
+          "map_location": "flea_market",
+          "goal": {
+            "has_template": "game_code_red"
+          }
+        },
+        {
+          "desc": "Starte Code Red zuhause und fuehre eine Operation bis zu einem Ende. Jede Partie beginnt 1962 und endet spaetestens im Sommer 2034.",
+          "map_location": "room",
+          "goal": {
+            "flag": "code_red_played"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 15
+        },
+        {
+          "type": "disk_template",
+          "id": "disk_blank_dd",
+          "memory": "Von Stefan fuer den Test von Code Red bekommen"
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_stefan",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "quest_code_red",
+          "value": "done"
+        },
+        {
+          "type": "toast",
+          "text": "Stefan zahlt 15 DM und gibt dir eine frische Leerdiskette: »Das war mehr als nur zwei Bildschirme. Behalt das Original.«"
+        }
+      ]
+    },
+    {
+      "id": "q_firma_talent",
+      "title": "Stefans Firma sucht Talent",
+      "giver": "npc_stefan",
+      "prereq": {
+        "year_min": 1997,
+        "needs": [
+          "stefan_firma"
+        ],
+        "flag": "firma_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefan: »Meine Firma braucht faehige Leute. Zeig, was du draufhast!«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Tobias' Szene-Studio-Arbeitsdisk wurde für Stefans Prototyp wieder bereitgelegt.",
+          "blocked_text": "Für die Szene-Studio-Arbeitsdisk fehlt ein Platz in deiner Diskettenbox; das Programm bleibt als Save-Reparatur auf der Werkbank erreichbar.",
+          "protect_text": "Das Szene-Studio wird noch für Stefans Prototyp-Auftrag benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 0,
+          "through_stage": 0,
+          "recovery_text": "SZENE-STUDIO wurde für Stefans Prototyp auf der Werkbank wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Bau während Stefans Auftrag einen neuen Spiel-Prototyp im Szene-Studio.",
+          "map_location": "room",
+          "goal": {
+            "action": "firma_prototype"
+          }
+        },
+        {
+          "desc": "Praesentier Stefan den Prototyp und klaer deine Rolle in der Firma.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "firma_pitch"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 45
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "firma_contact"
+        },
+        {
+          "type": "toast",
+          "text": "Stefan: »Willkommen an Bord — inoffiziell erstmal. Aber es faengt an!«"
+        }
+      ]
+    },
+    {
+      "id": "q_erster_job",
+      "title": "Der erste richtige Job",
+      "giver": "npc_stefan",
+      "prereq": {
+        "year_min": 1997,
+        "needs": [
+          "geselle"
+        ],
+        "flag": "erster_job_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefan wird ungewohnt ernst: »Meine Firma sucht jemanden, der Probleme wirklich zu Ende löst. Liefere erst im Club ab — danach reden wir über deinen Platz im Team.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Solides Fachwissen (Wissen 45).",
+          "goal": {
+            "wissen_min": 45
+          }
+        },
+        {
+          "desc": "Computerclub -> JOBS: »Programmier-Auftrag« annehmen, fertigstellen und direkt abliefern.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "job:job_code_gig"
+          }
+        },
+        {
+          "desc": "Mach dir einen Namen, der im Bewerbungsgespräch Gewicht hat (Ruf 18).",
+          "goal": {
+            "ruf_min": 18
+          }
+        },
+        {
+          "desc": "Fuehr das Bewerbungsgespraech mit Stefan und nimm den Job an.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "job_interview"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 90
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "erster_job"
+        },
+        {
+          "type": "toast",
+          "text": "Fester Job als Geselle — dein erstes richtiges Gehalt."
+        }
+      ]
+    },
+    {
+      "id": "q_eigenes_spiel",
+      "title": "Dein erstes eigenes kleines Werk",
+      "giver": "npc_stefan",
+      "prereq": {
+        "year_min": 1992,
+        "needs": [
+          "stefan_geholfen"
+        ],
+        "flag": "eigenes_spiel_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefan: »Du schleppst Spiele ran — warum schreibst du nicht dein EIGENES? Tobias' schwarze SZENE-STUDIO-Disk startet über Werkbank → Disketten.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 0,
+          "through_stage": 3,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Die fehlende SZENE-STUDIO-Arbeitsdisk wurde für dein eigenes Spiel wieder in die Diskettenbox gelegt.",
+          "blocked_text": "Deine Diskettenbox ist voll. Mach einen Platz für die SZENE-STUDIO-Arbeitsdisk frei; das Programm wurde zur Save-Reparatur bereits auf der Werkbank bereitgestellt.",
+          "protect_text": "Die SZENE-STUDIO-Arbeitsdisk wird noch für dein erstes eigenes Spiel benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 0,
+          "through_stage": 3,
+          "recovery_text": "SZENE-STUDIO wurde für dein aktives Spielprojekt auf der Werkbank wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause: Amiga starten → Werkbank → Disketten → »SZENE-STUDIO 1.0« → START; dann SPIEL-PROTOTYP und eine Spielregel wählen.",
+          "map_location": "room",
+          "goal": {
+            "action": "choose_game_direction"
+          }
+        },
+        {
+          "desc": "Im Szene-Studio den QA-Lauf deines Prototyps starten: Chips sammeln, Fehlerfeldern ausweichen und den Ausgang erreichen.",
+          "map_location": "room",
+          "goal": {
+            "action": "play_game_prototype"
+          }
+        },
+        {
+          "desc": "Im Szene-Studio mindestens ein eigenes Bild-, Musik- oder Code-Asset mit dem spielbaren Build verbinden.",
+          "map_location": "room",
+          "goal": {
+            "action": "game_assets_linked"
+          }
+        },
+        {
+          "desc": "Im Szene-Studio Build, Gameplay-Stempel und QA bestehen; das Spiel anschließend auf eine leere DD-Disk freezen.",
+          "map_location": "room",
+          "goal": {
+            "action": "release_game"
+          }
+        },
+        {
+          "desc": "Zeig Stefan den fertigen Spiel-Prototyp und hol dir ehrliches Feedback.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "show_game_to_stefan"
+          }
+        },
+        {
+          "desc": "Entscheide mit Stefan, ob der Prototyp als bezahlte Kleinserie oder frei im Club weitergegeben wird.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "choose_game_distribution"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 15
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_stefan",
+          "value": 4
+        },
+        {
+          "type": "flag",
+          "flag": "game_author"
+        },
+        {
+          "type": "toast",
+          "text": "Dein erstes eigenes Spiel ist draußen: ein selbst bestandener Gameplay-Loop mit einer sichtbaren Entscheidung über seinen Weg."
+        }
+      ]
+    },
+    {
+      "id": "q_sommerdisk_1990",
+      "title": "Meine erste Sommerdisk",
+      "giver": "npc_stefan",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "summerdisk_intro"
+      },
+      "on_start": [
+        {
+          "type": "program",
+          "id": "summer_disk"
+        },
+        {
+          "type": "disk_template",
+          "id": "summer_disk_tool",
+          "memory": "1990 von Stefan für die erste eigene Sommerdisk bekommen"
+        },
+        {
+          "type": "toast",
+          "text": "Stefan gibt dir die schwarze Programmdisk »SOMMERDISK 90«. Sie liegt in deiner Diskettenbox; für das Ergebnis brauchst du zusätzlich eine leere blaue DD-Diskette."
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "summer_disk_tool",
+          "from_stage": 0,
+          "through_stage": 0,
+          "memory": "1990 von Stefan für die erste eigene Sommerdisk bekommen",
+          "recovery_text": "Stefans Programmdisk »SOMMERDISK 90« wurde wieder in deine Diskettenbox gelegt.",
+          "blocked_text": "Für Stefans Programmdisk fehlt ein Platz in deiner Diskettenbox. Wirf eine entbehrliche Diskette weg; die Programmdisk wird dann automatisch zugestellt.",
+          "protect_text": "Die Programmdisk brauchst du noch, um deine Sommerdisk zusammenzustellen."
+        },
+        {
+          "release_role": "summer_disk",
+          "from_stage": 1,
+          "through_stage": 1,
+          "grant_missing": false,
+          "protect_text": "Diese fertige Sommerdisk musst du Stefan noch zeigen."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Im Zimmer: Amiga starten → Werkbank → Disketten → TOOLS → »SOMMERDISK 90« → START. Wähle 2–4 Fundstücke und beschreibe damit eine leere blaue DD-Diskette.",
+          "map_location": "room",
+          "goal": {
+            "action": "assemble_summer_disk"
+          }
+        },
+        {
+          "desc": "Zeig Stefan die beschriftete Sommerdisk und erzähl, warum genau diese Dinge darauf gehören.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "show_summer_disk"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "npc_trust",
+          "npc": "npc_stefan",
+          "value": 2
+        },
+        {
+          "type": "memory_once",
+          "id": "summerdisk_1990"
+        },
+        {
+          "type": "toast",
+          "text": "Vom fremden Karton zur eigenen Tauschdiskette — dein erster Computersommer hat einen Abschluss."
+        }
+      ],
+      "teaches": "persoenliche_zusammenstellung"
+    },
+    {
+      "id": "q_finale_weg",
+      "title": "Was aus uns geworden ist",
+      "giver": "npc_stefan",
+      "prereq": {
+        "year_min": 1999,
+        "needs": [
+          "berufstaetig"
+        ],
+        "flag": "finale_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Stefan wartet im Keller. Zwischen den alten Disketten liegt die Frage nach dem nächsten Jahrzehnt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Sprich mit Stefan und entscheide, welchen Weg du nach 1999 weitergehst.",
+          "map_location": "friend_cellar",
+          "goal": {
+            "action": "choose_life_path"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "npc_trust",
+          "npc": "npc_stefan",
+          "value": 8
+        },
+        {
+          "type": "flag",
+          "flag": "decade_complete"
+        },
+        {
+          "type": "toast",
+          "text": "Sommer '90 endet nicht. Er wird zu der Geschichte, die du mitnimmst."
+        }
+      ]
+    }
+  ]
+}

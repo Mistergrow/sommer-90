@@ -1,0 +1,88 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_wolf",
+	"dialogues": {
+		"wolf_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Wolf",
+					"text": "Stadtbank, guten Tag. Ein Sparbuch in Ihrem Alter? Vorbildlich. Zinsen sind Ihr Freund, merken Sie sich das.",
+					"choices": [
+						{
+							"text": "Wie funktioniert Sparen?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Nur informieren, danke.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Herr Wolf",
+					"text": "Regelmäßig etwas beiseitelegen, nicht alles sofort verprassen. Auch für Disketten gilt: wer spart, kann später zuschlagen.",
+					"choices": [
+						{
+							"text": "Kluger Rat.",
+							"effects_once": "wolf_savings_advice",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_wolf_1000": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Wolf",
+					"text": "Schön, dass Sie zurückrufen! Herr Wolf, Stadtbank. Ihr Sparbuch begleitet Sie nun schon eine Weile. Ab diesem Sommer können wir den nächsten Schritt angehen: ein Girokonto mit EC-Karte.",
+					"choices": [
+						{
+							"text": "Girokonto und EC-Karte — wie läuft das?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Herr Wolf",
+					"text": "Das Konto eröffnen wir am Schalter. Falls Sie noch keine achtzehn sind, benötigen wir die Unterschrift Ihrer Eltern. Danach bestellen Sie die Magnetstreifenkarte; Karte und PIN-Brief liegen nach fünf Tagen getrennt bereit. Am Automaten gilt: erst Karte, dann Geld, dann Beleg. Und Ihr Ziel bleibt vierstellig — Tasche, Giro und Sparbuch zählen zusammen.",
+					"choices": [
+						{
+							"text": "Erst das Konto, dann die Karte, dann tausend Mark.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "erste_1000_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Eröffne bei Herrn Wolf dein Girokonto."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		}
+	}
+}

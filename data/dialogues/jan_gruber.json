@@ -1,0 +1,92 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_jan_gruber",
+	"dialogues": {
+		"jan_gruber_greet": {
+			"start": "n1",
+			"nodes": {
+				"n_intro": {
+					"speaker": "Jan Gruber",
+					"text": "Jan Gruber. Mein Onkel hat mir den Laden übergeben. Die Werkstatt bleibt, ebenso Ersatzteile und Amiga-Service. Dazu kommen Netzwerktechnik und die neueren Rechner — kein abrupter Schlussstrich.",
+					"choices": [
+						{
+							"text": "Dann weiß ich, wer den Laden jetzt führt.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "shop_successor_met",
+									"value": true
+								},
+								{
+									"type": "memory_once",
+									"id": "met_jan_gruber_successor"
+								},
+								{
+									"type": "toast",
+									"text": "Jan Gruber führt den Computerladen weiter. Herr Gruber genießt seinen Ruhestand und schaut gelegentlich am Flohmarkt vorbei."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n1": {
+					"speaker": "Jan Gruber",
+					"text": "Willkommen zurück. Mein Onkel fragt tatsächlich noch nach dem Laden — aber nur, wenn wir uns auf dem Flohmarkt über den Weg laufen. Hier halte jetzt ich die Stellung. Was brauchst du?",
+					"choices": [
+						{
+							"text": "Das Übergabeprotokoll ist vollständig.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_gruber_abschied",
+									"stage": 1
+								}
+							},
+							"next": "n_handover",
+							"id": "reply_0"
+						},
+						{
+							"text": "Du bist also der neue Inhaber?",
+							"cond": {
+								"not_flag": "shop_successor_met"
+							},
+							"next": "n_intro",
+							"id": "reply_1"
+						},
+						{
+							"text": "Ich sehe mich im Sortiment um.",
+							"next": null,
+							"id": "reply_2"
+						},
+						{
+							"text": "Gut, dass die Werkstatt bleibt.",
+							"next": null,
+							"id": "reply_3"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n_handover": {
+					"speaker": "Jan Gruber",
+					"text": "Fehlerbild, Messwerte und Gegenprobe stimmen überein. Genau so will ich die Werkstatt weiterführen: erst verstehen, dann reparieren. Mein Onkel kann beruhigt auf den Flohmarkt gehen — und du hast hier jederzeit einen Platz am Servicebrett.",
+					"choices": [
+						{
+							"text": "Dann gehört der Schlüssel jetzt wirklich dir.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "jan_handover_confirmed"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		}
+	}
+}

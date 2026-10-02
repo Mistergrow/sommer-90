@@ -1,0 +1,117 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_lisa",
+	"dialogues": {
+		"lisa_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Lisa",
+					"text": "Schau, dieser Verlauf in Deluxe Paint — 32 Farben, aber wenn man Dithering nutzt, sieht's aus wie tausend.",
+					"choices": [
+						{
+							"text": "Wie machst du das?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Sieht toll aus!",
+							"next": null,
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_lisa",
+									"value": 1
+								}
+							],
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Lisa",
+					"text": "Geduld und ein gutes Auge. Ich zeig's dir mal richtig, wenn du willst. Kunst ist auch Handwerk.",
+					"choices": [
+						{
+							"text": "Gerne!",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_lisa_paint": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Lisa",
+					"text": "Hier ist Lisa! Basti hat mir dein Pattern vorgespielt. Für den Anfang echt okay. Aber weißt du, was noch fehlt? BILDER.",
+					"choices": [
+						{
+							"text": "Du malst doch, oder?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Lisa",
+					"text": "Pixel für Pixel, in Deluxe Malen. Musik plus Grafik — DAS wird eine Demo. Ich habe dir meine Arbeitskopie vorbeigebracht; sie liegt in deiner Diskettenbox. Du kannst sie daheim starten oder an meinem Amiga arbeiten. Mal etwas Eigenes und sichere das Bild.",
+					"choices": [
+						{
+							"text": "Okay, ich versuch’s!",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "tut_paint_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Starte »Deluxe Malen II« aus deiner Diskettenbox oder benutze Lisas Amiga."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_lisa_webring": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Lisa",
+					"text": "Deine Homepage funktioniert. Jetzt braucht sie Haltung: eigene Farben, ein Gästebuch und einen Webring, über den echte Leute kommen.",
+					"choices": [
+						{
+							"text": "Ich überarbeite sie und stelle das Update online.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "webring_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

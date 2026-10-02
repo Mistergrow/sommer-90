@@ -1,0 +1,54 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_haendler",
+  "quests": [
+    {
+      "id": "q_dealer_kopien",
+      "title": "Der Typ am Trampelpfad",
+      "giver": "npc_haendler",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "dealer_intro"
+      },
+      "intro_via": {
+        "npc": "npc_stefan",
+        "handoff_to": "npc_haendler",
+        "text": "Stefan verrät den diskreten Treffpunkt; den eigentlichen Auftrag erteilt der Händler vor Ort."
+      },
+      "teaches": "kopieren_verkauf",
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Oben am Trampelpfad im Wald steht ein Typ mit komischen Geräten — er KAUFT Kopien. Zieh eine mit X-COPY und bring sie ihm."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause den Amiga starten, X-COPY öffnen und von einer Spielquelle eine frische Verkaufskopie auf Leerdiskette ziehen.",
+          "map_location": "room",
+          "goal": {
+            "action": "make_copy"
+          }
+        },
+        {
+          "desc": "Bring dem Händler am Trampelpfad irgendeine eigene, lauffähige Spielkopie. Master- und Quelldisketten bleiben geschützt.",
+          "map_location": "dealer_clearing",
+          "goal": {
+            "action": "dealer_delivery"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Der Händler nickt: »Ich nehme, was sauber läuft. Bei mehreren Sätzen gibt es einen Mengenbonus.« Ein verlässlicher Abnehmer für deine Kopien!"
+        }
+      ]
+    }
+  ]
+}

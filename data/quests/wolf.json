@@ -1,0 +1,60 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_wolf",
+  "quests": [
+    {
+      "id": "q_erste_1000",
+      "title": "Die ersten Tausend",
+      "milestone": true,
+      "giver": "npc_wolf",
+      "prereq": {
+        "year_min": 1994,
+        "flag": "erste_1000_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Herr Wolf klappt das Sparbuch zu: »Bargeld verschwindet schnell. Ein Konto, eine eigene Karte und vier Stellen Guthaben — dann hast du wirklich etwas aufgebaut.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Geh zur Stadtbank und eröffne dein Girokonto. Falls du noch minderjährig bist, brauchst du zuerst die Unterschrift deiner Eltern.",
+          "map_location": "stadtbank",
+          "goal": {
+            "flag": "bank_giro_opened"
+          }
+        },
+        {
+          "desc": "Bestell deine EC-Karte am Schalter und hol sie nach fünf Kalendertagen zusammen mit dem getrennten PIN-Brief ab.",
+          "map_location": "stadtbank",
+          "goal": {
+            "flag": "bank_ec_card_collected"
+          }
+        },
+        {
+          "desc": "Bring 1000 DM zusammen (Tasche, Girokonto und Sparbuch zählen).",
+          "goal": {
+            "wealth_min": 1000
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "saver"
+        },
+        {
+          "type": "toast",
+          "text": "Vier Stellen auf dem Konto — der erste kleine Wohlstand."
+        }
+      ],
+      "teaches": "bank_giro_karte"
+    }
+  ]
+}

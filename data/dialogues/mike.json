@@ -1,0 +1,914 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_mike",
+	"dialogues": {
+		"mike_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Mike",
+					"text": "Neuer Highscore! Frag nicht, ich sag nur: eine Hand am Joystick, die andere an der Cola. Willst du's toppen?",
+					"choices": [
+						{
+							"text": "Führerschein",
+							"cond": {
+								"quest_stage": {
+									"id": "q_fuehrerschein",
+									"stage": 1
+								}
+							},
+							"next": "n_license_ready",
+							"id": "reply_0"
+						},
+						{
+							"text": "Führerschein",
+							"cond": {
+								"quest_stage": {
+									"id": "q_fuehrerschein",
+									"stage": 0
+								}
+							},
+							"next": "n_license_prepare",
+							"id": "reply_1"
+						},
+						{
+							"text": "Führerschein",
+							"cond": {
+								"age_min": 17,
+								"not_flag": "fuehrerschein_intro"
+							},
+							"next": "n_license_intro",
+							"id": "reply_2"
+						},
+						{
+							"text": "Zeig mal deinen Trick.",
+							"next": "n2",
+							"id": "reply_3"
+						},
+						{
+							"text": "Ein andermal.",
+							"next": null,
+							"id": "reply_4"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Mike",
+					"text": "Timing ist alles. Und ein Competition Pro, kein Wackel-Joystick. Merk dir das.",
+					"choices": [
+						{
+							"text": "Notiert.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_license_intro": {
+					"speaker": "Mike",
+					"text": "Gehst du den Führerschein jetzt an? Ich habe mich schon nach Fahrschule und Prüfungen erkundigt.",
+					"choices": [
+						{
+							"text": "Ja, ich bereite mich vor.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "fuehrerschein_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Der Führerschein. Alle Details stehen in deinen Notizen."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_license_prepare": {
+					"speaker": "Mike",
+					"text": "Du bist schon dran. Sobald alles vorbereitet ist, legen wir mit der Theorieprobe los.",
+					"choices": [
+						{
+							"text": "Alles klar.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_license_ready": {
+					"speaker": "Mike",
+					"text": "Alles vorbereitet? Dann machen wir jetzt die Theorieprobe.",
+					"choices": [
+						{
+							"text": "Theorieprobe starten.",
+							"cond": {
+								"age_min": 18,
+								"money_min": 900
+							},
+							"next": "n_license_1",
+							"id": "reply_0"
+						},
+						{
+							"text": "Später.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_license_1": {
+					"speaker": "Mike",
+					"text": "Du kommst an eine unübersichtliche Kreuzung ohne Schild. Was machst du?",
+					"choices": [
+						{
+							"text": "Langsam ran, rechts vor links beachten.",
+							"next": "n_license_2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Hupen und durch, ich hab's eilig.",
+							"next": "n_license_fail",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_license_2": {
+					"speaker": "Mike",
+					"text": "Letzte Frage: Nach der LAN-Nacht bist du völlig übermüdet. Heimfahren?",
+					"choices": [
+						{
+							"text": "Nein. Schlafen oder fahren lassen.",
+							"next": "n_license_pass",
+							"id": "reply_0"
+						},
+						{
+							"text": "Fenster auf und Musik laut.",
+							"next": "n_license_fail",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_license_fail": {
+					"speaker": "Mike",
+					"text": "Alter. So kriegst du höchstens ein Foto fürs Polizeirevier. Noch mal von vorn.",
+					"choices": [
+						{
+							"text": "Okay, konzentriert.",
+							"next": "n_license_1",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "angry"
+				},
+				"n_license_pass": {
+					"speaker": "Mike",
+					"text": "Beides richtig. Jetzt die 900 Mark zur Fahrschule – und diesmal ist das Geld wirklich weg.",
+					"choices": [
+						{
+							"text": "Zahlen und zur Prüfung anmelden.",
+							"next": null,
+							"effects": [
+								{
+									"type": "spend_money",
+									"value": 900
+								},
+								{
+									"type": "quest_action",
+									"action": "license_exam"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"mike_orakel": {
+			"choice_effects_once": true,
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Mike",
+					"text": "Setz dich, ich bin grad in Fahrt. Daniel faselt von seiner Apfel-Zukunft — aber ICH sag dir, wie's WIRKLICH kommt. Frag mich was. Na los, frag!",
+					"choices": [
+						{
+							"text": "Wie meinst du das mit den Servern?",
+							"next": "n_server",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Was wird aus unseren Spielen?",
+							"next": "n_spiele",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Und was machen die Leute den ganzen Tag?",
+							"next": "n_leute",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_2"
+						},
+						{
+							"text": "Was ist mit den Geräten selbst?",
+							"next": "n_geraete",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_3"
+						},
+						{
+							"text": "Du spinnst doch, Mike.",
+							"next": "n_spinnst",
+							"id": "reply_4"
+						},
+						{
+							"text": "Genug Zukunft für heute.",
+							"next": null,
+							"id": "reply_5"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_server": {
+					"speaker": "Mike",
+					"text": "Ganz einfach: Wenn dein Spiel auf FREMDEN Rechnern läuft und einer hackt die Dinger — dann spielt drei Monate lang KEINER online. Drei Monate! Und wehe, deine Daten liegen auch noch da. Name, Konto, alles weg. Bei meinem Modul steckt der Highscore in MIR drin, da kommt keiner ran.",
+					"choices": [
+						{
+							"text": "Dann speichern die Leute eben woanders.",
+							"next": "n_cloud",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Wer sollte denn sowas hacken?",
+							"next": "n_hacker",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Zurück zu deinen anderen Weisheiten.",
+							"next": "n1",
+							"id": "reply_2"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n_cloud": {
+					"speaker": "Mike",
+					"text": "Woanders? HA! Die nennen das dann bestimmt was Flauschiges — 'Wolke' oder so. Klingt weich, IST aber: deine Sachen auf dem Rechner von einem Fremden. Wenn der zusperrt, stehst du im Regen. Aus der Wolke regnet's nämlich, merk dir das.",
+					"choices": [
+						{
+							"text": "Der war gut.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Du übertreibst.",
+							"next": "n_uebertreib",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "laughing"
+				},
+				"n_hacker": {
+					"speaker": "Mike",
+					"text": "Wer? Irgendein gelangweilter Sechzehnjähriger im Keller, so wie wir — nur ohne Gewissen. Gegen Langeweile ist keine Firewall gewachsen. Schöner Satz, oder? Kannst du behalten, kostet nix. Noch.",
+					"choices": [
+						{
+							"text": "Weiter im Programm.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				},
+				"n_spiele": {
+					"speaker": "Mike",
+					"text": "Pass auf: Erst verkaufen sie dir Spiele KAPUTT und flicken sie hinterher durch die Leitung. Dann verkaufen sie dir das Spiel in SCHEIBEN — die Rüstung extra, der Sattel fürs Pferd extra. Und am Ende kaufst du gar nix mehr: du MIETEST. Monat für Monat. Hörst du auf zu zahlen, ist deine Sammlung Luft.",
+					"choices": [
+						{
+							"text": "Ein Sattel... fürs Pferd... extra?!",
+							"next": "n_pferd",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Wenigstens gucken dann alle beim Spielen zu, oder?",
+							"next": "n_esport",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Das macht doch keiner mit.",
+							"next": "n_mitmachen",
+							"id": "reply_2"
+						},
+						{
+							"text": "Anderes Thema.",
+							"next": "n1",
+							"id": "reply_3"
+						}
+					],
+					"emotion": "angry"
+				},
+				"n_pferd": {
+					"speaker": "Mike",
+					"text": "Ich SCHWÖRE es dir. Irgendwann zahlt einer echtes Geld für einen erfundenen Sattel auf einem erfundenen Pferd. Und weißt du, was das Verrückteste ist? Es wird ein RIESENGESCHÄFT. Die Leute kaufen Zeug, das es nicht gibt, mit Geld, das sie nicht haben, um Leute zu beeindrucken, die sie nicht kennen.",
+					"choices": [
+						{
+							"text": "Halt. Geld, das es nicht gibt?",
+							"next": "n_geld",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "laughing"
+				},
+				"n_geld": {
+					"speaker": "Mike",
+					"text": "Jaha! Irgendwann erfinden die auch noch Geld, das nur im Rechner existiert. Keine Bank, kein Schein, nur Strom. Und dann verkaufen sie dir QUITTUNGEN für Bilder, die jeder umsonst kopieren kann. Lach nicht! Du wirst an mich denken und weinen. Vor Lachen. Egal.",
+					"choices": [
+						{
+							"text": "Mike, du bist ein Orakel.",
+							"next": "n_orakel",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n_esport": {
+					"speaker": "Mike",
+					"text": "Zugucken! Stell dir vor: STADIEN voller Leute, die anderen Leuten beim ZOCKEN zugucken. Mit Trikots! Mit Fahnen! ... Okay, unter uns: DAS fänd ich ehrlich gesagt ziemlich stark. Wenn einer den Weltrekord bricht und 50.000 Leute schreien — das hätte was. Aber sag keinem, dass ich das gesagt hab.",
+					"choices": [
+						{
+							"text": "Dein Geheimnis ist sicher.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "laughing"
+				},
+				"n_mitmachen": {
+					"speaker": "Mike",
+					"text": "Doch, machen sie. Weißt du warum? Weil's BEQUEM ist. Bequem schlägt schlau, immer. Der Mensch nimmt den Fahrstuhl, sogar wenn er zur Treppe weiter laufen muss.",
+					"choices": [
+						{
+							"text": "Der war auch gut.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				},
+				"n_leute": {
+					"speaker": "Mike",
+					"text": "Die Leute? Die gucken. Den ganzen Tag. Auf kleine Bildschirme. Beim Essen, beim Gehen, auf'm Klo — und abends erzählen sie sich, sie hätten 'keine Zeit'. Und jeder bastelt sich im Netz einen zweiten Ich — schöner, cooler, erfundener. Berühmt wird, wer am lautesten Sachen in die Kamera hält.",
+					"choices": [
+						{
+							"text": "Wovon leben die dann?",
+							"next": "n_beruf",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Und die Kinder?",
+							"next": "n_kinder",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Woher willst DU das wissen?",
+							"next": "n_woher",
+							"id": "reply_2"
+						},
+						{
+							"text": "Themawechsel.",
+							"next": "n1",
+							"id": "reply_3"
+						}
+					],
+					"emotion": "sad"
+				},
+				"n_beruf": {
+					"speaker": "Mike",
+					"text": "Vom VORFÜHREN! Das wird ein Beruf, ich schwör's: Leuten den ganzen Tag Sachen in die Kamera halten, damit die sie kaufen. Und die Armen müssen JEDEN Tag liefern — einen Tag Pause und du bist vergessen. Das ist kein Job, das ist ein Hamsterrad mit Publikum.",
+					"choices": [
+						{
+							"text": "Hamsterrad mit Publikum... notiert.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "laughing"
+				},
+				"n_kinder": {
+					"speaker": "Mike",
+					"text": "Die Kinder wollen dann GENAU DAS werden. Nicht Astronaut, nicht Feuerwehr — VORFÜHRER. Und die Maschinen machen derweil die Hausaufgaben. Ehrlich! Irgendwann baut einer eine Maschine, die dir den Aufsatz SCHREIBT. Und die Lehrer merken's nicht mal. Herr Voss würde durchdrehen.",
+					"choices": [
+						{
+							"text": "Eine Maschine, die Aufsätze schreibt?!",
+							"next": "n_ki",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "sad"
+				},
+				"n_ki": {
+					"speaker": "Mike",
+					"text": "Jap. Du sagst ihr 'schreib was über Goethe', und ZACK — drei Seiten. Klingt schlau, stimmt aber nur so halb, und keiner merkt den Unterschied. Maschinen, die reden, malen, dichten... Am Ende reden die Leute lieber mit der Maschine als miteinander, pass auf. Weil die Maschine nie sagt: 'Du spinnst doch, Mike.'",
+					"choices": [
+						{
+							"text": "Du spinnst doch, Mike.",
+							"next": "n_spinnst",
+							"id": "reply_0"
+						},
+						{
+							"text": "Das ist... gruselig genau.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_1"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n_woher": {
+					"speaker": "Mike",
+					"text": "Ganz einfach: Ich guck mir die Leute HEUTE an. Der Mensch ändert sich nicht, nur sein Spielzeug wird schneller. Gib dem Menschen von 1990 ein Zauberding mit allem drin — und er benutzt es, um Katzenbilder zu verschicken und sich zu streiten. Wetten?",
+					"choices": [
+						{
+							"text": "Wette angenommen.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_geraete": {
+					"speaker": "Mike",
+					"text": "Die Geräte! Oh, die werden WUNDERSCHÖN. Und alle zwei Jahre kaufst du ein neues — nicht weil du willst, sondern weil der Akku fest verklebt ist und keiner ihn wechseln kann. ABSICHT, sag ich dir! Mein Amiga hier läuft in dreißig Jahren noch. Das Zauberding von morgen? Sondermüll mit Glasfront.",
+					"choices": [
+						{
+							"text": "Die reparieren das doch bestimmt.",
+							"next": "n_reparatur",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Und dann hören die Dinger auch noch zu, oder?",
+							"next": "n_lauschen",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Was heißt das für unsere Disketten?",
+							"next": "n_retro",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_2"
+						},
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_3"
+						}
+					],
+					"emotion": "angry"
+				},
+				"n_reparatur": {
+					"speaker": "Mike",
+					"text": "Reparieren! Süß. Die VERKLEBEN alles, damit du's nicht aufkriegst, und wenn du's doch aufkriegst, ist die Garantie futsch. Rocky würde weinen. Eine ganze Generation, die nicht mehr weiß, wie man einen Schraubenzieher hält — dafür können sie mit zwei Daumen schneller tippen als Frau Habel stempelt.",
+					"choices": [
+						{
+							"text": "Weiter.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "angry"
+				},
+				"n_lauschen": {
+					"speaker": "Mike",
+					"text": "Und OB die zuhören! Die stellen sich freiwillig ein Mikrofon ins Wohnzimmer und nennen es praktisch. 'Lampe an!' — und irgendwo schreibt ein Rechner mit, wann du schlafen gehst. Früher hätte man das Wanze genannt. Morgen nennt man's Weihnachtsgeschenk.",
+					"choices": [
+						{
+							"text": "Okay, DER war stark.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "shocked"
+				},
+				"n_retro": {
+					"speaker": "Mike",
+					"text": "Jetzt kommt's, halt dich fest: In dreißig Jahren verkaufen die uns unsere eigenen Disketten ZURÜCK. Als 'Rarität'. Zum zehnfachen Preis. Und Leute wie wir sitzen dann in einem Zimmer wie diesem, mit einem Rechner wie diesem, und spielen die ALTEN Spiele — weil die neuen ihnen zu kompliziert sind. Nostalgie wird ein Geschäft, Junge. Alex macht alles richtig.",
+					"choices": [
+						{
+							"text": "Moment... das klingt verdächtig nach uns.",
+							"next": "n_meta",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "laughing"
+				},
+				"n_meta": {
+					"speaker": "Mike",
+					"text": "Tja. Vielleicht sitzt ja GENAU JETZT irgendwer in der Zukunft und guckt uns beim Reden zu. Hallo, Zukunft! Mike hier hatte recht mit ALLEM! ... So, genug gegruselt. Noch 'ne Runde?",
+					"choices": [
+						{
+							"text": "Noch 'ne Runde.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Mir reicht's für heute.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n_spinnst": {
+					"speaker": "Mike",
+					"text": "'Du spinnst, Mike.' — Weißt du, wer das noch gesagt hat? Die Leute zum Typen, der behauptet hat, jeder kriegt mal einen Computer ins HAUS. Ins Haus! Völlig gaga, oder? Oh, warte...",
+					"choices": [
+						{
+							"text": "Touché. Erzähl weiter.",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Trotzdem: spinnst du.",
+							"next": null,
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 1
+								},
+								{
+									"type": "toast",
+									"text": "Mike grinst: »Merk dir dieses Gespräch. Datum druntersetzen!«"
+								}
+							],
+							"id": "reply_1"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_uebertreib": {
+					"speaker": "Mike",
+					"text": "Übertreiben? ICH? Ich untertreibe sogar noch! Frag mich in dreißig Jahren nochmal. Ach nee, geht ja nicht — da bin ich zu beschäftigt damit, überall RECHT GEHABT zu haben.",
+					"choices": [
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "laughing"
+				},
+				"n_orakel": {
+					"speaker": "Mike",
+					"text": "Orakel! Gefällt mir. Das Orakel von Delphi hat auch keiner ernst genommen — und JETZT? Weltberühmt. Ich sag nur: Merk dir, wo mein Keller ist, für die Pilgerfahrten später.",
+					"choices": [
+						{
+							"text": "Ich bring Opfergaben mit. Cola?",
+							"next": "n1",
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_mike",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Zurück.",
+							"next": "n1",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		},
+		"call_mike_modem": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Mike",
+					"text": "Mann, du glaubst nicht, was ich mir geholt hab! Ein MODEM! Damit wählt sich der Amiga in Mailboxen ein — BBS! Der Sysop begrüßt Neue persönlich; dort liegen Demos, Tools und Nachrichten von echten Szenern!",
+					"choices": [
+						{
+							"text": "Moment — dein Computer … telefoniert?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n2": {
+					"speaker": "Mike",
+					"text": "Genau! Mit Kreischen und allem. Hol dir auch eins — im Laden oder gebraucht — und wähl dich ein. Wir treffen uns im Brett!",
+					"choices": [
+						{
+							"text": "Ich bin dabei. Bis im BBS!",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "bbs_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Besorg ein Modem und wähl dich in die Mailbox ein."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_mike_lappen": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Mike",
+					"text": "Wir sind bald alt genug für den Führerschein. Ich hab schon die Preise gecheckt – wenn wir jetzt anfangen zu sparen, stehen wir mit 18 nicht ohne Geld da.",
+					"choices": [
+						{
+							"text": "Und was kostet der Spaß?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Mike",
+					"text": "Fahrschule plus Prüfungen kosten etwa 900 Mark. Spar das Geld; anmelden und die Theorie mit mir üben kannst du ab 18.",
+					"choices": [
+						{
+							"text": "900 Mark bis zum 18. Geburtstag – steht.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "fuehrerschein_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Führerschein-Vorbereitung gestartet: 900 DM sparen; Anmeldung ab 18."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_mike_lan": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Mike",
+					"text": "Vier Rechner, ein geliehenes Netzwerk und genug Cola für eine Tankstelle. Zieh eine frische Spieldiskette – Samstag wird durchgemacht.",
+					"choices": [
+						{
+							"text": "Ich bring Spiel und Mehrfachstecker.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "lan_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

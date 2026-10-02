@@ -1,0 +1,1182 @@
+{
+  "comment": "Atmosphäre-Overlays pro Ort (LocationFx). Schlüssel = location_key() = background_base(). Koordinaten normiert (0..1) auf die sichtbare 16:9-Fläche. type: grading|rays|particles|glow. Reihenfolge = Zeichenreihenfolge (erst graden, dann Licht/Partikel drauf). Feintuning: Werte hier ändern, Ort neu betreten.",
+  "LOCATION_WALDRAND_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "outdoor"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.68,
+          0.02
+        ],
+        "dir": [
+          -0.26,
+          1.0
+        ],
+        "count": 7,
+        "spread": 0.6,
+        "length": 0.98,
+        "width": 0.05,
+        "dust": 46
+      },
+      {
+        "type": "particles",
+        "kind": "leaf",
+        "count": 16
+      },
+      {
+		"type": "weather",
+		"mode": "outdoor",
+		"density": 290,
+		"ground_line": 0.52,
+		"rain_gain": 1.12,
+		"mist": 0.34,
+		"splash_gain": 1.15
+      }
+    ]
+  },
+  "LOCATION_DEALER_CLEARING_MASTER": {
+    "effects": [
+      {"type": "grading", "preset": "outdoor"},
+      {"type": "rays", "source": [0.46, 0.0], "dir": [-0.12, 1.0], "count": 5, "spread": 0.42, "length": 0.88, "width": 0.045, "dust": 24},
+      {"type": "particles", "kind": "leaf", "count": 9},
+      {"type": "weather", "mode": "outdoor", "density": 235, "ground_line": 0.60, "rain_gain": 0.86, "mist": 0.22, "splash_gain": 0.85}
+    ]
+  },
+  "LOCATION_IMBISS_MASTER": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_warm", "pools": [{"pos": [0.72, 0.38], "radius": 0.28, "color": [1.0, 0.72, 0.38], "alpha": {"0": 0.12, "1": 0.10, "2": 0.14, "3": 0.22, "4": 0.28}}]},
+      {"type": "glow", "spots": [
+        {"pos": [0.59, 0.04], "size": [0.18, 0.018], "color": [1.0, 0.92, 0.72], "intensity": 0.28, "flicker": "neon"},
+        {"pos": [0.72, 0.38], "size": [0.25, 0.15], "color": [1.0, 0.67, 0.30], "intensity": 0.20, "flicker": "neon"},
+        {"pos": [0.43, 0.39], "size": [0.16, 0.10], "color": [1.0, 0.82, 0.58], "intensity": 0.09, "flicker": "steady"}
+      ]},
+      {"type": "steam", "emitters": [
+        {"pos": [0.44, 0.51], "rise": 0.16, "width": 0.026, "alpha": 0.085, "speed": 0.13, "count": 6, "color": [0.96, 0.94, 0.88]},
+        {"pos": [0.72, 0.49], "rise": 0.10, "width": 0.020, "alpha": 0.050, "speed": 0.10, "count": 4, "color": [1.0, 0.91, 0.74]}
+      ]},
+      {"type": "particles", "kind": "dust", "count": 14, "size": 1.6, "speed": 0.18, "wind": 0.035}
+    ]
+  },
+  "LOCATION_SCHOOLYARD_AFTER_SCHOOL": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "overcast"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.5,
+          0.0
+        ],
+        "dir": [
+          -0.05,
+          1.0
+        ],
+        "count": 5,
+        "spread": 0.7,
+        "length": 0.8,
+        "width": 0.08,
+        "dust": 24,
+        "color": [
+          0.95,
+          0.96,
+          0.98
+        ],
+        "intensity": {
+          "0": 0.3,
+          "1": 0.18,
+          "2": 0.22,
+          "3": 0.28,
+          "4": 0.0
+        }
+      },
+      {
+        "type": "particles",
+        "kind": "leaf",
+        "count": 12,
+        "colors": [
+          [
+            0.5,
+            0.42,
+            0.2
+          ],
+          [
+            0.6,
+            0.5,
+            0.24
+          ],
+          [
+            0.42,
+            0.46,
+            0.22
+          ]
+        ]
+      },
+      {
+		"type": "weather",
+		"mode": "outdoor",
+		"density": 240,
+		"ground_line": 0.57,
+		"rain_gain": 0.88,
+		"mist": 0.24,
+		"splash_gain": 0.9
+      }
+    ]
+  },
+  "LOCATION_COMPUTER_CLUB_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_cool"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.16,
+          0.12
+        ],
+        "dir": [
+          0.18,
+          1.0
+        ],
+        "count": 4,
+        "spread": 0.45,
+        "length": 0.7,
+        "width": 0.06,
+        "dust": 30,
+        "color": [
+          0.9,
+          0.94,
+          1.0
+        ],
+        "intensity": {
+          "0": 0.4,
+          "1": 0.5,
+          "2": 0.42,
+          "3": 0.24,
+          "4": 0.0
+        }
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.065,
+              0.4
+            ],
+            "size": [
+              0.045,
+              0.05
+            ],
+            "color": [
+              0.5,
+              0.75,
+              1.0
+            ],
+            "intensity": 0.5,
+            "flicker": "crt"
+          },
+          {
+            "pos": [
+              0.235,
+              0.47
+            ],
+            "size": [
+              0.05,
+              0.05
+            ],
+            "color": [
+              0.5,
+              0.75,
+              1.0
+            ],
+            "intensity": 0.5,
+            "flicker": "crt"
+          },
+          {
+            "pos": [
+              0.32,
+              0.04
+            ],
+            "size": [
+              0.16,
+              0.02
+            ],
+            "color": [
+              0.85,
+              0.92,
+              1.0
+            ],
+            "intensity": 0.35,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.5,
+              0.04
+            ],
+            "size": [
+              0.16,
+              0.02
+            ],
+            "color": [
+              0.85,
+              0.92,
+              1.0
+            ],
+            "intensity": 0.35,
+            "flicker": "neon"
+          }
+        ]
+      }
+    ]
+  },
+  "LOCATION_MUSIC_SHOP_FRONT_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_warm",
+        "pools": [
+          {
+            "pos": [
+              0.22,
+              0.42
+            ],
+            "radius": 0.28,
+            "color": [
+              1.0,
+              0.84,
+              0.52
+            ],
+            "alpha": {
+              "0": 0.14,
+              "1": 0.12,
+              "2": 0.16,
+              "3": 0.26,
+              "4": 0.34
+            }
+          },
+          {
+            "pos": [
+              0.78,
+              0.42
+            ],
+            "radius": 0.28,
+            "color": [
+              1.0,
+              0.84,
+              0.52
+            ],
+            "alpha": {
+              "0": 0.14,
+              "1": 0.12,
+              "2": 0.16,
+              "3": 0.26,
+              "4": 0.34
+            }
+          }
+        ]
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.3,
+              0.07
+            ],
+            "radius": 0.06,
+            "color": [
+              1.0,
+              0.8,
+              0.45
+            ],
+            "intensity": 0.3,
+            "flicker": "steady"
+          },
+          {
+            "pos": [
+              0.5,
+              0.05
+            ],
+            "radius": 0.06,
+            "color": [
+              1.0,
+              0.8,
+              0.45
+            ],
+            "intensity": 0.3,
+            "flicker": "steady"
+          },
+          {
+            "pos": [
+              0.7,
+              0.07
+            ],
+            "radius": 0.06,
+            "color": [
+              1.0,
+              0.8,
+              0.45
+            ],
+            "intensity": 0.3,
+            "flicker": "steady"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 30
+      },
+      {
+        "type": "beat",
+        "bus": "Music",
+        "range_db": [
+          -42,
+          -6
+        ],
+        "targets": [
+          {
+            "pos": [
+              0.925,
+              0.27
+            ],
+            "radius": 0.045,
+            "color": [
+              1.0,
+              0.88,
+              0.62
+            ],
+            "gain": 0.6,
+            "base": 0.05
+          },
+          {
+            "pos": [
+              0.96,
+              0.27
+            ],
+            "radius": 0.045,
+            "color": [
+              1.0,
+              0.88,
+              0.62
+            ],
+            "gain": 0.6,
+            "base": 0.05
+          }
+        ]
+      }
+    ]
+  },
+  "LOCATION_FRIEND_ROOM_SVEN": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_warm"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.8,
+          0.1
+        ],
+        "dir": [
+          -0.28,
+          1.0
+        ],
+        "count": 4,
+        "spread": 0.3,
+        "length": 0.6,
+        "width": 0.05,
+        "dust": 30,
+        "color": [
+          1.0,
+          0.95,
+          0.82
+        ]
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.3,
+              0.21
+            ],
+            "size": [
+              0.045,
+              0.045
+            ],
+            "color": [
+              0.55,
+              0.78,
+              1.0
+            ],
+            "intensity": 0.42,
+            "flicker": "crt"
+          },
+          {
+            "pos": [
+              0.72,
+              0.3
+            ],
+            "size": [
+              0.05,
+              0.05
+            ],
+            "color": [
+              0.5,
+              0.72,
+              1.0
+            ],
+            "intensity": 0.42,
+            "flicker": "crt"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 20
+      }
+    ]
+  },
+  "LOCATION_FRIEND_ROOM_MIKE": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_warm"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.42,
+          0.16
+        ],
+        "dir": [
+          -0.1,
+          1.0
+        ],
+        "count": 4,
+        "spread": 0.24,
+        "length": 0.7,
+        "width": 0.05,
+        "dust": 26,
+        "color": [
+          1.0,
+          0.9,
+          0.7
+        ]
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.155,
+              0.32
+            ],
+            "size": [
+              0.045,
+              0.045
+            ],
+            "color": [
+              0.55,
+              0.78,
+              1.0
+            ],
+            "intensity": 0.42,
+            "flicker": "crt"
+          },
+          {
+            "pos": [
+              0.4,
+              0.44
+            ],
+            "size": [
+              0.05,
+              0.05
+            ],
+            "color": [
+              0.5,
+              0.7,
+              1.0
+            ],
+            "intensity": 0.44,
+            "flicker": "crt"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 20
+      }
+    ]
+  },
+  "LOCATION_COMPUTER_SHOP_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_cool"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.1,
+          0.18
+        ],
+        "dir": [
+          0.35,
+          1.0
+        ],
+        "count": 3,
+        "spread": 0.2,
+        "length": 0.6,
+        "width": 0.06,
+        "dust": 22,
+        "color": [
+          0.9,
+          0.94,
+          1.0
+        ],
+        "intensity": {
+          "0": 0.4,
+          "1": 0.45,
+          "2": 0.4,
+          "3": 0.24,
+          "4": 0.0
+        }
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.3,
+              0.05
+            ],
+            "size": [
+              0.14,
+              0.02
+            ],
+            "color": [
+              0.85,
+              0.92,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.6,
+              0.05
+            ],
+            "size": [
+              0.14,
+              0.02
+            ],
+            "color": [
+              0.85,
+              0.92,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.14,
+              0.42
+            ],
+            "size": [
+              0.035,
+              0.04
+            ],
+            "color": [
+              0.55,
+              0.78,
+              1.0
+            ],
+            "intensity": 0.36,
+            "flicker": "crt"
+          },
+          {
+            "pos": [
+              0.52,
+              0.52
+            ],
+            "size": [
+              0.05,
+              0.05
+            ],
+            "color": [
+              0.5,
+              0.75,
+              1.0
+            ],
+            "intensity": 0.44,
+            "flicker": "crt"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 22
+      }
+    ]
+  },
+  "LOCATION_KIOSK_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "outdoor",
+        "pools": [
+          {
+            "pos": [
+              0.5,
+              0.38
+            ],
+            "radius": 0.26,
+            "color": [
+              1.0,
+              0.86,
+              0.55
+            ],
+            "alpha": {
+              "0": 0.1,
+              "1": 0.06,
+              "2": 0.1,
+              "3": 0.28,
+              "4": 0.4
+            }
+          }
+        ]
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.5,
+              0.26
+            ],
+            "size": [
+              0.28,
+              0.02
+            ],
+            "color": [
+              0.92,
+              0.95,
+              1.0
+            ],
+            "intensity": 0.28,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.87,
+              0.5
+            ],
+            "radius": 0.09,
+            "color": [
+              0.7,
+              0.85,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "steady"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 16
+      },
+      {
+		"type": "weather",
+		"mode": "outdoor",
+		"density": 205,
+		"ground_line": 0.78,
+		"rain_gain": 0.72,
+		"mist": 0.08,
+		"splash_gain": 0.52
+      }
+    ]
+  },
+  "LOCATION_POST_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_cool"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.06,
+          0.12
+        ],
+        "dir": [
+          0.35,
+          1.0
+        ],
+        "count": 3,
+        "spread": 0.15,
+        "length": 0.6,
+        "width": 0.06,
+        "dust": 20,
+        "color": [
+          0.9,
+          0.94,
+          1.0
+        ],
+        "intensity": {
+          "0": 0.36,
+          "1": 0.4,
+          "2": 0.36,
+          "3": 0.2,
+          "4": 0.0
+        }
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.35,
+              0.03
+            ],
+            "size": [
+              0.16,
+              0.02
+            ],
+            "color": [
+              0.86,
+              0.93,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.55,
+              0.03
+            ],
+            "size": [
+              0.16,
+              0.02
+            ],
+            "color": [
+              0.86,
+              0.93,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "neon"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 20
+      }
+    ]
+  },
+  "LOCATION_BANK_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_cool"
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.05,
+          0.12
+        ],
+        "dir": [
+          0.35,
+          1.0
+        ],
+        "count": 3,
+        "spread": 0.15,
+        "length": 0.6,
+        "width": 0.06,
+        "dust": 20,
+        "color": [
+          0.9,
+          0.94,
+          1.0
+        ],
+        "intensity": {
+          "0": 0.36,
+          "1": 0.4,
+          "2": 0.36,
+          "3": 0.2,
+          "4": 0.0
+        }
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.42,
+              0.03
+            ],
+            "size": [
+              0.16,
+              0.02
+            ],
+            "color": [
+              0.86,
+              0.93,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.72,
+              0.03
+            ],
+            "size": [
+              0.16,
+              0.02
+            ],
+            "color": [
+              0.86,
+              0.93,
+              1.0
+            ],
+            "intensity": 0.3,
+            "flicker": "neon"
+          },
+          {
+            "pos": [
+              0.145,
+              0.3
+            ],
+            "size": [
+              0.03,
+              0.03
+            ],
+            "color": [
+              0.5,
+              0.8,
+              0.9
+            ],
+            "intensity": 0.3,
+            "flicker": "crt"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 18
+      }
+    ]
+  },
+  "LOCATION_FLEA_MARKET_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "overcast"
+      },
+      {
+        "type": "particles",
+        "kind": "leaf",
+        "count": 8,
+        "colors": [
+          [
+            0.5,
+            0.42,
+            0.2
+          ],
+          [
+            0.6,
+            0.5,
+            0.24
+          ]
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 20
+      },
+      {
+		"type": "weather",
+		"mode": "outdoor",
+		"density": 245,
+		"ground_line": 0.58,
+		"rain_gain": 0.9,
+		"mist": 0.2,
+		"splash_gain": 1.0
+      }
+    ]
+  },
+  "LOCATION_MUSIC_SHOP_BASEMENT_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_warm",
+        "pools": [
+          {
+            "pos": [
+              0.5,
+              0.12
+            ],
+            "radius": 0.3,
+            "color": [
+              1.0,
+              0.82,
+              0.5
+            ],
+            "alpha": 0.3
+          },
+          {
+            "pos": [
+              0.87,
+              0.45
+            ],
+            "radius": 0.16,
+            "color": [
+              1.0,
+              0.85,
+              0.55
+            ],
+            "alpha": 0.22
+          }
+        ]
+      },
+      {
+        "type": "rays",
+        "source": [
+          0.5,
+          0.12
+        ],
+        "dir": [
+          0.0,
+          1.0
+        ],
+        "count": 3,
+        "spread": 0.2,
+        "length": 0.5,
+        "width": 0.06,
+        "dust": 30,
+        "color": [
+          1.0,
+          0.86,
+          0.55
+        ],
+        "intensity": 0.4
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.5,
+              0.11
+            ],
+            "radius": 0.05,
+            "color": [
+              1.0,
+              0.8,
+              0.45
+            ],
+            "intensity": 0.4,
+            "flicker": "candle"
+          },
+          {
+            "pos": [
+              0.21,
+              0.44
+            ],
+            "size": [
+              0.04,
+              0.04
+            ],
+            "color": [
+              0.55,
+              0.78,
+              1.0
+            ],
+            "intensity": 0.36,
+            "flicker": "crt"
+          }
+        ]
+      }
+    ]
+  },
+  "LOCATION_MUSIC_SHOP_COMPUTER_MUSIC_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_warm"
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {
+            "pos": [
+              0.3,
+              0.05
+            ],
+            "radius": 0.06,
+            "color": [
+              1.0,
+              0.82,
+              0.48
+            ],
+            "intensity": 0.28,
+            "flicker": "steady"
+          },
+          {
+            "pos": [
+              0.6,
+              0.05
+            ],
+            "radius": 0.06,
+            "color": [
+              1.0,
+              0.82,
+              0.48
+            ],
+            "intensity": 0.28,
+            "flicker": "steady"
+          },
+          {
+            "pos": [
+              0.34,
+              0.48
+            ],
+            "size": [
+              0.05,
+              0.05
+            ],
+            "color": [
+              0.55,
+              0.78,
+              1.0
+            ],
+            "intensity": 0.4,
+            "flicker": "crt"
+          }
+        ]
+      },
+      {
+        "type": "particles",
+        "kind": "dust",
+        "count": 22
+      }
+    ]
+  },
+  "LOCATION_SCHOOLYARD_MASTER": {
+    "effects": [
+      {"type": "grading", "preset": "outdoor"},
+      {"type": "particles", "kind": "leaf", "count": 10, "speed": 0.55},
+      {"type": "weather", "mode": "outdoor", "density": 235, "ground_line": 0.56, "rain_gain": 0.86, "mist": 0.22, "splash_gain": 0.92}
+    ]
+  },
+  "LOCATION_FRIEND_ROOM_MASTER": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_warm"},
+      {"type": "rays", "source": [0.80, 0.08], "dir": [-0.22, 1.0], "count": 3, "spread": 0.24, "length": 0.60, "width": 0.05, "dust": 18},
+      {"type": "glow", "spots": [{"pos": [0.25, 0.34], "size": [0.055, 0.055], "color": [0.52, 0.74, 1.0], "intensity": 0.36, "flicker": "crt"}]},
+      {"type": "particles", "kind": "dust", "count": 16}
+    ]
+  },
+  "LOCATION_FRIEND_ROOM_ALEX": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_warm"},
+      {"type": "rays", "source": [0.88, 0.08], "dir": [-0.28, 1.0], "count": 3, "spread": 0.22, "length": 0.62, "width": 0.05, "dust": 18},
+      {"type": "glow", "spots": [{"pos": [0.24, 0.35], "size": [0.055, 0.055], "color": [0.52, 0.74, 1.0], "intensity": 0.35, "flicker": "crt"}]},
+      {"type": "particles", "kind": "dust", "count": 18}
+    ]
+  },
+  "LOCATION_FRIEND_ROOM_DANIEL": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_cool"},
+      {"type": "rays", "source": [0.78, 0.08], "dir": [-0.22, 1.0], "count": 3, "spread": 0.22, "length": 0.60, "width": 0.05, "dust": 16},
+      {"type": "glow", "spots": [{"pos": [0.29, 0.34], "size": [0.060, 0.060], "color": [0.48, 0.70, 1.0], "intensity": 0.42, "flicker": "crt"}]},
+      {"type": "particles", "kind": "dust", "count": 16}
+    ]
+  },
+  "LOCATION_FRIEND_ROOM_LISA": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_warm"},
+      {"type": "rays", "source": [0.80, 0.08], "dir": [-0.24, 1.0], "count": 3, "spread": 0.24, "length": 0.62, "width": 0.05, "dust": 18},
+      {"type": "glow", "spots": [{"pos": [0.27, 0.36], "size": [0.055, 0.055], "color": [0.55, 0.76, 1.0], "intensity": 0.34, "flicker": "crt"}]},
+      {"type": "particles", "kind": "dust", "count": 18}
+    ]
+  },
+  "LOCATION_LAN_KELLER_MASTER": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_warm"},
+      {"type": "glow", "spots": [
+        {"pos": [0.16, 0.42], "size": [0.050, 0.050], "color": [0.45, 0.68, 1.0], "intensity": 0.48, "flicker": "crt"},
+        {"pos": [0.31, 0.40], "size": [0.050, 0.050], "color": [0.45, 0.68, 1.0], "intensity": 0.45, "flicker": "crt"},
+        {"pos": [0.54, 0.04], "size": [0.18, 0.018], "color": [0.92, 0.94, 1.0], "intensity": 0.28, "flicker": "neon"}
+      ]},
+      {"type": "particles", "kind": "dust", "count": 24}
+    ]
+  },
+  "LOCATION_INTERNETCAFE_MASTER": {
+    "effects": [
+      {"type": "grading", "preset": "indoor_warm", "pools": [{"pos": [0.70, 0.32], "radius": 0.24, "color": [1.0, 0.80, 0.50], "alpha": {"0": 0.10, "1": 0.08, "2": 0.12, "3": 0.24, "4": 0.34}}]},
+      {"type": "glow", "spots": [
+        {"pos": [0.11, 0.43], "size": [0.050, 0.050], "color": [0.48, 0.72, 1.0], "intensity": 0.40, "flicker": "crt"},
+        {"pos": [0.23, 0.40], "size": [0.050, 0.050], "color": [0.48, 0.72, 1.0], "intensity": 0.38, "flicker": "crt"}
+      ]},
+      {"type": "particles", "kind": "dust", "count": 18}
+    ]
+  },
+  "LOCATION_RETRO_MUSEUM_MASTER": {
+    "effects": [
+      {
+        "type": "grading",
+        "preset": "indoor_warm",
+        "pools": [
+          {"pos": [0.42, 0.16], "radius": 0.28, "color": [1.0, 0.76, 0.42], "alpha": {"0": 0.12, "1": 0.10, "2": 0.14, "3": 0.22, "4": 0.28}},
+          {"pos": [0.79, 0.22], "radius": 0.22, "color": [0.45, 0.63, 1.0], "alpha": {"0": 0.08, "1": 0.10, "2": 0.12, "3": 0.16, "4": 0.20}}
+        ]
+      },
+      {
+        "type": "rays",
+        "source": [0.77, 0.08],
+        "dir": [-0.22, 1.0],
+        "count": 4,
+        "spread": 0.28,
+        "length": 0.72,
+        "width": 0.05,
+        "dust": 28,
+        "color": [0.76, 0.84, 1.0]
+      },
+      {
+        "type": "glow",
+        "spots": [
+          {"pos": [0.415, 0.47], "size": [0.065, 0.075], "color": [0.42, 0.70, 1.0], "intensity": 0.34, "flicker": "crt"},
+          {"pos": [0.555, 0.46], "size": [0.065, 0.080], "color": [0.54, 0.77, 1.0], "intensity": 0.42, "flicker": "crt"},
+          {"pos": [0.695, 0.47], "size": [0.065, 0.075], "color": [0.48, 0.72, 1.0], "intensity": 0.32, "flicker": "crt"}
+        ]
+      },
+      {"type": "particles", "kind": "dust", "count": 22, "size": 1.35, "speed": 0.12}
+    ]
+  }
+}

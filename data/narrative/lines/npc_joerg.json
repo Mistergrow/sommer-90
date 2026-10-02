@@ -1,0 +1,237 @@
+{
+	"npc": "npc_joerg",
+	"comment": "Zeilen-Pool fuer npc_joerg. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "joe_b01",
+			"text": "Vinyl, Kassette, und für die Nerds was Feines auf Diskette."
+		},
+		{
+			"id": "joe_b02",
+			"text": "Frag mal den Basti, der hängt oft hier rum."
+		},
+		{
+			"id": "joe_b03",
+			"text": "Musik ist mein Leben. Verkaufen tu ich sie nur nebenbei."
+		},
+		{
+			"id": "joe_b04",
+			"text": "Stöber ruhig, die guten Sachen versteckt man nicht im Schaufenster."
+		},
+		{
+			"id": "joe_b05",
+			"text": "Ich hör dir an, was du magst, und leg dir was Passendes hin."
+		},
+		{
+			"id": "joe_b06",
+			"text": "Ein Plattenladen ist ein Ort zum Verweilen, nicht nur zum Kaufen."
+		},
+		{
+			"id": "joe_b07",
+			"text": "Die Szene macht Sachen, die kein Studio hinkriegt."
+		},
+		{
+			"id": "joe_b08",
+			"text": "Setz die Kopfhörer auf, hör rein, lass dir Zeit."
+		},
+		{
+			"id": "joe_b09",
+			"text": "Ich kenn jede Rille in diesem Laden."
+		},
+		{
+			"id": "joe_b10",
+			"text": "Gute Musik erkennt man nicht am Preis, sondern im Bauch."
+		},
+		{
+			"id": "joe_b11",
+			"text": "Ich hab Sachen unterm Tresen, die frag ich nur echten Kennern."
+		},
+		{
+			"id": "joe_b12",
+			"text": "Bring mir einen Wunsch, ich grab ihn aus, und wenn's Wochen dauert."
+		},
+		{
+			"id": "joe_b13",
+			"text": "Musik verbindet Leute, die sich sonst nie treffen würden."
+		},
+		{
+			"id": "joe_b14",
+			"text": "Ich red lieber über einen guten Song als über den Preis."
+		},
+		{
+			"id": "joe_b15",
+			"text": "Ein Laden ohne Musik ist nur ein Raum. Meiner klingt."
+		},
+		{
+			"id": "joe_b16",
+			"text": "Zeig mir, was du hörst, ich zeig dir, was du hören solltest."
+		},
+		{
+			"id": "joe_b17",
+			"text": "Ich verkauf keine Tonträger, ich verkauf Gefühle."
+		},
+		{
+			"id": "joe_b18",
+			"text": "Stammkunden kriegen den ersten Griff in die neue Kiste."
+		},
+		{
+			"id": "joe_b19",
+			"text": "Ich hab hier Musik für jede Stimmung. Sag mir deine."
+		},
+		{
+			"id": "joe_b20",
+			"text": "Manche kommen nur zum Reden. Ist mir auch recht."
+		},
+		{
+			"id": "joe_b21",
+			"text": "Ein guter Song hält länger als jede Mode."
+		},
+		{
+			"id": "joe_b22",
+			"text": "Ich hab in meinem Leben mehr Platten gehört als gegessen. Fast."
+		},
+		{
+			"id": "joe_b23",
+			"text": "Trau dich an was Neues, der Geschmack wächst mit."
+		},
+		{
+			"id": "joe_b24",
+			"text": "Bei mir ist jeder Genre-Fan willkommen. Kein Snobismus hier."
+		},
+		{
+			"id": "joe_b25",
+			"text": "Ich leg dir was auf, wart's ab, das bleibt hängen."
+		},
+		{
+			"id": "joe_b26",
+			"text": "Die Leute unterschätzen, wie viel Arbeit in guter Musik steckt."
+		},
+		{
+			"id": "joe_b27",
+			"text": "Komm rein, wenn's regnet, dann hören wir was Warmes."
+		},
+		{
+			"id": "joe_b28",
+			"text": "Ich verschenk manchmal 'ne Platte, wenn sie zum Menschen passt."
+		},
+		{
+			"id": "joe_b29",
+			"text": "Musik machen ist Mut. Musik verkaufen ist Liebe."
+		},
+		{
+			"id": "joe_b30",
+			"text": "Was darf's sein? Oder erstmal nur schmökern?"
+		},
+		{
+			"id": "jo_mods",
+			"to": 1997,
+			"topic": "musik",
+			"text": "MODs, Chiptunes, alles handgemacht. Vier Kanäle, aber mehr Herz als jede Chartsingle."
+		},
+		{
+			"id": "jo_cds",
+			"from": 1997,
+			"needs": [
+				"joerg_cds"
+			],
+			"once": true,
+			"topic": "wandel",
+			"text": "Ich räum den halben Laden für CDs frei. Muss man mit der Zeit gehen, auch wenn's im Herzen wehtut."
+		},
+		{
+			"id": "jo_mp3",
+			"from": 1997,
+			"needs": [
+				"mp3_da"
+			],
+			"topic": "wandel",
+			"text": "Diese MP3s werden uns alle arbeitslos machen, sag ich dir. Oder alles verändern. Vielleicht beides."
+		},
+		{
+			"id": "jo_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Die Leute kaufen kaum noch Tonträger. Aber wer Musik wirklich liebt, kommt trotzdem vorbei. Zum Reden."
+		},
+		{
+			"id": "joe_x01",
+			"topic": "musik",
+			"text": "Vinyl, Kassette, und für die Nerds was Feines auf Diskette. Musik ist Musik, egal auf welchem Träger."
+		},
+		{
+			"id": "joe_x02",
+			"topic": "musik",
+			"text": "Stöber ruhig. Die guten Sachen versteck ich nicht im Schaufenster."
+		},
+		{
+			"id": "joe_x03",
+			"topic": "musik",
+			"text": "Ich hör dir an, was du magst, und leg dir was Passendes hin. Das ist meine Kunst."
+		},
+		{
+			"id": "joe_x04",
+			"topic": "musik",
+			"text": "Ein Plattenladen ist ein Ort zum Verweilen, nicht nur zum Kaufen. Setz dich, hör rein."
+		},
+		{
+			"id": "joe_x05",
+			"topic": "musik",
+			"text": "Frag mal den Basti, der hängt oft hier rum. Der macht Sachen, die kein Studio hinkriegt."
+		},
+		{
+			"id": "joe_x06",
+			"topic": "musik",
+			"text": "Ich hab Sachen unterm Tresen, die frag ich nur echten Kennern. Du zählst dazu, glaub ich."
+		},
+		{
+			"id": "joe_x07",
+			"topic": "musik",
+			"text": "Ich verkauf keine Tonträger, ich verkauf Gefühle. Klingt kitschig, ist aber so."
+		},
+		{
+			"id": "joe_x08",
+			"topic": "musik",
+			"text": "Ein guter Song hält länger als jede Mode. Merk dir das, dann kaufst du nie Mist."
+		},
+		{
+			"id": "joe_x09",
+			"topic": "musik",
+			"text": "Ich hab in meinem Leben mehr Platten gehört als gegessen. Fast. Und bereue keine Rille."
+		},
+		{
+			"id": "joe_x10",
+			"topic": "musik",
+			"text": "Komm rein, wenn's regnet. Dann hören wir was Warmes und lassen den Tag draußen."
+		},
+		{
+			"id": "joe_x11",
+			"from": 0,
+			"needs": [
+				"joerg_cds"
+			],
+			"topic": "aera",
+			"text": "Ich räum den halben Laden für CDs frei. Muss man mit der Zeit gehen, auch wenn's im Herzen wehtut."
+		},
+		{
+			"id": "joe_x12",
+			"from": 0,
+			"needs": [
+				"mp3_da"
+			],
+			"topic": "aera",
+			"text": "Diese MP3s machen uns alle arbeitslos, sag ich dir. Oder verändern alles. Vielleicht beides."
+		},
+		{
+			"id": "joe_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Die Leute kaufen kaum noch Tonträger. Aber wer Musik liebt, kommt trotzdem. Zum Reden."
+		}
+	]
+}

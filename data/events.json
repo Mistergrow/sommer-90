@@ -1,0 +1,2035 @@
+{
+	"comment": "Zufallsereignisse. weight = Auswahlgewicht, cooldown_days = Sperrzeit nach Auftreten, locations = wo das Event feuern darf, year_from/year_to = Timeline-Fenster. Effekte nutzen die Effekt-DSL (siehe event_manager.gd). 'risk' auf einer Wahl = Chance auf Zusatzfolgen.",
+	"events": [
+		{
+			"id": "event_dirty_drive_head",
+			"title": "Laufwerk macht Geraeusche",
+			"text": "Das Diskettenlaufwerk klackert haesslicher als sonst. Der Lesekopf ist wohl verschmutzt.",
+			"weight": 3,
+			"cooldown_days": 3,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Reinigungsdiskette einlegen",
+					"requires_item": "reinigungsdiskette",
+					"effects": [
+						{
+							"type": "drive_dirt",
+							"value": 0.25
+						},
+						{
+							"type": "open_drive_clean"
+						}
+					]
+				},
+				{
+					"text": "Ignorieren, wird schon gehen",
+					"effects": [
+						{
+							"type": "drive_dirt",
+							"value": 0.25
+						},
+						{
+							"type": "toast",
+							"text": "Das Klackern wird lauter. Lesefehler-Risiko steigt."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "event_mutter_essen",
+			"title": "Essen ist fertig!",
+			"text": "Mutter ruft: \"Komm essen, bevor das kalt wird!\"",
+			"weight": 4,
+			"cooldown_days": 1,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Sofort runtergehen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 5
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 10
+						},
+						{
+							"type": "stat",
+							"stat": "hunger",
+							"value": -55
+						},
+						{
+							"type": "toast",
+							"text": "Es gab Nudeln. Du bist satt und die Familie ist zufrieden."
+						},
+						{
+							"type": "end_slot"
+						}
+					]
+				},
+				{
+					"text": "\"Nur noch eine Diskette!\"",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -8
+						},
+						{
+							"type": "toast",
+							"text": "Eine Stunde spaeter: Der Bildschirm ist ploetzlich aus. Mutter steht am Stecker."
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -10
+						},
+						{
+							"type": "end_slot"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "event_stromausfall",
+			"title": "Stromausfall!",
+			"text": "Flackern. Dunkelheit. Irgendwo im Haus hat jemand den Foehn UND die Waschmaschine angeworfen. Das Laufwerk war mitten im Zugriff.",
+			"weight": 1,
+			"cooldown_days": 7,
+			"requires_computer_on": true,
+			"requires_at_computer": true,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Mist!",
+					"effects": [
+						{
+							"type": "damage_random_disk",
+							"value": 8
+						},
+						{
+							"type": "toast",
+							"text": "Eine Diskette hat den Stromausfall nicht gut vertragen..."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "event_kiosk_coverdisk",
+			"title": "Neue Ausgabe am Kiosk",
+			"text": "Der 'Amiga Kurier' ist da - mit prall gefuellter Coverdisk. 6 DM.",
+			"weight": 2,
+			"cooldown_days": 7,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Kaufen (6 DM)",
+					"requires_money": 6,
+					"effects": [
+						{
+							"type": "money",
+							"value": -6
+						},
+						{
+							"type": "disk_template",
+							"id": "coverdisk_amiga_kurier",
+							"memory": "Am Kiosk gekauft"
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 3
+						},
+						{
+							"type": "toast",
+							"text": "Neue Coverdisk in der Sammlung! Und was zu lesen."
+						}
+					]
+				},
+				{
+					"text": "Diesen Monat nicht",
+					"effects": [
+						{
+							"type": "toast",
+							"text": "Vielleicht naechsten Monat."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "event_schulhof_geruecht",
+			"title": "Geruecht vom Schulhof",
+			"text": "Ein Junge aus der Parallelklasse schwoert: Beim Flohmarkt am Samstag hat ein Haendler eine Kiste voller Spiele-Disketten. Angeblich sogar Space Lemming Trouble!",
+			"weight": 2,
+			"cooldown_days": 5,
+			"year_to": 1990,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Samstag bin ich da!",
+					"effects": [
+						{
+							"type": "flag",
+							"flag": "flea_tip",
+							"value": true
+						},
+						{
+							"type": "toast",
+							"text": "Samstagvormittag. Flohmarkt. Nicht vergessen!"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "event_telefon_nacht",
+			"title": "Seltsame Geraeusche",
+			"text": "Vater am Fruehstueckstisch: \"Warum macht das Telefon eigentlich die ganze Nacht so komische Geraeusche?\" Du hast KEIN Modem. Noch nicht. Aber die Nachbarn reden schon ueber Mailboxen...",
+			"weight": 2,
+			"cooldown_days": 6,
+			"year_to": 1992,
+			"unless_hardware": "modem",
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "\"Keine Ahnung, Papa.\"",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						},
+						{
+							"type": "toast",
+							"text": "Eines Tages... ein eigenes Modem. Eines Tages."
+						}
+					]
+				},
+				{
+					"text": "Von Mailboxen erzaehlen",
+					"risk": {
+						"chance": 0.4,
+						"effects": [
+							{
+								"type": "stat",
+								"stat": "eltern_toleranz",
+								"value": -5
+							},
+							{
+								"type": "toast",
+								"text": "\"DAS KOSTET ALLES TELEFONGEBUEHREN!\" Das lief nicht gut."
+							}
+						]
+					},
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 3
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 3
+						},
+						{
+							"type": "toast",
+							"text": "Vater hoert interessiert zu. \"Datenfernuebertragung, soso.\""
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cal_weihnachten",
+			"on_date": "12-24",
+			"memory": "Weihnachten unterm Tannenbaum gefeiert",
+			"title": "Heiligabend",
+			"text": "Der Baum leuchtet, es riecht nach Plätzchen. Unter dem Baum liegen Päckchen — eins fühlt sich verdächtig nach Hardware an, und eine glänzende Coverdisk steckt im Strumpf.",
+			"choices": [
+				{
+					"text": "Geschenke auspacken",
+					"effects": [
+						{
+							"type": "money",
+							"value": 50
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 20
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 5
+						},
+						{
+							"type": "disk_template",
+							"id": "game_space_lemming",
+							"memory": "Weihnachtsgeschenk"
+						},
+						{
+							"type": "disk_template",
+							"id": "coverdisk_amiga_kurier",
+							"memory": "Coverdisk unterm Weihnachtsbaum"
+						},
+						{
+							"type": "toast",
+							"text": "Geld, ein Spiel und viel Ruhe. Frohe Weihnachten!"
+						}
+					]
+				},
+				{
+					"text": "Erst mit der Familie essen, dann an den Rechner",
+					"effects": [
+						{
+							"type": "money",
+							"value": 30
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 30
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 12
+						},
+						{
+							"type": "toast",
+							"text": "Ein ruhiger, warmer Abend. Die Eltern sind zufrieden."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cal_silvester",
+			"on_date": "12-31",
+			"memory": "Silvester — das Jahr ging zu Ende",
+			"title": "Silvester",
+			"text": "Draußen knallt es schon. Ein Jahr ist vorbei — Zeit, kurz zurückzublicken.",
+			"choices": [
+				{
+					"text": "Aufs neue Jahr anstoßen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 10
+						},
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						},
+						{
+							"type": "toast",
+							"text": "Prost! Auf ein neues Jahr voller Disketten."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "season_sommer_boersen",
+			"season": "sommer",
+			"weight": 2,
+			"cooldown_days": 6,
+			"locations": [
+				"flea_market"
+			],
+			"title": "Sommerbörsen-Trubel",
+			"text": "In den Ferien sind die Computerbörsen rappelvoll. Überall Kisten voller Disketten.",
+			"choices": [
+				{
+					"text": "Durchwühlen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						},
+						{
+							"type": "toast",
+							"text": "Viel gesehen, viel geplaudert. Sommer eben."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "season_winter_grippe",
+			"season": "winter",
+			"weight": 2,
+			"cooldown_days": 8,
+			"locations": [
+				"room"
+			],
+			"title": "Erkältungswetter",
+			"text": "Draußen Schneematsch, drinnen läuft die Nase. Ein Tag für heißen Tee und den Rechner.",
+			"choices": [
+				{
+					"text": "Zu Hause bleiben und coden",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -5
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 3
+						},
+						{
+							"type": "toast",
+							"text": "Verschnupft, aber produktiv."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_inspiration",
+			"title": "Geistesblitz",
+			"text": "Mitten in der Nacht hast du eine Idee fuer ein kleines Programm. Aufschreiben oder schlafen?",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Sofort ausprobieren (Energie)",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -10
+						},
+						{
+							"type": "toast",
+							"text": "Die Idee laeuft! Kopf voller Code."
+						}
+					]
+				},
+				{
+					"text": "Morgen. Schlaf ist auch wichtig.",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 5
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_moms_cake",
+			"title": "Kuchen von Mama",
+			"text": "Es klopft. Mama stellt einen Teller mit frischem Kuchen ab. \"Du sollst was Ordentliches essen!\"",
+			"weight": 3,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Danke sagen und essen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 12
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_mutter",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "\"Gleich, Mama!\" (weiterarbeiten)",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -3
+						},
+						{
+							"type": "toast",
+							"text": "Der Kuchen wird kalt. Mama seufzt."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_power_surge",
+			"title": "Spannungsspitze",
+			"text": "Kurzes Flackern im Haus. Das Laufwerk war mitten im Schreiben!",
+			"weight": 1,
+			"cooldown_days": 8,
+			"requires_computer_on": true,
+			"requires_at_computer": true,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Diskette pruefen",
+					"effects": [
+						{
+							"type": "damage_random_disk",
+							"value": 6
+						}
+					]
+				},
+				{
+					"text": "Beten und weitermachen",
+					"risk": {
+						"chance": 0.5,
+						"effects": [
+							{
+								"type": "damage_random_disk",
+								"value": 12
+							}
+						]
+					},
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_tangled_cables",
+			"title": "Kabelsalat",
+			"text": "Hinter dem Schreibtisch ist ein heilloses Durcheinander. Zeit fuer Ordnung?",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Entwirren (kostet Zeit)",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -8
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 2
+						},
+						{
+							"type": "toast",
+							"text": "Ordentlich! Mama waere stolz."
+						}
+					]
+				},
+				{
+					"text": "Spaeter... (immer spaeter)",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_dusty_amiga",
+			"title": "Staubiger Amiga",
+			"text": "In den Lueftungsschlitzen und zwischen den Tasten sitzt Staub. Gehaeuse und Tastatur brauchen eine vorsichtige Reinigung.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Gruendlich reinigen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -6
+						},
+						{
+							"type": "toast",
+							"text": "Lueftungsschlitze, Tasten und Gehaeuse sind wieder sauber."
+						}
+					]
+				},
+				{
+					"text": "Nur kurz pusten",
+					"risk": {
+						"chance": 0.3,
+						"effects": [
+							{
+								"type": "drive_dirt",
+								"value": 0.15
+							}
+						]
+					},
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_late_night",
+			"title": "Durchgezockt",
+			"text": "Du hast bis in die Puppen gespielt. Draussen daemmert es schon.",
+			"weight": 1,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Jetzt WIRKLICH ins Bett",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -5
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -2
+						}
+					]
+				},
+				{
+					"text": "Ein Level noch! (die Luege)",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -15
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -3
+						},
+						{
+							"type": "toast",
+							"text": "Mama findet dich morgen ueber der Tastatur."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_coverdisk",
+			"title": "Heisse Coverdisk",
+			"text": "Die neue Ausgabe liegt aus — mit einer prall gefuellten Coverdisk. Frau Oez zwinkert.",
+			"weight": 3,
+			"cooldown_days": 4,
+			"locations": [
+				"kiosk"
+			],
+			"choices": [
+				{
+					"text": "Kaufen (4 DM)",
+					"requires_money": 4,
+					"effects": [
+						{
+							"type": "money",
+							"value": -4
+						},
+						{
+							"type": "disk_template",
+							"id": "coverdisk_amiga_kurier"
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_oez",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Nur durchblaettern",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_street_flyer",
+			"title": "Flyer in der Hand",
+			"text": "Jemand drueckt dir einen Flyer in die Hand: Demoparty am Wochenende, im Club.",
+			"weight": 2,
+			"cooldown_days": 10,
+			"locations": [
+				"kiosk",
+				"schoolyard"
+			],
+			"choices": [
+				{
+					"text": "Merken! (Aufgabe)",
+					"effects": [
+						{
+							"type": "task",
+							"id": "task_demoparty",
+							"title": "Zur Demoparty im Club",
+							"note": "Am Wochenende, abends."
+						},
+						{
+							"type": "flag",
+							"flag": "knows_demoparty",
+							"value": true
+						}
+					]
+				},
+				{
+					"text": "Wegwerfen",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_lost_wallet",
+			"title": "Fund auf der Strasse",
+			"text": "Auf dem Gehweg liegt ein Geldschein. Keiner in Sicht.",
+			"weight": 1,
+			"cooldown_days": 12,
+			"locations": [
+				"kiosk"
+			],
+			"choices": [
+				{
+					"text": "Einstecken",
+					"effects": [
+						{
+							"type": "money",
+							"value": 10
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -1
+						},
+						{
+							"type": "toast",
+							"text": "10 DM reicher. Das Gewissen meldet sich leise."
+						}
+					]
+				},
+				{
+					"text": "Beim Kiosk abgeben (ehrlich)",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 2
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_oez",
+							"value": 2
+						},
+						{
+							"type": "toast",
+							"text": "Ehrlich waehrt am laengsten, sagt Frau Oez."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_club_compo",
+			"title": "Freitags-Compo",
+			"text": "Im Club laeuft die Demo-Compo. \"Zeig, was du hast!\", ruft Achim.",
+			"weight": 3,
+			"cooldown_days": 4,
+			"year_from": 1993,
+			"requires_flag": "club_member",
+			"locations": [
+				"computer_club"
+			],
+			"memory": "Bei einer Club-Compo dabei gewesen.",
+			"choices": [
+				{
+					"text": "Mitmachen (Ruf)",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 3
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -8
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_achim",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Nur zuschauen und lernen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_club_swap",
+			"title": "Tauschabend",
+			"text": "Am Tauschtisch geht's rund. Jemand haette da was Feines gegen was Feines.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"year_from": 1991,
+			"requires_flag": "club_member",
+			"locations": [
+				"computer_club"
+			],
+			"choices": [
+				{
+					"text": "Diskette tauschen",
+					"effects": [
+						{
+							"type": "disk_template",
+							"id": "demo_ocean_dreams",
+							"memory": "am Club-Tauschtisch erhalten"
+						},
+						{
+							"type": "toast",
+							"text": "Getauscht! Neue Diskette in der Box."
+						}
+					]
+				},
+				{
+					"text": "Erstmal quatschen",
+					"effects": [
+						{
+							"type": "npc_trust",
+							"npc": "npc_achim",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_club_coffee",
+			"title": "Achims Kaffee",
+			"text": "Achim brueht Kaffee, der Loeffel steht drin. \"Selber schuld, wer schlaeft.\"",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"computer_club"
+			],
+			"choices": [
+				{
+					"text": "Tapfer trinken",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 10
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_achim",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Hoeflich ablehnen",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_flea_bargain",
+			"title": "Schnaeppchen",
+			"text": "Auf einer Decke liegt eine Kiste Disketten. Der Verkaeufer will sie loswerden.",
+			"weight": 3,
+			"cooldown_days": 4,
+			"locations": [
+				"flea_market"
+			],
+			"choices": [
+				{
+					"text": "Zugreifen (5 DM)",
+					"requires_money": 5,
+					"effects": [
+						{
+							"type": "money",
+							"value": -5
+						},
+						{
+							"type": "disk_template",
+							"id": "mystery_unlabeled"
+						},
+						{
+							"type": "disk_template",
+							"id": "mystery_unlabeled"
+						}
+					]
+				},
+				{
+					"text": "Feilschen",
+					"risk": {
+						"chance": 0.4,
+						"effects": [
+							{
+								"type": "toast",
+								"text": "\"Nix da!\" — der Verkaeufer dreht sich weg."
+							}
+						]
+					},
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_flea_rare",
+			"title": "Seltener Fund",
+			"text": "Ganz unten in der Wuehlkiste — eine OVP-Originaldiskette. Der Verkaeufer hat's nicht gemerkt.",
+			"weight": 1,
+			"cooldown_days": 14,
+			"locations": [
+				"flea_market"
+			],
+			"memory": "Auf dem Flohmarkt einen seltenen Fund gemacht.",
+			"choices": [
+				{
+					"text": "Kaufen (12 DM)",
+					"requires_money": 12,
+					"effects": [
+						{
+							"type": "money",
+							"value": -12
+						},
+						{
+							"type": "disk_template",
+							"id": "game_monkey_adventure"
+						},
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Zu teuer, liegen lassen",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_flea_junk",
+			"title": "Kaputtes Schnaeppchen",
+			"text": "\"Laeuft bestimmt noch\", sagt der Haendler und meint einen wackligen Joystick.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"flea_market"
+			],
+			"choices": [
+				{
+					"text": "Kaufen (3 DM)",
+					"requires_money": 3,
+					"risk": {
+						"chance": 0.5,
+						"effects": [
+							{
+								"type": "toast",
+								"text": "Der Joystick klemmt sofort. Lehrgeld."
+							}
+						]
+					},
+					"effects": [
+						{
+							"type": "money",
+							"value": -3
+						}
+					]
+				},
+				{
+					"text": "Danke, nein",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_school_trade",
+			"title": "Pausenhof-Deal",
+			"text": "In der grossen Pause will dir einer eine \"sup/seltene\" Kopie andrehen.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"schoolyard"
+			],
+			"choices": [
+				{
+					"text": "Tauschen",
+					"effects": [
+						{
+							"type": "disk_template",
+							"id": "demo_ocean_dreams"
+						}
+					]
+				},
+				{
+					"text": "Skeptisch bleiben",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_school_teacher",
+			"title": "Voss erwischt dich",
+			"text": "Lehrer Voss sieht dein Computerheft im Unterricht. \"Interessanter als mein Fach?\"",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"schoolyard"
+			],
+			"choices": [
+				{
+					"text": "Kleinlaut wegpacken",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Ehrlich schwaermen",
+					"risk": {
+						"chance": 0.4,
+						"effects": [
+							{
+								"type": "stat",
+								"stat": "eltern_toleranz",
+								"value": -2
+							},
+							{
+								"type": "toast",
+								"text": "Nachsitzen. War's wert? Vielleicht."
+							}
+						]
+					},
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_school_homework",
+			"title": "Hausaufgaben vergessen",
+			"text": "Mist — die Mathe-Hausaufgaben. Und die naechste Stunde ist gleich.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"schoolyard"
+			],
+			"choices": [
+				{
+					"text": "Schnell abschreiben (riskant)",
+					"risk": {
+						"chance": 0.35,
+						"effects": [
+							{
+								"type": "stat",
+								"stat": "eltern_toleranz",
+								"value": -2
+							}
+						]
+					},
+					"effects": []
+				},
+				{
+					"text": "Zugeben und nachmachen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -5
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_shop_deal",
+			"title": "Etiketten-Sonderposten",
+			"text": "Im Laden steht ein Karton \"Sonderposten\". Ein Etikettenbogen mit zehn sauberen Diskettenlabels, halber Preis.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"computer_shop"
+			],
+			"choices": [
+				{
+					"text": "Kaufen (6 DM)",
+					"requires_money": 6,
+					"effects": [
+						{
+							"type": "money",
+							"value": -6
+						},
+						{
+							"type": "item",
+							"item": "etiketten",
+							"value": 10
+						},
+						{
+							"type": "toast",
+							"text": "Zehn neue Etiketten fuer sauber beschriftete Disketten."
+						}
+					]
+				},
+				{
+					"text": "Nicht noetig",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_shop_advice",
+			"title": "Guter Rat",
+			"text": "Der Verkaeufer nimmt sich Zeit und erklaert dir was ueber Speicher und Laufwerke.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"computer_shop"
+			],
+			"choices": [
+				{
+					"text": "Aufmerksam zuhoeren",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						}
+					]
+				},
+				{
+					"text": "Schon gewusst, danke",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_first_modem_rumor",
+			"title": "Modem-Geruecht",
+			"text": "\"Mit einem Modem kannst du andere Rechner ANRUFEN\", schwaermt einer. Klingt wie Zukunft.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"year_available": 1990,
+			"year_obsolete": 1993,
+			"unless_hardware": "modem",
+			"locations": [
+				"schoolyard",
+				"computer_club",
+				"computer_shop"
+			],
+			"choices": [
+				{
+					"text": "Faszinierend! (merken)",
+					"effects": [
+						{
+							"type": "flag",
+							"flag": "dreams_of_modem",
+							"value": true
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Viel zu teuer fuer mich",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_c64_holdout",
+			"title": "Der C64-Typ",
+			"text": "Ein Klassenkamerad schwoert auf seinen \"Brotkasten\". \"Amiga? Ueberschaetzt!\"",
+			"weight": 2,
+			"cooldown_days": 4,
+			"year_available": 1990,
+			"year_obsolete": 1992,
+			"choices": [
+				{
+					"text": "Freundlich widersprechen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Jedem das Seine",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_cdrom_wonder",
+			"title": "CD-ROM im Schaufenster",
+			"text": "Im Laden liegt ein CD-ROM-Laufwerk. \"Hunderte Disketten auf EINER Scheibe!\", steht dran.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"computer_shop",
+				"kiosk"
+			],
+			"year_available": 1993,
+			"year_obsolete": 1995,
+			"choices": [
+				{
+					"text": "Ehrfuerchtig staunen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						},
+						{
+							"type": "flag",
+							"flag": "saw_cdrom",
+							"value": true
+						}
+					]
+				},
+				{
+					"text": "Diskette bleibt Diskette!",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_windows_hype",
+			"title": "Alle reden von Windows",
+			"text": "In der Schule reden ploetzlich alle von \"Windows\" und Pentium. Der Amiga? Kein Thema mehr.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"schoolyard",
+				"computer_club"
+			],
+			"year_available": 1995,
+			"year_obsolete": 1997,
+			"memory": "Das Jahr, in dem alle auf PC umstiegen.",
+			"choices": [
+				{
+					"text": "Trotzig Amiga-Fan bleiben",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						},
+						{
+							"type": "flag",
+							"flag": "amiga_loyal",
+							"value": true
+						}
+					]
+				},
+				{
+					"text": "Neugierig werden",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_internet_first",
+			"title": "Das erste Mal online",
+			"text": "Jemand zeigt dir das \"World Wide Web\". Seiten laden quaelend langsam, aber es fuehlt sich riesig an.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"year_available": 1996,
+			"year_obsolete": 1998,
+			"locations": [
+				"computer_club",
+				"computer_shop",
+				"internetcafe"
+			],
+			"memory": "Zum ersten Mal im Internet gewesen.",
+			"choices": [
+				{
+					"text": "Vom Fieber gepackt",
+					"effects": [
+						{
+							"type": "flag",
+							"flag": "internet_curious",
+							"value": true
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						}
+					]
+				},
+				{
+					"text": "Meine Mailbox reicht mir",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_mp3_shock",
+			"title": "Ein Song, ein paar MB",
+			"text": "Basti spielt dir eine \"MP3\" vor. Ein ganzer Song, winzig klein. \"Das aendert alles\", sagt er.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"musikladen",
+				"computer_club",
+				"room"
+			],
+			"year_available": 1997,
+			"year_obsolete": 1999,
+			"choices": [
+				{
+					"text": "Beeindruckt sein",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_basti",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Klingt nach Zukunftsmusik",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_3d_cards",
+			"title": "3D-Grafikkarten",
+			"text": "Rocky zeigt dir eine neue 3D-Karte. \"Da ruckelt NIX mehr\", grinst er und dreht am Takt.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"computer_shop"
+			],
+			"year_available": 1998,
+			"year_obsolete": 1999,
+			"choices": [
+				{
+					"text": "Wow. Sparen anfangen.",
+					"effects": [
+						{
+							"type": "flag",
+							"flag": "wants_3d",
+							"value": true
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Mein Amiga tut's noch",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_y2k_panic",
+			"title": "Jahr-2000-Panik",
+			"text": "Ueberall wird vor dem \"Millennium-Bug\" gewarnt. \"Am 1.1.2000 stuerzt alles ab!\", heisst es.",
+			"weight": 3,
+			"cooldown_days": 4,
+			"year_available": 1999,
+			"requires_quest_active": "q_y2k_prep",
+			"priority": true,
+			"memory": "Die grosse Y2K-Aufregung miterlebt.",
+			"choices": [
+				{
+					"text": "Alles doppelt sichern",
+					"effects": [
+						{
+							"type": "quest_action",
+							"action": "y2k_backup"
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -5
+						},
+						{
+							"type": "toast",
+							"text": "Backups gemacht. Sicher ist sicher."
+						}
+					]
+				},
+				{
+					"text": "Unsere alten Kisten ueberleben's",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_rainy_day",
+			"title": "Regentag",
+			"text": "Es schuettet wie aus Eimern. Perfektes Wetter, um drinnen zu bleiben und zu tuefteln.",
+			"weight": 1,
+			"cooldown_days": 4,
+			"season": [
+				"autumn",
+				"winter"
+			],
+			"choices": [
+				{
+					"text": "Ganzer Tag am Rechner",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 2
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -5
+						}
+					]
+				},
+				{
+					"text": "Trotzdem raus",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -8
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_sunny_guilt",
+			"title": "Zu schoenes Wetter",
+			"text": "Die Sonne knallt, alle sind draussen — und du sitzt vor der Roehre. Mama macht die Tuer auf.",
+			"weight": 1,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"season": [
+				"summer",
+				"spring"
+			],
+			"choices": [
+				{
+					"text": "Raus an die Luft",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 8
+						},
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 2
+						}
+					]
+				},
+				{
+					"text": "Nur noch fertig speichern",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_friend_visit",
+			"title": "Besuch",
+			"text": "Es klopft. Ein Kumpel steht mit einer Diskette und einem Grinsen vor der Tuer.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Reinlassen und zocken",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -5
+						},
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						},
+						{
+							"type": "toast",
+							"text": "Gute Runde zu zweit."
+						}
+					]
+				},
+				{
+					"text": "Keine Zeit gerade",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_birthday_hint",
+			"title": "Bald Geburtstag",
+			"text": "Deine Mutter fragt beilaeufig, was du dir denn wuenschst. Bald ist's ja soweit.",
+			"weight": 1,
+			"cooldown_days": 30,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Was Technisches, klar",
+					"effects": [
+						{
+							"type": "flag",
+							"flag": "wished_hardware",
+							"value": true
+						}
+					]
+				},
+				{
+					"text": "Ueberrasch mich",
+					"effects": [
+						{
+							"type": "npc_trust",
+							"npc": "npc_mutter",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_virus_scare",
+			"title": "Virus-Verdacht",
+			"text": "Eine getauschte Diskette verhaelt sich seltsam. Der Verdacht: ein Virus.",
+			"weight": 1,
+			"cooldown_days": 8,
+			"year_from": 1992,
+			"requires_program": "viruschecker",
+			"unless_flag": "virus_scare_pending",
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Pruefung am Amiga vormerken",
+					"effects": [
+						{
+							"type": "virus_scare_disk"
+						},
+						{
+							"type": "task",
+							"id": "task_viruscheck_real",
+							"title": "Verdaechtige Diskette wirklich pruefen",
+							"note": "Amiga einschalten, Werkbank-Disk booten -> Shell doppelklicken -> VIRUSCHECKER eingeben -> die gelb markierte Auftragsdiskette anklicken.",
+							"repeatable": true,
+							"disk_uid_flag": "virus_scare_disk_uid",
+							"protect_text": "Diese verdaechtige Diskette muss erst im Virenwaechter geprueft werden."
+						},
+						{
+							"type": "flag",
+							"flag": "virus_scare_event_started",
+							"value": true
+						},
+						{
+							"type": "toast",
+							"text": "Aufgabe notiert — die verdächtige Diskette ist im Virenwächter gelb markiert."
+						}
+					]
+				},
+				{
+					"text": "Wird schon nichts sein",
+					"risk": {
+						"chance": 0.4,
+						"effects": [
+							{
+								"type": "damage_random_disk",
+								"value": 8
+							},
+							{
+								"type": "toast",
+								"text": "Es WAR was. Mist."
+							}
+						]
+					},
+					"effects": [
+						{
+							"type": "flag",
+							"flag": "virus_scare_event_started",
+							"value": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_backup_reminder",
+			"title": "Backup-Mahnung",
+			"text": "Dir faellt ein, dass du ewig kein Backup gemacht hast. Ein mulmiges Gefuehl.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"year_from": 1991,
+			"requires_program": "xcopy",
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Echte Sicherung auf die Liste setzen",
+					"effects": [
+						{
+							"type": "task",
+							"id": "task_backup_real",
+							"title": "Eine echte Archivkopie anlegen",
+							"note": "EXAKT 1 DISK - NICHT ALLE. Der Notizblock markiert die Quelle namentlich. Amiga starten, Diskettenbox oeffnen, diese Quelle waehlen und BACKUP mit 1 realen Leerdiskette vollstaendig verifizieren."
+						},
+						{
+							"type": "toast",
+							"text": "Aufgabe notiert - genau 1 benannte Quelle auf 1 echte Leerdiskette, nicht die ganze Box."
+						}
+					]
+				},
+				{
+					"text": "Morgen bestimmt",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_disk_found_pocket",
+			"title": "Fund in der Jacke",
+			"text": "In der Jackentasche steckt eine vergessene Diskette. Was ist da wohl drauf?",
+			"weight": 2,
+			"cooldown_days": 15,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Neugierig einlegen",
+					"effects": [
+						{
+							"type": "disk_template",
+							"id": "mystery_unlabeled"
+						}
+					]
+				},
+				{
+					"text": "Erstmal pruefen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_music_gem",
+			"title": "Fundstueck beim Joerg",
+			"text": "Joerg legt dir wortlos eine Platte auf. Nach dreissig Sekunden hast du Gaensehaut.",
+			"weight": 2,
+			"cooldown_days": 4,
+			"locations": [
+				"musikladen"
+			],
+			"choices": [
+				{
+					"text": "Kaufen (8 DM)",
+					"requires_money": 8,
+					"effects": [
+						{
+							"type": "money",
+							"value": -8
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_joerg",
+							"value": 2
+						},
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 5
+						}
+					]
+				},
+				{
+					"text": "Nur den Moment geniessen",
+					"effects": [
+						{
+							"type": "npc_trust",
+							"npc": "npc_joerg",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_scene_beef",
+			"title": "Streit in der Szene",
+			"text": "Zwei Gruppen zoffen sich, wer die bessere Demo hat. Die Stimmung im Club kippt.",
+			"weight": 1,
+			"cooldown_days": 10,
+			"locations": [
+				"computer_club"
+			],
+			"choices": [
+				{
+					"text": "Schlichten",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 2
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_achim",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Raushalten",
+					"effects": []
+				}
+			]
+		},
+		{
+			"id": "ev_package_delay",
+			"title": "Post verspaetet",
+			"text": "Frau Habel bedauert: deine Bestellung haengt irgendwo fest. \"Geduld, junger Mann.\"",
+			"weight": 1,
+			"cooldown_days": 4,
+			"locations": [
+				"postamt"
+			],
+			"choices": [
+				{
+					"text": "Verstaendnisvoll nicken",
+					"effects": [
+						{
+							"type": "npc_trust",
+							"npc": "npc_habel",
+							"value": 1
+						}
+					]
+				},
+				{
+					"text": "Seufzen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": -2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_allowance_bonus",
+			"title": "Extra-Taschengeld",
+			"text": "Weil du im Haushalt geholfen hast, gibt's ausnahmsweise was extra.",
+			"weight": 1,
+			"cooldown_days": 20,
+			"locations": [
+				"room"
+			],
+			"choices": [
+				{
+					"text": "Dankend annehmen",
+					"effects": [
+						{
+							"type": "money",
+							"value": 8
+						},
+						{
+							"type": "npc_trust",
+							"npc": "npc_vater",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_broken_promise",
+			"title": "Gebrochenes Versprechen",
+			"text": "Du hattest versprochen, frueh ins Bett zu gehen — und sitzt um zwei noch am Modem. Papa steht in der Tuer.",
+			"weight": 1,
+			"cooldown_days": 12,
+			"locations": [
+				"room"
+			],
+			"year_available": 1995,
+			"requires_hardware": "modem",
+			"choices": [
+				{
+					"text": "Sofort ausmachen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -2
+						}
+					]
+				},
+				{
+					"text": "\"Gleich, gleich...\"",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "eltern_toleranz",
+							"value": -5
+						},
+						{
+							"type": "toast",
+							"text": "Papa zieht den Stecker. Wortlos."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cal_neujahr",
+			"on_date": "01-01",
+			"memory": "Ins neue Jahr gestartet",
+			"title": "Neujahr",
+			"text": "Ein neues Jahr. Draußen liegt noch Raketenpapier, drinnen liegt der ganze Kalender vor dir. Guter Moment für einen Vorsatz.",
+			"choices": [
+				{
+					"text": "Vorsatz: dieses Jahr wird groß",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 15
+						},
+						{
+							"type": "stat",
+							"stat": "ruf",
+							"value": 1
+						},
+						{
+							"type": "stat",
+							"stat": "wissen",
+							"value": 1
+						},
+						{
+							"type": "toast",
+							"text": "Neues Jahr, neue Disketten. Los geht's!"
+						}
+					]
+				},
+				{
+					"text": "Erstmal ausschlafen",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 25
+						},
+						{
+							"type": "toast",
+							"text": "Der Kopf brummt noch von Silvester. Ausschlafen tut gut."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cal_nikolaus",
+			"on_date": "12-06",
+			"memory": "Nikolaus hat was dagelassen",
+			"title": "Nikolaus",
+			"text": "Über Nacht stand plötzlich was vor der Tür: ein Stiefel voller Süßkram — und obendrauf eine Diskette mit Schleife.",
+			"choices": [
+				{
+					"text": "Stiefel leeren",
+					"effects": [
+						{
+							"type": "stat",
+							"stat": "energie",
+							"value": 10
+						},
+						{
+							"type": "item",
+							"item": "etiketten",
+							"value": 3
+						},
+						{
+							"type": "disk_template",
+							"id": "mystery_unlabeled",
+							"memory": "Nikolaus-Diskette"
+						},
+						{
+							"type": "toast",
+							"text": "Süßes, Etiketten und eine Mystery-Diskette. Danke, Nikolaus!"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ev_lan_night",
+			"title": "Kabelsalat bis Sonnenaufgang",
+			"text": "Bei Mike stehen die Rechner Rücken an Rücken. Das Netzwerk läuft, die Cola ist kalt und deine frisch kopierte Spieldiskette wartet auf den ersten Test.",
+			"weight": 1,
+			"cooldown_days": 30,
+			"year_from": 1996,
+			"year_to": 1997,
+			"locations": ["mike_home"],
+			"requires_quest_active": "q_lan_nacht",
+			"requires_quest_action": {
+				"id": "q_lan_nacht",
+				"action": "make_copy",
+				"min": 1
+			},
+			"priority": true,
+			"memory": "Mit Mike eine LAN-Nacht bis Sonnenaufgang durchgespielt.",
+			"choices": [
+				{
+					"text": "Rechner anschließen und die Nacht durchspielen",
+					"effects": [
+						{"type": "quest_action", "action": "lan_attend"},
+						{"type": "stat", "stat": "energie", "value": -18},
+						{"type": "stat", "stat": "ruf", "value": 3},
+						{"type": "npc_trust", "npc": "npc_mike", "value": 2},
+						{"type": "toast", "text": "Vier Rechner, ein Hub, zwölf Abstürze – und eine legendäre Nacht."}
+					]
+				},
+				{
+					"text": "Heute nur beim Aufbau helfen",
+					"effects": [
+						{"type": "stat", "stat": "wissen", "value": 3},
+						{"type": "toast", "text": "Das Netzwerk steht. Für die Quest musst du beim nächsten Mal wirklich mitspielen."}
+					]
+				}
+			]
+		}
+	]
+}

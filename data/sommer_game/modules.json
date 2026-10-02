@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "engine_id": "sommer_game",
+  "modules": [
+    {
+      "id": "project_core", "year": 1990, "lead": "daniel",
+      "name_de": "Projektkern", "name_en": "Project Core",
+      "description_de": "Der reproduzierbare Spielrahmen: Start, Stopp, Level, Spieler, Zeichnen und Spielstände.",
+      "description_en": "The deterministic game shell: start, stop, levels, players, drawing and saves.",
+      "hardware_profile": "amiga_500_ocs_1mb", "requires": [],
+      "commands": ["GAMESTART", "GAMESTOP", "LOADMAP", "LOADSPRITES", "ADDPLAYER", "UPDATEPLAYERS", "DRAWWORLD", "SAVEGAME", "LOADGAME"],
+      "functions": ["GAMEACTIVE"],
+      "systems": ["level_data", "savegames", "fixed_tick"]
+    },
+    {
+      "id": "sprite_2d", "year": 1990, "lead": "daniel",
+      "name_de": "2D-Sprite-Engine", "name_en": "2D Sprite Engine",
+      "description_de": "BOBs, Kollisionsmasken und reproduzierbare Figurenbewegung auf OCS.",
+      "description_en": "BOBs, collision masks and deterministic character movement on OCS.",
+      "hardware_profile": "amiga_500_ocs_1mb", "requires": ["project_core"],
+      "commands": ["ANIMATE"], "functions": ["COLLIDE"],
+      "systems": ["sprite_animation", "collision_masks"]
+    },
+    {
+      "id": "audio_engine", "year": 1990, "lead": "lisa",
+      "name_de": "Audio-Engine", "name_en": "Audio Engine",
+      "description_de": "Vier priorisierte Paula-Kanäle, Musik und Spielgeräusche ohne gegenseitiges Abschneiden.",
+      "description_en": "Four prioritised Paula channels, music and game sounds without cutting each other off.",
+      "hardware_profile": "amiga_500_ocs_1mb", "requires": ["project_core"],
+      "commands": ["MIXSOUND"], "functions": [],
+      "systems": ["sound_mixer", "channel_priority"]
+    },
+    {
+      "id": "adventure_engine", "year": 1991, "lead": "lisa",
+      "name_de": "Adventure-Engine", "name_en": "Adventure Engine",
+      "description_de": "Szenenzustände, Dialogknoten und animierte Figuren für erzählerische Spiele.",
+      "description_en": "Scene state, dialogue nodes and animated actors for narrative games.",
+      "hardware_profile": "amiga_500_ocs_1mb", "requires": ["project_core", "sprite_2d"],
+      "commands": ["ADVSTATE", "DIALOGUE"], "functions": [],
+      "systems": ["dialogue_tree", "scene_state", "cutscene_hooks"]
+    },
+    {
+      "id": "debug_engine", "year": 1991, "lead": "daniel",
+      "name_de": "Debugger & Profiler", "name_en": "Debugger & Profiler",
+      "description_de": "Haltepunkte, Wertebeobachtung und ein festes Frame-Budget statt mysteriöser Abstürze.",
+      "description_en": "Breakpoints, watches and a fixed frame budget instead of mysterious crashes.",
+      "hardware_profile": "amiga_500_ocs_1mb", "requires": ["project_core"],
+      "commands": ["DEBUGBREAK", "DEBUGVALUE"], "functions": ["FRAMECOST"],
+      "systems": ["debugger", "profiler", "watch_values"]
+    },
+    {
+      "id": "tile_engine", "year": 1992, "lead": "sven",
+      "name_de": "Tile-Engine", "name_en": "Tile Engine",
+      "description_de": "Große scrollende Karten, Layer und Asset-Banks mit ECS- und RAM-Budget.",
+      "description_en": "Large scrolling maps, layers and asset banks with ECS and RAM budgets.",
+      "hardware_profile": "amiga_500_ecs_1mb", "requires": ["project_core"],
+      "commands": ["SETTILE", "MAPLAYER"], "functions": ["GETTILE"],
+      "systems": ["tilemap", "camera_scrolling", "large_asset_banks"]
+    },
+    {
+      "id": "physics_engine", "year": 1993, "lead": "daniel",
+      "name_de": "Physik-Engine", "name_en": "Physics Engine",
+      "description_de": "Zerstörbares Bitmap-Terrain, Projektile, Partikel, Kamera und einfache Gegner-KI.",
+      "description_en": "Destructible bitmap terrain, projectiles, particles, camera and simple enemy AI.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["project_core", "sprite_2d", "tile_engine", "debug_engine"],
+      "commands": ["DESTROYTERRAIN", "FIREPROJECTILE", "UPDATEPHYSICS", "EMITPARTICLES", "CAMERA", "AISTEP"],
+      "functions": ["TERRAINHEIGHT", "PROJECTILECOUNT", "PARTICLECOUNT"],
+      "systems": ["destructible_masks", "projectile_physics", "particles", "camera_scrolling", "ai"]
+    },
+    {
+      "id": "gui_engine", "year": 1994, "lead": "lisa",
+      "name_de": "GUI-Engine", "name_en": "GUI Engine",
+      "description_de": "Fenster, Panels und Statusanzeigen als wiederverwendbare Spieloberfläche.",
+      "description_en": "Windows, panels and status readouts as a reusable game interface.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["project_core"],
+      "commands": ["GUIWINDOW", "GUITEXT"], "functions": [],
+      "systems": ["ui_windows", "layout", "focus"]
+    },
+    {
+      "id": "simulation_engine", "year": 1994, "lead": "sven",
+      "name_de": "Simulations-Engine", "name_en": "Simulation Engine",
+      "description_de": "Deterministische Zeitschritte, Wirtschaft, Bevölkerung und Statistik.",
+      "description_en": "Deterministic simulation steps, economy, population and statistics.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["project_core", "tile_engine", "gui_engine"],
+      "commands": ["SIMULATE"], "functions": ["POPULATION", "CITYMONEY"],
+      "systems": ["economy", "population", "statistics"]
+    },
+    {
+      "id": "network_engine", "year": 1995, "lead": "mike",
+      "name_de": "Netzwerk-Engine", "name_en": "Network Engine",
+      "description_de": "Lokaler Mehrspieler-Synchronlauf mit reproduzierbaren Eingabepaketen.",
+      "description_en": "Local multiplayer lockstep with deterministic input packets.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["project_core", "debug_engine"],
+      "commands": ["NETWORKSYNC"], "functions": ["NETPLAYERS"],
+      "systems": ["multiplayer", "lockstep", "replay"]
+    },
+    {
+      "id": "strategy_grid_engine", "year": 1996, "lead": "sven",
+      "name_de": "Strategie-/Grid-Engine", "name_en": "Strategy/Grid Engine",
+      "description_de": "Zonen, Verkehr, Stromnetze und Auswertung für Städtebau und Management.",
+      "description_en": "Zones, traffic, power networks and evaluation for city and management games.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["tile_engine", "simulation_engine"],
+      "commands": ["ZONE", "POWERLINK", "TRAFFICROUTE"], "functions": ["POWERED", "TRAFFIC"],
+      "systems": ["grid_simulation", "zoning", "traffic", "power_network"]
+    },
+    {
+      "id": "advanced_graphics", "year": 1997, "lead": "lisa",
+      "name_de": "AGA-Grafikpipeline", "name_en": "AGA Graphics Pipeline",
+      "description_de": "256-Farben-Szenen, Color-Cycling, größere Animationen und saubere PC/VGA-Zielprofile.",
+      "description_en": "256-colour scenes, colour cycling, larger animation and clean PC/VGA targets.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["sprite_2d", "gui_engine"],
+      "commands": ["COLORPIPE", "TARGETVIDEO"], "functions": [],
+      "systems": ["aga_palette", "color_cycling", "vga_target", "animation_pipeline"]
+    },
+    {
+      "id": "distribution_engine", "year": 1998, "lead": "mike",
+      "name_de": "Distributions-Engine", "name_en": "Distribution Engine",
+      "description_de": "Versionierte Builds für Disk, CD und Internet mit prüfbarem Manifest.",
+      "description_en": "Versioned builds for disk, CD and internet with a verifiable manifest.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["project_core", "network_engine"],
+      "commands": ["EXPORTBUILD"], "functions": ["BUILDVERSION"],
+      "systems": ["cd_rom", "internet_distribution", "build_manifest"]
+    },
+    {
+      "id": "integrated_engine", "year": 1999, "lead": "team",
+      "name_de": "Sommer-Game-Kern 1.0", "name_en": "Sommer Game Core 1.0",
+      "description_de": "Alle Module teilen Projektformat, Asset-IDs, Debugdaten und einen reproduzierbaren Build.",
+      "description_en": "All modules share a project format, asset IDs, debug data and a reproducible build.",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb", "requires": ["physics_engine", "strategy_grid_engine", "advanced_graphics", "distribution_engine"],
+      "commands": ["PROFILEFRAME"], "functions": [],
+      "systems": ["integrated_toolchain", "cross_target_build", "release_qa"]
+    }
+  ]
+}

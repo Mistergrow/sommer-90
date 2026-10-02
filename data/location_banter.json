@@ -1,0 +1,100 @@
+{
+	"computer_club": [
+		{
+			"speaker": "npc_stefan",
+			"listener": "npc_tobias",
+			"year_from": 1990,
+			"year_to": 1992,
+			"line_key": "banter.club.raster.line",
+			"line": "Der Raster läuft sauber. Hörst du, wie der Beat genau auf den Wechsel fällt?",
+			"reply_key": "banter.club.raster.reply",
+			"reply": "Ja. Wenn wir noch einen Effekt stapeln, verlieren wir aber wieder ein Bild.",
+			"speaker_emotion": "proud",
+			"reply_emotion": "thinking"
+		},
+		{
+			"speaker": "npc_achim",
+			"listener": "npc_alex",
+			"year_from": 1990,
+			"year_to": 1993,
+			"line_key": "banter.club.labels.line",
+			"line": "Bitte Namen auf jede Diskette. Die namenlosen landen sonst wieder in der Fundkiste.",
+			"reply_key": "banter.club.labels.reply",
+			"reply": "Schon erledigt. Diesmal sogar lesbar.",
+			"speaker_emotion": "thinking",
+			"reply_emotion": "happy"
+		},
+		{
+			"speaker": "npc_pixie",
+			"listener": "npc_lisa",
+			"year_from": 1993,
+			"year_to": 1996,
+			"line_key": "banter.club.gradient.line",
+			"line": "Der neue Farbverlauf wirkt auf dem Monitor viel ruhiger als auf Papier.",
+			"reply_key": "banter.club.gradient.reply",
+			"reply": "Dann behalten wir eine kontrastreiche Fassung für die kleineren Schirme.",
+			"speaker_emotion": "happy",
+			"reply_emotion": "thinking"
+		},
+		{
+			"speaker": "npc_achim",
+			"listener": "npc_tobias",
+			"year_from": 1993,
+			"year_to": 1999,
+			"line_key": "banter.club.compo.line",
+			"line": "Die Compo-Liste ist fast voll. Wir müssen jede Diskette vor dem Einlass testen.",
+			"reply_key": "banter.club.compo.reply",
+			"reply": "Mach ich. Erst Virencheck, dann echter Start vom Laufwerk.",
+			"speaker_emotion": "surprised",
+			"reply_emotion": "proud"
+		},
+		{
+			"speaker": "npc_sven",
+			"listener": "npc_mike",
+			"year_from": 1995,
+			"year_to": 1999,
+			"line_key": "banter.club.network.line",
+			"line": "Noch eine Netzwerkrunde nach dem Treffen?",
+			"reply_key": "banter.club.network.reply",
+			"reply": "Nur wenn dein Kabel diesmal bis zum Ende durchhält.",
+			"speaker_emotion": "happy",
+			"reply_emotion": "laughing"
+		},
+		{
+			"speaker": "npc_stefan",
+			"listener": "npc_alex",
+			"year_from": 1997,
+			"year_to": 1999,
+			"line_key": "banter.club.code_job.line",
+			"line": "Der Code-Auftrag ist echt. Wer übernimmt nachher den zweiten Testlauf?",
+			"reply_key": "banter.club.code_job.reply",
+			"reply": "Ich. Aber diesmal bekomme ich einen sauberen Fehlerzettel dazu.",
+			"speaker_emotion": "thinking",
+			"reply_emotion": "proud"
+		},
+		{
+			"speaker": "npc_lisa",
+			"listener": "npc_pixie",
+			"year_from": 1997,
+			"year_to": 1999,
+			"line_key": "banter.club.aga_ecs.line",
+			"line": "Die AGA-Fassung darf leuchten, aber die ECS-Version muss trotzdem gut lesbar bleiben.",
+			"reply_key": "banter.club.aga_ecs.reply",
+			"reply": "Abgemacht. Gleiche Idee, andere Palette, keine lieblose Kopie.",
+			"speaker_emotion": "thinking",
+			"reply_emotion": "happy"
+		},
+		{
+			"speaker": "npc_tobias",
+			"listener": "npc_stefan",
+			"year_from": 1997,
+			"year_to": 1999,
+			"line_key": "banter.club.full_disk.line",
+			"line": "Das Tool ist schnell. Jetzt fehlt nur noch ein Test auf einer wirklich vollen Platte.",
+			"reply_key": "banter.club.full_disk.reply",
+			"reply": "Dann testen wir es hier und schreiben jeden Fehler auf.",
+			"speaker_emotion": "proud",
+			"reply_emotion": "happy"
+		}
+	]
+}

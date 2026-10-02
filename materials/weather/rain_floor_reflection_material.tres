@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://beej22hqpmkne"]
+
+[ext_resource type="Shader" uid="uid://cpqcvyhsxrgpg" path="res://shaders/rain_floor_reflection.gdshader" id="1_shader"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/source_rect = Vector4(0.38, 0, 0.69, 0.42)
+shader_parameter/time = 0.0
+shader_parameter/intensity = 0.7

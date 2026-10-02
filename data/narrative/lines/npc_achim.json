@@ -1,0 +1,242 @@
+{
+	"npc": "npc_achim",
+	"comment": "Zeilen-Pool fuer npc_achim. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "ach_b01",
+			"text": "Willkommen im Club! Setz dich an einen freien Rechner."
+		},
+		{
+			"id": "ach_b02",
+			"text": "Hier gilt: jeder hilft jedem, keiner klaut Disketten."
+		},
+		{
+			"id": "ach_b03",
+			"text": "Freitags ist Wettbewerb — sei dabei, es lohnt sich."
+		},
+		{
+			"id": "ach_b04",
+			"text": "Nur die Kaffeekanne bitte heil lassen, das ist mir heilig."
+		},
+		{
+			"id": "ach_b05",
+			"text": "Der Club ist mein zweites Wohnzimmer. Und deins auch, wenn du willst."
+		},
+		{
+			"id": "ach_b06",
+			"text": "Brauchst du Hilfe? Frag einfach, hier beißt keiner."
+		},
+		{
+			"id": "ach_b07",
+			"text": "Ich hab diesen Laden aus Liebe zur Sache aufgebaut, nicht fürs Geld."
+		},
+		{
+			"id": "ach_b08",
+			"text": "Neue Gesichter sind immer willkommen. Fühl dich wie zu Hause."
+		},
+		{
+			"id": "ach_b09",
+			"text": "Ein guter Club lebt von den Leuten, nicht von den Maschinen."
+		},
+		{
+			"id": "ach_b10",
+			"text": "Wenn du was kannst, zeig's her. Wenn nicht, lern's hier."
+		},
+		{
+			"id": "ach_b11",
+			"text": "Ich hab schon so manches Talent hier aufblühen sehen."
+		},
+		{
+			"id": "ach_b12",
+			"text": "Kaffee ist umsonst, aber die Kanne wird gemeinsam gefüllt."
+		},
+		{
+			"id": "ach_b13",
+			"text": "Streit gibt's bei mir nicht. Wer sich zofft, fliegt raus."
+		},
+		{
+			"id": "ach_b14",
+			"text": "Bring deine Freunde mit, je mehr, desto besser."
+		},
+		{
+			"id": "ach_b15",
+			"text": "Ich kenn hier jeden beim Namen. Bald auch deinen."
+		},
+		{
+			"id": "ach_b16",
+			"text": "Setz dich zu den anderen, die beißen nicht. Meistens."
+		},
+		{
+			"id": "ach_b17",
+			"text": "Der Club hat schon viele Moden kommen und gehen sehen."
+		},
+		{
+			"id": "ach_b18",
+			"text": "Ein bisschen Chaos gehört dazu. Nur nicht auf meinem Schreibtisch."
+		},
+		{
+			"id": "ach_b19",
+			"text": "Wer hier ernsthaft was lernen will, den unterstütz ich voll."
+		},
+		{
+			"id": "ach_b20",
+			"text": "Ich mach den Laden erst spät zu. Nachtschwärmer sind willkommen."
+		},
+		{
+			"id": "ach_b21",
+			"text": "Respekt vor der Technik, Respekt voreinander — mehr Regeln brauch ich nicht."
+		},
+		{
+			"id": "ach_b22",
+			"text": "Wenn's ein Problem gibt, komm zu mir. Dafür bin ich da."
+		},
+		{
+			"id": "ach_b23",
+			"text": "Hier sind schon Freundschaften fürs Leben entstanden. Vielleicht auch deine."
+		},
+		{
+			"id": "ach_b24",
+			"text": "Ich hab Ersatzteile im Schrank, falls mal was klemmt."
+		},
+		{
+			"id": "ach_b25",
+			"text": "Die Jugend von heute ist besser als ihr Ruf. Ich seh's jeden Tag."
+		},
+		{
+			"id": "ach_b26",
+			"text": "Ein Club ohne Leben ist nur ein Raum voller Kabel."
+		},
+		{
+			"id": "ach_b27",
+			"text": "Zeig Einsatz, dann öffnen sich hier Türen."
+		},
+		{
+			"id": "ach_b28",
+			"text": "Ich freu mich über jeden, der reinkommt. Ehrlich."
+		},
+		{
+			"id": "ach_b29",
+			"text": "Mach's dir gemütlich, der Abend ist noch lang."
+		},
+		{
+			"id": "ach_b30",
+			"text": "Solange ich kann, halt ich den Laden am Leben. Versprochen."
+		},
+		{
+			"id": "ac_willkommen",
+			"needs": [
+				"club_mitglied"
+			],
+			"topic": "club",
+			"text": "Schön, dass du dabei bist! Zeig beim Wettbewerb, was du draufhast."
+		},
+		{
+			"id": "ac_wettbewerb",
+			"from": 1990,
+			"to": 1996,
+			"topic": "wettbewerb",
+			"text": "Am Freitag ist Demo-Compo. Die RADIANT-Jungs treten an — das wird eng."
+		},
+		{
+			"id": "ac_lan",
+			"from": 1996,
+			"needs": [
+				"lan_partys"
+			],
+			"topic": "wandel",
+			"text": "Ich denk drüber nach, hier LAN-Partys zu veranstalten. Kabel überall, die Zeiten ändern sich."
+		},
+		{
+			"id": "ac_lan2",
+			"from": 1997,
+			"needs": [
+				"lan_partys"
+			],
+			"topic": "wandel",
+			"text": "Die LAN-Abende laufen super. Zwanzig Rechner, ein Netz, die ganze Nacht. Der Club lebt weiter."
+		},
+		{
+			"id": "ac_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Manche Clubs haben dichtgemacht. Wir nicht. Solange Leute wie du kommen, gibt's uns."
+		},
+		{
+			"id": "ach_x01",
+			"topic": "club",
+			"text": "Willkommen zurück. Kaffee ist frisch, die Rechner sind warm, der Abend ist jung."
+		},
+		{
+			"id": "ach_x02",
+			"topic": "club",
+			"text": "Ich hab diesen Club aus einer leeren Garage gebaut. Herzblut und Verlängerungskabel, mehr war da nicht."
+		},
+		{
+			"id": "ach_x03",
+			"topic": "club",
+			"text": "Wer hier ernsthaft was lernen will, den unterstütz ich mit allem, was ich hab."
+		},
+		{
+			"id": "ach_x04",
+			"topic": "club",
+			"text": "Streit gibt's bei mir nicht. Wer sich zofft, kann draußen weiterzoffen."
+		},
+		{
+			"id": "ach_x05",
+			"topic": "club",
+			"text": "Ich hab schon Talente hier aufblühen sehen, die heute richtig was können. Vielleicht wirst du eins."
+		},
+		{
+			"id": "ach_x06",
+			"topic": "club",
+			"text": "Bring deine Freunde mit. Ein Club ohne Leute ist nur ein Raum voller Kabel."
+		},
+		{
+			"id": "ach_x07",
+			"topic": "club",
+			"text": "Die Jugend von heute ist besser als ihr Ruf. Ich seh's jeden Abend an meinen Rechnern."
+		},
+		{
+			"id": "ach_x08",
+			"topic": "club",
+			"text": "Ich mach spät zu. Nachtschwärmer und Tüftler sind bei mir immer willkommen."
+		},
+		{
+			"id": "ach_x09",
+			"topic": "club",
+			"text": "Ein bisschen Chaos gehört dazu. Nur meinen Schreibtisch, den lasst mir heilig."
+		},
+		{
+			"id": "ach_x10",
+			"topic": "club",
+			"text": "Hier sind Freundschaften fürs Leben entstanden. Wer weiß, vielleicht deine auch."
+		},
+		{
+			"id": "ach_x11",
+			"to": 1996,
+			"topic": "wettbewerb",
+			"text": "Freitag ist Demo-Compo. Die RADIANT-Jungs treten an — das wird ein Fest."
+		},
+		{
+			"id": "ach_x12",
+			"from": 0,
+			"needs": [
+				"lan_partys"
+			],
+			"topic": "aera",
+			"text": "Ich veranstalte jetzt LAN-Partys. Zwanzig Rechner, ein Netz, eine ganze Nacht. Die Zeiten ändern sich, aber der Club lebt."
+		},
+		{
+			"id": "ach_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Manche Clubs haben dichtgemacht. Wir nicht. Solange Leute wie du kommen, gibt's uns."
+		}
+	]
+}

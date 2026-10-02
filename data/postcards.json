@@ -1,0 +1,113 @@
+{
+	"comment": "Postkarten-Korrespondenz (PostcardManager). Wenn ein Freund wegzieht, schreibt er Postkarten — der Spieler kann ANTWORTEN, was die naechste Karte im Faden freischaltet (needs_reply) und Sven dazu bringen kann, etwas zu schicken (on_arrive-Effekte). Post braucht KEIN Geraet, sie kommt an. Felder: id, from (npc-id fuer Vertrauen), from_name, motiv (Kartenmotiv), text (handschriftlich), year_from, gap_days (Abstand zur vorigen Karte in Spieltagen), needs_reply (id einer beantworteten Karte), needs_flag, on_arrive [effects], replies [{id,text,effects}]. Effekte = Event-DSL (flag/npc_trust/disk_template/item/money/toast).",
+	"cards": [
+		{
+			"id": "sv_pc1",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "Gruss aus der Nachbarstadt",
+			"year_from": 1995,
+			"gap_days": 3,
+			"text": "Hallo alter Kumpel!\n\nWir sind angekommen. Die Wohnung ist okay, aber ich kenn hier noch keine Sau. Kein Hof, kein Club, keiner zum Tauschen. Ich vermiss euch jetzt schon wie verrueckt.\n\nSchreib mir mal, ja? Die Adresse steht hinten drauf.\n\nDein Sven",
+			"replies": [
+				{"id": "town", "text": "Erzaehl! Wie ist die neue Stadt so?",
+					"effects": [{"type": "flag", "flag": "sv_told_town"}, {"type": "npc_trust", "npc": "npc_sven", "value": 2}]},
+				{"id": "miss", "text": "Wir vermissen dich hier alle. Der Hof ist leer ohne dich.",
+					"effects": [{"type": "flag", "flag": "sv_miss"}, {"type": "npc_trust", "npc": "npc_sven", "value": 3}]},
+				{"id": "trade", "text": "Und? Schickst du mir mal was zum Tauschen rueber?",
+					"effects": [{"type": "flag", "flag": "sv_want_trade"}, {"type": "npc_trust", "npc": "npc_sven", "value": 1}]}
+			]
+		},
+		{
+			"id": "sv_pc2",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "Postkarte mit Fussballmotiv",
+			"year_from": 1995,
+			"gap_days": 5,
+			"needs_reply": "sv_pc1",
+			"text": "Deine Karte kam an — hat mich riesig gefreut!\n\nBin jetzt im Fussballverein hier, ganz gute Truppe. Aber abends sitz ich allein vorm Rechner. Zwei Jungs aus meiner Klasse haben auch einen Amiga, vielleicht wird das ja noch was.\n\nGruesse an die alte Bande!\nSven",
+			"replies": [
+				{"id": "friends", "text": "Klingt gut! Haltet zusammen, dann findest du Anschluss.",
+					"effects": [{"type": "npc_trust", "npc": "npc_sven", "value": 2}]},
+				{"id": "invite", "text": "Komm uns doch mal am Wochenende besuchen!",
+					"effects": [{"type": "flag", "flag": "sv_invite"}, {"type": "npc_trust", "npc": "npc_sven", "value": 3}]}
+			]
+		},
+		{
+			"id": "sv_pc_trade",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "dickes Kuvert, klappert verdaechtig",
+			"year_from": 1995,
+			"gap_days": 4,
+			"needs_flag": "sv_want_trade",
+			"on_arrive": [{"type": "disk_template", "id": "game_turbo_kart", "memory": "Von Sven aus der Nachbarstadt geschickt"}],
+			"text": "Du wolltest was zum Tauschen — bittesehr!\n\nHab das Rennspiel doppelt, also leg ich dir meine zweite Diskette bei. Pass gut drauf auf, die hat mir viele Stunden gerettet. Revanche gibt's, wenn ich euch mal besuche!\n\nSven",
+			"replies": [
+				{"id": "thanks", "text": "Mann, du bist der Beste! Danke!",
+					"effects": [{"type": "npc_trust", "npc": "npc_sven", "value": 3}]}
+			]
+		},
+		{
+			"id": "sv_pc3",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "Stadtansicht, verregnet",
+			"year_from": 1996,
+			"gap_days": 6,
+			"needs_reply": "sv_pc2",
+			"text": "Langsam gewoehn ich mich ein. Es gibt sogar einen kleinen Computerclub um die Ecke — aber ehrlich, keiner tauscht so wie ihr. Da war unser Hof Gold wert.\n\nWie laeuft's bei euch? Hat sich viel veraendert?\n\nDein Sven",
+			"replies": [
+				{"id": "changed", "text": "'ne Menge — die Zeiten aendern sich, aber wir halten zusammen.",
+					"effects": [{"type": "npc_trust", "npc": "npc_sven", "value": 2}]},
+				{"id": "club", "text": "Der Club vermisst dich. Achim fragt manchmal nach dir.",
+					"effects": [{"type": "npc_trust", "npc": "npc_sven", "value": 2}]}
+			]
+		},
+		{
+			"id": "sv_pc4",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "Postkarte, Ecken schon abgestossen",
+			"year_from": 1997,
+			"gap_days": 6,
+			"needs_reply": "sv_pc3",
+			"text": "Wird alles ein bisschen erwachsener hier, was? Denk oft an unsere Turniere auf dem Bolzplatz und wie wir danach bis nachts gezockt haben.\n\nSo eine Zeit kriegt man nicht zweimal. Melde dich, ich freu mich ueber jede Zeile von dir.\n\nSven",
+			"replies": [
+				{"id": "yes", "text": "Beste Zeit ueberhaupt. Vergess ich nie.",
+					"effects": [{"type": "npc_trust", "npc": "npc_sven", "value": 3}]},
+				{"id": "soon", "text": "Lass uns das bald mal wiederholen — ehrlich!",
+					"effects": [{"type": "flag", "flag": "sv_reunion_wish"}, {"type": "npc_trust", "npc": "npc_sven", "value": 2}]}
+			]
+		},
+		{
+			"id": "sv_pc5",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "Ansichtskarte mit Bahnhof",
+			"year_from": 1998,
+			"gap_days": 6,
+			"needs_reply": "sv_pc4",
+			"text": "Ich hab's mir ueberlegt: Ich komm euch besuchen! Muss nur noch schauen, wann die Zuege guenstig sind. Freu mich wie ein kleines Kind drauf.\n\nHalt mir einen Platz am Rechner frei, wie frueher.\n\nBis bald — wirklich bald!\nSven",
+			"replies": [
+				{"id": "wait", "text": "Wir warten auf dich! Der Platz ist reserviert.",
+					"effects": [{"type": "flag", "flag": "sv_visit_planned"}, {"type": "npc_trust", "npc": "npc_sven", "value": 4}]}
+			]
+		},
+		{
+			"id": "sv_pc6",
+			"from": "npc_sven",
+			"from_name": "Sven",
+			"motiv": "Silvester-Motiv, 1999",
+			"year_from": 1999,
+			"gap_days": 6,
+			"needs_reply": "sv_pc5",
+			"text": "Zehn Jahre, Wahnsinn. Von Disketten-Rattern bis heute — wir waren dabei, von Anfang an.\n\nEgal wie weit ich wegzieh, du bleibst mein aeltester Kumpel. Lass uns das neue Jahrtausend zusammen anstossen, ja?\n\nAuf uns!\nDein Sven",
+			"replies": [
+				{"id": "cheers", "text": "Auf die naechsten zehn Jahre, alter Freund!",
+					"effects": [{"type": "flag", "flag": "sv_bond_forever"}, {"type": "npc_trust", "npc": "npc_sven", "value": 5}]}
+			]
+		}
+	]
+}

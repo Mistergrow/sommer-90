@@ -1,0 +1,119 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_pixie",
+	"dialogues": {
+		"pixie_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Nadine „Pixie“",
+					"text": "Ich pixel gerade ein Cover. Weißt du, wie schwer ein guter Copper-Verlauf ist? Jeder Pixel zählt.",
+					"choices": [
+						{
+							"text": "Die vier Frames sind fertig.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_pixie_vier_frames",
+									"stage": 1
+								}
+							},
+							"next": "n_handoff",
+							"id": "reply_0"
+						},
+						{
+							"text": "Warum hüpft der Roboter noch nicht?",
+							"cond": [
+								{
+									"year_min": 1992
+								},
+								{
+									"not_flag": "pixie_frames_intro"
+								}
+							],
+							"next": "n_quest_intro",
+							"id": "reply_1"
+						},
+						{
+							"text": "Zeigst du mir was?",
+							"next": "n2",
+							"id": "reply_2"
+						},
+						{
+							"text": "Respekt, echt schön.",
+							"next": null,
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_pixie",
+									"value": 1
+								}
+							],
+							"id": "reply_3"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_quest_intro": {
+					"speaker": "Nadine „Pixie“",
+					"text": "Weil ein schönes Einzelbild noch keine Animation ist. Ich brauche vier Frames mit derselben Silhouette und Lichtkante. Du malst, ich gebe dir nach jedem Durchlauf ehrliches Feedback.",
+					"choices": [
+						{
+							"text": "Dann zeichnen wir Bewegung statt vier Zufallsbilder.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "pixie_frames_intro",
+									"value": true
+								},
+								{
+									"type": "memory_once",
+									"id": "pixie_frames_started"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				},
+				"n_handoff": {
+					"speaker": "Nadine „Pixie“",
+					"text": "Jetzt liest man den Schritt schon in der Silhouette. Frame zwei braucht nur zwei Ticks länger, dann wirkt der Roboter schwer statt nervös. Das ist eine Animation, die ich wirklich ins Archiv nehme.",
+					"choices": [
+						{
+							"text": "Timing angepasst. Ab ins gemeinsame Archiv.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "pixie_frames_handoff"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Nadine „Pixie“",
+					"text": "Klar. Fang klein an — ein Icon, ein Logo. Und stiehl keine Grafik, mal deine eigene. Das ist Ehrensache.",
+					"choices": [
+						{
+							"text": "Versprochen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bf0utq4u578al"]
+
+[ext_resource type="PackedScene" uid="uid://3vsna42fdebb" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="RoomTidyLab" unique_id=1152887840 instance=ExtResource("1")]
+minigame_id = "room_tidy"

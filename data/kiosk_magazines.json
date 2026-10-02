@@ -1,0 +1,25 @@
+{
+	"comment": "Aufrecht stehende Magazine im Kiosk (Editor scenes/KioskMagEditor.tscn). Virtuelle Kiosk-Pixel, x/y = Mittelpunkt, w = Breite. Cover je nach Spielmonat.",
+	"magazines": [
+		{
+			"x": 1045,
+			"y": 657,
+			"w": 80
+		},
+		{
+			"x": 351,
+			"y": 650,
+			"w": 77
+		},
+		{
+			"x": 1043,
+			"y": 785,
+			"w": 82
+		},
+		{
+			"x": 345,
+			"y": 780,
+			"w": 74
+		}
+	]
+}

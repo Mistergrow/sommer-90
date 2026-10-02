@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "comment": "Kuratierter Kampagnenkalender: Sechs Sommerferien-Kapitel pro Jahr, vier echte Kalendertage je Kapitel. Freitag sowie das Wochenende bleiben spielbar, damit der feste Computerclub-Abend in jedem Jahr erreichbar ist; die uebrigen Tage werden als Montage atomar uebersprungen. Der vierte Tag ist ein Wochenanker; in Woche 1 hat der 6.7., in Woche 6 der 16.8. Vorrang.",
+  "campaign_year_from": 1990,
+  "campaign_year_to": 1999,
+  "summer_window": {
+    "start": [7, 6],
+    "end": [8, 16],
+    "weeks": 6,
+    "calendar_days_per_week": 7,
+    "playable_days_per_week": 4,
+    "selection": {
+      "anchor_offsets": [0, 6],
+      "required_weekdays": [4, 5, 6],
+      "fill_offsets": [3, 2, 4, 1, 5, 0, 6]
+    }
+  },
+  "year_end": [12, 31],
+  "next_year_start": [7, 6],
+  "target_minutes_per_playable_day": 10,
+  "target_hours_per_full_year": 4.0
+}

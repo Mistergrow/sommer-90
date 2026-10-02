@@ -1,0 +1,96 @@
+{
+ "_meta": "MOD-Bible — permanent, ENGINE FIRST. NUR vom Nutzer/Quellen bestaetigte Daten; Unbekanntes bleibt needs_verification=true. Claude erfindet nichts (Genauigkeit vor Vollstaendigkeit). Verifizierte Metadaten kommen ueber den gamescraper/Nutzer. Ziel-Groessen (Roadmap): ~30 Legenden, ~150 bekannt, ~600 Szene, Gesamt-Pool 5000-15000 (physische MODs separat in music.json).",
+ "groups": {
+  "future_crew": {
+   "name": "Future Crew",
+   "kind": "demogroup",
+   "members": [
+    "purple_motion",
+    "skaven",
+    "wildfire"
+   ],
+   "needs_verification": true
+  },
+  "sanity": {
+   "name": "Sanity",
+   "kind": "demogroup",
+   "members": [
+    "jester"
+   ],
+   "needs_verification": true
+  },
+  "the_silents": {
+   "name": "The Silents",
+   "kind": "demogroup",
+   "members": [
+    "romeo_knight"
+   ],
+   "needs_verification": true
+  },
+  "triton": {
+   "name": "Triton",
+   "kind": "demogroup",
+   "members": [
+    "necros"
+   ],
+   "needs_verification": true
+  },
+  "spaceballs": {
+   "name": "Spaceballs",
+   "kind": "demogroup",
+   "members": [
+    "heatbeat"
+   ],
+   "needs_verification": true
+  },
+  "cncd": {
+   "name": "CNCD",
+   "kind": "demogroup",
+   "members": [
+    "lizardking"
+   ],
+   "needs_verification": true
+  },
+  "kefrens": {
+   "name": "Kefrens",
+   "kind": "demogroup",
+   "members": [],
+   "needs_verification": true
+  },
+  "epic_megagames": {
+   "name": "Epic MegaGames",
+   "kind": "game_label",
+   "members": [
+    "skaven",
+    "purple_motion"
+   ],
+   "needs_verification": true
+  },
+  "pinnacle": {
+   "name": "Pinnacle",
+   "kind": "game_label",
+   "members": [
+    "allister_brimble"
+   ],
+   "needs_verification": true
+  },
+  "psygnosis": {
+   "name": "Psygnosis",
+   "kind": "game_label",
+   "members": [
+    "tim_wright",
+    "richard_joseph"
+   ],
+   "needs_verification": true
+  },
+  "rainbow_arts": {
+   "name": "Rainbow Arts",
+   "kind": "game_label",
+   "members": [
+    "chris_h_lsbeck",
+    "jochen_hippel"
+   ],
+   "needs_verification": true
+  }
+ }
+}

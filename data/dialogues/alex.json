@@ -1,0 +1,301 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_alex",
+	"dialogues": {
+		"alex_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Alex",
+					"text": "Guck mal, was ich auf dem Flohmarkt gefunden hab! Halb kaputt, aber mit'm Lötkolben... Sammelst du eigentlich noch?",
+					"choices": [
+						{
+							"text": "Ich hab deine Mystery-Diskette dabei.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_alex_find",
+									"stage": 1
+								},
+								"has_disk_match": {
+									"id": "mystery_unlabeled",
+									"content_type": "mystery",
+									"unresolved_mystery": true,
+									"exclude_quest_required": true
+								}
+							},
+							"next": "n_mystery_handover",
+							"id": "reply_0"
+						},
+						{
+							"text": "Ich habe noch unbeschriftete Mystery-Disks für dich.",
+							"cond": {
+								"quest_done": "q_alex_find",
+								"has_disk_match": {
+									"id": "mystery_unlabeled",
+									"content_type": "mystery",
+									"unresolved_mystery": true,
+									"exclude_quest_required": true
+								}
+							},
+							"next": "n_mystery_trade",
+							"id": "reply_1"
+						},
+						{
+							"text": "Die drei Archiv-Backups sind dokumentiert.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_disk_archive",
+									"stage": 1
+								}
+							},
+							"next": "n_archive_handover",
+							"id": "reply_2"
+						},
+						{
+							"text": "Immer. Was suchst du?",
+							"next": "n2",
+							"id": "reply_3"
+						},
+						{
+							"text": "Viel Erfolg beim Basteln!",
+							"next": null,
+							"id": "reply_4"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Alex",
+					"text": "Alles, was eine Geschichte hat. Wenn du Doppelte hast — ich tausche fair. Ehrlich!",
+					"choices": [
+						{
+							"text": "Behalt ich im Kopf.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_mystery_handover": {
+					"speaker": "Alex",
+					"text": "Genau so eine! Kein Etikett, Kratzer am Rand – da kann eine ganze Geschichte drauf sein. Die kommt nicht in irgendeine Grabbelkiste.",
+					"choices": [
+						{
+							"text": "Dann gehört sie jetzt zu deiner Sammlung.",
+							"next": null,
+							"effects": [
+								{
+									"type": "take_disk_template",
+									"id": "mystery_unlabeled",
+									"content_type": "mystery",
+									"unresolved_mystery": true,
+									"exclude_quest_required": true
+								},
+								{
+									"type": "quest_action",
+									"action": "deliver_alex_mystery"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n_mystery_trade": {
+					"speaker": "Alex",
+					"text": "Immer her damit. Für einen unbekannten Flohmarktfund gebe ich dir drei Mark – aber ich nehme nur echte unbeschriftete Fragezeichen, keine geprüften Spiele und keine Disk, die du noch für einen Auftrag brauchst.",
+					"choices": [
+						{
+							"text": "Eine unbekannte, unbeschriftete Diskette abgeben (+3 DM).",
+							"cond": {
+								"has_disk_match": {
+									"id": "mystery_unlabeled",
+									"content_type": "mystery",
+									"unresolved_mystery": true,
+									"exclude_quest_required": true
+								}
+							},
+							"next": "n_mystery_trade",
+							"effects": [
+								{
+									"type": "take_disk_template",
+									"id": "mystery_unlabeled",
+									"content_type": "mystery",
+									"unresolved_mystery": true,
+									"exclude_quest_required": true
+								},
+								{
+									"type": "money",
+									"value": 3
+								},
+								{
+									"type": "toast",
+									"text": "Alex übernimmt eine unbekannte Diskette. +3 DM."
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Das war's für heute.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_archive_handover": {
+					"speaker": "Alex",
+					"text": "Drei geprüfte Kopien, Datum, Quelle, Zustand. Das ist kein Haufen Disketten mehr – das ist ein Archiv.",
+					"choices": [
+						{
+							"text": "Pass gut auf unsere Geschichte auf.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "archive_handover"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		},
+		"visit_alex_mystery": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Alex",
+					"text": "Du sammelst doch auch Disketten, oder? Ich such was ganz Bestimmtes: Disketten OHNE Etikett. Mystery-Ware.",
+					"choices": [
+						{
+							"text": "Ohne Etikett? Wieso das?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Alex",
+					"text": "Weil ALLES drauf sein kann! Ein vergessenes Spiel, eine Demo, Datenmüll … Der Nervenkitzel! Auf dem Flohmarkt tauchen die in den Grabbelkisten auf. Bring mir welche — ich zahl gut.",
+					"choices": [
+						{
+							"text": "Ich halt die Augen offen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "alex_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Treib für Alex Mystery-Disketten auf (Flohmarkt-Kartons!)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"visit_alex_risky": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Alex",
+					"text": "Die lag ganz unten in der Wühlkiste. Kein Label, komischer Bootblock. Ich geb sie dir nur, wenn du versprichst: nicht einfach starten, sondern erst prüfen.",
+					"choices": [
+						{
+							"text": "Erst Virenwächter, dann entscheide ich weiter.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "alex_risky_intro",
+									"value": true
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "nervous"
+				}
+			}
+		},
+		"call_alex_farbdruck": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Alex",
+					"text": "Da bist du ja! Also: Ich war im Kaufhaus, und da hing ein Poster — GEDRUCKT, in FARBE, vom Computer! Die Leute auf dem Flohmarkt würden für sowas ZAHLEN.",
+					"choices": [
+						{
+							"text": "Farbdrucke verkaufen? Hm …",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n2": {
+					"speaker": "Alex",
+					"text": "Denk drüber nach: ein Farbdrucker, buntes Papier, deine Pixel-Bilder. Niemand sonst macht das hier! Wer zuerst kommt, verdient.",
+					"choices": [
+						{
+							"text": "Ich schau, was der Farbdrucker kostet.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "farbdruck_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Verkauf einen Farbdruck (Farbdrucker + Deluxe Malen)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_alex_archive": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Alex",
+					"text": "Die ersten Disketten sterben. Nicht irgendwann – jetzt. Mach drei geprüfte Backups und schreib auf, wo die Originale herkommen.",
+					"choices": [
+						{
+							"text": "Wir sichern nicht nur Daten, sondern Geschichten.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "archive_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "nervous"
+				}
+			}
+		}
+	}
+}

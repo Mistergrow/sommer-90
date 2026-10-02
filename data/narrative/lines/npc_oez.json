@@ -1,0 +1,236 @@
+{
+	"npc": "npc_oez",
+	"comment": "Zeilen-Pool fuer npc_oez. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "oez_b01",
+			"text": "Na, mein Stammkunde! Für dich leg ich immer was zur Seite."
+		},
+		{
+			"id": "oez_b02",
+			"text": "Süßes gefällig? Und die neue Ausgabe ist da."
+		},
+		{
+			"id": "oez_b03",
+			"text": "Komm rein, komm rein, für dich hab ich immer Zeit."
+		},
+		{
+			"id": "oez_b04",
+			"text": "Die Zeitschriften gehen weg wie warme Semmeln."
+		},
+		{
+			"id": "oez_b05",
+			"text": "Ich kenn deinen Geschmack besser als du selbst, mein Freund."
+		},
+		{
+			"id": "oez_b06",
+			"text": "Brauchst du was Bestimmtes? Ich besorg's, kein Problem."
+		},
+		{
+			"id": "oez_b07",
+			"text": "Ein Kiosk ist das Herz der Nachbarschaft, sag ich immer."
+		},
+		{
+			"id": "oez_b08",
+			"text": "Setz dich nicht auf die Zeitungen, die will ich noch verkaufen."
+		},
+		{
+			"id": "oez_b09",
+			"text": "Für gute Kunden hab ich immer einen Extra-Kaugummi."
+		},
+		{
+			"id": "oez_b10",
+			"text": "Ich hör hier den ganzen Tag die Neuigkeiten aus dem Viertel."
+		},
+		{
+			"id": "oez_b11",
+			"text": "Das Heft mit der Diskette? Vorne rechts, wie immer."
+		},
+		{
+			"id": "oez_b12",
+			"text": "Bei mir kriegst du alles: Süßes, Saures und die neuesten Hefte."
+		},
+		{
+			"id": "oez_b13",
+			"text": "Ich arbeite von früh bis spät, aber ich mag die Leute."
+		},
+		{
+			"id": "oez_b14",
+			"text": "Frag nur, ich weiß, wo alles liegt. Blind sogar."
+		},
+		{
+			"id": "oez_b15",
+			"text": "Ein Lächeln ist umsonst, das geb ich gern dazu."
+		},
+		{
+			"id": "oez_b16",
+			"text": "Die jungen Leute wie du halten mich jung, sag ich dir."
+		},
+		{
+			"id": "oez_b17",
+			"text": "Willst du wissen, was gut läuft grad? Ich sag's dir."
+		},
+		{
+			"id": "oez_b18",
+			"text": "Ich pack dir's schön ein, damit unterwegs nichts passiert."
+		},
+		{
+			"id": "oez_b19",
+			"text": "Stammkunden zuerst, so mach ich das."
+		},
+		{
+			"id": "oez_b20",
+			"text": "Ich hab schon deinen Vater bedient, als er so klein war wie du."
+		},
+		{
+			"id": "oez_b21",
+			"text": "Guck dich um, vielleicht findest du was Feines."
+		},
+		{
+			"id": "oez_b22",
+			"text": "Kredit gibt's keinen, aber für dich mal ein Auge zudrücken, das schon."
+		},
+		{
+			"id": "oez_b23",
+			"text": "Ich red gern, aber verkaufen muss ich auch. Also, was darf's sein?"
+		},
+		{
+			"id": "oez_b24",
+			"text": "Die besten Sachen sind schnell weg. Sei nächstes Mal früher da."
+		},
+		{
+			"id": "oez_b25",
+			"text": "Ein guter Kiosk hat alles und noch ein bisschen mehr."
+		},
+		{
+			"id": "oez_b26",
+			"text": "Pass auf dein Wechselgeld auf, zähl immer nach. Auch bei mir."
+		},
+		{
+			"id": "oez_b27",
+			"text": "Ich freu mich über jeden, der reinkommt. Ehrlich wahr."
+		},
+		{
+			"id": "oez_b28",
+			"text": "Bring deine Freunde mit, für alle ist was da."
+		},
+		{
+			"id": "oez_b29",
+			"text": "Komm gut nach Hause, mein Freund. Bis morgen."
+		},
+		{
+			"id": "oez_b30",
+			"text": "Das Übliche? Oder heute mal was Neues?"
+		},
+		{
+			"id": "oz_cover",
+			"to": 1996,
+			"topic": "kiosk",
+			"text": "Auf der Coverdisk ist ein Demo, ein Spiel zum Antesten, ein Tool. Steht alles vorne drauf."
+		},
+		{
+			"id": "oz_cd",
+			"from": 1994,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "wandel",
+			"text": "Jetzt gibt's Hefte mit CD statt Diskette. Passt viel mehr drauf, aber die alten Stammkunden murren."
+		},
+		{
+			"id": "oz_internet",
+			"from": 1996,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "wandel",
+			"text": "Sogar Internet-Hefte führ ich jetzt. Ich versteh nur die Hälfte, aber die jungen Leute reißen's mir aus der Hand."
+		},
+		{
+			"id": "oz_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Zehn Jahre steh ich hier. Erst Disketten, dann CDs, jetzt Internet. Ihr werdet groß, und ich verkauf euch alles."
+		},
+		{
+			"id": "oez_x01",
+			"topic": "kiosk",
+			"text": "Na, mein Stammkunde! Für dich hab ich immer eine Coverdisk zur Seite gelegt."
+		},
+		{
+			"id": "oez_x02",
+			"topic": "kiosk",
+			"text": "Süßes gefällig? Und die neue Ausgabe ist da — geht weg wie warme Semmeln."
+		},
+		{
+			"id": "oez_x03",
+			"topic": "kiosk",
+			"text": "Ich hör hier den ganzen Tag die Neuigkeiten aus dem Viertel. Kiosk ist besser als jede Zeitung."
+		},
+		{
+			"id": "oez_x04",
+			"topic": "kiosk",
+			"text": "Ich hab schon deinen Vater bedient, als er so klein war wie du. Verrückt, wie die Zeit rennt."
+		},
+		{
+			"id": "oez_x05",
+			"topic": "kiosk",
+			"text": "Ein Lächeln kostet nichts, das geb ich immer gratis dazu."
+		},
+		{
+			"id": "oez_x06",
+			"topic": "kiosk",
+			"text": "Bei mir kriegst du alles: Süßes, Saures und die neuesten Hefte. Und einen Ratschlag umsonst."
+		},
+		{
+			"id": "oez_x07",
+			"topic": "kiosk",
+			"text": "Pass auf dein Wechselgeld auf, zähl immer nach. Auch bei mir — Vertrauen ist gut, Nachzählen besser."
+		},
+		{
+			"id": "oez_x08",
+			"topic": "kiosk",
+			"text": "Die jungen Leute wie du halten mich jung. Ihr mit euren Disketten und Träumen."
+		},
+		{
+			"id": "oez_x09",
+			"topic": "kiosk",
+			"text": "Ich pack's dir schön ein, damit unterwegs nichts passiert. Service, mein Freund."
+		},
+		{
+			"id": "oez_x10",
+			"topic": "kiosk",
+			"text": "Bring deine Freunde mit. Für alle ist was da, und für Stammkunden das Beste."
+		},
+		{
+			"id": "oez_x11",
+			"from": 0,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "aera",
+			"text": "Jetzt gibt's Hefte mit CD statt Diskette. Passt mehr drauf, aber die alten Kunden murren."
+		},
+		{
+			"id": "oez_x12",
+			"from": 0,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "aera",
+			"text": "Sogar Internet-Hefte führ ich. Ich versteh nur die Hälfte, aber ihr reißt sie mir aus der Hand."
+		},
+		{
+			"id": "oez_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Zehn Jahre steh ich hier. Erst Disketten, dann CDs, jetzt Internet. Ihr werdet groß, ich verkauf euch alles."
+		}
+	]
+}

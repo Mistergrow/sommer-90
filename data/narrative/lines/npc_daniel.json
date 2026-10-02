@@ -1,0 +1,340 @@
+{
+	"npc": "npc_daniel",
+	"comment": "Zeilen-Pool fuer npc_daniel. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "dan_b01",
+			"text": "Sei kurz leise, ich hab den Bug fast... nein. Doch nicht. Erzähl."
+		},
+		{
+			"id": "dan_b02",
+			"text": "Ich schreib grad ein kleines Tool. Läuft's, kriegst du 'ne Kopie."
+		},
+		{
+			"id": "dan_b03",
+			"text": "Code ist wie ein Gespräch mit einer sehr pedantischen Maschine."
+		},
+		{
+			"id": "dan_b04",
+			"text": "Ein Semikolon vergessen und die Welt steht still. Willkommen in meinem Leben."
+		},
+		{
+			"id": "dan_b05",
+			"text": "Ich denk in Schleifen. Manchmal auch im Schlaf."
+		},
+		{
+			"id": "dan_b06",
+			"text": "Willst du wissen, wie das funktioniert? Ich erklär's dir, aber nimm dir Zeit."
+		},
+		{
+			"id": "dan_b07",
+			"text": "Der Fehler sitzt immer vor dem Bildschirm. Meistens."
+		},
+		{
+			"id": "dan_b08",
+			"text": "Ich bau lieber selbst was, als fertige Programme zu benutzen."
+		},
+		{
+			"id": "dan_b09",
+			"text": "Ein sauberer Code ist wie ein aufgeräumtes Zimmer. Selten, aber schön."
+		},
+		{
+			"id": "dan_b10",
+			"text": "Frag mich was Technisches, dann leuchten meine Augen."
+		},
+		{
+			"id": "dan_b11",
+			"text": "Ich hab die halbe Nacht nach einem Fehler gesucht. Es war ein Tippfehler."
+		},
+		{
+			"id": "dan_b12",
+			"text": "Logik lügt nicht. Menschen schon, aber Logik nicht."
+		},
+		{
+			"id": "dan_b13",
+			"text": "Wenn du programmieren lernen willst — ich zeig's dir. Ernsthaft."
+		},
+		{
+			"id": "dan_b14",
+			"text": "Ich red mit dem Rechner. Er antwortet in Fehlermeldungen."
+		},
+		{
+			"id": "dan_b15",
+			"text": "Das Schönste ist der Moment, wenn aus Zeichen etwas Lebendiges wird."
+		},
+		{
+			"id": "dan_b16",
+			"text": "Ich hab mehr Kommentare im Code als Freunde. Fast."
+		},
+		{
+			"id": "dan_b17",
+			"text": "Kaffee, Ruhe, ein Problem — mehr brauch ich nicht."
+		},
+		{
+			"id": "dan_b18",
+			"text": "Ich hab da 'ne elegante Lösung gefunden. Willst du sie sehen?"
+		},
+		{
+			"id": "dan_b19",
+			"text": "Andere lesen Comics, ich les Handbücher. Jedem das Seine."
+		},
+		{
+			"id": "dan_b20",
+			"text": "Ein guter Algorithmus ist wie ein gutes Gedicht. Nur nützlicher."
+		},
+		{
+			"id": "dan_b21",
+			"text": "Ich verlier mich in Details. Das ist Fluch und Gabe."
+		},
+		{
+			"id": "dan_b22",
+			"text": "Wenn's kompiliert, ist der halbe Tag gerettet."
+		},
+		{
+			"id": "dan_b23",
+			"text": "Ich denk, also debugge ich."
+		},
+		{
+			"id": "dan_b24",
+			"text": "Bring mir ein Problem, kein Geschwätz — das lieb ich."
+		},
+		{
+			"id": "dan_b25",
+			"text": "Ich hab mir alles selbst beigebracht. Buch für Buch."
+		},
+		{
+			"id": "dan_b26",
+			"text": "Die Maschine ist geduldig. Ich muss es auch lernen."
+		},
+		{
+			"id": "dan_b27",
+			"text": "Manchmal ist die einfachste Lösung die schwerste zu finden."
+		},
+		{
+			"id": "dan_b28",
+			"text": "Ich träum in Variablen. Nicht schön, aber ehrlich."
+		},
+		{
+			"id": "dan_b29",
+			"text": "Setz dich, aber fass die Tastatur nicht an, ich bin mittendrin."
+		},
+		{
+			"id": "dan_b30",
+			"text": "Am Ende zählt nur: läuft es? Und läuft es sauber?"
+		},
+		{
+			"id": "da_basic",
+			"to": 1994,
+			"topic": "coden",
+			"text": "In BASIC hab ich angefangen, jetzt beiß ich mich in Assembler. Näher am Silizium geht nicht."
+		},
+		{
+			"id": "da_bbs",
+			"to": 1995,
+			"topic": "bbs",
+			"text": "Ich hing gestern bis drei in einer Mailbox. Modemgeräusche sind Musik, sag ich dir."
+		},
+		{
+			"id": "da_bbs2",
+			"from": 1993,
+			"to": 1996,
+			"topic": "bbs",
+			"text": "Der Sysop hat mir Operator-Rechte gegeben. Kleine Ehre, große Verantwortung."
+		},
+		{
+			"id": "da_net",
+			"from": 1996,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "netz",
+			"text": "Vergiss Mailboxen — das Internet ist die Zukunft. Ich bastel an meinem eigenen Netzwerk."
+		},
+		{
+			"id": "da_netz",
+			"from": 1999,
+			"needs": [
+				"daniel_netz"
+			],
+			"once": true,
+			"topic": "netz",
+			"text": "Es steht! Zwei Rechner, ein Kabel, sie reden miteinander. Klingt simpel, war die Hölle."
+		},
+		{
+			"id": "da_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Der ganze Kram, den wir uns beigebracht haben — Schule hat davon nix mitgekriegt. Egal, wir wussten's besser."
+		},
+		{
+			"id": "da_apfel1",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"once": true,
+			"topic": "apfel",
+			"text": "Du glaubst mir eh nicht: Ich werde für eine Firma arbeiten, die Telefone für unterwegs entwickelt. Telefone! Zum Mitnehmen!"
+		},
+		{
+			"id": "da_apfel2",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Die Firma mit dem angebissenen Apfel, sag ich dir — die machen irgendwann Telefone, die jeder in der Tasche hat."
+		},
+		{
+			"id": "da_apfel3",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Warum ein ANGEBISSENER Apfel? Frag nicht. Aber merk dir das Logo — du wirst es überall sehen. Überall!"
+		},
+		{
+			"id": "da_apfel4",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Alle gucken mich schief an, wenn ich vom Apfel-Telefon rede. Sollen sie. In zehn Jahren lachen wir andersrum."
+		},
+		{
+			"id": "da_apfel5",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Ein Telefon, ein Rechner und Musik — alles in EINEM Gerät für die Hosentasche. Ich spinne nicht, das kommt!"
+		},
+		{
+			"id": "da_apfel6",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Stell dir vor: Geräte, die ÜBERALL ins Internet gehen. Im Bus. Auf dem Klo. Überall! Warum lacht ihr?!"
+		},
+		{
+			"id": "da_apfel7",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Ich hab's dem Mike erklärt: kein Kabel, kein Modem-Kreischen, das Netz einfach in der Luft. Er hat mir den Vogel gezeigt."
+		},
+		{
+			"id": "da_apfel8",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Karten, Zeitungen, Briefe, Fotos — alles wandert in dieses eine Taschengerät. Schreib's dir auf, mit Datum!"
+		},
+		{
+			"id": "da_apfel9",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "apfel",
+			"text": "Die Firma mit dem Apfel wirkt halb tot, ich weiß. Aber warte ab — die haben da einen Plan, ich spür's."
+		},
+		{
+			"id": "dan_x01",
+			"topic": "coden",
+			"text": "Ich denk in Schleifen und Sprüngen. Beim Einkaufen sortier ich die Regale im Kopf."
+		},
+		{
+			"id": "dan_x02",
+			"topic": "coden",
+			"text": "Ein Programm ist ehrlich: Läuft's nicht, hast DU was falsch gemacht. Das hat was Reinigendes."
+		},
+		{
+			"id": "dan_x03",
+			"topic": "coden",
+			"text": "Ich hab mir Assembler mit einem Buch und drei durchwachten Nächten beigebracht. Bereue nix."
+		},
+		{
+			"id": "dan_x04",
+			"topic": "coden",
+			"text": "Der schönste Moment ist, wenn aus totem Code plötzlich was Lebendiges wird. Gänsehaut."
+		},
+		{
+			"id": "dan_x05",
+			"topic": "coden",
+			"text": "Ich kommentier meinen Code, als läse ihn ein Idiot. Der Idiot bin meistens ich, drei Wochen später."
+		},
+		{
+			"id": "dan_x06",
+			"topic": "coden",
+			"text": "Wenn du programmieren lernen willst — ich zeig's dir. Aber bring Geduld mit, keine Ausreden."
+		},
+		{
+			"id": "dan_x07",
+			"topic": "coden",
+			"text": "Kaffee, Kopfhörer, ein Problem. Mehr Glück gibt's für mich nicht."
+		},
+		{
+			"id": "dan_x08",
+			"topic": "coden",
+			"text": "Ich träum in Variablen. Neulich hab ich im Schlaf einen Bug gefunden. Ehrlich."
+		},
+		{
+			"id": "dan_x09",
+			"topic": "coden",
+			"text": "Die Schule bringt mir nix bei, was ich brauch. Also bring ich's mir selber bei. Buch für Buch."
+		},
+		{
+			"id": "dan_x10",
+			"to": 1996,
+			"topic": "bbs",
+			"text": "In der Mailbox nachts, das ist meine Kirche. Modem-Rauschen ist meine Orgel."
+		},
+		{
+			"id": "dan_x11",
+			"from": 1993,
+			"to": 1997,
+			"topic": "bbs",
+			"text": "Der Sysop hat mir Operator-Rechte gegeben. Kleine Ehre, riesiges Verantwortungsgefühl."
+		},
+		{
+			"id": "dan_x12",
+			"from": 0,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "aera",
+			"text": "Vergiss Mailboxen. Das Internet ist ein Ozean, und wir stehen grad mit nassen Füßen am Ufer."
+		},
+		{
+			"id": "dan_x13",
+			"from": 0,
+			"needs": [
+				"daniel_netz"
+			],
+			"topic": "aera",
+			"text": "Ich bau mein eigenes Netzwerk. Zwei Rechner, ein Kabel — und sie reden. Das ist Magie mit Steckern."
+		},
+		{
+			"id": "dan_x14",
+			"from": 0,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "aera",
+			"text": "Die Firma mit dem Apfel wirkt halb tot. Aber ich spür's: die haben was in der Schublade."
+		}
+	]
+}

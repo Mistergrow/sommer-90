@@ -1,0 +1,918 @@
+{
+	"comment": "Workbench-Software-Bibliothek. Fiktive Homages an die Amiga/90er-Szene (nicht-kommerziell, Marken-/Lizenzklaerung s. GDD 18). Schema pro Programm: id, display_name, category, year_from/to, source[], requirements{}, install_method, app_key (UIManager-Oeffner oder 'generic'), icon (Werkbank-Emblem), description, rarity. 'installed' ist Laufzeit-Zustand (PlayerStats.programs). Nicht alles ist sofort da: Regeln greifen ueber ProgramLibrary.requirement_status(). requirements-Schluessel: modem, external_drive, printer, ram_mb, friend_trust, bbs_access, club_membership. source: preinstalled | computer_shop | bbs_download | computer_club | friend | magazine_coverdisk | flea_market.",
+	"categories": {
+		"system": "Betriebssystem / Tools",
+		"file": "Datei / Archiv",
+		"disk": "Disketten / Backup",
+		"music": "Tracker / Musik",
+		"graphics": "Grafik / DTP",
+		"text": "Text / Office",
+		"code": "Programmierung",
+		"comm": "BBS / Kommunikation",
+		"scene": "Szene",
+		"cd": "CD"
+	},
+	"programs": [
+		{
+			"id": "sysinfo",
+			"display_name": "SysInfo",
+			"category": "system",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"magazine_coverdisk",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "open_sysinfo",
+			"icon": "chip",
+			"description": "Zeigt Prozessor, Speicher und Laufwerke.",
+			"rarity": "common"
+		},
+		{
+			"id": "prefs_editor",
+			"display_name": "Einstellungen",
+			"category": "system",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"computer_shop"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "open_wb_prefs",
+			"icon": "gear",
+			"description": "Workbench-Vorlieben: Zeiger, Farben, Bildschirm.",
+			"rarity": "common"
+		},
+		{
+			"id": "memory_monitor",
+			"display_name": "Speicher-Wache",
+			"category": "system",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "generic",
+			"icon": "gauge",
+			"description": "Chip- und Fast-RAM live im Blick.",
+			"rarity": "common"
+		},
+		{
+			"id": "icon_editor",
+			"display_name": "Icon-Werkstatt",
+			"category": "graphics",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "generic",
+			"icon": "paint",
+			"description": "Workbench-Piktogramme selbst malen.",
+			"rarity": "common"
+		},
+		{
+			"id": "disk_formatter",
+			"display_name": "Disketten-Former",
+			"category": "disk",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "generic",
+			"icon": "disk",
+			"description": "Beschreibbare Disketten mit Schreibschutz-Schieber formatieren und verifizieren (880 KB).",
+			"rarity": "common"
+		},
+		{
+			"id": "xcopy",
+			"display_name": "X-COPY",
+			"category": "disk",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"friend",
+				"flea_market",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "trade",
+			"app_key": "open_disk_copy",
+			"icon": "copy",
+			"description": "Der Disketten-Kopierer. Jeder hatte ihn.",
+			"rarity": "common"
+		},
+		{
+			"id": "sommer_copy_92",
+			"display_name": "Sommer Copy 92",
+			"category": "disk",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"quest"
+			],
+			"requirements": {
+				"ram_mb": 1
+			},
+			"install_method": "quest",
+			"app_key": "open_sommer_copy",
+			"icon": "copy",
+			"description": "Dein eigener ECS-Diskettenkopierer: eine DD komplett puffern, schreiben und Spur fuer Spur verifizieren.",
+			"rarity": "unique"
+		},
+		{
+			"id": "viruschecker",
+			"display_name": "Virus-Checker",
+			"category": "system",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "open_virus_checker",
+			"icon": "virus",
+			"description": "Bootblock-Waechter. Pflicht beim Tauschen.",
+			"rarity": "common"
+		},
+		{
+			"id": "file_manager_opus_homage",
+			"display_name": "Verzeichnis-Opus",
+			"category": "file",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_shop"
+			],
+			"requirements": {
+				"ram_mb": 1
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "folder",
+			"description": "Der Koenig der Dateiverwaltung. Zwei Fenster, tausend Knoepfe.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "diskmaster_homage",
+			"display_name": "Disk-Meister",
+			"category": "file",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "folder",
+			"description": "Schlanker Datei-/Diskettenlister.",
+			"rarity": "common"
+		},
+		{
+			"id": "filemaster_homage",
+			"display_name": "Datei-Meister",
+			"category": "file",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "folder",
+			"description": "Kopieren, umbenennen, loeschen im Doppelfenster.",
+			"rarity": "common"
+		},
+		{
+			"id": "lha_unpacker",
+			"display_name": "LH-Archiv",
+			"category": "file",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "archive",
+			"description": "Packt .lha-Archive aus und ein.",
+			"rarity": "common"
+		},
+		{
+			"id": "lzx_unpacker",
+			"display_name": "LZ-Archiv",
+			"category": "file",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {
+				"ram_mb": 1
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "archive",
+			"description": "Neuer, staerkerer Packer als LH.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "dms_unpacker",
+			"display_name": "Disketten-Presse",
+			"category": "file",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "archive",
+			"description": "Ganze Diskettenimages (.dms) packen/schreiben.",
+			"rarity": "common"
+		},
+		{
+			"id": "powerpacker_homage",
+			"display_name": "Power-Packer",
+			"category": "file",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "archive",
+			"description": "Komprimiert Programme, damit mehr auf die Diskette passt.",
+			"rarity": "common"
+		},
+		{
+			"id": "xcopy_pro",
+			"display_name": "X-COPY Professional",
+			"category": "disk",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"computer_club",
+				"bbs_download"
+			],
+			"requirements": {
+				"friend_trust": 40,
+				"bbs_access": true
+			},
+			"install_method": "trade",
+			"app_key": "open_xcopy_pro",
+			"icon": "copy",
+			"description": "Die aufgemotzte Elite-Version. Nur unter Bekannten.",
+			"rarity": "rare"
+		},
+		{
+			"id": "disksalv_homage",
+			"display_name": "Disk-Retter",
+			"category": "disk",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "disk",
+			"description": "Rettet Daten von kaputten Disketten.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "quarterback_homage",
+			"display_name": "Sicherung-Pro",
+			"category": "disk",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {
+				"external_drive": true
+			},
+			"install_method": "purchase",
+			"app_key": "generic",
+			"icon": "disk",
+			"description": "Komfort-Backup ueber viele Disketten.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "disk_repair",
+			"display_name": "Bad-Block-Doktor",
+			"category": "disk",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "disk",
+			"description": "Prueft und repariert defekte Sektoren.",
+			"rarity": "common"
+		},
+		{
+			"id": "protracker",
+			"display_name": "PRO-TRACKER",
+			"category": "music",
+			"year_from": 1991,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club",
+				"friend"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "open_tracker_pattern",
+			"icon": "note",
+			"description": "Der Szene-Tracker/Player schlechthin.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "noisetracker_homage",
+			"display_name": "Krach-Tracker",
+			"category": "music",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"friend"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "open_mod_player",
+			"icon": "note",
+			"description": "Der Urvater der MOD-Tracker.",
+			"rarity": "common"
+		},
+		{
+			"id": "octamed_homage",
+			"display_name": "Acht-Spur MED",
+			"category": "music",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {
+				"ram_mb": 1
+			},
+			"install_method": "download",
+			"app_key": "open_mod_player",
+			"icon": "note",
+			"description": "Acht Kanaele statt vier. Fuer Fortgeschrittene.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "sample_editor",
+			"display_name": "Sample-Werkstatt",
+			"category": "music",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {
+				"ram_mb": 1
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "note",
+			"description": "Klangschnipsel schneiden, drehen, verhallen.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "dpaint",
+			"display_name": "Deluxe Malen II",
+			"category": "graphics",
+			"year_from": 1991,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download",
+				"friend"
+			],
+			"requirements": {},
+			"install_method": "purchase",
+			"app_key": "open_paint",
+			"icon": "paint",
+			"description": "Lisas 16-Farben-Pixelstudio: Ebenen, Formen, Dithering, Spiegeln und Undo/Redo.",
+			"rarity": "common"
+		},
+		{
+			"id": "brilliance_homage",
+			"display_name": "Brillanz",
+			"category": "graphics",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {
+				"ram_mb": 2
+			},
+			"install_method": "purchase",
+			"app_key": "generic",
+			"icon": "paint",
+			"description": "24-Bit-Traeume. Braucht ordentlich RAM.",
+			"rarity": "rare"
+		},
+		{
+			"id": "ppaint_homage",
+			"display_name": "Personal Malen",
+			"category": "graphics",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"magazine_coverdisk",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "open_paint",
+			"icon": "paint",
+			"description": "Solides Malprogramm von der Heft-CD.",
+			"rarity": "common"
+		},
+		{
+			"id": "label_designer",
+			"display_name": "Etiketten-Studio",
+			"category": "graphics",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_shop"
+			],
+			"requirements": {
+				"printer": true
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "text",
+			"description": "Diskettenetiketten gestalten und drucken.",
+			"rarity": "common"
+		},
+		{
+			"id": "cover_designer",
+			"display_name": "Cover-Studio",
+			"category": "graphics",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {
+				"printer": true,
+				"ram_mb": 1
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "text",
+			"description": "Cover und Inlays fuer die Sammlung.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "texteditor",
+			"display_name": "TextKraft",
+			"category": "text",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "purchase",
+			"app_key": "open_text_editor",
+			"icon": "text",
+			"description": "Kleine Textverarbeitung.",
+			"rarity": "common"
+		},
+		{
+			"id": "cygnused_homage",
+			"display_name": "Schwan-Editor",
+			"category": "text",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "open_text_editor",
+			"icon": "text",
+			"description": "Schneller Text-/Quelltext-Editor der Szene.",
+			"rarity": "common"
+		},
+		{
+			"id": "finalwriter_homage",
+			"display_name": "Final-Schreiber",
+			"category": "text",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"computer_shop"
+			],
+			"requirements": {
+				"ram_mb": 2,
+				"printer": true
+			},
+			"install_method": "purchase",
+			"app_key": "generic",
+			"icon": "text",
+			"description": "Richtige Textverarbeitung mit Schriften. RAM-hungrig.",
+			"rarity": "rare"
+		},
+		{
+			"id": "devpac_homage",
+			"display_name": "Assembler-Werkstatt",
+			"category": "code",
+			"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "purchase",
+			"app_key": "generic",
+			"icon": "code",
+			"description": "68000-Assembler zum Programmieren.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "sommer_suite",
+			"display_name": "Sommer Development System",
+			"category": "code",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"preinstalled"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "open_sommer_suite",
+			"icon": "code",
+			"description": "Zentrale Sommerbench-Oberflaeche fuer die komplette Entwicklungs-Suite.",
+			"rarity": "common"
+		},
+		{
+			"id": "sommer_game",
+			"display_name": "Sommer Game",
+			"category": "code",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": ["quest"],
+			"requirements": {},
+			"install_method": "quest",
+			"app_key": "open_sommer_game",
+			"icon": "code",
+			"description": "Die gemeinsam entwickelte, modulare 2D-Spielengine fuer Action, Adventure, Simulation und Strategie.",
+			"rarity": "rare"
+		},
+		{
+		"id": "sommer_basic",
+		"display_name": "Sommer BASIC",
+			"category": "code",
+		"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"preinstalled",
+				"computer_shop",
+				"magazine_coverdisk"
+			],
+			"requirements": {},
+			"install_method": "purchase",
+			"app_key": "open_sommer_basic",
+			"icon": "code",
+			"description": "Die integrierte 1990er Entwicklungsumgebung: Editor, Live-Diagnose und BASIC-Laufzeit.",
+			"rarity": "common"
+		},
+		{
+			"id": "sommer_basic_compiler_ii",
+			"display_name": "Sommer BASIC Compiler II",
+			"category": "code",
+		"year_from": 1992,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {
+				"ram_mb": 1
+			},
+			"install_method": "purchase",
+			"app_key": "open_sommer_basic",
+			"icon": "code",
+			"description": "Compiler- und Engine-Erweiterung fuer groessere Sommer-BASIC-Projekte.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "terminal",
+			"display_name": "Nacht-Comm",
+			"category": "comm",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {
+				"modem": true
+			},
+			"install_method": "download",
+			"app_key": "open_modem_config",
+			"icon": "term",
+			"description": "Terminalprogramm fuers Modem.",
+			"rarity": "common"
+		},
+		{
+			"id": "bbs_mail",
+			"display_name": "Post-Leser",
+			"category": "comm",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {
+				"modem": true
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "term",
+			"description": "Mailboxen-Nachrichten offline lesen.",
+			"rarity": "common"
+		},
+		{
+		"id": "download_manager",
+			"display_name": "Hol-Manager",
+			"category": "comm",
+		"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {
+				"modem": true
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "term",
+			"description": "Download-Warteschlange fuer lange Naechte.",
+			"rarity": "common"
+		},
+		{
+			"id": "scout_homage",
+			"display_name": "Spaeher",
+			"category": "system",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "chip",
+			"description": "Zeigt Tasks, Ports und offene Dateien.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "snoop_monitor",
+			"display_name": "Schnueffel-DOS",
+			"category": "system",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"computer_club"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "gear",
+			"description": "Zeichnet mit, welche Datei welches Programm sucht.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "mcp_homage",
+			"display_name": "Master-Control",
+			"category": "system",
+			"year_from": 1995,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {
+				"ram_mb": 2
+			},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "gear",
+			"description": "Hundert kleine System-Verbesserungen auf einmal.",
+			"rarity": "rare"
+		},
+		{
+			"id": "magicwb_homage",
+			"display_name": "Magische Werkbank",
+			"category": "system",
+			"year_from": 1994,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "paint",
+			"description": "Schoenere Icons und 8-Farben-Look fuer die Werkbank.",
+			"rarity": "common"
+		},
+		{
+			"id": "viruz_homage",
+			"display_name": "Virus-Z",
+			"category": "system",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"magazine_coverdisk"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "open_virus_checker",
+			"icon": "virus",
+			"description": "Wohnzimmer-Virenscanner mit grosser Datenbank.",
+			"rarity": "common"
+		},
+		{
+			"id": "nfo_viewer",
+			"display_name": "NFO-Leser",
+			"category": "scene",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download",
+				"flea_market"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "eye",
+			"description": "ASCII-Kunst und Gruss-Listen ansehen.",
+			"rarity": "common"
+		},
+		{
+			"id": "scroller_viewer",
+			"display_name": "Scroller-Betrachter",
+			"category": "scene",
+			"year_from": 1993,
+			"year_to": 1999,
+			"source": [
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "download",
+			"app_key": "generic",
+			"icon": "eye",
+			"description": "Endlose Grusstexte, wie im Cracktro.",
+			"rarity": "common"
+		},
+		{
+			"id": "makecd_homage",
+			"display_name": "CD-Studio",
+			"category": "cd",
+			"year_from": 1996,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {
+				"ram_mb": 2
+			},
+			"install_method": "purchase",
+			"app_key": "generic",
+			"icon": "disk",
+			"description": "Eigene CDs brennen. Die Zukunft, teuer.",
+			"rarity": "rare"
+		},
+		{
+			"id": "cdfs_homage",
+			"display_name": "CD-Dateisystem",
+			"category": "cd",
+			"year_from": 1995,
+			"year_to": 1999,
+			"source": [
+				"computer_shop",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "purchase",
+			"app_key": "generic",
+			"icon": "disk",
+			"description": "Liest CD-ROMs am Amiga.",
+			"rarity": "uncommon"
+		},
+		{
+			"id": "modplayer",
+			"display_name": "Pro-Tracker MOD-Player",
+			"category": "media",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"magazine_coverdisk",
+				"bbs_download"
+			],
+			"requirements": {},
+			"install_method": "preinstalled",
+			"app_key": "open_mod_player",
+			"icon": "note",
+			"description": "Spielt MOD-Musikmodule mit laufender Pattern-Anzeige.",
+			"rarity": "common"
+		},
+		{
+			"id": "summer_disk",
+			"display_name": "SommerDisk",
+			"category": "disk",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": ["quest"],
+			"requirements": {},
+			"install_method": "personal",
+			"app_key": "open_summer_disk",
+			"icon": "disk",
+			"description": "Persönliche Tauschdisketten aus eigenen Fundstücken zusammenstellen.",
+			"rarity": "personal"
+		},
+		{
+			"id": "scene_studio",
+			"display_name": "Szene-Studio",
+			"category": "scene",
+			"year_from": 1991,
+			"year_to": 1999,
+			"source": ["quest", "computer_club"],
+			"requirements": {},
+			"install_method": "club_workdisk",
+			"app_key": "open_demo_maker",
+			"icon": "code",
+			"description": "Tobias' gemeinsame Projektwerkbank für Club-Intros, Demos und eigene Spiele.",
+			"rarity": "personal"
+		},
+		{
+			"id": "my_listing_tool",
+			"display_name": "Mein Listing-Tool",
+			"category": "code",
+			"year_from": 1990,
+			"year_to": 1999,
+			"source": [
+				"listing"
+			],
+			"requirements": {},
+			"install_method": "typed_from_magazine",
+			"app_key": "open_sommer_basic",
+			"icon": "code",
+			"description": "Selbst aus einem Magazin abgetippt und als Sommer-BASIC-Projekt gesichert.",
+			"rarity": "personal"
+		}
+	]
+}

@@ -1,0 +1,862 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_stefan",
+	"dialogues": {
+		"stefan_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Na? Der Krause hatte letzten Samstag wieder eine ganze Bananenkiste voller Disketten. Und die neue Coverdisk ist auch nicht schlecht.",
+					"choices": [
+						{
+							"text": "Du wolltest doch noch dieses Rennspiel vom Flohmarkt.",
+							"cond": {
+								"flag": {
+									"quest_space_game": "done"
+								},
+								"not_flag": "turbo_stunt_intro"
+							},
+							"next": "n_turbo_offer",
+							"id": "reply_0"
+						},
+						{
+							"text": "Schau dir meine erste Sommerdisk an.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_sommerdisk_1990",
+									"stage": 1
+								}
+							},
+							"next": "n_summer_disk",
+							"id": "reply_1"
+						},
+						{
+							"text": "Du hast damals meine einzige Fassung vom Weltraumspiel bekommen.",
+							"cond": {
+								"flag": {
+									"quest_space_game": "done"
+								},
+								"not_has_template": "game_space_lemming"
+							},
+							"next": "n_space_backup",
+							"id": "reply_2"
+						},
+						{
+							"text": "Ich hab unseren Spiel-Prototyp fertig.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_eigenes_spiel",
+									"stage": 4
+								}
+							},
+							"next": "n_game_feedback",
+							"id": "reply_3"
+						},
+						{
+							"text": "Wir müssen noch entscheiden, wie das Spiel rausgeht.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_eigenes_spiel",
+									"stage": 5
+								}
+							},
+							"next": "n_game_distribution",
+							"id": "reply_4"
+						},
+						{
+							"text": "Ich bin wegen des richtigen Jobs hier.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_erster_job",
+									"stage": 3
+								},
+								"ruf_min": 18
+							},
+							"next": "n_job_interview",
+							"id": "reply_5"
+						},
+						{
+							"text": "Der neue Firmen-Prototyp ist bereit.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_firma_talent",
+									"stage": 1
+								}
+							},
+							"next": "n_firma_pitch",
+							"id": "reply_6"
+						},
+						{
+							"text": "Reden wir über das, was nach 1999 kommt.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_finale_weg",
+									"stage": 0
+								}
+							},
+							"next": "n_finale",
+							"id": "reply_7"
+						},
+						{
+							"text": "Was geht in der Szene?",
+							"next": "n2",
+							"id": "reply_8"
+						},
+						{
+							"text": "Muss weiter. Bis dann!",
+							"next": null,
+							"id": "reply_9"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Die RADIANT-Jungs sollen an einer neuen Demo sitzen. Sinescroller, Copper-Balken, das volle Programm. Freitags trifft sich uebrigens der Computerclub... aber da kommst du nur mit etwas Ruf rein.",
+					"choices": [
+						{
+							"text": "Gut zu wissen.",
+							"effects_once": "stefan_scene_tip_reward",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_turbo_offer": {
+					"speaker": "Stefan",
+					"text": "Turbo Kart Deluxe! Fahr selbst ein Rennen, dann ziehst du mir eine Arbeitskopie. Fuer Fund und Muehe bekommst du 12 Mark und eine neue Leerdiskette. Deine Quelle bleibt natuerlich bei dir.",
+					"choices": [
+						{
+							"text": "Abgemacht. Diesmal weiss ich schon, wie ich die Quelle bewahre.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "turbo_stunt_intro",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "quest_turbo_stunt",
+									"value": "open"
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Turbo Kart finden, selbst spielen und fuer Stefan kopieren."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_summer_disk": {
+					"speaker": "Stefan",
+					"text": "Das ist nicht einfach irgendeine Kopie: Du hast ausgewählt, beschriftet und dir gemerkt, wo jedes Stück herkommt. Nächstes Jahr bauen wir nicht nur eine Disk — wir machen etwas mit der ganzen Gruppe.",
+					"choices": [
+						{
+							"text": "Vom Karton bis zu meiner eigenen Disk. Gar nicht schlecht.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "show_summer_disk"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_space_backup": {
+					"speaker": "Stefan",
+					"text": "Mist, darauf haette ich dich hinweisen muessen. Ich habe sofort eine Sicherheitskopie gezogen. Nimm sie mit — ohne Quelle kannst du ja keine weiteren Kopien anfertigen.",
+					"choices": [
+						{
+							"text": "Diesmal bleibt die Sicherung in meiner Box.",
+							"next": null,
+							"effects": [
+								{
+									"type": "disk_template",
+									"id": "game_space_lemming",
+									"memory": "Sicherheitskopie von Stefan zurueckbekommen"
+								},
+								{
+									"type": "toast",
+									"text": "Stefans Sicherheitskopie liegt wieder in deiner Diskettenbox."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "nervous"
+				},
+				"n_game_feedback": {
+					"speaker": "Stefan",
+					"text": "Das ist kein umetikettiertes Demo-Projekt. Das reagiert, hat Tempo, hat DEINE Idee. Genau deshalb wollte ich, dass du es wirklich baust.",
+					"choices": [
+						{
+							"text": "Dann legen wir jetzt fest, wie es unter die Leute kommt.",
+							"next": "n_game_distribution",
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "show_game_to_stefan"
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_stefan",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_game_distribution": {
+					"speaker": "Stefan",
+					"text": "Der Händler würde eine kleine Serie nehmen. Das bringt sofort Geld. Oder wir geben Arbeitskopien im Club weiter — weniger Einnahmen, aber die Leute kennen dann deinen Namen.",
+					"choices": [
+						{
+							"text": "Kleine Serie. Ich will sehen, ob jemand dafür bezahlt.",
+							"next": null,
+							"effects_once": "own_game_paid_distribution",
+							"effects": [
+								{
+									"type": "game_distribution",
+									"mode": "paid",
+									"value": 25
+								},
+								{
+									"type": "flag",
+									"flag": "game_distribution_money"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_game_distribution"
+								},
+								{
+									"type": "toast",
+									"text": "Kleinserie: +25 DM Vorschuss; acht kleine Wochenabrechnungen folgen. Dein Master bleibt bei dir."
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Arbeitskopien für den Club. Erst soll das Spiel seinen Namen bekommen.",
+							"next": null,
+							"effects_once": "own_game_club_distribution",
+							"effects": [
+								{
+									"type": "game_distribution",
+									"mode": "club"
+								},
+								{
+									"type": "stat",
+									"stat": "ruf",
+									"value": 5
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_stefan",
+									"value": 1
+								},
+								{
+									"type": "flag",
+									"flag": "game_distribution_reputation"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_game_distribution"
+								},
+								{
+									"type": "toast",
+									"text": "Im Club wandert dein Spiel von Hand zu Hand. Bezahlt wird mit Rückmeldungen und Ruf."
+								}
+							],
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_job_interview": {
+					"speaker": "Stefan",
+					"text": "Ich hab deinen Auftrag gesehen: sauber dokumentiert, fertig geworden und kein großes Maul dabei. Wenn du willst, ist Montag dein erster richtiger Arbeitstag.",
+					"choices": [
+						{
+							"text": "Montag bin ich da.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "job_interview"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_firma_pitch": {
+					"speaker": "Stefan",
+					"text": "Der Prototyp hat Ecken, aber er hat eine Richtung. Ich will dich nicht als billigen Tester. Ich will dich als jemanden, der mitentscheidet.",
+					"choices": [
+						{
+							"text": "Dann bauen wir das gemeinsam weiter.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "firma_pitch"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_finale": {
+					"speaker": "Stefan",
+					"text": "Zehn Jahre, Mann. Aus einer Kiste vom Flohmarkt wurde dein ganzes Leben. Was willst du daraus machen?",
+					"choices": [
+						{
+							"text": "Mit dir eine richtige Firma aufbauen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "life_path_firma"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_life_path"
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Der Szene treu bleiben und weiter releasen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "life_path_scene"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_life_path"
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Mein eigenes Ding machen – unabhängig.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "life_path_independent"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_life_path"
+								}
+							],
+							"id": "reply_2"
+						}
+					],
+					"emotion": "thinking"
+				}
+			}
+		},
+		"stefan_quest_done": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "NEIN. Du hast es WIRKLICH? Space Lemming Trouble?! Aber die ROTE Disk ist deine Masterquelle — die bleibt bei dir. Starte zuhause X-COPY und zieh mir eine Kopie auf eine blaue Leerdiskette. Nur die Kopie nehme ich mit.",
+					"choices": [
+						{
+							"text": "Alles klar: Rot bleibt bei mir, Blau ist für dich.",
+							"next": null,
+							"effects": [
+								{
+									"type": "toast",
+									"text": "Noch nichts übergeben. Zuhause: Amiga starten → X-COPY booten → rote Masterdisk als Quelle → blaue Leerdiskette als Ziel."
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Die blaue Kopie ist fertig. Die ist für dich.",
+							"cond": {
+								"has_player_copy_of": "space_lemming_trouble"
+							},
+							"next": "n2",
+							"effects": [
+								{
+									"type": "take_disk_template",
+									"id": "game_space_lemming",
+									"player_copy_only": true,
+									"preserve_best_source": true
+								},
+								{
+									"type": "disk_template",
+									"id": "demo_ocean_dreams",
+									"memory": "Bei Stefan im Zimmer getauscht, Sommer 1992"
+								},
+								{
+									"type": "stat",
+									"stat": "ruf",
+									"value": 5
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_stefan",
+									"value": 2
+								},
+								{
+									"type": "flag",
+									"flag": "quest_space_game",
+									"value": "done"
+								},
+								{
+									"type": "toast",
+									"text": "Kopie übergeben — deine rote Masterdisk bleibt sicher. +5 Ruf, neue Diskette: Ocean Dreams!"
+								},
+								{
+									"type": "quest_action",
+									"action": "deliver_space_game"
+								}
+							],
+							"id": "reply_1"
+						}
+					],
+					"emotion": "shocked"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Genau so: deine rote Quelle, meine blaue Kopie. Bei mir gab's neulich einen CRC Error... egal! Freitag ist Clubabend. Mit deinem neuen Ruf lässt dich der Leiter vielleicht bald rein.",
+					"choices": [
+						{
+							"text": "Stark. Bis Freitag!",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "laughing"
+				}
+			}
+		},
+		"stefan_turbo_quest_done": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Du hast Turbo Kart wirklich gefunden, ein Rennen gefahren UND eine eigene Kopie gezogen? Dann hast du diesmal an alles gedacht.",
+					"choices": [
+						{
+							"text": "Hier ist deine Kopie. Meine Flohmarktquelle bleibt bei mir.",
+							"cond": {
+								"has_player_copy_of": "turbo_kart_deluxe"
+							},
+							"next": "n2",
+							"effects": [
+								{
+									"type": "take_disk_template",
+									"id": "game_turbo_kart",
+									"player_copy_only": true,
+									"preserve_best_source": true
+								},
+								{
+									"type": "quest_action",
+									"action": "deliver_turbo_stunt"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Zwoelf Mark, wie versprochen. Und hier ist eine fabrikneue blaue DD als Ersatz. Heute Abend bauen wir eine Strecke, bei der die Sprungschanze direkt vor dem Looping steht.",
+					"choices": [
+						{
+							"text": "Abgemacht. Aber ich fahre zuerst.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_stefan_amiga": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Ey, ich bin’s, Stefan! Ich hab gesehen, wie dein Vater dir den Amiga in die Bude geschleppt hat. Läuft die Kiste schon?",
+					"choices": [
+						{
+							"text": "Klar — steht, bootet, alles!",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Grad fertig aufgebaut.",
+							"next": "n2",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Stark! Dann fehlen dir nur noch SPIELE. Haste schon was, oder guckst du bloß auf die Workbench?",
+					"choices": [
+						{
+							"text": "Noch gar nichts.",
+							"next": "n3",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n3": {
+					"speaker": "Stefan",
+					"text": "Dachte ich mir. Das neue Space Lemming Trouble musst du haben — die ganze Schule redet davon. Samstagvormittag bis nachmittag ist Flohmarkt, der Krause hat da Kisten voller Disketten. Treib’s auf und bring’s bei mir vorbei, dann zeig ich dir ’ne Demo, die du sehen MUSST!",
+					"choices": [
+						{
+							"text": "Bin dabei. Bis Samstag!",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "space_quest_intro",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "quest_space_game",
+									"value": "open"
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Finde ‚Space Lemming Trouble‘ (Flohmarkt, samstags)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_stefan_turbo_stunt": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Okay, ich weiss: Gerade erst Space Lemming. Aber Krause soll Turbo Kart Deluxe in einer seiner Kisten haben. Mit Streckenbau! Ich brauch das Ding.",
+					"choices": [
+						{
+							"text": "Und ich soll wieder zum Flohmarkt?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Diesmal nicht, Stefan.",
+							"next": "n_decline",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Ja, aber nicht umsonst: Fahr erst selbst ein Rennen, damit wir keinen Schrott kopieren. Dann ziehst du mir eine Arbeitskopie. Ich geb dir 12 Mark und eine frische Leerdiskette zurueck. Deine Quelle bleibt bei dir.",
+					"choices": [
+						{
+							"text": "Abgemacht. Fund pruefen, Quelle behalten, Kopie fuer dich.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "turbo_stunt_intro",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "quest_turbo_stunt",
+									"value": "open"
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Turbo Kart auf dem Flohmarkt finden und selbst probefahren."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_decline": {
+					"speaker": "Stefan",
+					"text": "Schon gut. Falls du's dir anders ueberlegst: Ich frag spaeter noch mal. Die 12 Mark und die Leerdisk stehen.",
+					"choices": [
+						{
+							"text": "Ich ueberleg's mir.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_stefan_code_red": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Krause hat eine schwarze Originaldisk mit rotem Handbuch: Code Red. Angeblich steuerst du darin seit 1962 eine geheime Weltoperation bis 2034. Keine Ahnung, wie das auf eine Disk passt.",
+					"choices": [
+						{
+							"text": "Und ich soll wieder den Testspieler machen?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Heute nicht.",
+							"next": "n_decline",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Genau. Finde das Original, starte eine komplette Operation und sag mir, ob es mehr als eine schicke Introsequenz ist. Ich gebe dir 15 Mark und ersetze dir eine Leerdiskette. Das Original bleibt bei dir.",
+					"choices": [
+						{
+							"text": "Abgemacht. Ich pruefe die ganze Operation.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "code_red_intro",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "quest_code_red",
+									"value": "open"
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Code Red samt Handbuch auf dem Flohmarkt finden und eine Operation beenden."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_decline": {
+					"speaker": "Stefan",
+					"text": "Schon gut. Die Disk rennt nicht weg. Hoffe ich zumindest.",
+					"choices": [
+						{
+							"text": "Spaeter vielleicht.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_stefan_spielidee": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Okay, hör zu. Wir haben jetzt alles GESPIELT, was es gibt, richtig? Und die halbe Nacht dachte ich: Warum machen wir nicht unser EIGENES Spiel?",
+					"choices": [
+						{
+							"text": "Unser eigenes Spiel?!",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Du kannst doch inzwischen Code, Musik, Grafik — das Szene-Studio hat alles. Bau was, release es. Ich bin dein erster Fan. Und dein härtester Kritiker.",
+					"choices": [
+						{
+							"text": "Ein EIGENES Spiel. Ich fang an.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "eigenes_spiel_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Erschaffe und release dein eigenes Spiel (Szene-Studio)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_stefan_firma": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Es ist offiziell: Wir gründen die Firma. Software. Richtig, mit Gewerbeschein und allem. Und ich brauche Leute, denen ich VERTRAUE.",
+					"choices": [
+						{
+							"text": "Du meinst … mich?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Wen sonst? Aber Papierwerte reichen mir nicht. Bau einen echten Spiel-Prototyp, bring ihn zum Laufen und stell ihn mir persönlich vor. Dann reden wir über deinen Platz bei uns.",
+					"choices": [
+						{
+							"text": "Ich bin dabei, Stefan.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "firma_intro",
+									"value": true
+								},
+								{
+									"type": "task_done",
+									"id": "visit_stefan_firma"
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Bau einen Spiel-Prototyp und präsentiere ihn Stefan."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_stefan_job": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Du hast den Gesellenbrief, aber ich will dich nicht wegen eines Papiers einstellen. Nimm erst einen echten Code-Auftrag an und zeig, dass du liefern kannst.",
+					"choices": [
+						{
+							"text": "Danach reden wir über den Job.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "erster_job_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_stefan_finale": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Komm in den Keller. Die alten Disketten liegen noch da, aber diesmal geht's nicht um Technik. Ich will wissen, was du aus den zehn Jahren machst.",
+					"choices": [
+						{
+							"text": "Ich komme. Das besprechen wir nicht am Telefon.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "finale_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				}
+			}
+		},
+		"call_stefan_dealer": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Stefan",
+					"text": "Okay, streng geheim: Sven hat oben am Trampelpfad im Wald einen TYPEN gesehen. Sonnenbrille, Schiebermütze — und ein Koffer voller Messgeräte. Er KAUFT Disketten. Kopien!",
+					"choices": [
+						{
+							"text": "Ein Typ im Wald kauft … Kopien?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "nervous"
+				},
+				"n2": {
+					"speaker": "Stefan",
+					"text": "Ja! Er testet sie mit seinen Geräten und zahlt nach Qualität — Etikett, Zustand, alles. Du hast doch inzwischen Spiele. Zieh Kopien mit X-COPY und geh mal hin. Aber erzähl’s nicht rum!",
+					"choices": [
+						{
+							"text": "Ich schau mir das an. Keine Sorge.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "dealer_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Zieh eine Kopie (X-COPY) und bring sie dem Händler am Trampelpfad (Wald)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

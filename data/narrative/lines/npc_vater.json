@@ -1,0 +1,229 @@
+{
+	"npc": "npc_vater",
+	"comment": "Zeilen-Pool fuer npc_vater. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "vat_b01",
+			"text": "Na, mein Junge. Läuft's mit deinen Maschinen?"
+		},
+		{
+			"id": "vat_b02",
+			"text": "Solange die Schule stimmt, sag ich nichts."
+		},
+		{
+			"id": "vat_b03",
+			"text": "In meiner Zeit gab's sowas nicht. Da hat man draußen gespielt."
+		},
+		{
+			"id": "vat_b04",
+			"text": "Halt abends die Leitung frei, ich erwarte einen Anruf."
+		},
+		{
+			"id": "vat_b05",
+			"text": "Was das alles kostet... na, du weißt schon."
+		},
+		{
+			"id": "vat_b06",
+			"text": "Ich versteh kein Wort von dem, was du machst. Aber mach's ordentlich."
+		},
+		{
+			"id": "vat_b07",
+			"text": "Hast du dem Auto... ich mein, dem Rechner mal 'ne Pause gegönnt?"
+		},
+		{
+			"id": "vat_b08",
+			"text": "Früher hat man Dinge repariert, nicht weggeworfen. Das gefällt mir an dir."
+		},
+		{
+			"id": "vat_b09",
+			"text": "Wenn du mal Hilfe beim Regal brauchst — ich hab Werkzeug."
+		},
+		{
+			"id": "vat_b10",
+			"text": "Nicht dass du mir die Sicherung rausschmeißt mit dem ganzen Kram."
+		},
+		{
+			"id": "vat_b11",
+			"text": "Geld verdient man mit Arbeit, nicht mit Spielen. Merk dir das."
+		},
+		{
+			"id": "vat_b12",
+			"text": "Der Kollege sagt, seine Tochter macht auch sowas. Verrückte Welt."
+		},
+		{
+			"id": "vat_b13",
+			"text": "Ordnung ist das halbe Leben. Fang mit dem Schreibtisch an."
+		},
+		{
+			"id": "vat_b14",
+			"text": "Ich hab dir früher das Fahrradflicken beigebracht. Das hier ist wohl dein Ding."
+		},
+		{
+			"id": "vat_b15",
+			"text": "Sei sparsam. Ein guter Mann legt was zur Seite."
+		},
+		{
+			"id": "vat_b16",
+			"text": "Wenn du was wirklich willst, dann arbeite drauf hin."
+		},
+		{
+			"id": "vat_b17",
+			"text": "Ich les Zeitung, du liest... was auch immer das ist. Jedem das Seine."
+		},
+		{
+			"id": "vat_b18",
+			"text": "Deine Mutter macht sich Sorgen. Iss wenigstens ordentlich."
+		},
+		{
+			"id": "vat_b19",
+			"text": "Komm, setz dich kurz, erzähl deinem alten Herrn was."
+		},
+		{
+			"id": "vat_b20",
+			"text": "Ich bin stolz auf dich, auch wenn ich's selten sag."
+		},
+		{
+			"id": "vat_b21",
+			"text": "Das Werkzeug legst du zurück, wo du's herhast. Regel eins."
+		},
+		{
+			"id": "vat_b22",
+			"text": "Ein Handschlag gilt. Vergiss das nie in deinem Leben."
+		},
+		{
+			"id": "vat_b23",
+			"text": "Nicht alles, was neu ist, ist besser. Aber manches schon."
+		},
+		{
+			"id": "vat_b24",
+			"text": "Ich hab in deinem Alter Zeitungen ausgetragen. Härtet ab."
+		},
+		{
+			"id": "vat_b25",
+			"text": "Mach das Licht aus, wenn du aus dem Zimmer gehst. Strom kostet."
+		},
+		{
+			"id": "vat_b26",
+			"text": "Wenn du 'nen Rat brauchst — ich hör zu. Meistens."
+		},
+		{
+			"id": "vat_b27",
+			"text": "Am Sonntag gibt's Taschengeld. Aber nur bei ordentlichem Betragen."
+		},
+		{
+			"id": "vat_b28",
+			"text": "Diese Technik ist mir zu schnell. Aber du kommst mit, das ist gut."
+		},
+		{
+			"id": "vat_b29",
+			"text": "Halt dich an deine Freunde. Zusammen kommt man weiter."
+		},
+		{
+			"id": "vat_b30",
+			"text": "Und? Alles heil geblieben heute, oder wieder was durchgebrannt?"
+		},
+		{
+			"id": "va_zeitung",
+			"to": 1994,
+			"topic": "zeitgeist",
+			"text": "Steht in der Zeitung, dass diese Computer bald jeder hat. Na, wir werden ja sehen."
+		},
+		{
+			"id": "va_rechnung",
+			"from": 1995,
+			"needs": [
+				"modem_boom"
+			],
+			"topic": "geld",
+			"text": "Diese Telefonrechnung! Wenn das so weitergeht, kommt der Apparat unter Verschluss, verstanden?"
+		},
+		{
+			"id": "va_internet",
+			"from": 1996,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "netz",
+			"text": "Dieses Internet-Dingens — ist das jetzt was Ernstes, oder wieder so 'ne Mode?"
+		},
+		{
+			"id": "va_stolz",
+			"from": 1998,
+			"topic": "stolz",
+			"text": "Der Kollege sagt, mit sowas verdient man heute Geld. Vielleicht hast du doch aufs richtige Pferd gesetzt."
+		},
+		{
+			"id": "vat_x01",
+			"topic": "familie",
+			"text": "Na, tüftelst du wieder? Solang die Schule stimmt, halt ich den Mund. Meistens."
+		},
+		{
+			"id": "vat_x02",
+			"topic": "familie",
+			"text": "In meiner Jugend gab's einen Fußball und einen Wald. Hat auch gereicht. Aber gut, andere Zeiten."
+		},
+		{
+			"id": "vat_x03",
+			"topic": "familie",
+			"text": "Ordnung ist das halbe Leben. Fang beim Schreibtisch an, dann sehen wir weiter."
+		},
+		{
+			"id": "vat_x04",
+			"topic": "familie",
+			"text": "Ich hab dir das Fahrradflicken beigebracht. Dieses Computerzeug — das ist wohl deine Baustelle."
+		},
+		{
+			"id": "vat_x05",
+			"topic": "familie",
+			"text": "Ein Handschlag gilt. Vergiss das nie, egal wie modern die Welt wird."
+		},
+		{
+			"id": "vat_x06",
+			"topic": "familie",
+			"text": "Spar was, Junge. Ein kluger Mann legt für schlechte Zeiten was beiseite."
+		},
+		{
+			"id": "vat_x07",
+			"topic": "familie",
+			"text": "Ich les meine Zeitung, du liest deine Bildschirme. Jedem sein Fenster zur Welt."
+		},
+		{
+			"id": "vat_x08",
+			"topic": "familie",
+			"text": "Wenn du einen Rat brauchst — ich hör zu. Auch wenn ich die Hälfte nicht versteh."
+		},
+		{
+			"id": "vat_x09",
+			"topic": "familie",
+			"text": "Mach das Licht aus, wenn du rausgehst. Der Strom wächst nicht auf Bäumen."
+		},
+		{
+			"id": "vat_x10",
+			"topic": "familie",
+			"text": "Ich bin stolz auf dich. So, jetzt hab ich's gesagt, und wir reden nicht mehr drüber."
+		},
+		{
+			"id": "vat_x11",
+			"topic": "familie",
+			"text": "Diese Technik ist mir zu schnell. Aber du kommst mit. Das beruhigt mich, ehrlich."
+		},
+		{
+			"id": "vat_x12",
+			"from": 0,
+			"needs": [
+				"modem_boom"
+			],
+			"topic": "aera",
+			"text": "Die Telefonrechnung! Wenn das so weitergeht, kommt der Apparat unter Verschluss, verstanden?"
+		},
+		{
+			"id": "vat_x13",
+			"from": 0,
+			"needs": [
+				"stefan_firma"
+			],
+			"topic": "aera",
+			"text": "Der Kollege sagt, mit sowas verdient man heute Geld. Vielleicht hast du aufs richtige Pferd gesetzt."
+		}
+	]
+}

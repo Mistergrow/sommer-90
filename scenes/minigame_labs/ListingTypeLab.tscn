@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dm5j17hmq2yn3"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="ListingTypeLab" unique_id=1040975562 instance=ExtResource("1")]
+minigame_id = "listing_type"

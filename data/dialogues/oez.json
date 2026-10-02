@@ -1,0 +1,112 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_oez",
+	"dialogues": {
+		"oez_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Frau Öz",
+					"text": "Na, mein Stammkunde! Die neue Ausgabe mit Coverdisk ist da — geht weg wie warme Semmeln. Und Süßes?",
+					"choices": [
+						{
+							"text": "Die Samstagsausgabe ist sauber sortiert.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_oez_samstagsausgabe",
+									"stage": 1
+								}
+							},
+							"next": "n_handoff",
+							"id": "reply_0"
+						},
+						{
+							"text": "Was ist mit den Kisten hinter dem Tresen?",
+							"cond": [
+								{
+									"year_min": 1991
+								},
+								{
+									"not_flag": "oez_samstagsausgabe_intro"
+								}
+							],
+							"next": "n_quest_intro",
+							"id": "reply_1"
+						},
+						{
+							"text": "Was ist auf der Coverdisk?",
+							"next": "n2",
+							"id": "reply_2"
+						},
+						{
+							"text": "Nur gucken, danke.",
+							"next": null,
+							"id": "reply_3"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_quest_intro": {
+					"speaker": "Frau Öz",
+					"text": "Der Lieferwagen hat Zeitschriften, Coverdisks und Süßwaren in dieselben Kisten gepackt. Hilfst du mir beim Sortieren? Was in den Heften programmiert wird, entscheidest du später beim Lesen — ich verkaufe sie nur.",
+					"choices": [
+						{
+							"text": "Ich bringe Ordnung in die Lieferung.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "oez_samstagsausgabe_intro",
+									"value": true
+								},
+								{
+									"type": "memory_once",
+									"id": "oez_samstagsausgabe_started"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "nervous"
+				},
+				"n_handoff": {
+					"speaker": "Frau Öz",
+					"text": "Genau so: Titel nach vorn, Coverdisks trocken und die Schokolade weit weg vom Papier. Diese Ausgabe lege ich dir zurück. Wenn du das Listing abtippen willst, öffnest du später genau dieses Heft.",
+					"choices": [
+						{
+							"text": "Abgemacht — am Kiosk sortieren, zu Hause programmieren.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "oez_issue_reserved"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Frau Öz",
+					"text": "Ein Demo, ein Spiel zum Antesten, ein Tool. Steht alles vorne drauf. Für dich leg ich immer eine zur Seite.",
+					"choices": [
+						{
+							"text": "Sehr nett, danke!",
+							"next": null,
+							"effects": [
+								{
+									"type": "npc_trust",
+									"npc": "npc_oez",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

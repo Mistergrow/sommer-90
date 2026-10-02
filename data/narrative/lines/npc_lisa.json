@@ -1,0 +1,250 @@
+{
+	"npc": "npc_lisa",
+	"comment": "Zeilen-Pool fuer npc_lisa. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "lis_b01",
+			"text": "Schau, dieser Verlauf — mit Dithering sieht's aus wie tausend Farben."
+		},
+		{
+			"id": "lis_b02",
+			"text": "Kunst ist auch Handwerk. Geduld und ein gutes Auge."
+		},
+		{
+			"id": "lis_b03",
+			"text": "Ich mal immer meine eigene Grafik. Klauen ist tabu, Ehrensache."
+		},
+		{
+			"id": "lis_b04",
+			"text": "Jeder Pixel sitzt mit Absicht. Sonst ist es kein Bild, sondern Zufall."
+		},
+		{
+			"id": "lis_b05",
+			"text": "Fang klein an — ein Icon, ein Logo. So hab ich auch angefangen."
+		},
+		{
+			"id": "lis_b06",
+			"text": "Farbe erzählt eine Stimmung. Ein kaltes Blau ist eine ganze Geschichte."
+		},
+		{
+			"id": "lis_b07",
+			"text": "Ich sitz manchmal Stunden an einem einzigen Auge. Es muss leben."
+		},
+		{
+			"id": "lis_b08",
+			"text": "Zeig mir was, das du gemalt hast — egal wie krumm."
+		},
+		{
+			"id": "lis_b09",
+			"text": "Ich seh die Welt in Rastern. Berufskrankheit."
+		},
+		{
+			"id": "lis_b10",
+			"text": "Ein guter Pixel-Künstler weiß, wann er aufhört."
+		},
+		{
+			"id": "lis_b11",
+			"text": "Ich hab ein Lieblingsblau. Frag nicht, warum, ich weiß es selbst nicht."
+		},
+		{
+			"id": "lis_b12",
+			"text": "Beschränkung macht kreativ. Zu viele Möglichkeiten lähmen."
+		},
+		{
+			"id": "lis_b13",
+			"text": "Ich skizzier erst auf Papier, dann setz ich es Punkt für Punkt."
+		},
+		{
+			"id": "lis_b14",
+			"text": "Die schönste Grafik nützt nichts, wenn keiner sie fühlt."
+		},
+		{
+			"id": "lis_b15",
+			"text": "Ich kann nicht anders — überall seh ich Farbverläufe."
+		},
+		{
+			"id": "lis_b16",
+			"text": "Wenn du willst, mal ich dir was. Einfach so."
+		},
+		{
+			"id": "lis_b17",
+			"text": "Übung, Übung, Übung. Talent ist nur der Anfang."
+		},
+		{
+			"id": "lis_b18",
+			"text": "Ich lösch mehr, als ich behalte. Das gehört dazu."
+		},
+		{
+			"id": "lis_b19",
+			"text": "Ein Bild ist fertig, wenn ich nichts mehr wegnehmen kann."
+		},
+		{
+			"id": "lis_b20",
+			"text": "Manche verstehen nicht, dass Pixeln Kunst ist. Ihr Verlust."
+		},
+		{
+			"id": "lis_b21",
+			"text": "Ich arbeite am liebsten nachts, wenn's still ist."
+		},
+		{
+			"id": "lis_b22",
+			"text": "Farben mischen im Kopf — das lernt man erst mit der Zeit."
+		},
+		{
+			"id": "lis_b23",
+			"text": "Zeig her, welche Farben magst du? Das verrät viel."
+		},
+		{
+			"id": "lis_b24",
+			"text": "Ich hab ein Skizzenbuch voll Ideen, die auf Zeit warten."
+		},
+		{
+			"id": "lis_b25",
+			"text": "Ein sauberer Umriss ist die halbe Miete."
+		},
+		{
+			"id": "lis_b26",
+			"text": "Ich mal, seit ich denken kann. Nur früher mit Wachsmalstiften."
+		},
+		{
+			"id": "lis_b27",
+			"text": "Kritik tut weh, aber sie macht besser. Bring sie mir."
+		},
+		{
+			"id": "lis_b28",
+			"text": "Das Auge lügt — man muss immer nachmessen."
+		},
+		{
+			"id": "lis_b29",
+			"text": "Ich verschenk gern kleine Bilder. Freude verdoppelt sich."
+		},
+		{
+			"id": "lis_b30",
+			"text": "Geduld ist meine wichtigste Farbe."
+		},
+		{
+			"id": "li_dpaint",
+			"to": 1996,
+			"topic": "pixel",
+			"text": "Deluxe Paint ist mein Zuhause. Copper-Verläufe, handgesetzt. Nichts geht über Amiga-Farben."
+		},
+		{
+			"id": "li_musik",
+			"from": 1992,
+			"topic": "musik",
+			"text": "Ich mal zu Bastis Musik. Wenn der Beat sitzt, fließt der Pixel wie von selbst."
+		},
+		{
+			"id": "li_scanner",
+			"from": 1994,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "hardware",
+			"text": "Der Gruber hat 'nen Handscanner reinbekommen. Ich könnt eigene Fotos einlesen und übermalen!"
+		},
+		{
+			"id": "li_cover",
+			"from": 1999,
+			"needs": [
+				"lisa_cover"
+			],
+			"once": true,
+			"topic": "szene",
+			"text": "Ich gestalte jetzt Cover für die halbe Szene. Mein Zeug ist überall — verrückt, oder?"
+		},
+		{
+			"id": "li_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Meine ersten Pixel waren schrecklich. Aber ich hab nie aufgehört. Genau das war das Geheimnis."
+		},
+		{
+			"id": "lis_x01",
+			"topic": "pixel",
+			"text": "Ich seh die Welt in Rastern. Ein Sonnenuntergang ist für mich ein Verlauf mit Dithering."
+		},
+		{
+			"id": "lis_x02",
+			"topic": "pixel",
+			"text": "Ein Bild ist fertig, wenn ich nichts mehr wegnehmen kann — nicht, wenn nichts mehr passt."
+		},
+		{
+			"id": "lis_x03",
+			"topic": "pixel",
+			"text": "Ich mal seit ich denken kann. Früher Wachsmalstifte, heute Pixel. Gleiche Liebe, andere Werkzeuge."
+		},
+		{
+			"id": "lis_x04",
+			"topic": "pixel",
+			"text": "Kritik tut weh und macht besser. Bring sie mir ruhig, ich halt das aus."
+		},
+		{
+			"id": "lis_x05",
+			"topic": "pixel",
+			"text": "Ich hab ein Lieblingsblau. Frag nicht warum, ich weiß es selbst nicht."
+		},
+		{
+			"id": "lis_x06",
+			"topic": "pixel",
+			"text": "Wenn Bastis Beat sitzt, malt sich der Pixel fast von allein. Musik und Bild, das gehört zusammen."
+		},
+		{
+			"id": "lis_x07",
+			"topic": "pixel",
+			"text": "Geduld ist meine wichtigste Farbe. Die kann man nicht kaufen, nur üben."
+		},
+		{
+			"id": "lis_x08",
+			"topic": "pixel",
+			"text": "Ich verschenk gern kleine Bilder. Freude wird mehr, wenn man sie teilt, nicht weniger."
+		},
+		{
+			"id": "lis_x09",
+			"topic": "pixel",
+			"text": "Nachts mal ich am besten. Wenn alles still ist, wird der Bildschirm zum Fenster."
+		},
+		{
+			"id": "lis_x10",
+			"topic": "pixel",
+			"text": "Ein guter Umriss ist die halbe Grafik. Der Rest ist Mut und Geduld."
+		},
+		{
+			"id": "lis_x11",
+			"topic": "pixel",
+			"text": "Manche halten Pixeln für Spielerei. Sollen sie. Ich weiß, was drin steckt."
+		},
+		{
+			"id": "lis_x12",
+			"topic": "pixel",
+			"text": "Ich skizzier erst auf Papier. Der Rechner ist geduldig, aber Papier lügt nicht."
+		},
+		{
+			"id": "lis_x13",
+			"to": 1996,
+			"topic": "pixel",
+			"text": "Deluxe Paint ist mein Zuhause. Copper-Verläufe von Hand — nichts geht über Amiga-Farben."
+		},
+		{
+			"id": "lis_x14",
+			"from": 0,
+			"needs": [
+				"pc_umbruch"
+			],
+			"topic": "aera",
+			"text": "Am PC gibt's jetzt tausende Farben. Schön. Aber irgendwie fehlt der Seele der Zwang der 32."
+		},
+		{
+			"id": "lis_x15",
+			"from": 0,
+			"needs": [
+				"lisa_cover"
+			],
+			"topic": "aera",
+			"text": "Mein Zeug ist überall — Cover, Intros, Labels. Ich lebe von Pixeln. Wer hätte das gedacht?"
+		}
+	]
+}

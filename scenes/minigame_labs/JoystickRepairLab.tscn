@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c54xmlwmg7crw"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="JoystickRepairLab" unique_id=1952042497 instance=ExtResource("1")]
+minigame_id = "joystick_repair"

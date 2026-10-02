@@ -1,0 +1,59 @@
+{
+  "comment": "Gerüchte-Netzwerk des Schulhofs (RumorManager). Jede Gruppe kennt nur einen Teil und erzählt ihn in ihrer eigenen Zuverlässigkeit weiter. 'texts' ist von akkurat (Index 0) bis verzerrt (letzter Index) gestaffelt; welche Stufe man hört, ergibt sich aus Ausbreitung × Gruppen-Verzerrung. pickup = ab welcher Ausbreitung die Gruppe es kennt; distort = wie sehr sie es entstellt; share = wie viele Gerüchte sie preisgibt.",
+  "groups": [
+    {"id": "freunde", "name": "Freunde auf der Bank", "pickup": 0.10, "distort": 0.10, "share": 2},
+    {"id": "klasse", "name": "Klassenkameraden vorm Eingang", "pickup": 0.30, "distort": 0.35, "share": 2},
+    {"id": "aeltere", "name": "Ältere am Fahrradständer", "pickup": 0.20, "distort": 0.55, "share": 2},
+    {"id": "juengere", "name": "Jüngere an der Mauer", "pickup": 0.55, "distort": 0.75, "share": 1}
+  ],
+  "templates": [
+    {
+      "id": "flohmarkt", "topic": "flohmarkt", "truth": true, "trigger": "flohmarkt_naht",
+      "texts": [
+        "Am Samstag ist Flohmarkt — Krause soll eine ganze Kiste Disketten mitbringen.",
+        "Samstag ist Börse, glaub ich. Da verkauft einer haufenweise Disketten.",
+        "Irgendwann am Wochenende verkloppt so ein Typ voll viele Spiele. Oder Platten?"
+      ]
+    },
+    {
+      "id": "jahr_modem", "topic": "hardware", "truth": true, "trigger": "jahr", "year": 1993,
+      "texts": [
+        "Mit einem Modem kommst du in diese Mailboxen — da lädt man Spiele über die Telefonleitung!",
+        "Modems sind der Hit. Angeblich holt man sich damit Programme übers Telefon.",
+        "So 'ne Kiste, die über Telefon Spiele zieht. Klingt komplett erfunden, ey."
+      ]
+    },
+    {
+      "id": "jahr_cd", "topic": "hardware", "truth": true, "trigger": "jahr", "year": 1995,
+      "texts": [
+        "Es gibt jetzt Spiele auf CD-ROM — da passt ein ganzes Lexikon drauf.",
+        "CD-ROMs sollen kommen, riesig viel Platz, hab ich gehört.",
+        "Bald sind alle Spiele auf so silbernen Scheiben. Voll strange."
+      ]
+    },
+    {
+      "id": "hype_gratis_amiga", "topic": "hype", "truth": false, "trigger": "ambient",
+      "texts": [
+        "Angeblich verschenkt der Laden alte A500, wenn man einen neuen kauft.",
+        "Der Computerladen soll Amigas verschenken, hat einer aus der Parallelklasse gesagt.",
+        "Es gibt GRATIS Amigas im Laden!! Ehrlich, mein Cousin war da!"
+      ]
+    },
+    {
+      "id": "hype_cheat", "topic": "hype", "truth": false, "trigger": "ambient",
+      "texts": [
+        "Es soll einen geheimen Tastencode geben, der jedes Spiel durchspielt.",
+        "Angeblich gibt's einen Code, mit dem man jedes Spiel sofort durch hat.",
+        "Wenn du oben-oben-unten drückst, kriegst du unendlich Leben in ALLEM. Voll wahr!"
+      ]
+    },
+    {
+      "id": "klub_treffen", "topic": "klub", "truth": true, "trigger": "ambient",
+      "texts": [
+        "Der Computerclub trifft sich diese Woche — die tauschen da Public-Domain-Disketten.",
+        "Beim Computerclub soll wieder was laufen, mit Disketten-Tausch.",
+        "Da ist so ein Club, wo alle heimlich Sachen tauschen. Klingt geheim."
+      ]
+    }
+  ]
+}

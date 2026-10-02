@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "comment": "Erweiterbarer Inhaltskatalog fuer das fiktive Amiga-Strategiespiel CODE RED. Seine interne Physik folgt bewusst einem erfundenen Elektrischen Universum. Reale Halo-, Aurora- und TLE-Erklaerungen sowie historische Archiveintraege bleiben davon sauber getrennt.",
+  "doctrines": [
+    {
+      "id": "hidden_hand",
+      "title": "UNSICHTBARE HAND",
+      "description": "Medien und Diplomatie beginnen stark. Direkte Zwangsmassnahmen erzeugen mehr Leckdruck.",
+      "effects": {"media": 12, "coalition": 8, "truth": -2, "stability": -4},
+      "risk_bias": 0.04
+    },
+    {
+      "id": "technocracy",
+      "title": "TECHNOKRATIE",
+      "description": "Praezise Berichte und effizientere Projekte. Die Bevoelkerung reagiert empfindlicher auf Belastung.",
+      "effects": {"science": 15, "routes": 8, "budget": -8, "burden": 4},
+      "project_speed": 1
+    },
+    {
+      "id": "emergency",
+      "title": "NOTSTANDSREGIME",
+      "description": "Hohe Stabilitaet und schnelle Sicherheitsmassnahmen. Presse und Partner starten misstrauisch.",
+      "effects": {"stability": 16, "panic": -4, "coalition": -10, "truth": 4},
+      "security_bonus": 0.18
+    }
+  ],
+  "advisors": [
+    {"id": "diplomacy", "name": "MARA VOSS", "role": "DIPLOMATIE", "section": "summit", "competence": 72, "loyalty": 68, "risk": "RIVALEN"},
+    {"id": "media", "name": "IVO KERN", "role": "MEDIEN", "section": "media", "competence": 66, "loyalty": 74, "risk": "PRESSE"},
+    {"id": "science", "name": "DR. LEA MARIN", "role": "WISSENSCHAFT", "section": "science", "competence": 78, "loyalty": 61, "risk": "GEWISSEN"},
+    {"id": "geo", "name": "ARUN VEGA", "role": "GEOENGINEERING", "section": "geo", "competence": 70, "loyalty": 70, "risk": "UEBERLASTUNG"},
+    {"id": "security", "name": "NORA SATO", "role": "SICHERHEIT", "section": "economy", "competence": 69, "loyalty": 77, "risk": "MACHT"}
+  ],
+  "regions": [
+    {"id": "americas", "title": "AMERIKA", "panic": 8, "trust": 58, "exposure": 7, "heat_factor": 1.00, "media_factor": 1.10},
+    {"id": "europe", "title": "EUROPA", "panic": 6, "trust": 64, "exposure": 6, "heat_factor": 0.90, "media_factor": 1.18},
+    {"id": "eurasia", "title": "EURASIEN", "panic": 7, "trust": 55, "exposure": 8, "heat_factor": 1.08, "media_factor": 0.90},
+    {"id": "africa", "title": "AFRIKA", "panic": 10, "trust": 49, "exposure": 9, "heat_factor": 1.28, "media_factor": 0.82},
+    {"id": "pacific", "title": "PAZIFIK", "panic": 9, "trust": 53, "exposure": 10, "heat_factor": 1.16, "media_factor": 0.88}
+  ],
+  "opponents": [
+    {"id": "observatories", "title": "FREIE OBSERVATORIEN", "pressure": 16, "growth": 1.6},
+    {"id": "press", "title": "INVESTIGATIVE PRESSE", "pressure": 12, "growth": 1.3},
+    {"id": "rivals", "title": "RIVALISIERENDE STAATEN", "pressure": 14, "growth": 1.1}
+  ],
+  "projects": [
+    {"id": "sensor_mesh", "title": "SENSORNETZ", "duration": 2, "cost": 18, "description": "Praezisere Lageberichte und fruehe Optik-Warnung.", "effects": {"science": 12, "credibility": 5}},
+    {"id": "aerosol_fleet", "title": "GLOBALE FLOTTE", "duration": 3, "cost": 28, "description": "Partikelmassnahmen werden wirksamer und regional planbar.", "effects": {"routes": 20, "particles": 10}},
+    {"id": "archive_firewall", "title": "AKTEN-FIREWALL", "duration": 2, "cost": 16, "description": "Kompartmentierung senkt Gegnerdruck, kostet aber Effizienz.", "effects": {"truth": -8, "coalition": -3}},
+    {"id": "ark_bunkers", "title": "ARK-BUNKER", "duration": 3, "cost": 32, "description": "Erhoeht Evakuierungskapazitaet fuer das Finale.", "effects": {"elite_escape": 28, "burden": 5}},
+    {"id": "orbital_mirror", "title": "ORBITALSPIEGEL", "duration": 3, "cost": 35, "description": "Riskanter Prototyp gegen Induktion und sichtbaren Rand.", "effects": {"induction": -16, "truth": 5, "science": 6}},
+    {"id": "faraday_grid", "title": "FARADAY-WELTNETZ", "duration": 2, "cost": 30, "description": "Segmentierte Netze und Schutzkorridore begrenzen spaete Plasmafolgen.", "effects": {"induction": -10, "plasma_load": -18, "stability": 6}}
+  ],
+  "optics_scenarios": [
+    {
+      "id": "halo_22",
+      "title": "22-GRAD-HALO",
+      "secret": "Der Objektrand verstaerkt einen vorhandenen Cirrusschleier.",
+      "public": "Ring um die Sonne bei duennen hohen Wolken.",
+      "correct": "ICE_CRYSTALS",
+      "choices": [
+        {"id": "ICE_CRYSTALS", "title": "EISKRISTALLE IN CIRRUS", "credibility": 7, "truth": -3},
+        {"id": "MAGNETIC_STORM", "title": "MAGNETISCHER STURM", "credibility": -6, "truth": 5},
+        {"id": "CAMERA_ERROR", "title": "KAMERAFEHLER", "credibility": -4, "truth": 3}
+      ]
+    },
+    {
+      "id": "sundog",
+      "title": "NEBENSONNE",
+      "secret": "Die helle Randzone liegt nahe einer optischen Nebensonne.",
+      "public": "Heller Fleck seitlich der Sonne auf gleicher Hoehe.",
+      "correct": "PARHELION",
+      "choices": [
+        {"id": "PARHELION", "title": "PARHELION / NEBENSONNE", "credibility": 8, "truth": -4},
+        {"id": "LENS_FLARE", "title": "OBJEKTIVREFLEX", "credibility": -3, "truth": 3},
+        {"id": "AURORA", "title": "POLARLICHT", "credibility": -7, "truth": 6}
+      ]
+    },
+    {
+      "id": "sun_pillar",
+      "title": "SONNENSAEULE",
+      "secret": "Der vertikale Glanz verdeckt kurz die Objektkante.",
+      "public": "Lichtsaeule bei tief stehender Sonne.",
+      "correct": "PLATE_CRYSTALS",
+      "choices": [
+        {"id": "PLATE_CRYSTALS", "title": "REFLEXION AN EISPLATTEN", "credibility": 7, "truth": -3},
+        {"id": "HAARP", "title": "FORSCHUNGSEXPERIMENT", "credibility": -8, "truth": 7},
+        {"id": "SATELLITE", "title": "SATELLITENSPIEGEL", "credibility": -5, "truth": 4}
+      ]
+    },
+    {
+      "id": "red_limb",
+      "title": "ROTER RAND",
+      "secret": "Der leuchtende Planetenrand ist fuer Sekunden unmaskiert.",
+      "public": "Rote Streuung am Horizont nach Partikeleinsatz.",
+      "correct": "AEROSOL_SCATTER",
+      "choices": [
+        {"id": "AEROSOL_SCATTER", "title": "AEROSOL-STREUUNG", "credibility": 4, "truth": -2},
+        {"id": "PARHELION", "title": "NEBENSONNE", "credibility": -4, "truth": 4},
+        {"id": "NO_COMMENT", "title": "KEINE STELLUNGNAHME", "credibility": -2, "truth": 5}
+      ]
+    }
+  ],
+  "historical_sky": [
+    {
+      "id": "carrington_1859",
+      "year": 1859,
+      "title": "CARRINGTON-STURM",
+      "status": "BELEGT",
+      "summary": "Sehr helle, weit nach Sueden sichtbare Aurora und induzierte Stoerungen in Telegraphenleitungen waehrend eines extremen geomagnetischen Sturms.",
+      "game_link": "Vorbild fuer rote Himmel, Netzausfaelle und eine zunaechst glaubhafte Sonnensturm-Erklaerung."
+    },
+    {
+      "id": "night_clouds_1885",
+      "year": 1885,
+      "title": "NACHTLEUCHTENDE WOLKEN",
+      "status": "BELEGT",
+      "summary": "Silbrig-blaue Eiswolken der Mesosphaere wurden ab 1885 systematisch beschrieben und bleiben nach Sonnenuntergang beleuchtet.",
+      "game_link": "Vorbild fuer die fruehe, noch natuerlich erklaerbare Himmelseskalation."
+    },
+    {
+      "id": "sprites_1989",
+      "year": 1989,
+      "title": "ERSTER SPRITE AUF VIDEO",
+      "status": "BELEGT",
+      "summary": "Extrem kurze rote Leuchterscheinungen ueber Gewittern wurden 1989 erstmals glaubhaft mit einer Low-Light-Kamera aufgezeichnet.",
+      "game_link": "Vorbild fuer Sprite-Schwaerme, ELVE-Ringe, Blue Jets und spaetere globale Beobachternetze."
+    },
+    {
+      "id": "peratt_2003",
+      "year": 2003,
+      "title": "PERATT-Z-PINCH-DEUTUNG",
+      "status": "HYPOTHESE",
+      "summary": "Anthony Peratt verglich Laborformen starker Z-Pinch-Plasmen mit Petroglyph-Motiven. Die historische Gleichsetzung ist keine gesicherte wissenschaftliche Erklaerung.",
+      "game_link": "Im fiktiven Elektrischen Universum wird die Aehnlichkeit zum Squatter-Man-Motiv zum spaeten Warnsignal."
+    }
+  ],
+  "sky_events": [
+    {
+      "id": "low_latitude_aurora",
+      "period": "2031",
+      "title": "ROTE VORHAENGE IM SUEDEN",
+      "text": "Rote Aurora wird in Regionen gefilmt, die sie nur selten sehen. Gleichzeitig schlagen Magnetometer aus.",
+      "archive_ref": "carrington_1859",
+      "art": "strange_sky",
+      "plasma": 8,
+      "choices": [
+        {"title": "SONNENSTURM-WARNUNG", "effects": {"science": 4, "credibility": 4, "panic": 2, "truth": -2}},
+        {"title": "AUFNAHMEN BEGRENZEN", "effects": {"media": 5, "credibility": -3, "truth": -4, "stability": -2}}
+      ]
+    },
+    {
+      "id": "noctilucent_spread",
+      "period": "2032",
+      "title": "SILBERBLAUE NACHT",
+      "text": "Nachtleuchtende Wolken erscheinen weit ausserhalb der gewohnten Breiten und bleiben bis tief in die Nacht sichtbar.",
+      "archive_ref": "night_clouds_1885",
+      "art": "strange_sky",
+      "plasma": 7,
+      "choices": [
+        {"title": "MESOSPHAEREN-STUDIE", "budget": -5, "effects": {"science": 6, "credibility": 5, "truth": -2}},
+        {"title": "PARTIKELPROGRAMM NENNEN", "effects": {"media": 4, "burden": 3, "truth": -3, "credibility": -1}}
+      ]
+    },
+    {
+      "id": "sprite_swarm",
+      "period": "2033-Q2",
+      "title": "SPRITE-SCHWAERME",
+      "text": "Rote, quallenartige Blitze und blaue Jets stehen minutenlang ueber mehreren Gewittersystemen. Amateurkameras laufen bereits.",
+      "archive_ref": "sprites_1989",
+      "art": "strange_sky",
+      "plasma": 12,
+      "choices": [
+        {"title": "TLE-MESSKAMPAGNE OEFFNEN", "budget": -6, "effects": {"science": 7, "credibility": 6, "truth": 1, "panic": -2}},
+        {"title": "LIVEBILDER VERZOEGERN", "effects": {"media": 6, "truth": -5, "credibility": -5, "panic": 2}}
+      ]
+    },
+    {
+      "id": "induction_grid",
+      "period": "2033-Q4",
+      "title": "STROM OHNE QUELLE",
+      "text": "Leitungen funken bei abgeschalteten Kraftwerken. Kompassnadeln rotieren und lange Antennen beginnen zu gluehen.",
+      "archive_ref": "carrington_1859",
+      "art": "plasma",
+      "plasma": 16,
+      "choices": [
+        {"title": "NETZE SEGMENTIEREN", "budget": -9, "effects": {"stability": 7, "science": 4, "panic": -2}},
+        {"title": "ROLLIERENDE ABSCHALTUNG", "effects": {"stability": -5, "panic": 4, "truth": -3, "burden": 3}}
+      ]
+    },
+    {
+      "id": "squatter_man",
+      "period": "2034-03",
+      "title": "DAS MUSTER AM HIMMEL",
+      "text": "Eine symmetrische Z-Pinch-Struktur bildet fuer Sekunden Kopf, gebeugte Glieder und zwei leuchtende Ringe. Das Archiv meldet eine beunruhigende Motiv-Aehnlichkeit.",
+      "archive_ref": "peratt_2003",
+      "art": "squatter",
+      "plasma": 22,
+      "choices": [
+        {"title": "PLASMA-MUSTER OFFEN ERKLAEREN", "effects": {"science": 7, "credibility": 5, "truth": 5, "panic": -3}},
+        {"title": "ALLE KANAELEN DROSSELN", "effects": {"media": 8, "truth": -6, "credibility": -9, "stability": -4}}
+      ]
+    },
+    {
+      "id": "plasma_lattice",
+      "period": "2034-05",
+      "title": "DAS ELEKTRISCHE GITTER",
+      "text": "Filamente verbinden Gewitterzellen mit der oberen Atmosphaere. Leuchtende Ringe laufen ueber ganze Horizonte.",
+      "archive_ref": "sprites_1989",
+      "art": "plasma",
+      "plasma": 28,
+      "choices": [
+        {"title": "FARADAY-KORRIDORE AKTIVIEREN", "budget": -11, "effects": {"stability": 8, "induction": -7, "panic": -3}},
+        {"title": "MILITAERISCHE SPERRZONEN", "effects": {"coalition": 4, "truth": -3, "stability": -6, "panic": 4}}
+      ]
+    },
+    {
+      "id": "global_discharge",
+      "period": "2034-07",
+      "title": "GLOBALE PLASMAENTLADUNG",
+      "text": "Birkeland-Filamente, Z-Pinch-Saeulen, Sprites und ELVE-Ringe ueberlagern sich. Die elektrische Kopplung erreicht ihr Maximum.",
+      "archive_ref": "peratt_2003",
+      "art": "plasma",
+      "plasma": 36,
+      "choices": [
+        {"title": "WELTNETZ ABWERFEN", "effects": {"stability": -4, "induction": -12, "panic": 4, "elite_escape": 5}},
+        {"title": "RESTENERGIE IN DIE ARK", "effects": {"elite_escape": 12, "truth": 8, "panic": 6, "coalition": -3}}
+      ]
+    }
+  ],
+  "public_signals": [
+    {
+      "id": "twelfth_planet_1976",
+      "year": 1976,
+      "title": "DER ZWOELFTE PLANET",
+      "source": "ZECHARIA SITCHIN",
+      "text": "Ein populaeres Buch verbindet alte Texte mit einem unbekannten Planeten. Die Deutung ist oeffentlich umstritten, aber anschlussfaehig.",
+      "pressure": 7,
+      "opponent": "observatories"
+    },
+    {
+      "id": "planet_x_web_2000",
+      "year": 2000,
+      "title": "PLANET X IM NETZ",
+      "source": "ZETATALK / NANCY LIEDER",
+      "text": "Webseiten und Radiosendungen verbinden Himmelsbeobachtungen mit einer nahen Passage. Archive lassen sich nicht mehr zentral kontrollieren.",
+      "pressure": 10,
+      "opponent": "press"
+    },
+	{
+	  "id": "amateur_network_2008",
+	  "year": 2008,
+	  "title": "UNABHAENGIGE MESSNETZE",
+	  "source": "AMATEURSTERNWARTEN / BLOGS",
+	  "text": "Verteilte Beobachter vergleichen Rohbilder, Zeitstempel und Wetterdaten. Einzelne Sperren koennen die Spiegel nicht mehr beseitigen.",
+	  "pressure": 11,
+	  "opponent": "observatories"
+	},
+	{
+	  "id": "documentary_wave_2017",
+	  "year": 2017,
+	  "title": "DIE DOKUMENTARWELLE",
+	  "source": "FERNSEHEN / VIDEOARCHIVE",
+	  "text": "Alte Planet-X-Deutungen werden mit neuen Himmelsaufnahmen zusammengeschnitten und erreichen ein Massenpublikum.",
+	  "pressure": 15,
+	  "opponent": "press"
+	},
+    {
+      "id": "prediction_2003",
+      "year": 2003,
+      "title": "DAS AUSGEBLIEBENE DATUM",
+      "source": "PLANET-X-FOREN",
+      "text": "Eine angekuendigte Katastrophe bleibt aus. Das senkt kurzfristig die Glaubwuerdigkeit der Szene, erzeugt aber dauerhafte Spiegelarchive.",
+      "pressure": 8,
+      "opponent": "press"
+    },
+    {
+      "id": "nibiru_video_2013",
+      "year": 2013,
+      "title": "NIBIRU-VIDEOS",
+      "source": "VIDEOPORTALE",
+      "text": "Linsenreflexe, Nebensonnen und echte Messfehler werden millionenfach als Planet gedeutet.",
+      "pressure": 13,
+      "opponent": "observatories"
+    },
+    {
+      "id": "algorithm_wave_2025",
+      "year": 2025,
+      "title": "ALGORITHMISCHE WELLE",
+      "source": "DEZENTRALE KANAELE",
+      "text": "Unabhaengige Kanaele vergleichen alte Vorhersagen mit aktuellen Aufnahmen. Jede Sperre kann die Reichweite weiter erhoehen.",
+      "pressure": 17,
+      "opponent": "press"
+    },
+    {
+      "id": "naked_eye_2030",
+      "year": 2030,
+      "title": "MIT BLOSSEM AUGE",
+      "source": "GLOBALE BEOBACHTER",
+      "text": "Abendaufnahmen aus tausenden Orten zeigen denselben roten Rand. Vollstaendige Unterdrueckung ist praktisch unmoeglich.",
+      "pressure": 26,
+      "opponent": "observatories"
+    }
+  ]
+}

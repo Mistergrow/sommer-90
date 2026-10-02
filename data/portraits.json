@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "name": "NPC-Porträt-Manifest (native 32×32, Ausgabe 128×128)",
+    "schema_version": 2,
+    "size": 128,
+    "author_size": 32,
+    "output_size": 128,
+    "upscale": 4,
+    "filter": "nearest",
+    "note": "Kanonisches Manifest des permanenten Porträt-Systems. PortraitPaint32 setzt pro Identität deterministisch ein natives 32×32-Bild; PortraitGen skaliert ausschließlich exakt 4× per Nearest auf die bestehende 128×128-UI-Ausgabe.",
+    "style": "Westliches 1990er Point-and-Click-Adventure: kompakte handkuratierte 3/4-Gesichter, harte Pixelcluster, kontrollierte Rampen und lesbare Animation bereits im nativen 32×32-Raster."
+  },
+
+  "palettes": {
+    "skin": ["beige", "sand", "tan", "pale", "brown"],
+    "hair": ["brown", "black", "grey", "blond", "ginger", "auburn", "white", "platinum", "red", "blue", "pink", "green", "teal"],
+    "personality": ["teal", "red", "blue", "green", "orange", "violet", "mustard"],
+    "jacket": ["denim", "leather"]
+  },
+
+  "identity": {
+    "note": "Stabile DNA pro NPC (seed = hash(id)); via portrait_dna in npcs.json überschreibbar.",
+    "gender": ["m", "f"],
+    "face_shape": ["oval", "round", "square", "long", "heart"],
+    "eye_type": ["normal", "narrow", "wide", "droopy"],
+    "eye_color": ["brown", "blue", "green", "grey"],
+    "nose_type": ["straight", "small", "wide", "long"],
+    "hair_style": ["buzzcut", "short", "parted", "messy", "curly", "straight", "medium", "long", "ponytail", "mullet", "bob", "mohawk", "afro", "bun", "pigtails", "spiky", "quiff", "flattop", "bald"],
+    "brow_type": ["flat", "thick", "raised"],
+    "ears": ["plain", "big", "earring"],
+    "clothing_style": ["casual", "neat", "scene", "sporty", "artsy", "nerdy"],
+    "glasses": ["", "round", "square", "thick", "aviator", "cat", "half", "sunglasses"],
+    "beard": ["", "stubble", "moustache", "goatee", "chin", "full", "sideburns", "soulpatch", "handlebar", "muttonchops", "longbeard"],
+    "hat": ["", "cap", "cap_back", "beanie", "winter", "headband", "bandana", "bucket", "sunhat", "tophat", "fedora", "cowboy", "flatcap", "visor", "party", "crown", "santa", "helmet", "headphones"],
+    "eye_spacing": [-1, 0, 1],
+    "eye_asymmetry": [-1, 0, 1],
+    "nose_shift": [-1, 0, 1],
+    "mouth_shift": [-1, 0, 1],
+    "mouth_width": [-2, -1, 0, 1, 2],
+    "hair_sweep": [-1, 1]
+  },
+
+  "layers": [
+    { "id": "shadow",     "z": 1,  "variants": ["soft"] },
+    { "id": "shirt",      "z": 2,  "variants": ["tee", "polo", "sweater", "striped", "flannel", "hoodie", "track"] },
+    { "id": "jacket",     "z": 3,  "optional": true, "variants": ["denim", "leather"] },
+    { "id": "neck",       "z": 4,  "variants": ["plain"] },
+    { "id": "hair_back",  "z": 5,  "optional": true, "variants": ["short", "parted", "messy", "curly", "straight", "medium", "long", "ponytail", "mullet", "bob", "afro", "bun", "pigtails", "spiky", "quiff", "flattop"] },
+    { "id": "ears",       "z": 6,  "variants": ["plain", "big", "earring"] },
+    { "id": "head",       "z": 7,  "variants": ["oval", "round", "square", "long", "heart"] },
+    { "id": "hair_front", "z": 8,  "variants": ["buzzcut", "short", "parted", "messy", "curly", "straight", "medium", "long", "ponytail", "mullet", "bob", "mohawk", "afro", "bun", "pigtails", "spiky", "quiff", "flattop", "bald"] },
+    { "id": "glasses",    "z": 9,  "optional": true, "variants": ["round", "square", "thick", "aviator", "cat", "half", "sunglasses"] },
+    { "id": "eyebrows",   "z": 10, "variants": ["flat", "thick", "raised"] },
+    { "id": "eyes",       "z": 11, "variants": ["neutral", "happy", "sad", "angry", "surprised", "thinking", "tired", "nervous", "open", "half", "closed"] },
+    { "id": "nose",       "z": 12, "variants": ["straight", "small", "wide", "long"] },
+    { "id": "mouth",      "z": 13, "variants": ["rest", "mbp", "fv", "ai", "e", "ou", "l", "sch", "neutral", "smile", "laugh", "open", "talking", "frown", "wavy", "grit"] },
+    { "id": "beard",      "z": 14, "optional": true, "variants": ["stubble", "moustache", "goatee", "chin", "full", "sideburns", "soulpatch", "handlebar", "muttonchops", "longbeard"] },
+    { "id": "hat",        "z": 15, "optional": true, "variants": ["cap", "cap_back", "beanie", "winter", "headband", "bandana", "bucket", "sunhat", "tophat", "fedora", "cowboy", "flatcap", "visor", "party", "crown", "santa", "helmet", "headphones"] },
+    { "id": "highlights", "z": 16, "variants": ["rim"] }
+  ],
+
+  "emotions": ["neutral", "happy", "laughing", "sad", "angry", "surprised", "shocked", "thinking", "talking", "tired", "nervous", "proud"],
+
+  "animation": {
+    "visemes": ["rest", "mbp", "fv", "ai", "e", "ou", "l", "sch"],
+    "blink": ["open", "half", "closed"],
+    "gaze": [-1, 0, 1],
+    "note": "Frame-State nutzt mouth_pose, eye_frame und gaze. Die Tokens werden 1:1 vom Renderer gezeichnet; Aliasnormalisierung liegt zentral in AvatarCatalog."
+  },
+
+  "clothing": {
+    "note": "Kleidung folgt der Epoche (Jahr), dem Stil-Typ des NPCs, Saison, Ort und Ereignis. Die Farbidentität (personality_color) bleibt IMMER gleich — der NPC bleibt über die Jahre erkennbar.",
+    "eras": [
+      { "from": 1990, "casual": ["tee", "striped"], "neat": ["polo", "sweater"], "scene": ["tee", "striped"], "sporty": ["track", "tee"], "artsy": ["striped", "tee"], "nerdy": ["polo", "sweater"] },
+      { "from": 1993, "casual": ["tee", "flannel"], "neat": ["polo", "sweater"], "scene": ["flannel", "tee"], "sporty": ["track", "tee"], "artsy": ["flannel", "striped"], "nerdy": ["sweater", "polo"] },
+      { "from": 1996, "casual": ["tee", "hoodie"], "neat": ["sweater", "polo"], "scene": ["hoodie", "flannel"], "sporty": ["track", "hoodie"], "artsy": ["hoodie", "flannel"], "nerdy": ["sweater", "hoodie"] },
+      { "from": 1999, "casual": ["hoodie", "polo"], "neat": ["polo", "sweater"], "scene": ["hoodie", "tee"], "sporty": ["track", "hoodie"], "artsy": ["hoodie", "tee"], "nerdy": ["hoodie", "polo"] }
+    ],
+    "season": {
+      "winter": { "shirt": "sweater", "jacket": "force" },
+      "summer": { "jacket": "none" }
+    },
+    "location": {
+      "computer_club": { "style": "scene" },
+      "flea_market": { "jacket": "force" },
+      "stadtbank": { "style": "neat" },
+      "postamt": { "style": "neat" }
+    },
+    "event": {
+      "party": { "shirt": "polo" },
+      "interview": { "style": "neat", "jacket": "force" }
+    }
+  },
+
+  "geometry": {
+    "note": "Native 32er Anker der handkuratierten 3/4-Vorlage; (0,0)=oben links. Die 128er Ausgabe besitzt exakt dieselben Pixel in 4×4-Blöcken.",
+    "head_center": [17, 14],
+    "eye_far": [13, 13], "eye_near": [20, 12],
+    "nose": [22, 17], "mouth": [19, 20],
+    "chin_y": 24, "shoulders_y": 27
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "comment": "Datengetriebene Textregie. Jeder Sprecher erbt einen Archetyp und besitzt eigene Tempo-, Farb-, Eintritts- und Keyword-Signaturen. Inline-Kommandos: {pause}, {pause=0.4}, {fast}/{slow}/{normal}, {em}...{/em}, {punch}...{/punch}, {whisper}...{/whisper}, {tech}...{/tech}.",
+  "default": {
+    "cps": 27.0,
+    "comma_pause": 0.1,
+    "sentence_pause": 0.22,
+    "font_size": 18,
+    "color": "#e8edf2",
+    "accent": "#f0c96b",
+    "entrance": "settle",
+    "intensity": 1.0
+  },
+  "archetypes": {
+    "player": {
+      "cps": 29.0,
+      "color": "#e9f1ff",
+      "accent": "#82c8ff",
+      "entrance": "resolve",
+      "intensity": 0.75
+    },
+    "friend": {
+      "cps": 31.0,
+      "comma_pause": 0.07,
+      "accent": "#72e3c0",
+      "entrance": "bounce",
+      "intensity": 0.9
+    },
+    "merchant": {
+      "cps": 23.0,
+      "comma_pause": 0.14,
+      "accent": "#efc06b",
+      "entrance": "weight",
+      "intensity": 0.7
+    },
+    "authority": {
+      "cps": 21.0,
+      "sentence_pause": 0.3,
+      "accent": "#d8d2b0",
+      "entrance": "precise",
+      "intensity": 0.55
+    },
+    "creative": {
+      "cps": 30.0,
+      "accent": "#e397ff",
+      "entrance": "flow",
+      "intensity": 1.0
+    },
+    "technical": {
+      "cps": 26.0,
+      "accent": "#68d9ed",
+      "entrance": "terminal",
+      "intensity": 0.65
+    },
+    "calm": {
+      "cps": 20.0,
+      "comma_pause": 0.16,
+      "sentence_pause": 0.32,
+      "accent": "#a9d6b4",
+      "entrance": "soft",
+      "intensity": 0.45
+    }
+  },
+  "emotions": {
+    "neutral": {"tempo": 1.0, "pause_scale": 1.0, "intensity_scale": 1.0},
+    "happy": {"tempo": 1.08, "pause_scale": 0.9, "intensity_scale": 1.08, "entrance": "bounce"},
+    "laughing": {"tempo": 1.14, "pause_scale": 0.82, "intensity_scale": 1.18, "entrance": "bounce"},
+    "sad": {"tempo": 0.78, "pause_scale": 1.34, "intensity_scale": 0.72, "entrance": "soft"},
+    "angry": {"tempo": 1.16, "pause_scale": 0.76, "intensity_scale": 1.32, "entrance": "weight"},
+    "surprised": {"tempo": 1.12, "pause_scale": 0.86, "intensity_scale": 1.22, "entrance": "spark"},
+    "shocked": {"tempo": 0.9, "pause_scale": 1.22, "intensity_scale": 1.34, "entrance": "glitch"},
+    "thinking": {"tempo": 0.82, "pause_scale": 1.28, "intensity_scale": 0.76, "entrance": "settle"},
+    "talking": {"tempo": 1.04, "pause_scale": 0.96, "intensity_scale": 1.0},
+    "tired": {"tempo": 0.72, "pause_scale": 1.42, "intensity_scale": 0.62, "entrance": "soft"},
+    "nervous": {"tempo": 1.2, "pause_scale": 0.84, "intensity_scale": 1.16, "entrance": "glitch"},
+    "proud": {"tempo": 0.9, "pause_scale": 1.12, "intensity_scale": 1.08, "entrance": "precise"}
+  },
+  "speakers": {
+    "player": {
+      "base": "player",
+      "accent": "#8dcfff",
+      "keywords": {
+        "ich": "em",
+        "meine": "em",
+        "entscheide": "punch"
+      }
+    },
+    "npc_stefan": {
+      "base": "friend",
+      "cps": 33.0,
+      "accent": "#63e6c5",
+      "keywords": {
+        "Diskette": "tech",
+        "Demo": "em",
+        "komm": "punch"
+      }
+    },
+    "npc_gruber": {
+      "base": "merchant",
+      "cps": 22.0,
+      "accent": "#eab565",
+      "keywords": {
+        "Garantie": "punch",
+        "Mark": "em",
+        "Werkstatt": "tech"
+      }
+    },
+    "npc_jan_gruber": {
+      "base": "merchant",
+      "cps": 24.0,
+      "accent": "#e4b86d",
+      "entrance": "precise",
+      "keywords": {
+        "Konfiguration": "tech",
+        "Upgrade": "tech",
+        "Ausbaustufe": "punch",
+        "Werkstatt": "em"
+      }
+    },
+    "npc_krause": {
+      "base": "merchant",
+      "cps": 25.0,
+      "accent": "#f2a75d",
+      "entrance": "sly",
+      "keywords": {
+        "selten": "em",
+        "Preis": "punch",
+        "heute": "em"
+      }
+    },
+    "npc_sven": {
+      "base": "friend",
+      "cps": 28.0,
+      "accent": "#91d67b",
+      "keywords": {
+        "löten": "tech",
+        "Joystick": "tech",
+        "ehrlich": "em"
+      }
+    },
+    "npc_mike": {
+      "base": "friend",
+      "cps": 34.0,
+      "accent": "#ff9778",
+      "entrance": "bounce",
+      "keywords": {
+        "Spiel": "em",
+        "Rekord": "punch",
+        "unmöglich": "punch"
+      }
+    },
+    "npc_alex": {
+      "base": "calm",
+      "cps": 23.0,
+      "accent": "#9fc9ef",
+      "keywords": {
+        "Zustand": "tech",
+        "Sammlung": "em",
+        "Original": "punch"
+      }
+    },
+    "npc_daniel": {
+      "base": "technical",
+      "cps": 27.0,
+      "accent": "#61d7e7",
+      "keywords": {
+        "Code": "tech",
+        "Fehler": "punch",
+        "Assembler": "tech"
+      }
+    },
+    "npc_lisa": {
+      "base": "creative",
+      "cps": 28.0,
+      "accent": "#f09bd8",
+      "keywords": {
+        "Farbe": "em",
+        "Idee": "punch",
+        "zeichnen": "em"
+      }
+    },
+    "npc_mutter": {
+      "base": "authority",
+      "cps": 22.0,
+      "accent": "#e6b3a7",
+      "entrance": "warm",
+      "keywords": {
+        "Zimmer": "punch",
+        "Schule": "em",
+        "bitte": "whisper"
+      }
+    },
+    "npc_vater": {
+      "base": "authority",
+      "cps": 20.0,
+      "accent": "#c8c3a4",
+      "entrance": "weight",
+      "keywords": {
+        "Verantwortung": "punch",
+        "Geld": "em",
+        "Arbeit": "em"
+      }
+    },
+    "npc_voss": {
+      "base": "authority",
+      "cps": 19.0,
+      "accent": "#d5d0a9",
+      "keywords": {
+        "Aufgabe": "punch",
+        "Unterricht": "em",
+        "genau": "tech"
+      }
+    },
+    "npc_achim": {
+      "base": "technical",
+      "cps": 24.0,
+      "accent": "#70d3e8",
+      "keywords": {
+        "Club": "em",
+        "Mitgliedschaft": "punch",
+        "Hardware": "tech"
+      }
+    },
+    "npc_basti": {
+      "base": "creative",
+      "cps": 32.0,
+      "accent": "#d690ff",
+      "entrance": "rhythm",
+      "keywords": {
+        "Beat": "punch",
+        "Pattern": "tech",
+        "Groove": "em"
+      }
+    },
+    "npc_pixie": {
+      "base": "creative",
+      "cps": 29.0,
+      "accent": "#ff8fcf",
+      "entrance": "spark",
+      "keywords": {
+        "Pixel": "tech",
+        "Palette": "tech",
+        "Look": "em"
+      }
+    },
+    "npc_rocky": {
+      "base": "technical",
+      "cps": 30.0,
+      "accent": "#ef9b61",
+      "entrance": "weight",
+      "keywords": {
+        "Volt": "tech",
+        "Netzteil": "tech",
+        "Vorsicht": "punch"
+      }
+    },
+    "npc_sysop": {
+      "base": "technical",
+      "cps": 25.0,
+      "color": "#b8f4c5",
+      "accent": "#68ff91",
+      "entrance": "terminal",
+      "keywords": {
+        "CONNECT": "punch",
+        "BBS": "tech",
+        "Upload": "tech"
+      }
+    },
+    "npc_tobias": {
+      "base": "technical",
+      "cps": 32.0,
+      "accent": "#6ee7ff",
+      "entrance": "glitch",
+      "keywords": {
+        "Raster": "tech",
+        "Blitter": "tech",
+        "Release": "punch"
+      }
+    },
+    "npc_oez": {
+      "base": "merchant",
+      "cps": 27.0,
+      "accent": "#f3bf73",
+      "entrance": "warm",
+      "keywords": {
+        "neu": "em",
+        "Magazin": "tech",
+        "ausverkauft": "punch"
+      }
+    },
+    "npc_joerg": {
+      "base": "creative",
+      "cps": 25.0,
+      "accent": "#d69cff",
+      "entrance": "flow",
+      "keywords": {
+        "Platte": "em",
+        "Sound": "punch",
+        "Mix": "tech"
+      }
+    },
+    "npc_habel": {
+      "base": "authority",
+      "cps": 21.0,
+      "accent": "#b8c7dc",
+      "keywords": {
+        "Paket": "tech",
+        "Formular": "punch",
+        "Unterschrift": "em"
+      }
+    },
+    "npc_wolf": {
+      "base": "authority",
+      "cps": 20.0,
+      "accent": "#a8c1d8",
+      "entrance": "precise",
+      "keywords": {
+        "Konto": "tech",
+        "Kredit": "punch",
+        "Zinsen": "tech"
+      }
+    },
+    "npc_haendler": {
+      "base": "calm",
+      "cps": 21.0,
+      "accent": "#9aa89b",
+      "entrance": "soft",
+      "keywords": {
+        "Qualitaet": "tech",
+        "Etikett": "tech",
+        "diskret": "whisper",
+        "sauber": "em"
+      }
+    }
+  }
+}

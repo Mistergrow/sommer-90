@@ -1,0 +1,276 @@
+{
+  "comment": "Mailboxen (BBS) der Kulturschicht (docs/KULTUR_LAYER.md Kap. 7). Datengetrieben, Living-Timeline-gefiltert: year_from/year_to bestimmen, welche Boards in welchem Jahr existieren (1993 wenige lokale Bretter, 1996 Bluetezeit, ab 1997 sterben sie ans Internet). Alles fiktiv (Content-Richtlinie). cost_per_call = Telefongebuehren in DM (Eltern-Beziehung!), connect_seconds = Einwahldauer-Flavor. areas: file (Downloads -> Disketten), message (lesen/schreiben), classified (Kleinanzeigen), news. downloads verweisen auf disks.json-Templates ODER definieren content_type/content_title/rarity inline; size_kb bestimmt Download-Dauer.",
+  "phone_costs": {
+    "comment": "Ortsgespraech-Grundgebuehr steigt leicht ueber die Jahre",
+    "base": 0.12
+  },
+  "boards": [
+    {
+      "id": "bbs_pixelparadies",
+      "name": "Pixel-Paradies BBS",
+      "number": "0201-334455",
+      "sysop": "Der Admiral",
+      "year_from": 1992,
+      "year_to": 1997,
+      "connect_seconds": 14,
+      "baud": 2400,
+      "tagline": "Die freundliche Mailbox fuer Einsteiger. 2 Nodes, 1 Traum.",
+      "areas": {
+        "news": [
+          "Willkommen im Pixel-Paradies! Bitte keine Warez, nur PD & Shareware.",
+          "Neuer Nachrichtenbereich: 'Tratsch & Klatsch'. Seid nett zueinander."
+        ],
+        "files": [
+          {
+            "content_type": "shareware",
+            "content_title": "Blitz Defender (Episode 1)",
+            "software_id": "blitz_defender",
+            "rarity": "common",
+            "size_kb": 340,
+            "note": "Registrieren nicht vergessen!"
+          },
+          {
+            "content_type": "tools",
+            "content_title": "Public-Domain-Toolsammlung '93",
+            "rarity": "common",
+            "size_kb": 220
+          },
+          {
+            "content_type": "musik",
+            "content_title": "Sommerregen (Tracker-Modul)",
+            "rarity": "uncommon",
+            "size_kb": 180
+          }
+        ],
+        "messages": [
+          {
+            "from": "Kruemel",
+            "subject": "Suche Joystick-Tipps",
+            "body": "Mein Competition Pro klemmt links. Jemand eine Idee? Loeten traue ich mich."
+          },
+          {
+            "from": "Der Admiral",
+            "subject": "RE: Suche Joystick-Tipps",
+            "body": "Mikroschalter tauschen! Gibts beim Elektronik-Laden fuer 2 Mark das Stueck."
+          }
+        ],
+        "classifieds": [
+          {
+            "text": "Verkaufe A501 Speichererweiterung, VB 40 DM. Chiffre KR-12."
+          },
+          {
+            "text": "Tausche Original 'Monkey Adventure' (komplett!) gegen Festplatte."
+          }
+        ]
+      }
+    },
+    {
+      "id": "bbs_nachtschicht",
+      "name": "Nachtschicht Board",
+      "number": "0201-778899",
+      "sysop": "Vampyr",
+      "year_from": 1993,
+      "year_to": 1998,
+      "connect_seconds": 18,
+      "baud": 2400,
+      "tagline": "Nur nachts erreichbar. Demos, MODs, Szene-News. Kein Kinderkram.",
+      "areas": {
+        "news": [
+          "Party-Ankuendigung: Das Sommertreffen der Szene, Termine im Message-Bereich.",
+          "Ratio 1:3 - fuer jeden Download bitte etwas hochladen. Fair bleiben!"
+        ],
+        "files": [
+          {
+            "content_type": "demo",
+            "content_title": "Ocean Dreams (Demo von RADIANT)",
+            "rarity": "rare",
+            "size_kb": 780,
+            "note": "State of the Art. 4 Kanaele, ein Wahnsinn."
+          },
+          {
+            "content_type": "musik",
+            "content_title": "Neon Nights (MOD-Pack)",
+            "rarity": "uncommon",
+            "size_kb": 410
+          },
+          {
+            "content_type": "grafik",
+            "content_title": "Pixel-Galerie Vol. 4",
+            "software_id": "",
+            "rarity": "uncommon",
+            "size_kb": 290
+          }
+        ],
+        "messages": [
+          {
+            "from": "Vampyr",
+            "subject": "Neue Cracktros",
+            "body": "Cracktronic hat wieder zugeschlagen. Sauberer Scroller, fette Musik. Respekt."
+          },
+          {
+            "from": "Zeropage",
+            "subject": "Suche Mitstreiter",
+            "body": "Gruende Demo-Gruppe. Brauche Grafiker + Musiker. Meldet euch!"
+          }
+        ],
+        "classifieds": [
+          {
+            "text": "Suche Klang Tracker Pro (Original mit Handbuch). Zahle fair."
+          },
+          {
+            "text": "Biete Coding-Hilfe (Assembler) gegen Grafiken. Zeropage."
+          }
+        ]
+      }
+    },
+    {
+      "id": "bbs_marktplatz",
+      "name": "Der Marktplatz",
+      "number": "0201-112233",
+      "sysop": "Haendler Hans",
+      "year_from": 1994,
+      "year_to": 1999,
+      "connect_seconds": 12,
+      "baud": 9600,
+      "tagline": "Hardware, Software, Kleinanzeigen. Die groesste Boerse der Stadt.",
+      "areas": {
+        "news": [
+          "9600 Baud! Jetzt noch schneller stoebern.",
+          "Neu: Hardware-Marktplatz mit Sofort-Kauf. Bezahlung per Ueberweisung."
+        ],
+        "files": [
+          {
+            "content_type": "tools",
+            "content_title": "Archiv-Meister (Shareware)",
+            "rarity": "common",
+            "size_kb": 260
+          },
+          {
+            "content_type": "shareware",
+            "content_title": "Steuer-Sparfuchs '94 (Demo)",
+            "rarity": "common",
+            "size_kb": 520
+          }
+        ],
+        "messages": [
+          {
+            "from": "Haendler Hans",
+            "subject": "Preisliste Juni",
+            "body": "A1200 im Zulauf, Festplatten guenstig. Details im Classified-Bereich."
+          }
+        ],
+        "classifieds": [
+          {
+            "text": "A1200 mit Festplatte, top Zustand, 650 DM. Chiffre HH-07."
+          },
+          {
+            "text": "Verkaufe komplette Jahrgaenge Amiga-Kurier 1990-1993. Sammlerstuecke!"
+          },
+          {
+            "text": "Suche defekte A500 zum Basteln/Ersatzteile. Zahle Abholung."
+          }
+        ]
+      }
+    },
+    {
+      "id": "bbs_clubnet",
+      "name": "ClubNet - Computerclub Ruhrgebiet",
+      "number": "0201-445566",
+      "sysop": "Vorstand",
+      "year_from": 1993,
+      "year_to": 1999,
+      "connect_seconds": 10,
+      "baud": 9600,
+      "tagline": "Das offizielle Board des Computerclubs. Treffen, PD-Bibliothek, News.",
+      "areas": {
+        "news": [
+          "Clubtreffen jeden 1. Freitag im Monat, 18 Uhr, Jugendzentrum.",
+          "Neue PD-Bibliothek online: ueber 200 Disketten zum Kopieren am Clubabend."
+        ],
+        "files": [
+          {
+            "content_type": "tools",
+            "content_title": "Club-Startdiskette '93",
+            "rarity": "common",
+            "size_kb": 150
+          },
+          {
+            "content_type": "demo",
+            "content_title": "MegaDemo Kompilat '93",
+            "software_id": "megademo_kompilat",
+            "rarity": "common",
+            "size_kb": 640
+          }
+        ],
+        "messages": [
+          {
+            "from": "Vorstand",
+            "subject": "Neue Mitglieder willkommen",
+            "body": "Jahresbeitrag 24 DM. Dafuer: PD-Bibliothek, Hilfe, Freunde. Kommt vorbei!"
+          },
+          {
+            "from": "Stefan",
+            "subject": "Wer kommt Freitag?",
+            "body": "Bringe meinen Amiga mit. Wollte jemand Turbo Kart zocken?"
+          }
+        ],
+        "classifieds": [
+          {
+            "text": "Club sucht Spende: alter Drucker fuer die Etiketten-Werkstatt."
+          }
+        ]
+      }
+    },
+    {
+      "id": "bbs_datenautobahn",
+      "name": "Datenautobahn 2000",
+      "number": "0201-909090",
+      "sysop": "NetRunner",
+      "year_from": 1996,
+      "year_to": 1999,
+      "connect_seconds": 8,
+      "baud": 28800,
+      "tagline": "28.8k! Internet-Gateway, Web-Gerede, das naechste grosse Ding.",
+      "areas": {
+        "news": [
+          "Wir haben jetzt ein Internet-Gateway! E-Mail nach ueberallhin.",
+          "Ehrlich gesagt: die Mailbox-Zeit geht zu Ende. Alle reden nur noch vom WWW."
+        ],
+        "files": [
+          {
+            "content_type": "tools",
+            "content_title": "Web-Browser (Beta)",
+            "rarity": "uncommon",
+            "size_kb": 1200
+          },
+          {
+            "content_type": "musik",
+            "content_title": "MP3? Nie gehoert (MOD-Pack)",
+            "rarity": "common",
+            "size_kb": 880
+          }
+        ],
+        "messages": [
+          {
+            "from": "NetRunner",
+            "subject": "Das Ende einer Aera",
+            "body": "Mache das Board Ende naechsten Jahres dicht. Danke fuer die schoene Zeit, Leute."
+          },
+          {
+            "from": "Der Admiral",
+            "subject": "RE: Das Ende einer Aera",
+            "body": "Traurig aber wahr. War eine gute Zeit im Pixel-Paradies. Man sieht sich im Netz."
+          }
+        ],
+        "classifieds": [
+          {
+            "text": "Verschenke: kompletter Amiga-Bestand. Umzug ins PC-Lager. Selbstabholung."
+          },
+          {
+            "text": "Suche Internet-Zugang / ISDN-Tipps. Wer weiss was?"
+          }
+        ]
+      }
+    }
+  ]
+}

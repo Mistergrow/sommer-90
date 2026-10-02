@@ -1,0 +1,197 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_basti",
+  "quests": [
+    {
+      "id": "q_tut_tracker",
+      "title": "Vom MOD-Sammler zum Tracker",
+      "giver": "npc_basti",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "tut_tracker_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Basti: »MODs sammelst und hörst du längst. Jetzt liegt meine ProTracker-Arbeitsdisk in deiner Box — bau dein erstes eigenes Pattern.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "protracker_workdisk",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "memory": "1991 von Basti zum Tracker-Lernen bekommen",
+          "recovery_text": "Bastis ProTracker-Arbeitsdisk liegt jetzt in deiner Diskettenbox.",
+          "blocked_text": "Basti kann dir die Tracker-Arbeitsdisk erst geben, wenn in deiner Diskettenbox ein Platz frei ist.",
+          "protect_text": "Bastis Tracker-Arbeitsdisk wird noch für den aktiven Auftrag benötigt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Im Zimmer: Amiga starten → Werkbank → Disketten → »ProTracker Arbeitsdisk« → START. Vier Spuren setzen, prüfen und als MOD-Idee sichern.",
+          "map_location": "room",
+          "goal": {
+            "creation": "tracker"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_basti",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Zum ersten Mal läuft nicht nur ein gesammeltes MOD, sondern dein eigener Beat im Loop."
+        },
+        {
+          "type": "flag",
+          "flag": "tracker_gelernt",
+          "value": true
+        }
+      ],
+      "teaches": "tracker"
+    },
+    {
+      "id": "q_digitale_musik",
+      "title": "Musik wird zu Daten",
+      "giver": "npc_basti",
+      "prereq": {
+        "year_min": 1997,
+        "needs": [
+          "basti_digital"
+        ],
+        "flag": "digital_music_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Basti will beweisen, dass eine digitale Mixtape-Sequenz trotzdem Persönlichkeit haben kann."
+        }
+      ],
+      "required_music_tracks": [
+        "6beat",
+        "aces_high_2",
+        "aciiiiid",
+        "above_my_head"
+      ],
+      "required_music_text": "Basti bringt vier seiner alten MODs für das Tape-Labor mit. Fehlende Titel wurden deiner Sammlung hinzugefügt.",
+      "stages": [
+        {
+          "desc": "Zu Hause die Stereoanlage anklicken → MOD-Player → »Mixtape«. Ordne mindestens vier bekannte MODs auf Seite A/B, prüfe Pegel und Übergänge und nimm den Master auf.",
+          "map_location": "room",
+          "goal": {
+            "action": "minigame:mixtape"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 3
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_basti",
+          "value": 4
+        },
+        {
+          "type": "flag",
+          "flag": "digital_mixtape"
+        },
+        {
+          "type": "toast",
+          "text": "Bandgefühl, digitale Schnitte: Basti hört den Wandel – und nickt im Takt."
+        }
+      ]
+    },
+    {
+      "id": "q_millennium_demo",
+      "title": "Signal bis Mitternacht",
+      "giver": "npc_basti",
+      "prereq": {
+        "year_min": 1999,
+        "needs": [
+          "rueckblick"
+        ],
+        "flag": "millennium_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Basti will einen letzten gemeinsamen Szenerelease vor dem Jahrtausendwechsel."
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Die Szene-Studio-Arbeitsdisk für das Millennium-Signal wurde wieder bereitgelegt.",
+          "blocked_text": "Für die Szene-Studio-Arbeitsdisk fehlt ein Platz; das Programm bleibt auf der Werkbank erreichbar.",
+          "protect_text": "Das Szene-Studio wird noch für das Millennium-Signal benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 0,
+          "through_stage": 0,
+          "recovery_text": "SZENE-STUDIO wurde für das Millennium-Signal wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause im Szene-Studio eine neue Demo anlegen, Beiträge verbinden, Build und QA bestehen und auf eine leere DD-Disk freezen.",
+          "map_location": "room",
+          "goal": {
+            "action": "millennium_release"
+          }
+        },
+        {
+          "desc": "Zu Hause: Modem-Terminal → erreichbare Mailbox → Eigene Releases → den frischen Millennium-Master hochladen.",
+          "map_location": "room",
+          "goal": {
+            "action": "millennium_upload"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 7
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_basti",
+          "value": 6
+        },
+        {
+          "type": "flag",
+          "flag": "millennium_signal"
+        },
+        {
+          "type": "toast",
+          "text": "Kurz vor Mitternacht wandert dein Signal durch die Leitung – ein letzter Gruß aus der alten Dekade."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+	"npc": "npc_krause",
+	"comment": "Zeilen-Pool fuer npc_krause. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "kra_b01",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Alles vom Feinsten, alles vom Dachboden!"
+		},
+		{
+			"id": "kra_b02",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Wer feilscht, muss auch kaufen. So ist das hier."
+		},
+		{
+			"id": "kra_b03",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Für Stammkunden hab ich immer was unterm Tisch."
+		},
+		{
+			"id": "kra_b04",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Stöbern Sie ruhig, aber vorsichtig, manches ist wackelig."
+		},
+		{
+			"id": "kra_b05",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich hab hier Schätze, die wissen selbst nicht, wie viel sie wert sind."
+		},
+		{
+			"id": "kra_b06",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Handeln gehört dazu, sonst macht's ja keinen Spaß."
+		},
+		{
+			"id": "kra_b07",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Auf'm Flohmarkt ist der frühe Vogel König."
+		},
+		{
+			"id": "kra_b08",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich kenn den Wert von jedem Stück hier. Fast jedem."
+		},
+		{
+			"id": "kra_b09",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ein gutes Geschäft freut beide Seiten, so mach ich das."
+		},
+		{
+			"id": "kra_b10",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Diese Woche 'ne ganze Kiste reingekommen. Greifen Sie zu."
+		},
+		{
+			"id": "kra_b11",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Bei mir gibt's kein festes Preisschild, nur einen guten Preis."
+		},
+		{
+			"id": "kra_b12",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich verkauf lieber günstig an den Richtigen als teuer an den Falschen."
+		},
+		{
+			"id": "kra_b13",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Mein Stand steht seit Jahren hier. Man findet mich immer."
+		},
+		{
+			"id": "kra_b14",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ein bisschen Staub schadet der Ware nicht, dem Preis aber."
+		},
+		{
+			"id": "kra_b15",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich hab schon Raritäten verscherbelt, die weiß ich heut noch."
+		},
+		{
+			"id": "kra_b16",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Fragen Sie, ich erzähl Ihnen die Geschichte zu jedem Teil."
+		},
+		{
+			"id": "kra_b17",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Bargeld ist König am Flohmarktstand."
+		},
+		{
+			"id": "kra_b18",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich mag's, wenn jemand ein gutes Auge hat. Wie Sie."
+		},
+		{
+			"id": "kra_b19",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Feilschen Sie ruhig, ich beiß nicht. Meistens."
+		},
+		{
+			"id": "kra_b20",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Was der eine wegwirft, macht den anderen glücklich."
+		},
+		{
+			"id": "kra_b21",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich häng an manchen Stücken. Die verkauf ich nur ungern."
+		},
+		{
+			"id": "kra_b22",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Kommen Sie früh, dann liegt die Ware noch nicht durchwühlt da."
+		},
+		{
+			"id": "kra_b23",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ein Flohmarkt ist ein Abenteuer. Jede Kiste eine Überraschung."
+		},
+		{
+			"id": "kra_b24",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich rechne krumm, aber immer zu Ihren Gunsten. Fast immer."
+		},
+		{
+			"id": "kra_b25",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Vertrauen Sie meinem Blick, ich verkauf seit Jahrzehnten."
+		},
+		{
+			"id": "kra_b26",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Nehmen Sie's mit, bevor's ein anderer sieht."
+		},
+		{
+			"id": "kra_b27",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Für ein nettes Wort geb ich schon mal einen Groschen nach."
+		},
+		{
+			"id": "kra_b28",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Ich hab hier gelebt und gehandelt. Das steckt einem im Blut."
+		},
+		{
+			"id": "kra_b29",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Schauen, staunen, feilschen — so geht Flohmarkt."
+		},
+		{
+			"id": "kra_b30",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"text": "Na, was darf's sein? Oder erstmal nur gucken?"
+		},
+		{
+			"id": "kr_ever1",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Alles vom Feinsten, alles vom Dachboden! Wer feilscht, muss auch kaufen."
+		},
+		{
+			"id": "kr_ever2",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"trust_min": 10,
+			"topic": "flohmarkt",
+			"text": "Für Stammkunden hab ich immer was Besonderes unterm Tisch. Aber pssst."
+		},
+		{
+			"id": "kr_kiste",
+			"from": 1990,
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Diese Woche 'ne ganze Bananenkiste voller Disketten reingekommen. Erste Wahl, greif zu!"
+		},
+		{
+			"id": "kr_rente",
+			"from": 1997,
+			"needs": [
+				"krause_rente"
+			],
+			"once": true,
+			"topic": "abschied",
+			"text": "Ich hör auf, mach den Stand dicht. Meine Nachfolgerin verkauft bald PC-Teile. Ende einer Ära, was?"
+		},
+		{
+			"id": "kr_rente_nachklang",
+			"from": 1997,
+			"needs": [
+				"krause_rente"
+			],
+			"topic": "abschied",
+			"text": "Mein Stand ist weg, aber die besten Kisten sind bei Leuten gelandet, die ihre Geschichten bewahren. Das ist mehr wert als der letzte Preis."
+		},
+		{
+			"id": "kra_x01",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Alles vom Feinsten, alles vom Dachboden! Wer feilscht, muss auch kaufen, so läuft das hier."
+		},
+		{
+			"id": "kra_x02",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Für Stammkunden hab ich immer was unterm Tisch. Aber pssst, nicht weitersagen."
+		},
+		{
+			"id": "kra_x03",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Auf'm Flohmarkt ist der frühe Vogel König. Wer ausschläft, wühlt in Resten."
+		},
+		{
+			"id": "kra_x04",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Ich kenn den Wert von jedem Stück hier. Fast jedem. Und bei dir mach ich einen guten Preis."
+		},
+		{
+			"id": "kra_x05",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Ich verkauf lieber günstig an den Richtigen als teuer an den Falschen. Das ist Ehre, kein Geschäft."
+		},
+		{
+			"id": "kra_x06",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Diese Woche 'ne ganze Bananenkiste voller Disketten reingekommen. Erste Wahl, greif zu!"
+		},
+		{
+			"id": "kra_x07",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Feilsch ruhig, ich beiß nicht. Meistens. Ein gutes Geschäft freut immer beide Seiten."
+		},
+		{
+			"id": "kra_x08",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Was der eine wegwirft, macht den anderen glücklich. Das ist der ganze Zauber vom Flohmarkt."
+		},
+		{
+			"id": "kra_x09",
+			"to": 1997,
+			"forbids": [
+				"krause_rente"
+			],
+			"topic": "flohmarkt",
+			"text": "Ich häng an manchen Stücken. Die verkauf ich nur ungern — und nur an Leute mit gutem Auge. Wie dir."
+		}
+	]
+}

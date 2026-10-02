@@ -1,0 +1,206 @@
+{
+	"npc": "npc_wolf",
+	"comment": "Zeilen-Pool fuer npc_wolf. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "wol_b01",
+			"text": "Stadtbank, guten Tag. Ein Sparbuch in Ihrem Alter? Vorbildlich."
+		},
+		{
+			"id": "wol_b02",
+			"text": "Wer regelmäßig spart, kann später zuschlagen."
+		},
+		{
+			"id": "wol_b03",
+			"text": "Zinsen sind Ihr stiller Freund, junger Mann."
+		},
+		{
+			"id": "wol_b04",
+			"text": "Nicht alles sofort verprassen. Ein Notgroschen ist Gold wert."
+		},
+		{
+			"id": "wol_b05",
+			"text": "Ordnung in den Finanzen, Ordnung im Leben."
+		},
+		{
+			"id": "wol_b06",
+			"text": "Ich berate Sie gern. Geld will klug behandelt werden."
+		},
+		{
+			"id": "wol_b07",
+			"text": "Ein voller Sparstrumpf schläft ruhiger, sagt man."
+		},
+		{
+			"id": "wol_b08",
+			"text": "Wer früh anfängt zu sparen, dankt sich später selbst."
+		},
+		{
+			"id": "wol_b09",
+			"text": "Ich sitz hier den ganzen Tag mit Zahlen. Aber ich mag sie."
+		},
+		{
+			"id": "wol_b10",
+			"text": "Kleine Beträge, regelmäßig — das ist das Geheimnis."
+		},
+		{
+			"id": "wol_b11",
+			"text": "Ein guter Kaufmann kennt seinen Kontostand."
+		},
+		{
+			"id": "wol_b12",
+			"text": "Sparen ist kein Geiz, sparen ist Weitsicht."
+		},
+		{
+			"id": "wol_b13",
+			"text": "Ich hab schon manchen jungen Menschen aufs richtige Gleis gesetzt."
+		},
+		{
+			"id": "wol_b14",
+			"text": "Bargeld will gezählt sein. Immer nachrechnen."
+		},
+		{
+			"id": "wol_b15",
+			"text": "Ein Kredit ist eine ernste Sache. Überlegen Sie gut."
+		},
+		{
+			"id": "wol_b16",
+			"text": "Für ein Ziel zu sparen macht das Ziel süßer, glauben Sie mir."
+		},
+		{
+			"id": "wol_b17",
+			"text": "Ich bin altmodisch: Was man hat, das hat man."
+		},
+		{
+			"id": "wol_b18",
+			"text": "Die Bank ist sicher, das Sparbuch auch. Verlassen Sie sich drauf."
+		},
+		{
+			"id": "wol_b19",
+			"text": "Rechnen Sie nach, immer. Auch bei mir. Vertrauen ist gut, Kontrolle besser."
+		},
+		{
+			"id": "wol_b20",
+			"text": "Ein solider Kunde ist mir lieber als ein reicher Angeber."
+		},
+		{
+			"id": "wol_b21",
+			"text": "Legen Sie was zurück für die seltenen Gelegenheiten."
+		},
+		{
+			"id": "wol_b22",
+			"text": "Zeit und Zins arbeiten für den Geduldigen."
+		},
+		{
+			"id": "wol_b23",
+			"text": "Ich hab Ihren Vater beraten, als er in Ihrem Alter war."
+		},
+		{
+			"id": "wol_b24",
+			"text": "Finanzielle Bildung schadet nie. Fragen Sie ruhig."
+		},
+		{
+			"id": "wol_b25",
+			"text": "Ein aufgeräumtes Konto ist ein ruhiges Gewissen."
+		},
+		{
+			"id": "wol_b26",
+			"text": "Sparen Sie erst, geben Sie dann aus. Nie umgekehrt."
+		},
+		{
+			"id": "wol_b27",
+			"text": "Kommen Sie jederzeit, mein Schalter ist für Sie offen."
+		},
+		{
+			"id": "wol_b28",
+			"text": "Ein Ziel vor Augen macht das Sparen leichter."
+		},
+		{
+			"id": "wol_b29",
+			"text": "Schönen Tag, und denken Sie an den Notgroschen."
+		},
+		{
+			"id": "wol_b30",
+			"text": "Womit kann ich dienen? Einzahlung oder Beratung?"
+		},
+		{
+			"id": "wo_technik",
+			"from": 1994,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "wandel",
+			"text": "Wir stellen auf Computer um, hier in der Bank. Fortschritt, sagt der Filialleiter. Ich sag: hoffentlich stürzt nix ab."
+		},
+		{
+			"id": "wo_ec",
+			"from": 1997,
+			"topic": "wandel",
+			"text": "Am Automaten ist die EC-Karte längst Alltag. Jetzt setzt sie sich auch an immer mehr Ladenkassen durch — aber ein ordentliches Sparbuch verliert deshalb nicht seinen Wert."
+		},
+		{
+			"id": "wol_x01",
+			"topic": "geld",
+			"text": "Stadtbank, guten Tag. Ein Sparbuch in Ihrem Alter? Höchst vernünftig. Zinsen sind Ihr stiller Freund."
+		},
+		{
+			"id": "wol_x02",
+			"topic": "geld",
+			"text": "Nicht alles sofort verprassen. Ein kleiner Notgroschen für die seltene Diskette — das ist klug."
+		},
+		{
+			"id": "wol_x03",
+			"topic": "geld",
+			"text": "Wer früh anfängt zu sparen, dankt sich später selbst. Zeit und Zins arbeiten für den Geduldigen."
+		},
+		{
+			"id": "wol_x04",
+			"topic": "geld",
+			"text": "Ein voller Sparstrumpf schläft ruhiger, sagt man. Und ich sage: der Kontoinhaber auch."
+		},
+		{
+			"id": "wol_x05",
+			"topic": "geld",
+			"text": "Rechnen Sie nach, immer. Auch bei mir. Vertrauen ist gut, Kontrolle ist Bankwesen."
+		},
+		{
+			"id": "wol_x06",
+			"topic": "geld",
+			"text": "Ich bin altmodisch: Was man hat, das hat man. Schulden sind wie Löcher, die man selbst gräbt."
+		},
+		{
+			"id": "wol_x07",
+			"topic": "geld",
+			"text": "Ein Ziel vor Augen macht das Sparen leichter. Sparen Sie auf etwas Bestimmtes, dann fällt's nicht schwer."
+		},
+		{
+			"id": "wol_x08",
+			"topic": "geld",
+			"text": "Ich hab schon Ihren Vater beraten, als er in Ihrem Alter war. Solider Mann, gutes Sparverhalten."
+		},
+		{
+			"id": "wol_x09",
+			"topic": "geld",
+			"text": "Sparen Sie erst, geben Sie dann aus. Nie umgekehrt. Das ist der ganze Trick, es gibt keinen zweiten."
+		},
+		{
+			"id": "wol_x10",
+			"topic": "geld",
+			"text": "Finanzielle Bildung schadet nie. Fragen Sie ruhig, dafür sitz ich hier."
+		},
+		{
+			"id": "wol_x11",
+			"from": 1994,
+			"needs": [
+				"multimedia"
+			],
+			"topic": "aera",
+			"text": "Wir stellen auf Computer um, hier in der Bank. Fortschritt, sagt der Filialleiter. Ich sag: hoffentlich stürzt nix ab."
+		},
+		{
+			"id": "wol_x12",
+			"from": 1997,
+			"topic": "aera",
+			"text": "Am Automaten ist die EC-Karte längst Alltag. Jetzt wird sie auch an immer mehr Ladenkassen akzeptiert — das Sparbuch bleibt trotzdem der ruhige Teil Ihrer Finanzen."
+		}
+	]
+}

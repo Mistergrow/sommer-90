@@ -1,0 +1,72 @@
+{
+	"comment": "BBS-Szene-Schicht: NPC-Pseudonyme (Handles) + VIRTUELLE Szene-Gruppen. NPC-Posts entstehen zur Laufzeit aus ihren Narrative-Zeilen (kontinuitaetssicher, unter Pseudonym); Gruppen-Posts stehen hier mit from/to (Jahr) und optional needs (Narrative-Fakten). wall = Oneliner-Shouts. Gruppen sind FIKTIV (keine echten Szene-Namen erfunden dargestellt).",
+	"personas": {
+		"npc_stefan": "SIRIUS",
+		"npc_sven": "KICK-OFF",
+		"npc_mike": "JOYRIDER",
+		"npc_alex": "ATTIC",
+		"npc_daniel": "DATAWOLF",
+		"npc_lisa": "LUMEN",
+		"npc_basti": "BEATBOY",
+		"npc_pixie": "PIXIE",
+		"npc_tobias": "TRSI",
+		"npc_rocky": "LOETKOLBEN",
+		"npc_sysop": "KEEPER"
+	},
+	"persona_until": { "npc_sven": 1995 },
+	"groups": [
+		{
+			"id": "radiant",
+			"name": "RADIANT",
+			"members": ["PRISM", "COPPERHEAD", "SINUS"],
+			"posts": [
+				{"id": "rad1", "from": 1990, "to": 1994, "subject": "Neue Demo in Arbeit", "body": "Copper-Balken bis zum Anschlag. Release auf der naechsten Party. Greetings an alle Supporter!", "author": "PRISM"},
+				{"id": "rad2", "from": 1991, "to": 1996, "subject": "Suchen 2. Grafiker", "body": "RADIANT sucht Pixel-Talent fuer das naechste Grossprojekt. Probe-Logo an unsere Box-Adresse.", "author": "COPPERHEAD"},
+				{"id": "rad3", "from": 1996, "subject": "RADIANT goes PC", "body": "Ja, wir portieren. Nein, wir sind keine Verraeter. Die Kunst bleibt: viel aus wenig. Amiga-Sektion bleibt offen!", "author": "SINUS"},
+				{"id": "rad4", "from": 1999, "subject": "10 Jahre RADIANT", "body": "Zehn Jahre, drei Rechnergenerationen, eine Familie. Danke an jede Box, die uns gespiegelt hat. Fuer immer Szene.", "author": "PRISM"}
+			]
+		},
+		{
+			"id": "vectorlords",
+			"name": "VECTORLORDS",
+			"members": ["VLX", "TURBOKID", "MATRIXX"],
+			"posts": [
+				{"id": "vl1", "from": 1990, "to": 1995, "subject": "Compo-Ansage", "body": "Freitag Club-Compo. Wir treten mit einem 4K an. Wer traut sich gegen uns?", "author": "VLX"},
+				{"id": "vl2", "from": 1992, "to": 1997, "subject": "Flamewar beenden!", "body": "Leute, hoert auf, im Brett rumzustaenkern. Wer Style hat, released. Wer keinen hat, schreibt Flames.", "author": "MATRIXX"},
+				{"id": "vl3", "from": 1997, "subject": "LAN statt Post", "body": "Unsere Releases gibt's jetzt zuerst auf der LAN im Club. Die Diskette per Post war gestern.", "author": "TURBOKID"}
+			]
+		},
+		{
+			"id": "phantom_duo",
+			"name": "PHANTOM DUO",
+			"members": ["GHOST", "SHADE"],
+			"posts": [
+				{"id": "pd1", "from": 1990, "to": 1996, "subject": "Intro 7 released", "body": "Sinescroller + Sample-Replay in 40K. Grabt es aus dem Dateibereich. Feedback erwuenscht, Flames egal.", "author": "GHOST"},
+				{"id": "pd2", "from": 1993, "to": 1998, "subject": "Wer hat unser Intro geleecht?", "body": "Irgendein Board fuehrt unser Intro OHNE Credits. Ehre ist alles, Leute. Namen bleiben drin!", "author": "SHADE"},
+				{"id": "pd3", "from": 1998, "subject": "PHANTOM DUO wird PHANTOM SOLO", "body": "GHOST steigt aus (Ausbildung). Ich mach weiter. Danke Bruder, fuer alles. - SHADE", "author": "SHADE"}
+			]
+		},
+		{
+			"id": "mirage",
+			"name": "DIGITAL MIRAGE",
+			"members": ["FATAMORGANA", "OASIS", "DUNE-3"],
+			"posts": [
+				{"id": "mi1", "from": 1992, "to": 1997, "subject": "Musikdisk Vol. II", "body": "Acht Tracks, Handarbeit, vier Kanaele. BEATBOY hat Track 3 beigesteuert - Respekt!", "author": "OASIS"},
+				{"id": "mi2", "from": 1994, "to": 1999, "subject": "Sample-Tausch", "body": "Tausche saubere Drum-Samples gegen Streicher. Keine verrauschten Radio-Mitschnitte bitte.", "author": "FATAMORGANA"},
+				{"id": "mi3", "from": 1996, "subject": "Streit im Brett: MP3", "body": "Ja, das neue Format klingt gut. Nein, es ersetzt keinen Tracker. Wer nur noch presst statt trackt, hat die Szene nie verstanden.", "author": "DUNE-3"}
+			]
+		}
+	],
+	"wall": [
+		{"id": "w1", "text": "GRUESSE AN ALLE IM NORDEN! - KEEPER"},
+		{"id": "w2", "text": "Wer hat noch Teile 2 von der Musikdisk? Brett 3 meldet sich!"},
+		{"id": "w3", "from": 1992, "text": "CD-ROM ist Speicherplatz, keine Kultur. Diskette forever!"},
+		{"id": "w4", "text": "SysOp schlaeft NIE. Getestet um 4:12 Uhr. - JOYRIDER"},
+		{"id": "w5", "from": 1995, "text": "Wer ist auch schon im INTERNET? Erzaehlt mal. Brett 5."},
+		{"id": "w6", "text": "Suche Anleitung (KOPIE!) fuer das Weltraumspiel. Zahle in Leerdisketten."},
+		{"id": "w7", "from": 1997, "text": "LAN-Party im Club war LEGENDAER. Danke an alle Schlepper von Roehrenmonitoren."},
+		{"id": "w8", "text": "An den Leecher von gestern Nacht: Ratio, mein Freund. RATIO."},
+		{"id": "w9", "from": 1998, "text": "DATAWOLF redet nur noch von Aepfeln. Jemand eine Ahnung, was der hat?"},
+		{"id": "w10", "from": 1999, "text": "Y2K: Wer sichert mit? Ich kopiere ALLES doppelt. Man weiss ja nie."}
+	]
+}

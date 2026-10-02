@@ -1,0 +1,217 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_achim",
+	"dialogues": {
+		"achim_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Achim",
+					"text": "Willkommen im Computerclub! Hier gilt: jeder hilft jedem, keiner klaut Disketten, und freitags ist Wettbewerb.",
+					"choices": [
+						{
+							"text": "Meine neue Compo-Demo ist fertig – ich reiche sie ein.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_compo",
+									"stage": 1
+								},
+								"quest_action": {
+									"id": "q_compo",
+									"action": "compo_release",
+									"min": 1
+								},
+								"has_disk_match": {
+									"uid_flag": "q_compo_release_disk_uid",
+									"content_type": "demo",
+									"release_role": "demo_master",
+									"release_serial_prefix": "DEMO-",
+									"release_project_kind": "demo"
+								}
+							},
+							"next": "n_compo_submit",
+							"id": "reply_0"
+						},
+						{
+							"text": "Ich wollte meine Compo-Demo abgeben, aber die Diskette fehlt.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_compo",
+									"stage": 1
+								},
+								"not_has_disk_match": {
+									"uid_flag": "q_compo_release_disk_uid",
+									"content_type": "demo",
+									"release_role": "demo_master",
+									"release_serial_prefix": "DEMO-",
+									"release_project_kind": "demo"
+								}
+							},
+							"next": "n_compo_missing",
+							"id": "reply_1"
+						},
+						{
+							"text": "Wie werde ich Mitglied?",
+							"cond": {
+								"year_min": 1991
+							},
+							"next": "n2",
+							"id": "reply_2"
+						},
+						{
+							"text": "Ich schau mich nur um.",
+							"next": null,
+							"id": "reply_3"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Achim",
+					"text": "Nicht durch eine Rufzahl. Übernimm im Club-Projekt eine Rolle, nenne die anderen in den Credits und präsentiere mit ihnen die fertige Intro-Disk.",
+					"choices": [
+						{
+							"text": "Unser Gruppenintro ist präsentiert — nimmst du mich jetzt auf?",
+							"cond": {
+								"quest_active": "q_club_member",
+								"not_flag": "club_member"
+							},
+							"next": "n_join",
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "club_admission"
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Bin ich eigentlich schon Mitglied?",
+							"cond": {
+								"flag": {
+									"club_member": "True"
+								}
+							},
+							"next": null,
+							"effects": [
+								{
+									"type": "toast",
+									"text": "Klar bist du dabei — bis Freitag!"
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Verstanden.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_2"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_join": {
+					"speaker": "Achim",
+					"text": "Handschlag drauf — du gehörst dazu. Die Disketten-Bibliothek steht dir offen, und beim Wettbewerb zeigst du, was du kannst.",
+					"choices": [
+						{
+							"text": "Stark! Bis Freitag.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_compo_submit": {
+					"speaker": "Achim",
+					"text": "Frischer Build, sauber beschriftet, Abgabe vor Schluss. Genau so. Ich setz dich auf die Startliste – ab jetzt entscheidet die Jury.",
+					"choices": [
+						{
+							"text": "Dann bis Freitag vor der Leinwand.",
+							"next": null,
+							"effects": [
+								{
+									"type": "take_disk_template",
+									"uid_flag": "q_compo_release_disk_uid",
+									"content_type": "demo",
+									"release_role": "demo_master",
+									"release_serial_prefix": "DEMO-",
+									"release_project_kind": "demo"
+								},
+								{
+									"type": "quest_action",
+									"action": "compo_submit"
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_achim",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_compo_missing": {
+					"speaker": "Achim",
+					"text": "Ohne die frische Masterdisk kann ich dich nicht eintragen. Schau in deine Diskettenbox – gesucht ist dein eigener DEMO-Release, nicht ein fremdes Demo.",
+					"choices": [
+						{
+							"text": "Ich hole den Master.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_achim_compo": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Achim",
+					"text": "Gut, dass du dich meldest! Der Club plant eine COMPO — Wettbewerb, echte Demos, Beamer, Jury. Und ich will, dass DU was einreichst.",
+					"choices": [
+						{
+							"text": "Ich? Eine eigene Demo?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Achim",
+					"text": "Du hast doch das Zeug dazu — Tracker, Pixel, Code. Bau was zusammen im Szene-Studio und release es. Die Compo wartet.",
+					"choices": [
+						{
+							"text": "Okay Achim. Ich bin dabei.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "compo_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Release eine eigene Demo für die Club-Compo (Szene-Studio)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_voss",
+	"dialogues": {
+		"voss_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Voss",
+					"text": "Ah, unser Computer-Enthusiast. Ich sage es Ihnen frei heraus: Mit Computern verdient man später sowieso kein Geld.",
+					"choices": [
+						{
+							"text": "Ich bin bereit für die Abschlussprüfung.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_schulabschluss",
+									"stage": 1
+								}
+							},
+							"next": "n_exam",
+							"id": "reply_0"
+						},
+						{
+							"text": "Das werden wir sehen.",
+							"next": "n2",
+							"id": "reply_1"
+						},
+						{
+							"text": "Wenn Sie meinen.",
+							"next": null,
+							"id": "reply_2"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n2": {
+					"speaker": "Herr Voss",
+					"text": "Frechheit besitzen Sie ja. Nun — solange die Mathenote stimmt, soll's mir recht sein. Ordnung im Heft nicht vergessen!",
+					"choices": [
+						{
+							"text": "Jawohl.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_exam": {
+					"speaker": "Herr Voss",
+					"text": "Letzte Aufgabe: Ein Programm läuft in einer Schleife, bis eine Bedingung erfüllt ist. Was prüfen Sie zuerst?",
+					"choices": [
+						{
+							"text": "Bedingung, Zustandsänderung und Abbruchpfad.",
+							"next": "n_exam_pass",
+							"id": "reply_0"
+						},
+						{
+							"text": "Ob der Monitor hell genug ist.",
+							"next": "n_exam_retry",
+							"id": "reply_1"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_exam_retry": {
+					"speaker": "Herr Voss",
+					"text": "Sie wollen mich auf den Arm nehmen. Denken Sie logisch und versuchen Sie es noch einmal.",
+					"choices": [
+						{
+							"text": "Noch einmal.",
+							"next": "n_exam",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "angry"
+				},
+				"n_exam_pass": {
+					"speaker": "Herr Voss",
+					"text": "Korrekt. Und offenbar lag ich mit meiner Einschätzung Ihrer Computerleidenschaft nicht ganz richtig.",
+					"choices": [
+						{
+							"text": "Das werden wir noch sehen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "school_exam"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				}
+			}
+		},
+		"call_voss_abschluss": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Voss",
+					"text": "Voss hier – Ihr Mathe- und Klassenlehrer. Die Praktikumsbescheinigung bei Gruber habe ich unterschrieben; dort haben Sie offenbar einen guten Eindruck gemacht. Jetzt steht der Realschulabschluss an. Reines Auswendiglernen genügt nicht – ich erwarte, dass Sie Zusammenhänge erklären können. Sobald Sie vorbereitet sind, warte ich tagsüber am Schuleingang.",
+					"choices": [
+						{
+							"text": "Ich bereite mich vor und komme zum Schulhof.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "schulabschluss_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		}
+	}
+}

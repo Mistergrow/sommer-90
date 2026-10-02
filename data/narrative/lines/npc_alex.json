@@ -1,0 +1,263 @@
+{
+	"npc": "npc_alex",
+	"comment": "Zeilen-Pool fuer npc_alex. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "ale_b01",
+			"text": "Guck mal, was ich gefunden hab! Halb kaputt, aber machbar."
+		},
+		{
+			"id": "ale_b02",
+			"text": "Sammelst du auch? Ich tausche fair, Ehrensache."
+		},
+		{
+			"id": "ale_b03",
+			"text": "Mit'm Lötkolben kriegt man fast alles wieder hin."
+		},
+		{
+			"id": "ale_b04",
+			"text": "Jedes alte Teil hat 'ne Geschichte, man muss nur zuhören."
+		},
+		{
+			"id": "ale_b05",
+			"text": "Wirf bloß nichts weg — bring's mir, ich rette es."
+		},
+		{
+			"id": "ale_b06",
+			"text": "Ich hab 'ne ganze Kiste, sortiert nach Baujahr. Willst du sehen?"
+		},
+		{
+			"id": "ale_b07",
+			"text": "Andere sehen Schrott, ich seh Schätze."
+		},
+		{
+			"id": "ale_b08",
+			"text": "Vorsicht mit dem Ding, das ist selten."
+		},
+		{
+			"id": "ale_b09",
+			"text": "Ein bisschen Kontaktspray, ein bisschen Geduld — läuft wieder."
+		},
+		{
+			"id": "ale_b10",
+			"text": "Ich feilsch auf dem Flohmarkt, bis der Verkäufer weint. Freundlich, aber bestimmt."
+		},
+		{
+			"id": "ale_b11",
+			"text": "Am besten früh da sein, dann kriegt man die Rosinen."
+		},
+		{
+			"id": "ale_b12",
+			"text": "Ich hab ein Auge für den wahren Wert. Nicht den Preis."
+		},
+		{
+			"id": "ale_b13",
+			"text": "Kaputt heißt nicht tot. Kaputt heißt Herausforderung."
+		},
+		{
+			"id": "ale_b14",
+			"text": "Diese alten Geräte sind ehrlicher gebaut als der neue Kram."
+		},
+		{
+			"id": "ale_b15",
+			"text": "Ich hab mir das Reparieren selbst beigebracht. Learning by Rauchentwicklung."
+		},
+		{
+			"id": "ale_b16",
+			"text": "Meine Eltern verstehen nicht, warum mein Zimmer voll alter Technik ist."
+		},
+		{
+			"id": "ale_b17",
+			"text": "Hast du was, das nicht mehr läuft? Lass mal sehen."
+		},
+		{
+			"id": "ale_b18",
+			"text": "Ein Original in der Verpackung — dafür geb ich einiges."
+		},
+		{
+			"id": "ale_b19",
+			"text": "Ich putz jedes Teil, bevor's ins Regal kommt. Respekt vor dem Ding."
+		},
+		{
+			"id": "ale_b20",
+			"text": "Der Wert kommt später. Ich denk in Jahrzehnten, nicht in Wochen."
+		},
+		{
+			"id": "ale_b21",
+			"text": "Manche sammeln Briefmarken. Ich sammel Technikgeschichte."
+		},
+		{
+			"id": "ale_b22",
+			"text": "Zeig mir dein ältestes Stück, komm."
+		},
+		{
+			"id": "ale_b23",
+			"text": "Ich weiß noch, wo ich jedes Teil herhab. Jedes einzelne."
+		},
+		{
+			"id": "ale_b24",
+			"text": "Handschuhe an, wenn du meine guten Sachen anfasst. Spaß. Halber Spaß."
+		},
+		{
+			"id": "ale_b25",
+			"text": "Auf dem Sperrmüll liegt manchmal Gold. Man muss nur hinschauen."
+		},
+		{
+			"id": "ale_b26",
+			"text": "Ich tausch nie ein Lieblingsstück weg. Nie."
+		},
+		{
+			"id": "ale_b27",
+			"text": "Geduld ist beim Sammeln die halbe Miete."
+		},
+		{
+			"id": "ale_b28",
+			"text": "Ich hab da ein Doppeltes — willst du's haben?"
+		},
+		{
+			"id": "ale_b29",
+			"text": "Neu ist überbewertet. Gib mir was mit Patina."
+		},
+		{
+			"id": "ale_b30",
+			"text": "Wenn alle das Gleiche wegwerfen, wird's irgendwann selten. Logik."
+		},
+		{
+			"id": "al_floh",
+			"to": 1996,
+			"topic": "flohmarkt",
+			"text": "Auf dem Flohmarkt lag heute eine Kiste voll Disketten. Erste Wahl! Man muss nur früh da sein."
+		},
+		{
+			"id": "al_c64",
+			"from": 1991,
+			"topic": "retro",
+			"text": "Ich rette gerade einen alten C64 vom Sperrmüll. Der läuft noch! Die Dinger sind unkaputtbar."
+		},
+		{
+			"id": "al_cd",
+			"from": 1995,
+			"needs": [
+				"pc_umbruch"
+			],
+			"topic": "sammeln",
+			"text": "Jetzt werfen alle ihre Disketten weg, wegen der CDs. Für mich ist das Weihnachten — ich sammel den Kram auf."
+		},
+		{
+			"id": "al_museum",
+			"from": 1999,
+			"needs": [
+				"alex_museum"
+			],
+			"once": true,
+			"topic": "museum",
+			"text": "Komm mal in mein Zimmer — das ist inzwischen ein richtiges kleines Museum. Jedes Stück hat 'ne Geschichte."
+		},
+		{
+			"id": "al_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Andere schmeißen ihre Jugend weg. Ich heb sie auf, Diskette für Diskette. Irgendwann dankt mir das wer."
+		},
+		{
+			"id": "ale_x01",
+			"topic": "sammeln",
+			"text": "Ich hab 'ne Regel: Nie das letzte Exemplar wegwerfen. Man weiß nie, wann's das letzte war."
+		},
+		{
+			"id": "ale_x02",
+			"topic": "sammeln",
+			"text": "Andere sehen Elektroschrott. Ich seh die Kindheit von irgendwem."
+		},
+		{
+			"id": "ale_x03",
+			"topic": "sammeln",
+			"text": "Auf dem Sperrmüll findet man mehr Geschichte als im Museum. Ehrlich."
+		},
+		{
+			"id": "ale_x04",
+			"topic": "sammeln",
+			"text": "Ich putz jedes Teil mit Wattestäbchen. Meditation für Bastler."
+		},
+		{
+			"id": "ale_x05",
+			"topic": "sammeln",
+			"text": "Mein Zimmer ist voll, mein Herz auch. Passt schon."
+		},
+		{
+			"id": "ale_x06",
+			"topic": "sammeln",
+			"text": "Original in Folie? Da werd ich schwach. Da geb ich mein letztes Taschengeld."
+		},
+		{
+			"id": "ale_x07",
+			"topic": "sammeln",
+			"text": "Reparieren ist Respekt. Wegwerfen ist Faulheit. So einfach ist das."
+		},
+		{
+			"id": "ale_x08",
+			"topic": "sammeln",
+			"text": "Ich führ Buch über jedes Stück: Woher, wann, für wie viel. Provenienz nennt man das bei den Feinen."
+		},
+		{
+			"id": "ale_x09",
+			"topic": "sammeln",
+			"text": "Wenn alle das Gleiche wegschmeißen, hab ich bald das einzige heile. Geduld ist mein Geschäftsmodell."
+		},
+		{
+			"id": "ale_x10",
+			"topic": "sammeln",
+			"text": "Ich hab mal drei Stunden gefeilscht um fünfzig Pfennig. Nicht wegen dem Geld — wegen dem Prinzip."
+		},
+		{
+			"id": "ale_x11",
+			"topic": "sammeln",
+			"text": "Der Krause hebt mir immer die guten Kisten auf. Stammkunde sein zahlt sich aus."
+		},
+		{
+			"id": "ale_x12",
+			"topic": "sammeln",
+			"text": "Ich tausch dir was Doppeltes gegen was, das ich noch nicht hab. Faire Sache, Handschlag drauf."
+		},
+		{
+			"id": "ale_x13",
+			"topic": "sammeln",
+			"text": "Manche Leute haben Haustiere. Ich hab Geräte. Die brauchen kein Futter und beißen nicht."
+		},
+		{
+			"id": "ale_x14",
+			"topic": "sammeln",
+			"text": "Lötkolben an, Gehirn aus, Hände wissen den Weg. Bestes Gefühl."
+		},
+		{
+			"id": "ale_x15",
+			"from": 1995,
+			"needs": [
+				"pc_umbruch"
+			],
+			"topic": "aera",
+			"text": "Jetzt schmeißen alle ihre Amigas weg wegen dem PC. Für mich ist grad Weihnachten und Ostern zusammen."
+		},
+		{
+			"id": "ale_x16",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Warte dreißig Jahre — dann steh ich mit meiner Sammlung da wie ein König. Du hast's zuerst gehört."
+		},
+		{
+			"id": "ale_x17",
+			"from": 0,
+			"needs": [
+				"alex_museum"
+			],
+			"topic": "aera",
+			"text": "Komm in mein Zimmer, das ist jetzt ein echtes Museum. Nicht anfassen, nur staunen."
+		}
+	]
+}

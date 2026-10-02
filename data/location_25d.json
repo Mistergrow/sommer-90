@@ -1,0 +1,132 @@
+{
+  "comment": "2,5D-Profile fuer fotografische Standorte. Rein visuell, kein Save-Zustand. Profile besitzen sicheren UV-Tiefenversatz und Lebenszeichen; kuratierte Near-Planes sind optional. Nur die beiden Schulhof-Zustaende teilen wegen identischer Kamera/Geometrie denselben personenfreien Randlayer. Das Jugendzimmer nutzt seine eigenen RGBA-Layer im RoomCompositor.",
+  "profiles": {
+    "LOCATION_WALDRAND_MASTER": {
+      "horizon": 0.46, "strength": 0.013, "far_gain": 0.12, "near_gain": 1.0, "vertical_gain": 0.36, "overscan": 0.032, "pointer": 0.80, "idle": 0.10,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_WALDRAND_FOREGROUND_V01.png", "foreground_scale": 1.02, "foreground_gain": 1.85,
+      "life": {"near_shadow": 0.10, "birds": true, "sky": [0.34, 0.02, 0.58, 0.24], "shadows": [{"y": 0.88, "width": 0.20, "height": 0.07, "speed": 0.008, "alpha": 0.055}]}
+    },
+    "LOCATION_DEALER_CLEARING_MASTER": {
+      "horizon": 0.43, "strength": 0.014, "far_gain": 0.11, "near_gain": 1.08, "vertical_gain": 0.36, "overscan": 0.033, "pointer": 0.82, "idle": 0.10,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_DEALER_CLEARING_FOREGROUND_V01.png", "foreground_scale": 1.025, "foreground_gain": 1.95,
+      "life": {"near_shadow": 0.12, "birds": true, "sky": [0.32, 0.02, 0.58, 0.16], "shadows": [{"y": 0.87, "width": 0.16, "height": 0.055, "speed": 0.007, "alpha": 0.045}]}
+    },
+    "LOCATION_SCHOOLYARD_MASTER": {
+      "horizon": 0.42, "strength": 0.012, "far_gain": 0.14, "near_gain": 0.9, "vertical_gain": 0.35, "overscan": 0.028, "pointer": 0.78, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_SCHOOLYARD_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.80, "foreground_share_id": "schoolyard_camera_v01", "foreground_share_reason": "Identische Kamera und Geometrie; der personenfreie Randlayer funktioniert vor und nach Schulschluss.",
+      "life": {"near_shadow": 0.07, "birds": true, "sky": [0.08, 0.02, 0.82, 0.22], "shadows": [{"y": 0.88, "width": 0.13, "height": 0.05, "speed": 0.018, "alpha": 0.045}]}
+    },
+    "LOCATION_SCHOOLYARD_AFTER_SCHOOL": {
+      "horizon": 0.43, "strength": 0.013, "far_gain": 0.13, "near_gain": 1.0, "vertical_gain": 0.35, "overscan": 0.030, "pointer": 0.80, "idle": 0.10,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_SCHOOLYARD_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.80, "foreground_share_id": "schoolyard_camera_v01", "foreground_share_reason": "Identische Kamera und Geometrie; der personenfreie Randlayer funktioniert vor und nach Schulschluss.",
+      "life": {"near_shadow": 0.08, "birds": true, "sky": [0.08, 0.02, 0.82, 0.23], "shadows": [{"y": 0.86, "width": 0.14, "height": 0.055, "speed": 0.014, "alpha": 0.05}]}
+    },
+    "LOCATION_FLEA_MARKET_MASTER": {
+      "horizon": 0.43, "strength": 0.0125, "far_gain": 0.15, "near_gain": 0.85, "vertical_gain": 0.32, "overscan": 0.025, "pointer": 0.78, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FLEA_MARKET_FOREGROUND_V01.png", "foreground_scale": 1.02, "foreground_gain": 1.95,
+      "life": {"near_shadow": 0.09, "birds": true, "sky": [0.15, 0.01, 0.7, 0.19], "shadows": [{"y": 0.86, "width": 0.17, "height": 0.06, "speed": 0.024, "alpha": 0.065}, {"y": 0.91, "width": 0.12, "height": 0.045, "speed": 0.017, "alpha": 0.045, "phase": 0.58}]}
+    },
+    "LOCATION_KIOSK_MASTER": {
+      "horizon": 0.45, "strength": 0.0095, "far_gain": 0.18, "near_gain": 0.8, "vertical_gain": 0.30, "overscan": 0.024, "pointer": 0.72, "idle": 0.08,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_KIOSK_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.78,
+      "life": {"near_shadow": 0.08, "reflections": [{"rect": [0.04, 0.08, 0.90, 0.58], "speed": 0.018, "alpha": 0.028, "width": 0.08}], "shadows": [{"y": 0.91, "width": 0.15, "height": 0.05, "speed": 0.020, "alpha": 0.055}]}
+    },
+    "LOCATION_IMBISS_MASTER": {
+      "horizon": 0.47, "strength": 0.0135, "far_gain": 0.15, "near_gain": 1.08, "vertical_gain": 0.34, "overscan": 0.032, "pointer": 0.82, "idle": 0.075,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_IMBISS_FOREGROUND_V01.png", "foreground_scale": 1.032, "foreground_gain": 2.12,
+      "life": {"near_shadow": 0.13, "reflections": [{"rect": [0.56, 0.25, 0.31, 0.27], "speed": 0.017, "alpha": 0.038, "width": 0.055}, {"rect": [0.40, 0.02, 0.48, 0.18], "speed": 0.010, "alpha": 0.022, "width": 0.045, "phase": 0.37}], "shadows": [{"y": 0.91, "width": 0.17, "height": 0.058, "speed": 0.011, "alpha": 0.052}]}
+    },
+    "LOCATION_COMPUTER_SHOP_MASTER": {
+      "horizon": 0.46, "strength": 0.0105, "far_gain": 0.18, "near_gain": 0.9, "vertical_gain": 0.32, "overscan": 0.026, "pointer": 0.75, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_COMPUTER_SHOP_FOREGROUND_V01.png", "foreground_scale": 1.016, "foreground_gain": 1.72,
+      "life": {"near_shadow": 0.08, "reflections": [{"rect": [0.00, 0.08, 0.28, 0.72], "speed": 0.016, "alpha": 0.035}], "screens": [{"rect": [0.49, 0.43, 0.08, 0.09], "speed": 0.14, "alpha": 0.055}], "shadows": [{"y": 0.90, "width": 0.13, "height": 0.05, "speed": 0.013, "alpha": 0.04}]}
+    },
+    "LOCATION_COMPUTER_CLUB_MASTER": {
+      "horizon": 0.47, "strength": 0.013, "far_gain": 0.16, "near_gain": 0.95, "vertical_gain": 0.34, "overscan": 0.028, "pointer": 0.80, "idle": 0.10,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_COMPUTER_CLUB_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.85,
+      "life": {"near_shadow": 0.10, "screens": [{"rect": [0.05, 0.35, 0.05, 0.08], "speed": 0.17, "alpha": 0.06}, {"rect": [0.30, 0.42, 0.05, 0.07], "speed": 0.13, "alpha": 0.05}], "shadows": [{"y": 0.88, "width": 0.15, "height": 0.05, "speed": 0.010, "alpha": 0.04}]}
+    },
+    "LOCATION_MUSIC_SHOP_FRONT_MASTER": {
+      "horizon": 0.46, "strength": 0.0115, "far_gain": 0.16, "near_gain": 1.0, "vertical_gain": 0.34, "overscan": 0.028, "pointer": 0.77, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_MUSIC_SHOP_FRONT_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.78,
+      "life": {"near_shadow": 0.09, "reflections": [{"rect": [0.00, 0.03, 0.18, 0.82], "speed": 0.014, "alpha": 0.04}], "shadows": [{"y": 0.90, "width": 0.12, "height": 0.045, "speed": 0.012, "alpha": 0.04}]}
+    },
+    "LOCATION_MUSIC_SHOP_BASEMENT_MASTER": {
+      "horizon": 0.49, "strength": 0.0105, "far_gain": 0.18, "near_gain": 0.95, "vertical_gain": 0.30, "overscan": 0.026, "pointer": 0.74, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_MUSIC_SHOP_BASEMENT_FOREGROUND_V01.png", "foreground_scale": 1.015, "foreground_gain": 1.68,
+      "life": {"near_shadow": 0.12, "screens": [{"rect": [0.18, 0.38, 0.06, 0.09], "speed": 0.12, "alpha": 0.05}]}
+    },
+    "LOCATION_MUSIC_SHOP_COMPUTER_MUSIC_MASTER": {
+      "horizon": 0.47, "strength": 0.0115, "far_gain": 0.17, "near_gain": 0.95, "vertical_gain": 0.32, "overscan": 0.027, "pointer": 0.76, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_MUSIC_SHOP_COMPUTER_MUSIC_FOREGROUND_V01.png", "foreground_scale": 1.016, "foreground_gain": 1.72,
+      "life": {"near_shadow": 0.10, "screens": [{"rect": [0.31, 0.42, 0.07, 0.10], "speed": 0.14, "alpha": 0.055}]}
+    },
+    "LOCATION_BANK_MASTER": {
+      "horizon": 0.48, "strength": 0.0085, "far_gain": 0.20, "near_gain": 0.75, "vertical_gain": 0.28, "overscan": 0.022, "pointer": 0.68, "idle": 0.07,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_BANK_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.62,
+      "life": {"near_shadow": 0.07, "reflections": [{"rect": [0.02, 0.08, 0.24, 0.62], "speed": 0.012, "alpha": 0.025}], "screens": [{"rect": [0.145, 0.355, 0.045, 0.060], "speed": 0.11, "alpha": 0.04}], "shadows": [{"y": 0.88, "width": 0.12, "height": 0.045, "speed": 0.010, "alpha": 0.035}]}
+    },
+    "LOCATION_POST_MASTER": {
+      "horizon": 0.48, "strength": 0.009, "far_gain": 0.20, "near_gain": 0.78, "vertical_gain": 0.28, "overscan": 0.022, "pointer": 0.69, "idle": 0.07,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_POST_FOREGROUND_V01.png", "foreground_scale": 1.015, "foreground_gain": 1.68,
+      "life": {"near_shadow": 0.07, "reflections": [{"rect": [0.01, 0.08, 0.24, 0.64], "speed": 0.013, "alpha": 0.025}], "shadows": [{"y": 0.88, "width": 0.12, "height": 0.045, "speed": 0.011, "alpha": 0.035}]}
+    },
+    "LOCATION_INTERNETCAFE_MASTER": {
+      "horizon": 0.46, "strength": 0.012, "far_gain": 0.15, "near_gain": 0.95, "vertical_gain": 0.33, "overscan": 0.028, "pointer": 0.78, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_INTERNETCAFE_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.86,
+      "life": {"near_shadow": 0.09, "screens": [{"rect": [0.08, 0.30, 0.32, 0.22], "speed": 0.14, "alpha": 0.045}, {"rect": [0.62, 0.28, 0.20, 0.20], "speed": 0.11, "alpha": 0.04}], "reflections": [{"rect": [0.02, 0.05, 0.16, 0.68], "speed": 0.014, "alpha": 0.025}]}
+    },
+    "LOCATION_LAN_KELLER_MASTER": {
+      "horizon": 0.48, "strength": 0.013, "far_gain": 0.15, "near_gain": 1.0, "vertical_gain": 0.32, "overscan": 0.029, "pointer": 0.80, "idle": 0.10,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_LAN_KELLER_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.90,
+      "life": {"near_shadow": 0.12, "screens": [{"rect": [0.05, 0.25, 0.40, 0.28], "speed": 0.16, "alpha": 0.055}, {"rect": [0.55, 0.24, 0.35, 0.30], "speed": 0.12, "alpha": 0.05}], "shadows": [{"y": 0.88, "width": 0.14, "height": 0.05, "speed": 0.009, "alpha": 0.04}]}
+    },
+    "LOCATION_FRIEND_ROOM_MASTER": {
+      "horizon": 0.49, "strength": 0.0105, "far_gain": 0.17, "near_gain": 0.9, "vertical_gain": 0.31, "overscan": 0.026, "pointer": 0.74, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FRIEND_ROOM_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.64,
+      "life": {"near_shadow": 0.10, "reflections": [{"rect": [0.67, 0.03, 0.28, 0.36], "speed": 0.012, "alpha": 0.03}], "screens": [{"rect": [0.23, 0.32, 0.08, 0.10], "speed": 0.13, "alpha": 0.05}]}
+    },
+    "LOCATION_FRIEND_ROOM_SVEN": {
+      "horizon": 0.48, "strength": 0.011, "far_gain": 0.16, "near_gain": 0.95, "vertical_gain": 0.31, "overscan": 0.027, "pointer": 0.76, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FRIEND_ROOM_SVEN_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.66,
+      "life": {"near_shadow": 0.10, "reflections": [{"rect": [0.68, 0.04, 0.27, 0.36], "speed": 0.013, "alpha": 0.03}], "screens": [{"rect": [0.27, 0.17, 0.06, 0.09], "speed": 0.15, "alpha": 0.05}, {"rect": [0.68, 0.26, 0.07, 0.09], "speed": 0.12, "alpha": 0.045}]}
+    },
+    "LOCATION_FRIEND_ROOM_MIKE": {
+      "horizon": 0.49, "strength": 0.011, "far_gain": 0.16, "near_gain": 0.95, "vertical_gain": 0.31, "overscan": 0.027, "pointer": 0.76, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FRIEND_ROOM_MIKE_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.66,
+      "life": {"near_shadow": 0.11, "reflections": [{"rect": [0.34, 0.05, 0.20, 0.34], "speed": 0.012, "alpha": 0.028}], "screens": [{"rect": [0.12, 0.27, 0.07, 0.10], "speed": 0.14, "alpha": 0.05}, {"rect": [0.36, 0.38, 0.08, 0.10], "speed": 0.11, "alpha": 0.045}]}
+    },
+    "LOCATION_FRIEND_ROOM_ALEX": {
+      "horizon": 0.49, "strength": 0.0105, "far_gain": 0.17, "near_gain": 0.92, "vertical_gain": 0.31, "overscan": 0.026, "pointer": 0.74, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FRIEND_ROOM_ALEX_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.60,
+      "life": {"near_shadow": 0.11, "reflections": [{"rect": [0.79, 0.02, 0.19, 0.32], "speed": 0.011, "alpha": 0.028}], "screens": [{"rect": [0.20, 0.28, 0.09, 0.11], "speed": 0.12, "alpha": 0.045}]}
+    },
+    "LOCATION_FRIEND_ROOM_DANIEL": {
+      "horizon": 0.49, "strength": 0.011, "far_gain": 0.16, "near_gain": 0.94, "vertical_gain": 0.31, "overscan": 0.027, "pointer": 0.76, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FRIEND_ROOM_DANIEL_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.64,
+      "life": {"near_shadow": 0.10, "reflections": [{"rect": [0.70, 0.03, 0.25, 0.34], "speed": 0.012, "alpha": 0.028}], "screens": [{"rect": [0.25, 0.25, 0.10, 0.13], "speed": 0.15, "alpha": 0.05}]}
+    },
+    "LOCATION_FRIEND_ROOM_LISA": {
+      "horizon": 0.49, "strength": 0.0105, "far_gain": 0.17, "near_gain": 0.92, "vertical_gain": 0.31, "overscan": 0.026, "pointer": 0.74, "idle": 0.09,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_FRIEND_ROOM_LISA_FOREGROUND_V01.png", "foreground_scale": 1.014, "foreground_gain": 1.62,
+      "life": {"near_shadow": 0.10, "reflections": [{"rect": [0.68, 0.03, 0.27, 0.35], "speed": 0.012, "alpha": 0.03}], "screens": [{"rect": [0.24, 0.28, 0.08, 0.10], "speed": 0.13, "alpha": 0.045}]}
+    },
+    "LOCATION_RETRO_MUSEUM_MASTER": {
+      "horizon": 0.48, "strength": 0.0115, "far_gain": 0.16, "near_gain": 1.0, "vertical_gain": 0.32, "overscan": 0.029, "pointer": 0.79, "idle": 0.08,
+      "foreground_asset": "res://assets/backgrounds/foregrounds/LOCATION_RETRO_MUSEUM_FOREGROUND_V01.png", "foreground_scale": 1.018, "foreground_gain": 1.82,
+      "life": {
+        "near_shadow": 0.11,
+        "screens": [
+          {"rect": [0.37, 0.39, 0.09, 0.14], "speed": 0.13, "alpha": 0.052},
+          {"rect": [0.51, 0.38, 0.09, 0.15], "speed": 0.17, "alpha": 0.058},
+          {"rect": [0.65, 0.39, 0.09, 0.14], "speed": 0.11, "alpha": 0.048}
+        ],
+        "reflections": [
+          {"rect": [0.02, 0.10, 0.20, 0.70], "speed": 0.012, "alpha": 0.032, "width": 0.055},
+          {"rect": [0.84, 0.06, 0.14, 0.72], "speed": 0.009, "alpha": 0.020, "width": 0.045, "phase": 0.42}
+        ],
+        "shadows": [{"y": 0.90, "width": 0.16, "height": 0.055, "speed": 0.008, "alpha": 0.042}]
+      }
+    }
+  }
+}

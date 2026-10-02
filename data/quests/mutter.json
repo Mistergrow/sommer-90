@@ -1,0 +1,58 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_mutter",
+  "quests": [
+    {
+      "id": "q_mutter_studio",
+      "title": "Aus dem Kinderzimmer wird ein Studio",
+      "giver": "npc_mutter",
+      "prereq": {
+        "year_min": 1997,
+        "flag": "mutter_studio_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Kabel, Disketten und Versandkartons blockieren inzwischen den halben Raum. Mama stimmt einem echten Arbeitsbereich zu — wenn er sicher und bewohnbar bleibt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Ordne das Zimmer: Laufwege freihalten, Kabel sichern, Datenträger trocken lagern und den Arbeitsplatz vom Bett trennen.",
+          "map_location": "room",
+          "goal": {
+            "action": "minigame:room_tidy"
+          }
+        },
+        {
+          "desc": "Zeig Mama den fertigen Arbeitsbereich und vereinbart gemeinsam klare Regeln für Nachtarbeit, Essen und freie Wege.",
+          "map_location": "room",
+          "goal": {
+            "action": "mutter_studio_handoff"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "eltern_toleranz",
+          "value": 8
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_mutter",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "room_is_studio",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Der Raum bleibt Zuhause und wird zugleich ein verlässliches Studio. Mama akzeptiert die neue Arbeitsweise."
+        }
+      ]
+    }
+  ]
+}

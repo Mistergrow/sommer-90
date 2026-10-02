@@ -1,0 +1,77 @@
+{
+	"comment": "Upgrade-Baum (GDD §7) für HardwareManager/UpgradeTreeWindow. Single Source für Preise/Jahre/Namen bleibt data/shop.json (shop_item-Referenz) — hier leben nur Struktur (tracks/requires) und Effekt-Hinweise. 'builtin' = Grundausstattung, immer besessen. 'requires' = Baum-Knoten-IDs, die zuerst besessen sein müssen.",
+	"tracks": [
+		{
+			"id": "computer",
+			"name": "RECHNER",
+			"nodes": [
+				{ "id": "a500", "builtin": true, "name": "Amiga 500", "effect": "Dein Start-Rechner — 512 KB Chip-RAM, DF0: und viel Luft nach oben." },
+				{ "id": "a600", "shop_item": "order_amiga_600", "models": ["amiga_600"], "effect": "Kompakter ECS-Nachfolger: 1 MB Chip-RAM, IDE und PCMCIA." },
+				{ "id": "a1200", "shop_item": "order_amiga_1200", "models": ["amiga_1200"], "effect": "AGA, 68020 und 2 MB Chip-RAM — der erweiterbare Szene-Rechner." }
+			]
+		},
+		{
+			"id": "speicher",
+			"name": "RAM & TURBOKARTEN",
+			"nodes": [
+				{ "id": "ram1", "shop_item": "order_ram_1mb", "models": ["amiga_500"], "effect": "A500: +512 KB Slow-RAM, insgesamt 1 MB; X-COPY puffert eine Disk in einem Durchgang." },
+				{ "id": "chip2", "shop_item": "order_chipram_2mb_mod", "requires": ["ram1"], "models": ["amiga_500"], "effect": "A500-Werkstattumbau: 2 MB Chip-RAM mit passendem Agnus und Board-Arbeit." },
+				{ "id": "ram4", "shop_item": "order_ram_4mb", "requires": ["chip2"], "models": ["amiga_500"], "effect": "A500: 2 MB zusätzliches Fast-RAM, insgesamt 4 MB." },
+				{ "id": "a500_030", "shop_item": "order_a500_accel_68030", "requires": ["ram1"], "models": ["amiga_500"], "effect": "A530-Klasse: 68030/40, 8 MB Fast-RAM und SCSI-Festplatte; CPU ×7,2." },
+				{ "id": "a600_chip2", "shop_item": "order_a600_chipram_2mb", "requires": ["a600"], "models": ["amiga_600"], "effect": "A601-kompatible Unterbodenkarte: zusammen 2 MB echtes Chip-RAM." },
+				{ "id": "a600_pcmcia2", "shop_item": "order_a600_pcmcia_sram_2mb", "requires": ["a600"], "models": ["amiga_600"], "effect": "2 MB SRAM im PCMCIA-Slot: sofort 3–4 MB Gesamtspeicher, ohne das Gehäuse zu öffnen." },
+				{ "id": "a600_pcmcia4", "shop_item": "order_a600_pcmcia_sram_4mb", "requires": ["a600_pcmcia2"], "models": ["amiga_600"], "effect": "4 MB PCMCIA-SRAM: maximal 6 MB mit A601; belegt den Kartenslot." },
+				{ "id": "a600_030", "shop_item": "order_a600_accel_68030", "requires": ["a600_chip2"], "models": ["amiga_600"], "effect": "Später A600-Innenausbau: 68030/33 und 32 MB Fast-RAM; CPU ×6." },
+				{ "id": "a1200_pcmcia4", "shop_item": "order_a1200_pcmcia_sram_4mb", "requires": ["a1200"], "models": ["amiga_1200"], "effect": "Budget-Ausbau: 4 MB PCMCIA-SRAM, zusammen 6 MB; der Kartenslot ist belegt." },
+				{ "id": "a1200_fast4", "shop_item": "order_a1200_fast_ram_4mb", "requires": ["a1200"], "models": ["amiga_1200"], "effect": "4 MB 32-Bit-Fast-RAM plus Echtzeituhr: 6 MB gesamt." },
+				{ "id": "a1200_fast8", "shop_item": "order_a1200_fast_ram_8mb", "requires": ["a1200_fast4"], "models": ["amiga_1200"], "effect": "8 MB 32-Bit-Fast-RAM plus Echtzeituhr: 10 MB gesamt." },
+				{ "id": "a1200_030", "shop_item": "order_a1200_accel_68030", "requires": ["a1200_fast8"], "models": ["amiga_1200"], "effect": "68030/40 und 16 MB Fast-RAM: 18 MB gesamt, CPU ×7,2 gegenüber Stock-A500." },
+				{ "id": "a1200_030_50", "shop_item": "order_a1200_accel_68030_50", "requires": ["a1200_030"], "models": ["amiga_1200"], "effect": "68030/50 und 32 MB Fast-RAM: 34 MB gesamt, CPU ×9." },
+				{ "id": "a1200_040", "shop_item": "order_a1200_accel_68040", "requires": ["a1200_030"], "models": ["amiga_1200"], "effect": "68040/40 mit FPU und 32 MB Fast-RAM: Rendering- und Archivleistung ×14. Die 68030/50 bleibt eine optionale Zwischenstufe, kein später unsichtbares Pflichtteil." },
+				{ "id": "a1200_060", "shop_item": "order_a1200_accel_68060", "requires": ["a1200_040"], "models": ["amiga_1200"], "effect": "68060/50 mit FPU und 64 MB Fast-RAM: Endausbau der klassischen 68k-Linie, CPU ×28." },
+				{ "id": "os31", "shop_item": "order_amigaos_31_upgrade", "requires": ["a1200"], "effect": "Kickstart 3.1 (40.68) und Workbench 3.1 (40.42); dieselbe AGA-Hardware, modernere Systemsoftware." },
+				{ "id": "zip", "shop_item": "order_zip_drive", "effect": "100-MB-Wechselmedien für das Archiv der späten Ära." }
+			]
+		},
+		{
+			"id": "laufwerke",
+			"name": "LAUFWERKE & MEDIEN",
+			"nodes": [
+				{ "id": "extdrive", "shop_item": "shop_external_drive", "effect": "Zweites Laufwerk: Kopieren/Prüfen deutlich günstiger." },
+				{ "id": "hdd", "shop_item": "order_hdd_a590", "requires": ["a500"], "models": ["amiga_500"], "effect": "A500-Seitenwagen: 20 MB SCSI und Autoboot." },
+				{ "id": "a500_scsi_cd", "shop_item": "order_a500_scsi_cdrom", "requires": ["a500_030"], "models": ["amiga_500"], "effect": "Externes 2× SCSI-CD-ROM am A530-Controller." },
+				{ "id": "a600_hdd", "shop_item": "order_a600_internal_hdd", "requires": ["a600"], "models": ["amiga_600"], "effect": "Interne 2,5-Zoll-IDE-Platte mit 40 MB; bootet direkt von DH0:." },
+				{ "id": "a600_hdd120", "shop_item": "order_a600_internal_hdd_120mb", "requires": ["a600_hdd"], "models": ["amiga_600"], "effect": "A600-Plattentausch auf 120 MB; dreifacher Archivplatz." },
+				{ "id": "a1200_hdd", "shop_item": "order_a1200_internal_hdd", "requires": ["a1200"], "models": ["amiga_1200"], "effect": "Interne 2,5-Zoll-IDE-Platte mit 80 MB; bootet direkt von DH0:." },
+				{ "id": "a1200_hdd420", "shop_item": "order_a1200_internal_hdd_420mb", "requires": ["a1200_hdd"], "models": ["amiga_1200"], "effect": "IDE-Plattentausch auf 420 MB für Samples, Demos und Vollinstallationen." },
+				{ "id": "a1200_hdd1200", "shop_item": "order_a1200_internal_hdd_1200mb", "requires": ["a1200_hdd"], "models": ["amiga_1200"], "effect": "1,2-GB-IDE-Plattentausch; die 420-MB-Zwischenstufe ist optional und DH0: bleibt erhalten." },
+				{ "id": "a1200_scsi", "shop_item": "order_a1200_scsi_module", "requires": ["a1200_040"], "models": ["amiga_1200"], "effect": "Fast-SCSI-II-Modul für Turbokarte: I/O bis ×5,5 und externe Geräte." },
+				{ "id": "a1200_scsi_cd", "shop_item": "order_a1200_scsi_cdrom", "requires": ["a1200_scsi"], "models": ["amiga_1200"], "effect": "Externes 4× SCSI-CD-ROM für große Archive und CD-Produktionen." },
+				{ "id": "cdrom", "shop_item": "order_cdrom_a570", "requires": ["a500"], "models": ["amiga_500"], "effect": "A570 am A500: 650 MB auf einer Scheibe." },
+				{ "id": "burner", "shop_item": "shop_cd_burner", "requires": ["cdrom"], "effect": "Eigene CDs brennen (späte Ära)." }
+			]
+		},
+		{
+			"id": "dfue",
+			"name": "DATENFERNÜBERTRAGUNG",
+			"nodes": [
+				{ "id": "modem2400", "shop_item": "shop_modem_2400", "effect": "Das Tor zu den Mailboxen — 2400 Baud Geduld." },
+				{ "id": "modem9600", "shop_item": "order_modem_9600", "requires": ["modem2400"], "effect": "Viermal schneller einwählen, kleinere Telefonrechnung je Download." },
+				{ "id": "modem14400", "shop_item": "order_modem_14400", "requires": ["modem9600"], "effect": "Highspeed der Ära — Downloads in Minuten statt Stunden." }
+			]
+		},
+		{
+			"id": "ausgabe",
+			"name": "AUSGABE & BILD",
+			"nodes": [
+				{ "id": "monitor1901", "shop_item": "order_monitor_1901", "effect": "Zweite Röhre fürs Zimmer — Commodore 1901." },
+				{ "id": "monitor1942", "shop_item": "order_monitor_1942", "effect": "AGA-tauglicher Multiscan-Monitor für stabilere hohe Workbench-Modi." },
+				{ "id": "monitor17", "shop_item": "order_monitor_multisync_17", "requires": ["monitor1942", "a1200"], "models": ["amiga_1200"], "effect": "A1200 + 17-Zoll-Multisync: größte nutzbare Arbeitsfläche der klassischen Anlage." },
+				{ "id": "dot9", "shop_item": "order_dot_matrix", "effect": "9-Nadel-Druck: Etiketten-Stufe 2 (Kopien-Handel)." },
+				{ "id": "dot24", "shop_item": "order_dot_matrix_24", "requires": ["dot9"], "effect": "Letter-Quality: Etiketten-Stufe 3." },
+				{ "id": "dot24c", "shop_item": "order_dot_matrix_24_color", "requires": ["dot24"], "effect": "Farbband-Druck: Etiketten-Stufe 4, Wert ×1,9." },
+				{ "id": "scanner", "shop_item": "order_hand_scanner", "effect": "Grauwert-Handscanner für eigene Kunst." }
+			]
+		}
+	]
+}

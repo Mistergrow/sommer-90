@@ -1,0 +1,92 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_vater",
+	"dialogues": {
+		"intro_vater": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Papa",
+					"text": "Na, ausgeschlafen? Ich hab dir was mitgebracht — stand beim Flohmarkt für’n Appel und ’n Ei. Ein Amiga, ein Monitor, das Netzteil. Und ’ne Maus.",
+					"choices": [
+						{
+							"text": "Echt jetzt?! Ein Amiga?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Papa",
+					"text": "Der Karton steht da drüben auf dem Boden. Bau ihn auf — erst den Rechner, dann den Monitor. Kriegst du ihn zum Laufen, gehört er dir. Den Rest sparst du dir selbst zusammen.",
+					"choices": [
+						{
+							"text": "Mach ich!",
+							"next": "n3",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n3": {
+					"speaker": "Papa",
+					"text": "Und mach nicht die halbe Nacht durch damit. ...Also, nicht JEDE halbe Nacht.",
+					"choices": [
+						{
+							"text": "Versprochen. Danke, Papa!",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "intro_vater_done",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Öffne den Karton auf dem Boden und bau den Amiga auf."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "laughing"
+				}
+			}
+		},
+		"vater_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Papa",
+					"text": "Sag mal, was waren das nachts für Pfeifgeräusche am Telefon? Und die Rechnung... reden wir nicht drüber.",
+					"choices": [
+						{
+							"text": "Das war das Modem.",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Keine Ahnung.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "angry"
+				},
+				"n2": {
+					"speaker": "Papa",
+					"text": "Modem. Aha. Solange du in der Schule mitkommst. Aber halt die Leitung abends frei, ich erwarte einen Anruf.",
+					"choices": [
+						{
+							"text": "Geht klar.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		}
+	}
+}

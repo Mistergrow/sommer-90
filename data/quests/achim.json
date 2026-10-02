@@ -1,0 +1,199 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_achim",
+  "quests": [
+    {
+      "id": "q_club_member",
+      "title": "Jetzt gehörst du dazu",
+      "giver": "npc_achim",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "club_project_presented"
+      },
+      "intro_via": {
+        "npc": "npc_tobias",
+        "handoff_to": "npc_achim",
+        "text": "Tobias vermittelt den Kontakt; Achim nimmt den Spieler erst nach dem gemeinsam präsentierten Intro auf."
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Achim will nach eurem Gruppenintro noch einmal persönlich mit dir sprechen."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Sprich im Computerclub mit Achim über deine Rolle, die Kritik und die gemeinsame Intro-Disk.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "club_admission"
+          },
+          "reward": [
+            {
+              "type": "toast",
+              "text": "Achim nickt anerkennend."
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "type": "flag",
+          "flag": "club_member",
+          "value": true
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_achim",
+          "value": 3
+        },
+        {
+          "type": "toast",
+          "text": "Auftrag erfüllt — du gehörst zum Computerclub."
+        }
+      ],
+      "teaches": "club_zusammenarbeit"
+    },
+    {
+      "id": "q_compo",
+      "title": "Ruhm bei der Freitags-Compo",
+      "giver": "npc_achim",
+      "prereq": {
+        "year_min": 1994,
+        "needs": [
+          "club_mitglied"
+        ],
+        "flag": "compo_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Achim tippt auf die leere Zeile der Compo-Liste: »Freitag gehört dieser Platz dir — wenn dein Release auf echter Hardware sauber durchläuft.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Die Szene-Studio-Arbeitsdisk für deine Compo-Demo wurde wieder bereitgelegt.",
+          "blocked_text": "Für die Szene-Studio-Arbeitsdisk fehlt ein Platz; das Programm bleibt auf der Werkbank erreichbar.",
+          "protect_text": "Das Szene-Studio wird noch für die Compo-Demo benötigt."
+        },
+        {
+          "uid_flag": "q_compo_release_disk_uid",
+          "content_type": "demo",
+          "release_role": "demo_master",
+          "release_serial_prefix": "DEMO-",
+          "release_project_kind": "demo",
+          "prefer_newest_release": true,
+          "from_stage": 1,
+          "through_stage": 1,
+          "grant_missing": false,
+          "protect_text": "Dieser frische Demo-Master ist für Achims Freitags-Compo reserviert."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 0,
+          "through_stage": 0,
+          "recovery_text": "SZENE-STUDIO wurde für die Compo-Demo wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause im Szene-Studio eine neue Demo anlegen, Beiträge verbinden, Build und QA bestehen und auf eine leere DD-Disk freezen.",
+          "map_location": "room",
+          "goal": {
+            "action": "compo_release"
+          }
+        },
+        {
+          "desc": "Reich den frischen Release bei Achim zur Freitags-Compo ein.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "compo_submit"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 30
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 4
+        },
+        {
+          "type": "toast",
+          "text": "Applaus bei der Compo — dein Name steht auf der Ergebnisliste."
+        }
+      ]
+    },
+    {
+      "id": "q_xcopy_pro",
+      "title": "Eine Disk im Speicher",
+      "giver": "npc_achim",
+      "prereq": {
+        "year_min": 1993,
+        "flag": "club_member"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Achim: »Mit mindestens 1 MB puffert X-COPY die ganze Disk. A501, A600 oder A1200 — entscheidend ist der aktive Rechner.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Stell einen Amiga mit mindestens 1 MB RAM auf. Beim A500 brauchst du die A501; ein serienmäßiger A600 oder A1200 erfüllt die Anforderung bereits.",
+          "map_location": "room",
+          "goal": {
+            "ram_kb_min": 1024
+          }
+        },
+        {
+          "desc": "Fertige mit dem normalen X-COPY eine verifizierte Arbeitskopie in einem Speicherdurchgang an.",
+          "map_location": "room",
+          "goal": {
+            "action": "xcopy_standard_verified"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "program",
+          "id": "xcopy_pro"
+        },
+        {
+          "type": "disk_template",
+          "id": "xcopy_pro_disk",
+          "memory": "1993 von Achim im Computerclub erhalten"
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_achim",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "xcopy_pro_received"
+        },
+        {
+          "type": "toast",
+          "text": "Achim reicht dir die schwarze X-COPY-Professional-Clubdisk. Sie liegt jetzt startbereit in deinem Werkbank-Verzeichnis."
+        }
+      ]
+    }
+  ]
+}

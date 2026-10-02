@@ -1,0 +1,423 @@
+{
+	"npc": "npc_sven",
+	"comment": "Zeilen-Pool fuer npc_sven. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "sve_b01",
+			"to": 1995,
+			"text": "Ey! Erst kicken, dann Rechner — so läuft das bei mir."
+		},
+		{
+			"id": "sve_b02",
+			"to": 1995,
+			"text": "Na, alter Kumpel? Lang nicht gesehen."
+		},
+		{
+			"id": "sve_b03",
+			"to": 1995,
+			"text": "Setz dich auf den Hof, ist Platz genug."
+		},
+		{
+			"id": "sve_b04",
+			"to": 1995,
+			"text": "Ich hätt da was zum Tauschen — aber nur gegen was Gutes."
+		},
+		{
+			"id": "sve_b05",
+			"to": 1995,
+			"text": "Bei mir läuft alles, was ich anfass. Fast alles."
+		},
+		{
+			"id": "sve_b06",
+			"to": 1995,
+			"text": "Sport und Zocken, das ist keine Widersprüch, das ist Balance."
+		},
+		{
+			"id": "sve_b07",
+			"to": 1995,
+			"text": "Komm, ein Spiel noch, dann müssen wir raus an die Luft."
+		},
+		{
+			"id": "sve_b08",
+			"to": 1995,
+			"text": "Ich hab den Highscore geknackt. Frag den Mike, der ärgert sich noch."
+		},
+		{
+			"id": "sve_b09",
+			"to": 1995,
+			"text": "Wetten, ich schlag dich? Verlierer holt was zu trinken."
+		},
+		{
+			"id": "sve_b10",
+			"to": 1995,
+			"text": "Mein Alter versteht das alles nicht. Aber solange die Noten passen..."
+		},
+		{
+			"id": "sve_b11",
+			"to": 1995,
+			"text": "Ich bin nicht der Tüftler-Typ, ich will einfach spielen und Spaß haben."
+		},
+		{
+			"id": "sve_b12",
+			"to": 1995,
+			"text": "Der Hof hier ist unser Wohnzimmer, weißt du."
+		},
+		{
+			"id": "sve_b13",
+			"to": 1995,
+			"text": "Wenn du Hilfe brauchst beim Schleppen — ich hab starke Arme."
+		},
+		{
+			"id": "sve_b14",
+			"to": 1995,
+			"text": "Ich sammel nicht so wie du, ich spiel's einfach durch und gut."
+		},
+		{
+			"id": "sve_b15",
+			"to": 1995,
+			"text": "Weißt du noch, wie wir uns kennengelernt haben? Über 'ne Diskette."
+		},
+		{
+			"id": "sve_b16",
+			"to": 1995,
+			"text": "Ehrlich, ohne euch wär hier tote Hose."
+		},
+		{
+			"id": "sve_b17",
+			"to": 1995,
+			"text": "Ich mag's laut und schnell — bei Musik wie bei Spielen."
+		},
+		{
+			"id": "sve_b18",
+			"to": 1995,
+			"text": "Komm mal wieder vorbei, bevor... na, bevor irgendwas ist."
+		},
+		{
+			"id": "sve_b19",
+			"to": 1995,
+			"text": "Ich bin kein großer Redner, aber auf mich ist Verlass."
+		},
+		{
+			"id": "sve_b20",
+			"to": 1995,
+			"text": "Halt mir 'nen Platz frei, wenn ihr euch im Club trefft."
+		},
+		{
+			"id": "sve_b21",
+			"to": 1995,
+			"text": "Meine Mutter macht die besten Waffeln. Nur so als Info."
+		},
+		{
+			"id": "sve_b22",
+			"to": 1995,
+			"text": "Ich verlier nicht gern. Aber gegen dich... na gut, manchmal."
+		},
+		{
+			"id": "sve_b23",
+			"to": 1995,
+			"text": "Das Leben ist zu kurz für langweilige Spiele."
+		},
+		{
+			"id": "sve_b24",
+			"to": 1995,
+			"text": "Wenn's regnet, sitzen wir drin und zocken. Wenn nicht, raus."
+		},
+		{
+			"id": "sve_b25",
+			"to": 1995,
+			"text": "Ich hab da 'nen Trick, den zeig ich nur echten Freunden."
+		},
+		{
+			"id": "sve_b26",
+			"to": 1995,
+			"text": "Bleib locker, Mann. Alles wird gut."
+		},
+		{
+			"id": "sve_b27",
+			"to": 1995,
+			"text": "Ich schulde dir noch was von letztem Mal, oder? Kriegst du wieder."
+		},
+		{
+			"id": "sve_b28",
+			"to": 1995,
+			"text": "Am Wochenende ist Turnier auf'm Bolzplatz. Kommst du gucken?"
+		},
+		{
+			"id": "sve_b29",
+			"to": 1995,
+			"text": "Ich red nicht viel über Gefühle, aber du bist okay."
+		},
+		{
+			"id": "sve_b30",
+			"to": 1995,
+			"text": "Ein Tag ohne Zocken ist ein verlorener Tag, find ich."
+		},
+		{
+			"id": "sv_ever1",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Erst kicken, dann Rechner! So läuft das bei mir."
+		},
+		{
+			"id": "sv_ever2",
+			"to": 1995,
+			"topic": "tausch",
+			"text": "Ich hätt' da was zum Tauschen — aber nur gegen was Gutes."
+		},
+		{
+			"id": "sv_tausch",
+			"from": 1992,
+			"to": 1994,
+			"topic": "tausch",
+			"text": "Der Typ aus'm Club hat mir was Selbstgemachtes gegeben. Läuft bei mir perfekt!"
+		},
+		{
+			"id": "sv_cdrom",
+			"from": 1993,
+			"to": 1994,
+			"needs": [
+				"cd_rom_da"
+			],
+			"topic": "hardware",
+			"text": "Hast du gehört? Bald gibt's Spiele auf CD. Ganze Filme angeblich. Glaub ich erst, wenn ich's seh."
+		},
+		{
+			"id": "sv_weg",
+			"from": 1995,
+			"needs": [
+				"sven_weg"
+			],
+			"once": true,
+			"topic": "abschied",
+			"text": "Wir ziehen in die Nachbarstadt... schade um den Hof. Aber wir bleiben in Kontakt, versprochen!"
+		},
+		{
+			"id": "sv_besuch",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Bin nur kurz da — Besuch aus der alten Heimat. Der Hof sieht immer noch aus wie früher!"
+		},
+		{
+			"id": "sv_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Weißt du noch, unsere Bolzplatz-Turniere? Und danach zocken bis die Eltern schimpften. Beste Zeit."
+		},
+		{
+			"id": "sv_v1",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Bin nur kurz da — Besuch aus der alten Heimat. Der Hof sieht aus wie immer!"
+		},
+		{
+			"id": "sv_v2",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Mann, hier hat sich ja kaum was verändert. Fühlt sich gut an."
+		},
+		{
+			"id": "sv_v3",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "In der neuen Stadt kenn ich kaum jemand. Deshalb bin ich froh, wenn ich hier bin."
+		},
+		{
+			"id": "sv_v4",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "tausch",
+			"text": "Ich hab dir was aus der Nachbarstadt mitgebracht — die haben da 'nen guten Laden."
+		},
+		{
+			"id": "sv_v5",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Schreib mir mal, ja? Postkarten kosten nix und freuen einen riesig."
+		},
+		{
+			"id": "sv_v6",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Umziehen ist Mist, sag ich dir. Aber Freunde bleiben Freunde."
+		},
+		{
+			"id": "sv_v7",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "nostalgie",
+			"text": "Ich denk oft an unsere Bolzplatz-Zeiten. Kommt so schnell nicht wieder."
+		},
+		{
+			"id": "sv_v8",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Nächstes Mal bring ich mein neues Zeug mit, dann zocken wir wie früher."
+		},
+		{
+			"id": "sv_v9",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Die Fahrt hierher ist weit, aber für euch mach ich das gern."
+		},
+		{
+			"id": "sv_v10",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Bleib, wie du bist, okay? Egal was kommt."
+		},
+		{
+			"id": "sv_v11",
+			"from": 1997,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Ich vermiss den Club. In meiner neuen Stadt gibt's sowas nicht."
+		},
+		{
+			"id": "sv_v12",
+			"from": 1996,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "besuch",
+			"text": "Erzähl, was hier so läuft — ich krieg ja nichts mehr mit."
+		},
+		{
+			"id": "sv_v13",
+			"from": 1998,
+			"needs": [
+				"sven_weg",
+				"daniel_apfel"
+			],
+			"topic": "besuch",
+			"text": "Der Daniel erzählt nur noch von seinem angebissenen Apfel und Telefonen zum Mitnehmen. Verstehst DU den?"
+		},
+		{
+			"id": "sve_x01",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Ich merk mir Tore und Cheats, sonst nix. Mein Kopf hat nur zwei Speicherplätze."
+		},
+		{
+			"id": "sve_x02",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Bolzen, tauschen, zocken — mehr braucht kein Mensch. Sagt zumindest mein Bauch."
+		},
+		{
+			"id": "sve_x03",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Ich bin nicht der Schlaueste, aber der Treueste. Zählt das nicht mehr?"
+		},
+		{
+			"id": "sve_x04",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Verlieren üb ich noch. Gewinnen kann ich schon."
+		},
+		{
+			"id": "sve_x05",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Mein Alter sagt, aus mir wird nix mit dem ganzen Gedaddel. Zeig ich ihm noch."
+		},
+		{
+			"id": "sve_x06",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Wenn du mal Muskeln brauchst zum Schleppen — ich bin dein Mann. Denken machst du."
+		},
+		{
+			"id": "sve_x07",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Ich hab dir 'nen Platz auf der Bank freigehalten. Der ist deiner, egal was kommt."
+		},
+		{
+			"id": "sve_x08",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Meine Mutter fragt immer nach dir. 'Der nette Junge mit den Disketten', sagt sie."
+		},
+		{
+			"id": "sve_x09",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Ehrlich? Ohne euch wär die Schule nur halb so auszuhalten."
+		},
+		{
+			"id": "sve_x10",
+			"to": 1995,
+			"topic": "alltag",
+			"text": "Ich red nicht gern über Gefühle. Aber du bist mein bester Kumpel, basta."
+		},
+		{
+			"id": "sve_x11",
+			"from": 1995,
+			"to": 1995,
+			"topic": "abschied",
+			"text": "Der Umzug macht mir Angst, Mann. Sag's nicht weiter."
+		},
+		{
+			"id": "sve_x12",
+			"from": 1995,
+			"to": 1995,
+			"topic": "abschied",
+			"text": "In der neuen Stadt fang ich bei null an. Kein Hof, keine Bande, kein DU. Mist."
+		},
+		{
+			"id": "sve_x13",
+			"from": 0,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "aera",
+			"text": "Ich hab hier 'nen Verein gefunden, aber es ist nicht dasselbe. Hier kennt keiner unsere Cheats."
+		},
+		{
+			"id": "sve_x14",
+			"from": 0,
+			"needs": [
+				"sven_weg"
+			],
+			"topic": "aera",
+			"text": "Weißt du noch, unser Doppel-Turnier? Ich denk oft dran, wenn's mir hier zu still wird."
+		}
+	]
+}

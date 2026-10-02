@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "comment": "27 physische, voll spielbare Stefan-Spiele: drei pro Kampagnenjahr 1991-1999. Grafikzellen sind nullbasiert im jeweiligen 3x3-Atlas.",
+  "games": [
+    {
+      "software_id": "nebula_courier_91", "disk_template_id": "game_nebula_courier_91",
+      "quest_id": "q_stefan_nebula_courier_91", "year": 1991, "slot": 1, "week": 1,
+      "title": "NEBULA COURIER", "subtitle": "POST DURCH DEN METEORSTURM",
+      "mode": "shooter", "variant": "courier", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [0, 0],
+      "accent": "#63d8e8", "danger": "#ef6658", "seed": 199101, "difficulty": 1,
+      "time_limit": 78, "goal_primary": 3, "target_score": 2600,
+      "briefing": "Drei Datenkapseln müssen durch den Trümmerring. Schießen schafft Platz, aber nur zugestellte Fracht gewinnt den Auftrag.",
+      "objective": "3 Kapseln aufnehmen und am Sprungtor abliefern",
+      "controls": "PFEILE/WASD fliegen · FEUER schießen · P Pause"
+    },
+    {
+      "software_id": "clockwork_keep_91", "disk_template_id": "game_clockwork_keep_91",
+      "quest_id": "q_stefan_clockwork_keep_91", "year": 1991, "slot": 2, "week": 3,
+      "title": "CLOCKWORK KEEP", "subtitle": "DAS SCHLOSS DER ZAHNRÄDER",
+      "mode": "platform", "variant": "gears", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [1, 0],
+      "accent": "#e7b65d", "danger": "#c94f4f", "seed": 199102, "difficulty": 1,
+      "time_limit": 92, "goal_primary": 5, "target_score": 3200,
+      "briefing": "Die Turmuhr steht. Folge dem präzisen Sprungpfad, sammle die verlorenen Zahnräder und erreiche das Uhrwerk am anderen Ende.",
+      "objective": "5 Zahnräder bergen und das Uhrwerk erreichen",
+      "controls": "LINKS/RECHTS laufen · FEUER springen · P Pause"
+    },
+    {
+      "software_id": "circuit_mind_91", "disk_template_id": "game_circuit_mind_91",
+      "quest_id": "q_stefan_circuit_mind_91", "year": 1991, "slot": 3, "week": 5,
+      "title": "CIRCUIT MIND", "subtitle": "LOGIK IM SILIZIUM",
+      "mode": "circuit", "variant": "signal", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [2, 0],
+      "accent": "#55e0d4", "danger": "#f05b72", "seed": 199103, "difficulty": 1,
+      "time_limit": 110, "goal_primary": 4, "target_score": 4200,
+      "briefing": "Drehe die Leiterbahnen, bis der Impuls vom Eingang alle Speicherkerne und schließlich den Ausgang erreicht.",
+      "objective": "Alle Kerne in einem geschlossenen Signalnetz verbinden",
+      "controls": "PFEILE Feld wählen · FEUER drehen · H Hinweis"
+    },
+
+    {
+      "software_id": "luna_miner_92", "disk_template_id": "game_luna_miner_92",
+      "quest_id": "q_stefan_luna_miner_92", "year": 1992, "slot": 1, "week": 1,
+      "title": "LUNA MINER", "subtitle": "UNTER DEM KRATERRAND",
+      "mode": "miner", "variant": "crystal", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [0, 1],
+      "accent": "#a98bf2", "danger": "#f17a52", "seed": 199201, "difficulty": 2,
+      "time_limit": 88, "goal_primary": 8, "target_score": 4600,
+      "briefing": "Bohre einen sicheren Stollen, sammle violette Kristalle und kehre zurück, bevor Sauerstoff oder Tragwerk nachgeben.",
+      "objective": "8 Kristalle fördern und zur Basis zurückkehren",
+      "controls": "PFEILE bohren · FEUER Stütze setzen · P Pause"
+    },
+    {
+      "software_id": "abyss_rescue_92", "disk_template_id": "game_abyss_rescue_92",
+      "quest_id": "q_stefan_abyss_rescue_92", "year": 1992, "slot": 2, "week": 3,
+      "title": "ABYSS RESCUE", "subtitle": "SIGNAL AUS DER TIEFE",
+      "mode": "rescue", "variant": "submarine", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [1, 1],
+      "accent": "#55c9e8", "danger": "#ff805f", "seed": 199202, "difficulty": 2,
+      "time_limit": 96, "goal_primary": 4, "target_score": 5200,
+      "briefing": "Strömung, Felsen und knapper Ballast trennen dich von den Tauchern. Ruhige Steuerimpulse sind schneller als Vollgas.",
+      "objective": "4 Taucher aufnehmen und zur Boje bringen",
+      "controls": "PFEILE Schub · FEUER Sonarimpuls · P Pause"
+    },
+    {
+      "software_id": "shadow_protocol_92", "disk_template_id": "game_shadow_protocol_92",
+      "quest_id": "q_stefan_shadow_protocol_92", "year": 1992, "slot": 3, "week": 5,
+      "title": "SHADOW PROTOCOL", "subtitle": "KEIN LICHT. KEIN ALARM.",
+      "mode": "stealth", "variant": "laser", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [2, 1],
+      "accent": "#c082e8", "danger": "#ff4055", "seed": 199203, "difficulty": 2,
+      "time_limit": 105, "goal_primary": 3, "target_score": 5800,
+      "briefing": "Sichtkegel rotieren im Takt. Kopiere drei Datensätze, lösche deine Spur und verlasse die Anlage ohne Vollalarm.",
+      "objective": "3 Terminals hacken und den Ausgang ungesehen erreichen",
+      "controls": "PFEILE schleichen · FEUER hacken · SHIFT warten"
+    },
+
+    {
+      "software_id": "neon_highway_93", "disk_template_id": "game_neon_highway_93",
+      "quest_id": "q_stefan_neon_highway_93", "year": 1993, "slot": 1, "week": 1,
+      "title": "NEON HIGHWAY", "subtitle": "DIE NACHT HAT FÜNF SPUREN",
+      "mode": "racer", "variant": "bike", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [0, 2],
+      "accent": "#ed55e9", "danger": "#ff7b3c", "seed": 199301, "difficulty": 3,
+      "time_limit": 82, "goal_primary": 18, "goal_secondary": 6, "target_score": 6400,
+      "briefing": "Schalte im Windschatten hoch, wechsle zwischen fünf Datenspuren und erreiche den Kontrollpunkt mit intaktem Schild.",
+      "objective": "18 Kilometer überstehen und 6 Datenmarken sammeln",
+      "controls": "LINKS/RECHTS Spur · HOCH Turbo · RUNTER bremsen"
+    },
+    {
+      "software_id": "midnight_mechanism_93", "disk_template_id": "game_midnight_mechanism_93",
+      "quest_id": "q_stefan_midnight_mechanism_93", "year": 1993, "slot": 2, "week": 3,
+      "title": "MIDNIGHT MECHANISM", "subtitle": "DAS HAUS ERINNERT SICH",
+      "mode": "circuit", "variant": "clockwork", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [1, 2],
+      "accent": "#d2a660", "danger": "#a74d67", "seed": 199302, "difficulty": 3,
+      "time_limit": 118, "goal_primary": 4, "target_score": 7000,
+      "briefing": "Drehe jede Kammer in die richtige Richtung. Rekonstruiere den durchgehenden Mechanismus, bevor die Turmuhr zwölf schlägt.",
+      "objective": "Vier Uhrwerk-Kerne koppeln und den Hauptschlüssel speisen",
+      "controls": "PFEILE Kammer · FEUER drehen · H Impuls prüfen"
+    },
+    {
+      "software_id": "port_meridian_93", "disk_template_id": "game_port_meridian_93",
+      "quest_id": "q_stefan_port_meridian_93", "year": 1993, "slot": 3, "week": 5,
+      "title": "PORT MERIDIAN", "subtitle": "DREI HÄFEN. EIN KONTO.",
+      "mode": "strategy", "variant": "trade", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1991_1993_v02.png", "atlas_cell": [2, 2],
+      "accent": "#48d39a", "danger": "#df6f50", "seed": 199303, "difficulty": 3,
+      "time_limit": 125, "goal_primary": 10, "goal_threshold": 35, "target_score": 7600,
+      "briefing": "Konto, Fracht, Ruf und Rumpf reagieren auf jede Hafenlage. Lies die sichtbare Prognose und stütze vor jedem Handel den gefährdeten Wert.",
+      "objective": "10 Handelszyklen überstehen; kein Wert darf unter 35 fallen",
+      "controls": "PFEILE Wert wählen · FEUER handeln · SHIFT Budget 12/20"
+    },
+
+    {
+      "software_id": "sky_fortress_94", "disk_template_id": "game_sky_fortress_94",
+      "quest_id": "q_stefan_sky_fortress_94", "year": 1994, "slot": 1, "week": 1,
+      "title": "SKY FORTRESS", "subtitle": "HALTE DIE WOLKENLINIE",
+      "mode": "strategy", "variant": "defense", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [0, 0],
+      "accent": "#6dd8f0", "danger": "#f05a4e", "seed": 199401, "difficulty": 4,
+      "time_limit": 128, "goal_primary": 11, "goal_threshold": 35, "target_score": 8200,
+      "briefing": "Verteile Energie zwischen Schild, Geschützen, Reparatur und Reaktor. Jede der elf Angriffswellen greift die nächste sichtbare Schwachstelle an.",
+      "objective": "11 Angriffswellen überstehen; jedes System mindestens 35",
+      "controls": "PFEILE System · FEUER Energie · SHIFT Reserve 12/20"
+    },
+    {
+      "software_id": "pulse_reactor_94", "disk_template_id": "game_pulse_reactor_94",
+      "quest_id": "q_stefan_pulse_reactor_94", "year": 1994, "slot": 2, "week": 3,
+      "title": "PULSE REACTOR", "subtitle": "VIER KANÄLE BIS ZUR KERNFUSION",
+      "mode": "rhythm", "variant": "reactor", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [1, 0],
+      "accent": "#b5ef50", "danger": "#ff5260", "seed": 199402, "difficulty": 4,
+      "time_limit": 94, "note_count": 28, "note_interval": 0.46, "hit_window": 0.30,
+      "goal_accuracy": 0.60, "goal_combo": 10, "target_score": 7000,
+      "briefing": "Vier Energiekanäle feuern im Paula-Takt. Halte die Serie, gleiche Überlastung aus und zünde den Reaktor im perfekten Fenster.",
+      "objective": "60 Prozent Treffer und eine 10er Serie erreichen",
+      "controls": "D F J K Kanäle · GROSSES ZEITFENSTER · P Pause"
+    },
+    {
+      "software_id": "frontier_command_94", "disk_template_id": "game_frontier_command_94",
+      "quest_id": "q_stefan_frontier_command_94", "year": 1994, "slot": 3, "week": 5,
+      "title": "FRONTIER COMMAND", "subtitle": "STAUB. STAHL. ENTSCHEIDUNGEN.",
+      "mode": "strategy", "variant": "tactics", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [2, 0],
+      "accent": "#e5ba5a", "danger": "#d35b4c", "seed": 199403, "difficulty": 4,
+      "time_limit": 135, "goal_primary": 11, "goal_threshold": 35, "target_score": 9400,
+      "briefing": "Späher, Panzer, Nachschub und Kontrolle teilen sich ein knappes Befehlsbudget. Jede Prognose zeigt, wo die Front als Nächstes bricht.",
+      "objective": "11 Befehlszyklen überstehen; alle vier Frontwerte mindestens 35",
+      "controls": "PFEILE Frontwert · FEUER Befehl · SHIFT Reserve 12/20"
+    },
+
+    {
+      "software_id": "magma_runner_95", "disk_template_id": "game_magma_runner_95",
+      "quest_id": "q_stefan_magma_runner_95", "year": 1995, "slot": 1, "week": 1,
+      "title": "MAGMA RUNNER", "subtitle": "DER BODEN BLEIBT NICHT",
+      "mode": "platform", "variant": "lava", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [0, 1],
+      "accent": "#ff9a3c", "danger": "#ff3f35", "seed": 199501, "difficulty": 5,
+      "time_limit": 86, "goal_primary": 6, "target_score": 10000,
+      "briefing": "Sammle Kühlkerne über dem Magmafeld. Ein Luftimpuls pro Landung rettet missglückte Sprünge, doch nur eine saubere Kette führt zum Lift.",
+      "objective": "6 Kühlkerne und den Evakuierungslift erreichen",
+      "controls": "LINKS/RECHTS · FEUER springen · SHIFT Luftimpuls"
+    },
+    {
+      "software_id": "vector_strike_95", "disk_template_id": "game_vector_strike_95",
+      "quest_id": "q_stefan_vector_strike_95", "year": 1995, "slot": 2, "week": 3,
+      "title": "VECTOR STRIKE", "subtitle": "JENSEITS DER DRAHTGITTER",
+      "mode": "shooter", "variant": "fighter", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [1, 1],
+      "accent": "#79ef85", "danger": "#ff5573", "seed": 199502, "difficulty": 5,
+      "time_limit": 88, "goal_primary": 3, "target_score": 10600,
+      "briefing": "Feindformationen reagieren auf deine Flugbahn. Brich drei Kommandoknoten, halte den Multiplikator und kehre durch das Gitter zurück.",
+      "objective": "3 Kommandodrohnen zerstören und mit intakter Hülle entkommen",
+      "controls": "PFEILE fliegen · FEUER Laser · SHIFT Rolle"
+    },
+    {
+      "software_id": "vaults_of_arkon_95", "disk_template_id": "game_vaults_of_arkon_95",
+      "quest_id": "q_stefan_vaults_of_arkon_95", "year": 1995, "slot": 3, "week": 5,
+      "title": "VAULTS OF ARKON", "subtitle": "STEIN MERKT SICH JEDEN FEHLER",
+      "mode": "circuit", "variant": "runes", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [2, 1],
+      "accent": "#79b8ee", "danger": "#d46c55", "seed": 199503, "difficulty": 5,
+      "time_limit": 130, "goal_primary": 5, "target_score": 11200,
+      "briefing": "Runenblöcke leiten Licht nur in ihrer Blickrichtung. Prüfe den zusammenhängenden Lichtweg und speise das Siegel am Ausgang.",
+      "objective": "5 Runen speisen und das Siegel ohne Neustart öffnen",
+      "controls": "PFEILE Rune · FEUER drehen · H Lichtimpuls"
+    },
+
+    {
+      "software_id": "net_raiders_96", "disk_template_id": "game_net_raiders_96",
+      "quest_id": "q_stefan_net_raiders_96", "year": 1996, "slot": 1, "week": 1,
+      "title": "NET RAIDERS", "subtitle": "DIE LEITUNG SIEHT DICH",
+      "mode": "stealth", "variant": "network", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [0, 2],
+      "accent": "#49dcf2", "danger": "#ff385b", "seed": 199601, "difficulty": 6,
+      "time_limit": 112, "goal_primary": 4, "target_score": 11800,
+      "briefing": "Kameras teilen nun ihre Sicht. Lies die Patrouillenachsen, nutze Wartezüge und kopiere vier Schlüsselknoten vor dem Vollalarm.",
+      "objective": "4 Knoten täuschen und den Hauptschlüssel exportieren",
+      "controls": "PFEILE schleichen · FEUER Knoten · SHIFT warten"
+    },
+    {
+      "software_id": "polar_rescue_96", "disk_template_id": "game_polar_rescue_96",
+      "quest_id": "q_stefan_polar_rescue_96", "year": 1996, "slot": 2, "week": 3,
+      "title": "POLAR RESCUE", "subtitle": "WEISSES RAUSCHEN",
+      "mode": "rescue", "variant": "ice", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [1, 2],
+      "accent": "#b9efff", "danger": "#ff6b4c", "seed": 199602, "difficulty": 6,
+      "time_limit": 102, "goal_primary": 5, "target_score": 12400,
+      "briefing": "Wind versetzt den Gleiter, Eisspitzen bestrafen Vollgas. Wärmebild und kurze Schubimpulse führen zu fünf verschollenen Forschern.",
+      "objective": "5 Forscher bergen und sicher zur Basis zurückkehren",
+      "controls": "PFEILE Schub · FEUER/H Wärmebild · SHIFT bremsen"
+    },
+    {
+      "software_id": "colony_six_96", "disk_template_id": "game_colony_six_96",
+      "quest_id": "q_stefan_colony_six_96", "year": 1996, "slot": 3, "week": 5,
+      "title": "COLONY SIX", "subtitle": "SECHS KUPPELN. EINE NACHT.",
+      "mode": "strategy", "variant": "colony", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1994_1996_v02.png", "atlas_cell": [2, 2],
+      "accent": "#e08a54", "danger": "#f34f51", "seed": 199603, "difficulty": 6,
+      "time_limit": 142, "goal_primary": 12, "goal_threshold": 35, "target_score": 13000,
+      "briefing": "Sauerstoff, Energie, Moral und Vorrat reagieren verzögert. Lies den Staubsturmbericht und stabilisiere den jeweils bedrohten Kreislauf.",
+      "objective": "12 Koloniezyklen überstehen; alle vier Kreisläufe mindestens 35",
+      "controls": "PFEILE Kreislauf · FEUER Ressource · SHIFT Reserve 12/20"
+    },
+
+    {
+      "software_id": "cyberball_97", "disk_template_id": "game_cyberball_97",
+      "quest_id": "q_stefan_cyberball_97", "year": 1997, "slot": 1, "week": 1,
+      "title": "CYBERBALL '97", "subtitle": "KEIN BODENKONTAKT",
+      "mode": "platform", "variant": "arena", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [0, 0],
+      "accent": "#62c7ff", "danger": "#ff5b52", "seed": 199701, "difficulty": 7,
+      "time_limit": 96, "goal_primary": 6, "target_score": 13600,
+      "briefing": "Der Ball gehorcht Impuls und Wandwinkel. Gewinne sechs Duelle gegen eine lernende Abwehr und halte den Kombobonus.",
+      "objective": "6 Tore erzielen, bevor die Gegenseite 4 erreicht",
+      "controls": "LINKS/RECHTS · FEUER springen · SHIFT Impulsschuss"
+    },
+    {
+      "software_id": "deep_core_97", "disk_template_id": "game_deep_core_97",
+      "quest_id": "q_stefan_deep_core_97", "year": 1997, "slot": 2, "week": 3,
+      "title": "DEEP CORE", "subtitle": "DRUCK UNTER DER KRUSTE",
+      "mode": "miner", "variant": "magma", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [1, 0],
+      "accent": "#bc77ff", "danger": "#ff542f", "seed": 199702, "difficulty": 7,
+      "time_limit": 104, "goal_primary": 10, "target_score": 14200,
+      "briefing": "Jeder Meter kostet Sauerstoff, dichtes Gestein dreifach. Plane einen kurzen Stollen, kühle bei Bedarf und bring zehn Kristalle zurück.",
+      "objective": "10 Kristalle bergen und mit Sauerstoff zur Basis zurückkehren",
+      "controls": "PFEILE bohren · FEUER/SHIFT Stütze und Sauerstoff"
+    },
+    {
+      "software_id": "metro_rush_97", "disk_template_id": "game_metro_rush_97",
+      "quest_id": "q_stefan_metro_rush_97", "year": 1997, "slot": 3, "week": 5,
+      "title": "METRO RUSH", "subtitle": "REGEN AUF CHROM",
+      "mode": "racer", "variant": "traffic", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [2, 0],
+      "accent": "#ea58d9", "danger": "#ff7a32", "seed": 199703, "difficulty": 7,
+      "time_limit": 90, "goal_primary": 25, "goal_secondary": 3, "target_score": 14800,
+      "briefing": "Nasse Fahrbahn verlängert jede Korrektur. Nutze Verkehrslücken, Windschatten und drei riskante Abkürzungen bis zum Hafen.",
+      "objective": "25 Kilometer und 3 Kontrolltore ohne Totalschaden",
+      "controls": "LINKS/RECHTS Spur · HOCH Gas · FEUER Nitro"
+    },
+
+    {
+      "software_id": "orbital_siege_98", "disk_template_id": "game_orbital_siege_98",
+      "quest_id": "q_stefan_orbital_siege_98", "year": 1998, "slot": 1, "week": 1,
+      "title": "ORBITAL SIEGE", "subtitle": "DIE ERDE IST DIE LETZTE LINIE",
+      "mode": "strategy", "variant": "defense", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [0, 1],
+      "accent": "#66d5ff", "danger": "#ff5148", "seed": 199801, "difficulty": 8,
+      "time_limit": 145, "goal_primary": 13, "goal_threshold": 35, "target_score": 15400,
+      "briefing": "Schild, Geschütze, Reparatur und Energie stehen unter dreizehn adaptiven Angriffen. Jede Prognose verrät nur den nächsten Einschlag.",
+      "objective": "13 Orbitangriffe überstehen; alle Verteidigungswerte mindestens 35",
+      "controls": "PFEILE System · FEUER Energie · SHIFT Reserve 12/20"
+    },
+    {
+      "software_id": "data_pulse_98", "disk_template_id": "game_data_pulse_98",
+      "quest_id": "q_stefan_data_pulse_98", "year": 1998, "slot": 2, "week": 3,
+      "title": "DATA PULSE", "subtitle": "FAHRE DEN RHYTHMUS",
+      "mode": "rhythm", "variant": "tunnel", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [1, 1],
+      "accent": "#60f1db", "danger": "#ff4fbd", "seed": 199802, "difficulty": 8,
+      "time_limit": 102, "note_count": 36, "note_interval": 0.40, "hit_window": 0.28,
+      "goal_accuracy": 0.70, "goal_combo": 16, "phase_assists": 3, "target_score": 12500,
+      "briefing": "Noten sind jetzt Hindernisse: Vier Spuren und Doppelimpulse. Drei Phasenhilfen fangen einen schwierigen Impuls ab; ein solider Lauf baut die Datenbrücke.",
+      "objective": "70 Prozent Treffer und eine 16er Serie erreichen",
+      "controls": "D F J K Spuren · LEER 3 Phasenhilfen · P Pause"
+    },
+    {
+      "software_id": "syndicate_grid_98", "disk_template_id": "game_syndicate_grid_98",
+      "quest_id": "q_stefan_syndicate_grid_98", "year": 1998, "slot": 3, "week": 5,
+      "title": "SYNDICATE GRID", "subtitle": "DIE STADT HÖRT MIT",
+      "mode": "stealth", "variant": "squad", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [2, 1],
+      "accent": "#70d6c5", "danger": "#ff4a52", "seed": 199803, "difficulty": 8,
+      "time_limit": 125, "goal_primary": 4, "target_score": 16600,
+      "briefing": "Patrouillen kreuzen sich in einem Viertel, das auf jeden Alarm reagiert. Nutze Wartezüge, sichere vier Beweise und lösche deine Spur.",
+      "objective": "4 Beweisterminals sichern und ungesehen entkommen",
+      "controls": "PFEILE bewegen · FEUER hacken · SHIFT warten"
+    },
+
+    {
+      "software_id": "final_courier_99", "disk_template_id": "game_final_courier_99",
+      "quest_id": "q_stefan_final_courier_99", "year": 1999, "slot": 1, "week": 1,
+      "title": "FINAL COURIER", "subtitle": "EINE NACHRICHT VOR NULL",
+      "mode": "shooter", "variant": "finale", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [0, 2],
+      "accent": "#b27dff", "danger": "#ff5a45", "seed": 199901, "difficulty": 9,
+      "time_limit": 98, "goal_primary": 5, "target_score": 17200,
+      "briefing": "Der Sternkorridor kollabiert hinter dir. Übernimm fünf Archivkapseln, entscheide zwischen Kampf und Tempo und erreiche das letzte Tor.",
+      "objective": "5 Archivkapseln retten und das Null-Tor erreichen",
+      "controls": "PFEILE fliegen · FEUER schießen · SHIFT Sprungimpuls"
+    },
+    {
+      "software_id": "millennium_vault_99", "disk_template_id": "game_millennium_vault_99",
+      "quest_id": "q_stefan_millennium_vault_99", "year": 1999, "slot": 2, "week": 3,
+      "title": "MILLENNIUM VAULT", "subtitle": "23:59:59",
+      "mode": "circuit", "variant": "millennium", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [1, 2],
+      "accent": "#68e8ff", "danger": "#ffb13e", "seed": 199902, "difficulty": 9,
+      "time_limit": 145, "goal_primary": 6, "target_score": 17800,
+      "briefing": "Zwei Datumsformate teilen sich ein Netz. Verbinde Alt und Neu, isoliere Überläufe und öffne den Speicher exakt beim Nullimpuls.",
+      "objective": "6 Zeitkerne synchronisieren und den 00-Überlauf verhindern",
+      "controls": "PFEILE Kachel · FEUER drehen · H Testimpuls"
+    },
+    {
+      "software_id": "last_horizon_99", "disk_template_id": "game_last_horizon_99",
+      "quest_id": "q_stefan_last_horizon_99", "year": 1999, "slot": 3, "week": 5,
+      "title": "LAST HORIZON", "subtitle": "WAS NIMMST DU MIT?",
+      "mode": "strategy", "variant": "exodus", "atlas": "res://assets/ui/games/stefan_anthology/atlas_1997_1999_v02.png", "atlas_cell": [2, 2],
+      "accent": "#73d8a2", "danger": "#ff7152", "seed": 199903, "difficulty": 9,
+      "time_limit": 155, "goal_primary": 12, "goal_threshold": 35, "target_score": 18400,
+      "briefing": "Das Kolonieschiff kann nicht alles tragen. Balanciere Menschen, Wissen, Saatgut und Energie durch zwölf Entscheidungen bis zur Landung.",
+      "objective": "12 Entscheidungen überstehen; alle vier Koloniewerte über 35",
+      "controls": "PFEILE Ressource · FEUER entscheiden · SHIFT Reserve 12/20"
+    }
+  ]
+}

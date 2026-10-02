@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://byskbecxfmr1q"]
+
+[ext_resource type="PackedScene" uid="uid://3vsna42fdebb" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="TrackerPatternLab" unique_id=92116168 instance=ExtResource("1")]
+minigame_id = "tracker_pattern"

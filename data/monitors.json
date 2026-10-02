@@ -1,0 +1,353 @@
+{
+	"comment": "CRT-Daten je Monitormodell. Key = Asset-Basisname ohne _Vxx. model_id/hardware_id verbinden Raumwahl und Shopbesitz; quality steuert die sichtbare CRT-Ausgabe; workspace ist der verbindliche Nutzflaechen-Vertrag fuer Workbench/Programme.",
+	"models": {
+		"MONITOR_COMMODORE_1084S": {
+			"model_id": "commodore_1084s",
+			"hardware_id": "monitor_commodore_1084s",
+			"display_name": "Commodore 1084S",
+			"introduced": 1988,
+			"screen_inches": 14.0,
+			"sync_horizontal_khz": {
+				"native": [15.625, 15.750]
+			},
+			"dot_pitch_mm": 0.42,
+			"supported_machine_models": ["amiga_500", "amiga_600", "amiga_1200"],
+			"quality": {
+				"tier": 1,
+				"sharpness": 0.68,
+				"mask_visibility": 0.32,
+				"interlace_artifact": 0.30,
+				"geometry_stability": 0.64
+			},
+			"workspace": {
+				"recommended": [640, 256],
+				"maximum": [640, 512],
+				"maximum_non_interlaced": [640, 256],
+				"visible_columns": 80,
+				"visible_rows": 25,
+				"workspace_gain": 1.0,
+				"live_canvas": [320, 200]
+			},
+			"screen_frac": [0.099, 0.145, 0.802, 0.576],
+			"controls": {
+				"service": [0.648, 0.821, 0.154, 0.058],
+				"power": [0.854, 0.824, 0.065, 0.057]
+			},
+			"phosphor": [0.93, 1.0, 0.97],
+			"scanline": 0.32,
+			"curvature": 0.07,
+			"spill": 0.85,
+			"brightness": 1.18,
+			"crt": {
+				"bloom": 0.12,
+				"aberration": 0.0008,
+				"vignette": 0.16,
+				"focus": 0.68,
+				"mask_strength": 0.26,
+				"interlace_artifact": 0.30
+			},
+			"uncalibrated": [
+				{
+					"name": "Geometrie/Konvergenz daneben",
+					"curvature": 0.2,
+					"aberration": 0.003,
+					"jitter": 0.0026,
+					"scanline": 0.36,
+					"brightness": 1.05
+				},
+				{
+					"name": "Fokus weich + Ueberstrahlung",
+					"bloom": 0.46,
+					"brightness": 1.34,
+					"scanline": 0.4,
+					"aberration": 0.0014,
+					"focus": 0.48
+				},
+				{
+					"name": "Farbstich + Rollen",
+					"tint": [1.0, 0.84, 0.72],
+					"roll_strength": 0.36,
+					"flicker": 0.06,
+					"brightness": 0.8
+				}
+			]
+		},
+		"MONITOR_COMMODORE_1901": {
+			"model_id": "commodore_1901",
+			"hardware_id": "monitor_commodore_1901",
+			"display_name": "Commodore 1901",
+			"introduced": 1986,
+			"screen_inches": 14.0,
+			"sync_horizontal_khz": {
+				"native": [15.625, 15.750]
+			},
+			"dot_pitch_mm": 0.38,
+			"supported_machine_models": ["amiga_500", "amiga_600", "amiga_1200"],
+			"quality": {
+				"tier": 2,
+				"sharpness": 0.76,
+				"mask_visibility": 0.25,
+				"interlace_artifact": 0.24,
+				"geometry_stability": 0.72
+			},
+			"workspace": {
+				"recommended": [640, 256],
+				"maximum": [640, 512],
+				"maximum_non_interlaced": [640, 256],
+				"visible_columns": 80,
+				"visible_rows": 25,
+				"workspace_gain": 1.08,
+				"live_canvas": [320, 200]
+			},
+			"screen_frac": [0.095, 0.126, 0.805, 0.612],
+			"controls": {
+				"service": [0.105, 0.884, 0.790, 0.080],
+				"power": [0.267, 0.928, 0.032, 0.032]
+			},
+			"phosphor": [0.94, 1.0, 0.96],
+			"scanline": 0.26,
+			"curvature": 0.05,
+			"spill": 0.72,
+			"brightness": 1.14,
+			"crt": {
+				"bloom": 0.08,
+				"aberration": 0.0005,
+				"vignette": 0.12,
+				"focus": 0.76,
+				"mask_strength": 0.21,
+				"interlace_artifact": 0.24
+			},
+			"uncalibrated": [
+				{
+					"name": "Geometrie/Konvergenz daneben",
+					"curvature": 0.17,
+					"aberration": 0.0024,
+					"jitter": 0.0021,
+					"scanline": 0.3,
+					"brightness": 1.05
+				},
+				{
+					"name": "Fokus weich + Ueberstrahlung",
+					"bloom": 0.38,
+					"brightness": 1.312,
+					"scanline": 0.34,
+					"aberration": 0.0011,
+					"focus": 0.58
+				},
+				{
+					"name": "Farbstich + Rollen",
+					"tint": [1.0, 0.852, 0.74],
+					"roll_strength": 0.3,
+					"flicker": 0.048,
+					"brightness": 0.812
+				}
+			]
+		},
+		"MONITOR_COMMODORE_1942": {
+			"model_id": "commodore_1942",
+			"hardware_id": "monitor_commodore_1942",
+			"display_name": "Commodore 1942 Multisync",
+			"introduced": 1993,
+			"screen_inches": 14.0,
+			"sync_horizontal_khz": {
+				"low_band": [15.6, 15.8],
+				"high_band": [27.3, 31.5]
+			},
+			"dot_pitch_mm": 0.28,
+			"supported_machine_models": ["amiga_500", "amiga_600", "amiga_1200"],
+			"quality": {
+				"tier": 3,
+				"sharpness": 0.90,
+				"mask_visibility": 0.14,
+				"interlace_artifact": 0.12,
+				"geometry_stability": 0.90
+			},
+			"workspace": {
+				"recommended": [640, 480],
+				"maximum": [800, 600],
+				"maximum_non_interlaced": [640, 480],
+				"visible_columns": 80,
+				"visible_rows": 30,
+				"workspace_gain": 1.35,
+				"live_canvas": [640, 400]
+			},
+			"screen_frac": [0.111, 0.163, 0.775, 0.608],
+			"controls": {
+				"service": [0.774, 0.813, 0.036, 0.054],
+				"power": [0.840, 0.812, 0.094, 0.074]
+			},
+			"phosphor": [0.97, 1.0, 0.985],
+			"scanline": 0.17,
+			"curvature": 0.035,
+			"spill": 0.66,
+			"brightness": 1.10,
+			"crt": {
+				"bloom": 0.045,
+				"aberration": 0.00025,
+				"vignette": 0.08,
+				"focus": 0.90,
+				"mask_strength": 0.12,
+				"interlace_artifact": 0.12
+			},
+			"uncalibrated": [
+				{
+					"name": "Multisync-Bildlage",
+					"curvature": 0.09,
+					"aberration": 0.0012,
+					"jitter": 0.0010,
+					"scanline": 0.22,
+					"brightness": 1.03
+				},
+				{
+					"name": "Fokus nachstellen",
+					"bloom": 0.18,
+					"brightness": 1.16,
+					"scanline": 0.23,
+					"aberration": 0.0007,
+					"focus": 0.73
+				},
+				{
+					"name": "Sync-Band instabil",
+					"tint": [1.0, 0.94, 0.89],
+					"roll_strength": 0.14,
+					"flicker": 0.022,
+					"brightness": 0.94
+				}
+			]
+		},
+		"MONITOR_MULTISYNC_17": {
+			"model_id": "multisync_17",
+			"hardware_id": "monitor_multisync_17",
+			"display_name": "17-Zoll Multisync HiRes",
+			"introduced": 1996,
+			"screen_inches": 17.0,
+			"sync_horizontal_khz": {
+				"continuous": [15.6, 48.0]
+			},
+			"dot_pitch_mm": 0.25,
+			"supported_machine_models": ["amiga_1200"],
+			"quality": {
+				"tier": 4,
+				"sharpness": 0.98,
+				"mask_visibility": 0.08,
+				"interlace_artifact": 0.04,
+				"geometry_stability": 0.97
+			},
+			"workspace": {
+				"recommended": [800, 600],
+				"maximum": [1024, 768],
+				"maximum_non_interlaced": [800, 600],
+				"visible_columns": 100,
+				"visible_rows": 37,
+				"workspace_gain": 1.68,
+				"live_canvas": [640, 480]
+			},
+			"screen_frac": [0.109, 0.139, 0.756, 0.589],
+			"controls": {
+				"service": [0.541, 0.770, 0.216, 0.052],
+				"power": [0.834, 0.767, 0.060, 0.061]
+			},
+			"phosphor": [0.985, 1.0, 1.0],
+			"scanline": 0.09,
+			"curvature": 0.018,
+			"spill": 0.58,
+			"brightness": 1.06,
+			"crt": {
+				"bloom": 0.025,
+				"aberration": 0.00008,
+				"vignette": 0.045,
+				"focus": 0.98,
+				"mask_strength": 0.06,
+				"interlace_artifact": 0.04
+			},
+			"uncalibrated": [
+				{
+					"name": "OSD-Geometrie",
+					"curvature": 0.055,
+					"aberration": 0.0006,
+					"jitter": 0.0005,
+					"scanline": 0.13,
+					"brightness": 1.01
+				},
+				{
+					"name": "Feinfokus",
+					"bloom": 0.10,
+					"brightness": 1.10,
+					"scanline": 0.14,
+					"aberration": 0.0003,
+					"focus": 0.86
+				},
+				{
+					"name": "Eingangssignal",
+					"tint": [0.96, 0.99, 1.0],
+					"roll_strength": 0.06,
+					"flicker": 0.008,
+					"brightness": 0.98
+				}
+			]
+		},
+		"default": {
+			"model_id": "default",
+			"display_name": "Standard-CRT",
+			"quality": {
+				"tier": 1,
+				"sharpness": 0.70,
+				"mask_visibility": 0.25,
+				"interlace_artifact": 0.25,
+				"geometry_stability": 0.65
+			},
+			"workspace": {
+				"recommended": [640, 256],
+				"maximum": [640, 512],
+				"maximum_non_interlaced": [640, 256],
+				"visible_columns": 80,
+				"visible_rows": 25,
+				"workspace_gain": 1.0,
+				"live_canvas": [320, 200]
+			},
+			"screen_frac": [0.2, 0.12, 0.6, 0.46],
+			"controls": {
+				"service": [0.56, 0.80, 0.20, 0.08],
+				"power": [0.82, 0.80, 0.10, 0.08]
+			},
+			"phosphor": [1.0, 1.0, 1.0],
+			"scanline": 0.25,
+			"curvature": 0.05,
+			"spill": 0.8,
+			"brightness": 1.12,
+			"crt": {
+				"bloom": 0.1,
+				"aberration": 0.0007,
+				"vignette": 0.14,
+				"focus": 0.70,
+				"mask_strength": 0.22,
+				"interlace_artifact": 0.25
+			},
+			"uncalibrated": [
+				{
+					"name": "Geometrie/Konvergenz daneben",
+					"curvature": 0.185,
+					"aberration": 0.0027,
+					"jitter": 0.0023,
+					"scanline": 0.33,
+					"brightness": 1.05
+				},
+				{
+					"name": "Fokus weich + Ueberstrahlung",
+					"bloom": 0.42,
+					"brightness": 1.326,
+					"scanline": 0.37,
+					"aberration": 0.0013,
+					"focus": 0.52
+				},
+				{
+					"name": "Farbstich + Rollen",
+					"tint": [1.0, 0.846, 0.73],
+					"roll_strength": 0.33,
+					"flicker": 0.054,
+					"brightness": 0.806
+				}
+			]
+		}
+	}
+}

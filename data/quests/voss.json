@@ -1,0 +1,54 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_voss",
+  "quests": [
+    {
+      "id": "q_schulabschluss",
+      "title": "Der Realschulabschluss",
+      "giver": "npc_voss",
+      "prereq": {
+        "year_min": 1992,
+        "needs": [
+          "praktikum_gemacht"
+        ],
+        "flag": "schulabschluss_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Der Realschulabschluss — Herr Voss wartet tagsüber am Schuleingang."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Büffle für die Abschlussprüfung (Wissen 16).",
+          "goal": {
+            "wissen_min": 16
+          }
+        },
+        {
+          "desc": "Fahr tagsüber zum Schulhof. Herr Voss wartet am Schuleingang; sprich ihn an und leg die Abschlussprüfung ab.",
+          "map_location": "schoolyard",
+          "goal": {
+            "action": "school_exam"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "realschule_fertig"
+        },
+        {
+          "type": "toast",
+          "text": "Geschafft — der Realschulabschluss ist in der Tasche."
+        }
+      ]
+    }
+  ]
+}

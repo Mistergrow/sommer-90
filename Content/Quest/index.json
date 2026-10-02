@@ -1,0 +1,6 @@
+{
+	"schema": "quest.v1",
+	"category": "quest",
+	"note": "Master-Datenbank. Waechst nur durch Inhalt. Struktur spiegelt bei Bedarf das Software-Modell (A-Z).",
+	"entries": []
+}

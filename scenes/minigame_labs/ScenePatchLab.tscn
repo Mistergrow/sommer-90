@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dmevndyku2dbu"]
+
+[ext_resource type="PackedScene" uid="uid://3vsna42fdebb" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="ScenePatchLab" unique_id=588531831 instance=ExtResource("1")]
+minigame_id = "scene_patch"

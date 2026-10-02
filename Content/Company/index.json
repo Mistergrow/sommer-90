@@ -1,0 +1,6 @@
+{
+	"schema": "company.v1",
+	"category": "company",
+	"note": "Master-Datenbank. Waechst nur durch Inhalt. Struktur spiegelt bei Bedarf das Software-Modell (A-Z).",
+	"entries": []
+}

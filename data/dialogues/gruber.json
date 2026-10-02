@@ -1,0 +1,366 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_gruber",
+	"dialogues": {
+		"gruber_greet": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Gruber",
+					"text": "Willkommen im Fachgeschaeft! Leerdisketten sind im Angebot. Und Finger weg von den Vorfuehrgeraeten, ja?",
+					"choices": [
+						{
+							"text": "Eine Diskette liest nicht. Was darf ich selbst tun?",
+							"cond": {
+								"quest_stage": {
+									"id": "q_tut_diskcare",
+									"stage": 1
+								}
+							},
+							"next": "n_diskcare_limits",
+							"id": "reply_0"
+						},
+						{
+							"text": "Können Sie mir zeigen, wie man ein Testbild richtig einstellt?",
+							"cond": [
+								{
+									"flag": {
+										"wants_monitor_calibration": true
+									}
+								},
+								{
+									"not_flag": "learned_monitor_calibration"
+								},
+								{
+									"quest_done": "q_tut_listing"
+								},
+								{
+									"wissen_min": 3
+								},
+								{
+									"day_min": 2
+								}
+							],
+							"next": "n_calibration",
+							"id": "reply_1"
+						},
+						{
+							"text": "Brauchen Sie nachmittags Hilfe im Laden?",
+							"cond": [
+								{
+									"not_flag": "gruber_ladenhilfe_erlaubt"
+								},
+								{
+									"quest_done": "q_tut_listing"
+								},
+								{
+									"wissen_min": 3
+								},
+								{
+									"day_min": 2
+								}
+							],
+							"next": "n_ladenhilfe",
+							"id": "reply_2"
+						},
+						{
+							"text": "Zeigen Sie mir das Sortiment.",
+							"next": null,
+							"effects": [
+								{
+									"type": "open_shop"
+								}
+							],
+							"id": "shop"
+						},
+						{
+							"text": "Gibt's Stammkunden-Rabatt?",
+							"cond": {
+								"ruf_min": 20,
+								"not_flag": "gruber_rabatt"
+							},
+							"effects_once": "gruber_discount_reputation",
+							"next": "n_rabatt",
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "ruf",
+									"value": 1
+								}
+							],
+							"id": "discount"
+						},
+						{
+							"text": "Nur schauen, danke.",
+							"next": null,
+							"id": "goodbye"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_calibration": {
+					"speaker": "Herr Gruber",
+					"text": "Gut, aber wir reden über die Regler außen am Gerät — nicht über eine geöffnete Bildröhre. Da liegen gefährliche Spannungen an. Ich schalte das Testbild ein; Sie stellen erst Bildlage und Schwarzwert ein, dann Fokus und Konvergenz. Langsam, und ich sehe zu.",
+					"choices": [
+						{
+							"text": "Verstanden: einstellen, nicht öffnen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "learned_monitor_calibration",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "wants_monitor_calibration",
+									"value": false
+								},
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 2
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_gruber",
+									"value": 1
+								},
+								{
+									"type": "memory_once",
+									"id": "learned_monitor_calibration_gruber"
+								},
+								{
+									"type": "toast",
+									"text": "Gruber hat dir die sichere Testbild-Kalibrierung ausdrücklich gezeigt. Deinen Monitor kannst du jetzt einstellen."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_diskcare_limits": {
+					"speaker": "Herr Gruber",
+					"text": "Reinigen heißt: stromlos, Reinigungsdisk und Mittel nach Anleitung. Einstellen braucht Messdisk und Erfahrung. Reparieren heißt Gehäuse öffnen und Bauteile prüfen — das machen Sie 1990 weder am Laufwerk noch an der Bildröhre. Erst Fehlerbild, Gegenprobe, dann Fachmann.",
+					"choices": [
+						{
+							"text": "Also: reinigen und prüfen ja; einstellen oder öffnen nein.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "ask_gruber_repair_limits"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_ladenhilfe": {
+					"speaker": "Herr Gruber",
+					"text": "Regale, Kartons und Vorführgeräte abstauben — ja. Hinter die Werkstattmarkierung gehen Sie ohne Praktikumsauftrag keinen Schritt. Wenn Sie zuverlässig sind, reden wir später weiter.",
+					"choices": [
+						{
+							"text": "Abgemacht. Ladenhilfe, keine Reparaturen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "gruber_ladenhilfe_erlaubt",
+									"value": true
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_gruber",
+									"value": 3
+								},
+								{
+									"type": "toast",
+									"text": "Gruber erlaubt dir einfache Ladenhilfe. Die Werkstatt bleibt bis zu einem echten Praktikumsauftrag gesperrt."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_rabatt": {
+					"speaker": "Herr Gruber",
+					"text": "Für einen guten Kunden wie Sie... na gut, ich drücke bei den Leerdisketten ein Auge zu. Aber nicht weitersagen!",
+					"choices": [
+						{
+							"text": "Danke, Herr Gruber!",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "gruber_rabatt",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Stammkunden-Rabatt freigeschaltet!"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_farewell": {
+					"speaker": "Herr Gruber",
+					"text": "Den letzten Bericht nimmt Jan ab. Der Schlüssel gehört jetzt ihm; ich mische mich nur noch ein, wenn auf dem Flohmarkt jemand ein Netzkabel für ein Druckerkabel hält.",
+					"choices": [
+						{
+							"text": "Dann bringe ich das Protokoll zu Jan.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"gruber_retired_market": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Gruber",
+					"text": "Kein Ladenschlüssel, kein Telefon — herrlich. Sagen Sie: Kommt Jan mit dem Geschäft zurecht? Er soll die Werkstatt nicht zwischen all dem Netzwerkzeug vergessen.",
+					"choices": [
+						{
+							"text": "Der Laden läuft, und die Werkstatt ist noch da.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n2": {
+					"speaker": "Herr Gruber",
+					"text": "Ich wollte nur stöbern, jetzt habe ich schon wieder drei Kabel in der Hand. Wie macht sich mein Neffe hinter der Theke?",
+					"choices": [
+						{
+							"text": "Jan hat den Laden im Griff.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n3": {
+					"speaker": "Herr Gruber",
+					"text": "Man kann in Rente gehen, aber offenbar nicht aufhören, Preise zu vergleichen. Und — läuft der Laden ordentlich?",
+					"choices": [
+						{
+							"text": "Ordentlich. Ihr Name steht weiter für Service.",
+							"next": null,
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_gruber_diskcare": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Gruber",
+					"text": "Bei Lesefehlern gilt: erst Quelle und Gegenprobe, dann den Kopf mit einem Reinigungsset säubern. Ich lege Ihnen für die erste Wartung eine Reinigungsdiskette zurück. Kein Schraubenzieher. Ein Laufwerk stellt man mit Messmitteln ein; einen Röhrenmonitor öffnen Sie überhaupt nicht.",
+					"choices": [
+						{
+							"text": "Ich reinige nur sicher und komme danach für die Erklärung vorbei.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "diskcare_intro",
+									"value": true
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_gruber_praktikum": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Gruber",
+					"text": "Tobias hat Ihren Namen genannt. Wenn Wissen acht und Zuverlässigkeit zusammenkommen, dürfen Sie eine echte Praktikumsschicht übernehmen.",
+					"choices": [
+						{
+							"text": "Ich komme vorbereitet.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "praktikum_offer_intro"
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_gruber",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		},
+		"call_gruber_ausbildung": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Gruber",
+					"text": "Mit dem Schulabschluss könnten Sie bei mir anfangen. Vor dem Vertrag kommt eine praktische Diagnose – ohne Raten und ohne Teiletausch auf Verdacht.",
+					"choices": [
+						{
+							"text": "Geben Sie mir die Arbeitsprobe.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "ausbildung_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_gruber_abschied": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Herr Gruber",
+					"text": "Jan übernimmt Laden und Werkstatt. Beim ersten gemeinsamen Kundenrechner soll alles stimmen – Fehlerbild, Messwerte und Gegenprobe. Begleiten Sie uns bei der Übergabe?",
+					"choices": [
+						{
+							"text": "Den ersten gemeinsamen Fall machen wir ordentlich.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "gruber_abschied_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "sad"
+				}
+			}
+		}
+	}
+}

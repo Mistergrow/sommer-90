@@ -1,0 +1,57 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_oez",
+  "quests": [
+    {
+      "id": "q_oez_samstagsausgabe",
+      "title": "Die Samstagsausgabe",
+      "giver": "npc_oez",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "oez_samstagsausgabe_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Frau Öz hat eine durcheinandergeratene Zeitschriftenlieferung. Hilf beim Sortieren; den Programmcode öffnest du später aus dem gekauften Heft."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Sortiere am Kiosk die Samstagslieferung nach Titel und Ausgabe. Zeitschriften, Coverdisks und Süßwaren gehören in getrennte Stapel.",
+          "map_location": "kiosk",
+          "goal": {
+            "action": "minigame:box_sort"
+          }
+        },
+        {
+          "desc": "Geh zu Frau Öz zurück. Prüft gemeinsam die Ausgabe und lass sie für den Verkauf zurücklegen.",
+          "map_location": "kiosk",
+          "goal": {
+            "action": "oez_issue_reserved"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 12
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_oez",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "oez_issue_logistics_done",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Lieferung sortiert. Frau Öz kümmert sich um Hefte und Verkauf; Abtippen und Programmieren beginnen ausschließlich im geöffneten Magazin."
+        }
+      ]
+    }
+  ]
+}

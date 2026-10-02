@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cfxonfxjf75jd"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="CracktroOptimizationLab" unique_id=1316562341 instance=ExtResource("1")]
+minigame_id = "cracktro_opt"

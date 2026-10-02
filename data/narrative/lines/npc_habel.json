@@ -1,0 +1,206 @@
+{
+	"npc": "npc_habel",
+	"comment": "Zeilen-Pool fuer npc_habel. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "hab_b01",
+			"text": "Postamt, Schalter drei. Abholschein bereithalten."
+		},
+		{
+			"id": "hab_b02",
+			"text": "Wenn Sie etwas bestellt haben, kommt es hierher."
+		},
+		{
+			"id": "hab_b03",
+			"text": "Geduld ist auch eine Tugend, junger Mann."
+		},
+		{
+			"id": "hab_b04",
+			"text": "Ordnung muss sein, sonst findet hier keiner was."
+		},
+		{
+			"id": "hab_b05",
+			"text": "Ein Päckchen für Sie? Moment, ich schau nach."
+		},
+		{
+			"id": "hab_b06",
+			"text": "Bei mir geht nichts verloren. Nichts. Merken Sie sich das."
+		},
+		{
+			"id": "hab_b07",
+			"text": "Bestellungen brauchen ihre Zeit. Die Post ist keine Zauberei."
+		},
+		{
+			"id": "hab_b08",
+			"text": "Formular ausfüllen, unterschreiben, fertig. Der Amtsweg."
+		},
+		{
+			"id": "hab_b09",
+			"text": "Ich steh hier seit dreißig Jahren. Man kennt sich."
+		},
+		{
+			"id": "hab_b10",
+			"text": "Vorsicht, das ist zerbrechlich, das trag ich Ihnen extra vorsichtig raus."
+		},
+		{
+			"id": "hab_b11",
+			"text": "Immer schön anstellen, jeder kommt dran."
+		},
+		{
+			"id": "hab_b12",
+			"text": "Ein ordentlich adressiertes Paket ist die halbe Miete."
+		},
+		{
+			"id": "hab_b13",
+			"text": "Ich sortier, ich stemple, ich händige aus. Ein Leben lang."
+		},
+		{
+			"id": "hab_b14",
+			"text": "Der frühe Vogel holt sein Paket. Kommen Sie vormittags."
+		},
+		{
+			"id": "hab_b15",
+			"text": "Briefmarken? Gleich hier, welche Farbe darf's sein."
+		},
+		{
+			"id": "hab_b16",
+			"text": "Ich hab schon Ihren Großvater bedient, wenn ich mich nicht irre."
+		},
+		{
+			"id": "hab_b17",
+			"text": "Nachnahme zahlt man bar, keine Ausnahmen."
+		},
+		{
+			"id": "hab_b18",
+			"text": "Die Beine tun weh, aber die Arbeit macht mich zufrieden."
+		},
+		{
+			"id": "hab_b19",
+			"text": "Ein freundliches Wort und alles geht leichter über den Tresen."
+		},
+		{
+			"id": "hab_b20",
+			"text": "Wenn nichts da ist, ist nichts da. Kommen Sie morgen wieder."
+		},
+		{
+			"id": "hab_b21",
+			"text": "Ich kenn jeden Postweg in dieser Stadt. Jeden."
+		},
+		{
+			"id": "hab_b22",
+			"text": "Sauber schreiben, dann kommt's auch an."
+		},
+		{
+			"id": "hab_b23",
+			"text": "Man verlässt sich auf die Post. Das ist eine Ehre und eine Last."
+		},
+		{
+			"id": "hab_b24",
+			"text": "Nummer ziehen, warten, dann bin ich für Sie da."
+		},
+		{
+			"id": "hab_b25",
+			"text": "Ich hab Ihr Päckchen extra hinten hingelegt, damit's keiner mitnimmt."
+		},
+		{
+			"id": "hab_b26",
+			"text": "Zuverlässigkeit ist mein zweiter Vorname."
+		},
+		{
+			"id": "hab_b27",
+			"text": "Schönen Tag noch, und grüßen Sie zu Hause."
+		},
+		{
+			"id": "hab_b28",
+			"text": "Erst der Ausweis, dann das Paket. Vorschrift ist Vorschrift."
+		},
+		{
+			"id": "hab_b29",
+			"text": "Ich mach hier zu um sechs. Seien Sie vorher da."
+		},
+		{
+			"id": "hab_b30",
+			"text": "Der Nächste bitte. Ja, Sie. Womit kann ich dienen?"
+		},
+		{
+			"id": "ha_versand",
+			"from": 1994,
+			"topic": "alltag",
+			"text": "Immer mehr bestellen jetzt bei diesen Versandhäusern. Mehr Pakete für mich, mehr Rückenschmerzen."
+		},
+		{
+			"id": "ha_internet",
+			"from": 1997,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "wandel",
+			"text": "Jetzt bestellen die Leute im Internet, heißt es. Wo soll das noch hinführen? Aber gut, Arbeit bleibt Arbeit."
+		},
+		{
+			"id": "hab_x01",
+			"topic": "post",
+			"text": "Postamt, Schalter drei. Abholschein bereithalten, dann geht alles seinen ordentlichen Gang."
+		},
+		{
+			"id": "hab_x02",
+			"topic": "post",
+			"text": "Geduld ist auch eine Tugend, junger Mann. Die Post ist keine Zauberei."
+		},
+		{
+			"id": "hab_x03",
+			"topic": "post",
+			"text": "Bei mir geht nichts verloren. Nichts. Dreißig Jahre, kein einziges Paket. Darauf bin ich stolz."
+		},
+		{
+			"id": "hab_x04",
+			"topic": "post",
+			"text": "Ein ordentlich adressiertes Paket ist die halbe Miete. Sauber schreiben, dann kommt's auch an."
+		},
+		{
+			"id": "hab_x05",
+			"topic": "post",
+			"text": "Vorsicht, das ist zerbrechlich. Das trag ich Ihnen extra vorsichtig raus."
+		},
+		{
+			"id": "hab_x06",
+			"topic": "post",
+			"text": "Der frühe Vogel holt sein Paket. Kommen Sie vormittags, dann steht keine Schlange."
+		},
+		{
+			"id": "hab_x07",
+			"topic": "post",
+			"text": "Ich hab schon Ihren Großvater bedient, wenn ich mich nicht irre. Man kennt seine Pappenheimer."
+		},
+		{
+			"id": "hab_x08",
+			"topic": "post",
+			"text": "Zuverlässigkeit ist mein zweiter Vorname. Der erste steht auf dem Schild."
+		},
+		{
+			"id": "hab_x09",
+			"topic": "post",
+			"text": "Erst der Ausweis, dann das Paket. Vorschrift ist Vorschrift, da mach ich keine Ausnahme. Auch nicht bei Ihnen."
+		},
+		{
+			"id": "hab_x10",
+			"topic": "post",
+			"text": "Ich sortier, ich stemple, ich händige aus. Ein Leben lang. Und würd's wieder tun."
+		},
+		{
+			"id": "hab_x11",
+			"from": 1994,
+			"topic": "aera",
+			"text": "Immer mehr bestellen bei diesen Versandhäusern. Mehr Pakete für mich, mehr Rückenschmerzen."
+		},
+		{
+			"id": "hab_x12",
+			"from": 0,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "aera",
+			"text": "Jetzt bestellen die Leute im Internet, heißt es. Wo soll das hinführen? Aber gut, Arbeit bleibt Arbeit."
+		}
+	]
+}

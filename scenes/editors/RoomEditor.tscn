@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://cm0dgu5nosnln"]
+
+[ext_resource type="Script" uid="uid://r7f486sgl8je" path="res://scripts/gfx/room_editor.gd" id="1_root"]
+[ext_resource type="Script" uid="uid://dqh0ux2r2a1a5" path="res://scripts/gfx/room_compositor.gd" id="2_front"]
+[ext_resource type="Script" uid="uid://n6sf4bew25vb" path="res://scripts/gfx/collection_room_editor_canvas.gd" id="3_reverse"]
+
+[node name="RoomEditor" type="Control" unique_id=479191169]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_root")
+
+[node name="Toolbar" type="HBoxContainer" parent="." unique_id=1844053544]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = 44.0
+grow_horizontal = 2
+theme_override_constants/separation = 8
+
+[node name="Front" type="Button" parent="Toolbar" unique_id=661074884]
+layout_mode = 2
+text = "HAUPTZIMMER"
+
+[node name="Reverse" type="Button" parent="Toolbar" unique_id=649631251]
+layout_mode = 2
+text = "SAMMLERWAND"
+
+[node name="Monitor1084" type="Button" parent="Toolbar" unique_id=996831023]
+layout_mode = 2
+text = "1084S-RUECKSEITE"
+
+[node name="Monitor1901" type="Button" parent="Toolbar" unique_id=1531863008]
+layout_mode = 2
+text = "1901-RUECKSEITE"
+
+[node name="MonitorLabel" type="Label" parent="Toolbar"]
+layout_mode = 2
+text = "MON:"
+vertical_alignment = 1
+
+[node name="MonitorFront1084" type="Button" parent="Toolbar"]
+layout_mode = 2
+toggle_mode = true
+text = "1084"
+
+[node name="MonitorFront1901" type="Button" parent="Toolbar"]
+layout_mode = 2
+toggle_mode = true
+text = "1901"
+
+[node name="MonitorFront1942" type="Button" parent="Toolbar"]
+layout_mode = 2
+toggle_mode = true
+text = "1942"
+
+[node name="MonitorFront17" type="Button" parent="Toolbar"]
+layout_mode = 2
+toggle_mode = true
+text = "17\""
+
+[node name="ComputerLabel" type="Label" parent="Toolbar" unique_id=1858603143]
+layout_mode = 2
+text = "TISCHRECHNER:"
+vertical_alignment = 1
+
+[node name="ComputerA500" type="Button" parent="Toolbar" unique_id=1286167365]
+layout_mode = 2
+toggle_mode = true
+text = "A500"
+
+[node name="ComputerA600" type="Button" parent="Toolbar" unique_id=2140982989]
+layout_mode = 2
+toggle_mode = true
+text = "A600"
+
+[node name="ComputerA1200" type="Button" parent="Toolbar" unique_id=187890689]
+layout_mode = 2
+toggle_mode = true
+text = "A1200"
+
+[node name="Mode" type="Label" parent="Toolbar" unique_id=1265435732]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RAUM-EDITOR"
+vertical_alignment = 1
+
+[node name="Save" type="Button" parent="Toolbar" unique_id=860490648]
+layout_mode = 2
+text = "SPEICHERN  [S]"
+
+[node name="WorkArea" type="Control" parent="." unique_id=44848227]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RoomCompositor" type="Control" parent="WorkArea" unique_id=1691212172]
+clip_contents = true
+anchors_preset = 0
+offset_right = 1440.0
+offset_bottom = 760.0
+mouse_filter = 2
+script = ExtResource("2_front")
+show_anchors = true
+preview_all_devices = true
+preview_device_defaults = {
+"computer_model": "amiga_600",
+"monitor_model": "commodore_1942"
+}
+metadata/_edit_lock_ = true
+
+[node name="CollectionRoomEditorCanvas" type="Control" parent="WorkArea" unique_id=1769964476]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_reverse")

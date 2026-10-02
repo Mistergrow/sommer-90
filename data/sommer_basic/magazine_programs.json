@@ -1,0 +1,279 @@
+{
+  "schema": "sommer_basic.magazine_programs.v1",
+  "series_id": "sommer_basic_jahreswerkstatt",
+  "series_title_de": "Sommer-BASIC Jahreswerkstatt",
+  "series_title_en": "Sommer BASIC Annual Workshop",
+  "content_origin": "original_in_world",
+  "entries": [
+    {
+      "issue_id": "sommerwerk_1990_07",
+      "article_id": "signal_eins_1990",
+      "listing_id": "sb_signal_eins_v1",
+      "title_de": "Signal Eins",
+      "title_en": "Signal One",
+      "year": 1990,
+      "month": 7,
+      "chapter": 1,
+      "count": 10,
+      "canonical_source": "10 REM SIGNAL EINS\n20 SCREEN 320,200,16\n30 CLS\n40 LINE 20,30,300,30,2\n50 BOX 70,60,180,80,3\n60 CIRCLE 160,100,28,4\n70 PRINT \"SIGNAL EINS BEREIT\"\n80 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "LINE", "BOX", "CIRCLE", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic"],
+      "hardware_profile": {
+        "machine_family": "amiga_500",
+        "chipset": "OCS",
+        "min_ram_kb": 512,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_16"
+      },
+      "expected_output": {
+        "console": ["SIGNAL EINS BEREIT"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "line": 1, "box": 1, "circle": 1},
+        "final_variables": {}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1991_07",
+      "article_id": "stadtlichter_1991",
+      "listing_id": "sb_stadtlichter_v1",
+      "title_de": "Stadtlichter",
+      "title_en": "City Lights",
+      "year": 1991,
+      "month": 7,
+      "chapter": 2,
+      "count": 10,
+      "canonical_source": "10 REM STADTLICHTER\n20 SCREEN 320,200,16\n30 CLS\n40 FOR X=20 TO 300 STEP 40\n50 LINE X,160,X,80,3\n60 NEXT X\n70 PRINT \"STADTLICHTER 8\"\n80 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "FOR", "LINE", "NEXT", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_paint", "sommer_sprite"],
+      "hardware_profile": {
+        "machine_family": "amiga_500",
+        "chipset": "OCS",
+        "min_ram_kb": 1024,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_16"
+      },
+      "expected_output": {
+        "console": ["STADTLICHTER 8"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "line": 8},
+        "final_variables": {"X": 340}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1992_07",
+      "article_id": "kanalwache_1992",
+      "listing_id": "sb_kanalwache_v1",
+      "title_de": "Kanalwache",
+      "title_en": "Channel Watch",
+      "year": 1992,
+      "month": 7,
+      "chapter": 3,
+      "count": 10,
+      "canonical_source": "10 REM KANALWACHE\n20 LET S=3\n30 SCREEN 320,200,16\n40 CLS\n50 BOX 30,40,260,120,S\n60 LINE 30,100,290,100,5\n70 IF S=3 THEN PRINT \"KANAL 3 AKTIV\" ELSE PRINT \"KANAL STUMM\"\n80 END",
+      "required_commands": ["REM", "LET", "SCREEN", "CLS", "BOX", "LINE", "IF", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_sprite", "sommer_map", "sommer_tracker"],
+      "hardware_profile": {
+        "machine_family": "amiga_600",
+        "chipset": "ECS",
+        "min_ram_kb": 1024,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_16"
+      },
+      "expected_output": {
+        "console": ["KANAL 3 AKTIV"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "box": 1, "line": 1},
+        "final_variables": {"S": 3}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1993_07",
+      "article_id": "rahmenruf_1993",
+      "listing_id": "sb_rahmenruf_v1",
+      "title_de": "Rahmenruf",
+      "title_en": "Frame Call",
+      "year": 1993,
+      "month": 7,
+      "chapter": 4,
+      "count": 10,
+      "canonical_source": "10 REM RAHMENRUF\n20 SCREEN 320,200,16\n30 CLS\n40 GOSUB 100\n50 PRINT \"RAHMENRUF FERTIG\"\n60 END\n100 BOX 25,25,270,150,4\n110 LINE 25,25,295,175,2\n120 RETURN",
+      "required_commands": ["REM", "SCREEN", "CLS", "GOSUB", "PRINT", "END", "BOX", "LINE", "RETURN"],
+      "required_suite_apps": ["sommer_basic", "sommer_code", "sommer_debug", "sommer_map"],
+      "hardware_profile": {
+        "machine_family": "amiga_600",
+        "chipset": "ECS",
+        "min_ram_kb": 2048,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_16"
+      },
+      "expected_output": {
+        "console": ["RAHMENRUF FERTIG"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "box": 1, "line": 1},
+        "final_variables": {}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1994_07",
+      "article_id": "rasterwelle_1994",
+      "listing_id": "sb_rasterwelle_v1",
+      "title_de": "Rasterwelle",
+      "title_en": "Raster Wave",
+      "year": 1994,
+      "month": 7,
+      "chapter": 5,
+      "count": 10,
+      "canonical_source": "10 REM RASTERWELLE\n20 SCREEN 320,200,32\n30 CLS\n40 LET Y=30\n50 WHILE Y<170\n60 LINE 20,Y,300,Y,4\n70 LET Y=Y+20\n80 WEND\n90 PRINT \"RASTER 7\"\n100 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "LET", "WHILE", "LINE", "WEND", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_code", "sommer_game", "sommer_build"],
+      "hardware_profile": {
+        "machine_family": "amiga_1200",
+        "chipset": "AGA",
+        "min_ram_kb": 2048,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_32"
+      },
+      "expected_output": {
+        "console": ["RASTER 7"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "line": 7},
+        "final_variables": {"Y": 170}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1995_07",
+      "article_id": "punktfeld_1995",
+      "listing_id": "sb_punktfeld_v1",
+      "title_de": "Punktfeld",
+      "title_en": "Point Field",
+      "year": 1995,
+      "month": 7,
+      "chapter": 6,
+      "count": 10,
+      "canonical_source": "10 REM PUNKTFELD\n20 SCREEN 320,200,32\n30 CLS\n40 FOR Y=40 TO 120 STEP 40\n50 FOR X=60 TO 260 STEP 40\n60 PLOT X,Y,5\n70 NEXT X\n80 NEXT Y\n90 PRINT \"PUNKTFELD 18\"\n100 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "FOR", "PLOT", "NEXT", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_game", "sommer_soundfx", "sommer_build"],
+      "hardware_profile": {
+        "machine_family": "amiga_1200",
+        "chipset": "AGA",
+        "min_ram_kb": 4096,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_32"
+      },
+      "expected_output": {
+        "console": ["PUNKTFELD 18"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "plot": 18},
+        "final_variables": {"X": 300, "Y": 160}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1996_07",
+      "article_id": "horizontfaecher_1996",
+      "listing_id": "sb_horizontfaecher_v1",
+      "title_de": "Horizontfächer",
+      "title_en": "Horizon Fan",
+      "year": 1996,
+      "month": 7,
+      "chapter": 7,
+      "count": 10,
+      "canonical_source": "10 REM HORIZONTFAECHER\n20 SCREEN 320,200,32\n30 CLS\n40 FOR X=300 TO 20 STEP -40\n50 LINE 160,20,X,180,6\n60 NEXT X\n70 PRINT \"HORIZONT 8\"\n80 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "FOR", "LINE", "NEXT", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_animator", "sommer_dialogue", "sommer_build"],
+      "hardware_profile": {
+        "machine_family": "amiga_1200",
+        "chipset": "AGA",
+        "min_ram_kb": 4096,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_32"
+      },
+      "expected_output": {
+        "console": ["HORIZONT 8"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "line": 8},
+        "final_variables": {"X": -20}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1997_07",
+      "article_id": "lichtschalter_1997",
+      "listing_id": "sb_lichtschalter_v1",
+      "title_de": "Lichtschalter",
+      "title_en": "Light Switch",
+      "year": 1997,
+      "month": 7,
+      "chapter": 8,
+      "count": 10,
+      "canonical_source": "10 REM LICHTSCHALTER\n20 SCREEN 320,200,32\n30 CLS\n40 LET L=0\n50 FOR X=20 TO 300 STEP 40\n60 LET L=L+1\n70 IF L>4 THEN LINE X,40,X,160,7 ELSE LINE X,60,X,140,3\n80 NEXT X\n90 PRINT \"LICHTER 8\"\n100 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "LET", "FOR", "IF", "LINE", "NEXT", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_palette", "sommer_soundfx", "sommer_debug", "sommer_build"],
+      "hardware_profile": {
+        "machine_family": "amiga_1200",
+        "chipset": "AGA",
+        "min_ram_kb": 6144,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_32"
+      },
+      "expected_output": {
+        "console": ["LICHTER 8"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "line": 8},
+        "final_variables": {"L": 8, "X": 340}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1998_07",
+      "article_id": "doppelstation_1998",
+      "listing_id": "sb_doppelstation_v1",
+      "title_de": "Doppelstation",
+      "title_en": "Twin Station",
+      "year": 1998,
+      "month": 7,
+      "chapter": 9,
+      "count": 10,
+      "canonical_source": "10 REM DOPPELSTATION\n20 SCREEN 320,200,32\n30 CLS\n40 LET Y=60\n50 GOSUB 120\n60 LET Y=120\n70 GOSUB 120\n80 PRINT \"STATIONEN 2\"\n90 END\n120 BOX 40,Y,240,30,4\n130 CIRCLE 160,Y+15,12,2\n140 RETURN",
+      "required_commands": ["REM", "SCREEN", "CLS", "LET", "GOSUB", "PRINT", "END", "BOX", "CIRCLE", "RETURN"],
+      "required_suite_apps": ["sommer_basic", "sommer_sprite", "sommer_map", "sommer_pack", "sommer_debug", "sommer_build"],
+      "hardware_profile": {
+        "machine_family": "amiga_1200",
+        "chipset": "AGA",
+        "min_ram_kb": 8192,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_32"
+      },
+      "expected_output": {
+        "console": ["STATIONEN 2"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "box": 2, "circle": 2},
+        "final_variables": {"Y": 120}
+      },
+      "production_status": "approved"
+    },
+    {
+      "issue_id": "sommerwerk_1999_07",
+      "article_id": "zehn_sommer_1999",
+      "listing_id": "sb_zehn_sommer_v1",
+      "title_de": "Zehn Sommer",
+      "title_en": "Ten Summers",
+      "year": 1999,
+      "month": 7,
+      "chapter": 10,
+      "count": 10,
+      "canonical_source": "10 REM ZEHN SOMMER\n20 SCREEN 320,200,32\n30 CLS\n40 LET Y=20\n50 WHILE Y<=180\n60 LINE 0,Y,319,200-Y,5\n70 LET Y=Y+20\n80 WEND\n90 BOX 45,55,230,90,6\n100 CIRCLE 160,100,38,7\n110 PRINT \"ZEHN SOMMER BEREIT\"\n120 END",
+      "required_commands": ["REM", "SCREEN", "CLS", "LET", "WHILE", "LINE", "WEND", "BOX", "CIRCLE", "PRINT", "END"],
+      "required_suite_apps": ["sommer_basic", "sommer_game", "sommer_debug", "sommer_build", "sommer_disk"],
+      "hardware_profile": {
+        "machine_family": "amiga_1200",
+        "chipset": "AGA",
+        "min_ram_kb": 8192,
+        "runtime_profile": "sommer_basic_vm_v1",
+        "display_mode": "PAL_320x200_32"
+      },
+      "expected_output": {
+        "console": ["ZEHN SOMMER BEREIT"],
+        "draw_op_counts": {"screen": 1, "cls": 1, "line": 9, "box": 1, "circle": 1},
+        "final_variables": {"Y": 200}
+      },
+      "production_status": "approved"
+    }
+  ]
+}

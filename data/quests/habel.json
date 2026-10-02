@@ -1,0 +1,64 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_habel",
+  "quests": [
+    {
+      "id": "q_habel_masterdisk",
+      "title": "Eine Masterdisk auf Reisen",
+      "giver": "npc_habel",
+      "prereq": {
+        "year_min": 1995,
+        "flag": "habel_masterdisk_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Frau Habel nimmt eine wichtige Masterdisk nur korrekt beschriftet und mit geprüfter Archivkopie an. Eine ausgewählte Disk genügt — nicht die ganze Box."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Erstelle zu Hause von genau einer ausgewählten Masterdisk eine verifizierte Archivkopie auf einer echten Leerdiskette.",
+          "map_location": "room",
+          "goal": {
+            "action": "backup_disk"
+          }
+        },
+        {
+          "desc": "Gestalte für dieselbe Sendung ein deutliches Etikett mit Titel, Version und Rückadresse.",
+          "map_location": "room",
+          "goal": {
+            "action": "minigame:label_design"
+          }
+        },
+        {
+          "desc": "Bring Master, Archivnachweis und Etikett zu Frau Habel am Postschalter.",
+          "map_location": "postamt",
+          "goal": {
+            "action": "habel_masterdisk_handoff"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 24
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_habel",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "masterdisk_shipping_learned",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Die Masterdisk ist stoßfest verpackt, dokumentiert und unterwegs. Frau Habel gibt dir den Einlieferungsbeleg."
+        }
+      ]
+    }
+  ]
+}

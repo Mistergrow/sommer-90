@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bkcqyamndt3rg"]
+
+[ext_resource type="PackedScene" uid="uid://3vsna42fdebb" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="ShopDiagnosisLab" unique_id=566996741 instance=ExtResource("1")]
+minigame_id = "shop_diagnosis"

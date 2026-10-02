@@ -1,0 +1,112 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_rocky",
+  "quests": [
+    {
+      "id": "q_gesellenpruefung",
+      "title": "Die Gesellenprüfung",
+      "giver": "npc_rocky",
+      "prereq": {
+        "year_min": 1995,
+        "needs": [
+          "azubi"
+        ],
+        "flag": "gesellenpruefung_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Rocky schiebt dir den Prüfplan über den Tresen: »Heute zählt jeder Handgriff. Bring dein Wissen auf Stand, dann sehen wir uns am Serviceplatz.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Fachwissen auf Prüfungsniveau bringen (Wissen 38).",
+          "goal": {
+            "wissen_min": 38
+          }
+        },
+        {
+          "desc": "Geh mittags oder nachmittags mit mindestens 30 Energie in den Computerladen. Sprich Rocky, Gruber oder den ESD-Prüfplatz an und starte die praktische Hardware-Prüfung.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "job:job_gesellenpruefung"
+          }
+        },
+        {
+          "desc": "Sprich im Computerladen erneut Rocky an und lass deine Prüfungsarbeit fachlich abnehmen.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "gesellen_review"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 60
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "gesellenbrief"
+        },
+        {
+          "type": "toast",
+          "text": "Bestanden! Du hältst deinen Gesellenbrief in der Hand."
+        }
+      ]
+    },
+    {
+      "id": "q_systemwahl",
+      "title": "Welche Kiste bleibt?",
+      "giver": "npc_rocky",
+      "prereq": {
+        "year_min": 1998,
+        "needs": [
+          "grafikkarten_hype"
+        ],
+        "flag": "systemwahl_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Rocky stellt die Frage, der die ganze Szene ausweicht: Aufrüsten, wechseln oder das Alte bewahren?"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Triff bei Rocky eine bewusste Systementscheidung für die letzten Jahre der Dekade.",
+          "map_location": "computer_shop",
+          "goal": {
+            "action": "choose_future_system"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_rocky",
+          "value": 4
+        },
+        {
+          "type": "flag",
+          "flag": "system_choice_done"
+        },
+        {
+          "type": "toast",
+          "text": "Du hast dich entschieden. Nicht die Maschine bestimmt deinen Weg, sondern was du damit machst."
+        }
+      ]
+    }
+  ]
+}

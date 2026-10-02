@@ -1,0 +1,480 @@
+{
+  "version": 1.0,
+  "comment": "Separater Objekt-/Lichtpass aus scenes/editors/ObjectEditor.tscn oder F3 in einer Orts-Preview. object beeinflusst Tiefe; light_source dokumentiert Quellen; light_field und shadow werden als Boden-/Wandprojektion gerendert.",
+  "locations": {
+    "ROOM_MASTER": {
+      "objects": [
+        {
+          "id": "shelf_left",
+          "type": "object",
+          "label": "Linkes Regal",
+          "points": [
+            [
+              0.001,
+              0.004
+            ],
+            [
+              0.22,
+              0.005
+            ],
+            [
+              0.22,
+              0.69
+            ],
+            [
+              0.001,
+              0.983
+            ]
+          ],
+          "depth_far": 0.46,
+          "depth_near": 0.88
+        },
+        {
+          "id": "curtain_left",
+          "type": "object",
+          "label": "Linker Vorhang",
+          "points": [
+            [
+              0.309,
+              0.0
+            ],
+            [
+              0.4272,
+              0.0
+            ],
+            [
+              0.4267,
+              0.694
+            ],
+            [
+              0.301,
+              0.6985
+            ]
+          ],
+          "depth_far": 0.25,
+          "depth_near": 0.48,
+          "edge_feather": 1.4
+        },
+        {
+          "id": "curtain_right",
+          "type": "object",
+          "label": "Rechter Vorhang",
+          "points": [
+            [
+              0.6549,
+              0.0
+            ],
+            [
+              0.7595,
+              0.0044
+            ],
+            [
+              0.764,
+              0.6931
+            ],
+            [
+              0.6424,
+              0.6904
+            ]
+          ],
+          "depth_far": 0.25,
+          "depth_near": 0.48,
+          "edge_feather": 1.4
+        },
+        {
+          "id": "radiator",
+          "type": "object",
+          "label": "Heizkörper",
+          "points": [
+            [
+              0.4306,
+              0.4688
+            ],
+            [
+              0.6269,
+              0.4696
+            ],
+            [
+              0.6253,
+              0.6689
+            ],
+            [
+              0.4316,
+              0.6693
+            ]
+          ],
+          "depth_far": 0.25,
+          "depth_near": 0.38
+        },
+        {
+          "id": "wall_shelf_right",
+          "type": "object",
+          "label": "Wandbrett rechts",
+          "points": [
+            [
+              0.777,
+              0.139
+            ],
+            [
+              0.951,
+              0.139
+            ],
+            [
+              0.951,
+              0.228
+            ],
+            [
+              0.777,
+              0.228
+            ]
+          ],
+          "depth_far": 0.31,
+          "depth_near": 0.38
+        },
+        {
+          "id": "cabinet_right",
+          "type": "object",
+          "label": "Unterschrank · Front",
+          "points": [
+            [
+              0.8231,
+              0.516
+            ],
+            [
+              0.9811,
+              0.5164
+            ],
+            [
+              0.9776,
+              0.7317
+            ],
+            [
+              0.8231,
+              0.7323
+            ]
+          ],
+          "depth_far": 0.62,
+          "depth_near": 0.86,
+          "depth_axis": "vertical",
+          "edge_feather": 2.0,
+          "volume_group": "cabinet_right",
+          "contact_shadow": true,
+          "contact_edge": [
+            3.0,
+            2.0
+          ],
+          "contact_strength": 0.15
+        },
+        {
+          "id": "cabinet_right_top",
+          "type": "object",
+          "label": "Unterschrank · Deckfläche",
+          "points": [
+            [
+              0.797,
+              0.483
+            ],
+            [
+              0.965,
+              0.483
+            ],
+            [
+              0.9811,
+              0.5164
+            ],
+            [
+              0.8231,
+              0.516
+            ]
+          ],
+          "depth_far": 0.54,
+          "depth_near": 0.66,
+          "depth_axis": "vertical",
+          "edge_feather": 1.7,
+          "volume_group": "cabinet_right"
+        },
+        {
+          "id": "cabinet_right_side",
+          "type": "object",
+          "label": "Unterschrank · linke Seite",
+          "points": [
+            [
+              0.797,
+              0.483
+            ],
+            [
+              0.8231,
+              0.516
+            ],
+            [
+              0.8231,
+              0.7323
+            ],
+            [
+              0.802,
+              0.704
+            ]
+          ],
+          "depth_far": 0.6,
+          "depth_near": 0.82,
+          "depth_axis": "vertical",
+          "edge_feather": 1.7,
+          "volume_group": "cabinet_right"
+        },
+        {
+          "id": "bed_right",
+          "type": "object",
+          "label": "Bett rechts",
+          "points": [
+            [
+              0.8842,
+              0.7109
+            ],
+            [
+              1.19,
+              0.585
+            ],
+            [
+              1.22,
+              1.1
+            ],
+            [
+              0.9623,
+              1.08
+            ],
+            [
+              0.8802,
+              0.8444
+            ]
+          ],
+          "depth_far": 0.84,
+          "depth_near": 0.99,
+          "depth_axis": "vertical",
+          "edge_feather": 2.4,
+          "allow_overscan": true,
+          "contact_shadow": true,
+          "contact_edge": [
+            4.0,
+            3.0
+          ],
+          "contact_strength": 0.19
+        },
+        {
+          "id": "window_light",
+          "type": "light_source",
+          "label": "Fensterlicht",
+          "points": [
+            [
+              0.387,
+              0.003
+            ],
+            [
+              0.676,
+              0.003
+            ],
+            [
+              0.669,
+              0.389
+            ],
+            [
+              0.388,
+              0.389
+            ]
+          ],
+          "color": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "strength": 0.86,
+          "weather": "all"
+        },
+        {
+          "id": "sun_pool_floor",
+          "type": "light_field",
+          "label": "Fensterlicht auf Boden",
+          "points": [
+            [
+              0.3376,
+              0.7963
+            ],
+            [
+              0.7926,
+              0.791
+            ],
+            [
+              0.9287,
+              0.9965
+            ],
+            [
+              0.256,
+              0.9918
+            ]
+          ],
+          "color": [
+            1.0,
+            0.78,
+            0.42
+          ],
+          "strength": 0.13,
+          "softness": 0.78,
+          "pattern": "window_projection",
+          "time_curve": "daylight",
+          "source_id": "window_light",
+          "receiver_surface": "floor_01",
+          "weather": "clear"
+        },
+        {
+          "id": "curtain_shadow_floor",
+          "type": "shadow",
+          "label": "Vorhangschatten am Boden",
+          "points": [
+            [
+              0.3,
+              0.6967
+            ],
+            [
+              0.7768,
+              0.7015
+            ],
+            [
+              0.9488,
+              0.9983
+            ],
+            [
+              0.2339,
+              0.9956
+            ]
+          ],
+          "color": [
+            0.13,
+            0.12,
+            0.11
+          ],
+          "strength": 0.12,
+          "softness": 0.7,
+          "pattern": "curtain_penumbra",
+          "time_curve": "daylight",
+          "source_id": "window_light",
+          "receiver_surface": "floor_01",
+          "weather": "clear"
+        }
+      ]
+    },
+    "LOCATION_RETRO_MUSEUM_MASTER": {
+      "objects": [
+        {
+          "id": "museum_ovp_cabinet",
+          "type": "object",
+          "label": "Begehbare OVP-Vitrine",
+          "points": [
+            [0.0, 0.02],
+            [0.205, 0.02],
+            [0.205, 0.805],
+            [0.0, 0.94]
+          ],
+          "depth_far": 0.46,
+          "depth_near": 0.84,
+          "depth_axis": "vertical",
+          "edge_feather": 2.0
+        },
+        {
+          "id": "museum_trophy_wall",
+          "type": "object",
+          "label": "Trophäen- und Erinnerungswand",
+          "points": [
+            [0.21, 0.085],
+            [0.37, 0.085],
+            [0.37, 0.46],
+            [0.21, 0.46]
+          ],
+          "depth_far": 0.22,
+          "depth_near": 0.32,
+          "depth_axis": "flat",
+          "edge_feather": 1.4
+        },
+        {
+          "id": "museum_computer_island",
+          "type": "object",
+          "label": "Rechnerchronik und Ausstellungstisch",
+          "points": [
+            [0.275, 0.36],
+            [0.72, 0.35],
+            [0.76, 0.73],
+            [0.69, 0.83],
+            [0.29, 0.83],
+            [0.245, 0.72]
+          ],
+          "depth_far": 0.42,
+          "depth_near": 0.78,
+          "depth_axis": "vertical",
+          "edge_feather": 2.2
+        },
+        {
+          "id": "museum_listening_station",
+          "type": "object",
+          "label": "Stereoanlage und MOD-Hörplatz",
+          "points": [
+            [0.7, 0.31],
+            [0.84, 0.3],
+            [0.86, 0.73],
+            [0.76, 0.78],
+            [0.72, 0.65]
+          ],
+          "depth_far": 0.43,
+          "depth_near": 0.73,
+          "depth_axis": "vertical",
+          "edge_feather": 2.0
+        },
+        {
+          "id": "museum_archive_shelves",
+          "type": "object",
+          "label": "Archivregale und Szenekultur",
+          "points": [
+            [0.825, 0.02],
+            [1.0, 0.02],
+            [1.0, 0.94],
+            [0.83, 0.805]
+          ],
+          "depth_far": 0.48,
+          "depth_near": 0.86,
+          "depth_axis": "vertical",
+          "edge_feather": 2.0
+        },
+        {
+          "id": "museum_window_light",
+          "type": "light_source",
+          "label": "Kühles Winterfenster",
+          "points": [
+            [0.421, 0.115],
+            [0.653, 0.115],
+            [0.652, 0.488],
+            [0.422, 0.488]
+          ],
+          "color": [0.62, 0.76, 1.0],
+          "strength": 0.54,
+          "weather": "all"
+        },
+        {
+          "id": "museum_window_pool",
+          "type": "light_field",
+          "label": "Winterlicht auf dem Museumsboden",
+          "points": [
+            [0.38, 0.66],
+            [0.68, 0.65],
+            [0.81, 0.99],
+            [0.24, 0.99]
+          ],
+          "color": [0.56, 0.7, 1.0],
+          "strength": 0.08,
+          "softness": 0.82,
+          "pattern": "window_projection",
+          "time_curve": "daylight",
+          "source_id": "museum_window_light",
+          "receiver_surface": "museum_floor",
+          "weather": "all"
+        }
+      ]
+    }
+  }
+}

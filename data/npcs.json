@@ -1,0 +1,1212 @@
+{
+	"comment": "NPC-Stammdaten. 'timeline' ist die Lebenslinie fuer das Living-Timeline-System (World Memory, GDD 3.4): pro Jahr koennen sich Rolle, Ort und Dialoge aendern.",
+	"npcs": [
+		{
+			"id": "npc_stefan",
+			"name": "Stefan",
+			"role": "Bester Freund",
+			"trust": 20,
+			"likes": [
+				"spiele",
+				"demos",
+				"musik"
+			],
+			"location": "friend_cellar",
+			"dialogue_default": "stefan_default",
+			"unlocks": [
+				"flea_market_tip"
+			],
+			"portrait": {
+				"skin": "sand",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 14,
+				"gender": "m",
+				"face_shape": "oval",
+				"hair_style": "messy",
+				"eye_type": "normal",
+				"eye_color": "blue",
+				"nose": "straight",
+				"brow": "raised",
+				"ears": "plain",
+				"personality": "teal",
+				"clothing_style": "scene",
+				"eye_spacing": 0,
+				"eye_asymmetry": 1,
+				"nose_shift": 0,
+				"mouth_shift": 1,
+				"mouth_width": 1,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1995": {
+					"note": "Bekommt einen PC, redet nur noch ueber Windows."
+				},
+				"1997": {
+					"note": "Gruendet eine kleine Softwarefirma (Questkette Post-MVP)."
+				}
+			},
+			"schedule": {
+				"mon": "home",
+				"tue": "schoolyard",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "schoolyard",
+				"sat": "flea_market",
+				"sun": "home"
+			},
+			"phone": "42 17 88"
+		},
+		{
+			"id": "npc_gruber",
+			"name": "Herr Gruber",
+			"role": "Computerladen-Besitzer",
+			"trust": 5,
+			"likes": [
+				"hardware"
+			],
+			"unless_flag": "gruber_legacy",
+			"location": "computer_shop",
+			"dialogue_default": "gruber_greet",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "grey"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 55,
+				"gender": "m",
+				"face_shape": "square",
+				"hair_style": "short",
+				"eye_type": "droopy",
+				"eye_color": "grey",
+				"nose": "wide",
+				"brow": "thick",
+				"ears": "big",
+				"personality": "orange",
+				"glasses": "square",
+				"clothing_style": "neat",
+				"eye_spacing": 1,
+				"eye_asymmetry": -1,
+				"nose_shift": 1,
+				"mouth_shift": 0,
+				"mouth_width": 2,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1996": {
+					"note": "Uebergibt den Laden an seinen Neffen (neuer Besitzer, neues Sortiment)."
+				}
+			},
+			"phone": "20 11 40"
+		},
+		{
+			"id": "npc_jan_gruber",
+			"name": "Jan Gruber",
+			"role": "Computerladen-Inhaber",
+			"trust": 8,
+			"likes": [
+				"hardware",
+				"service",
+				"retro"
+			],
+			"year_from": 1996,
+			"requires_flag": "gruber_legacy",
+			"location": "computer_shop",
+			"dialogue_default": "jan_gruber_greet",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 31,
+				"gender": "m",
+				"face_shape": "oval",
+				"hair_style": "parted",
+				"eye_type": "normal",
+				"eye_color": "brown",
+				"nose": "straight",
+				"brow": "raised",
+				"ears": "normal",
+				"personality": "blue",
+				"glasses": "none",
+				"clothing_style": "neat",
+				"eye_spacing": 0,
+				"eye_asymmetry": 0,
+				"nose_shift": 0,
+				"mouth_shift": 1,
+				"mouth_width": 1,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1996": {
+					"note": "Uebernimmt den Computerladen von seinem Onkel und fuehrt Werkstatt und Amiga-Service weiter."
+				},
+				"1998": {
+					"note": "Erweitert das Sortiment um Netzwerktechnik, PC-Komponenten und Retro-Service."
+				}
+			},
+			"phone": "20 11 42"
+		},
+		{
+			"id": "npc_krause",
+			"name": "Krause",
+			"role": "Flohmarkt-Haendler",
+			"trust": 0,
+			"likes": [
+				"feilschen"
+			],
+			"location": "flea_market",
+			"dialogue_default": "krause_greet",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "black"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 48,
+				"gender": "m",
+				"face_shape": "round",
+				"hair_style": "short",
+				"eye_type": "narrow",
+				"eye_color": "brown",
+				"nose": "wide",
+				"brow": "thick",
+				"ears": "big",
+				"personality": "mustard",
+				"beard": "moustache",
+				"clothing_style": "casual",
+				"eye_spacing": -1,
+				"eye_asymmetry": 1,
+				"nose_shift": -1,
+				"mouth_shift": 1,
+				"mouth_width": 2,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1997": {
+					"note": "Geht in Rente; Nachfolgerin verkauft ploetzlich PC-Teile."
+				}
+			},
+			"phone": "62 30 17"
+		},
+		{
+			"id": "npc_sven",
+			"name": "Sven",
+			"role": "Schulfreund",
+			"trust": 20,
+			"likes": [
+				"Amiga",
+				"Fußball",
+				"Tauschen"
+			],
+			"location": "schoolyard",
+			"schedule": {
+				"mon": "schoolyard",
+				"tue": "wald",
+				"wed": "computer_club",
+				"thu": "schoolyard",
+				"fri": "computer_shop",
+				"sat": "flea_market",
+				"sun": "home"
+			},
+			"dialogue_default": "sven_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "sand",
+				"hair": "blond"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 15,
+				"gender": "m",
+				"face_shape": "round",
+				"hair_style": "short",
+				"eye_type": "wide",
+				"eye_color": "blue",
+				"nose": "small",
+				"brow": "raised",
+				"ears": "plain",
+				"personality": "blue",
+				"clothing_style": "sporty",
+				"hat": "cap",
+				"eye_spacing": 1,
+				"eye_asymmetry": 0,
+				"nose_shift": 0,
+				"mouth_shift": -1,
+				"mouth_width": 1,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1990": "Kennt jeden auf dem Hof",
+				"1995": "Zieht in die Nachbarstadt"
+			},
+			"phone": "31 42 07",
+			"phone_moved": "44 21 09",
+			"vorwahl": "0531"
+		},
+		{
+			"id": "npc_mike",
+			"name": "Mike",
+			"role": "Gamer-Kumpel",
+			"trust": 15,
+			"likes": [
+				"Spiele",
+				"Joysticks",
+				"Highscores"
+			],
+			"location": "schoolyard",
+			"schedule": {
+				"mon": "schoolyard",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "schoolyard",
+				"fri": "home",
+				"sat": "flea_market",
+				"sun": "home"
+			},
+			"dialogue_default": "mike_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 15,
+				"gender": "m",
+				"face_shape": "square",
+				"hair_style": "long",
+				"eye_type": "narrow",
+				"eye_color": "green",
+				"nose": "straight",
+				"brow": "flat",
+				"ears": "big",
+				"personality": "red",
+				"clothing_style": "casual",
+				"eye_spacing": 0,
+				"eye_asymmetry": -1,
+				"nose_shift": 1,
+				"mouth_shift": 0,
+				"mouth_width": 2,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1990": "Bester im Viertel am Joystick",
+				"1996": "Kriegt endlich eine Konsole"
+			},
+			"phone": "55 03 21"
+		},
+		{
+			"id": "npc_alex",
+			"name": "Alex",
+			"role": "Sammler-Freund",
+			"trust": 15,
+			"likes": [
+				"Flohmarkt",
+				"alte Technik",
+				"Basteln"
+			],
+			"location": "flea_market",
+			"schedule": {
+				"mon": "schoolyard",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "computer_shop",
+				"sat": "flea_market",
+				"sun": "home"
+			},
+			"dialogue_default": "alex_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 15,
+				"gender": "m",
+				"face_shape": "long",
+				"hair_style": "curly",
+				"eye_type": "wide",
+				"eye_color": "grey",
+				"nose": "long",
+				"brow": "raised",
+				"ears": "plain",
+				"personality": "orange",
+				"clothing_style": "casual",
+				"glasses": "round",
+				"eye_spacing": 1,
+				"eye_asymmetry": 1,
+				"nose_shift": -1,
+				"mouth_shift": -1,
+				"mouth_width": 0,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1990": "Schleppt jeden Flohmarkt-Fund heim",
+				"1999": "Sein Zimmer ist ein kleines Museum"
+			},
+			"phone": "27 68 14"
+		},
+		{
+			"id": "npc_daniel",
+			"name": "Daniel",
+			"role": "Programmierer-Freund",
+			"trust": 15,
+			"likes": [
+				"Programmieren",
+				"Bücher",
+				"BBS"
+			],
+			"location": "home",
+			"schedule": {
+				"mon": "schoolyard",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "computer_shop",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "daniel_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 15,
+				"gender": "m",
+				"face_shape": "oval",
+				"hair_style": "short",
+				"eye_type": "narrow",
+				"eye_color": "brown",
+				"nose": "long",
+				"brow": "flat",
+				"ears": "plain",
+				"personality": "green",
+				"clothing_style": "nerdy",
+				"glasses": "square",
+				"eye_spacing": -1,
+				"eye_asymmetry": 0,
+				"nose_shift": 0,
+				"mouth_shift": 1,
+				"mouth_width": -1,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1990": "Programmiert schon in BASIC",
+				"1999": "Baut an einem eigenen Netzwerk"
+			},
+			"phone": "73 19 46"
+		},
+		{
+			"id": "npc_lisa",
+			"name": "Lisa",
+			"role": "Kreative Freundin",
+			"trust": 15,
+			"likes": [
+				"Deluxe Paint",
+				"Zeichnen",
+				"Musik"
+			],
+			"location": "home",
+			"schedule": {
+				"mon": "schoolyard",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "musikladen",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "lisa_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "auburn"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 15,
+				"gender": "f",
+				"face_shape": "oval",
+				"hair_style": "long",
+				"eye_type": "wide",
+				"eye_color": "green",
+				"nose": "small",
+				"brow": "raised",
+				"ears": "earring",
+				"personality": "violet",
+				"clothing_style": "artsy",
+				"eye_spacing": 1,
+				"eye_asymmetry": -1,
+				"nose_shift": 1,
+				"mouth_shift": 0,
+				"mouth_width": 1,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1990": "Malt schon in Deluxe Paint",
+				"1999": "Gestaltet Cover für die halbe Szene"
+			},
+			"phone": "38 52 90"
+		},
+		{
+			"id": "npc_mutter",
+			"name": "Mama",
+			"role": "Mutter",
+			"trust": 30,
+			"likes": [
+				"Ordnung",
+				"Kaffee",
+				"Ruhe"
+			],
+			"location": "home",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "home",
+				"thu": "home",
+				"fri": "home",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "mutter_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "pale",
+				"hair": "auburn"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 42,
+				"gender": "f",
+				"face_shape": "oval",
+				"hair_style": "bob",
+				"eye_type": "normal",
+				"eye_color": "brown",
+				"nose": "straight",
+				"brow": "raised",
+				"ears": "earring",
+				"personality": "red",
+				"clothing_style": "casual",
+				"eye_spacing": 0,
+				"eye_asymmetry": 1,
+				"nose_shift": -1,
+				"mouth_shift": 1,
+				"mouth_width": 0,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1995": {
+					"note": "Versteht langsam, dass das Hobby bleibt."
+				}
+			}
+		},
+		{
+			"id": "npc_vater",
+			"name": "Papa",
+			"role": "Vater",
+			"trust": 20,
+			"likes": [
+				"Zeitung",
+				"Heimwerken",
+				"Ruhe"
+			],
+			"location": "home",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "home",
+				"thu": "home",
+				"fri": "home",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "vater_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "grey"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 46,
+				"gender": "m",
+				"face_shape": "square",
+				"hair_style": "short",
+				"eye_type": "droopy",
+				"eye_color": "blue",
+				"nose": "wide",
+				"brow": "thick",
+				"ears": "big",
+				"personality": "mustard",
+				"glasses": "square",
+				"clothing_style": "neat",
+				"eye_spacing": 1,
+				"eye_asymmetry": -1,
+				"nose_shift": 1,
+				"mouth_shift": -1,
+				"mouth_width": 2,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1996": {
+					"note": "Fragt, ob 'das mit dem Internet' was Ernstes wird."
+				}
+			}
+		},
+		{
+			"id": "npc_voss",
+			"name": "Herr Voss",
+			"role": "Mathe- und Klassenlehrer",
+			"trust": 5,
+			"likes": [
+				"Mathe",
+				"Disziplin"
+			],
+			"phone": "20 11 48",
+			"location": "schoolyard",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "schoolyard",
+				"thu": "home",
+				"fri": "home",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "voss_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "grey"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 52,
+				"gender": "m",
+				"face_shape": "long",
+				"hair_style": "short",
+				"eye_type": "narrow",
+				"eye_color": "grey",
+				"nose": "long",
+				"brow": "thick",
+				"ears": "big",
+				"personality": "blue",
+				"glasses": "half",
+				"clothing_style": "neat",
+				"eye_spacing": -1,
+				"eye_asymmetry": 1,
+				"nose_shift": 0,
+				"mouth_shift": -1,
+				"mouth_width": -1,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1998": {
+					"note": "Unterrichtet plötzlich 'Informatik'."
+				}
+			}
+		},
+		{
+			"id": "npc_achim",
+			"name": "Achim",
+			"role": "Computerclub-Leiter",
+			"trust": 10,
+			"likes": [
+				"Vereinsleben",
+				"Wettbewerbe",
+				"Ordnung"
+			],
+			"location": "computer_club",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "computer_club",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "achim_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "sand",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 31,
+				"gender": "m",
+				"face_shape": "round",
+				"hair_style": "short",
+				"eye_type": "normal",
+				"eye_color": "brown",
+				"nose": "wide",
+				"brow": "raised",
+				"ears": "big",
+				"personality": "green",
+				"beard": "stubble",
+				"clothing_style": "casual",
+				"eye_spacing": 0,
+				"eye_asymmetry": -1,
+				"nose_shift": -1,
+				"mouth_shift": 1,
+				"mouth_width": 2,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1996": {
+					"note": "Baut den Club zur LAN-Location um."
+				}
+			},
+			"phone": "49 71 25"
+		},
+		{
+			"id": "npc_basti",
+			"name": "Basti „Beat“",
+			"role": "Tracker-Musiker",
+			"trust": 10,
+			"likes": [
+				"ProTracker",
+				"MODs",
+				"Chiptunes"
+			],
+			"location": "computer_club",
+			"schedule": {
+				"mon": "home",
+				"tue": "musikladen",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "computer_club",
+				"sat": "musikladen",
+				"sun": "home"
+			},
+			"dialogue_default": "basti_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "pale",
+				"hair": "black"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 19,
+				"gender": "m",
+				"face_shape": "oval",
+				"hair_style": "messy",
+				"eye_type": "droopy",
+				"eye_color": "blue",
+				"nose": "small",
+				"brow": "flat",
+				"ears": "earring",
+				"personality": "violet",
+				"clothing_style": "scene",
+				"eye_spacing": 1,
+				"eye_asymmetry": 1,
+				"nose_shift": 1,
+				"mouth_shift": 0,
+				"mouth_width": 0,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1997": {
+					"note": "Wechselt zu digitaler Musiksoftware."
+				}
+			},
+			"phone": "57 44 12"
+		},
+		{
+			"id": "npc_pixie",
+			"name": "Nadine „Pixie“",
+			"role": "Pixelgrafikerin",
+			"trust": 10,
+			"likes": [
+				"Deluxe Paint",
+				"Pixel",
+				"Copper"
+			],
+			"location": "computer_club",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "musikladen",
+				"fri": "computer_club",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "pixie_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "sand",
+				"hair": "ginger"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 22,
+				"gender": "f",
+				"face_shape": "oval",
+				"hair_style": "long",
+				"eye_type": "wide",
+				"eye_color": "green",
+				"nose": "small",
+				"brow": "raised",
+				"ears": "earring",
+				"personality": "orange",
+				"clothing_style": "artsy",
+				"eye_spacing": 0,
+				"eye_asymmetry": -1,
+				"nose_shift": -1,
+				"mouth_shift": 1,
+				"mouth_width": 1,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1999": {
+					"note": "Gestaltet Cover für die halbe Szene."
+				}
+			},
+			"phone": "61 29 83"
+		},
+		{
+			"id": "npc_rocky",
+			"name": "Rocky",
+			"role": "Werkstatt-Techniker und Ausbilder",
+			"trust": 10,
+			"likes": [
+				"Löten",
+				"RAM",
+				"Übertakten"
+			],
+			"location": "computer_shop",
+			"schedule": {
+				"mon": "computer_shop",
+				"tue": "computer_shop",
+				"wed": "computer_shop",
+				"thu": "computer_shop",
+				"fri": "computer_shop",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "rocky_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "tan",
+				"hair": "black"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 24,
+				"gender": "m",
+				"face_shape": "square",
+				"hair_style": "short",
+				"eye_type": "narrow",
+				"eye_color": "brown",
+				"nose": "wide",
+				"brow": "thick",
+				"ears": "big",
+				"personality": "red",
+				"hat": "cap",
+				"clothing_style": "casual",
+				"eye_spacing": -1,
+				"eye_asymmetry": 1,
+				"nose_shift": 1,
+				"mouth_shift": -1,
+				"mouth_width": 2,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1994": {
+					"note": "Baut den ersten PC im Freundeskreis zusammen."
+				}
+			},
+			"phone": "20 11 41"
+		},
+		{
+			"id": "npc_sysop",
+			"name": "Der Sysop",
+			"role": "BBS-Sysop",
+			"trust": 5,
+			"likes": [
+				"Mailboxen",
+				"ANSI",
+				"Modems"
+			],
+			"location": "home",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "home",
+				"thu": "home",
+				"fri": "home",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "sysop_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "pale",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 28,
+				"gender": "m",
+				"face_shape": "oval",
+				"hair_style": "long",
+				"eye_type": "droopy",
+				"eye_color": "grey",
+				"nose": "long",
+				"brow": "flat",
+				"ears": "plain",
+				"personality": "teal",
+				"beard": "full",
+				"glasses": "round",
+				"clothing_style": "nerdy",
+				"eye_spacing": 1,
+				"eye_asymmetry": -1,
+				"nose_shift": 0,
+				"mouth_shift": 0,
+				"mouth_width": -1,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1996": {
+					"note": "Seine Mailbox verliert Nutzer ans Internet."
+				}
+			},
+			"phone": "88 20 66"
+		},
+		{
+			"id": "npc_tobias",
+			"name": "Tobias „TRSi“",
+			"role": "Demoscene-Coder",
+			"trust": 10,
+			"likes": [
+				"Assembler",
+				"Cracktros",
+				"Partys"
+			],
+			"location": "computer_club",
+			"schedule": {
+				"mon": "home",
+				"tue": "home",
+				"wed": "computer_club",
+				"thu": "home",
+				"fri": "computer_club",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "tobias_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 20,
+				"gender": "m",
+				"face_shape": "oval",
+				"hair_style": "messy",
+				"eye_type": "narrow",
+				"eye_color": "blue",
+				"nose": "straight",
+				"brow": "raised",
+				"ears": "plain",
+				"personality": "violet",
+				"clothing_style": "scene",
+				"eye_spacing": 0,
+				"eye_asymmetry": 1,
+				"nose_shift": -1,
+				"mouth_shift": 1,
+				"mouth_width": 0,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1998": {
+					"note": "Fährt auf jede große Demoparty."
+				}
+			},
+			"phone": "35 76 51"
+		},
+		{
+			"id": "npc_oez",
+			"name": "Frau Öz",
+			"role": "Kiosk-Betreiberin",
+			"presence_mode": "fixed_shift",
+			"trust": 10,
+			"likes": [
+				"Zeitschriften",
+				"Stammkunden",
+				"Süßigkeiten"
+			],
+			"location": "kiosk",
+			"schedule": {
+				"mon": "kiosk",
+				"tue": "kiosk",
+				"wed": "kiosk",
+				"thu": "kiosk",
+				"fri": "kiosk",
+				"sat": "kiosk",
+				"sun": "kiosk"
+			},
+			"dialogue_default": "oez_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "tan",
+				"hair": "black"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 44,
+				"gender": "f",
+				"face_shape": "round",
+				"hair_style": "medium",
+				"eye_type": "normal",
+				"eye_color": "brown",
+				"nose": "wide",
+				"brow": "thick",
+				"ears": "earring",
+				"personality": "green",
+				"clothing_style": "casual",
+				"eye_spacing": -1,
+				"eye_asymmetry": -1,
+				"nose_shift": 1,
+				"mouth_shift": 0,
+				"mouth_width": 1,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1993": {
+					"note": "Führt eine ganze Wand Computerhefte."
+				}
+			},
+			"phone": "22 87 65"
+		},
+		{
+			"id": "npc_joerg",
+			"name": "Jörg",
+			"role": "Plattenladen-Verkäufer",
+			"presence_mode": "fixed_shift",
+			"trust": 10,
+			"likes": [
+				"Vinyl",
+				"Amiga-Sound",
+				"Demoszene"
+			],
+			"location": "musikladen",
+			"schedule": {
+				"mon": "musikladen",
+				"tue": "musikladen",
+				"wed": "musikladen",
+				"thu": "musikladen",
+				"fri": "musikladen",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "joerg_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "auburn"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 35,
+				"gender": "m",
+				"face_shape": "long",
+				"hair_style": "long",
+				"eye_type": "droopy",
+				"eye_color": "green",
+				"nose": "long",
+				"brow": "raised",
+				"ears": "big",
+				"personality": "red",
+				"beard": "goatee",
+				"clothing_style": "casual",
+				"eye_spacing": 1,
+				"eye_asymmetry": 1,
+				"nose_shift": -1,
+				"mouth_shift": -1,
+				"mouth_width": 2,
+				"hair_sweep": 1
+			},
+			"timeline": {
+				"1997": {
+					"note": "Räumt den halben Laden für CDs frei."
+				}
+			},
+			"phone": "64 33 08"
+		},
+		{
+			"id": "npc_habel",
+			"name": "Frau Habel",
+			"role": "Postbeamtin",
+			"presence_mode": "fixed_shift",
+			"trust": 5,
+			"likes": [
+				"Ordnung",
+				"Pakete",
+				"Stempel"
+			],
+			"location": "postamt",
+			"schedule": {
+				"mon": "postamt",
+				"tue": "postamt",
+				"wed": "postamt",
+				"thu": "postamt",
+				"fri": "postamt",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "habel_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "pale",
+				"hair": "grey"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 50,
+				"gender": "f",
+				"face_shape": "square",
+				"hair_style": "bob",
+				"eye_type": "narrow",
+				"eye_color": "grey",
+				"nose": "straight",
+				"brow": "thick",
+				"ears": "plain",
+				"personality": "blue",
+				"glasses": "square",
+				"clothing_style": "neat",
+				"eye_spacing": 0,
+				"eye_asymmetry": -1,
+				"nose_shift": 0,
+				"mouth_shift": 1,
+				"mouth_width": -1,
+				"hair_sweep": -1
+			},
+			"timeline": {},
+			"phone": "11 50 00"
+		},
+		{
+			"id": "npc_wolf",
+			"name": "Herr Wolf",
+			"role": "Bankangestellter",
+			"presence_mode": "fixed_shift",
+			"trust": 5,
+			"likes": [
+				"Sparbuch",
+				"Zinsen",
+				"Anzüge"
+			],
+			"location": "stadtbank",
+			"schedule": {
+				"mon": "stadtbank",
+				"tue": "stadtbank",
+				"wed": "stadtbank",
+				"thu": "stadtbank",
+				"fri": "stadtbank",
+				"sat": "home",
+				"sun": "home"
+			},
+			"dialogue_default": "wolf_default",
+			"unlocks": [],
+			"portrait": {
+				"skin": "beige",
+				"hair": "brown"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 46,
+				"gender": "m",
+				"face_shape": "square",
+				"hair_style": "short",
+				"eye_type": "normal",
+				"eye_color": "brown",
+				"nose": "wide",
+				"brow": "flat",
+				"ears": "big",
+				"personality": "mustard",
+				"glasses": "square",
+				"clothing_style": "neat",
+				"eye_spacing": 1,
+				"eye_asymmetry": 1,
+				"nose_shift": 1,
+				"mouth_shift": 0,
+				"mouth_width": 2,
+				"hair_sweep": -1
+			},
+			"timeline": {},
+			"phone": "11 60 00"
+		},
+		{
+			"id": "npc_haendler",
+			"name": "Der Händler",
+			"role": "Mysteriöser Kopie-Aufkäufer",
+			"trust": 0,
+			"likes": [
+				"Seltene Titel",
+				"Saubere Kopien",
+				"Diskretion"
+			],
+			"location": "wald",
+			"schedule": {
+				"mon": "wald",
+				"tue": "wald",
+				"wed": "wald",
+				"thu": "wald",
+				"fri": "wald",
+				"sat": "flea_market",
+				"sun": "wald"
+			},
+			"dialogue_default": "",
+			"unlocks": [],
+			"portrait": {
+				"skin": "sand",
+				"hair": "black"
+			},
+			"portrait_dna": {
+				"schema_version": 2,
+				"age_base": 33,
+				"gender": "m",
+				"face_shape": "long",
+				"hair_style": "short",
+				"eye_type": "narrow",
+				"eye_color": "grey",
+				"nose": "long",
+				"brow": "flat",
+				"ears": "plain",
+				"personality": "violet",
+				"hat": "flatcap",
+				"glasses": "sunglasses",
+				"beard": "stubble",
+				"clothing_style": "casual",
+				"eye_spacing": 0,
+				"eye_asymmetry": -1,
+				"nose_shift": 0,
+				"mouth_shift": 0,
+				"mouth_width": -1,
+				"hair_sweep": -1
+			},
+			"timeline": {
+				"1994": {
+					"note": "Taucht mit einem Kofferraum voll Originale auf."
+				}
+			},
+			"phone": ""
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"comment": "Meilenstein-Katalog des MEMORY EVENT SYSTEM (SOMMER '90). MemoryManager.record_once(id) hält jeden Moment nur EINMAL fest. 'title' = kurze Überschrift (Toast/Rückblick), 'text' = Vergangenheitsform (taucht später als Erinnerung wieder auf: 'Weißt du noch? Sommer 1990: <text>'). Bewusst klein halten — lieber wenige Momente, die wirklich referenziert werden.",
+	"events": {
+		"first_copy": {
+			"title": "Erste eigene Kopie",
+			"text": "deine allererste Diskettenkopie gezogen — der Anfang von allem"
+		},
+		"first_disk_label": {
+			"title": "Erstes eigenes Etikett",
+			"text": "deiner ersten Diskette ein sauberes Etikett verpasst"
+		},
+		"first_soldering_lesson": {
+			"title": "Erste Lötstunde bei Sven",
+			"text": "bei Sven zum ersten Mal einen Lötkolben in der Hand gehabt"
+		},
+		"first_mod_song": {
+			"title": "Erster MOD",
+			"text": "zum ersten Mal einen MOD gehört — die Melodie ging nicht mehr aus dem Kopf"
+		},
+		"first_bbs_login": {
+			"title": "Erster BBS-Login",
+			"text": "dich zum ersten Mal in eine Mailbox eingewählt — das Modem pfiff, und du warst drin"
+		},
+		"first_flea_find": {
+			"title": "Erster Flohmarkt-Fund",
+			"text": "auf dem Flohmarkt dein erstes Schnäppchen gemacht"
+		},
+		"first_original_game": {
+			"title": "Erstes Original",
+			"text": "dein erstes originalverpacktes Spiel in Händen gehalten"
+		},
+		"first_group_project": {
+			"title": "Erstes Gemeinschaftsprojekt",
+			"text": "mit den Freunden am ersten gemeinsamen Projekt gebastelt"
+		},
+		"first_rom_swap": {
+			"title": "Erster ROM-Tausch",
+			"text": "zum ersten Mal einen Kickstart-ROM getauscht — der Rechner bootete wieder"
+		},
+		"first_ram_upgrade": {
+			"title": "Erstes RAM-Upgrade",
+			"text": "deinen Amiga zum ersten Mal aufgerüstet — plötzlich lief so viel mehr"
+		},
+		"turbo_kart_mike_beaten": {
+			"title": "Mike vom Thron gefahren",
+			"text": "Mikes Turbo-Kart-Rekord geschlagen — danach war es kurz ganz still im Zimmer"
+		},
+		"learned_monitor_calibration_gruber": {
+			"title": "Testbild gemeistert",
+			"text": "Herr Gruber hat mir gezeigt, wie man einen Monitor richtig kalibriert."
+		},
+		"learned_monitor_calibration_sven": {
+			"title": "Testbild gemeistert",
+			"text": "Sven hat mir an seiner Werkbank das Testbild-Einstellen beigebracht."
+		},
+		"fdd_aligned_by_gruber": {
+			"title": "Laufwerk gerettet",
+			"text": "Herr Gruber hat mein dejustiertes Laufwerk mit Referenzdisk und Oszilloskop gerichtet."
+		},
+		"monitor_repaired_with_friend": {
+			"title": "Röhre lebt wieder",
+			"text": "Sven und ich haben meinen Monitor repariert — kalte Lötstelle in der Vertikalablenkung."
+		},
+		"joystick_repaired_self": {
+			"title": "Vier Richtungen, ruhige Hand",
+			"text": "deinen wackligen Joystick selbst geöffnet, sauber verlötet und auf allen vier Kanälen geprüft"
+		},
+		"summerdisk_1990": {
+			"title": "Meine erste Sommerdisk",
+			"text": "deine erste eigene Sommerdisk zusammengestellt, sauber beschriftet und Stefan vorgespielt"
+		}
+	}
+}

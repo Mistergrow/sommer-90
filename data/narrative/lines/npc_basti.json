@@ -1,0 +1,243 @@
+{
+	"npc": "npc_basti",
+	"comment": "Zeilen-Pool fuer npc_basti. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "bas_b01",
+			"text": "Hörst du das? Vier Kanäle, alles handgesetzt."
+		},
+		{
+			"id": "bas_b02",
+			"text": "Ich schick dir mal einen Song zum Auseinandernehmen."
+		},
+		{
+			"id": "bas_b03",
+			"text": "Musik ist Mathematik, die man fühlen kann."
+		},
+		{
+			"id": "bas_b04",
+			"text": "Ein guter Beat entscheidet über Leben und Tod eines Tracks."
+		},
+		{
+			"id": "bas_b05",
+			"text": "Ich sitz nächtelang an einem Pattern, bis es sitzt."
+		},
+		{
+			"id": "bas_b06",
+			"text": "Setz dir mal die Kopfhörer auf, hör dir das an."
+		},
+		{
+			"id": "bas_b07",
+			"text": "Die besten Musiker der Szene kennst du nicht aus dem Radio."
+		},
+		{
+			"id": "bas_b08",
+			"text": "Ein Sample ist wie ein Farbtupfer. Man braucht das richtige."
+		},
+		{
+			"id": "bas_b09",
+			"text": "Ich hör Rhythmus in allem — sogar im Regen."
+		},
+		{
+			"id": "bas_b10",
+			"text": "Zeig mir deine Lieblingsmusik, das verrät mir viel über dich."
+		},
+		{
+			"id": "bas_b11",
+			"text": "Timing ist alles. Ein Millisekunde daneben und der Groove ist tot."
+		},
+		{
+			"id": "bas_b12",
+			"text": "Ich mach das nicht für Ruhm, ich mach's, weil ich muss."
+		},
+		{
+			"id": "bas_b13",
+			"text": "Ein Track ist nie fertig, man hört nur irgendwann auf."
+		},
+		{
+			"id": "bas_b14",
+			"text": "Kopfhörer auf, Welt aus — mein Lieblingszustand."
+		},
+		{
+			"id": "bas_b15",
+			"text": "Ich hab Melodien im Kopf, die noch keiner gehört hat."
+		},
+		{
+			"id": "bas_b16",
+			"text": "Bring mir einen Sound, und ich bau dir einen Song drumherum."
+		},
+		{
+			"id": "bas_b17",
+			"text": "Die Szene teilt alles. Musik will gehört werden, nicht gehortet."
+		},
+		{
+			"id": "bas_b18",
+			"text": "Manche Töne treffen dich mitten ins Herz. Dafür lebe ich."
+		},
+		{
+			"id": "bas_b19",
+			"text": "Ich probier gern Neues, aber der Groove muss bleiben."
+		},
+		{
+			"id": "bas_b20",
+			"text": "Ein leiser Track kann lauter sein als jeder Krach."
+		},
+		{
+			"id": "bas_b21",
+			"text": "Ich hab tausend Ideen und nie genug Zeit."
+		},
+		{
+			"id": "bas_b22",
+			"text": "Setz dich, hör zu, sag mir ehrlich, was du fühlst."
+		},
+		{
+			"id": "bas_b23",
+			"text": "Musik machen heißt, sich verletzlich zeigen. Das lernt man."
+		},
+		{
+			"id": "bas_b24",
+			"text": "Ich lieb den Moment, wenn alle Spuren plötzlich zusammenpassen."
+		},
+		{
+			"id": "bas_b25",
+			"text": "Ohne Rhythmus ist Melodie nur schöner Lärm."
+		},
+		{
+			"id": "bas_b26",
+			"text": "Ich lern von jedem, der besser ist als ich. Und das sind viele."
+		},
+		{
+			"id": "bas_b27",
+			"text": "Ein guter Track bleibt im Kopf, auch wenn er längst aus ist."
+		},
+		{
+			"id": "bas_b28",
+			"text": "Ich verschenk meine Musik. Was zählt, ist dass sie ankommt."
+		},
+		{
+			"id": "bas_b29",
+			"text": "Manchmal lösch ich alles und fang neu an. Reinigt die Seele."
+		},
+		{
+			"id": "bas_b30",
+			"text": "Dreh's lauter. Musik will man spüren, nicht nur hören."
+		},
+		{
+			"id": "ba_tracker",
+			"to": 1997,
+			"topic": "musik",
+			"text": "ProTracker ist alles, was du brauchst. Sample rein, Pattern bauen, mit dem Timing spielen."
+		},
+		{
+			"id": "ba_szene",
+			"from": 1991,
+			"topic": "szene",
+			"text": "Die besten Musiker sind in der Szene, nicht im Radio. Kein Studio kriegt sowas hin."
+		},
+		{
+			"id": "ba_digital",
+			"from": 1997,
+			"needs": [
+				"basti_digital"
+			],
+			"once": true,
+			"topic": "wandel",
+			"text": "Ich steig um auf die neue Software am PC. Mehr Kanäle, sauberer Sound... aber ehrlich? Der Amiga fehlt mir."
+		},
+		{
+			"id": "ba_mp3",
+			"from": 1997,
+			"needs": [
+				"mp3_da"
+			],
+			"topic": "wandel",
+			"text": "Diese MP3s... man packt einen ganzen Song in ein paar Megabyte. Das ändert alles für uns Musiker."
+		},
+		{
+			"id": "ba_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Meine alten MODs hab ich alle noch. Vier Kanäle, aber jeder Ton sitzt. Zeitlos, sag ich dir."
+		},
+		{
+			"id": "bas_x01",
+			"topic": "musik",
+			"text": "Hörst du das? Vier Kanäle, alles von Hand gesetzt. Amiga-Sound ist warm wie ein Sommerabend."
+		},
+		{
+			"id": "bas_x02",
+			"topic": "musik",
+			"text": "Timing ist alles. Eine Millisekunde daneben, und der Groove ist tot."
+		},
+		{
+			"id": "bas_x03",
+			"topic": "musik",
+			"text": "Ich sitz nächtelang an einem Pattern, bis es sitzt. Andere nennen das verrückt. Ich nenn's Liebe."
+		},
+		{
+			"id": "bas_x04",
+			"topic": "musik",
+			"text": "Ein Sample ist wie ein Farbtupfer — man braucht genau den richtigen, nicht irgendeinen."
+		},
+		{
+			"id": "bas_x05",
+			"topic": "musik",
+			"text": "Ich mach das nicht für Ruhm. Ich mach's, weil ich muss. Da ist Musik im Kopf, die raus will."
+		},
+		{
+			"id": "bas_x06",
+			"topic": "musik",
+			"text": "Ein Track ist nie fertig, man hört nur irgendwann auf. Das ist der Trick."
+		},
+		{
+			"id": "bas_x07",
+			"topic": "musik",
+			"text": "Kopfhörer auf, Welt aus. Mein Lieblingszustand, mein sicherster Ort."
+		},
+		{
+			"id": "bas_x08",
+			"topic": "musik",
+			"text": "Die besten Musiker der Szene hörst du nie im Radio. Ihr Verlust, nicht ihrer."
+		},
+		{
+			"id": "bas_x09",
+			"topic": "musik",
+			"text": "Bring mir einen Sound, und ich bau dir einen Song drumherum. Alles fängt mit einem Ton an."
+		},
+		{
+			"id": "bas_x10",
+			"topic": "musik",
+			"text": "Musik machen heißt sich verletzlich zeigen. Das muss man erst lernen, das Sich-Trauen."
+		},
+		{
+			"id": "bas_x11",
+			"from": 0,
+			"needs": [
+				"basti_digital"
+			],
+			"topic": "aera",
+			"text": "Ich steig um auf die neue Software am PC. Mehr Kanäle, sauberer — aber der Amiga fehlt mir wie ein alter Freund."
+		},
+		{
+			"id": "bas_x12",
+			"from": 0,
+			"needs": [
+				"mp3_da"
+			],
+			"topic": "aera",
+			"text": "Diese MP3s... ein ganzer Song in ein paar Megabyte. Das ändert alles für uns Musiker. Zum Guten? Frag mich in zehn Jahren."
+		},
+		{
+			"id": "bas_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Meine alten MODs hab ich alle noch. Vier Kanäle, aber jeder Ton sitzt. Zeitlos."
+		}
+	]
+}

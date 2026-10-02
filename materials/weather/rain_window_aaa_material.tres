@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cinyeihlc03rx"]
+
+[ext_resource type="Shader" uid="uid://cffqtm7nsvmr8" path="res://shaders/rain_window_aaa.gdshader" id="1_shader"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_shader")
+shader_parameter/time = 0.0
+shader_parameter/motion_speed = 1.0
+shader_parameter/intensity = 0.7
+shader_parameter/wind = 0.0
+shader_parameter/storm_factor = 0.0
+shader_parameter/impact_strength = 1.0
+shader_parameter/seed = 1.0
+shader_parameter/uv_rect = Vector4(0, 0, 1, 1)

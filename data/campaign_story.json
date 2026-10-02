@@ -1,0 +1,549 @@
+{
+	"schema_version": 1,
+	"comment": "Story-Director fuer 60 Sommerkapitel. Jede Woche hat einen klaren Fokus; quest_ids oeffnen normalerweise fruehestens in dieser Woche. Einzelne Quests duerfen nach dem Abschluss ihres expliziten early_after_quest schon als Ausblick beginnen, damit zwischen zwei Kapiteln kein leerer Zwangsschlaf entsteht. Unerledigte Handlungsfaeden bleiben im Folgejahr als Backlog verfuegbar.",
+	"years": {
+		"1990": [
+			{
+				"week": 1,
+				"title": "Der fremde Karton",
+				"focus": "Aufbauen, einschalten und die Werkbank entdecken — keine Reparaturen",
+				"quest_ids": [
+					"q_tut_karton",
+					"q_sommer_game_1990"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Stefans Weltraumspiel",
+				"focus": "Flohmarkt, OVP, Zustand und Stefans Herzenswunsch",
+				"quest_ids": [
+					"q_stefan_space"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Die erste eigene Diskette",
+				"focus": "Ein Spiel selbst pruefen, die Quelle bewahren und eine Arbeitskopie fuer Stefan erstellen; der Trampelpfad bleibt Versuchung",
+				"quest_ids": [
+					"q_stefan_turbo",
+					"q_dealer_kopien"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Wenn nichts mehr geht",
+				"focus": "Sicher reinigen, Diagnose von Reparatur trennen und eine ungewoehnlich tiefe Strategiespiel-Disk pruefen",
+				"quest_ids": [
+					"q_tut_diskcare",
+					"q_stefan_code_red"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Hinter der Clubtür",
+				"focus": "Als Gast Demo und Cracktro beobachten, noch nichts selbst releasen",
+				"quest_ids": [
+					"q_tut_bytewerk"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Meine erste Sommerdisk",
+				"focus": "Eigene Auswahl physisch zusammenstellen, beschriften, prüfen und Stefan zeigen",
+				"quest_ids": [
+					"q_sommerdisk_1990"
+				]
+			}
+		],
+		"1991": [
+			{
+				"week": 1,
+				"title": "Wieder im Club",
+				"focus": "Handle, Rolle und gemeinsamer Auftrag statt Solo-Tutorial",
+				"quest_ids": [
+					"q_erste_demo",
+					"q_stefan_nebula_courier_91",
+					"q_sommer_game_1991"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Erste eigene Beiträge",
+				"focus": "Listing, Pixel oder Tracker werden echte Rollenbeiträge",
+				"quest_ids": [
+					"q_tut_listing",
+					"q_tut_tracker",
+					"q_tut_paint",
+					"q_daniel_lab_1991"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Das erste Club-Projekt",
+				"focus": "Beiträge, Credits, Build, QA und physische Intro-Disk zusammenführen",
+				"quest_ids": [
+					"q_stefan_clockwork_keep_91",
+					"q_oez_samstagsausgabe"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Hinter Grubers Theke",
+				"focus": "Beaufsichtigte Ladenhilfe und klare Werkstattgrenzen",
+				"quest_ids": [
+					"q_praktikum"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Alex' Wühlkisten",
+				"focus": "Gemeinsam suchen, tauschen und Fundstücke einordnen",
+				"quest_ids": [
+					"q_alex_find",
+					"q_stefan_circuit_mind_91"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Aufnahme",
+				"focus": "Gruppenintro präsentieren und aufgrund der Zusammenarbeit aufgenommen werden",
+				"quest_ids": [
+					"q_club_member"
+				]
+			}
+		],
+		"1992": [
+			{
+				"week": 1,
+				"title": "Eine eigene Idee",
+				"focus": "Spielregel und Richtung wählen",
+				"quest_ids": [
+					"q_eigenes_spiel",
+					"q_stefan_luna_miner_92",
+					"q_sommer_game_1992"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Werkzeuge verstehen",
+				"focus": "Original analysieren, Heftcode abtippen und daraus einen eigenen Diskettenkopierer bauen",
+				"quest_ids": [
+					"q_daniel_lab_1992",
+					"q_sommer_copy_92"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Bild und Ton",
+				"focus": "Eigene Assets mit dem spielbaren Build verbinden",
+				"quest_ids": [
+					"q_stefan_abyss_rescue_92",
+					"q_pixie_vier_frames"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Alex' riskante Wühlkiste",
+				"focus": "Unbekannte Disk nicht booten, sondern als echten Virenfund prüfen",
+				"quest_ids": [
+					"q_alex_risky_1992"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Letzte Schultage",
+				"focus": "Abschluss und Projektzeit gegeneinander abwägen",
+				"quest_ids": [
+					"q_schulabschluss",
+					"q_stefan_shadow_protocol_92"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Die Premiere",
+				"focus": "Spiel freeze, Stefan zeigen und auf Geld oder Ruf reagieren",
+				"quest_ids": [
+					"q_stefan_premiere_1992"
+				]
+			}
+		],
+		"1993": [
+			{
+				"week": 1,
+				"title": "Besetztzeichen",
+				"focus": "Modem organisieren, einwählen und Regeln verstehen",
+				"quest_ids": [
+					"q_ins_bbs",
+					"q_stefan_neon_highway_93",
+					"q_sommer_game_1993"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Erster Ausbildungstag",
+				"focus": "Grubers Werkstatt wird Verantwortung",
+				"quest_ids": [
+					"q_ausbildung"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Kopien unter die Leute",
+				"focus": "Handel, X-COPY-Ausbau und Konsequenzen",
+				"quest_ids": [
+					"q_haendler",
+					"q_xcopy_pro",
+					"q_stefan_midnight_mechanism_93"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Erster Upload",
+				"focus": "Ein echtes eigenes Release spiegeln, ohne die Masterdisk zu verbrauchen",
+				"quest_ids": [
+					"q_daniel_lab_1993"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Antwort von draußen",
+				"focus": "Gespeicherte Reaktion aus einer anderen Stadt wirklich lesen",
+				"quest_ids": [
+					"q_stefan_port_meridian_93"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Die neue Welt",
+				"focus": "Reichweite, Verantwortung und neue Wege",
+				"quest_ids": [
+					"q_stefan_new_world_1993",
+					"q_fuehrerschein"
+				]
+			}
+		],
+		"1994": [
+			{
+				"week": 1,
+				"title": "Die ersten Tausend",
+				"focus": "Girokonto, EC-Karte und Verantwortung",
+				"quest_ids": [
+					"q_erste_1000",
+					"q_stefan_sky_fortress_94",
+					"q_sommer_game_1994"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Farbe verkauft",
+				"focus": "Ein Etikett wird zum Produkt",
+				"quest_ids": [
+					"q_farbdruck"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Multimedia",
+				"focus": "Neue Formate, neue Versuchungen",
+				"quest_ids": [
+					"q_stefan_pulse_reactor_94"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Sauberes Cracktro",
+				"focus": "Technik allein reicht nicht",
+				"quest_ids": [
+					"q_cracktro",
+					"q_joerg_b_seite"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Die erste richtige Compo",
+				"focus": "Ein neues Release unter Frist bauen und einreichen",
+				"quest_ids": [
+					"q_compo",
+					"q_stefan_frontier_command_94"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Wem gehört der Applaus?",
+				"focus": "Daniels technische Grenzen verstehen und Credits fair oder verantwortlich führen",
+				"quest_ids": [
+					"q_daniel_lab_1994",
+					"q_stefan_spotlight_1994"
+				]
+			}
+		],
+		"1995": [
+			{
+				"week": 1,
+				"title": "Umbruch",
+				"focus": "Neue Systeme, alte Freunde",
+				"quest_ids": [
+					"q_stefan_magma_runner_95",
+					"q_sommer_game_1995"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Fuer Sven",
+				"focus": "Ein Geschenk vor dem Abschied",
+				"quest_ids": [
+					"q_sven_gift"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Leerer Platz",
+				"focus": "Entfernung veraendert Freundschaft",
+				"quest_ids": [
+					"q_stefan_vector_strike_95"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Gesellenstueck",
+				"focus": "Koennen unter Beweis stellen",
+				"quest_ids": [
+					"q_gesellenpruefung"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Eigenstaendig",
+				"focus": "Arbeiten ohne staendige Anleitung",
+				"quest_ids": [
+					"q_stefan_vaults_of_arkon_95",
+					"q_habel_masterdisk"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Was Entfernung aushält",
+				"focus": "Daniels Jahresprojekt abschließen und aus einem versprochenen Wiedersehen einen echten Plan machen",
+				"quest_ids": [
+					"q_daniel_lab_1995",
+					"q_stefan_distance_1995"
+				]
+			}
+		],
+		"1996": [
+			{
+				"week": 1,
+				"title": "Mehr Reichweite",
+				"focus": "Neue Netze und neue Wege",
+				"quest_ids": [
+					"q_stefan_net_raiders_96",
+					"q_sommer_game_1996"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Letzte Mailboxnacht",
+				"focus": "Eine vertraute Leitung verstummt",
+				"quest_ids": [
+					"q_bbs_farewell"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Neustart hinter dem Tresen",
+				"focus": "Gruber übergibt Laden und Werkstatt an Jan",
+				"quest_ids": [
+					"q_gruber_abschied",
+					"q_stefan_polar_rescue_96"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Dazwischen",
+				"focus": "Alte Szene, neues Netz",
+				"quest_ids": [
+					"q_daniel_lab_1996"
+				]
+			},
+			{
+				"week": 5,
+				"title": "LAN-Nacht",
+				"focus": "Kabelsalat bis Sonnenaufgang",
+				"quest_ids": [
+					"q_lan_nacht",
+					"q_stefan_colony_six_96"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Leitungen",
+				"focus": "Menschen bleiben verbunden",
+				"quest_ids": [
+					"q_stefan_people_1996"
+				]
+			}
+		],
+		"1997": [
+			{
+				"week": 1,
+				"title": "Krauses letzte Kiste",
+				"focus": "Der Flohmarkt veraendert sich",
+				"quest_ids": [
+					"q_krause_abschied",
+					"q_stefan_cyberball_97",
+					"q_sommer_game_1997"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Musik wird Datei",
+				"focus": "Digitalisierung hoerbar machen",
+				"quest_ids": [
+					"q_digitale_musik"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Der erste Job",
+				"focus": "Aus Hobby wird Beruf",
+				"quest_ids": [
+					"q_erster_job",
+					"q_stefan_deep_core_97",
+					"q_mutter_studio"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Probezeit",
+				"focus": "Beruf und Szene ausbalancieren",
+				"quest_ids": [
+					"q_daniel_lab_1997"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Stefans Firma",
+				"focus": "Talent bekommt eine echte Chance",
+				"quest_ids": [
+					"q_firma_talent",
+					"q_stefan_metro_rush_97"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Erwachsen?",
+				"focus": "Was vom Jugendzimmer geblieben ist",
+				"quest_ids": [
+					"q_stefan_grown_up_1997"
+				]
+			}
+		],
+		"1998": [
+			{
+				"week": 1,
+				"title": "Under Construction",
+				"focus": "Die erste eigene Homepage",
+				"quest_ids": [
+					"q_homepage",
+					"q_stefan_orbital_siege_98",
+					"q_sommer_game_1998"
+				]
+			},
+			{
+				"week": 2,
+				"title": "Gaestebuch",
+				"focus": "Fremde werden zu Besuchern",
+				"quest_ids": [
+					"q_daniel_lab_1998"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Webring",
+				"focus": "Ein Platz im offenen Netz",
+				"quest_ids": [
+					"q_webring",
+					"q_stefan_data_pulse_98"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Online",
+				"focus": "Reichweite hat Nebenwirkungen",
+				"quest_ids": [
+					"q_stefan_online_1998"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Systemwahl",
+				"focus": "Welche Maschine bleibt im Mittelpunkt",
+				"quest_ids": [
+					"q_systemwahl",
+					"q_stefan_syndicate_grid_98"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Letzter normaler Sommer",
+				"focus": "Das Jahrzehnt zieht an",
+				"quest_ids": [
+					"q_stefan_last_summer_1998"
+				]
+			}
+		],
+		"1999": [
+			{
+				"week": 1,
+				"title": "Magnetische Erinnerung",
+				"focus": "Das Diskettenarchiv sichern",
+				"quest_ids": [
+					"q_disk_archive",
+					"q_stefan_final_courier_99",
+					"q_sommer_game_1999"
+				]
+			},
+			{
+				"week": 2,
+				"title": "00",
+				"focus": "Y2K pruefen statt Panik nachreden",
+				"quest_ids": [
+					"q_y2k_prep",
+					"q_daniel_lab_1999"
+				]
+			},
+			{
+				"week": 3,
+				"title": "Was fehlt",
+				"focus": "Menschen und Material fuer das Finale sammeln",
+				"quest_ids": [
+					"q_stefan_millennium_vault_99"
+				]
+			},
+			{
+				"week": 4,
+				"title": "Signal bis Mitternacht",
+				"focus": "Die Millennium-Demo entsteht",
+				"quest_ids": [
+					"q_millennium_demo"
+				]
+			},
+			{
+				"week": 5,
+				"title": "Generalprobe",
+				"focus": "Alle Entscheidungen laufen zusammen",
+				"quest_ids": [
+					"q_stefan_last_horizon_99"
+				]
+			},
+			{
+				"week": 6,
+				"title": "Was aus uns wurde",
+				"focus": "Der persoenliche Weg ins Jahr 2000",
+				"quest_ids": [
+					"q_finale_weg"
+				]
+			}
+		]
+	}
+}

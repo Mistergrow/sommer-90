@@ -1,0 +1,77 @@
+{
+  "comment": "Spielbare Stefan-Gespraeche fuer bislang leere Kampagnenwochen. Jede Antwort schliesst dieselbe Queststufe, setzt aber eine andere, spaeter auswertbare Erinnerung.",
+  "moments": [
+    {
+      "id": "premiere_1992", "quest_id": "q_stefan_premiere_1992", "year": 1992, "week": 6,
+      "title": "Die Premiere", "memory": "stefan_premiere_1992",
+      "text": "Der Abspann deines ersten eigenen Werks steht auf dem Monitor. Stefan dreht sich zu dir um: »Jetzt wird es ernst. Verkaufen wir wenige saubere Exemplare – oder geben wir es der Szene?«",
+      "choices": [
+        {"text": "Eine kleine, nummerierte Auflage. Qualität vor Masse.", "flag": "first_work_small_run", "effects": [{"type": "money", "value": 15}, {"type": "stat", "stat": "ruf", "value": 1}]},
+        {"text": "Freie Tauschkopien. Das Werk soll Leute erreichen.", "flag": "first_work_scene_release", "effects": [{"type": "stat", "stat": "ruf", "value": 3}, {"type": "npc_trust", "npc": "npc_stefan", "value": 1}]}
+      ]
+    },
+    {
+      "id": "new_world_1993", "quest_id": "q_stefan_new_world_1993", "year": 1993, "week": 6,
+      "title": "Die neue Welt", "memory": "stefan_new_world_1993",
+      "text": "Auf Stefans Monitor blinken Antworten aus drei Städten. »Die kennen unser Handle, aber nicht uns. Wollen wir größer werden – oder erst einmal lernen, wem wir vertrauen können?«",
+      "choices": [
+        {"text": "Wir bleiben klein und prüfen jeden neuen Kontakt.", "flag": "bbs_circle_careful", "effects": [{"type": "stat", "stat": "wissen", "value": 2}, {"type": "npc_trust", "npc": "npc_stefan", "value": 1}]},
+        {"text": "Wir antworten überall – mit Handle, nie mit echtem Namen.", "flag": "bbs_circle_open", "effects": [{"type": "stat", "stat": "ruf", "value": 2}, {"type": "stat", "stat": "wissen", "value": 1}]}
+      ]
+    },
+    {
+      "id": "spotlight_1994", "quest_id": "q_stefan_spotlight_1994", "year": 1994, "week": 6,
+      "title": "Wem gehört der Applaus?", "memory": "stefan_spotlight_1994",
+      "text": "Neben dem Ergebniszettel der Compo liegt eure Masterdisk. Stefan fährt mit dem Finger über die Credits: »Vorne steht nur ein Handle. Aber ohne Musik, Grafik und die Nachtschicht der anderen gäbe es dieses Release nicht. Wie erzählen wir, wem es gehört?«",
+      "choices": [
+        {"text": "Jeder Beitrag bekommt sichtbar seinen Handle und seine Rolle.", "flag": "credits_collective_1994", "effects": [{"type": "stat", "stat": "ruf", "value": 1}, {"type": "npc_trust", "npc": "npc_stefan", "value": 2}]},
+        {"text": "Ein Handle führt das Projekt – und übernimmt dafür offen die Verantwortung.", "flag": "credits_lead_1994", "effects": [{"type": "stat", "stat": "wissen", "value": 1}, {"type": "stat", "stat": "ruf", "value": 2}]}
+      ]
+    },
+    {
+      "id": "distance_1995", "quest_id": "q_stefan_distance_1995", "year": 1995, "week": 6,
+      "title": "Was Entfernung aushält", "memory": "stefan_distance_1995",
+      "text": "Svens Platz ist leer, sein letzter Brief liegt zwischen zwei Disketten. Stefan schaut auf den Kalender: »Wenn wir nur sagen, dass wir uns melden, wird aus Wochen schnell ein Jahr. Was machen wir diesmal wirklich?«",
+      "choices": [
+        {"text": "Jeden Monat geht eine geprüfte Tauschdisk mit einem persönlichen Brief auf die Reise.", "flag": "friendship_by_post_1995", "effects": [{"type": "stat", "stat": "wissen", "value": 1}, {"type": "npc_trust", "npc": "npc_sven", "value": 2}]},
+        {"text": "Wir reservieren einen festen Telefonabend und bauen ein gemeinsames Projekt weiter.", "flag": "friendship_shared_project_1995", "effects": [{"type": "stat", "stat": "ruf", "value": 1}, {"type": "npc_trust", "npc": "npc_stefan", "value": 1}, {"type": "npc_trust", "npc": "npc_sven", "value": 1}]}
+      ]
+    },
+    {
+      "id": "people_1996", "quest_id": "q_stefan_people_1996", "year": 1996, "week": 6,
+      "title": "Menschen statt Leitungen", "memory": "stefan_people_1996",
+      "text": "Die Mailbox ist still. Stefan legt den Hörer neben das Modem. »Die Nummer ist weg – die Leute nicht. Was retten wir zuerst: die Adressliste oder einen festen Abend für alle?«",
+      "choices": [
+        {"text": "Wir drucken die Kontakte aus und verteilen Kopien.", "flag": "scene_contacts_archived", "effects": [{"type": "stat", "stat": "wissen", "value": 2}]},
+        {"text": "Erst ein Treffen ohne Rechner. Der Rest folgt danach.", "flag": "scene_people_first", "effects": [{"type": "npc_trust", "npc": "npc_stefan", "value": 2}, {"type": "stat", "stat": "ruf", "value": 1}]}
+      ]
+    },
+    {
+      "id": "grown_up_1997", "quest_id": "q_stefan_grown_up_1997", "year": 1997, "week": 6,
+      "title": "Erwachsen?", "memory": "stefan_grown_up_1997",
+      "text": "Zwischen Bewerbungsmappen liegt eure erste beschriftete Tauschdiskette. Stefan lächelt: »Wenn das Hobby Arbeit wird – was darf auf keinen Fall verschwinden?«",
+      "choices": [
+        {"text": "Ein Abend pro Woche bleibt nur für eigene Projekte.", "flag": "career_keeps_creative_night", "effects": [{"type": "stat", "stat": "wissen", "value": 1}, {"type": "npc_trust", "npc": "npc_stefan", "value": 2}]},
+        {"text": "Die Sammlung bleibt privat. Nicht alles wird ein Produkt.", "flag": "career_keeps_private_archive", "effects": [{"type": "stat", "stat": "ruf", "value": 1}, {"type": "npc_trust", "npc": "npc_stefan", "value": 2}]}
+      ]
+    },
+    {
+      "id": "online_1998", "quest_id": "q_stefan_online_1998", "year": 1998, "week": 4,
+      "title": "Online", "memory": "stefan_online_1998",
+      "text": "Das Gästebuch füllt sich schneller als erwartet – Lob, Fragen und eine beleidigende Nachricht. »Im Netz sieht jeder alles«, sagt Stefan. »Lassen wir es offen oder kuratieren wir?«",
+      "choices": [
+        {"text": "Offen lassen, aber sichtbar moderieren und archivieren.", "flag": "web_open_moderated", "effects": [{"type": "stat", "stat": "ruf", "value": 2}, {"type": "stat", "stat": "wissen", "value": 1}]},
+        {"text": "Nur geprüfte Einträge und ausgewählte Downloads zeigen.", "flag": "web_curated", "effects": [{"type": "stat", "stat": "wissen", "value": 2}, {"type": "npc_trust", "npc": "npc_stefan", "value": 1}]}
+      ]
+    },
+    {
+      "id": "last_normal_summer_1998", "quest_id": "q_stefan_last_summer_1998", "year": 1998, "week": 6,
+      "title": "Der letzte normale Sommer", "memory": "stefan_last_summer_1998",
+      "text": "Der Rechner lädt eine Webseite, während daneben die alte Sommerdisk von 1990 liegt. »Nächstes Jahr sind es zehn Jahre. Welche Fassung soll die Zeit überstehen?«",
+      "choices": [
+        {"text": "Eine geprüfte physische Zeitkapsel mit Ausdruck und Diskette.", "flag": "millennium_capsule_physical", "effects": [{"type": "stat", "stat": "wissen", "value": 2}]},
+        {"text": "Ein Netzarchiv – plus eine Offline-Kopie bei jedem von uns.", "flag": "millennium_capsule_hybrid", "effects": [{"type": "stat", "stat": "ruf", "value": 1}, {"type": "npc_trust", "npc": "npc_stefan", "value": 1}]}
+      ]
+    }
+  ]
+}

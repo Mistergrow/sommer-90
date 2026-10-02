@@ -1,0 +1,195 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_rocky",
+	"dialogues": {
+		"rocky_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Rocky",
+					"text": "Du willst mehr aus der Kiste holen? Speicher aufrüsten, externes Laufwerk, vielleicht später Festplatte. Ich kenn mich aus.",
+					"choices": [
+						{
+							"text": "Meine Prüfungsarbeit ist fertig. Nimmst du sie ab?",
+							"cond": {
+								"quest_stage": {
+									"id": "q_gesellenpruefung",
+									"stage": 2
+								}
+							},
+							"next": "n_exam_review",
+							"id": "reply_0"
+						},
+						{
+							"text": "Ich muss mich zwischen den Systemen entscheiden.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_systemwahl",
+									"stage": 0
+								}
+							},
+							"next": "n_system_choice",
+							"id": "reply_1"
+						},
+						{
+							"text": "Zeig mir das Sortiment.",
+							"next": null,
+							"effects": [
+								{
+									"type": "open_shop"
+								}
+							],
+							"id": "reply_2"
+						},
+						{
+							"text": "Erzähl mir mehr.",
+							"next": "n2",
+							"id": "reply_3"
+						},
+						{
+							"text": "Später.",
+							"next": null,
+							"id": "reply_4"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n2": {
+					"speaker": "Rocky",
+					"text": "Regel eins: erst Strom raus, dann schrauben. Regel zwei: statisch entladen. Regel drei: nie beim Löten husten.",
+					"choices": [
+						{
+							"text": "Gute Regeln.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n_exam_review": {
+					"speaker": "Rocky",
+					"text": "ESD sauber, Kabel geführt, Fehler reproduzierbar dokumentiert. Du hast nicht geraten – du hast geprüft. Das ist Gesellenarbeit.",
+					"choices": [
+						{
+							"text": "Dann unterschreib das Protokoll.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "gesellen_review"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n_system_choice": {
+					"speaker": "Rocky",
+					"text": "Es gibt keine neutrale Wahl. Mehr 3D-Leistung, die alte Maschine bewahren oder beides mühsam parallel – was zählt für dich?",
+					"choices": [
+						{
+							"text": "Ich wechsle auf den PC und lerne die neue Technik.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "system_path_pc"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_future_system"
+								}
+							],
+							"id": "reply_0"
+						},
+						{
+							"text": "Der Amiga bleibt mein kreatives Hauptsystem.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "system_path_amiga"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_future_system"
+								}
+							],
+							"id": "reply_1"
+						},
+						{
+							"text": "Ich halte beide Welten am Laufen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "system_path_hybrid"
+								},
+								{
+									"type": "quest_action",
+									"action": "choose_future_system"
+								}
+							],
+							"id": "reply_2"
+						}
+					],
+					"emotion": "thinking"
+				}
+			}
+		},
+		"call_rocky_geselle": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Rocky",
+					"text": "Gesellenprüfung. Ich schau nicht auf große Worte: sichere Montage, klare Messung, ehrlicher Befund. Bring ruhige Hände mit.",
+					"choices": [
+						{
+							"text": "Ich trete an.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "gesellenpruefung_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_rocky_system": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Rocky",
+					"text": "3D-Karten, neue PCs, alte Amigas – du kannst nicht alles ignorieren. Komm vorbei und entscheide nach dem, was du machen willst, nicht nach Werbung.",
+					"choices": [
+						{
+							"text": "Ich komme und treffe eine klare Wahl.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "systemwahl_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				}
+			}
+		}
+	}
+}

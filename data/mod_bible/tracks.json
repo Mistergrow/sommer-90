@@ -1,0 +1,1120 @@
+{
+ "_meta": "MOD-Bible — permanent, ENGINE FIRST. NUR vom Nutzer/Quellen bestaetigte Daten; Unbekanntes bleibt needs_verification=true. Claude erfindet nichts (Genauigkeit vor Vollstaendigkeit). Verifizierte Metadaten kommen ueber den gamescraper/Nutzer. Ziel-Groessen (Roadmap): ~30 Legenden, ~150 bekannt, ~600 Szene, Gesamt-Pool 5000-15000 (physische MODs separat in music.json).",
+ "tracks": {
+  "space_debris": {
+   "title": "Space Debris",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true
+  },
+  "crystal_dream": {
+   "title": "Crystal Dream",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "music_id": "crystal_dreams"
+  },
+  "stardust_memories": {
+   "title": "Stardust Memories",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true
+  },
+  "desert_dream": {
+   "title": "Desert Dream",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true
+  },
+  "second_reality": {
+   "title": "Second Reality",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "panic": {
+   "title": "Panic",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true
+  },
+  "mental_hangover": {
+   "title": "Mental Hangover",
+   "kind": "scene",
+   "artist": "Hollywood",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "stars": 5,
+   "music_id": "mental_hangover"
+  },
+  "nine_fingers": {
+   "title": "Nine Fingers",
+   "kind": "scene",
+   "artist": "Travolta",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "stars": 5,
+   "music_id": "nine_fingers"
+  },
+  "roots": {
+   "title": "Roots",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true
+  },
+  "enigma": {
+   "title": "Enigma",
+   "kind": "scene",
+   "artist": "Tip & Firefox",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "stars": 5,
+   "music_id": "enigma"
+  },
+  "arte": {
+   "title": "Arte",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "state_of_the_art": {
+   "title": "State of the Art",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "hardwired": {
+   "title": "Hardwired",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true
+  },
+  "unreal": {
+   "title": "Unreal",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "knulla_kuk": {
+   "title": "Knulla Kuk",
+   "kind": "scene",
+   "artist": "Moby",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "stars": 5,
+   "music_id": "knulla_kuk"
+  },
+  "jesus_on_e_s": {
+   "title": "Jesus on E's",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "freedom": {
+   "title": "Freedom",
+   "kind": "scene",
+   "artist": "Lizardking",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "stars": 5,
+   "music_id": "freedom"
+  },
+  "his_master_s_noise": {
+   "title": "His Master's Noise",
+   "kind": "scene",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "apidya": {
+   "title": "Apidya",
+   "kind": "game",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "pinball_dreams": {
+   "title": "Pinball Dreams",
+   "kind": "game",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "pinball_fantasies": {
+   "title": "Pinball Fantasies",
+   "kind": "game",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "turrican_ii": {
+   "title": "Turrican II",
+   "kind": "game",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "shadow_of_the_beast": {
+   "title": "Shadow of the Beast",
+   "kind": "game",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "lotus_iii": {
+   "title": "Lotus III",
+   "kind": "game",
+   "artist": "",
+   "group": "",
+   "year": 0,
+   "tracker": "",
+   "style": "",
+   "demo": "",
+   "party": "",
+   "popularity": 5,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   },
+   "needs_verification": true,
+   "wanted": true
+  },
+  "broken_dreams": {
+   "title": "Broken Dreams",
+   "kind": "scene",
+   "artist": "Captain",
+   "stars": 5,
+   "music_id": "broken_dreams",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "popcorn": {
+   "title": "Popcorn",
+   "kind": "scene",
+   "artist": "Ibanez",
+   "stars": 5,
+   "music_id": "popcorn",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "starwars_remix": {
+   "title": "Starwars Remix",
+   "kind": "scene",
+   "artist": "SLL",
+   "stars": 5,
+   "music_id": "starwars_remix",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "5_renaissance": {
+   "title": "5 Renaissance",
+   "kind": "scene",
+   "artist": "Absys",
+   "stars": 5,
+   "music_id": "5_renaissance",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "nexus_7": {
+   "title": "Nexus 7",
+   "kind": "scene",
+   "artist": "Interphace",
+   "stars": 5,
+   "music_id": "nexus_7",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "dream_off_mco": {
+   "title": "Dream Off (Mco)",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "dream_off_mco",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "think_twice_iii": {
+   "title": "Think Twice Iii",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "think_twice_iii",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "md_pacific": {
+   "title": "Md Pacific",
+   "kind": "scene",
+   "artist": "Deathstar",
+   "stars": 5,
+   "music_id": "md_pacific",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "voyage": {
+   "title": "Voyage",
+   "kind": "scene",
+   "artist": "4-Mat",
+   "stars": 5,
+   "music_id": "voyage",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "complications": {
+   "title": "Complications",
+   "kind": "scene",
+   "artist": "Phenomena",
+   "stars": 5,
+   "music_id": "complications",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "overload": {
+   "title": "Overload",
+   "kind": "scene",
+   "artist": "Tip & Mantronix",
+   "stars": 5,
+   "music_id": "overload",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "macrocosm": {
+   "title": "Macrocosm",
+   "kind": "scene",
+   "artist": "Firefox",
+   "stars": 5,
+   "music_id": "macrocosm",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "guitar_slinger": {
+   "title": "Guitar Slinger",
+   "kind": "scene",
+   "artist": "Jogeir Liljedahl",
+   "stars": 5,
+   "music_id": "guitar_slinger",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "fantastic_voyage": {
+   "title": "Fantastic Voyage",
+   "kind": "scene",
+   "artist": "Dr. Awesome",
+   "stars": 5,
+   "music_id": "fantastic_voyage",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "moongazer": {
+   "title": "Moongazer",
+   "kind": "scene",
+   "artist": "Dr. Awesome",
+   "stars": 5,
+   "music_id": "moongazer",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "towards_immortality": {
+   "title": "Towards Immortality",
+   "kind": "scene",
+   "artist": "Groo",
+   "stars": 5,
+   "music_id": "towards_immortality",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "cream_of_the_earth": {
+   "title": "Cream Of The Earth",
+   "kind": "scene",
+   "artist": "Romeo Knight",
+   "stars": 5,
+   "music_id": "cream_of_the_earth",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "echoing": {
+   "title": "Echoing",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "echoing",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "desert_dream_1": {
+   "title": "Desert Dream 1",
+   "kind": "scene",
+   "artist": "Kefrens",
+   "stars": 5,
+   "music_id": "desert_dream_1",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "odyssey": {
+   "title": "Odyssey",
+   "kind": "scene",
+   "artist": "Sam",
+   "stars": 5,
+   "music_id": "odyssey",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "gatecrashing_4": {
+   "title": "Gatecrashing 4",
+   "kind": "scene",
+   "artist": "Balance",
+   "stars": 5,
+   "music_id": "gatecrashing_4",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "whistling_fred": {
+   "title": "Whistling Fred",
+   "kind": "scene",
+   "artist": "Melo'Dee",
+   "stars": 5,
+   "music_id": "whistling_fred",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "spacedeliria": {
+   "title": "Spacedeliria",
+   "kind": "scene",
+   "artist": "Dr. Awesome",
+   "stars": 5,
+   "music_id": "spacedeliria",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "hardwired_intro": {
+   "title": "Hardwired Intro",
+   "kind": "scene",
+   "artist": "Jesper Kyd",
+   "stars": 5,
+   "music_id": "hardwired_intro",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "alien_breed_2_title": {
+   "title": "Alien Breed 2 Title",
+   "kind": "scene",
+   "artist": "Allister Brimble",
+   "stars": 5,
+   "music_id": "alien_breed_2_title",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "project_x_loader": {
+   "title": "Project X Loader",
+   "kind": "scene",
+   "artist": "Allister Brimble",
+   "stars": 5,
+   "music_id": "project_x_loader",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "superfrog_space": {
+   "title": "Superfrog Space",
+   "kind": "scene",
+   "artist": "Allister Brimble",
+   "stars": 5,
+   "music_id": "superfrog_space",
+   "needs_verification": true,
+   "availability": {
+    "club": true,
+    "bbs": true,
+    "flea": true,
+    "magazine": true,
+    "friend_rec": true
+   }
+  },
+  "spacemuzaxx": {
+   "title": "Spacemuzaxx",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "acid_toxid": {
+   "title": "Acid Toxid",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "apuva_megamix": {
+   "title": "Apuva Megamix",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "disco_mix": {
+   "title": "Disco Mix",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "disk_mag_piece": {
+   "title": "Disk Mag Piece",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "eye_of_the_tiger": {
+   "title": "Eye of the Tiger",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "hurricane": {
+   "title": "Hurricane",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "mega_kool_musik": {
+   "title": "Mega Kool Musik",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "mozartpiisi": {
+   "title": "Mozartpiisi",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "pavimix": {
+   "title": "Pavimix",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "voices_from_heaven": {
+   "title": "Voices from Heaven",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "mickus": {
+   "title": "Mickus",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "starshine": {
+   "title": "Starshine",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "future_brain": {
+   "title": "Future Brain",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "anomaly": {
+   "title": "Anomaly",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "satellite_one": {
+   "title": "Satellite One",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "catch_that_goblin": {
+   "title": "Catch That Goblin",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "guitar_slinger_remix": {
+   "title": "Guitar Slinger Remix",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "uncover": {
+   "title": "Uncover",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "world_of_plastic": {
+   "title": "World of Plastic",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "instant_harmony": {
+   "title": "Instant Harmony",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "eon": {
+   "title": "Eon",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  },
+  "electric_revenge": {
+   "title": "Electric Revenge",
+   "kind": "scene",
+   "artist": "",
+   "stars": 5,
+   "music_id": "",
+   "wanted": true,
+   "needs_verification": true
+  }
+ }
+}

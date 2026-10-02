@@ -1,0 +1,11 @@
+--- release-source/project.godot
++++ candidate/project.godot
+@@ -92,7 +92,7 @@
+ 
+ [editor_plugins]
+ 
+-enabled=PackedStringArray("res://addons/deko_werkstatt/plugin.cfg", "res://addons/export_runtime_assets/plugin.cfg", "res://addons/godot_mcp/plugin.cfg")
++enabled=PackedStringArray("res://addons/export_runtime_assets/plugin.cfg")
+ 
+ [internationalization]
+ 

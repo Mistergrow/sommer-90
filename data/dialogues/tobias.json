@@ -1,0 +1,173 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_tobias",
+	"dialogues": {
+		"tobias_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Assembler, Baby. Wenn der Copper tanzt und der Sinescroller läuft — dafür lebt man. Warst du schon mal auf einer Party?",
+					"choices": [
+						{
+							"text": "Was ist eine Demoparty?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Noch nicht.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Hunderte Leute, ein Wochenende, Rechner an Rechner, und am Ende der Compo weiß jeder, wer die beste Demo hat. Musst du erleben.",
+					"choices": [
+						{
+							"text": "Will ich!",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		},
+		"call_tobias_bytewerk": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Tobias. Stefan hat dich angekündigt. Freitag ist Clubabend — du darfst als Gast mitkommen und dir ansehen, was vor den eigentlichen Spielen auf manchen Disketten läuft.",
+					"choices": [
+						{
+							"text": "Ein Cracktro? Muss ich dafür schon programmieren können?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Nein. Dieses Jahr schaust du zu. Ich zeige dir, wie Code, Pixelgrafik und Musik zusammenkommen — und warum Reinigen, Kopieren und ein Szene-Release drei verschiedene Dinge sind.",
+					"choices": [
+						{
+							"text": "Dann komme ich als Gast.",
+							"next": "n3",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n3": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Gut. Fass keine fremden Master an und versprich nichts für die anderen. Wenn du nächsten Sommer wiederkommst, suchst du dir eine Rolle und wir bauen gemeinsam ein kleines Intro.",
+					"choices": [
+						{
+							"text": "Abgemacht. Erst ansehen, nächstes Jahr mitmachen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "club_guest_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Geh als Gast in den Club und sieh Tobias' Vorführung an."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "neutral"
+				}
+			}
+		},
+		"call_tobias_club_project": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Letztes Jahr hast du zugesehen. Diesmal bauen wir ein kurzes Gruppenintro. Du wählst ein Handle und genau eine Rolle: Code, Pixel, Musik, Testing oder Organisation.",
+					"choices": [
+						{
+							"text": "Und die anderen?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Tobias „TRSi“",
+					"text": "Daniel bringt ein Listing, Lisa Pixel, Basti Musik. Im Szene-Studio verknüpfst du deinen echten Beitrag, nimmst mindestens einen von uns als Handle-Credit auf, testest und frierst die Club-Disk. Dann präsentieren wir gemeinsam.",
+					"choices": [
+						{
+							"text": "Kein Solo-Release. Ich übernehme meinen Teil.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "club_project_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Das Club-Projekt läuft: Handle, Rolle, eigener Beitrag, Credits, QA und Präsentation."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		},
+		"call_tobias_cracktro": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Tobias „TRSi“",
+					"text": "1990 hast du zugesehen, 1991 im Team ein Intro gebaut. Jetzt bist du weit genug für das BYTEWERK: fiktive P-8-Schutzlogik, drei Testboots und ein eigenes Cracktro — ohne reale Patch-Adressen.",
+					"choices": [
+						{
+							"text": "Ich optimiere ein neues Cracktro.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "bytewerk_1994_intro",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "bytewerk_gelernt",
+									"value": true
+								},
+								{
+									"type": "flag",
+									"flag": "cracktro_intro",
+									"value": true
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				}
+			}
+		}
+	}
+}

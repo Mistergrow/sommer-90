@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dtnratsxwcklp"]
+
+[ext_resource type="PackedScene" uid="uid://3vsna42fdebb" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="MonitorTuneLab" unique_id=1125137863 instance=ExtResource("1")]
+minigame_id = "monitor_tune"

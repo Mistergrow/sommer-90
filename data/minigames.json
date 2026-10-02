@@ -1,0 +1,26 @@
+{
+	"minigames": [
+		{"id":"label_design", "title":"Etikett gestalten", "group":"KREATIV", "description":"Auftragsbasiertes 44×26-Designstudio mit Profiwerkzeugen, Qualitätswertung und dauerhaftem Diskettenetikett.", "entry":"diskbox", "year_from":1990},
+		{"id":"box_sort", "title":"Diskettenbox sortieren", "group":"SAMMLUNG", "description":"Die Box mit möglichst wenigen Tauschaktionen in die richtige Reihenfolge bringen.", "entry":"diskbox", "year_from":1990},
+		{"id":"drive_clean", "title":"Laufwerkskopf reinigen", "group":"REPARATUR", "description":"Den Lesekopf vorsichtig von Staub befreien; senkt echte Lese- und Schreibfehler.", "entry":"direct", "year_from":1990},
+		{"id":"joystick_repair", "title":"Joystick löten", "group":"REPARATUR", "description":"Vier Leitungen farbrichtig verbinden, ohne kalte Lötstellen zu erzeugen.", "entry":"direct", "year_from":1990},
+		{"id":"monitor_tune", "title":"Monitor einstellen", "group":"REPARATUR", "description":"Bildlage, Helligkeit und Fokus anhand des Testbilds kalibrieren.", "entry":"direct", "year_from":1990},
+		{"id":"cable_untangle", "title":"Kabel entwirren", "group":"REPARATUR", "description":"Mit genau einem freien Anschluss die Stecker Zug fuer Zug ordnen, bis kein Kabel mehr kreuzt.", "entry":"direct", "year_from":1990},
+		{"id":"bargain", "title":"Feilschen", "group":"FLOHMARKT", "description":"Argumente, Charme und Mut einsetzen, ohne die Geduld des Händlers aufzubrauchen.", "entry":"flea", "year_from":1990},
+		{"id":"bbs_link", "title":"BBS-Verbindung halten", "group":"ONLINE", "description":"Den Carrier während eines Downloads im grünen Empfangsfenster halten.", "entry":"bbs", "year_from":1993, "hardware":"modem"},
+		{"id":"tracker_pattern", "title":"Tracker-Pattern bauen", "group":"KREATIV", "description":"Kick, Snare, Hi-Hat und Bass zu einem eigenen 8-Step-Pattern setzen.", "entry":"tracker", "year_from":1990},
+		{"id":"paint", "title":"Deluxe Malen", "group":"KREATIV", "description":"Zweilagige 16-Farben-Workstation mit sieben Werkzeugen, Symmetrie, Undo/Redo, Art-Briefs und nativen Creator-Snapshots.", "entry":"paint", "year_from":1990},
+		{"id":"room_tidy", "title":"Zimmer aufräumen", "group":"ALLTAG", "description":"Müll, Wäsche und Medien per Drag-and-drop in die richtigen Raumzonen einsortieren.", "entry":"direct", "year_from":1990},
+		{"id":"hardware_assembly", "title":"Hardware zusammenbauen", "group":"REPARATUR", "description":"Bauteile in sicherer Werkstatt-Reihenfolge montieren.", "entry":"direct", "year_from":1990},
+		{"id":"listing_type", "title":"Listing abtippen", "group":"KREATIV", "description":"Ein Magazin-Listing exakt übertragen und als eigenes PD-Tool sichern.", "entry":"listing", "year_from":1990},
+		{"id":"scene_patch", "title":"BYTEWERK P-8", "group":"SZENE", "description":"Eine Gen-1-Arbeitskopie mit einem fiktiven Hex-Logikrätsel testen und ein authentisches Handle-Intro komponieren.", "entry":"diskbox", "year_from":1994},
+		{"id":"disk_rescue", "title":"Disketten-Datenrettung", "group":"REPARATUR", "description":"Beschädigte Sektoren sicher in ein Image lesen und das Verzeichnis aus Redundanz rekonstruieren.", "entry":"diskbox", "year_from":1990},
+		{"id":"disk_media_repair", "title":"Diskette physisch reparieren", "group":"REPARATUR", "description":"Nach dem X-COPY-Prueflauf Huelle, Nabe, Filz und Verschluss an Grubers mechanischer Kalibrierbank stabilisieren; Daten und Bootblock bleiben unveraendert.", "entry":"diskbox", "year_from":1991},
+		{"id":"printer_align", "title":"Nadeldrucker ausrichten", "group":"REPARATUR", "description":"Traktor, Kopfspalt, Bidirektion und beim Farbmodell CMY registrieren.", "entry":"printer", "year_from":1990},
+		{"id":"mixtape", "title":"Mixtape aufnehmen", "group":"KREATIV", "description":"Eigene MOD-Sammlung auf zwei Bandseiten dramaturgisch und pegelrein kuratieren.", "entry":"stereo", "year_from":1990},
+		{"id":"cracktro_opt", "title":"Cracktro-Optimierung", "group":"SZENE", "description":"PAL-Profiler lesen und CPU, Chip-RAM, Blitter und Qualität gemeinsam ins Budget bringen.", "entry":"demo", "year_from":1994},
+		{"id":"shop_diagnosis", "title":"Laden-Diagnoseauftrag", "group":"REPARATUR", "description":"Kundenfehler mit Messungen eingrenzen und einen evidenzbasierten Befund abgeben.", "entry":"jobs", "year_from":1990},
+		{"id":"job_shift", "title":"Spielbare Arbeitsschicht", "group":"ALLTAG", "description":"Zustellroute, Warenlager, Reparaturbank oder Code-Auftrag als echte Schicht statt Klick-Auszahlung spielen.", "entry":"jobs", "year_from":1990},
+		{"id":"household_sprint", "title":"Hausarbeits-Sprint", "group":"ALLTAG", "description":"Bezahlte Hausarbeit als kurze Sammel-, Schrubber- und Bahnen-Minispiele statt Klick-Auszahlung erledigen.", "entry":"jobs", "year_from":1990}
+	]
+}

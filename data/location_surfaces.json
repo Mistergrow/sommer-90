@@ -1,0 +1,464 @@
+{
+  "version": 2.0,
+  "comment": "Mit scenes/editors/SurfaceEditor.tscn oder F2 in einer Orts-Preview erzeugte, normalisierte Architekturflächen. Ausgewählte Innen-/Verkaufsorte und das Retro-Museum besitzen einen kuratierten Grundpass; weitere Orte behalten ihr bisheriges 2,5D-Profil, bis sie im Editor markiert werden. Reihenfolge: spätere Flächen liegen bei Überlappung vorn.",
+  "locations": {
+    "ROOM_MASTER": {
+      "surfaces": [
+        {
+          "id": "floor_01",
+          "type": "floor",
+          "points": [
+            [
+              0.0012,
+              0.9992
+            ],
+            [
+              0.2213,
+              0.6958
+            ],
+            [
+              0.7997,
+              0.6985
+            ],
+            [
+              0.9504,
+              0.9956
+            ]
+          ],
+          "depth_far": 0.2,
+          "depth_near": 0.98
+        },
+        {
+          "id": "wall_back",
+          "type": "wall",
+          "points": [
+            [
+              0.2233,
+              0.6905
+            ],
+            [
+              0.2228,
+              0.003
+            ],
+            [
+              0.357,
+              0.0021
+            ],
+            [
+              0.3559,
+              0.4424
+            ],
+            [
+              0.7073,
+              0.4424
+            ],
+            [
+              0.7039,
+              0.0056
+            ],
+            [
+              0.9479,
+              0.0065
+            ],
+            [
+              0.9489,
+              0.4847
+            ],
+            [
+              0.8007,
+              0.4811
+            ],
+            [
+              0.7982,
+              0.694
+            ]
+          ],
+          "depth_far": 0.08,
+          "depth_near": 0.22,
+          "wall_role": "back"
+        },
+        {
+          "id": "window_left",
+          "type": "window",
+          "points": [
+            [
+              0.389,
+              0.0039
+            ],
+            [
+              0.3895,
+              0.3871
+            ],
+            [
+              0.5252,
+              0.3871
+            ],
+            [
+              0.5257,
+              0.0021
+            ]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.05
+        },
+        {
+          "id": "window_right",
+          "type": "window",
+          "points": [
+            [
+              0.5507,
+              0.0039
+            ],
+            [
+              0.6779,
+              0.0039
+            ],
+            [
+              0.6709,
+              0.3889
+            ],
+            [
+              0.5477,
+              0.388
+            ]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.05
+        },
+        {
+          "id": "wall_right",
+          "type": "wall",
+          "points": [
+            [
+              0.9524,
+              0.0074
+            ],
+            [
+              0.9998,
+              0.0039
+            ],
+            [
+              0.9983,
+              0.6399
+            ],
+            [
+              0.9803,
+              0.6426
+            ],
+            [
+              0.9798,
+              0.5122
+            ],
+            [
+              0.9514,
+              0.4873
+            ]
+          ],
+          "depth_far": 0.12,
+          "depth_near": 0.58,
+          "wall_role": "right"
+        }
+      ]
+    },
+    "LOCATION_BANK_MASTER": {
+      "surfaces": [
+        {
+          "id": "bank_floor",
+          "type": "floor",
+          "points": [
+            [0.0, 1.0],
+            [0.0, 0.78],
+            [0.23, 0.655],
+            [0.84, 0.645],
+            [1.0, 0.77],
+            [1.0, 1.0]
+          ],
+          "depth_far": 0.18,
+          "depth_near": 0.94
+        },
+        {
+          "id": "bank_back_wall",
+          "type": "wall",
+          "points": [
+            [0.11, 0.12],
+            [0.955, 0.12],
+            [0.935, 0.645],
+            [0.23, 0.655],
+            [0.12, 0.52]
+          ],
+          "depth_far": 0.07,
+          "depth_near": 0.18,
+          "wall_role": "back"
+        },
+        {
+          "id": "bank_left_opening",
+          "type": "window",
+          "points": [
+            [0.0, 0.09],
+            [0.105, 0.12],
+            [0.115, 0.53],
+            [0.0, 0.64]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.04
+        },
+        {
+          "id": "bank_ceiling",
+          "type": "ceiling",
+          "points": [
+            [0.0, 0.0],
+            [1.0, 0.0],
+            [0.955, 0.12],
+            [0.11, 0.12],
+            [0.0, 0.09]
+          ],
+          "depth_far": 0.08,
+          "depth_near": 0.34
+        }
+      ]
+    },
+    "LOCATION_COMPUTER_CLUB_MASTER": {
+      "surfaces": [
+        {
+          "id": "club_floor",
+          "type": "floor",
+          "points": [
+            [0.0, 1.0],
+            [0.0, 0.69],
+            [0.25, 0.54],
+            [0.82, 0.53],
+            [1.0, 0.66],
+            [1.0, 1.0]
+          ],
+          "depth_far": 0.17,
+          "depth_near": 0.96
+        },
+        {
+          "id": "club_back_wall",
+          "type": "wall",
+          "points": [
+            [0.0, 0.09],
+            [1.0, 0.12],
+            [1.0, 0.66],
+            [0.82, 0.53],
+            [0.25, 0.54],
+            [0.0, 0.69]
+          ],
+          "depth_far": 0.07,
+          "depth_near": 0.2,
+          "wall_role": "back"
+        },
+        {
+          "id": "club_window_left",
+          "type": "window",
+          "points": [
+            [0.246, 0.095],
+            [0.397, 0.105],
+            [0.397, 0.352],
+            [0.249, 0.36]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.04
+        },
+        {
+          "id": "club_window_right",
+          "type": "window",
+          "points": [
+            [0.41, 0.11],
+            [0.507, 0.115],
+            [0.505, 0.345],
+            [0.413, 0.35]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.04
+        },
+        {
+          "id": "club_ceiling",
+          "type": "ceiling",
+          "points": [
+            [0.0, 0.0],
+            [1.0, 0.0],
+            [1.0, 0.12],
+            [0.0, 0.09]
+          ],
+          "depth_far": 0.08,
+          "depth_near": 0.38
+        }
+      ]
+    },
+    "LOCATION_POST_MASTER": {
+      "surfaces": [
+        {
+          "id": "post_floor",
+          "type": "floor",
+          "points": [
+            [0.0, 1.0],
+            [0.0, 0.86],
+            [0.22, 0.79],
+            [0.39, 0.635],
+            [0.84, 0.635],
+            [1.0, 0.84],
+            [1.0, 1.0]
+          ],
+          "depth_far": 0.18,
+          "depth_near": 0.95
+        },
+        {
+          "id": "post_back_wall",
+          "type": "wall",
+          "points": [
+            [0.08, 0.11],
+            [0.94, 0.12],
+            [0.91, 0.64],
+            [0.39, 0.635],
+            [0.22, 0.79],
+            [0.08, 0.56]
+          ],
+          "depth_far": 0.07,
+          "depth_near": 0.19,
+          "wall_role": "back"
+        },
+        {
+          "id": "post_left_opening",
+          "type": "window",
+          "points": [
+            [0.0, 0.08],
+            [0.08, 0.11],
+            [0.08, 0.56],
+            [0.0, 0.67]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.04
+        },
+        {
+          "id": "post_ceiling",
+          "type": "ceiling",
+          "points": [
+            [0.0, 0.0],
+            [1.0, 0.0],
+            [0.94, 0.12],
+            [0.08, 0.11],
+            [0.0, 0.08]
+          ],
+          "depth_far": 0.08,
+          "depth_near": 0.34
+        }
+      ]
+    },
+    "LOCATION_KIOSK_MASTER": {
+      "surfaces": [
+        {
+          "id": "kiosk_ground",
+          "type": "floor",
+          "points": [
+            [0.0, 1.0],
+            [0.0, 0.85],
+            [0.12, 0.79],
+            [0.89, 0.79],
+            [1.0, 0.87],
+            [1.0, 1.0]
+          ],
+          "depth_far": 0.2,
+          "depth_near": 0.92
+        },
+        {
+          "id": "kiosk_front",
+          "type": "wall",
+          "points": [
+            [0.085, 0.1],
+            [0.94, 0.1],
+            [0.91, 0.79],
+            [0.12, 0.79]
+          ],
+          "depth_far": 0.08,
+          "depth_near": 0.2,
+          "wall_role": "back"
+        },
+        {
+          "id": "kiosk_sales_opening",
+          "type": "window",
+          "points": [
+            [0.145, 0.235],
+            [0.724, 0.235],
+            [0.718, 0.54],
+            [0.148, 0.54]
+          ],
+          "depth_far": 0.01,
+          "depth_near": 0.04
+        },
+        {
+          "id": "kiosk_cooler_glass",
+          "type": "window",
+          "points": [
+            [0.745, 0.25],
+            [0.884, 0.25],
+            [0.88, 0.66],
+            [0.75, 0.66]
+          ],
+          "depth_far": 0.02,
+          "depth_near": 0.05
+        }
+      ]
+    },
+    "LOCATION_RETRO_MUSEUM_MASTER": {
+      "surfaces": [
+        {
+          "id": "museum_floor",
+          "type": "floor",
+          "points": [
+            [0.0, 1.0],
+            [0.0, 0.82],
+            [0.205, 0.665],
+            [0.79, 0.65],
+            [1.0, 0.82],
+            [1.0, 1.0]
+          ],
+          "depth_far": 0.18,
+          "depth_near": 0.96
+        },
+        {
+          "id": "museum_back_wall",
+          "type": "wall",
+          "points": [
+            [0.19, 0.03],
+            [0.82, 0.03],
+            [0.82, 0.61],
+            [0.79, 0.65],
+            [0.205, 0.665],
+            [0.19, 0.6]
+          ],
+          "depth_far": 0.055,
+          "depth_near": 0.18,
+          "wall_role": "back"
+        },
+        {
+          "id": "museum_ceiling",
+          "type": "ceiling",
+          "points": [
+            [0.18, 0.0],
+            [0.83, 0.0],
+            [0.82, 0.03],
+            [0.19, 0.03]
+          ],
+          "depth_far": 0.08,
+          "depth_near": 0.3
+        },
+        {
+          "id": "museum_winter_window",
+          "type": "window",
+          "points": [
+            [0.421, 0.115],
+            [0.653, 0.115],
+            [0.652, 0.488],
+            [0.422, 0.488]
+          ],
+          "depth_far": 0.008,
+          "depth_near": 0.035
+        }
+      ]
+    },
+    "LOCATION_WALDRAND_MASTER": {
+      "surfaces": []
+    }
+  }
+}

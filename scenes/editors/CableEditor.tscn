@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dk3kpxy2rml2a"]
+
+[ext_resource type="Script" uid="uid://c17d6cypq31r7" path="res://scripts/gfx/cable_editor.gd" id="1_cab"]
+
+[node name="CableEditor" type="Control" unique_id=1245210892]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cab")

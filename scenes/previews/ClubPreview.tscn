@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c6wndj6aa8n4n"]
+
+[ext_resource type="Script" uid="uid://dop14oy4sx2kb" path="res://scripts/gfx/location_preview.gd" id="1_prev"]
+
+[node name="ClubPreview" type="Control" unique_id=9583835]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_prev")
+location_id = "computer_club"
+slot = 3

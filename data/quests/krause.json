@@ -1,0 +1,104 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_krause",
+  "quests": [
+    {
+      "id": "q_haendler",
+      "title": "Kopien für den Händler",
+      "giver": "npc_krause",
+      "prereq": {
+        "year_min": 1993,
+        "flag": "haendler_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Krause kennt einen diskreten Abnehmer am Trampelpfad. Er nimmt nur eigene, lauffähige Spielkopien — niemals Quellen oder Master."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause X-COPY starten und von einer Spielquelle eine frische Verkaufskopie ziehen. Quelle und Master bleiben in deinem Archiv.",
+          "map_location": "room",
+          "goal": {
+            "action": "make_copy"
+          }
+        },
+        {
+          "desc": "Bring die eigene Spielkopie dem Händler: Montag bis Freitag am Trampelpfad im Wald, Samstag am Rand des Flohmarkts. Er prüft Zustand und Satz, bezahlt direkt und lehnt Quellen sowie Master ab.",
+          "map_locations": [
+            "dealer_clearing",
+            "flea_market"
+          ],
+          "goal": {
+            "action": "dealer_delivery"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 15
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Der Händler nimmt deine saubere Kopie. Quelle und Master liegen weiterhin sicher im Archiv."
+        }
+      ]
+    },
+    {
+      "id": "q_krause_abschied",
+      "title": "Krauses letzte Kiste",
+      "giver": "npc_krause",
+      "prereq": {
+        "year_min": 1997,
+        "needs": [
+          "krause_rente"
+        ],
+        "flag": "krause_abschied_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Krause räumt seinen Stand. Ein letzter Fund soll in gute Hände kommen."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Kauf auf dem Flohmarkt bewusst ein letztes Erinnerungsstück.",
+          "map_location": "flea_market",
+          "goal": {
+            "action": "flea_purchase"
+          }
+        },
+        {
+          "desc": "Sprich anschließend mit Krause über das Ende seines Standes.",
+          "map_location": "flea_market",
+          "goal": {
+            "action": "krause_farewell"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "npc_trust",
+          "npc": "npc_krause",
+          "value": 6
+        },
+        {
+          "type": "flag",
+          "flag": "krause_legacy"
+        },
+        {
+          "type": "toast",
+          "text": "Krause klappt den Tapeziertisch zu. Deine letzte Kiste bleibt als Erinnerung."
+        }
+      ]
+    }
+  ]
+}

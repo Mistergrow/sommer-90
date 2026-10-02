@@ -1,0 +1,172 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_daniel",
+	"dialogues": {
+		"daniel_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Daniel",
+					"text": "Ich hab gestern bis drei Uhr in einer Mailbox gehangen. Modemgeräusche sind Musik, sag ich dir.",
+					"choices": [
+						{
+							"text": "Wie kommt man da rein?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Klingt anstrengend.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n2": {
+					"speaker": "Daniel",
+					"text": "Brauchst ein Modem und die richtige Nummer. Der Sysop ist streng, aber fair. Ich geb dir mal 'ne Liste.",
+					"choices": [
+						{
+							"text": "Stark, danke!",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_daniel",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				}
+			}
+		},
+		"visit_daniel_listing": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Daniel",
+					"text": "Stefan hat erzählt, du hast jetzt einen Amiga! Weißt du, was das Beste ist? Du musst Spiele nicht kaufen — du kannst sie SCHREIBEN.",
+					"choices": [
+						{
+							"text": "Selber schreiben? Wie das?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				},
+				"n2": {
+					"speaker": "Daniel",
+					"text": "In den Zeitschriften sind Listings — ganze Programme zum Abtippen, Zeile für Zeile. So hab ich angefangen. Klingt öde, aber wenn’s dann LÄUFT … bestes Gefühl.",
+					"choices": [
+						{
+							"text": "Zeig ich dir — ich tipp eins ab!",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "tut_listing_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Tipp im Listing-Editor ein Programm aus der Zeitschrift ab."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				}
+			}
+		},
+		"call_daniel_homepage": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Daniel",
+					"text": "Ich hab jetzt eine E-MAIL-Adresse. Und weißt du, was noch? Eine HOMEPAGE kann jeder haben. Eine eigene Seite, die die GANZE WELT sehen kann!",
+					"choices": [
+						{
+							"text": "Die ganze Welt? Zeig her!",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "surprised"
+				},
+				"n2": {
+					"speaker": "Daniel",
+					"text": "Bau dir eine! HTML ist halb so wild — und stell deine Demos, deine Sammlung, ALLES drauf. In zehn Jahren lacht keiner mehr über uns Computerfreaks, glaub mir.",
+					"choices": [
+						{
+							"text": "Eine eigene Homepage … ich mach das.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "homepage_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Bau deine eigene Homepage (Internet ab 1998)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "talking"
+				}
+			}
+		},
+		"call_daniel_y2k": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Daniel",
+					"text": "Hör zu, ganz ruhig: Am 1.1.2000 denken die Computer, es ist 1900. ZWEI ZIFFERN, verstehst du? Banken! Kraftwerke! DEIN Amiga vielleicht auch!",
+					"choices": [
+						{
+							"text": "Und was machen wir jetzt?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "nervous"
+				},
+				"n2": {
+					"speaker": "Daniel",
+					"text": "Vorbereiten! Backups, Systeme prüfen, alles dokumentieren. Wenn Silvester das Chaos kommt, sind WIR die, die vorbereitet waren.",
+					"choices": [
+						{
+							"text": "Okay, okay — ich prüf meine Systeme.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "y2k_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Bereite dich aufs Jahr 2000 vor (Backups & Systeme prüfen)."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				}
+			}
+		}
+	}
+}

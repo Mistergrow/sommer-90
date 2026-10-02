@@ -1,0 +1,6 @@
+{
+	"schema": "location.v1",
+	"category": "location",
+	"note": "Master-Datenbank. Waechst nur durch Inhalt. Struktur spiegelt bei Bedarf das Software-Modell (A-Z).",
+	"entries": []
+}

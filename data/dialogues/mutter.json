@@ -1,0 +1,112 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_mutter",
+	"dialogues": {
+		"mutter_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Mama",
+					"text": "Isst du eigentlich noch was Ordentliches? Und nicht wieder die halbe Nacht vor der Kiste, hörst du?",
+					"choices": [
+						{
+							"text": "Der neue Arbeitsbereich ist fertig.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_mutter_studio",
+									"stage": 1
+								}
+							},
+							"next": "n_handoff",
+							"id": "reply_0"
+						},
+						{
+							"text": "Können wir aus der Computerecke einen richtigen Arbeitsplatz machen?",
+							"cond": [
+								{
+									"year_min": 1997
+								},
+								{
+									"not_flag": "mutter_studio_intro"
+								}
+							],
+							"next": "n_quest_intro",
+							"id": "reply_1"
+						},
+						{
+							"text": "Ja, Mama.",
+							"next": "n2",
+							"id": "reply_2"
+						},
+						{
+							"text": "Gleich, versprochen!",
+							"next": null,
+							"id": "reply_3"
+						}
+					],
+					"emotion": "neutral"
+				},
+				"n_quest_intro": {
+					"speaker": "Mama",
+					"text": "Ein Studio? Im Moment ist es eher ein Hindernislauf aus Kartons und Kabeln. Wenn du Laufwege freihältst, Datenträger ordentlich lagerst und das Bett nicht zum Ersatzteillager machst, reden wir darüber.",
+					"choices": [
+						{
+							"text": "Ich mache daraus einen sicheren Arbeitsplatz.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "mutter_studio_intro",
+									"value": true
+								},
+								{
+									"type": "memory_once",
+									"id": "mutter_studio_started"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				},
+				"n_handoff": {
+					"speaker": "Mama",
+					"text": "Jetzt komme ich bis zum Fenster, ohne über ein Kabel zu stolpern. Der Rechner hat seinen Platz und du auch. Wenn nachts gearbeitet wird, wird vorher gegessen — und der Fluchtweg bleibt frei.",
+					"choices": [
+						{
+							"text": "Abgemacht: Studio und Zuhause, beides bleibt erhalten.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "mutter_studio_handoff"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Mama",
+					"text": "Na gut. Es gibt gleich was Warmes. Und ruf mal deine Oma an, die freut sich.",
+					"choices": [
+						{
+							"text": "Mach ich.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "eltern_toleranz",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

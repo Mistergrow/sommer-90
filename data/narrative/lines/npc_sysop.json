@@ -1,0 +1,244 @@
+{
+	"npc": "npc_sysop",
+	"comment": "Zeilen-Pool fuer npc_sysop. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "sys_b01",
+			"text": "Du bist in meiner Mailbox. Regeln: höflich bleiben."
+		},
+		{
+			"id": "sys_b02",
+			"text": "Was du lädst, lädst du auch hoch. So ist das Gesetz."
+		},
+		{
+			"id": "sys_b03",
+			"text": "Ruf einfach mal an, nachts ist am meisten los."
+		},
+		{
+			"id": "sys_b04",
+			"text": "Meine Box, meine Regeln. Aber die sind fair, keine Sorge."
+		},
+		{
+			"id": "sys_b05",
+			"text": "Ich sitz hier und halt die Leitung offen für Leute wie dich."
+		},
+		{
+			"id": "sys_b06",
+			"text": "Brauchst du was? Schau in die Bretter, da steht viel."
+		},
+		{
+			"id": "sys_b07",
+			"text": "Ein gutes Board lebt von guten Nutzern. Sei einer."
+		},
+		{
+			"id": "sys_b08",
+			"text": "Ich kenn meine Nutzer besser als manche ihre Nachbarn."
+		},
+		{
+			"id": "sys_b09",
+			"text": "Höflichkeit im Netz kostet nichts. Unhöflichkeit die Zugangsberechtigung."
+		},
+		{
+			"id": "sys_b10",
+			"text": "Nachts, wenn alles schläft, ist die Box am lebendigsten."
+		},
+		{
+			"id": "sys_b11",
+			"text": "Ich hab schon Freundschaften über Kabel entstehen sehen. Verrückt, was?"
+		},
+		{
+			"id": "sys_b12",
+			"text": "Kaffee, Modem, Nachtschicht — mein Dreiklang."
+		},
+		{
+			"id": "sys_b13",
+			"text": "Wer Mist baut, fliegt raus. Sonst bin ich die Ruhe selbst."
+		},
+		{
+			"id": "sys_b14",
+			"text": "Ich moderier lieber leise als laut. Wirkt besser."
+		},
+		{
+			"id": "sys_b15",
+			"text": "Meine Box ist klein, aber fein. Qualität vor Quantität."
+		},
+		{
+			"id": "sys_b16",
+			"text": "Frag ruhig, ich helf, wo ich kann. Dafür bin ich der Sysop."
+		},
+		{
+			"id": "sys_b17",
+			"text": "Ein Netz ist nur so gut wie die Menschen darin."
+		},
+		{
+			"id": "sys_b18",
+			"text": "Ich les jede Nachricht. Ja, auch deine."
+		},
+		{
+			"id": "sys_b19",
+			"text": "Geduld — die Leitung ist manchmal besetzt. Ruf später wieder an."
+		},
+		{
+			"id": "sys_b20",
+			"text": "Ich mach das aus Leidenschaft, nicht für Geld. Geld kostet es mich."
+		},
+		{
+			"id": "sys_b21",
+			"text": "Ein neuer Nutzer ist wie ein neuer Nachbar. Willkommen."
+		},
+		{
+			"id": "sys_b22",
+			"text": "Halt dich an die Netiquette, dann verstehen wir uns."
+		},
+		{
+			"id": "sys_b23",
+			"text": "Ich hab Datenschätze hier, die findest du nirgends sonst."
+		},
+		{
+			"id": "sys_b24",
+			"text": "Die Nacht gehört den Modems. Und den Träumern."
+		},
+		{
+			"id": "sys_b25",
+			"text": "Wer teilt, gewinnt. Wer hortet, verliert. Meine Philosophie."
+		},
+		{
+			"id": "sys_b26",
+			"text": "Ich bau das hier seit Jahren. Herzblut steckt drin."
+		},
+		{
+			"id": "sys_b27",
+			"text": "Sei geduldig mit der Technik, sie ist geduldig mit dir."
+		},
+		{
+			"id": "sys_b28",
+			"text": "Meld dich anständig an, dann läuft alles glatt."
+		},
+		{
+			"id": "sys_b29",
+			"text": "Ein Sysop schläft nie ganz. Immer ein Ohr an der Leitung."
+		},
+		{
+			"id": "sys_b30",
+			"text": "Willkommen zurück. Schön, dass du wieder reinschaust."
+		},
+		{
+			"id": "sy_boards",
+			"to": 1996,
+			"topic": "bbs",
+			"text": "Bretter, Nachrichten, ein bisschen PD-Software. Und Leute, die nachts wach sind wie du."
+		},
+		{
+			"id": "sy_stolz",
+			"from": 1992,
+			"to": 1995,
+			"topic": "bbs",
+			"text": "Zweihundert Nutzer hab ich. Alles über eine Leitung, einen Rechner, viel Kaffee. Mein kleines Reich."
+		},
+		{
+			"id": "sy_verliert",
+			"from": 1996,
+			"needs": [
+				"sysop_verliert"
+			],
+			"once": true,
+			"topic": "wandel",
+			"text": "Die Nutzer wandern ab, ins Internet. Verstehe ich ja. Aber ein bisschen weh tut's schon."
+		},
+		{
+			"id": "sy_ende",
+			"from": 1998,
+			"needs": [
+				"sysop_verliert"
+			],
+			"topic": "wandel",
+			"text": "Bald mach ich die Box dicht. Zehn Jahre Modem-Rauschen. War 'ne gute Zeit, ehrlich."
+		},
+		{
+			"id": "sy_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Weißt du, was ich vermissen werde? Dieses Einwahlgeräusch. Für uns war das der Klang der Freiheit."
+		},
+		{
+			"id": "sys_x01",
+			"topic": "bbs",
+			"text": "Du bist in meiner Box. Regeln sind simpel: höflich bleiben, was du lädst, lädst du auch hoch."
+		},
+		{
+			"id": "sys_x02",
+			"topic": "bbs",
+			"text": "Nachts, wenn alles schläft, ist die Box am lebendigsten. Das ist die Stunde der Träumer."
+		},
+		{
+			"id": "sys_x03",
+			"topic": "bbs",
+			"text": "Ich kenn meine Nutzer besser als manche ihre Nachbarn. Über Kabel, aber echt."
+		},
+		{
+			"id": "sys_x04",
+			"topic": "bbs",
+			"text": "Ein Netz ist nur so gut wie die Menschen darin. Sei einer von den Guten."
+		},
+		{
+			"id": "sys_x05",
+			"topic": "bbs",
+			"text": "Kaffee, Modem, Nachtschicht. Mein Dreiklang, seit Jahren. Ich würd nix dran ändern."
+		},
+		{
+			"id": "sys_x06",
+			"topic": "bbs",
+			"text": "Ich mach das aus Leidenschaft, nicht für Geld. Geld kostet es mich, ehrlich gesagt."
+		},
+		{
+			"id": "sys_x07",
+			"topic": "bbs",
+			"text": "Wer Mist baut, fliegt raus. Sonst bin ich die Ruhe selbst. Ein Sysop muss beides können."
+		},
+		{
+			"id": "sys_x08",
+			"topic": "bbs",
+			"text": "Ich hab Datenschätze hier, die findest du nirgends sonst. Kleine Box, feines Sortiment."
+		},
+		{
+			"id": "sys_x09",
+			"topic": "bbs",
+			"text": "Meld dich anständig an, dann verstehen wir uns. Netiquette kostet nichts."
+		},
+		{
+			"id": "sys_x10",
+			"topic": "bbs",
+			"text": "Ich les jede Nachricht. Ja, auch deine. Nicht aus Neugier — aus Verantwortung."
+		},
+		{
+			"id": "sys_x11",
+			"from": 0,
+			"needs": [
+				"sysop_verliert"
+			],
+			"topic": "aera",
+			"text": "Die Nutzer wandern ab, ins Internet. Versteh ich ja. Aber ein bisschen weh tut's schon."
+		},
+		{
+			"id": "sys_x12",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Bald mach ich die Box dicht. Zehn Jahre Modem-Rauschen. War 'ne gute Zeit, wirklich."
+		},
+		{
+			"id": "sys_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Weißt du, was ich vermissen werde? Dieses Einwahlgeräusch. Für uns war das der Klang der Freiheit."
+		}
+	]
+}

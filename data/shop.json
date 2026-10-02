@@ -1,0 +1,830 @@
+{
+	"comment": "Computerladen-Sortiment. year_available/year_obsolete binden Items an die Living Timeline. action bestimmt, was der Kauf ausloest (siehe shop_manager.gd). Preise in DM; der Jahres-Preisfaktor aus timeline.json wird daraufgerechnet. Artikel mit order_only:true stehen nicht im Regal, sondern im Bestellkatalog (OrderManager): bezahlen, ~order_days Tage warten, dann abholen.",
+	"items": [
+		{
+			"id": "shop_blank_disk",
+			"preview_asset": "res://assets/backgrounds/layers/FLOPPY_35_DD_BLUE_FRONT_V01.png",
+			"name": "Leerdiskette 3,5\" DD",
+			"desc": "Fabrikneu. 880 KB Freiheit.",
+			"price": 3,
+			"year_available": 1990,
+			"year_obsolete": 1998,
+			"action": "add_blank_disk",
+			"payload": {
+				"template": "disk_blank_dd"
+			}
+		},
+		{
+			"id": "shop_label_pack",
+			"preview_asset": "res://assets/ui/hud/etiketten.png",
+			"name": "Etikettenbogen (10 Stk.)",
+			"desc": "Selbstklebend. Fuer ordentliche Archive.",
+			"price": 2,
+			"year_available": 1990,
+			"year_obsolete": 1999,
+			"action": "add_item",
+			"payload": {
+				"item": "etiketten",
+				"amount": 10
+			}
+		},
+		{
+			"id": "shop_cleaning_kit",
+			"preview_asset": "res://assets/ui/hud/reinigung.png",
+			"name": "Reinigungsdiskette",
+			"desc": "Gegen verschmutzte Laufwerkskoepfe.",
+			"price": 12,
+			"year_available": 1990,
+			"year_obsolete": 1999,
+			"action": "add_item",
+			"payload": {
+				"item": "reinigungsdiskette",
+				"amount": 1
+			}
+		},
+		{
+			"id": "shop_disk_box",
+			"preview_asset": "res://assets/backgrounds/layers/DISKBOX_12_SMOKED_V02.png",
+			"name": "Diskettenbox (12 Plaetze)",
+			"desc": "Rauchglas-Plastik. Abschliessbar. Fast.",
+			"price": 25,
+			"year_available": 1990,
+			"year_obsolete": 1999,
+			"action": "add_room_object",
+			"payload": {
+				"object": "diskbox"
+			}
+		},
+		{
+			"id": "shop_external_drive",
+			"preview_asset": "res://assets/backgrounds/layers/DRIVE_COMMODORE_A1011_V01.png",
+			"name": "Externes Diskettenlaufwerk",
+			"db_name": "Amiga A1011 (extern)",
+			"desc": "DF1: Prueft und sichert schneller, weniger Fehler.",
+			"price": 89,
+			"year_available": 1990,
+			"year_obsolete": 1995,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "external_drive"
+			}
+		},
+		{
+			"id": "shop_modem_2400",
+			"preview_asset": "res://assets/backgrounds/layers/MODEM_2400_MASTER_V01.png",
+			"name": "2400-Baud-Modem",
+			"desc": "Das Tor zur Online-Welt: BBS, Shareware, Kleinanzeigen. Piept beim Einwaehlen.",
+			"price": 149,
+			"year_available": 1990,
+			"year_obsolete": 1997,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "modem"
+			}
+		},
+		{
+			"id": "shop_answering_machine",
+			"preview_asset": "res://assets/backgrounds/layers/ANSWERING_MACHINE_TAM30_V01.png",
+			"name": "Anrufbeantworter TAM-30",
+			"desc": "Nimmt Anrufe auf, wenn du nicht da bist. Muss ans Telefon angeschlossen werden.",
+			"price": 79,
+			"year_available": 1990,
+			"year_obsolete": 1999,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "answering_machine"
+			}
+		},
+		{
+			"id": "shop_cd_burner",
+			"preview_asset": "res://assets/backgrounds/layers/CD_BURNER_EXTERNAL_2X_V01.png",
+			"name": "CD-Brenner (extern)",
+			"desc": "Brennt Rohlinge. Der Stoff der spaeten 90er. (Phase 5.)",
+			"price": 699,
+			"year_available": 1997,
+			"year_obsolete": 1999,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "cd_burner"
+			}
+		},
+		{
+			"id": "order_hand_scanner",
+			"preview_asset": "res://assets/backgrounds/layers/HAND_SCANNER_GRAYSCALE_V01.png",
+			"name": "Handscanner (Grauwert)",
+			"db_name": "Logitech ScanMan (Handscanner)",
+			"desc": "Zieht man von Hand ueber die Vorlage. 400 dpi, wenn die Hand ruhig bleibt. Nichts fuer die Vitrine — aber magisch.",
+			"price": 249,
+			"year_available": 1992,
+			"year_obsolete": 1995,
+			"order_only": true,
+			"order_days": 14,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "scanner"
+			}
+		},
+		{
+			"id": "order_amiga_600",
+			"preview_asset": "res://assets/backgrounds/layers/COMPUTER_AMIGA600_V01.png",
+			"name": "Amiga 600",
+			"db_name": "Amiga 600",
+			"desc": "Kompakter ECS-Rechner ohne Nummernblock: 1 MB Chip-RAM, PCMCIA, interner IDE-Anschluss und Kickstart 2.05. Diese Ausführung kommt ohne Festplatte.",
+			"price": 600,
+			"year_available": 1992,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 12,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "computer_amiga_600"
+			}
+		},
+		{
+			"id": "order_a600_chipram_2mb",
+			"preview_asset": "res://assets/backgrounds/layers/A600_CHIPRAM_A601_V01.png",
+			"name": "A600 Chip-RAM-Erweiterung 1 MB",
+			"desc": "A601-kompatible Karte für die Klappe an der Unterseite. Ergänzt das serienmäßige 1 MB auf 2 MB echtes Chip-RAM — stecken, Klappe schließen, Speichertest.",
+			"price": 159,
+			"fixed_price": true,
+			"year_available": 1992,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 7,
+			"requires_hardware": "computer_amiga_600",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a600_chipram_2mb"
+			}
+		},
+		{
+			"id": "order_a600_internal_hdd",
+			"preview_asset": "res://assets/backgrounds/layers/A600_HDD_25_IDE_40MB_V01.png",
+			"name": "A600 interne IDE-Festplatte 40 MB",
+			"desc": "2,5-Zoll-IDE-Platte samt kurzem 44-Pin-Kabel und Halter. Kickstart 2.05 Revision 37.350 erkennt sie beim Kaltstart; der A600 bootet danach ohne Diskette.",
+			"price": 349,
+			"fixed_price": true,
+			"year_available": 1992,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 9,
+			"requires_hardware": "computer_amiga_600",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a600_internal_hdd"
+			}
+		},
+		{
+			"id": "order_a600_internal_hdd_120mb",
+			"preview_asset": "res://assets/backgrounds/layers/A600_HDD_25_IDE_120MB_V01.png",
+			"name": "A600 interne IDE-Festplatte 120 MB",
+			"desc": "Größere 2,5-Zoll-IDE-Platte für denselben internen Halter. Ersetzt die 40-MB-Platte; DH0: bietet danach dreimal so viel Archivplatz.",
+			"price": 499,
+			"fixed_price": true,
+			"year_available": 1994,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 10,
+			"requires_hardware": ["computer_amiga_600", "a600_internal_hdd"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a600_internal_hdd_120mb"
+			}
+		},
+		{
+			"id": "order_a600_pcmcia_sram_2mb",
+			"preview_asset": "res://assets/backgrounds/layers/A600_PCMCIA_SRAM_2MB_V01.png",
+			"name": "A600 PCMCIA-SRAM-Karte 2 MB",
+			"desc": "Batterielose SRAM-Karte für den seitlichen PCMCIA-Slot. Liefert 2 MB Fast-RAM ohne Öffnen des Rechners; der Kartenslot bleibt dabei belegt.",
+			"price": 349,
+			"fixed_price": true,
+			"year_available": 1992,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 8,
+			"requires_hardware": "computer_amiga_600",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a600_pcmcia_sram_2mb"
+			}
+		},
+		{
+			"id": "order_a600_pcmcia_sram_4mb",
+			"preview_asset": "res://assets/backgrounds/layers/A600_PCMCIA_SRAM_4MB_V01.png",
+			"name": "A600 PCMCIA-SRAM-Karte 4 MB",
+			"desc": "Voll bestückte PCMCIA-SRAM-Karte. Mit A601 stehen 2 MB Chip- und 4 MB Fast-RAM bereit; ersetzt die kleinere SRAM-Karte im einzigen Slot.",
+			"price": 599,
+			"fixed_price": true,
+			"year_available": 1993,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 10,
+			"requires_hardware": ["computer_amiga_600", "a600_pcmcia_sram_2mb"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a600_pcmcia_sram_4mb"
+			}
+		},
+		{
+			"id": "order_a600_accel_68030",
+			"preview_asset": "res://assets/backgrounds/layers/A600_ACCEL_68030_32MB_V01.png",
+			"name": "A600 68030-Turbokarte · 33 MHz · 32 MB",
+			"desc": "Später interner A600-Ausbau mit 68030/33 und 32 MB Fast-RAM. Die A601 bleibt für 2 MB Chip-RAM zuständig; CPU-Leistung etwa sechsmal Stock-A500.",
+			"price": 1299,
+			"fixed_price": true,
+			"year_available": 1996,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 18,
+			"requires_hardware": ["computer_amiga_600", "a600_chipram_2mb"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a600_accel_68030"
+			}
+		},
+		{
+			"id": "order_amiga_1200",
+			"preview_asset": "res://assets/backgrounds/layers/COMPUTER_AMIGA1200_V03.png",
+			"name": "Amiga 1200",
+			"db_name": "Amiga 1200",
+			"desc": "AGA-Rechner mit 2 MB Chip-RAM, MC68EC020, internem 44-Pin-IDE, PCMCIA Typ II, lokalem Erweiterungsport, Kickstart 3.0 Revision 39.106 und originaler Workbench-3.0-Systemdiskette.",
+			"price": 850,
+			"year_available": 1992,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 14,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "computer_amiga_1200"
+			}
+		},
+		{
+			"id": "order_a1200_internal_hdd",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_HDD_25_IDE_80MB_V01.png",
+			"name": "A1200 interne IDE-Festplatte 80 MB",
+			"desc": "Leise 2,5-Zoll-IDE-Platte mit 44-Pin-Kabel und internem Einbaurahmen. Sie gehört in den A1200; ältere externe Seitenwagen passen hier ausdrücklich nicht.",
+			"price": 399,
+			"fixed_price": true,
+			"year_available": 1993,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 9,
+			"requires_hardware": "computer_amiga_1200",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_internal_hdd"
+			}
+		},
+		{
+			"id": "order_a1200_internal_hdd_420mb",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_HDD_25_IDE_420MB_V01.png",
+			"name": "A1200 interne IDE-Festplatte 420 MB",
+			"desc": "2,5-Zoll-IDE-Plattentausch für große Sample-Bänke und Vollinstallationen. Ersetzt die kleine Platte im internen Halter.",
+			"price": 599,
+			"fixed_price": true,
+			"year_available": 1994,
+			"year_obsolete": 1998,
+			"order_only": true,
+			"order_days": 11,
+			"requires_hardware": ["computer_amiga_1200", "a1200_internal_hdd"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_internal_hdd_420mb"
+			}
+		},
+		{
+			"id": "order_a1200_internal_hdd_1200mb",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_HDD_25_IDE_1200MB_V01.png",
+			"name": "A1200 interne IDE-Festplatte 1,2 GB",
+			"desc": "Später 2,5-Zoll-IDE-Ausbau mit 1,2 GB. Genug Platz für Workbench, Entwicklungsprojekte, MOD-Archive und CD-Images.",
+			"price": 799,
+			"fixed_price": true,
+			"year_available": 1996,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 14,
+			"requires_hardware": ["computer_amiga_1200", "a1200_internal_hdd"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_internal_hdd_1200mb"
+			}
+		},
+		{
+			"id": "order_a1200_pcmcia_sram_4mb",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_PCMCIA_SRAM_4MB_V01.png",
+			"name": "A1200 PCMCIA-SRAM-Karte 4 MB",
+			"desc": "Günstiger Fast-RAM-Einstieg über PCMCIA: 2 MB Chip plus 4 MB Fast. Keine Schrauben, aber der einzige Kartenslot ist belegt.",
+			"price": 399,
+			"fixed_price": true,
+			"year_available": 1993,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 8,
+			"requires_hardware": "computer_amiga_1200",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_pcmcia_sram_4mb"
+			}
+		},
+		{
+			"id": "order_a1200_fast_ram_4mb",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_FASTRAM_4MB_RTC_V01.png",
+			"name": "A1200 Fast-RAM-Karte 4 MB + RTC",
+			"desc": "32-Bit-Fast-RAM für den internen Erweiterungsport. Vier Megabyte plus batteriegepufferte Uhr entlasten das Chip-RAM; zusammen stehen 6 MB zur Verfügung.",
+			"price": 299,
+			"fixed_price": true,
+			"year_available": 1993,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 8,
+			"requires_hardware": "computer_amiga_1200",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_fast_ram_4mb"
+			}
+		},
+		{
+			"id": "order_a1200_fast_ram_8mb",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_FASTRAM_8MB_RTC_V01.png",
+			"name": "A1200 Fast-RAM-Karte 8 MB + RTC",
+			"desc": "Voll bestückte 32-Bit-Speicherkarte mit Echtzeituhr. Mit 2 MB Chip- und 8 MB Fast-RAM erreicht der A1200 insgesamt 10 MB.",
+			"price": 449,
+			"fixed_price": true,
+			"year_available": 1994,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 10,
+			"requires_hardware": ["computer_amiga_1200", "a1200_fast_ram_4mb"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_fast_ram_8mb"
+			}
+		},
+		{
+			"id": "order_a1200_accel_68030",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_ACCEL_68030_16MB_V01.png",
+			"name": "A1200 68030-Turbokarte · 40 MHz · 16 MB",
+			"desc": "68030-Klasse mit 40 MHz und 16 MB eigenem Fast-RAM am internen Erweiterungsport. Macht Demos, Rendering und große Archive spürbar schneller; 18 MB Gesamtspeicher.",
+			"price": 999,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 14,
+			"requires_hardware": ["computer_amiga_1200", "a1200_fast_ram_8mb"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_accel_68030"
+			}
+		},
+		{
+			"id": "order_a1200_accel_68030_50",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_ACCEL_68030_50_32MB_V01.png",
+			"name": "A1200 68030-Turbokarte · 50 MHz · 32 MB",
+			"desc": "68030/50 mit MMU, FPU und 32 MB Fast-RAM. 34 MB Gesamtspeicher und deutlich kürzere Render-, Pack- und Kompilierzeiten.",
+			"price": 1299,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1998,
+			"order_only": true,
+			"order_days": 16,
+			"requires_hardware": ["computer_amiga_1200", "a1200_accel_68030"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_accel_68030_50"
+			}
+		},
+		{
+			"id": "order_a1200_accel_68040",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_ACCEL_68040_32MB_V01.png",
+			"name": "A1200 68040-Turbokarte · 40 MHz · 32 MB",
+			"desc": "68040/40 mit integrierter FPU, aktivem Kühler und 32 MB Fast-RAM. Rendering und Datenkompression erreichen etwa das Vierzehnfache eines Stock-A500.",
+			"price": 1799,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 18,
+			"requires_hardware": ["computer_amiga_1200", "a1200_accel_68030"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_accel_68040"
+			}
+		},
+		{
+			"id": "order_a1200_accel_68060",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_ACCEL_68060_64MB_V01.png",
+			"name": "A1200 68060-Turbokarte · 50 MHz · 64 MB",
+			"desc": "68060/50 mit FPU und 64 MB Fast-RAM. Der klassische 68k-Endausbau: 66 MB gesamt und etwa achtundzwanzigfache Stock-A500-CPU-Leistung.",
+			"price": 2499,
+			"fixed_price": true,
+			"year_available": 1996,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 21,
+			"requires_hardware": ["computer_amiga_1200", "a1200_accel_68040"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_accel_68060"
+			}
+		},
+		{
+			"id": "order_a1200_scsi_module",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_SCSI_MODULE_V01.png",
+			"name": "A1200 Fast-SCSI-II-Modul",
+			"desc": "Controller-Modul für die 040/060-Turbokarte. Beschleunigt große Dateioperationen und stellt den Anschluss für externe SCSI-Laufwerke bereit.",
+			"price": 649,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 14,
+			"requires_hardware": ["computer_amiga_1200", "a1200_accel_68040"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_scsi_module"
+			}
+		},
+		{
+			"id": "order_a1200_scsi_cdrom",
+			"preview_asset": "res://assets/backgrounds/layers/A1200_SCSI_CDROM_4X_V01.png",
+			"name": "A1200 externes SCSI-CD-ROM 4×",
+			"desc": "Externes Vierfach-CD-ROM am Fast-SCSI-II-Modul. Liest 650-MB-Datenträger ohne den internen IDE-Bus auszubremsen.",
+			"price": 799,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 14,
+			"requires_hardware": ["computer_amiga_1200", "a1200_scsi_module"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a1200_scsi_cdrom"
+			}
+		},
+		{
+			"id": "order_amigaos_31_upgrade",
+			"preview_asset": "res://assets/backgrounds/layers/AMIGAOS31_UPGRADE_KIT_V01.png",
+			"name": "AmigaOS 3.1 Upgrade-Kit",
+			"desc": "Zwei Kickstart-3.1-ROMs (40.68), Workbench 3.1 (40.42), Handbuecher und Systemdisketten fuer den Amiga 1200.",
+			"price": 149,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 8,
+			"requires_hardware": "computer_amiga_1200",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "amigaos_31_upgrade"
+			}
+		},
+		{
+			"id": "order_monitor_1901",
+			"preview_asset": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1901_V01.png",
+			"name": "Commodore 1901 Monitor",
+			"db_name": "Commodore 1901",
+			"desc": "Kompakte Farbröhre mit charakteristischer Seitenlüftung. Gebraucht, aber sauber eingestellt.",
+			"price": 300,
+			"year_available": 1990,
+			"year_obsolete": 1993,
+			"order_only": true,
+			"order_days": 8,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "monitor_commodore_1901"
+			}
+		},
+		{
+			"id": "order_monitor_1942",
+			"preview_asset": "res://assets/backgrounds/layers/MONITOR_COMMODORE_1942_V01.png",
+			"name": "Commodore 1942 Multiscan-Monitor",
+			"desc": "AGA-taugliche Multiscan-Röhre für flimmerärmere, höhere Workbench-Modi und mehr nutzbare Desktopfläche.",
+			"price": 699,
+			"fixed_price": true,
+			"year_available": 1993,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 12,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "monitor_commodore_1942"
+			}
+		},
+		{
+			"id": "order_monitor_multisync_17",
+			"preview_asset": "res://assets/backgrounds/layers/MONITOR_MULTISYNC_17_V01.png",
+			"name": "17-Zoll-Multisync-Monitor",
+			"desc": "Große späte Multisync-Röhre mit hoher nutzbarer Workbench-Auflösung. Benötigt eine passende Grafikausgabe und viel Schreibtischplatz.",
+			"price": 1199,
+			"fixed_price": true,
+			"year_available": 1995,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 14,
+			"requires_hardware": ["monitor_commodore_1942", "computer_amiga_1200"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "monitor_multisync_17"
+			}
+		},
+		{
+			"id": "order_laser_printer",
+			"preview_asset": "res://assets/backgrounds/layers/PRINTER_LASER_MONO_V01.png",
+			"name": "Laserdrucker",
+			"desc": "Gestochen scharf, fluesterleise — und teuer wie ein Gebrauchtwagen. Der Traum jeder Fanzine-Redaktion.",
+			"price": 1290,
+			"year_available": 1992,
+			"year_obsolete": 1998,
+			"order_only": true,
+			"order_days": 12,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "laser_printer"
+			}
+		},
+		{
+			"id": "order_modem_14400",
+			"preview_asset": "res://assets/backgrounds/layers/MODEM_14400_MASTER_V01.png",
+			"name": "14400-Baud-Modem",
+			"db_name": "Modem 14400 Baud",
+			"desc": "Sechsmal schneller als das 2400er. Mailboxen laden, bevor die Eltern die Telefonrechnung sehen. Fast.",
+			"price": 349,
+			"year_available": 1994,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 10,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "modem_14400"
+			}
+		},
+		{
+			"id": "order_zip_drive",
+			"preview_asset": "res://assets/backgrounds/layers/ZIP_DRIVE_100MB_V01.png",
+			"name": "ZIP-Laufwerk 100 MB",
+			"db_name": "ZIP-100-Laufwerk",
+			"desc": "Eine Wechselplatte fasst so viel wie 70 Disketten. Die Zukunft — zumindest fuer ein paar Jahre.",
+			"price": 199,
+			"year_available": 1996,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 14,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "zip_drive"
+			}
+		},
+		{
+			"id": "order_ram_1mb",
+			"preview_asset": "res://assets/backgrounds/layers/A501_RAM_EXPANSION_V01.png",
+			"name": "512-KB-Erweiterung (A501-kompatibel)",
+			"desc": "In die Klappe unter dem A500 stecken: 512 KB zusätzliches Slow-RAM, insgesamt 1 MB. Kein Löten — X-COPY braucht nur noch einen Lesedurchgang.",
+			"price": 99,
+			"fixed_price": true,
+			"year_available": 1990,
+			"year_obsolete": 2099,
+			"order_only": true,
+			"order_days": 7,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "ram_1mb"
+			}
+		},
+		{
+			"id": "order_chipram_2mb_mod",
+			"preview_asset": "res://assets/backgrounds/layers/CHIPRAM_2MB_AGNUS_KIT_V01.png",
+			"name": "2-MB-Chip-RAM-Werkstattumbau",
+			"desc": "Kein einfacher Riegel: passender 2-MB-Agnus/Adapter, Speicherbestückung und Board-Anpassung. Gruber baut um und macht anschließend einen Speichertest.",
+			"price": 249,
+			"year_available": 1992,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 9,
+			"requires_hardware": "ram_1mb",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "chipram_2mb_mod"
+			}
+		},
+		{
+			"id": "order_ram_4mb",
+			"preview_asset": "res://assets/backgrounds/layers/FASTRAM_AMIGA_SIDECAR_2MB_V01.png",
+			"name": "2-MB-Fast-RAM-Erweiterung",
+			"desc": "Zusätzlich zum 2-MB-Chip-Umbau: 2 MB Fast-RAM am Erweiterungsport, insgesamt 4 MB.",
+			"price": 299,
+			"year_available": 1994,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 8,
+			"requires_hardware": "chipram_2mb_mod",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "ram_4mb"
+			}
+		},
+		{
+			"id": "order_hdd_a590",
+			"preview_asset": "res://assets/backgrounds/layers/HDD_AMIGA_A590_V01.png",
+			"name": "Festplatte A590",
+			"db_name": "Amiga A590 (HDD)",
+			"desc": "20 MB am Seitenport. Die Werkbank bootet ohne Diskettensuche — ein anderes Leben.",
+			"price": 649,
+			"year_available": 1990,
+			"year_obsolete": 1994,
+			"order_only": true,
+			"order_days": 10,
+			"requires_hardware": "computer_amiga_500",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "harddisk"
+			}
+		},
+		{
+			"id": "order_a500_accel_68030",
+			"preview_asset": "res://assets/backgrounds/layers/A500_ACCEL_68030_8MB_SCSI_V01.png",
+			"name": "A500 A530-Turboseitenwagen · 68030/40",
+			"desc": "68030/40, 8 MB Fast-RAM, SCSI-Controller und 120-MB-Platte in einem massiven Seitenwagen. Der komplette A500-Leistungssprung.",
+			"price": 1899,
+			"fixed_price": true,
+			"year_available": 1993,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 18,
+			"requires_hardware": ["computer_amiga_500", "ram_1mb"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a500_accel_68030"
+			}
+		},
+		{
+			"id": "order_a500_scsi_cdrom",
+			"preview_asset": "res://assets/backgrounds/layers/A500_SCSI_CDROM_2X_V01.png",
+			"name": "A500 externes SCSI-CD-ROM 2×",
+			"desc": "Externes Zweifach-CD-ROM für den SCSI-Port des Turboseitenwagens. Liest 650-MB-Datenträger, ohne einen zweiten Seitenport zu benötigen.",
+			"price": 699,
+			"fixed_price": true,
+			"year_available": 1994,
+			"year_obsolete": 1998,
+			"order_only": true,
+			"order_days": 14,
+			"requires_hardware": ["computer_amiga_500", "a500_accel_68030"],
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "a500_scsi_cdrom"
+			}
+		},
+		{
+			"id": "order_cdrom_a570",
+			"preview_asset": "res://assets/backgrounds/layers/CDROM_AMIGA_A570_V01.png",
+			"name": "CD-ROM-Laufwerk A570",
+			"db_name": "Amiga A570 (CD)",
+			"desc": "Silberne Scheiben mit 650 MB. Die Zukunft, sagt Gruber — und bestellt eins mit.",
+			"price": 549,
+			"year_available": 1992,
+			"year_obsolete": 1994,
+			"order_only": true,
+			"order_days": 10,
+			"requires_hardware": "computer_amiga_500",
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "cdrom"
+			}
+		},
+		{
+			"id": "order_dot_matrix",
+			"preview_asset": "res://assets/backgrounds/layers/PRINTER_DOT_MATRIX_9PIN_V01.png",
+			"name": "9-Nadel-Drucker MX-90",
+			"desc": "Der Klassiker: laut wie ein Specht, unverwuestlich. Druckt Spieletitel in 9-Nadel-Schrift auf Etiketten.",
+			"price": 349,
+			"year_available": 1990,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 7,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "dot_matrix"
+			}
+		},
+		{
+			"id": "order_dot_matrix_24",
+			"preview_asset": "res://assets/backgrounds/layers/PRINTER_DOT_MATRIX_24PIN_MONO_V01.png",
+			"name": "24-Nadel-Drucker LQ-2400",
+			"desc": "24 Nadeln, fast wie gedruckt: feine Letter-Quality-Schrift fuer Etiketten, die was hermachen.",
+			"price": 649,
+			"year_available": 1991,
+			"year_obsolete": 1998,
+			"order_only": true,
+			"order_days": 9,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "dot_matrix_24"
+			}
+		},
+		{
+			"id": "order_color_printer",
+			"preview_asset": "res://assets/backgrounds/layers/PRINTER_COLOR_INKJET_CJ300_V01.png",
+			"name": "Farb-Tintenstrahler CJ-300",
+			"desc": "Farbe! Druckt das Spiele-Artwork als gerastertes Logo aufs Etikett — Kopien wie aus dem Laden.",
+			"price": 890,
+			"year_available": 1993,
+			"order_only": true,
+			"order_days": 10,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "color_printer"
+			}
+		},
+		{
+			"id": "order_modem_9600",
+			"preview_asset": "res://assets/backgrounds/layers/MODEM_9600_MASTER_V01.png",
+			"name": "9600-Baud-Modem",
+			"db_name": "Modem 9600 Baud",
+			"desc": "Der spürbare Schritt zwischen 2400 und 14400 Baud. Mailbox-Seiten bauen sich endlich flott auf.",
+			"price": 249,
+			"year_available": 1992,
+			"year_obsolete": 1995,
+			"order_only": true,
+			"order_days": 8,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "modem_9600"
+			}
+		},
+		{
+			"id": "order_dot_matrix_24_color",
+			"preview_asset": "res://assets/backgrounds/layers/PRINTER_DOT_MATRIX_24PIN_COLOR_V01.png",
+			"name": "24-Nadel-Farbdrucker LQ-Color",
+			"desc": "Vierfarbband und 24 Nadeln: langsam, laut und für farbige Fanzine-Logos unschlagbar.",
+			"price": 790,
+			"year_available": 1992,
+			"year_obsolete": 1997,
+			"order_only": true,
+			"order_days": 10,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "dot_matrix_24_color"
+			}
+		},
+		{
+			"id": "order_diskbox_80",
+			"preview_asset": "res://assets/backgrounds/layers/DISKBOX_80_ARCHIVE_V01.png",
+			"name": "Disketten-Archivbox (80 Plätze)",
+			"desc": "Abschließbare Rauchglasbox fürs Regal. Achtzig 3,5-Zoll-Disketten, sauber aufrecht sortiert.",
+			"price": 59,
+			"year_available": 1990,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 5,
+			"action": "add_room_object",
+			"payload": {
+				"object": "diskbox80"
+			}
+		},
+		{
+			"id": "order_stereo_component",
+			"preview_asset": "res://assets/backgrounds/layers/STEREO_COMPONENT_CASSETTE_V01.png",
+			"name": "Hi-Fi-Komponentenanlage",
+			"desc": "Tuner, Verstärker, Equalizer und Doppelkassette als ausgewachsene schwarze Anlage.",
+			"price": 449,
+			"year_available": 1990,
+			"year_obsolete": 1994,
+			"order_only": true,
+			"order_days": 9,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "stereo_component_cassette"
+			}
+		},
+		{
+			"id": "order_stereo_compact_cd",
+			"preview_asset": "res://assets/backgrounds/layers/STEREO_COMPACT_CD_V01.png",
+			"name": "Kompaktanlage mit CD",
+			"desc": "Single-CD, Radio und Doppelkassette. Ab jetzt laufen die neuen Alben ohne Bandsalat.",
+			"price": 529,
+			"year_available": 1992,
+			"year_obsolete": 1996,
+			"order_only": true,
+			"order_days": 10,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "stereo_compact_cd"
+			}
+		},
+		{
+			"id": "order_stereo_dual_cd",
+			"preview_asset": "res://assets/backgrounds/layers/STEREO_DUAL_CD_V01.png",
+			"name": "Doppel-CD-Stereoanlage",
+			"desc": "Zwei CD-Fächer, Doppelkassette und leuchtender Equalizer – typischer Mitte-90er-Ausbau.",
+			"price": 599,
+			"year_available": 1995,
+			"year_obsolete": 1999,
+			"order_only": true,
+			"order_days": 11,
+			"action": "add_hardware",
+			"payload": {
+				"hardware": "stereo_dual_cd"
+			}
+		}
+	]
+}

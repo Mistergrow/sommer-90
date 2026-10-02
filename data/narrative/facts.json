@@ -1,0 +1,128 @@
+{
+	"comment": "Welt-Fakten des Narrative-Core: WANN etwas wahr wird (from=Jahr, optional flag). Gegen diese Wahrheit prueft der Linter alle Zeilen. Modular: Zeilen-Pools liegen je NPC unter data/narrative/lines/<npc>.json.",
+	"facts": {
+		"amiga_gold": {
+			"from": 1992
+		},
+		"grosse_spiele": {
+			"from": 1992
+		},
+		"cd_rom_da": {
+			"from": 1993
+		},
+		"multimedia": {
+			"from": 1994
+		},
+		"pc_umbruch": {
+			"from": 1995
+		},
+		"modem_boom": {
+			"from": 1995
+		},
+		"internet_normal": {
+			"from": 1996
+		},
+		"lan_partys": {
+			"from": 1996
+		},
+		"mp3_da": {
+			"from": 1997
+		},
+		"cd_brenner": {
+			"from": 1997
+		},
+		"handy": {
+			"from": 1998
+		},
+		"internetcafe": {
+			"from": 1998
+		},
+		"grafikkarten_hype": {
+			"from": 1998
+		},
+		"rueckblick": {
+			"from": 1999
+		},
+		"y2k": {
+			"from": 1999
+		},
+		"stefan_pc": {
+			"from": 1995
+		},
+		"stefan_firma": {
+			"from": 1997
+		},
+		"sven_weg": {
+			"from": 1995
+		},
+		"mike_konsole": {
+			"from": 1996
+		},
+		"alex_museum": {
+			"from": 1999
+		},
+		"daniel_netz": {
+			"from": 1999
+		},
+		"lisa_cover": {
+			"from": 1999
+		},
+		"basti_digital": {
+			"from": 1997
+		},
+		"pixie_cover": {
+			"from": 1999
+		},
+		"joerg_cds": {
+			"from": 1997
+		},
+		"gruber_weg": {
+			"from": 1996
+		},
+		"gruber_retired": {
+			"from": 1996,
+			"flag": "gruber_legacy"
+		},
+		"krause_rente": {
+			"from": 1997
+		},
+		"sysop_verliert": {
+			"from": 1996
+		},
+		"club_mitglied": {
+			"from": 1990,
+			"flag": "club_member"
+		},
+		"daniel_apfel": {
+			"from": 1998
+		},
+		"praktikum_gemacht": {
+			"from": 1991,
+			"flag": "praktikum_done"
+		},
+		"schulabschluss": {
+			"from": 1992,
+			"flag": "realschule_fertig"
+		},
+		"azubi": {
+			"from": 1993,
+			"flag": "ausbildung_start"
+		},
+		"geselle": {
+			"from": 1995,
+			"flag": "gesellenbrief"
+		},
+		"fuehrerschein": {
+			"from": 1994,
+			"flag": "has_license"
+		},
+		"berufstaetig": {
+			"from": 1997,
+			"flag": "erster_job"
+		},
+		"stefan_geholfen": {
+			"from": 1990,
+			"flag": "helped_stefan"
+		}
+	}
+}

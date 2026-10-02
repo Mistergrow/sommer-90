@@ -1,0 +1,115 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_krause",
+	"dialogues": {
+		"krause_greet": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Krause",
+					"text": "Alles vom Feinsten, alles vom Dachboden! Disketten, Kabel, Joysticks. Wer feilscht, muss auch kaufen!",
+					"choices": [
+						{
+							"text": "Das war also wirklich Ihre letzte Kiste?",
+							"cond": {
+								"quest_stage": {
+									"id": "q_krause_abschied",
+									"stage": 1
+								}
+							},
+							"next": "n_farewell",
+							"id": "reply_0"
+						},
+						{
+							"text": "Mal schauen, was da ist.",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_farewell": {
+					"speaker": "Krause",
+					"text": "Irgendwann ist jeder Dachboden leer. Aber solange einer noch weiß, wo seine erste Diskette herkam, war der Stand nicht umsonst.",
+					"choices": [
+						{
+							"text": "Ihre Kisten vergess ich nicht.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "krause_farewell"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "sad"
+				}
+			}
+		},
+		"call_krause_kopien": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Krause",
+					"text": "Ah, gut dass du anrufst! Der stille Typ vom Trampelpfad sucht saubere Spielkopien. Keine Originale, keine Master — nur Kopien, die du selbst gezogen und geprüft hast.",
+					"choices": [
+						{
+							"text": "Wo treffe ich ihn?",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Krause",
+					"text": "Unter der Woche oben am Trampelpfad, samstags am Rand vom Flohmarkt. Er nimmt, was sauber läuft, und bezahlt nach Zustand, Satz und Etikett. Die Quelldisk bleibt bei dir.",
+					"choices": [
+						{
+							"text": "Verstanden. Nur meine eigene Verkaufskopie.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "haendler_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Mach eine eigene Spielkopie und bring sie dem Händler am Trampelpfad oder samstags zum Flohmarkt."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_krause_abschied": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Krause",
+					"text": "Samstag ist Schluss. Keine Sorge, kein Trauerzug – aber eine letzte Kiste stell ich noch auf den Tapeziertisch.",
+					"choices": [
+						{
+							"text": "Ich komme ein letztes Mal stöbern.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "krause_abschied_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "sad"
+				}
+			}
+		}
+	}
+}

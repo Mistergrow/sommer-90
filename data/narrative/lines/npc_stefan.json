@@ -1,0 +1,357 @@
+{
+	"npc": "npc_stefan",
+	"comment": "Zeilen-Pool fuer npc_stefan. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "ste_b01",
+			"text": "Na, was geht bei dir? Ich hab wieder halb die Nacht rumprobiert."
+		},
+		{
+			"id": "ste_b02",
+			"text": "Setz dich, erzähl. Ich brauch grad 'ne Pause vom Bildschirm."
+		},
+		{
+			"id": "ste_b03",
+			"text": "Ey, gut dass du da bist — ich wollt dir eh was zeigen."
+		},
+		{
+			"id": "ste_b04",
+			"text": "Und? Was Neues in der Sammlung?"
+		},
+		{
+			"id": "ste_b05",
+			"text": "Wenn du was zum Tauschen hast, ich bin fast immer erreichbar."
+		},
+		{
+			"id": "ste_b06",
+			"text": "Ich schwör, ich hab den ganzen Nachmittag an einem einzigen Problem gesessen."
+		},
+		{
+			"id": "ste_b07",
+			"text": "Man lernt am meisten, wenn man's kaputtmacht und wieder hinkriegt."
+		},
+		{
+			"id": "ste_b08",
+			"text": "Nichts geht über das Gefühl, wenn's endlich läuft. Nichts."
+		},
+		{
+			"id": "ste_b09",
+			"text": "Ich hab immer 'ne leere Diskette dabei, man weiß ja nie."
+		},
+		{
+			"id": "ste_b10",
+			"text": "Bringst du am Wochenende was mit? Ich hab da was für dich."
+		},
+		{
+			"id": "ste_b11",
+			"text": "Kaffee? Ich hab noch von gestern, ist... nun ja, Kaffee."
+		},
+		{
+			"id": "ste_b12",
+			"text": "Mein Zimmer sieht aus wie deins, schätz ich. Disketten überall."
+		},
+		{
+			"id": "ste_b13",
+			"text": "Weißt du, was ich an dir mag? Du gibst nicht auf. Wie ich."
+		},
+		{
+			"id": "ste_b14",
+			"text": "Erzähl bloß meiner Mutter nicht, wie spät ich gestern noch wach war."
+		},
+		{
+			"id": "ste_b15",
+			"text": "Ich glaub, wir zwei sind ein bisschen verrückt mit dem Kram. Aber im Guten."
+		},
+		{
+			"id": "ste_b16",
+			"text": "Frag mich was Schwieriges. Ich langweil mich sonst."
+		},
+		{
+			"id": "ste_b17",
+			"text": "Manchmal denk ich, andere in unserem Alter machen ganz andere Sachen. Egal."
+		},
+		{
+			"id": "ste_b18",
+			"text": "Ich hab da 'ne Idee, aber ich brauch noch jemand, der mitmacht."
+		},
+		{
+			"id": "ste_b19",
+			"text": "Pass auf deine guten Disketten auf, die halten nicht ewig."
+		},
+		{
+			"id": "ste_b20",
+			"text": "Hast du schon gegessen? Ich vergess das immer, wenn ich am Rechner häng."
+		},
+		{
+			"id": "ste_b21",
+			"text": "Wenn was nicht läuft — bring's vorbei, wir gucken zusammen drauf."
+		},
+		{
+			"id": "ste_b22",
+			"text": "Ich sortier meine Sammlung nach Gefühl, nicht nach Alphabet. Frag nicht."
+		},
+		{
+			"id": "ste_b23",
+			"text": "Das Beste an dem Hobby sind ehrlich gesagt die Leute. Also du zum Beispiel."
+		},
+		{
+			"id": "ste_b24",
+			"text": "Ich hab mir was aufgeschrieben, das ich dich fragen wollte... und jetzt vergessen."
+		},
+		{
+			"id": "ste_b25",
+			"text": "Sei ehrlich: läuft's bei dir grad, oder tust du nur so?"
+		},
+		{
+			"id": "ste_b26",
+			"text": "Ich könnt stundenlang über das Zeug reden. Merkst du wahrscheinlich."
+		},
+		{
+			"id": "ste_b27",
+			"text": "Zeig mir mal deine neueste Errungenschaft, komm schon."
+		},
+		{
+			"id": "ste_b28",
+			"text": "Ich hab heut schlecht geschlafen — Kopf voller Ideen, kennst du das?"
+		},
+		{
+			"id": "ste_b29",
+			"text": "Wenn ich groß bin, mach ich irgendwas mit Computern. Sag das keinem Lehrer."
+		},
+		{
+			"id": "ste_b30",
+			"text": "Bleib noch 'n bisschen, ja? Zu zweit macht's mehr Spaß."
+		},
+		{
+			"id": "ste_b31",
+			"text": "Ich tüftel lieber selbst, als was Fertiges zu kaufen. Bringt mehr."
+		},
+		{
+			"id": "st_amiga1",
+			"to": 1994,
+			"forbids": [
+				"stefan_pc"
+			],
+			"topic": "szene",
+			"text": "Die RADIANT-Jungs coden 'ne neue Demo — Copper-Balken bis zum Anschlag. Amiga forever!"
+		},
+		{
+			"id": "st_amiga2",
+			"to": 1994,
+			"forbids": [
+				"stefan_pc"
+			],
+			"topic": "tausch",
+			"text": "Ich hab 'ne frische Coverdisk. Bringst du am Samstag was zum Tauschen mit?"
+		},
+		{
+			"id": "st_listing",
+			"from": 1990,
+			"to": 1993,
+			"topic": "magazin",
+			"text": "Die neue Ausgabe ist voll mit Listings zum Abtippen. Hab mir schon die Finger wund getippt."
+		},
+		{
+			"id": "st_spiele",
+			"from": 1992,
+			"to": 1996,
+			"needs": [
+				"grosse_spiele"
+			],
+			"topic": "spiele",
+			"text": "Hast du das neue Weltraumspiel? Riesig, sag ich dir. Flohmarkt, samstags — da liegt sowas rum."
+		},
+		{
+			"id": "st_cdrom",
+			"from": 1993,
+			"to": 1995,
+			"needs": [
+				"cd_rom_da"
+			],
+			"topic": "hardware",
+			"text": "Der Gruber hat ein CD-ROM-Laufwerk im Schaufenster. So viele Daten auf einer Scheibe — unheimlich, oder?"
+		},
+		{
+			"id": "st_pc1",
+			"from": 1995,
+			"needs": [
+				"stefan_pc"
+			],
+			"topic": "pc",
+			"text": "Ich hab jetzt 'nen PC. Windows! Der Amiga... steht im Keller. Sag's keinem."
+		},
+		{
+			"id": "st_modem",
+			"from": 1996,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "netz",
+			"text": "Ich häng die halbe Nacht im Netz. Mailboxen? Sowas von vorgestern, ehrlich."
+		},
+		{
+			"id": "st_firma",
+			"from": 1997,
+			"needs": [
+				"stefan_firma"
+			],
+			"once": true,
+			"topic": "firma",
+			"text": "Große Neuigkeit: ich hab 'ne kleine Softwarefirma gegründet! Wir machen Shareware. Wahnsinn, oder?"
+		},
+		{
+			"id": "st_firma2",
+			"from": 1998,
+			"needs": [
+				"stefan_firma"
+			],
+			"topic": "firma",
+			"text": "Die Firma läuft. Wir suchen sogar wen mit Pixel-Talent — fällt dir jemand ein?"
+		},
+		{
+			"id": "st_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Weißt du noch, damals mit den Disketten und dem Rattern? Verrückt, wie schnell zehn Jahre weg sind."
+		},
+		{
+			"id": "st_y2k",
+			"from": 1999,
+			"needs": [
+				"y2k"
+			],
+			"topic": "y2k",
+			"text": "Alle reden von diesem Jahr-2000-Problem. Ich sag: unsere alten Kisten überleben das locker."
+		},
+		{
+			"id": "st_apfel1",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel",
+				"stefan_firma"
+			],
+			"topic": "apfel",
+			"text": "Daniel klingt verrückt mit seinen Überall-Internet-Geräten … aber weißt du was? Genau so verrückt klang der Amiga 1985 auch."
+		},
+		{
+			"id": "st_apfel2",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel",
+				"stefan_firma"
+			],
+			"topic": "apfel",
+			"text": "Wenn Daniel recht hat, programmieren wir in zehn Jahren für die Hosentasche. Ich halt mir das mal offen — geschäftlich."
+		},
+		{
+			"id": "ste_x01",
+			"topic": "freund",
+			"text": "Ich schreib mir alles in ein Ringbuch — Adressen, Cheats, Telefonnummern. Analoge Datenbank, nenn ich das."
+		},
+		{
+			"id": "ste_x02",
+			"topic": "freund",
+			"text": "Manche Sachen kapier ich erst, wenn ich sie jemand erklär. Also: erklär ich sie dir. Zuhören ist dein Job."
+		},
+		{
+			"id": "ste_x03",
+			"topic": "freund",
+			"text": "Ich hab da 'nen halbfertigen Traum von 'nem eigenen Spiel. Sag's keinem, klingt größenwahnsinnig."
+		},
+		{
+			"id": "ste_x04",
+			"topic": "freund",
+			"text": "Erinnerst du dich, wie wir uns kennengelernt haben? Ich mit der falschen Diskette, du mit der richtigen."
+		},
+		{
+			"id": "ste_x05",
+			"topic": "freund",
+			"text": "Ich tausch nicht mit jedem. Mit dir schon. Bei dir weiß ich, du gehst sorgsam damit um."
+		},
+		{
+			"id": "ste_x06",
+			"topic": "freund",
+			"text": "Weißt du, was mich nervt? Leute, die aufgeben, sobald's einmal piept. Wir zwei piepen zurück."
+		},
+		{
+			"id": "ste_x07",
+			"topic": "freund",
+			"text": "Mein Vater versteht kein Wort von dem, was ich tu. Aber er lässt mich machen. Das ist auch was wert."
+		},
+		{
+			"id": "ste_x08",
+			"topic": "freund",
+			"text": "Ich sortier nach Lieblings. Ganz vorn liegt immer die, mit der grad was Neues läuft."
+		},
+		{
+			"id": "ste_x09",
+			"topic": "freund",
+			"text": "Kaffee kalt, Idee heiß — bester Zustand überhaupt."
+		},
+		{
+			"id": "ste_x10",
+			"topic": "freund",
+			"text": "Ich hab dir was aufgehoben. Frag mich später dran, ich vergess das sonst wieder."
+		},
+		{
+			"id": "ste_x11",
+			"topic": "freund",
+			"text": "Wenn ich mal reich bin, kauf ich uns beiden die schnellste Kiste der Stadt. Versprochen."
+		},
+		{
+			"id": "ste_x12",
+			"topic": "freund",
+			"text": "Ein guter Freund ist wie ein Backup: Man merkt erst, wie wichtig, wenn mal was schiefgeht."
+		},
+		{
+			"id": "ste_x13",
+			"topic": "freund",
+			"text": "Ich red zu viel über den Kram, ich weiß. Aber bei dir stört's mich nicht."
+		},
+		{
+			"id": "ste_x14",
+			"to": 1994,
+			"topic": "szene",
+			"text": "Der Amiga ist kein Gerät, der ist 'ne Haltung. Sag ich, solange ich einen hab."
+		},
+		{
+			"id": "ste_x15",
+			"from": 0,
+			"needs": [
+				"stefan_pc"
+			],
+			"topic": "aera",
+			"text": "Seit ich den PC hab, red ich anders. Windows hier, Windows da. Ich hör mich selbst und schäm mich manchmal."
+		},
+		{
+			"id": "ste_x16",
+			"from": 0,
+			"needs": [
+				"stefan_firma"
+			],
+			"topic": "aera",
+			"text": "Die Firma frisst mich auf — im guten Sinn. Zum ersten Mal zahlt mir wer für das, was ich sowieso mach."
+		},
+		{
+			"id": "ste_x17",
+			"from": 0,
+			"needs": [
+				"stefan_firma"
+			],
+			"topic": "aera",
+			"text": "Wir suchen bei uns wen mit Grafik-Auge. Ich denk da an die Lisa. Oder an dich, wenn du übst."
+		},
+		{
+			"id": "ste_x18",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Weißt du, was ich am meisten vermiss? Das Warten, bis 'ne Diskette geladen hat. Da hat man noch geredet."
+		}
+	]
+}

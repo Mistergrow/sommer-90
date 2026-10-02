@@ -1,0 +1,112 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_joerg",
+	"dialogues": {
+		"joerg_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Jörg",
+					"text": "Vinyl, Kassette — und hinten liegen neue MODs auf Diskette. Die Szene macht Sachen, die kein Studio hinkriegt.",
+					"choices": [
+						{
+							"text": "Die B-Seite ist gemastert.",
+							"cond": {
+								"quest_stage": {
+									"id": "q_joerg_b_seite",
+									"stage": 2
+								}
+							},
+							"next": "n_handoff",
+							"id": "reply_0"
+						},
+						{
+							"text": "Warum steht die Kassette noch ohne B-Seite da?",
+							"cond": [
+								{
+									"year_min": 1994
+								},
+								{
+									"not_flag": "joerg_b_seite_intro"
+								}
+							],
+							"next": "n_quest_intro",
+							"id": "reply_1"
+						},
+						{
+							"text": "Welche MODs sind neu?",
+							"next": "n2",
+							"id": "reply_2"
+						},
+						{
+							"text": "Stöber nur, danke.",
+							"next": null,
+							"id": "reply_3"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n_quest_intro": {
+					"speaker": "Jörg",
+					"text": "Die Stücke sind gut, aber nach dem Seitenwechsel fällt alles auseinander. Bau zuerst ein sauberes Tracker-Pattern und dann eine Reihenfolge, die Spannung hält. Laut allein ist noch kein Master.",
+					"choices": [
+						{
+							"text": "Ich bringe Rhythmus, Pegel und Reihenfolge zusammen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "joerg_b_seite_intro",
+									"value": true
+								},
+								{
+									"type": "memory_once",
+									"id": "joerg_b_seite_started"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				},
+				"n_handoff": {
+					"speaker": "Jörg",
+					"text": "Da ist er, der Moment vor dem letzten Refrain — und nichts knackt. Ich stelle die Kassette ins Hörregal. Dein Handle kommt auf die Einlegerkarte, nicht ins Kleingedruckte.",
+					"choices": [
+						{
+							"text": "Dann darf die B-Seite jetzt raus.",
+							"next": null,
+							"effects": [
+								{
+									"type": "quest_action",
+									"action": "joerg_master_handoff"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "proud"
+				},
+				"n2": {
+					"speaker": "Jörg",
+					"text": "Basti hat neue Samples und zerlegt fertige MODs Kanal für Kanal. Wenn du selbst bauen willst, ist er der Richtige.",
+					"choices": [
+						{
+							"text": "Mach ich.",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		}
+	}
+}

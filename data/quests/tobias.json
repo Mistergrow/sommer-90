@@ -1,0 +1,213 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_tobias",
+  "quests": [
+    {
+      "id": "q_erste_demo",
+      "title": "Das erste Club-Projekt",
+      "giver": "npc_tobias",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "club_project_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Tobias gibt dir die schwarze SZENE-STUDIO-Arbeitsdisk: »Starte sie zu Hause über Werkbank → Disketten oder öffne dieselbe Projektwerkbank bei uns im Club. Wähle CLUB-INTRO und deine Rolle.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 0,
+          "through_stage": 2,
+          "grant_missing": true,
+          "memory": "1991 von Tobias für das erste Club-Projekt bekommen",
+          "recovery_text": "Tobias' schwarze SZENE-STUDIO-Arbeitsdisk liegt jetzt in deiner Diskettenbox.",
+          "blocked_text": "Deine Diskettenbox ist voll. Mach einen Platz für Tobias' SZENE-STUDIO-Arbeitsdisk frei; bis dahin kannst du am Projekt-Amiga im Club arbeiten.",
+          "protect_text": "Tobias' SZENE-STUDIO-Arbeitsdisk wird noch für das Club-Intro benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 0,
+          "through_stage": 2,
+          "recovery_text": "SZENE-STUDIO wurde für das aktive Club-Projekt auf der Werkbank bereitgestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Zu Hause: Amiga starten → Werkbank → Disketten → »SZENE-STUDIO 1.0« → START. Alternativ im Club mit Tobias am Projekt-Amiga arbeiten. Dann CLUB-INTRO und deine Rolle wählen.",
+          "map_locations": [
+            "room",
+            "computer_club"
+          ],
+          "goal": {
+            "action": "club_role_chosen"
+          }
+        },
+        {
+          "desc": "Verbinde deinen echten Rollenbeitrag und mindestens einen Freund als Handle-Credit; ein grüner Testlauf bestätigt beides.",
+          "map_locations": [
+            "room",
+            "computer_club"
+          ],
+          "goal": {
+            "action": "club_contribution"
+          }
+        },
+        {
+          "desc": "Freeze das geprüfte Gruppenintro auf eine echte Leerdiskette.",
+          "map_locations": [
+            "room",
+            "computer_club"
+          ],
+          "goal": {
+            "action": "release_club_intro"
+          }
+        },
+        {
+          "desc": "Präsentiere eure Intro-Disk den Mitgliedern im Computerclub.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "present_club_intro"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_tobias",
+          "value": 3
+        },
+        {
+          "type": "flag",
+          "flag": "club_project_presented",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Euer Intro steht: Rollen, eigener Beitrag, Credits, Testlauf und eine physische Club-Disk."
+        }
+      ],
+      "teaches": "gruppenintro"
+    },
+    {
+      "id": "q_cracktro",
+      "title": "Ein sauberes Cracktro",
+      "giver": "npc_tobias",
+      "prereq": {
+        "year_min": 1994,
+        "flag": "cracktro_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Tobias hält den Rasterstrahl an und grinst: »Ein Cracktro ist keine blinkende Visitenkarte. Timing, Speicher, Musik — bring alles in denselben Takt.«"
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "scene_studio_workdisk",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "memory": "Tobias' Szene-Studio-Arbeitsdisk",
+          "recovery_text": "Die Szene-Studio-Arbeitsdisk für das Cracktro wurde wieder bereitgelegt.",
+          "blocked_text": "Für die Szene-Studio-Arbeitsdisk fehlt ein Platz; das Programm bleibt auf der Werkbank erreichbar.",
+          "protect_text": "Das Szene-Studio wird noch für das Cracktro benötigt."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "scene_studio",
+          "from_stage": 0,
+          "through_stage": 0,
+          "recovery_text": "SZENE-STUDIO wurde für den Cracktro-Auftrag wiederhergestellt."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Im Zimmer das Szene-Studio öffnen → ein Intro-/Demo-Projekt wählen → PROFILER-LAB. Optimiere das Cracktro bis der Prüflauf bestanden ist.",
+          "map_location": "room",
+          "goal": {
+            "minigame_done": "cracktro_opt"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 3
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_tobias",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Sauber getimtes Cracktro — die Coder nicken anerkennend."
+        }
+      ]
+    },
+    {
+      "id": "q_tut_bytewerk",
+      "title": "Hinter der Clubtür",
+      "giver": "npc_tobias",
+      "activation_policy": "prereq_immediate",
+      "prereq": {
+        "year_min": 1990,
+        "flag": "club_guest_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Tobias lädt dich als Gast in den Computerclub ein. Heute schaust du nur zu: Demo, Cracktro, Code, Grafik und Musik."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Sprich im Computerclub mit den Mitgliedern und sieh Tobias' Demo samt Cracktro vollständig an.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "watch_club_demo"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 1
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_tobias",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "club_guest",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Du hast verstanden, dass Code, Pixel und Musik zusammengehören — ohne 1990 schon selbst ein Cracktro zu bauen."
+        },
+        {
+          "type": "toast",
+          "text": "Tobias: »Nächsten Sommer suchst du dir eine Rolle. Dann bauen wir gemeinsam ein kleines Intro.«"
+        }
+      ],
+      "teaches": "szene_beobachten"
+    }
+  ]
+}

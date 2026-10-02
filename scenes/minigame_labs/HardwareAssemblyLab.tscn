@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bc27iolpg4pxt"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="HardwareAssemblyLab" unique_id=1082984028 instance=ExtResource("1")]
+minigame_id = "hardware_assembly"

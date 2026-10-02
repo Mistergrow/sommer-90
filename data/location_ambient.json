@@ -1,0 +1,27 @@
+{
+	"comment": "Umgebungsgeräusch pro Ort (AmbientManager). Schlüssel = Orts-ID (GameManager.location_changed). loop = Dateistamm in assets/audio/ambient/<NAME>[_V0n].ogg|mp3; volume in dB (leise Betten, sitzen unter der Musik). quiet_only=true → Grundton läuft NUR wenn es still ist (keine Musik; im Spielerzimmer zusätzlich nur bei ausgeschaltetem Amiga). Fehlt die Datei, bleibt es still.",
+
+	"room":                       { "loop": "AMBIENT_ROOMTONE",       "volume": -24, "quiet_only": true },
+	"friend_cellar":             { "loop": "AMBIENT_ROOM_EMPTY",     "volume": -23, "quiet_only": true },
+	"sven_home":                  { "loop": "AMBIENT_ROOM_COMPUTER",  "volume": -20, "quiet_only": true },
+	"mike_home":                  { "loop": "AMBIENT_ROOMTONE",       "volume": -23, "quiet_only": true },
+	"alex_home":                  { "loop": "AMBIENT_ROOM_EMPTY",     "volume": -23, "quiet_only": true },
+	"daniel_home":                { "loop": "AMBIENT_ROOM_COMPUTER",  "volume": -22, "quiet_only": true },
+	"lisa_home":                  { "loop": "AMBIENT_ROOM_WIND",      "volume": -22, "quiet_only": true },
+	"wald":                       { "loop": "AMBIENT_FOREST_DAY",  "volume": -13 },
+	"dealer_clearing":            { "loop": "AMBIENT_FOREST_DAY",  "volume": -15 },
+	"schoolyard":                 { "loop": "AMBIENT_SCHOOLYARD",  "volume": -13 },
+	"flea_market":                { "loop": "AMBIENT_MARKET",      "volume": -13 },
+	"kiosk":                      { "loop": "AMBIENT_STREET_CALM", "volume": -15 },
+	"imbiss":                     { "loop": "AMBIENT_SHOP",        "volume": -18 },
+	"computer_club":              { "loop": "AMBIENT_CLUB",        "volume": -17 },
+	"computer_shop":              { "loop": "AMBIENT_SHOP",        "volume": -19 },
+	"musikladen":                 { "loop": "AMBIENT_RECORDSHOP",  "volume": -19 },
+	"musikladen_keller":          { "loop": "AMBIENT_RECORDSHOP",  "volume": -20 },
+	"musikladen_computer_music":  { "loop": "AMBIENT_RECORDSHOP",  "volume": -20 },
+	"postamt":                    { "loop": "AMBIENT_OFFICE",      "volume": -19 },
+	"stadtbank":                  { "loop": "AMBIENT_OFFICE",      "volume": -19 },
+	"lan_keller":                 { "loop": "AMBIENT_CLUB",        "volume": -19 },
+	"internetcafe":               { "loop": "AMBIENT_OFFICE",      "volume": -20 },
+	"retro_museum":               { "loop": "AMBIENT_ROOMTONE",    "volume": -24, "quiet_only": true }
+}

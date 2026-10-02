@@ -1,0 +1,79 @@
+{
+  "schema": "software.v1",
+  "letter": "W",
+  "code": "W00",
+  "category": "games",
+  "entries": [
+    {
+      "software_id": "wunderwerk_94",
+      "historical_name": "Wunderwerk '94: Parkdirektor",
+      "display_name": "Wunderwerk '94: Parkdirektor",
+      "genre": "Amusement Park Management",
+      "developer": "Lichtwerk Spiele",
+      "publisher": "Lichtwerk Spiele",
+      "release_year": 1994,
+      "last_supported_year": 1998,
+      "language": "Deutsch",
+      "platform": "Amiga",
+      "category": "games",
+      "subcategory": "strategy_management",
+      "media_type": "Commercial",
+      "disk_count": 2,
+      "installation_required": false,
+      "manual": true,
+      "shop_available": true,
+      "magazine_available": true,
+      "art_dir": "res://assets/software/wunderwerk_94",
+      "art": {
+        "cover_front": "cover_front.png",
+        "cover_back": "cover_back.png",
+        "box_front": "box_front.png",
+        "box_back": "box_back.png",
+        "manual_cover": "manual_cover.png",
+        "manual_back": "manual_back.png",
+        "disk_label": "disk_label.png",
+        "disk_label_2": "disk_label_2.png"
+      },
+      "keywords": [
+        "amiga",
+        "ocs",
+        "a600",
+        "park",
+        "management",
+        "wunderwerk"
+      ],
+      "tags": [
+        "commercial games",
+        "spielbar",
+        "ocs",
+        "zwei disketten",
+        "vollständige ovp"
+      ],
+      "timeline": {
+        "1994": {
+          "available": true,
+          "shop": true,
+          "magazine": true
+        },
+        "1995": {
+          "available": true,
+          "shop": true,
+          "magazine": true
+        },
+        "1996": {
+          "available": true,
+          "shop": true,
+          "magazine": true
+        },
+        "1997": {
+          "available": true,
+          "shop": true
+        },
+        "1998": {
+          "available": true,
+          "shop": true
+        }
+      }
+    }
+  ]
+}

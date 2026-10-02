@@ -1,0 +1,138 @@
+{
+	"schema": "sommer90.dialogue-package.v1",
+	"owner": "npc_basti",
+	"dialogues": {
+		"basti_default": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Basti „Beat“",
+					"text": "Hörst du das? Vier Kanäle, alles handgesetzt im ProTracker. Amiga-Sound ist einfach warm, kein Vergleich.",
+					"choices": [
+						{
+							"text": "Wie fängt man mit Tracking an?",
+							"next": "n2",
+							"id": "reply_0"
+						},
+						{
+							"text": "Klingt super!",
+							"next": null,
+							"id": "reply_1"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Basti „Beat“",
+					"text": "Nimm ein paar Samples, setz sie auf ein Pattern, spiel mit dem Timing. Ich schick dir mal einen MOD zum Auseinandernehmen.",
+					"choices": [
+						{
+							"text": "Mega, danke!",
+							"next": null,
+							"effects": [
+								{
+									"type": "stat",
+									"stat": "wissen",
+									"value": 1
+								},
+								{
+									"type": "npc_trust",
+									"npc": "npc_basti",
+									"value": 2
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"visit_basti_tracker": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Basti",
+					"text": "Deine MOD-Sammlung wächst ja schon seit letztem Sommer. Aber bisher hörst du fertige Stücke — heute bauen wir selbst eins, Kanal für Kanal.",
+					"choices": [
+						{
+							"text": "Gut — diesmal will ich selbst ein Pattern bauen.",
+							"next": "n2",
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				},
+				"n2": {
+					"speaker": "Basti",
+					"text": "Hier ist meine ProTracker-Arbeitsdisk. Starte sie in deinem Zimmer aus der Diskettenbox. Kick, Snare, Hi-Hat und Bass setzt du auf vier Spuren; danach prüfst und sicherst du dein eigenes Pattern.",
+					"choices": [
+						{
+							"text": "Arbeitsdisk einpacken.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "tut_tracker_intro",
+									"value": true
+								},
+								{
+									"type": "toast",
+									"text": "Neue Aufgabe: Im Zimmer die ProTracker-Arbeitsdisk starten und ein eigenes Pattern sichern."
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_basti_digital": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Basti „Beat“",
+					"text": "Wir sammeln und bauen seit Jahren MODs. Jetzt will ich hören, ob unsere alten Tracks als bewusst geschnittenes A/B-Mixtape noch dieselbe Seele haben. Vier meiner Module bringe ich zur Sicherheit mit.",
+					"choices": [
+						{
+							"text": "Ich lass die Übergänge sprechen.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "digital_music_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "happy"
+				}
+			}
+		},
+		"call_basti_millennium": {
+			"start": "n1",
+			"nodes": {
+				"n1": {
+					"speaker": "Basti „Beat“",
+					"text": "Ein letzter Release vor Mitternacht. Keine Best-of-Reste – etwas Neues, das klingt, als würde die Leitung selbst Abschied nehmen.",
+					"choices": [
+						{
+							"text": "Wir schicken ein frisches Signal ins Jahr 2000.",
+							"next": null,
+							"effects": [
+								{
+									"type": "flag",
+									"flag": "millennium_intro"
+								}
+							],
+							"id": "reply_0"
+						}
+					],
+					"emotion": "thinking"
+				}
+			}
+		}
+	}
+}

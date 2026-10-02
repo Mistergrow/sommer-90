@@ -1,0 +1,228 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_alex",
+  "quests": [
+    {
+      "id": "q_alex_find",
+      "title": "Alex' Wuehlkisten-Jagd",
+      "giver": "npc_alex",
+      "prereq": {
+        "year_min": 1991,
+        "flag": "alex_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Alex: »Bring mir was Unbeschriftetes vom Flohmarkt — ich lieb Ueberraschungen.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Treib fuer Alex eine (weitere) Mystery-Diskette auf — die Kartons auf dem Flohmarkt!",
+          "map_location": "flea_market",
+          "goal": {
+            "has_template": "mystery_unlabeled",
+            "unresolved_mystery": true,
+            "count": 1
+          }
+        },
+        {
+          "desc": "Bring Alex eine der Mystery-Disketten persönlich. Dienstags und donnerstags ist er meist in seinem Zimmer; samstags steht er sichtbar auf dem Flohmarkt.",
+          "map_locations": [
+            "alex_home",
+            "flea_market"
+          ],
+          "goal": {
+            "action": "deliver_alex_mystery"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 8
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_alex",
+          "value": 3
+        },
+        {
+          "type": "disk_template",
+          "id": "game_alien_bitmap",
+          "memory": "Von Alex fuer die Wuehlkisten-Jagd bekommen"
+        },
+        {
+          "type": "toast",
+          "text": "Alex strahlt und drueckt dir was aus seiner Sammlung in die Hand."
+        }
+      ]
+    },
+    {
+      "id": "q_farbdruck",
+      "title": "Ein Farb-Etikett zum Verkaufen",
+      "giver": "npc_alex",
+      "prereq": {
+        "year_min": 1994,
+        "flag": "farbdruck_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Alex hält eine triste Diskette gegen das Licht: »So kauft die doch keiner. Druck ihr ein farbiges Gesicht — und schau, ob die Leute dafür mehr zahlen.«"
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Bei Gruber einen Farbdrucker bestellen und abholen. Zu Hause eine eigene Spielkopie wählen → Drucken → Farbstufe; danach die beschriftete Kopie am Schulhof, im Club, auf dem Flohmarkt oder am Waldrand beim Händler verkaufen.",
+          "map_locations": [
+            "computer_shop",
+            "room",
+            "schoolyard",
+            "computer_club",
+            "flea_market",
+            "wald"
+          ],
+          "goal": {
+            "action": "sell_color_copy"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 12
+        },
+        {
+          "type": "stat",
+          "stat": "ruf",
+          "value": 2
+        },
+        {
+          "type": "toast",
+          "text": "Farbdruck macht was her — deine Kopien gehen weg wie warme Semmeln."
+        }
+      ],
+      "teaches": "drucker"
+    },
+    {
+      "id": "q_alex_risky_1992",
+      "title": "Alex' riskante Wühlkiste",
+      "giver": "npc_alex",
+      "prereq": {
+        "year_min": 1992,
+        "flag": "alex_risky_intro"
+      },
+      "on_start": [
+        {
+          "type": "program",
+          "id": "viruschecker"
+        },
+        {
+          "type": "toast",
+          "text": "Alex gibt dir eine unbekannte Disk. Nicht booten! Amiga → Werkbank → Shell → VIRUSCHECKER. Dort »ALLE PRÜFEN« oder die markierte ALEX-DISK anklicken."
+        }
+      ],
+      "required_programs": [
+        {
+          "id": "viruschecker",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "recovery_text": "Der benötigte Virus-Checker wurde wiederhergestellt. Amiga → Werkbank → Shell → VIRUSCHECKER."
+        }
+      ],
+      "required_disks": [
+        {
+          "id": "mystery_unlabeled",
+          "uid_flag": "alex_risky_disk_uid",
+          "from_stage": 0,
+          "through_stage": 0,
+          "grant_missing": true,
+          "virus": true,
+          "checked": false,
+          "memory": "1992 von Alex als riskante Wühlkisten-Disk bekommen",
+          "recovery_text": "Alex' konkrete Wühlkisten-Disk liegt wieder in deiner Diskettenbox — weiterhin ungeprüft und nicht zum Booten.",
+          "blocked_text": "Für Alex' Wühlkisten-Disk fehlt ein Platz in deiner Diskettenbox. Schaffe einen freien Platz; Alex gibt sie dir dann automatisch.",
+          "protect_text": "Diese konkrete ungeprüfte Disk gehört zu Alex' Auftrag. Prüfe sie zuerst im Virenwächter."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Amiga → Werkbank → Shell öffnen, VIRUSCHECKER eingeben und dort »ALLE PRÜFEN« oder die markierte »ALEX' DISK · AUFTRAG« anklicken.",
+          "map_location": "room",
+          "goal": {
+            "action": "scan_risky_disk"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 2
+        },
+        {
+          "type": "flag",
+          "flag": "risky_disk_scanned",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Der Fund war wirklich verseucht. Die Gefahr war ein prüfbarer Zustand, keine bloße Dialogwarnung."
+        }
+      ],
+      "teaches": "virencheck_vor_boot"
+    },
+    {
+      "id": "q_disk_archive",
+      "title": "Die Disketten dürfen nicht verschwinden",
+      "giver": "npc_alex",
+      "prereq": {
+        "year_min": 1999,
+        "needs": [
+          "alex_museum"
+        ],
+        "flag": "archive_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Alex baut ein kleines Computerarchiv auf. Drei verlässliche Sicherungskopien fehlen noch."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "GENAU 3 VERSCHIEDENE QUELLEN, NICHT ALLE: Zu Hause Amiga -> Werkbank -> Diskettenbox. Drei verschiedene belegte, lesbare Disketten deiner Wahl jeweils einmal mit BACKUP sichern. Fuer jede Quelle in X-COPY eine eigene leere DD-Disk einlegen und Verify abschliessen.",
+          "map_location": "room",
+          "goal": {
+            "action": "backup_disk",
+            "count": 3
+          }
+        },
+        {
+          "desc": "Übergib Alex dein Archivprotokoll auf dem Flohmarkt.",
+          "map_location": "flea_market",
+          "goal": {
+            "action": "archive_handover"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "npc_trust",
+          "npc": "npc_alex",
+          "value": 7
+        },
+        {
+          "type": "flag",
+          "flag": "disk_history_saved"
+        },
+        {
+          "type": "toast",
+          "text": "Alex beschriftet die Archivbox: 1990–1999. Nichts davon ist bloß alter Kunststoff."
+        }
+      ]
+    }
+  ]
+}

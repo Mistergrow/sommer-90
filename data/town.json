@@ -1,0 +1,1929 @@
+{
+	"meta": {
+		"name": "Kleinstadt (Arbeitstitel: Bytenberg)",
+		"note": "GROUNDWORK — Rahmen für die begehbare Stadtkarte. Bilder/Artwork folgen. Noch NICHT im Runtime verdrahtet: die 6 bestehenden Orte laufen weiter über GameManager.LOCATION_DEFS. Dieses File ist die Single Source of Truth für die spätere Karte (Bezirke, Orte, Verkehr, lebendige Welt). Siehe docs/STADT.md.",
+		"grid": {
+			"cols": 10.0,
+			"rows": 8.0,
+			"cell_px": 160.0
+		},
+		"start_location": "room",
+		"map_art": "FOLDING_TOWN_MAP_MASTER_V01 (gefaltete Papier-Stadtkarte, Aufsicht)",
+		"map_art_path": "res://assets/backgrounds/layers/FOLDING_TOWN_MAP_MASTER_V01.png",
+		"map_pos_note": "Pro Ort optional 'map_pos': [x, y] als Anteil 0..1 der Karten-Grafik (pixelgenaue Pins). Gesetzt im Map-Editor (scenes/MapEditor.tscn). Fehlt es, nutzt die Karte das schematische Grid-'pos'.",
+		"waypoints": [
+			[
+				0.4869,
+				0.218
+			],
+			[
+				0.5095,
+				0.267
+			],
+			[
+				0.516,
+				0.3034
+			],
+			[
+				0.5023,
+				0.4315
+			],
+			[
+				0.4934,
+				0.5472
+			],
+			[
+				0.4762,
+				0.629
+			],
+			[
+				0.4543,
+				0.6753
+			],
+			[
+				0.4146,
+				0.701
+			],
+			[
+				0.3547,
+				0.726
+			],
+			[
+				0.3197,
+				0.7526
+			],
+			[
+				0.5397,
+				-0.0132
+			],
+			[
+				0.1026,
+				1.0266
+			],
+			[
+				1.05,
+				0.38
+			],
+			[
+				0.7603,
+				0.2056
+			],
+			[
+				0.6809,
+				0.1513
+			],
+			[
+				0.6298,
+				0.2634
+			],
+			[
+				0.5966,
+				0.3435
+			],
+			[
+				0.5777,
+				0.42
+			],
+			[
+				0.5379,
+				0.4351
+			],
+			[
+				0.4484,
+				0.4378
+			],
+			[
+				0.4264,
+				0.436
+			],
+			[
+				0.4199,
+				0.4716
+			],
+			[
+				0.4021,
+				0.4849
+			],
+			[
+				0.357,
+				0.4858
+			],
+			[
+				0.3286,
+				0.4796
+			],
+			[
+				0.3381,
+				0.5561
+			],
+			[
+				0.3102,
+				0.5774
+			],
+			[
+				0.2704,
+				0.5863
+			],
+			[
+				-0.003,
+				0.5214
+			],
+			[
+				0.446,
+				0.2038
+			],
+			[
+				0.4134,
+				0.2047
+			],
+			[
+				0.3778,
+				0.2679
+			],
+			[
+				0.3624,
+				0.3114
+			],
+			[
+				0.3505,
+				0.3515
+			],
+			[
+				0.344,
+				0.3888
+			],
+			[
+				0.2515,
+				0.4031
+			],
+			[
+				0.4685,
+				0.162
+			],
+			[
+				0.5136,
+				0.2323
+			],
+			[
+				0.5783,
+				0.2385
+			],
+			[
+				0.5883,
+				0.3897
+			],
+			[
+				0.6393,
+				0.4351
+			],
+			[
+				0.7491,
+				0.4333
+			],
+			[
+				0.7918,
+				0.5427
+			],
+			[
+				0.7645,
+				0.5587
+			],
+			[
+				0.5355,
+				0.6619
+			],
+			[
+				0.5735,
+				0.6423
+			],
+			[
+				0.7004,
+				0.7375
+			],
+			[
+				0.5095,
+				0.7598
+			],
+			[
+				0.5895,
+				0.7144
+			],
+			[
+				0.6109,
+				0.6806
+			],
+			[
+				0.7983,
+				0.8176
+			],
+			[
+				0.8018,
+				0.5765
+			],
+			[
+				0.6619,
+				0.5027
+			],
+			[
+				0.4994,
+				0.4867
+			],
+			[
+				0.6554,
+				0.5534
+			],
+			[
+				0.5628,
+				0.54
+			],
+			[
+				0.4033,
+				0.5481
+			],
+			[
+				0.3487,
+				0.5472
+			],
+			[
+				0.5427,
+				0.9021
+			],
+			[
+				0.5083,
+				0.7606
+			],
+			[
+				0.4928,
+				0.7144
+			],
+			[
+				0.2005,
+				0.7046
+			],
+			[
+				0.2503,
+				0.5623
+			],
+			[
+				0.2681,
+				0.5
+			],
+			[
+				0.2829,
+				0.4644
+			],
+			[
+				0.4235,
+				0.379
+			],
+			[
+				0.4347,
+				0.3301
+			],
+			[
+				0.4531,
+				0.2901
+			],
+			[
+				0.4768,
+				0.259
+			],
+			[
+				0.5023,
+				0.2367
+			],
+			[
+				0.8013,
+				0.1229
+			],
+			[
+				0.7384,
+				0.259
+			],
+			[
+				0.7141,
+				0.3257
+			],
+			[
+				0.6927,
+				0.4093
+			],
+			[
+				0.6453,
+				0.6139
+			],
+			[
+				0.6275,
+				0.6512
+			],
+			[
+				0.5652,
+				0.6014
+			],
+			[
+				0.5646,
+				0.492
+			],
+			[
+				0.5225,
+				0.6032
+			],
+			[
+				0.398,
+				0.8256
+			],
+			[
+				0.3902,
+				0.8594
+			],
+			[
+				0.3784,
+				0.9047
+			],
+			[
+				0.2716,
+				0.8149
+			],
+			[
+				0.3321,
+				0.9065
+			],
+			[
+				0.4312,
+				0.7793
+			],
+			[
+				0.4092,
+				0.6601
+			],
+			[
+				0.4027,
+				0.6014
+			],
+			[
+				0.4039,
+				0.5756
+			],
+			[
+				0.4501,
+				0.5445
+			],
+			[
+				0.4501,
+				0.4867
+			],
+			[
+				0.4507,
+				0.5783
+			],
+			[
+				0.4335,
+				0.6459
+			],
+			[
+				0.4484,
+				0.613
+			],
+			[
+				0.4484,
+				0.3853
+			],
+			[
+				0.5023,
+				0.3897
+			],
+			[
+				0.5142,
+				0.3052
+			],
+			[
+				0.5539,
+				0.3097
+			],
+			[
+				0.8036,
+				0.4805
+			],
+			[
+				0.3713,
+				0.6077
+			],
+			[
+				0.3351,
+				0.5979
+			],
+			[
+				0.7627,
+				0.3533
+			],
+			[
+				0.5628,
+				0.4306
+			],
+			[
+				0.293,
+				0.7384
+			],
+			[
+				0.239,
+				0.7153
+			],
+			[
+				0.242,
+				0.5801
+			],
+			[
+				0.325,
+				0.4128
+			]
+		],
+		"edges": [
+			[
+				0.0,
+				1.0,
+				"bus1"
+			],
+			[
+				1.0,
+				2.0,
+				"bus1"
+			],
+			[
+				2.0,
+				3.0,
+				"bus1"
+			],
+			[
+				3.0,
+				4.0,
+				"bus1"
+			],
+			[
+				4.0,
+				5.0,
+				"bus1"
+			],
+			[
+				5.0,
+				6.0,
+				"bus1"
+			],
+			[
+				6.0,
+				7.0,
+				"bus1"
+			],
+			[
+				7.0,
+				8.0,
+				"bus1"
+			],
+			[
+				8.0,
+				9.0,
+				"bus1"
+			],
+			[
+				0.0,
+				10.0,
+				"bus1"
+			],
+			[
+				12.0,
+				13.0,
+				"bus2"
+			],
+			[
+				13.0,
+				14.0,
+				"bus2"
+			],
+			[
+				14.0,
+				15.0,
+				"bus2"
+			],
+			[
+				15.0,
+				16.0,
+				"bus2"
+			],
+			[
+				16.0,
+				17.0,
+				"bus2"
+			],
+			[
+				17.0,
+				18.0,
+				"bus2"
+			],
+			[
+				18.0,
+				3.0,
+				"bus2"
+			],
+			[
+				3.0,
+				19.0,
+				"bus2"
+			],
+			[
+				19.0,
+				20.0,
+				"bus2"
+			],
+			[
+				20.0,
+				21.0,
+				"bus2"
+			],
+			[
+				21.0,
+				22.0,
+				"bus2"
+			],
+			[
+				22.0,
+				23.0,
+				"bus2"
+			],
+			[
+				23.0,
+				24.0,
+				"bus2"
+			],
+			[
+				24.0,
+				25.0,
+				"bus2"
+			],
+			[
+				25.0,
+				26.0,
+				"bus2"
+			],
+			[
+				26.0,
+				27.0,
+				"bus2"
+			],
+			[
+				27.0,
+				28.0,
+				"bus2"
+			],
+			[
+				29.0,
+				30.0,
+				"foot"
+			],
+			[
+				30.0,
+				31.0,
+				"foot"
+			],
+			[
+				31.0,
+				32.0,
+				"foot"
+			],
+			[
+				32.0,
+				33.0,
+				"foot"
+			],
+			[
+				33.0,
+				34.0,
+				"foot"
+			],
+			[
+				34.0,
+				35.0,
+				"foot"
+			],
+			[
+				29.0,
+				36.0,
+				"foot"
+			],
+			[
+				36.0,
+				0.0,
+				"foot"
+			],
+			[
+				0.0,
+				37.0,
+				"foot"
+			],
+			[
+				37.0,
+				38.0,
+				"foot"
+			],
+			[
+				38.0,
+				15.0,
+				"foot"
+			],
+			[
+				15.0,
+				16.0,
+				"foot"
+			],
+			[
+				16.0,
+				39.0,
+				"foot"
+			],
+			[
+				39.0,
+				40.0,
+				"foot"
+			],
+			[
+				41.0,
+				16.0,
+				"foot"
+			],
+			[
+				42.0,
+				43.0,
+				"foot"
+			],
+			[
+				5.0,
+				44.0,
+				"foot"
+			],
+			[
+				44.0,
+				45.0,
+				"foot"
+			],
+			[
+				47.0,
+				48.0,
+				"foot"
+			],
+			[
+				45.0,
+				49.0,
+				"foot"
+			],
+			[
+				49.0,
+				50.0,
+				"foot"
+			],
+			[
+				51.0,
+				52.0,
+				"foot"
+			],
+			[
+				52.0,
+				53.0,
+				"foot"
+			],
+			[
+				53.0,
+				24.0,
+				"foot"
+			],
+			[
+				54.0,
+				55.0,
+				"foot"
+			],
+			[
+				56.0,
+				57.0,
+				"foot"
+			],
+			[
+				57.0,
+				26.0,
+				"foot"
+			],
+			[
+				58.0,
+				59.0,
+				"foot"
+			],
+			[
+				59.0,
+				47.0,
+				"foot"
+			],
+			[
+				47.0,
+				60.0,
+				"foot"
+			],
+			[
+				60.0,
+				6.0,
+				"foot"
+			],
+			[
+				42.0,
+				51.0,
+				"foot"
+			],
+			[
+				49.0,
+				48.0,
+				"foot"
+			],
+			[
+				54.0,
+				52.0,
+				"foot"
+			],
+			[
+				40.0,
+				52.0,
+				"foot"
+			],
+			[
+				9.0,
+				61.0,
+				"all"
+			],
+			[
+				61.0,
+				62.0,
+				"all"
+			],
+			[
+				62.0,
+				63.0,
+				"all"
+			],
+			[
+				63.0,
+				64.0,
+				"all"
+			],
+			[
+				64.0,
+				35.0,
+				"all"
+			],
+			[
+				20.0,
+				65.0,
+				"all"
+			],
+			[
+				65.0,
+				66.0,
+				"all"
+			],
+			[
+				66.0,
+				67.0,
+				"all"
+			],
+			[
+				67.0,
+				68.0,
+				"all"
+			],
+			[
+				68.0,
+				69.0,
+				"all"
+			],
+			[
+				70.0,
+				13.0,
+				"all"
+			],
+			[
+				13.0,
+				71.0,
+				"all"
+			],
+			[
+				71.0,
+				72.0,
+				"all"
+			],
+			[
+				72.0,
+				73.0,
+				"all"
+			],
+			[
+				73.0,
+				52.0,
+				"all"
+			],
+			[
+				52.0,
+				54.0,
+				"all"
+			],
+			[
+				54.0,
+				74.0,
+				"all"
+			],
+			[
+				74.0,
+				75.0,
+				"all"
+			],
+			[
+				75.0,
+				49.0,
+				"all"
+			],
+			[
+				49.0,
+				45.0,
+				"all"
+			],
+			[
+				45.0,
+				76.0,
+				"all"
+			],
+			[
+				76.0,
+				55.0,
+				"all"
+			],
+			[
+				77.0,
+				76.0,
+				"all"
+			],
+			[
+				76.0,
+				78.0,
+				"all"
+			],
+			[
+				79.0,
+				80.0,
+				"all"
+			],
+			[
+				80.0,
+				81.0,
+				"all"
+			],
+			[
+				82.0,
+				83.0,
+				"all"
+			],
+			[
+				79.0,
+				84.0,
+				"all"
+			],
+			[
+				84.0,
+				7.0,
+				"all"
+			],
+			[
+				7.0,
+				85.0,
+				"all"
+			],
+			[
+				87.0,
+				56.0,
+				"all"
+			],
+			[
+				56.0,
+				22.0,
+				"all"
+			],
+			[
+				21.0,
+				22.0,
+				"all"
+			],
+			[
+				56.0,
+				88.0,
+				"all"
+			],
+			[
+				88.0,
+				4.0,
+				"all"
+			],
+			[
+				4.0,
+				55.0,
+				"all"
+			],
+			[
+				77.0,
+				53.0,
+				"all"
+			],
+			[
+				53.0,
+				3.0,
+				"all"
+			],
+			[
+				3.0,
+				19.0,
+				"all"
+			],
+			[
+				19.0,
+				89.0,
+				"all"
+			],
+			[
+				89.0,
+				88.0,
+				"all"
+			],
+			[
+				88.0,
+				90.0,
+				"all"
+			],
+			[
+				90.0,
+				87.0,
+				"all"
+			],
+			[
+				85.0,
+				91.0,
+				"all"
+			],
+			[
+				91.0,
+				92.0,
+				"all"
+			],
+			[
+				92.0,
+				90.0,
+				"all"
+			],
+			[
+				47.0,
+				84.0,
+				"all"
+			],
+			[
+				65.0,
+				93.0,
+				"all"
+			],
+			[
+				93.0,
+				94.0,
+				"all"
+			],
+			[
+				94.0,
+				39.0,
+				"all"
+			],
+			[
+				2.0,
+				95.0,
+				"all"
+			],
+			[
+				95.0,
+				96.0,
+				"all"
+			],
+			[
+				96.0,
+				16.0,
+				"all"
+			],
+			[
+				16.0,
+				73.0,
+				"all"
+			],
+			[
+				73.0,
+				97.0,
+				"all"
+			],
+			[
+				86.0,
+				98.0,
+				"all"
+			],
+			[
+				98.0,
+				99.0,
+				"all"
+			],
+			[
+				26.0,
+				25.0,
+				"all"
+			],
+			[
+				25.0,
+				99.0,
+				"all"
+			],
+			[
+				69.0,
+				37.0,
+				"all"
+			],
+			[
+				37.0,
+				38.0,
+				"all"
+			],
+			[
+				38.0,
+				15.0,
+				"all"
+			],
+			[
+				15.0,
+				72.0,
+				"all"
+			],
+			[
+				72.0,
+				100.0,
+				"all"
+			],
+			[
+				77.0,
+				101.0,
+				"all"
+			],
+			[
+				98.0,
+				8.0,
+				"all"
+			],
+			[
+				8.0,
+				9.0,
+				"all"
+			],
+			[
+				9.0,
+				102.0,
+				"all"
+			],
+			[
+				102.0,
+				99.0,
+				"all"
+			],
+			[
+				26.0,
+				27.0,
+				"all"
+			],
+			[
+				27.0,
+				103.0,
+				"all"
+			],
+			[
+				103.0,
+				61.0,
+				"all"
+			],
+			[
+				61.0,
+				104.0,
+				"all"
+			],
+			[
+				104.0,
+				27.0,
+				"all"
+			],
+			[
+				64.0,
+				105.0,
+				"all"
+			],
+			[
+				105.0,
+				34.0,
+				"all"
+			],
+			[
+				1,
+				69,
+				"all"
+			],
+			[
+				14,
+				13,
+				"all"
+			],
+			[
+				17,
+				101,
+				"all"
+			],
+			[
+				18,
+				101,
+				"all"
+			],
+			[
+				23,
+				24,
+				"all"
+			],
+			[
+				46,
+				49,
+				"all"
+			],
+			[
+				81,
+				83,
+				"all"
+			]
+		],
+		"stops": [
+			0.0,
+			2.0,
+			4.0,
+			5.0,
+			7.0,
+			9.0,
+			13.0,
+			14.0,
+			15.0,
+			16.0,
+			23.0,
+			25.0,
+			27.0
+		]
+	},
+	"districts": {
+		"wohngebiet": {
+			"name": "Wohngebiet",
+			"color": "#8FB98F",
+			"note": "Reihenhäuser & Bude. Zuhause + Freundeshäuser."
+		},
+		"innenstadt": {
+			"name": "Innenstadt",
+			"color": "#C9A24B",
+			"note": "Fußgängerzone: Läden, Bank, Post, Kiosk, Imbiss, Telefonzelle."
+		},
+		"marktplatz": {
+			"name": "Marktplatz",
+			"color": "#B5793A",
+			"note": "Samstags Flohmarkt, sonst leer/Wochenmarkt."
+		},
+		"schulviertel": {
+			"name": "Schulviertel",
+			"color": "#6E93C4",
+			"note": "Schule + Schulhof, tagsüber Treffpunkt."
+		},
+		"vereinsgelaende": {
+			"name": "Vereinsgelände",
+			"color": "#7E6BB0",
+			"note": "Computerclub, Jugendzentrum, Bolzplatz."
+		},
+		"stadtrand": {
+			"name": "Stadtrand & Wald",
+			"color": "#4E7A4E",
+			"note": "Waldrand, Bahndamm — Events, geheime Ecken."
+		},
+		"industriegebiet": {
+			"name": "Industriegebiet",
+			"color": "#7A7E86",
+			"note": "Später: Rechenzentrum, Versandlager (Bestellungen)."
+		}
+	},
+	"locations": {
+		"room": {
+			"name": "Jugendzimmer (Zuhause)",
+			"district": "wohngebiet",
+			"pos": [
+				2.0,
+				1.0
+			],
+			"status": "live",
+			"home_of": "player",
+			"def": "game_manager",
+			"note": "Basis. In GameManager.LOCATION_DEFS als 'room'.",
+			"map_pos": [
+				0.4703,
+				0.162
+			]
+		},
+		"retro_museum": {
+			"name": "Dein Retro-Museum",
+			"district": "wohngebiet",
+			"pos": [
+				2.0,
+				1.0
+			],
+			"status": "live",
+			"year_available": 1999,
+			"map_hidden": true,
+			"hint": "ab 1999 · über Trophäenwand oder Dekadenfinale",
+			"note": "Private Ausstellung im Jugendzimmer; begehbarer, spielstandgetriebener Rückblick ohne Reisezeit."
+		},
+		"friend_cellar": {
+			"name": "Stefans Zimmer",
+			"district": "wohngebiet",
+			"pos": [
+				1.0,
+				2.0
+			],
+			"status": "live",
+			"home_of": "npc_stefan",
+			"def": "game_manager",
+			"slots": [
+				2.0,
+				3.0,
+				4.0
+			],
+			"hint": "Mittag bis Abend",
+			"map_pos": [
+				0.5824,
+				0.3879
+			]
+		},
+		"computer_shop": {
+			"name": "Computerladen Gruber",
+			"district": "innenstadt",
+			"pos": [
+				5.0,
+				3.0
+			],
+			"status": "live",
+			"keeper": "npc_gruber",
+			"def": "game_manager",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0
+			],
+			"slots": [
+				1.0,
+				2.0,
+				3.0
+			],
+			"hint": "Mo–Sa, Vormittag bis Nachmittag",
+			"map_pos": [
+				0.7004,
+				0.734
+			]
+		},
+		"flea_market": {
+			"name": "Flohmarkt",
+			"district": "marktplatz",
+			"pos": [
+				7.0,
+				3.0
+			],
+			"status": "live",
+			"seller": "npc_krause",
+			"def": "game_manager",
+			"weekdays": [
+				5.0
+			],
+			"slots": [
+				0.0,
+				1.0,
+				2.0
+			],
+			"hint": "Samstag, vormittags bis in den Nachmittag",
+			"map_pos": [
+				0.79,
+				0.5392
+			]
+		},
+		"schoolyard": {
+			"name": "Schulhof",
+			"district": "schulviertel",
+			"pos": [
+				3.0,
+				5.0
+			],
+			"status": "live",
+			"def": "game_manager",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0
+			],
+			"slots": [
+				0.0,
+				1.0,
+				2.0,
+				3.0
+			],
+			"hint": "Treffpunkt, tagsüber",
+			"map_pos": [
+				0.357,
+				0.5018
+			]
+		},
+		"computer_club": {
+			"name": "Computerclub",
+			"district": "vereinsgelaende",
+			"pos": [
+				8.0,
+				5.0
+			],
+			"status": "live",
+			"def": "game_manager",
+			"requires_quest_access": "q_tut_bytewerk",
+			"locked_hint": "Ohne Tobias' Einladung kommst du nicht hinter die Clubtür.",
+			"weekdays": [
+				2.0,
+				4.0
+			],
+			"slots": [
+				2.0,
+				3.0
+			],
+			"hint": "Mi & Fr, nachmittags/abends",
+			"map_pos": [
+				0.2526,
+				0.3995
+			]
+		},
+		"postamt": {
+			"name": "Postamt",
+			"district": "innenstadt",
+			"pos": [
+				6.0,
+				4.0
+			],
+			"status": "live",
+			"art": "LOCATION_POST_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0
+			],
+			"slots": [
+				1.0,
+				2.0,
+				3.0
+			],
+			"hint": "Mo–Sa vormittags/nachmittags",
+			"note": "Pakete/Bestellungen abholen (Alternative zum Ladenabholen), Briefmarken, Nachnahme. Koppelt an OrderManager.",
+			"map_pos": [
+				0.414,
+				0.5632
+			]
+		},
+		"stadtbank": {
+			"name": "Stadtbank",
+			"district": "innenstadt",
+			"pos": [
+				5.0,
+				4.0
+			],
+			"status": "live",
+			"art": "LOCATION_BANK_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0,
+				6.0
+			],
+			"slots": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0
+			],
+			"hint": "Geldautomat 24 h · Schalter Mo–Fr 08–16 Uhr",
+			"note": "Jugendsparbuch ab 1990; Giro und Magnetstreifen-EC-Karte ab 1994; Journal und Sommerzinsen.",
+			"map_pos": [
+				0.5871,
+				0.701
+			]
+		},
+		"musikladen": {
+			"name": "Plattenkiste",
+			"district": "innenstadt",
+			"pos": [
+				6.0,
+				3.0
+			],
+			"status": "live",
+			"art": "LOCATION_MUSIC_SHOP_FRONT_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0
+			],
+			"slots": [
+				1.0,
+				2.0,
+				3.0
+			],
+			"hint": "Mo–Sa",
+			"note": "Kassetten/Vinyl/CD (Jahr-gated), Zubehör. Verbindet mit dem MOD-/Anlage-System.",
+			"map_pos": [
+				0.5249,
+				0.7722
+			]
+		},
+		"musikladen_computer_music": {
+			"name": "Computer Music Corner",
+			"district": "innenstadt",
+			"pos": [
+				6.0,
+				3.0
+			],
+			"status": "live",
+			"art": "LOCATION_MUSIC_SHOP_COMPUTER_MUSIC_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0
+			],
+			"slots": [
+				1.0,
+				2.0,
+				3.0
+			],
+			"hint": "Hinterzimmer im Musikladen",
+			"hide_on_map": true,
+			"note": "SecretBackRoom — betreten über den Musikladen (Tür), nicht direkt von der Karte. MODs/Tracker/Demo-Scene; Keller später freischaltbar.",
+			"map_pos": [
+				0.65,
+				0.4375
+			]
+		},
+		"musikladen_keller": {
+			"name": "Keller-Archiv",
+			"district": "innenstadt",
+			"pos": [
+				6.0,
+				3.0
+			],
+			"status": "live",
+			"art": "LOCATION_MUSIC_SHOP_BASEMENT_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0
+			],
+			"slots": [
+				1.0,
+				2.0,
+				3.0
+			],
+			"hint": "Keller unter dem Musikladen (nur auf Einladung)",
+			"hide_on_map": true,
+			"note": "HiddenBasement — betreten über die Kellertür im Computer-Music-Hinterzimmer, nur mit music_owner_trust>=40. Lebendes Archiv/heiliger Gral.",
+			"map_pos": [
+				0.65,
+				0.4375
+			]
+		},
+		"kiosk": {
+			"name": "Kiosk am Markt",
+			"district": "innenstadt",
+			"pos": [
+				4.0,
+				3.0
+			],
+			"status": "live",
+			"art": "LOCATION_KIOSK_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0,
+				6.0
+			],
+			"slots": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0
+			],
+			"hint": "täglich, lange offen",
+			"note": "Computerzeitschriften (Kulturschicht-Magazine), Süßkram, Telefonkarten. Quelle für Gerüchte/Anzeigen.",
+			"map_pos": [
+				0.4525,
+				0.3986
+			]
+		},
+		"imbiss": {
+			"name": "Pommes-Palast",
+			"district": "innenstadt",
+			"pos": [
+				4.0,
+				4.0
+			],
+			"status": "live",
+			"art": "LOCATION_IMBISS_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0,
+				6.0
+			],
+			"slots": [
+				2.0,
+				3.0,
+				4.0
+			],
+			"hint": "mittags bis abends",
+			"note": "Live 1990er-Erinnerungsimbiss: jahrgangsfestes Sortiment, historische Museumskarten sowie atomarer Kauf mit Hier-essen-/Mitnehmen-Entscheidung.",
+			"map_pos": [
+				0.424,
+				0.621
+			]
+		},
+		"telefonzelle": {
+			"name": "Telefonzelle",
+			"district": "innenstadt",
+			"pos": [
+				5.0,
+				2.0
+			],
+			"status": "planned",
+			"art": "LOCATION_PHONEBOOTH_MASTER",
+			"hint": "immer erreichbar",
+			"note": "NPCs anrufen (Termine, Tausch verabreden), unterwegs ins BBS? Kostet Groschen/Telefonkarte.",
+			"map_pos": [
+				0.5735,
+				0.4751
+			]
+		},
+		"jugendzentrum": {
+			"name": "Jugendzentrum (JuZe)",
+			"district": "vereinsgelaende",
+			"pos": [
+				8.0,
+				6.0
+			],
+			"status": "planned",
+			"art": "LOCATION_JUZE_MASTER",
+			"weekdays": [
+				1.0,
+				3.0,
+				5.0
+			],
+			"slots": [
+				3.0,
+				4.0
+			],
+			"hint": "Di/Do/Sa nachmittags",
+			"note": "Kicker, Musik, ältere Szene-Leute. Alternative Gerüchtequelle, LAN-Keimzelle (später).",
+			"map_pos": [
+				0.752,
+				0.4315
+			]
+		},
+		"wald": {
+			"name": "Waldrand & Bolzplatz",
+			"district": "stadtrand",
+			"pos": [
+				9.0,
+				2.0
+			],
+			"status": "live",
+			"art": "LOCATION_WALDRAND_MASTER",
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0,
+				6.0
+			],
+			"note": "Events, Sommer-Stimmung, geheime Fundstücke. Kein Laden — Atmosphäre & Zufall.",
+			"map_pos": [
+				0.4134,
+				0.21
+			]
+		},
+		"dealer_clearing": {
+			"name": "Versteckte Lichtung",
+			"district": "stadtrand",
+			"pos": [
+				9.2,
+				2.1
+			],
+			"status": "live",
+			"art": "LOCATION_DEALER_CLEARING_MASTER",
+			"map_hidden": true,
+			"weekdays": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0,
+				5.0,
+				6.0
+			],
+			"note": "Unterort des Waldrands; nur über den Trampelpfad erreichbar. Händler werktags/sonntags.",
+			"map_pos": [
+				0.4134,
+				0.21
+			]
+		},
+		"rechenzentrum": {
+			"name": "Rechenzentrum (Versand)",
+			"district": "industriegebiet",
+			"pos": [
+				3.0,
+				7.0
+			],
+			"status": "future",
+			"art": "LOCATION_RECHENZENTRUM_MASTER",
+			"note": "Späte Jahre: Internet-Café / Uni-Terminal / Versandlager. Living-Timeline ab ~1996+.",
+			"map_pos": [
+				0.5587,
+				0.8923
+			]
+		},
+		"sven_home": {
+			"name": "Svens Bude",
+			"district": "wohngebiet",
+			"pos": [
+				3.0,
+				1.0
+			],
+			"status": "live",
+			"home_of": "npc_sven",
+			"art": "LOCATION_FRIEND_ROOM_SVEN",
+			"note": "Freundeshaus. Prozedurale Möblierung/Sammlung je Freund (Template-Wiederverwendung).",
+			"map_pos": [
+				0.6832,
+				0.1691
+			]
+		},
+		"mike_home": {
+			"name": "Mikes Zimmer",
+			"district": "wohngebiet",
+			"pos": [
+				1.0,
+				1.0
+			],
+			"status": "live",
+			"home_of": "npc_mike",
+			"art": "LOCATION_FRIEND_ROOM_MIKE",
+			"note": "Gamer-Freund Mike — Spiele/Joysticks/Highscores.",
+			"map_pos": [
+				0.2876,
+				0.7144
+			]
+		},
+		"alex_home": {
+			"name": "Alex' Zimmer",
+			"district": "wohngebiet",
+			"pos": [
+				3.0,
+				2.0
+			],
+			"status": "live",
+			"home_of": "npc_alex",
+			"art": "LOCATION_FRIEND_ROOM_ALEX",
+			"note": "Sammler-Freund Alex — Mystery-Boxen, unbekannte Hardware, Schatzsuche.",
+			"map_pos": [
+				0.5355,
+				0.2865
+			]
+		},
+		"daniel_home": {
+			"name": "Daniels Zimmer",
+			"district": "wohngebiet",
+			"pos": [
+				4.0,
+				1.0
+			],
+			"status": "live",
+			"home_of": "npc_daniel",
+			"art": "LOCATION_FRIEND_ROOM_DANIEL",
+			"note": "Programmierer-Freund Daniel — Software-Mentor (BASIC/Assembler/BBS).",
+			"map_pos": [
+				0.5409,
+				0.2518
+			]
+		},
+		"lisa_home": {
+			"name": "Lisas Zimmer",
+			"district": "wohngebiet",
+			"pos": [
+				2.0,
+				2.0
+			],
+			"status": "live",
+			"home_of": "npc_lisa",
+			"art": "LOCATION_FRIEND_ROOM_LISA",
+			"note": "Kreative Freundin Lisa — Design-Mentorin (Cover/Labels/Poster, Deluxe Paint).",
+			"map_pos": [
+				0.5267,
+				0.532
+			]
+		},
+		"lan_keller": {
+			"name": "LAN-Keller",
+			"district": "vereinsgelaende",
+			"pos": [
+				8.5,
+				5.5
+			],
+			"status": "live",
+			"def": "game_manager",
+			"year_available": 1996,
+			"weekdays": [
+				4.0,
+				5.0
+			],
+			"slots": [
+				3.0,
+				4.0
+			],
+			"hint": "Fr & Sa, abends — ab 1996",
+			"map_pos": [
+				0.2726,
+				0.4195
+			]
+		},
+		"internetcafe": {
+			"name": "Internetcafé",
+			"district": "innenstadt",
+			"pos": [
+				5.0,
+				4.0
+			],
+			"status": "live",
+			"def": "game_manager",
+			"year_available": 1998,
+			"hint": "täglich — ab 1998",
+			"map_pos": [
+				0.62,
+				0.3
+			]
+		}
+	},
+	"transport": {
+		"walk": {
+			"name": "Zu Fuß",
+			"icon": "🚶",
+			"cost_dm": 0.0,
+			"unlock": "always",
+			"minutes_per_cell": 12.0,
+			"note": "Immer verfügbar. Für kurze Wege im selben Bezirk am schnellsten (keine Wartezeit). Weite Wege = mehrere Slots."
+		},
+		"bike": {
+			"name": "Fahrrad",
+			"icon": "🚲",
+			"cost_dm": 0.0,
+			"unlock": "owns:bike",
+			"owns_from_start": true,
+			"minutes_per_cell": 5.0,
+			"note": "Standard-Fortbewegung ab Start. Deckt die ganze Stadt in i.d.R. 1 Slot ab. Bei Regen/Gewitter unangenehm (Energie/Wetter-Kopplung möglich)."
+		},
+  "bus": {
+			"name": "Stadtbus (Linie 4)",
+			"icon": "🚌",
+			"cost_dm": 2.0,
+			"unlock": "always",
+    "minutes_per_cell": 4.0,
+    "boarding_minutes": 10.0,
+			"line": [
+				"wohngebiet",
+				"innenstadt",
+				"marktplatz",
+				"schulviertel",
+				"vereinsgelaende"
+			],
+			"departs_slots": [
+				0.0,
+				1.0,
+				2.0,
+				3.0,
+				4.0
+			],
+			"note": "Fährt nur die Haltestellen der Linie an, nach Fahrplan (feste Slots). Günstig, aber Wartezeit + man muss zur Haltestelle. Bei Fund-Schwerlast praktisch."
+		},
+  "car": {
+			"name": "Auto (Mitfahrt / später eigenes)",
+			"icon": "🚗",
+			"cost_dm": 0.0,
+			"unlock": "has_license && owns_car — Vorbereitung ab 17, Führerschein ab 18; vorher nur Mitfahrgelegenheit",
+    "minutes_per_cell": 2.0,
+    "boarding_minutes": 5.0,
+			"note": "Living-Timeline: erst Mitfahren (Eltern/ältere Szene), später eigener Führerschein/Gebrauchtwagen. Schnell, aber Sprit/Parken."
+		}
+	},
+	"roads": [
+		[
+			"wohngebiet",
+			"innenstadt",
+			2.0
+		],
+		[
+			"wohngebiet",
+			"schulviertel",
+			2.0
+		],
+		[
+			"innenstadt",
+			"marktplatz",
+			1.0
+		],
+		[
+			"innenstadt",
+			"schulviertel",
+			2.0
+		],
+		[
+			"innenstadt",
+			"stadtrand",
+			3.0
+		],
+		[
+			"marktplatz",
+			"vereinsgelaende",
+			2.0
+		],
+		[
+			"schulviertel",
+			"vereinsgelaende",
+			2.0
+		],
+		[
+			"vereinsgelaende",
+			"industriegebiet",
+			3.0
+		],
+		[
+			"innenstadt",
+			"industriegebiet",
+			3.0
+		],
+		[
+			"stadtrand",
+			"vereinsgelaende",
+			2.0
+		]
+	],
+	"living_world": {
+		"note": "Die Stadt lebt: NPCs bewegen sich nach ihrem Wochenplan zwischen den Orts-Knoten. Pläne liegen pro NPC in data/npcs.json (schedule/scheduled_place). 'Mal sehen, ob jemand da ist' = present_at() prüft, wer laut Plan (mit Unschärfe) gerade an einem Ort ist.",
+		"schedule_targets": "Werte von scheduled_place müssen location-IDs aus diesem File sein.",
+		"rhythms": [
+			"Werktags vormittags: Schule (Schüler-NPCs im Schulviertel).",
+			"Werktags nachmittags: Schulhof/Jugendzentrum/Computerclub je nach Tag.",
+			"Samstagvormittag: halbe Stadt am Flohmarkt.",
+			"Sonntag: ruhig, Läden zu, Familienzeit (Taschengeld)."
+		]
+	}
+}

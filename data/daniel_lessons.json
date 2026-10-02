@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "comment": "Daniels dreiteilige Jahresprojekte 1991-1999. Jede Lektion ist eine echte, tagesbegrenzte Handlung am Computertisch.",
+  "years": {
+    "1991": {
+      "title": "Vom Listing zum Werkzeug",
+      "lessons": [
+        {"title": "Eingaben ohne Sackgasse", "brief": "Ein BASIC-Diskettenmenü mit sauberer Eingabeprüfung, Abbruchpfad und verständlichen Fehlermeldungen bauen.", "program": "my_listing_tool", "unlock": "MEIN LISTING-TOOL"},
+        {"title": "Daten statt Sprünge", "brief": "Menüpunkte aus einer Datentabelle lesen, Schleifen ordnen und den Speicherverbrauch sichtbar messen.", "program": "amos_homage", "unlock": "SOMMER BASIC"},
+        {"title": "Ein Beitrag fürs Gruppenintro", "brief": "Logo, Modultitel und Credits über eine gemeinsame Schnittstelle in den Club-Build einhängen.", "program": "protracker", "unlock": "PRO TRACKER"}
+      ]
+    },
+    "1992": {
+      "title": "Ein Spiel, das nicht auseinanderfällt",
+      "lessons": [
+        {"title": "Zustände statt Spaghetti", "brief": "Titel, Spiel, Pause und Ende als klar getrennte Zustände für den eigenen Prototyp entwerfen.", "program": "blitzbasic_homage", "unlock": "SOMMER BASIC COMPILER II"},
+        {"title": "Leveldaten prüfen", "brief": "Kollisionen und Spawnpunkte aus einer Karte lesen und ungültige Startpositionen automatisch abfangen.", "program": "devpac_homage", "unlock": "ASSEMBLER-WERKSTATT"},
+        {"title": "Highscore mit Prüfsumme", "brief": "Einen kleinen Highscoreblock schreiben, laden und gegen unvollständige Diskettenzugriffe absichern.", "program": "memory_monitor", "unlock": "SPEICHER-MONITOR"}
+      ]
+    },
+    "1993": {
+      "title": "Programme für die Leitung",
+      "lessons": [
+        {"title": "Timeout statt Endlosschleife", "brief": "Ein BBS-Login mit Wählton, Handshake, Zeitlimit und sicherem Abbruchpfad simulieren.", "program": "terminal", "unlock": "NACHT-COMM"},
+        {"title": "Pakete mit Prüfsumme", "brief": "Übertragene Blöcke nummerieren, prüfen und nur fehlerhafte Teile erneut anfordern.", "program": "bbs_mail", "unlock": "BBS-MAIL"},
+        {"title": "Upload-Warteschlange", "brief": "Mehrere Dateien mit Name, Größe, Status und Wiederaufnahme in eine robuste Warteschlange legen.", "program": "download_manager", "unlock": "TRANSFER-MANAGER"}
+      ]
+    },
+    "1994": {
+      "title": "Mehr aus jedem Byte",
+      "lessons": [
+        {"title": "68000 lesen und messen", "brief": "Eine kurze Routine kommentieren, Laufzeit messen und erst danach gezielt vereinfachen.", "program": "devpac_homage", "unlock": "ASSEMBLER-WERKSTATT"},
+        {"title": "Doppelpuffer ohne Flackern", "brief": "Zwei Bildspeicher sauber umschalten und einen sichtbaren Tear-Test bauen.", "program": "dpaint", "unlock": "DELUXE PAINT"},
+        {"title": "Samples im Budget", "brief": "Samplelänge, Bilddaten und Code gegen ein festes Speicherbudget balancieren.", "program": "sample_editor", "unlock": "SAMPLE-EDITOR"}
+      ]
+    },
+    "1995": {
+      "title": "Werkzeuge, die Fehler überleben",
+      "lessons": [
+        {"title": "Diagnoseprotokoll", "brief": "Jeden Testschritt mit Erwartung, Messwert und Ergebnis protokollieren, statt auf Verdacht Teile zu tauschen.", "program": "disk_repair", "unlock": "DISK-DIAGNOSE"},
+        {"title": "Wiederherstellung zuerst lesen", "brief": "Eine beschädigte Verzeichnisstruktur nur lesend analysieren und Rettungsschritte vor dem Schreiben planen.", "program": "disksalv_homage", "unlock": "DISK-RETTER"},
+        {"title": "Backup wirklich verifizieren", "brief": "Sicherung und Quelle blockweise vergleichen und einen verständlichen Prüfbericht ausgeben.", "program": "quarterback_homage", "unlock": "BACKUP-SUITE"}
+      ]
+    },
+    "1996": {
+      "title": "Mehrere Rechner, ein Zustand",
+      "lessons": [
+        {"title": "Pakete beobachten", "brief": "Ein kleines LAN-Protokoll visualisieren und verlorene oder doppelte Pakete markieren.", "program": "scout_homage", "unlock": "NETZ-SCOUT"},
+        {"title": "Lobby mit Zeitlimit", "brief": "Spieler anmelden, Bereitschaft synchronisieren und tote Verbindungen automatisch entfernen.", "program": "snoop_monitor", "unlock": "SYSTEM-MONITOR"},
+        {"title": "Sauber trennen", "brief": "Dateiübertragung, Chat und Verbindungsabbruch so kapseln, dass ein Fehler nicht alles beendet.", "program": "mcp_homage", "unlock": "SYSTEM-CONTROL"}
+      ]
+    },
+    "1997": {
+      "title": "Alte Daten, neue Werkzeuge",
+      "lessons": [
+        {"title": "Archivformat erkennen", "brief": "Dateiköpfe prüfen und ein Archiv nur dem passenden Entpacker übergeben.", "program": "lha_unpacker", "unlock": "LHA-ENTPACKER"},
+        {"title": "Konverter mit Rückweg", "brief": "Module stapelweise konvertieren, Originale behalten und jeden Fehler in eine Liste schreiben.", "program": "lzx_unpacker", "unlock": "LZX-ENTPACKER"},
+        {"title": "Versionen vergleichen", "brief": "Zwei Projektstände dateiweise vergleichen und daraus eine nachvollziehbare Änderungsliste erzeugen.", "program": "dms_unpacker", "unlock": "DMS-WERKZEUG"}
+      ]
+    },
+    "1998": {
+      "title": "Code für Besucher",
+      "lessons": [
+        {"title": "HTML aus Daten", "brief": "Sammlungseinträge aus einer Tabelle in konsistente HTML-Seiten umwandeln.", "program": "texteditor", "unlock": "TEXT-EDITOR"},
+        {"title": "Formular ohne Vertrauen", "brief": "Gästebucheinträge begrenzen, Sonderzeichen behandeln und leere Beiträge ablehnen.", "program": "finalwriter_homage", "unlock": "FINAL WRITER"},
+        {"title": "Kaputte Links finden", "brief": "Alle lokalen Seiten durchsuchen und fehlende Bilder oder Ziele in einem Bericht sammeln.", "program": "icon_editor", "unlock": "ICON-EDITOR"}
+      ]
+    },
+    "1999": {
+      "title": "Nichts dem Zufall überlassen",
+      "lessons": [
+        {"title": "Vierstellige Jahre", "brief": "Datumslogik mit 1999, 2000, Schaltjahr und ungültigen Eingaben systematisch testen.", "program": "sysinfo", "unlock": "SYSTEM-INFO"},
+        {"title": "Archivmanifest", "brief": "Zu jeder wichtigen Diskette Titel, Zustand, Kopien und Prüfsumme in ein Manifest schreiben.", "program": "quarterback_homage", "unlock": "BACKUP-SUITE"},
+        {"title": "Die letzte Prüfroutine", "brief": "Das gesamte Millennium-Projekt automatisiert booten, prüfen und mit reproduzierbarem Abschlussbericht einfrieren.", "program": "viruschecker", "unlock": "VIREN-CHECKER"}
+      ]
+    }
+  }
+}

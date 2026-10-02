@@ -1,0 +1,29 @@
+{
+  "letter": "C",
+  "entries": [
+    {
+      "software_id": "code_red_protocol",
+      "historical_name": "Code Red: Protokoll 2034",
+      "display_name": "Code Red: Protokoll 2034",
+      "release_year": 1990,
+      "developer": "Obsidian Systems",
+      "publisher": "Obsidian Systems",
+      "platform": "Amiga",
+      "category": "games",
+      "subcategory": "strategy_management",
+      "disk_count": 1,
+      "art_dir": "res://assets/software/code_red_protocol",
+      "art": {
+        "manual_cover": "manual_cover.png",
+        "manual_back": "manual_back.png",
+        "orbit_chart_front": "orbit_chart_front.png",
+        "orbit_chart_back": "orbit_chart_back.png"
+      },
+      "keywords": ["code red", "strategy", "management", "r-62", "kopierschutz"],
+      "tags": ["spielbar", "questgegenstand", "handbuch", "bahnkarte"],
+      "timeline": {
+        "1990": {"available": true, "friend": true}
+      }
+    }
+  ]
+}

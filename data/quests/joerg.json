@@ -1,0 +1,69 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_joerg",
+  "quests": [
+    {
+      "id": "q_joerg_b_seite",
+      "title": "Die B-Seite darf nicht knacken",
+      "giver": "npc_joerg",
+      "prereq": {
+        "year_min": 1994,
+        "flag": "joerg_b_seite_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Jörg will eine kleine Szenekassette für den Laden zusammenstellen. Der Übergang zur B-Seite braucht ein sauberes Pattern und einen hörbaren Spannungsbogen."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Baue ein rhythmisch sauberes Tracker-Pattern. Kick, Bass und Lead dürfen sich nicht gegenseitig verschlucken.",
+          "map_location": "musikladen",
+          "goal": {
+            "action": "minigame:tracker_pattern"
+          }
+        },
+        {
+          "desc": "Stell aus den passenden Stücken eine B-Seite mit nachvollziehbarem Spannungsbogen zusammen.",
+          "map_location": "musikladen",
+          "goal": {
+            "action": "minigame:mixtape"
+          }
+        },
+        {
+          "desc": "Spiel Jörg das Master vor und erklärt gemeinsam, warum Reihenfolge und Pegel jetzt funktionieren.",
+          "map_location": "musikladen",
+          "goal": {
+            "action": "joerg_master_handoff"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "money",
+          "value": 30
+        },
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_joerg",
+          "value": 4
+        },
+        {
+          "type": "flag",
+          "flag": "joerg_scene_master_done",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Die Szenekassette ist gemastert. Jörg stellt sie ins Hörregal und schreibt deinen Handle auf die Einlegerkarte."
+        }
+      ]
+    }
+  ]
+}

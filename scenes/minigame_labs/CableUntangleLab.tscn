@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dk130rfv0wp7h"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="CableUntangleLab" unique_id=1359803667 instance=ExtResource("1")]
+minigame_id = "cable_untangle"

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cmag0edit0r01"]
+
+[ext_resource type="Script" uid="uid://cuefqnu2r28a2" path="res://scripts/gfx/magazine_editor.gd" id="1_mag"]
+
+[node name="MagazineEditor" type="Control" unique_id=1676029088]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mag")

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cu8vbi0v58lbh"]
+
+[ext_resource type="Script" uid="uid://c8ptrtybcd7m6" path="res://scripts/startup_loader.gd" id="1_startup"]
+
+[node name="Startup" type="Control" unique_id=463477815]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_startup")

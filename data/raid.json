@@ -1,0 +1,24 @@
+{
+	"comment": "Razzia-System (RaidManager): Kopien-Umsatz pro Jahr vs. Ära-Grenze. Die Grenze STEIGT mit der Ära (mehr Geld im Umlauf, größere Szene) — 'eras' wählt per from-Jahr. Warnstufen bei ratio der Grenze mit eigenen Texten (Stille-Post: erst Gerücht, dann konkret, dann dringend). cash_seize = Bargeld-Anteil je Razzia-Nummer (1., 2., 3.+).",
+	"eras": [
+		{ "from": 1990, "raid_at": 10000 },
+		{ "from": 1993, "raid_at": 15000 },
+		{ "from": 1996, "raid_at": 20000 },
+		{ "from": 1998, "raid_at": 30000 }
+	],
+	"warnings": [
+		{
+			"at": 0.5,
+			"text": "Auf dem Schulhof flüstert man: »Die von der GVU waren beim Krause und haben Fragen gestellt …« Vielleicht mal kürzertreten."
+		},
+		{
+			"at": 0.75,
+			"text": "Krause zieht dich beiseite: »Zwei Typen haben nach ›dem mit den sauberen Etiketten‹ gefragt. Ich hab nichts gesagt. NOCH nicht nötig, dass du auffliegst.«"
+		},
+		{
+			"at": 0.9,
+			"text": "Ein Zettel im Briefkasten, ohne Absender: »HÖR AUF. SIE BEOBACHTEN DICH.« — Dein Puls rast. Vielleicht dieses Jahr keine Kopie mehr verkaufen."
+		}
+	],
+	"cash_seize": [0.5, 0.6, 0.75]
+}

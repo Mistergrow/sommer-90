@@ -1,0 +1,831 @@
+{
+	"npc": "npc_mike",
+	"comment": "Zeilen-Pool fuer npc_mike. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "mik_b01",
+			"text": "Neuer Highscore! Frag nicht, wie oft ich gestorben bin."
+		},
+		{
+			"id": "mik_b02",
+			"text": "Willst du's mit mir aufnehmen? Verlierer holt Nachschub."
+		},
+		{
+			"id": "mik_b03",
+			"text": "Eine Hand am Joystick, die andere an der Cola — meine Kampfhaltung."
+		},
+		{
+			"id": "mik_b04",
+			"text": "Ich kenn jeden Trick, jeden Cheat, jede Abkürzung."
+		},
+		{
+			"id": "mik_b05",
+			"text": "Bei mir zählt nur eins: die Bestenliste."
+		},
+		{
+			"id": "mik_b06",
+			"text": "Ich hab Blasen an den Daumen. Ehrenabzeichen, sag ich dir."
+		},
+		{
+			"id": "mik_b07",
+			"text": "Ein gutes Spiel erkennt man daran, dass man 'nur noch einmal' sagt."
+		},
+		{
+			"id": "mik_b08",
+			"text": "Reaktionszeit ist alles. Ich trainier das, echt."
+		},
+		{
+			"id": "mik_b09",
+			"text": "Ich hab die Geheimlevel gefunden, die keiner kennt."
+		},
+		{
+			"id": "mik_b10",
+			"text": "Willst du meine Rekordliste sehen? Ist auf Papier, versteht sich."
+		},
+		{
+			"id": "mik_b11",
+			"text": "Nachts spiel ich am besten. Keine Ablenkung."
+		},
+		{
+			"id": "mik_b12",
+			"text": "Der Sven denkt, er sei gut. Süß, wirklich."
+		},
+		{
+			"id": "mik_b13",
+			"text": "Sammeln ist okay, aber gespielt werden muss der Kram auch."
+		},
+		{
+			"id": "mik_b14",
+			"text": "Ich brauch keinen teuren Kram, ich brauch nur Skill."
+		},
+		{
+			"id": "mik_b15",
+			"text": "Ein wackliger Joystick ruiniert alles. Merk dir das."
+		},
+		{
+			"id": "mik_b16",
+			"text": "Ich hab schon Spiele durchgespielt, von denen du nie gehört hast."
+		},
+		{
+			"id": "mik_b17",
+			"text": "Gib mir fünf Minuten mit dem Ding, ich knack den Rekord."
+		},
+		{
+			"id": "mik_b18",
+			"text": "Verlieren gehört dazu — aber ich muss es nicht mögen."
+		},
+		{
+			"id": "mik_b19",
+			"text": "Meine Mutter sagt, ich soll rausgehen. Dabei bin ich hier Weltmeister."
+		},
+		{
+			"id": "mik_b20",
+			"text": "Zeig her, was hast du zuletzt gespielt?"
+		},
+		{
+			"id": "mik_b21",
+			"text": "Ich mach Pausen nur, wenn die Cola alle ist."
+		},
+		{
+			"id": "mik_b22",
+			"text": "Es gibt Spieler, und es gibt Zuschauer. Ich bin Spieler."
+		},
+		{
+			"id": "mik_b23",
+			"text": "Ich lern die Muster auswendig, dann ist der Rest reine Technik."
+		},
+		{
+			"id": "mik_b24",
+			"text": "Mein Rekord steht seit drei Wochen. Trau dich, ihn zu brechen."
+		},
+		{
+			"id": "mik_b25",
+			"text": "Zwei Spieler, ein Bildschirm — so muss das sein."
+		},
+		{
+			"id": "mik_b26",
+			"text": "Ich hab mal 14 Stunden am Stück gezockt. Frag nicht."
+		},
+		{
+			"id": "mik_b27",
+			"text": "Wenn ich verliere, dann nur, weil der Joystick klemmte. Immer."
+		},
+		{
+			"id": "mik_b28",
+			"text": "Highscores sind vergänglich. Deshalb jag ich immer den nächsten."
+		},
+		{
+			"id": "mik_b29",
+			"text": "Setz dich, guck zu und lern was."
+		},
+		{
+			"id": "mik_b30",
+			"text": "Der beste Moment? Wenn die Buchstaben für den Namen blinken."
+		},
+		{
+			"id": "mi_joy",
+			"to": 1995,
+			"topic": "hardware",
+			"text": "Ein Competition Pro, kein Wackel-Ding — das ist das ganze Geheimnis. Merk dir das."
+		},
+		{
+			"id": "mi_cheat",
+			"from": 1991,
+			"to": 1995,
+			"topic": "spiele",
+			"text": "Es gibt 'nen Cheat für Level 7. Steht in keinem Heft — nur die Szene weiß sowas."
+		},
+		{
+			"id": "mi_konsole",
+			"from": 1996,
+			"needs": [
+				"mike_konsole"
+			],
+			"once": true,
+			"topic": "konsole",
+			"text": "Ich hab mir 'ne Konsole geholt! Cartridges, kein Laden mehr, einfach reinstecken und los. Herrlich faul."
+		},
+		{
+			"id": "mi_konsole2",
+			"from": 1996,
+			"needs": [
+				"mike_konsole"
+			],
+			"topic": "konsole",
+			"text": "Am Rechner zock ich kaum noch — die Konsole ist einfach bequemer. Sag's nicht dem Achim."
+		},
+		{
+			"id": "mi_3d",
+			"from": 1998,
+			"needs": [
+				"grafikkarten_hype"
+			],
+			"topic": "hardware",
+			"text": "Diese neuen 3D-Grafikkarten... da ruckelt nix mehr. Ich spar drauf, das wird der Hammer."
+		},
+		{
+			"id": "mi_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Meine alten Highscore-Listen hab ich alle noch. Auf Papier! Damals gab's keine Speicherstände."
+		},
+		{
+			"id": "mi_skep1",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Der Daniel spinnt komplett: Telefone, die ins Internet gehen! Wozu?! Zum Zocken brauch ich 'nen Fernseher und Ruhe."
+		},
+		{
+			"id": "mi_skep2",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Jetzt redet Daniel wieder von seinem angebissenen Apfel. Ich ess meine Äpfel ganz, danke."
+		},
+		{
+			"id": "mi_skep3",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Internet in der Hosentasche, klar. Und morgen fliegen Autos. Träum weiter, Daniel!"
+		},
+		{
+			"id": "mi_skep4",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Und dann? Sitzen alle am Tisch und GLOTZEN auf ihr Telefon, statt miteinander zu reden? Haha! … Stell dir das mal ernsthaft vor."
+		},
+		{
+			"id": "mi_skep5",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Internet überall heißt: dein Chef erreicht dich ÜBERALL. Nee danke. Feierabend ist heilig, das kapiert ihr noch."
+		},
+		{
+			"id": "mi_skep6",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Wenn das Ding alles über dich weiß — wo du bist, was du kaufst, mit wem du redest — wem gehört das dann alles, hä? Na? Eben!"
+		},
+		{
+			"id": "mi_skep7",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Daniel sagt, die Spiele auf dem Telefon werden umsonst sein. UMSONST! Und womit zahlt man dann? Genau — mit irgendwas zahlst du IMMER."
+		},
+		{
+			"id": "mi_skep8",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Am Ende piept das Taschending alle zwei Minuten und keiner kann mehr fünf Minuten stillsitzen. DAS ist eure schöne Zukunft. Ich bleib beim Joystick."
+		},
+		{
+			"id": "mi_skep9",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Die Jungs fragen immer, wie ich das meine. Na so: Wenn du auf 'ner KONSOLE online spielst und einer HACKT die Server — dann spielt drei Monate lang KEINER mehr online. Drei Monate! Bei meinem Modul steckt der Highscore in MIR drin, da kann keiner ran."
+		},
+		{
+			"id": "mi_skep10",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Online-Spielen heißt: dein Spiel gehört dir nicht mehr. Server weg, Spiel weg. Merk dir, wer's dir gesagt hat."
+		},
+		{
+			"id": "mi_skep11",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Wenn Spiele irgendwann nur noch aus der Leitung kommen, gibt's nichts mehr zum ANFASSEN. Keine Box, kein Handbuch, kein Flohmarkt. Du kaufst Luft und nennst es Sammlung."
+		},
+		{
+			"id": "mi_skep12",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Und gekauft heißt dann nicht mehr gekauft, pass auf: Du DARFST das Spiel benutzen, solange die Firma es erlaubt. Schalten die den Schlüssel ab, war's das. DAS nennen die dann Fortschritt."
+		},
+		{
+			"id": "mi_skep13",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Im Netz bastelt sich doch jeder eine zweite Person zusammen — cooler, schöner, erfundener. Und irgendwann vergessen die Leute, welche von beiden die echte war."
+		},
+		{
+			"id": "mi_skep14",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Ich seh's kommen: Leute, deren BERUF es ist, dir den ganzen Tag Sachen vorzuspielen, damit du sie kaufst. Und die müssen JEDEN Tag liefern, sonst sind sie weg vom Fenster. Was für ein Leben soll das sein?"
+		},
+		{
+			"id": "mi_skep15",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Alle wollen dann nur noch konsumieren, konsumieren, konsumieren — keiner tippt mehr ein Listing ab, keiner lötet, keiner MACHT noch was selbst. Wir hier? Wir machen noch selbst. Merk dir diesen Keller."
+		},
+		{
+			"id": "mi_wz1",
+			"topic": "witz",
+			"text": "Ich hab den ruhigsten Joystick-Griff im Viertel. Rein sportlich gemeint. Meistens."
+		},
+		{
+			"id": "mi_wz2",
+			"topic": "witz",
+			"text": "Meine Lieblingsdiskette ist doppelseitig beschreibbar. Beidseitig begabt läuft in der Familie."
+		},
+		{
+			"id": "mi_wz3",
+			"topic": "witz",
+			"text": "Formatieren heißt: alles vergessen und von vorn anfangen. Mein Mathelehrer nennt das 'Sommerferien'."
+		},
+		{
+			"id": "mi_wz4",
+			"topic": "witz",
+			"text": "Ich bin wie ein guter Kopierschutz: schwer zu knacken, und keiner weiß so genau, wofür ich gut bin."
+		},
+		{
+			"id": "mi_wz5",
+			"topic": "witz",
+			"text": "Daumensport ist auch Sport. Ich schwitze, ich leide, ich verliere Flüssigkeit — Cola zählt als Flüssigkeit."
+		},
+		{
+			"id": "mi_wz6",
+			"topic": "witz",
+			"text": "Das heißt Competition PRO, weil der Amateur den Knüppel nicht ruhig halten kann. Üben, üben!"
+		},
+		{
+			"id": "mi_wz7",
+			"topic": "witz",
+			"text": "Disketten sind wie Busse: Wartest du auf eine, kommen drei Lesefehler auf einmal."
+		},
+		{
+			"id": "mi_wz8",
+			"topic": "witz",
+			"text": "Mein Rechner und ich sind ein eingespieltes Paar: Er stürzt ab, ich fang ihn auf. Emotional, mein ich."
+		},
+		{
+			"id": "mi_wz9",
+			"topic": "witz",
+			"text": "Schreibschutz ist, wenn die Diskette 'nein' sagt. Und 'nein' heißt 'nein', auch bei Disketten. Merk dir das."
+		},
+		{
+			"id": "mi_wz10",
+			"topic": "witz",
+			"text": "Ich hab gestern 'ne Runde draußen gedreht. Also, die Diskette. Im Laufwerk. Zählt das?"
+		},
+		{
+			"id": "mi_orakel",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"weight": 4,
+			"dialogue": "mike_orakel",
+			"topic": "orakel",
+			"text": "Setz dich, ich bin grad in Fahrt..."
+		},
+		{
+			"id": "mi_skep16",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Filme werden irgendwann aus der LEITUNG kommen, pass auf. Und dann suchst du länger nach einem Film, als der Film dauert."
+		},
+		{
+			"id": "mi_skep17",
+			"from": 1998,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Musik kaufst du dann auch nicht mehr — du LEIHST sie. Alle Lieder der Welt für 'ne Monatsgebühr. Und wehe, du zahlst nicht: dann ist deine ganze Plattensammlung einfach... weg. Puff."
+		},
+		{
+			"id": "mi_skep18",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Irgendwann gibt's für ALLES 'ne Monatsgebühr. Fürs Fernsehen, für die Musik, fürs Auto — die verkaufen dir ein Auto und die SITZHEIZUNG kostet extra im Monat! Lach nur. Lach ruhig."
+		},
+		{
+			"id": "mi_skep19",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Die Zeitungen sterben, und stattdessen liest jeder nur noch, was so 'ne Rechenmaschine ihm VORSORTIERT. Und die Maschine zeigt dir natürlich genau das, worüber du dich aufregst — weil du dann länger guckst. Wut hält wach, Wut verkauft Werbung."
+		},
+		{
+			"id": "mi_skep20",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Daumen hoch! Die Leute werden süchtig nach Daumen-hoch von Fremden. Erwachsene Menschen! Gucken alle fünf Minuten nach, ob wer den Daumen gehoben hat. Wie Tamagotchis, nur sind SIE das Tamagotchi."
+		},
+		{
+			"id": "mi_skep21",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Kennenlernen läuft dann übers Gerät: Bild angucken, nach links wischen, nächstes Bild. Menschen aussortieren wie Sammelkarten. Romantisch, was? Ich bleib beim Schulhof."
+		},
+		{
+			"id": "mi_skep22",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Und die Fotos! JEDER macht dann TAUSEND Fotos von allem. Vom ESSEN, sag ich dir. Und anguckt sie... niemand. Nie wieder. Tausend Fotos, null Erinnerungen."
+		},
+		{
+			"id": "mi_skep23",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Das Navi-Ding sagt den Leuten dann, wo's langgeht, und die Leute HÖREN drauf. Fahren in den Fluss, weil das Gerät's gesagt hat. Der Mensch gibt das Denken ab wie 'n Mantel an der Garderobe."
+		},
+		{
+			"id": "mi_skep24",
+			"from": 1999,
+			"needs": [
+				"daniel_apfel"
+			],
+			"topic": "skepsis",
+			"text": "Eines Tages hat jeder 'ne Uhr, die zählt, wie viele SCHRITTE er macht. Und dann laufen erwachsene Männer nachts um den Block, damit die Uhr zufrieden ist. Die UHR! Zufrieden!"
+		},
+		{
+			"id": "mi_wz11",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Ich hab meiner Diskette alles anvertraut. Jetzt hat sie einen Schreibschutz. Frauen, ey."
+		},
+		{
+			"id": "mi_wz12",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Mein Leben hat auch nur zwei Buttons, und einer davon klemmt."
+		},
+		{
+			"id": "mi_wz13",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Ich bin wie ein Lesefehler: taucht immer dann auf, wenn's grad wichtig wird."
+		},
+		{
+			"id": "mi_wz14",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Autofire ist wie flunkern: fühlt sich nach Sieg an, zählt aber nicht."
+		},
+		{
+			"id": "mi_wz15",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Die Röhre braucht 'ne Minute zum Warmwerden. Ich auch. Wir verstehen uns blind, der Monitor und ich."
+		},
+		{
+			"id": "mi_wz16",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Ich hab 'nen Doppelklick erfunden, lange vor allen anderen: einmal klopfen, einmal reinkommen. Meine Mutter nennt's 'anständig', ich nenn's Benutzerführung."
+		},
+		{
+			"id": "mi_wz17",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Ich geb nie auf. Ich mach nur ein längeres Continue."
+		},
+		{
+			"id": "mi_wz18",
+			"from": 1990,
+			"topic": "witz",
+			"text": "Es heißt JOYstick. Wer dabei nicht lächelt, hält ihn falsch."
+		},
+		{
+			"id": "mi_wz19",
+			"topic": "witz",
+			"text": "Mein Laufwerk hatte 'nen Putzstab-Termin. Jetzt läuft's wieder rund. Wellness wirkt, sag ich doch."
+		},
+		{
+			"id": "mi_wz20",
+			"topic": "witz",
+			"text": "Doppelte Dichte heißt nicht, dass die Diskette doppelt so dumm ist. Das wär mein Zeugnis."
+		},
+		{
+			"id": "mi_wz21",
+			"topic": "witz",
+			"text": "Ich hab meinen Highscore mit Edding aufs Gehäuse geschrieben. Vandalismus? Nein. Geschichtsschreibung."
+		},
+		{
+			"id": "mi_wz22",
+			"topic": "witz",
+			"text": "Meine Maus hat nur eine Kugel und läuft trotzdem besser als ich im Sportunterricht."
+		},
+		{
+			"id": "mi_wz23",
+			"topic": "witz",
+			"text": "'Drück ENTER', sagt der Rechner. Endlich sagt mir mal einer klar, was er von mir will."
+		},
+		{
+			"id": "mi_wz24",
+			"topic": "witz",
+			"text": "Game Over ist nur Fachsprache für 'Nochmal!'."
+		},
+		{
+			"id": "mi_wz25",
+			"topic": "witz",
+			"text": "Ich hab 'ne Freundin, aber die nutzt 'ne andere Mailbox. Ihr kennt sie nicht."
+		},
+		{
+			"id": "mi_wz26",
+			"topic": "witz",
+			"text": "Der Lehrer sagt, ich soll mehr rausgehen. Ich geh doch dauernd raus — aus dem Level."
+		},
+		{
+			"id": "mi_wz27",
+			"topic": "witz",
+			"text": "Autofire ist wie Spickzettel: Alle machen's, keiner gibt's zu, und erwischt wird nur der Dumme."
+		},
+		{
+			"id": "mi_wz28",
+			"topic": "witz",
+			"text": "Sie fragte, ob ich ein Laufwerk hab. Ich so: DF0 UND DF1! Sie ist gegangen. Ihr Verlust — doppelte Kapazität."
+		},
+		{
+			"id": "mi_wz29",
+			"topic": "witz",
+			"text": "Ich sagte: 'Willst du meine Sammlung sehen?' Sie dachte, das wär ein Trick. Es waren wirklich 200 Disketten. Sie ging trotzdem."
+		},
+		{
+			"id": "mi_wz30",
+			"topic": "witz",
+			"text": "Ich bin wie Public Domain: kostenlos, gut gemeint — und alle kopieren mich, aber keiner will das Original."
+		},
+		{
+			"id": "mi_wz31",
+			"topic": "witz",
+			"text": "Ich bin Single-Sided. Beidseitig wär mir zu viel Verantwortung."
+		},
+		{
+			"id": "mi_wz32",
+			"topic": "witz",
+			"text": "Warmstart, Kaltstart — ich brauch morgens beides: Dusche und Kakao."
+		},
+		{
+			"id": "mi_wz33",
+			"topic": "witz",
+			"text": "Amiga heißt 'Freundin' auf Spanisch. Ich bin also technisch gesehen vergeben."
+		},
+		{
+			"id": "mi_wz34",
+			"topic": "witz",
+			"text": "Der C64-Typ sagt, sein Brotkasten reicht ihm völlig. Klar — für Toast."
+		},
+		{
+			"id": "mi_wz35",
+			"topic": "witz",
+			"text": "512 KB Speicher: mehr Gedächtnis als Opa, weniger Sturheit als Oma."
+		},
+		{
+			"id": "mi_wz36",
+			"topic": "witz",
+			"text": "Wenn MEIN Kopf abstürzt, blinkt auch nur noch was Rotes. Meditation, Guru-Style."
+		},
+		{
+			"id": "mi_wz37",
+			"topic": "witz",
+			"text": "Interlace-Modus: Das Bild zittert. Wie ich vor der Mathearbeit."
+		},
+		{
+			"id": "mi_wz38",
+			"topic": "witz",
+			"text": "Ich hab die Kondition von einem Akku aus der Zukunft: nach zwei Stunden leer, und wechseln kann mich keiner."
+		},
+		{
+			"id": "mi_wz39",
+			"topic": "witz",
+			"text": "Level 7 hat einen Endgegner, Mathe hat Herrn Voss. Level 7 ist fairer."
+		},
+		{
+			"id": "mi_wz40",
+			"topic": "witz",
+			"text": "Meine Diskettenbox hat mehr Ordnung als mein Leben. Liegt an den Trennstegen. Ich brauch Trennstege fürs Leben."
+		},
+		{
+			"id": "mi_wz41",
+			"topic": "witz",
+			"text": "Der Sysop schläft nie, sagt er. Ich glaub, der läuft nachts nur im Standby."
+		},
+		{
+			"id": "mi_wz42",
+			"topic": "witz",
+			"text": "Ich hab 'nen Cheat fürs Leben gesucht. Gibt's nicht. Nicht mal Level-Select."
+		},
+		{
+			"id": "mi_wz43",
+			"topic": "witz",
+			"text": "Mein Kontostand ist 8 Bit: kommt nie über 255."
+		},
+		{
+			"id": "mi_wz44",
+			"topic": "witz",
+			"text": "Ich wollte meinen Speicher erweitern. Der Lehrer meinte: 'Fang bei dir selbst an.'"
+		},
+		{
+			"id": "mi_wz45",
+			"topic": "witz",
+			"text": "Multitasking kann mein Rechner. Ich kann nicht mal kauen und zocken gleichzeitig. Doch. Kann ich. Vergiss es."
+		},
+		{
+			"id": "mi_wz46",
+			"topic": "witz",
+			"text": "Die drei traurigsten Worte der Welt: 'Bitte Diskette 2.' Und Diskette 2 ist WEG."
+		},
+		{
+			"id": "mi_wz47",
+			"topic": "witz",
+			"text": "Ich bin wie 'ne Coverdisk: gibt's gratis dazu, und hinterher wundern sich alle, was alles in mir steckt."
+		},
+		{
+			"id": "mi_wz48",
+			"topic": "witz",
+			"text": "Mein Modem und ich kreischen beide beim Kontaktaufnehmen. Bei mir nennt man's Stimmbruch."
+		},
+		{
+			"id": "mi_wz49",
+			"topic": "witz",
+			"text": "Handshake heißt das, wenn zwei Modems sich anschreien. Wie Papa und Onkel Klaus an Weihnachten."
+		},
+		{
+			"id": "mi_wz50",
+			"topic": "witz",
+			"text": "Mama sagt, die Leitung ist besetzt. NEIN, Mama. Die Leitung ARBEITET."
+		},
+		{
+			"id": "mi_wz51",
+			"topic": "witz",
+			"text": "Baudrate ist, wie schnell einer quatscht. Oma sendet mit 300 Baud — inklusive Übertragungsfehlern."
+		},
+		{
+			"id": "mi_wz52",
+			"topic": "witz",
+			"text": "Der Drucker hat 24 Nadeln. Oma strickt mit zwei und behauptet, ihre Muster wären schöner. Sie lügt."
+		},
+		{
+			"id": "mi_wz53",
+			"topic": "witz",
+			"text": "Farbband gewechselt, Finger wie 'n Schlumpf. Ich erzähl allen, es war eine Blaubeer-Explosion."
+		},
+		{
+			"id": "mi_wz54",
+			"topic": "witz",
+			"text": "Meine Noten druck ich nicht aus. Manche Daten haben keine Hardcopy verdient."
+		},
+		{
+			"id": "mi_wz55",
+			"topic": "witz",
+			"text": "WYSIWYG! — Gesundheit."
+		},
+		{
+			"id": "mi_wz56",
+			"topic": "witz",
+			"text": "Meine Turnschuhe haben mehr defekte Sektoren als meine älteste Diskette."
+		},
+		{
+			"id": "mi_wz57",
+			"topic": "witz",
+			"text": "Ich hab Schreibschutz auf meinem Tagebuch. Es ist leer. Der Schutz wirkt."
+		},
+		{
+			"id": "mi_wz58",
+			"topic": "witz",
+			"text": "Kickstart brauch ich morgens auch. Meiner heißt Kakao 1.3."
+		},
+		{
+			"id": "mi_wz59",
+			"topic": "witz",
+			"text": "Ein Trackball ist auch nur 'ne Maus in Rückenlage. Faulheit siegt."
+		},
+		{
+			"id": "mi_wz60",
+			"topic": "witz",
+			"text": "Mein Joystick hat zwei Knöpfe. Reicht völlig. Mehr Entscheidungen überfordern mich."
+		},
+		{
+			"id": "mi_wz61",
+			"topic": "witz",
+			"text": "Ladezeiten sind die Denkpause des kleinen Mannes."
+		},
+		{
+			"id": "mi_wz62",
+			"topic": "witz",
+			"text": "Ich levele im Schlaf. Leider nur mein Schnarchen."
+		},
+		{
+			"id": "mi_wz63",
+			"topic": "witz",
+			"text": "Sprite-Kollision: wenn ich und der Türrahmen gleichzeitig durch dieselbe Stelle wollen."
+		},
+		{
+			"id": "mi_wz64",
+			"topic": "witz",
+			"text": "Raster-Interrupt ist, wenn Mama beim Zocken reinplatzt. Höchste Priorität. Nicht maskierbar."
+		},
+		{
+			"id": "mi_wz65",
+			"topic": "witz",
+			"text": "Mein Leben braucht 'nen Patch: Version 1.1, weniger Bugs, mehr Taschengeld."
+		},
+		{
+			"id": "mi_wz66",
+			"topic": "witz",
+			"text": "Ich bin abwärtskompatibel — ich versteh mich sogar mit C64-Leuten."
+		},
+		{
+			"id": "mi_wz67",
+			"topic": "witz",
+			"text": "Ein Emulator tut so, als wär er eine andere Kiste. Wie Stefan, wenn Mädchen zugucken."
+		},
+		{
+			"id": "mi_wz68",
+			"topic": "witz",
+			"text": "Disketten sind wie Herzen: doppelseitig, hohe Dichte, einmal geknickt — Totalschaden."
+		},
+		{
+			"id": "mi_wz69",
+			"topic": "witz",
+			"text": "Ich hab meine Diskette geküsst, als der Highscore drauf war. Sie hat nicht zurückgeküsst. Schreibschutz."
+		},
+		{
+			"id": "mi_wz70",
+			"topic": "witz",
+			"text": "Ein Nadeldrucker klingt wie tausend wütende Bienen, die deinen Aufsatz nicht mögen."
+		},
+		{
+			"id": "mi_wz71",
+			"topic": "witz",
+			"text": "Ich sortier meine Disketten streng nach Gefühl. Das Gefühl heißt Chaos."
+		},
+		{
+			"id": "mi_wz72",
+			"topic": "witz",
+			"text": "Cheats sind kein Betrug. Cheats sind Komfortfunktionen. Merk dir das Wort, das wird noch groß."
+		},
+		{
+			"id": "mi_wz73",
+			"topic": "witz",
+			"text": "Continue? IMMER. Im Spiel wie beim Nachschlag."
+		},
+		{
+			"id": "mi_wz74",
+			"topic": "witz",
+			"text": "Der wahre Endgegner von jedem Endgegner ist der Stromausfall."
+		},
+		{
+			"id": "mi_wz75",
+			"topic": "witz",
+			"text": "High Density, Low Budget — die Geschichte meines Lebens."
+		},
+		{
+			"id": "mi_wz76",
+			"topic": "witz",
+			"text": "Ich wollte RAM, hatte aber nur Geld für ROM: Read-Only-Money. Angucken, nicht ausgeben."
+		},
+		{
+			"id": "mi_wz77",
+			"topic": "witz",
+			"text": "Beim Joystick ging Hoch schon immer schwerer als Runter. Frag meine Noten."
+		},
+		{
+			"id": "mi_wz78",
+			"topic": "witz",
+			"text": "Jörgs Verstärker geht bis elf, sagt er. Meiner geht bis zehn — dafür stimmt bei mir die Miete."
+		},
+		{
+			"id": "mi_wz79",
+			"topic": "witz",
+			"text": "Der Reset-Knopf im Leben heißt Schlafen. Funktioniert bei mir zu 60 Prozent."
+		},
+		{
+			"id": "mi_wz80",
+			"topic": "witz",
+			"text": "'Nur noch ein Level' ist die größte Lüge seit 'Die Telefonrechnung war schon offen, als ich kam'."
+		},
+		{
+			"id": "mik_x01",
+			"topic": "alltag",
+			"text": "Ich hab zwei Leben: das echte und das mit drei Leben. Rate, in welchem ich besser bin."
+		},
+		{
+			"id": "mik_x02",
+			"topic": "alltag",
+			"text": "Pausetaste ist die größte Erfindung der Menschheit. Gleich nach der Cola."
+		},
+		{
+			"id": "mik_x03",
+			"topic": "alltag",
+			"text": "Ich bin Realist: Ich erwarte das Beste und speichere vor jeder Tür."
+		},
+		{
+			"id": "mik_x04",
+			"topic": "alltag",
+			"text": "Man merkt, dass wer gut ist, wenn er beim Verlieren lacht. Ich üb noch am Lachen."
+		}
+	]
+}

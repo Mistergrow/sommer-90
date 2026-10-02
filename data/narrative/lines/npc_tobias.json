@@ -1,0 +1,242 @@
+{
+	"npc": "npc_tobias",
+	"comment": "Zeilen-Pool fuer npc_tobias. Jede Zeile: id + text (+ from/to Jahr, needs/forbids Fakten, trust_min, once, weight, dialogue, topic). Linter: tests/narrative_check.gd.",
+	"lines": [
+		{
+			"id": "tob_b01",
+			"text": "Assembler, Baby. Näher an die Maschine geht nicht."
+		},
+		{
+			"id": "tob_b02",
+			"text": "Warst du schon mal auf einer Demoparty? Musst du erleben."
+		},
+		{
+			"id": "tob_b03",
+			"text": "Wenn der Effekt läuft und die Musik passt — dafür lebt man."
+		},
+		{
+			"id": "tob_b04",
+			"text": "Ich quetsch mehr aus dem Chip, als die Ingenieure vorgesehen haben."
+		},
+		{
+			"id": "tob_b05",
+			"text": "Ein sauberer Effekt ist Mathematik in Bewegung."
+		},
+		{
+			"id": "tob_b06",
+			"text": "Setz dich, ich zeig dir was, das noch keiner gesehen hat."
+		},
+		{
+			"id": "tob_b07",
+			"text": "In der Szene zählt nicht, was du hast, sondern was du kannst."
+		},
+		{
+			"id": "tob_b08",
+			"text": "Ich code, bis die Sonne aufgeht. Dann code ich weiter."
+		},
+		{
+			"id": "tob_b09",
+			"text": "Jeder Byte zählt. Platzverschwendung ist Sünde."
+		},
+		{
+			"id": "tob_b10",
+			"text": "Zeig mir deinen besten Trick, ich zeig dir meinen."
+		},
+		{
+			"id": "tob_b11",
+			"text": "Ein Effekt, der ruckelt, ist ein toter Effekt."
+		},
+		{
+			"id": "tob_b12",
+			"text": "Ich mach das für die Ehre, nicht fürs Geld. Geld gibt's eh keins."
+		},
+		{
+			"id": "tob_b13",
+			"text": "Die Szene ist eine Familie. Eine sehr streitlustige Familie."
+		},
+		{
+			"id": "tob_b14",
+			"text": "Wenn du hart genug tüftelst, tanzt die Maschine für dich."
+		},
+		{
+			"id": "tob_b15",
+			"text": "Ich hab Effekte im Kopf, für die die Hardware noch nicht bereit ist."
+		},
+		{
+			"id": "tob_b16",
+			"text": "Gib mir ein Limit, und ich zeig dir, wie man es umgeht."
+		},
+		{
+			"id": "tob_b17",
+			"text": "Ein guter Coder ist stur. Sehr stur."
+		},
+		{
+			"id": "tob_b18",
+			"text": "Respekt verdient man in der Szene, man kauft ihn nicht."
+		},
+		{
+			"id": "tob_b19",
+			"text": "Ich lern von den Besten, indem ich ihren Code auseinandernehme."
+		},
+		{
+			"id": "tob_b20",
+			"text": "Der Moment, wenn's endlich flüssig läuft — unbezahlbar."
+		},
+		{
+			"id": "tob_b21",
+			"text": "Ich schlaf wenig und träum in Registern."
+		},
+		{
+			"id": "tob_b22",
+			"text": "Bring mir ein unlösbares Problem, das macht mich glücklich."
+		},
+		{
+			"id": "tob_b23",
+			"text": "Style über alles. Ein Effekt muss auch schön sein, nicht nur clever."
+		},
+		{
+			"id": "tob_b24",
+			"text": "Ich hab schon Nächte verflucht und den Morgen gefeiert."
+		},
+		{
+			"id": "tob_b25",
+			"text": "Optimieren ist eine Kunst. Und eine Sucht."
+		},
+		{
+			"id": "tob_b26",
+			"text": "Die Party ist der Höhepunkt des Jahres. Da zeigt jeder, was er hat."
+		},
+		{
+			"id": "tob_b27",
+			"text": "Ich release nur, wenn's perfekt ist. Oder fast."
+		},
+		{
+			"id": "tob_b28",
+			"text": "Kleiner, schneller, schöner — das ist mein Mantra."
+		},
+		{
+			"id": "tob_b29",
+			"text": "Setz dich dazu und halt die Klappe, ich bin im Flow."
+		},
+		{
+			"id": "tob_b30",
+			"text": "Am Ende zählt die Compo. Alles andere ist Aufwärmen."
+		},
+		{
+			"id": "to_cracktro",
+			"to": 1996,
+			"topic": "szene",
+			"text": "Ein sauberes Cracktro braucht drei Dinge: Scroller, Musik, Stil. Alles unter 4K, versteht sich."
+		},
+		{
+			"id": "to_party",
+			"from": 1991,
+			"topic": "party",
+			"text": "Nächste Woche ist Party — hunderte Leute, Rechner an Rechner, ein Wochenende. Am Ende zählt nur die Compo."
+		},
+		{
+			"id": "to_pcdemo",
+			"from": 1996,
+			"needs": [
+				"pc_umbruch"
+			],
+			"topic": "wandel",
+			"text": "Die Szene zieht auf den PC um. Mehr Power, mehr Möglichkeiten. Aber die Kunst bleibt: mach viel aus wenig."
+		},
+		{
+			"id": "to_net",
+			"from": 1997,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "netz",
+			"text": "Wir releasen jetzt übers Internet. Weltweit, in Sekunden. Früher hat 'ne Diskette Wochen gebraucht."
+		},
+		{
+			"id": "to_rueck",
+			"from": 1999,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "nostalgie",
+			"text": "Zehn Jahre Szene. Manche sind abgesprungen, manche machen Firmen auf. Ich? Ich code weiter. Immer."
+		},
+		{
+			"id": "tob_x01",
+			"topic": "szene",
+			"text": "Assembler, Baby. Näher an die Maschine kommt man nicht, ohne Lötkolben."
+		},
+		{
+			"id": "tob_x02",
+			"topic": "szene",
+			"text": "Ein sauberer Effekt ist Mathematik in Bewegung. Wenn der Copper tanzt, tanzt mein Herz mit."
+		},
+		{
+			"id": "tob_x03",
+			"topic": "szene",
+			"text": "In der Szene zählt nicht, was du hast, sondern was du kannst. Respekt kauft man nicht."
+		},
+		{
+			"id": "tob_x04",
+			"topic": "szene",
+			"text": "Jedes Byte zählt. Platzverschwendung ist Sünde. Ich quetsch mehr raus, als die Ingenieure vorgesehen haben."
+		},
+		{
+			"id": "tob_x05",
+			"topic": "szene",
+			"text": "Ich schlaf wenig und träum in Registern. Klingt krank, fühlt sich richtig an."
+		},
+		{
+			"id": "tob_x06",
+			"topic": "szene",
+			"text": "Gib mir ein Limit, und ich zeig dir, wie man drumrum kommt. Grenzen sind Einladungen."
+		},
+		{
+			"id": "tob_x07",
+			"topic": "szene",
+			"text": "Style über alles. Ein Effekt muss schön sein, nicht nur clever. Sonst ist es nur Angeberei."
+		},
+		{
+			"id": "tob_x08",
+			"topic": "szene",
+			"text": "Ich release nur, wenn's perfekt ist. Oder fast. Fast perfekt ist auch schon selten genug."
+		},
+		{
+			"id": "tob_x09",
+			"topic": "szene",
+			"text": "Warst du schon mal auf einer Demoparty? Hunderte Leute, Rechner an Rechner, ein Wochenende. Erleb das."
+		},
+		{
+			"id": "tob_x10",
+			"topic": "szene",
+			"text": "Ich lern von den Besten, indem ich ihren Code auseinandernehme. Das ist keine Schande, das ist Schule."
+		},
+		{
+			"id": "tob_x11",
+			"from": 0,
+			"needs": [
+				"pc_umbruch"
+			],
+			"topic": "aera",
+			"text": "Die Szene zieht auf den PC um. Mehr Power — aber die Kunst bleibt: viel aus wenig."
+		},
+		{
+			"id": "tob_x12",
+			"from": 0,
+			"needs": [
+				"internet_normal"
+			],
+			"topic": "aera",
+			"text": "Wir releasen jetzt übers Internet. Weltweit, in Sekunden. Früher brauchte 'ne Diskette Wochen."
+		},
+		{
+			"id": "tob_x13",
+			"from": 0,
+			"needs": [
+				"rueckblick"
+			],
+			"topic": "aera",
+			"text": "Zehn Jahre Szene. Manche sind abgesprungen, manche haben Firmen. Ich? Ich code weiter. Immer."
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "sommer90.quest-package.v1",
+  "owner": "npc_pixie",
+  "quests": [
+    {
+      "id": "q_pixie_vier_frames",
+      "title": "Vier Frames bis Mitternacht",
+      "giver": "npc_pixie",
+      "prereq": {
+        "year_min": 1992,
+        "flag": "pixie_frames_intro"
+      },
+      "on_start": [
+        {
+          "type": "toast",
+          "text": "Pixies Titelbild steht, aber der kleine Diskettenroboter bewegt sich noch nicht. Vier saubere AGA-kompatible Frames sollen ihn lebendig machen."
+        }
+      ],
+      "stages": [
+        {
+          "desc": "Öffne mit Pixie die Malwerkstatt und gestalte eine eigene, lesbare Vier-Frame-Animation. Silhouette und Lichtquelle müssen in jedem Frame stabil bleiben.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "minigame:paint"
+          }
+        },
+        {
+          "desc": "Zeig Pixie die fertigen Frames im Computerclub und besprecht Palette, Timing und Wiedererkennung.",
+          "map_location": "computer_club",
+          "goal": {
+            "action": "pixie_frames_handoff"
+          }
+        }
+      ],
+      "reward": [
+        {
+          "type": "stat",
+          "stat": "wissen",
+          "value": 2
+        },
+        {
+          "type": "npc_trust",
+          "npc": "npc_pixie",
+          "value": 4
+        },
+        {
+          "type": "flag",
+          "flag": "pixie_animation_learned",
+          "value": true
+        },
+        {
+          "type": "toast",
+          "text": "Pixie übernimmt die Animation ins gemeinsame Archiv. Du hast gelernt, Bewegung zu zeichnen statt nur Einzelbilder zu sammeln."
+        }
+      ]
+    }
+  ]
+}

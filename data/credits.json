@@ -1,0 +1,206 @@
+{
+  "title": "SOMMER '90",
+  "subtitle": {
+    "de": "EINE SPIELBARE ERINNERUNG AN DIE HEIMCOMPUTER-ÄRA",
+    "en": "A PLAYABLE MEMORY OF THE HOME-COMPUTER ERA"
+  },
+  "release": {
+    "studio": "BLOCKCHAIN RECORDS",
+    "creator": "MISTER FLOPPY",
+    "period": "1990–1999",
+    "copyright": "© 2026 BLOCKCHAIN RECORDS"
+  },
+  "sections": [
+    {
+      "title": {
+        "de": "KREATIVE LEITUNG",
+        "en": "CREATIVE DIRECTION"
+      },
+      "entries": [
+        {
+          "role": {
+            "de": "KONZEPT · GAME DESIGN · CREATIVE DIRECTION",
+            "en": "CONCEPT · GAME DESIGN · CREATIVE DIRECTION"
+          },
+          "name": "MISTER FLOPPY"
+        },
+        {
+          "role": {
+            "de": "PROGRAMMIERUNG · SYSTEMDESIGN",
+            "en": "PROGRAMMING · SYSTEMS DESIGN"
+          },
+          "name": "MISTER FLOPPY"
+        },
+        {
+          "role": {
+            "de": "ART DIRECTION · WELT · NARRATIVE",
+            "en": "ART DIRECTION · WORLD · NARRATIVE"
+          },
+          "name": "MISTER FLOPPY"
+        }
+      ]
+    },
+    {
+      "title": {
+        "de": "PRODUKTION",
+        "en": "PRODUCTION"
+      },
+      "entries": [
+        {
+          "role": {
+            "de": "STUDIO · HERAUSGEBER",
+            "en": "STUDIO · PUBLISHER"
+          },
+          "name": "BLOCKCHAIN RECORDS"
+        },
+        {
+          "role": {
+            "de": "QUALITÄTSSICHERUNG · SPIELBALANCE",
+            "en": "QUALITY ASSURANCE · GAME BALANCE"
+          },
+          "name": "SOMMER '90 PLAYTEST-PROGRAMM"
+        }
+      ]
+    },
+    {
+      "title": {
+        "de": "ORIGINAL-SOUNDTRACK",
+        "en": "ORIGINAL SOUNDTRACK"
+      },
+      "entries": [
+        {
+          "role": {
+            "de": "12 NEUE MOD-KOMPOSITIONEN · SYNTHETISCHE INSTRUMENTE",
+            "en": "12 NEW MOD SCORES · SYNTHESIZED INSTRUMENTS"
+          },
+          "name": "SOMMER '90 ORIGINAL SOUNDTRACK"
+        },
+        {
+          "role": {
+            "de": "PARTITUREN & KLANGSYNTHESE",
+            "en": "SCORES & SOUND SYNTHESIS"
+          },
+          "name": {
+            "de": "FÜR DIESES PROJEKT MIT KI-PROGRAMMIERASSISTENZ ERSTELLT",
+            "en": "CREATED FOR THIS PROJECT WITH AI CODING ASSISTANCE"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "de": "TECHNOLOGIE",
+        "en": "TECHNOLOGY"
+      },
+      "entries": [
+        {
+          "role": {
+            "de": "ENGINE · LAUFZEIT",
+            "en": "ENGINE · RUNTIME"
+          },
+          "name": "GODOT ENGINE · GDSCRIPT"
+        },
+        {
+          "role": {
+            "de": "SPIELWELT · ZEITLINIE 1990–1999",
+            "en": "GAME WORLD · 1990–1999 TIMELINE"
+          },
+          "name": "DATENGETRIEBENE SIMULATION"
+        },
+        {
+          "role": {
+            "de": "BILDSPRACHE · INSZENIERUNG",
+            "en": "VISUAL LANGUAGE · PRESENTATION"
+          },
+          "name": "AMIGA-INSPIRIERTE 2,5D-WELT"
+        }
+      ]
+    },
+    {
+      "title": {
+        "de": "BESONDERER DANK",
+        "en": "SPECIAL THANKS"
+      },
+      "entries": [
+        {
+          "role": {
+            "de": "AMIGA-, BBS- UND DEMOSZENE",
+            "en": "AMIGA, BBS AND DEMOSCENE COMMUNITIES"
+          },
+          "name": {
+            "de": "FÜR ERINNERUNGEN, IDEEN UND KULTUR",
+            "en": "FOR THE MEMORIES, IDEAS AND CULTURE"
+          }
+        },
+        {
+          "role": {
+            "de": "AN ALLE, DIE SOFTWARE GETAUSCHT UND BEWAHRT HABEN",
+            "en": "EVERYONE WHO TRADED AND PRESERVED SOFTWARE"
+          },
+          "name": "KEEP THE CREDITS INTACT"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "de": "DANKE FÜRS SPIELEN",
+    "en": "THANK YOU FOR PLAYING"
+  },
+  "licenses": [
+    {
+      "name": "Godot Engine",
+      "credit": {
+        "de": "Engine und Laufzeit · MIT-Lizenz · godotengine.org",
+        "en": "Engine and runtime · MIT License · godotengine.org"
+      }
+    },
+    {
+      "name": "VT323",
+      "credit": {
+        "de": "The VT323 Project Authors · SIL Open Font License 1.1",
+        "en": "The VT323 Project Authors · SIL Open Font License 1.1"
+      }
+    },
+    {
+      "name": "DSEG",
+      "credit": {
+        "de": "keshikan · SIL Open Font License 1.1",
+        "en": "keshikan · SIL Open Font License 1.1"
+      }
+    },
+    {
+      "name": "Amiga Fonts / Topaz",
+      "credit": {
+        "de": "TrueSchool Font Collection · Lizenzhinweise in assets/fonts/LICENSE-amigafonts.txt",
+        "en": "TrueSchool Font Collection · License notice in assets/fonts/LICENSE-amigafonts.txt"
+      }
+    },
+    {
+      "name": {
+        "de": "SOUNDEFFEKTE & UMGEBUNGSGERÄUSCHE",
+        "en": "SOUND EFFECTS & AMBIENCE"
+      },
+      "credit": {
+        "de": "Pixabay · Freesound-Community und weitere Pixabay-Urheber · Pixabay Content License · Einzelnachweise in assets/audio/SOUND_SOURCES.md",
+        "en": "Pixabay · Freesound community and further Pixabay creators · Pixabay Content License · Per-file sources in assets/audio/SOUND_SOURCES.md"
+      }
+    },
+    {
+      "name": {
+        "de": "STAUBSAUGER-SOUNDEFFEKT",
+        "en": "VACUUM-CLEANER SOUND EFFECT"
+      },
+      "credit": {
+        "de": "„Tb6_002.wav“ von digitopia · Freesound 76618 · Sampling+ 1.0 · bearbeiteter Loop",
+        "en": "“Tb6_002.wav” by digitopia · Freesound 76618 · Sampling+ 1.0 · edited loop"
+      }
+    },
+    {
+      "name": "Sommer '90 Original Soundtrack",
+      "credit": {
+        "de": "Neue Partituren und vollständig synthetische Samples · Herkunft: assets/audio/soundtrack/PROVENANCE.txt · Historische Originalaufnahmen nur über eigene MOD-Dateien.",
+        "en": "New scores and entirely synthesized samples · Provenance: assets/audio/soundtrack/PROVENANCE.txt · Historical recordings require personal MOD files."
+      }
+    }
+  ]
+}

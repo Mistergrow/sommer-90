@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dqptwrm65yf8e"]
+
+[ext_resource type="PackedScene" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="BbsLinkLab" unique_id=1118735267 instance=ExtResource("1")]
+minigame_id = "bbs_link"

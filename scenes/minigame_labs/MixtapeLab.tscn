@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bbj4ng2s3afb8"]
+
+[ext_resource type="PackedScene" uid="uid://3vsna42fdebb" path="res://scenes/minigame_labs/MinigameLabBase.tscn" id="1"]
+
+[node name="MixtapeLab" unique_id=451013339 instance=ExtResource("1")]
+minigame_id = "mixtape"

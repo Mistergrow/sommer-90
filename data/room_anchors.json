@@ -1,0 +1,2046 @@
+{
+  "anchors": {
+    "monitor_center": [
+      960.0,
+      430.0
+    ],
+    "monitor_base": [
+      923.501647949219,
+      616.792114257812
+    ],
+    "computer_base": [
+      910.096801757812,
+      717.191040039062
+    ],
+    "keyboard_center": [
+      960.0,
+      680.0
+    ],
+    "mouse_position": [
+      1156.52416992188,
+      683.518005371094
+    ],
+    "joystick_position": [
+      1114.31640625,
+      631.234619140625
+    ],
+    "floppy_lean": [
+      1309.15054047403,
+      687.211305178374
+    ],
+    "left_drive_position": [
+      767.178588867188,
+      629.658874511719
+    ],
+    "right_drive_position": [
+      1250.0,
+      610.0
+    ],
+    "burner_position": [
+      1380.0,
+      610.0
+    ],
+    "mug_slot": [
+      597.205139160156,
+      626.828002929688
+    ],
+    "notebook_slot": [
+      536.836975097656,
+      704.5869140625
+    ],
+    "lamp_slot": [
+      539.277148803075,
+      625.967332283656
+    ],
+    "telephone_position": [
+      408.182434082031,
+      716.402893066406
+    ],
+    "modem_position": [
+      1266.91040039062,
+      623.693542480469
+    ],
+    "printer_position": [
+      1716.55517578125,
+      547.024658203125
+    ],
+    "stereo_position": [
+      1652.42443847656,
+      147.702087402344
+    ],
+    "diskbox_12_shelf": [
+      85.6688079833984,
+      677.5380859375
+    ],
+    "diskbox_80_shelf": [
+      315.0,
+      335.0
+    ],
+    "diskbox_extra_shelf": [
+      270.0,
+      677.0
+    ],
+    "speaker_left": [
+      1440.0,
+      380.0
+    ],
+    "speaker_right": [
+      1700.0,
+      385.0
+    ],
+    "floppy_stack_left": [
+      450.0,
+      740.0
+    ],
+    "magazine_slot": [
+      1420.28381347656,
+      660.473022460938
+    ],
+    "floppy_stack_right": [
+      1450.0,
+      730.0
+    ],
+    "cd_stack": [
+      1545.0,
+      505.0
+    ],
+    "poster_slot_1": [
+      420.0,
+      200.0
+    ],
+    "poster_slot_2": [
+      1700.0,
+      280.0
+    ],
+    "poster_slot_3": [
+      1230.0,
+      180.0
+    ],
+    "shelf_slot_1": [
+      85.0,
+      150.0
+    ],
+    "shelf_slot_2": [
+      85.0,
+      360.0
+    ],
+    "shelf_slot_3": [
+      250.0,
+      150.0
+    ],
+    "shelf_slot_4": [
+      250.0,
+      360.0
+    ],
+    "floor_prop_left": [
+      420.0,
+      1030.0
+    ],
+    "floor_prop_right": [
+      1697.9287109375,
+      1080.0
+    ],
+    "window_rain_center": [
+      830.0,
+      215.0
+    ],
+    "power_supply_position": [
+      664.111328125,
+      638.892578125
+    ],
+    "desk_bottom_center": [
+      960.0,
+      1070.0
+    ]
+  },
+  "quads": {
+    "tisch": {
+      "corners": [
+        [
+          492.802581787109,
+          591.9912109375
+        ],
+        [
+          1410.82983398438,
+          598.005004882812
+        ],
+        [
+          1564.37451171875,
+          736.289245605469
+        ],
+        [
+          269.619567871094,
+          739.054931640625
+        ]
+      ],
+      "color": [
+        0.35,
+        1.0,
+        0.45
+      ],
+      "comment": "Tischplatte — steuert Klemmen + Tiefenskalierung (Zone 'tisch')"
+    },
+    "regal": {
+      "corners": [
+        [
+          4.72712326049805,
+          3.54485750198364
+        ],
+        [
+          231.333343505859,
+          0.666666507720947
+        ],
+        [
+          228.66667175293,
+          771.333374023438
+        ],
+        [
+          0.0,
+          898.818298339844
+        ]
+      ],
+      "color": [
+        0.4,
+        0.75,
+        1.0
+      ],
+      "comment": "Buecherregal links (Zone 'regal'); Tiefe steckt in der Kanten-Schraege"
+    },
+    "regal2": {
+      "corners": [
+        [
+          246.0,
+          0.0
+        ],
+        [
+          423.333343505859,
+          40.6666679382324
+        ],
+        [
+          418.0,
+          556.666687011719
+        ],
+        [
+          250.0,
+          623.333374023438
+        ]
+      ],
+      "color": [
+        0.55,
+        0.55,
+        1.0
+      ],
+      "comment": "HiFi-Lowboard rechts"
+    },
+    "haengeregal": {
+      "corners": [
+        [
+          1512.67932128906,
+          37.0240669250488
+        ],
+        [
+          1817.57897949219,
+          36.6301956176758
+        ],
+        [
+          1816.39709472656,
+          145.339157104492
+        ],
+        [
+          1514.25500488281,
+          149.671768188477
+        ]
+      ],
+      "color": [
+        0.3,
+        0.9,
+        0.85
+      ],
+      "comment": "Wandregal oben rechts (Pflanze)"
+    },
+    "fenster_links": {
+      "corners": [
+        [
+          803.611022949219,
+          0.0
+        ],
+        [
+          1011.94201660156,
+          0.0
+        ],
+        [
+          1009.46636962891,
+          415.19775390625
+        ],
+        [
+          807.804809570312,
+          412.861602783203
+        ]
+      ],
+      "color": [
+        1.0,
+        0.9,
+        0.35
+      ],
+      "comment": "Nur sichtbares Glas der linken Fensterhaelfte; Gardine bewusst ausgeschlossen"
+    },
+    "fenster_rechts": {
+      "corners": [
+        [
+          1053.02673339844,
+          0.0
+        ],
+        [
+          1254.79150390625,
+          0.0
+        ],
+        [
+          1246.38500976562,
+          415.814300537109
+        ],
+        [
+          1054.05908203125,
+          415.814300537109
+        ]
+      ],
+      "color": [
+        1.0,
+        0.9,
+        0.35
+      ],
+      "comment": "Nur sichtbares Glas der rechten Fensterhaelfte; Gardine bewusst ausgeschlossen"
+    },
+    "gardine_links": {
+      "corners": [
+        [
+          587.345031738281,
+          0.0
+        ],
+        [
+          806.0,
+          2.0
+        ],
+        [
+          811.489501953125,
+          595.536071777344
+        ],
+        [
+          579.072570800781,
+          593.172790527344
+        ]
+      ],
+      "color": [
+        1.0,
+        0.5,
+        0.8
+      ],
+      "comment": "Linke Gardine"
+    },
+    "gardine_rechts": {
+      "corners": [
+        [
+          1254.00354003906,
+          0.0
+        ],
+        [
+          1460.66674804688,
+          0.0
+        ],
+        [
+          1460.68103027344,
+          596.323791503906
+        ],
+        [
+          1237.71850585938,
+          599.474792480469
+        ]
+      ],
+      "color": [
+        1.0,
+        0.5,
+        0.8
+      ],
+      "comment": "Rechte Gardine"
+    },
+    "heizung": {
+      "corners": [
+        [
+          763.333374023438,
+          508.666687011719
+        ],
+        [
+          1206.0,
+          511.333343505859
+        ],
+        [
+          1211.32531738281,
+          760.962768554688
+        ],
+        [
+          758.703247070312,
+          757.417907714844
+        ]
+      ],
+      "color": [
+        1.0,
+        0.55,
+        0.25
+      ],
+      "comment": "Heizkoerper unterm Fenster"
+    },
+    "rain_floor_projection": {
+      "corners": [
+        [
+          585.0,
+          825.0
+        ],
+        [
+          1335.0,
+          825.0
+        ],
+        [
+          1615.0,
+          1080.0
+        ],
+        [
+          305.0,
+          1080.0
+        ]
+      ],
+      "color": [
+        0.42,
+        0.72,
+        1.0
+      ],
+      "comment": "Indirekte Wet-Glass-Lichtprojektion auf Holzfussboden und Hochflor-Teppich. Absolute Renderlage z4 liegt hinter Kabeln und Schreibtisch; dessen Alpha-Silhouette verdeckt den Effekt physikalisch."
+    },
+    "poster_1": {
+      "corners": [
+        [
+          432.531799316406,
+          3.54485750198364
+        ],
+        [
+          580.254333496094,
+          0.0
+        ],
+        [
+          579.072570800781,
+          581.896362304688
+        ],
+        [
+          424.259307861328,
+          581.356628417969
+        ]
+      ],
+      "color": [
+        0.8,
+        0.45,
+        1.0
+      ],
+      "comment": "Poster-Bereich links neben dem Fenster"
+    },
+    "poster_2": {
+      "corners": [
+        [
+          1920.0,
+          0.0
+        ],
+        [
+          1823.33337402344,
+          3.33333325386047
+        ],
+        [
+          1824.66674804688,
+          442.0
+        ],
+        [
+          1920.0,
+          470.0
+        ]
+      ],
+      "color": [
+        0.8,
+        0.45,
+        1.0
+      ],
+      "comment": "Poster-Bereich rechts neben dem Fenster"
+    }
+  },
+  "zones": {
+    "tisch": {
+      "rect": [
+        230.0,
+        585.0,
+        1430.0,
+        195.0
+      ],
+      "comment": "Stellflaeche Tischplatte — Deko-Modus: Taste 1, Rechtsklick-Ziehen aendert den Rahmen"
+    },
+    "fenster": {
+      "rect": [
+        500.0,
+        0.0,
+        655.0,
+        450.0
+      ],
+      "comment": "Fensterbereich (Taste 2)"
+    },
+    "regal": {
+      "rect": [
+        0.0,
+        40.0,
+        335.0,
+        800.0
+      ],
+      "comment": "Buecherregal (Taste 3)"
+    }
+  },
+  "hotspots": {
+    "schreibtisch": {
+      "label": "Schreibtisch — Computer & Diskettenbox",
+      "action": "computer",
+      "corners": [
+        [
+          491.620880126953,
+          593.1728515625
+        ],
+        [
+          1412.2280883789,
+          593.1728515625
+        ],
+        [
+          1557.58721923828,
+          740.875244140625
+        ],
+        [
+          268.264282226562,
+          739.693603515625
+        ]
+      ]
+    },
+    "fenster": {
+      "label": "Fenster — nach draußen schauen",
+      "action": "window",
+      "corners": [
+        [
+          807.15625,
+          0.0
+        ],
+        [
+          1254.13488769531,
+          0.0
+        ],
+        [
+          1249.14233398438,
+          412.385101318359
+        ],
+        [
+          806.783020019531,
+          412.861602783203
+        ]
+      ]
+    },
+    "desk_magazine": {
+      "label": "Zeitschrift — aufheben & lesen",
+      "action": "magazine",
+      "from_layer": "magazines",
+      "pad": 18.0,
+      "requires_inventory": "magazine"
+    },
+    "bett": {
+      "label": "Bett — schlafen bis zum nächsten Morgen",
+      "action": "sleep",
+      "corners": [
+        [
+          1748.24768066406,
+          711.334716796875
+        ],
+        [
+          1920.0,
+          692.428771972656
+        ],
+        [
+          1920.0,
+          961.837951660156
+        ],
+        [
+          1723.82421875,
+          788.533874511719
+        ]
+      ]
+    },
+    "rausgehen": {
+      "label": "Rausgehen (Orte)",
+      "action": "map",
+      "corners": [
+        [
+          0.0,
+          841.312805175781
+        ],
+        [
+          234.780456542969,
+          844.4638671875
+        ],
+        [
+          220.993011474609,
+          1075.2734375
+        ],
+        [
+          2.14199066162109,
+          1072.91015625
+        ]
+      ]
+    },
+    "stereoanlage": {
+      "label": "Stereoanlage — Musik hören",
+      "action": "stereo",
+      "corners": [
+        [
+          1530.79992675781,
+          32.8373413085938
+        ],
+        [
+          1771.88330078125,
+          37.5638160705566
+        ],
+        [
+          1771.88330078125,
+          143.909545898438
+        ],
+        [
+          1532.37585449219,
+          145.48503112793
+        ]
+      ]
+    },
+    "monitor": {
+      "label": "Monitorbild — Rechner benutzen",
+      "action": "monitor_primary",
+      "from_monitor_control": "screen",
+      "pad": 0.0,
+      "corners": [
+        [
+          803.787536621094,
+          395.345184326172
+        ],
+        [
+          1044.68469238281,
+          397.303375244141
+        ],
+        [
+          1046.25146484375,
+          593.911193847656
+        ],
+        [
+          802.612365722656,
+          596.261108398438
+        ]
+      ]
+    },
+    "monitor_switch": {
+      "label": "Monitor — ein-/ausschalten",
+      "action": "monitor_power",
+      "from_monitor_control": "power",
+      "pad": 5.0,
+      "rect": [
+        1019.0,
+        559.0,
+        34.0,
+        31.0
+      ]
+    },
+    "monitor_service": {
+      "label": "Monitor-Regler — Testbild bewusst justieren",
+      "action": "monitor_tune",
+      "from_monitor_control": "service",
+      "pad": 4.0,
+      "rect": [
+        949.0,
+        559.0,
+        66.0,
+        31.0
+      ]
+    },
+    "netzteil": {
+      "label": "Netzteil-Brick — Amiga ein-/ausschalten",
+      "action": "amiga_power",
+      "comment": "Sitzt auf dem Amiga-Netzteil (Anker power_supply_position, Breite 150, pivot bottom_center) — NICHT mehr auf der Steckdosenleiste.",
+      "corners": [
+        [
+          637.373779296875,
+          577.169921875
+        ],
+        [
+          688.584289550781,
+          577.169921875
+        ],
+        [
+          693.311462402344,
+          622.859191894531
+        ],
+        [
+          635.798034667969,
+          618.920471191406
+        ]
+      ]
+    },
+    "verteiler": {
+      "label": "Mehrfachverteiler — Strom für die ganze Leiste",
+      "action": "strip_power",
+      "comment": "Der rote Kippschalter der 4er-Leiste (SOCKET_STRIP_01) — Wurzel der Stromkette.",
+      "corners": [
+        [
+          714.016723632812,
+          875.235839843749
+        ],
+        [
+          798.809204101562,
+          874.940429687499
+        ],
+        [
+          798.218292236328,
+          900.049743652343
+        ],
+        [
+          713.007751464844,
+          901.181457519531
+        ]
+      ]
+    },
+    "telefon": {
+      "label": "Telefon — jemanden anrufen",
+      "action": "telefon",
+      "rect": [
+        636.0,
+        150.0,
+        150.0,
+        270.0
+      ],
+      "from_layer": "phone"
+    },
+    "wandkalender": {
+      "label": "Wandkalender — Termine ansehen",
+      "action": "kalender",
+      "rect": [
+        452.0,
+        150.0,
+        160.0,
+        220.0
+      ]
+    },
+    "trophywall": {
+      "action": "trophywall",
+      "label": "Wand — Poster & Trophäen ansehen",
+      "rect": [
+        1290.0,
+        60.0,
+        300.0,
+        340.0
+      ]
+    },
+    "collection_reverse": {
+      "action": "collection",
+      "label": "Andere Zimmerseite — Sammlervitrine ansehen",
+      "rect": [
+        0.0,
+        40.0,
+        350.0,
+        650.0
+      ]
+    },
+    "joystick_service": {
+      "action": "joystick_repair",
+      "label": "Joystick — öffnen, löten & prüfen",
+      "rect": [
+        1097.0,
+        545.0,
+        96.0,
+        112.0
+      ],
+      "from_layer": "joystick"
+    },
+    "muell": {
+      "action": "muell",
+      "label": "Müll rausbringen — leere Dosen & Verpackungen",
+      "rect": [
+        250.0,
+        975.0,
+        215.0,
+        100.0
+      ]
+    },
+    "demo": {
+      "action": "demo",
+      "label": "Szene-Studio — Club-Intro, Demo oder Spiel bauen",
+      "rect": [
+        520.0,
+        772.0,
+        235.0,
+        112.0
+      ]
+    },
+    "chores": {
+      "action": "jobs",
+      "label": "Notizbuch — Jobs & bezahlte Hausarbeit",
+      "from_layer": "notebook",
+      "pad": 20.0
+    },
+    "starter_carton": {
+      "action": "starter_carton",
+      "label": "Kartons vom Vater — Amiga, Monitor und Netzteil auspacken",
+      "unless_any_flags": [
+        "monitor_placed",
+        "booted_amiga"
+      ],
+      "rect": [
+        1160.0,
+        760.0,
+        360.0,
+        300.0
+      ],
+      "from_layer": "starter_carton_closed"
+    }
+  },
+  "layers": [
+    {
+      "id": "desk_surface",
+      "z": 8.0,
+      "asset": "ROOM_DESK_MASTER",
+      "anchor": "desk_bottom_center",
+      "pivot": "bottom_center",
+      "width": 1300.0,
+      "always": true,
+      "zone": "tisch",
+      "depth_group": "desk",
+      "depth_scale": false,
+      "scene_light": false,
+      "contact_shadow": false,
+      "comment": "Eigener starrer Tischmaster; Tisch und alle Zone-tisch-Layer teilen exakt dieselbe 2,5D-Projektion. Z=8 verdeckt Kabelabstiege hinter Platte und Schuerze; nur explizite Vorderkabel duerfen hoeher liegen."
+    },
+    {
+      "id": "window_scene",
+      "z": 2.0,
+      "asset": "OVERLAY_WINDOW_SCENE",
+      "anchor": "window_rain_center",
+      "full_canvas": true,
+      "always": true,
+      "comment": "EFFECT_003: Fensterglas-Overlay (Regentropfen, Kondens, Frost) — eigenes Asset, nicht im Basisbild"
+    },
+    {
+      "id": "stereo",
+      "z": 5.0,
+      "device": true,
+      "power_domain": "strip",
+      "model_selector": "stereo_model",
+      "default_model": "compact_cassette",
+      "model_requires_hardware": {
+        "compact_cassette": "",
+        "component_cassette": "stereo_component_cassette",
+        "compact_cd": "stereo_compact_cd",
+        "dual_cd": "stereo_dual_cd"
+      },
+      "asset_by_model": {
+        "compact_cassette": [
+          "STEREO_COMPACT_CASSETTE"
+        ],
+        "component_cassette": [
+          "STEREO_COMPONENT_CASSETTE"
+        ],
+        "compact_cd": [
+          "STEREO_COMPACT_CD"
+        ],
+        "dual_cd": [
+          "STEREO_DUAL_CD"
+        ]
+      },
+      "width_by_model": {
+        "compact_cassette": 305.0,
+        "component_cassette": 235.0,
+        "compact_cd": 230.0,
+        "dual_cd": 235.0
+      },
+      "anchor": "stereo_position",
+      "pivot": "bottom_center",
+      "always": true,
+      "depth_scale": true,
+      "depth_group": "right_cabinet",
+      "contact_shadow": false,
+      "comment": "Save-feste 1990er-Audiofamilie: Kassette/Radio, Komponentenanlage sowie Single-/Dual-CD. Steht als starres Volumen auf dem rechten Schrank.",
+      "height_by_model": {
+        "compact_cassette": 149.071267816954
+      }
+    },
+    {
+      "id": "printer",
+      "z": 5.0,
+      "device": true,
+      "power_domain": "strip",
+      "model_selector": "printer_model",
+      "default_model": "dot_matrix_9pin",
+      "requires_any_hardware": [
+        "dot_matrix",
+        "dot_matrix_24",
+        "dot_matrix_24_color",
+        "color_printer",
+        "laser_printer"
+      ],
+      "model_requires_hardware": {
+        "dot_matrix_9pin": "dot_matrix",
+        "dot_matrix_24_mono": "dot_matrix_24",
+        "dot_matrix_24_color": "dot_matrix_24_color",
+        "color_inkjet": "color_printer",
+        "laser_mono": "laser_printer"
+      },
+      "asset_by_model": {
+        "dot_matrix_9pin": [
+          "PRINTER_DOT_MATRIX_9PIN"
+        ],
+        "dot_matrix_24_mono": [
+          "PRINTER_DOT_MATRIX_24PIN_MONO"
+        ],
+        "dot_matrix_24_color": [
+          "PRINTER_DOT_MATRIX_24PIN_COLOR"
+        ],
+        "color_inkjet": [
+          "PRINTER_COLOR_INKJET_CJ300"
+        ],
+        "laser_mono": [
+          "PRINTER_LASER_MONO"
+        ]
+      },
+      "width_by_model": {
+        "dot_matrix_9pin": 190.0,
+        "dot_matrix_24_mono": 250.0,
+        "dot_matrix_24_color": 250.0,
+        "color_inkjet": 250.0,
+        "laser_mono": 245.0
+      },
+      "anchor": "printer_position",
+      "pivot": "bottom_center",
+      "depth_scale": true,
+      "depth_group": "left_shelf",
+      "shadow_scale": 0.55,
+      "comment": "Ein gemeinsamer, umschaltbarer Druckerslot für 9-/24-Nadel, Farb-Tintenstrahler und Laser; Kabel und Papier bleiben separate Zustandslayer.",
+      "skew_by_model": {
+        "dot_matrix_9pin": 0.0
+      },
+      "height_by_model": {
+        "dot_matrix_9pin": 56.2639087018545
+      },
+      "rotation_by_model": {
+        "dot_matrix_9pin": 0.0
+      }
+    },
+    {
+      "id": "diskbox_base",
+      "z": 5.0,
+      "assets": [
+        "DISKBOX_12_SMOKED"
+      ],
+      "anchor": "diskbox_12_shelf",
+      "pivot": "bottom_center",
+      "width": 153.0,
+      "depth_scale": true,
+      "depth_group": "left_shelf",
+      "shadow_scale": 0.45,
+      "comment": "Die kanonische 12er-Startbox; 108 mm sichtbare Breite aus dem realen 110-mm-Gehäusemaß abgeleitet."
+    },
+    {
+      "id": "diskbox_archive",
+      "z": 5.0,
+      "assets": [
+        "DISKBOX_80_ARCHIVE"
+      ],
+      "anchor": "diskbox_80_shelf",
+      "pivot": "bottom_center",
+      "width": 112.0,
+      "requires_object": "diskbox80",
+      "depth_scale": true,
+      "depth_group": "left_shelf",
+      "shadow_scale": 0.5,
+      "comment": "80er-Archivbox in realer 115-mm-Frontbreite; eigener 80-Slot-Kapazitätskauf."
+    },
+    {
+      "id": "monitor",
+      "z": 9.0,
+      "device": true,
+      "power_domain": "monitor",
+      "model_selector": "monitor_model",
+      "default_model": "commodore_1084s",
+      "model_requires_hardware": {
+        "commodore_1084s": "",
+        "commodore_1901": "monitor_commodore_1901",
+        "commodore_1942": "monitor_commodore_1942",
+        "multisync_17": "monitor_multisync_17"
+      },
+      "asset_by_model": {
+        "commodore_1084s": [
+          "MONITOR_COMMODORE_1084S",
+          "HW_COMMODORE_1084S_MONITOR_EMPTY_SCREEN"
+        ],
+        "commodore_1901": [
+          "MONITOR_COMMODORE_1901"
+        ],
+        "commodore_1942": [
+          "MONITOR_COMMODORE_1942"
+        ],
+        "multisync_17": [
+          "MONITOR_MULTISYNC_17"
+        ]
+      },
+      "width_by_model": {
+        "commodore_1084s": 300.0,
+        "commodore_1901": 280.0,
+        "commodore_1942": 292.0,
+        "multisync_17": 356.0
+      },
+      "anchor": "monitor_base",
+      "pivot": "bottom_center",
+      "width": 285.0,
+      "always": true,
+      "depth_scale": true,
+      "zone": "tisch",
+      "requires_flag": "monitor_placed"
+    },
+    {
+      "id": "desk_lamp",
+      "z": 9.0,
+      "device": true,
+      "device_model_id": "desk_lamp_classic",
+      "power_domain": "strip",
+      "assets": [
+        "DESK_LAMP_CLASSIC"
+      ],
+      "anchor": "lamp_slot",
+      "pivot": "bottom_center",
+      "width": 190.0,
+      "always": true,
+      "comment": "AUS-Zustand — passt zur Tageslicht-Plate. AN-Variante + LIGHT_CONE-Overlays folgen (EFFECT_004)",
+      "depth_scale": true,
+      "zone": "tisch",
+      "height": 304.350993377483,
+      "shadow_scale": 0.6
+    },
+    {
+      "id": "computer",
+      "z": 10.0,
+      "device": true,
+      "power_domain": "amiga",
+      "model_selector": "computer_model",
+      "default_model": "amiga_500",
+      "model_requires_hardware": {
+        "amiga_500": "computer_amiga_500",
+        "amiga_600": "computer_amiga_600",
+        "amiga_1200": "computer_amiga_1200"
+      },
+      "asset_by_model": {
+        "amiga_500": [
+          "COMPUTER_AMIGA500",
+          "HW_AMIGA500_BODY"
+        ],
+        "amiga_600": [
+          "COMPUTER_AMIGA600"
+        ],
+        "amiga_1200": [
+          "COMPUTER_AMIGA1200"
+        ]
+      },
+      "width_by_model": {
+        "amiga_500": 275.0,
+        "amiga_600": 240.0,
+        "amiga_1200": 275.0
+      },
+      "anchor": "computer_base",
+      "pivot": "bottom_center",
+      "width": 330.0,
+      "always": true,
+      "depth_scale": true,
+      "zone": "tisch",
+      "requires_flag": "amiga_placed",
+      "rotation_by_model": {
+        "amiga_600": -4.0
+      },
+      "skew_by_model": {
+        "amiga_600": 3.0,
+        "amiga_1200": 0.0
+      },
+      "height_by_model": {
+        "amiga_600": 98.592039800995
+      }
+    },
+    {
+      "id": "external_drive",
+      "z": 9.0,
+      "device": true,
+      "device_model_id": "commodore_a1011",
+      "power_domain": "amiga",
+      "assets": [
+        "DRIVE_COMMODORE_A1011",
+        "HW_A1011_EXTERNAL_DRIVE"
+      ],
+      "anchor": "left_drive_position",
+      "pivot": "bottom_center",
+      "width": 95.0,
+      "requires_hardware": "external_drive",
+      "depth_scale": true,
+      "zone": "tisch"
+    },
+    {
+      "id": "burner",
+      "z": 10.0,
+      "device": true,
+      "device_model_id": "external_cd_burner",
+      "power_domain": "strip",
+      "asset": "CD_BURNER_EXTERNAL_2X",
+      "anchor": "burner_position",
+      "pivot": "bottom_center",
+      "width": 112.0,
+      "requires_hardware": "cd_burner",
+      "depth_scale": true,
+      "zone": "tisch"
+    },
+    {
+      "id": "modem",
+      "z": 9.0,
+      "device": true,
+      "power_domain": "strip",
+      "model_selector": "modem_model",
+      "default_model": "modem_2400",
+      "model_requires_hardware": {
+        "modem_2400": "modem",
+        "modem_9600": "modem_9600",
+        "modem_14400": "modem_14400"
+      },
+      "asset_by_model": {
+        "modem_2400": [
+          "MODEM_2400_MASTER",
+          "HW_MODEM_EXTERNAL"
+        ],
+        "modem_9600": [
+          "MODEM_9600_MASTER"
+        ],
+        "modem_14400": [
+          "MODEM_14400_MASTER"
+        ]
+      },
+      "width_by_model": {
+        "modem_2400": 150.0,
+        "modem_9600": 152.0,
+        "modem_14400": 158.0
+      },
+      "anchor": "modem_position",
+      "pivot": "bottom_center",
+      "width": 150.0,
+      "requires_any_hardware": [
+        "modem",
+        "modem_9600",
+        "modem_14400"
+      ],
+      "depth_scale": true,
+      "zone": "tisch",
+      "comment": "Save-feste 2400-/9600-/14400-Baud-Familie. Erscheint nach Kauf und oeffnet das BBS-Gameplay. Alle Leitungen laufen als separate Kabel hinter die Tischkante."
+    },
+    {
+      "id": "keyboard",
+      "z": 11.0,
+      "device": true,
+      "device_model_id": "pc_keyboard",
+      "power_domain": "computer",
+      "asset": "HW_PC_KEYBOARD",
+      "anchor": "keyboard_center",
+      "pivot": "bottom_center",
+      "width": 290.0,
+      "requires_hardware": "pc_tower",
+      "depth_scale": true,
+      "zone": "tisch"
+    },
+    {
+      "id": "phone",
+      "z": 11.0,
+      "device": true,
+      "device_model_id": "telephone",
+      "power_domain": "telephone",
+      "asset": "PROP_TELEPHONE",
+      "anchor": "telephone_position",
+      "pivot": "bottom_center",
+      "width": 130.0,
+      "always": true,
+      "depth_scale": true,
+      "zone": "tisch",
+      "assets": [
+        "TELEPHONE_MASTER",
+        "PROP_TELEPHONE"
+      ],
+      "comment": "Asset 011: Master-Telefon — Varianten/Overlays prozedural (Material-System)"
+    },
+    {
+      "id": "notebook",
+      "z": 12.0,
+      "assets": [
+        "NOTEBOOK_OPEN"
+      ],
+      "anchor": "notebook_slot",
+      "pivot": "bottom_center",
+      "width": 85.0,
+      "height": 65.0,
+      "always": true,
+      "comment": "Draufsicht-Asset, per height auf die flache Frontperspektive gestaucht (Tischtiefe ~0.30 Verkuerzung)",
+      "depth_scale": true,
+      "zone": "tisch",
+      "rotation": -10.0,
+      "shadow_scale": 0.9
+    },
+    {
+      "id": "mug",
+      "z": 11.0,
+      "assets": [
+        "COFFEE_MUG_BEIGE"
+      ],
+      "anchor": "mug_slot",
+      "pivot": "bottom_center",
+      "width": 57.0,
+      "always": true,
+      "comment": "V01 = Kaffee-Zustand; Varianten (Empty/Tea/...) + Steam folgen",
+      "depth_scale": true,
+      "zone": "tisch"
+    },
+    {
+      "id": "mouse",
+      "z": 13.0,
+      "device": true,
+      "power_domain": "amiga",
+      "model_selector": "mouse_model",
+      "default_model": "amiga_mouse",
+      "model_requires_hardware": {
+        "amiga_mouse": ""
+      },
+      "asset_by_model": {
+        "amiga_mouse": [
+          "MOUSE_AMIGA",
+          "HW_AMIGA_MOUSE"
+        ]
+      },
+      "width_by_model": {
+        "amiga_mouse": 59.0
+      },
+      "anchor": "mouse_position",
+      "pivot": "bottom_center",
+      "always": true,
+      "depth_scale": true,
+      "zone": "tisch",
+      "requires_flag": "monitor_placed"
+    },
+    {
+      "id": "joystick",
+      "z": 14.0,
+      "device": true,
+      "device_model_id": "competition_pro",
+      "power_domain": "amiga",
+      "assets": [
+        "JOYSTICK_COMPETITION_PRO",
+        "HW_COMPETITION_PRO_JOYSTICK"
+      ],
+      "anchor": "joystick_position",
+      "pivot": "bottom_center",
+      "width": 66.0,
+      "always": true,
+      "depth_scale": true,
+      "zone": "tisch",
+      "height": 83.8630136986301,
+      "rotation": 2.0,
+      "requires_flag": "booted_amiga"
+    },
+    {
+      "id": "floppy_box_extra",
+      "z": 17.0,
+      "assets": [
+        "DISKBOX_12_SMOKED",
+        "PROP_FLOPPY_BOX_SMOKED"
+      ],
+      "anchor": "diskbox_extra_shelf",
+      "pivot": "bottom_center",
+      "width": 105.0,
+      "requires_object": "diskbox",
+      "depth_scale": true,
+	  "depth_group": "left_shelf",
+	  "shadow_scale": 0.45,
+	  "comment": "Zusaetzliche 12er-Box im eigenen Regalplatz; blockiert weder Heft noch Schreibtisch-Hotspot."
+    },
+    {
+      "id": "magazines",
+      "z": 19.0,
+      "assets": [
+        "MAGAZINE_MASTER_V02"
+      ],
+      "anchor": "magazine_slot",
+      "pivot": "center",
+      "width": 135.0,
+	  "requires_inventory": "magazine",
+      "depth_scale": true,
+      "zone": "tisch",
+      "rotation": 1.0,
+      "shadow_scale": 0.75,
+      "comment": "Ausschliesslich MAGAZINE_MASTER_V02; natuerliches Seitenverhaeltnis bleibt erhalten. Cover wird vom MagazineComposer eingebacken. Render-z 19.",
+      "height": 126.523385300668
+    },
+    {
+      "id": "floppy_lean",
+      "z": 13.0,
+      "assets": [
+        "FLOPPY_35_DD_BLUE_FRONT",
+        "FLOPPY_35_DD_BLUE",
+        "FLOPPY_35_DD_BLUE_BACK"
+      ],
+      "anchor": "floppy_lean",
+      "pivot": "bottom_center",
+      "width": 52.0,
+      "always": true,
+      "comment": "Lehnt an der linken Kante des A500 — Front zeigt zum Spieler; Back-Asset dient dem Flip/Inspect-UI",
+      "depth_scale": true,
+      "zone": "tisch",
+      "material": {
+        "preset": "SlightlyUsed",
+        "comment": "Pilot des Material-Systems — Farbe bleibt Original (kein plastic_color-Override)"
+      },
+      "height": 42.659509202454,
+      "skew": 0.5,
+      "requires_flag": "booted_amiga"
+    },
+    {
+      "id": "light_warm",
+      "z": 23.0,
+      "asset": "OVERLAY_LIGHT_WARM_EVENING",
+      "always": true,
+      "comment": "EFFECT_001: Tageszeit-Grading als Overlay-Slot"
+    },
+    {
+      "id": "crt_glow",
+      "z": 24.0,
+      "asset": "FX_CRT_GLOW",
+      "always": true
+    },
+    {
+      "id": "weather",
+      "z": 25.0,
+      "asset": "OVERLAY_WEATHER_RAIN",
+      "always": true,
+      "comment": "EFFECT_002: Wetter als Overlay-Slot"
+    },
+    {
+      "id": "starter_carton_closed",
+      "z": 12.0,
+      "asset": "res://assets/backgrounds/story_props/STARTER_CARTON_CLOSED_V01.png",
+      "anchor": "floor_prop_right",
+      "pivot": "bottom_center",
+      "width": 330.0,
+      "unless_any_flags": [
+        "starter_carton_opened",
+        "monitor_placed",
+        "booted_amiga"
+      ],
+      "depth_scale": false,
+      "contact_shadow": true,
+      "comment": "Quest q_tut_karton: geschlossener Lieferkarton bis zum ersten Öffnen."
+    },
+    {
+      "id": "starter_carton_open",
+      "z": 12.0,
+      "asset": "res://assets/backgrounds/story_props/STARTER_CARTON_OPEN_V01.png",
+      "anchor": "floor_prop_right",
+      "pivot": "bottom_center",
+      "width": 305.0,
+      "requires_flag": "starter_carton_opened",
+      "unless_any_flags": [
+        "monitor_placed",
+        "booted_amiga"
+      ],
+      "depth_scale": false,
+      "contact_shadow": true,
+      "comment": "Geöffneter Karton bleibt nur bis zum vollständigen Auspacken von Monitor und Maus sichtbar."
+    },
+    {
+      "id": "power_supply",
+      "z": 8.0,
+      "device": true,
+      "device_model_id": "amiga_power_supply",
+      "power_domain": "strip",
+      "assets": [
+        "AMIGA_POWER_SUPPLY_MASTER_V01"
+      ],
+      "anchor": "power_supply_position",
+      "pivot": "bottom_center",
+      "width": 115.0,
+      "always": true,
+      "comment": "Amiga-Netzteil (externer Brick). Schalter -> amiga_power. AC+DC als eigene Kabel-Assets (dynamisch, s. cables).",
+      "requires_flag": "amiga_placed"
+    }
+  ],
+  "comment": "Quelle der Wahrheit fuer das modulare Raum-System (docs/ART_BIBLE.md). Alle Koordinaten in Master-Pixeln (1920x1080). v3: Umzug auf ROOM_MASTER_1992_V01 (Frontansicht, 35mm, Sitzposition; Tischplatte y590-775, Tageslicht, keine eingebackene Hardware). Anker folgen der Master-DB des Rooms; 4 Korrekturen gegenueber der gelieferten Tabelle: MONITOR 505->600 (lag auf dem Heizkoerper), LAMP [360,520]->[390,618] (schwebte neben dem Tisch), MODEM 590->608 und MUG 610->618 (lagen hinter der Hinterkante), FLOPPY [760,760]->[745,692] (hing ueber der Vorderkante; lehnt jetzt an der linken A500-Kante). 'layers' ist die Z-sortierte Bauliste des RoomCompositor: asset = Namensstamm in assets/backgrounds/layers/ (hoechste Version gewinnt), width/height = Zielmasse in Master-Pixeln AN DER TISCH-VORDERKANTE (Foto-Massstab ~8.2 px/cm); Layer mit depth_scale=true werden vom Compositor per perspective-Block tiefenskaliert (hinten y590: 78%, vorn y775: 100%), pivot bottom_center = steht auf dem Anker. Bedingungen: always | requires_hardware (PlayerStats) | requires_object (RoomManager) | disabled. Fehlende Dateien werden still uebersprungen.",
+  "master_size": [
+    1920.0,
+    1080.0
+  ],
+  "gameplay_cover_anchor": [
+    0.5,
+    0.0
+  ],
+  "procedural_rain": false,
+  "window_rain_area": [
+    510.0,
+    10.0,
+    640.0,
+    425.0
+  ],
+  "base_patterns": [
+    "ROOM_EMPTY_SHELVES_MASTER",
+    "ROOM_MASTER_{year}",
+    "ROOM_BASE_{year}_EMPTY_DESK",
+    "ROOM_BASE_{year}",
+    "ROOM_BASE"
+  ],
+  "cables": [
+    {
+      "id": "CABLE_MOUSE_LIGHTGRAY_V01",
+      "requires_asset": "MOUSE_AMIGA",
+      "always": true,
+      "start": {
+        "object": "mouse",
+        "offset": [
+          11.5,
+          -52.5
+        ]
+      },
+      "end": {
+        "object": "computer",
+        "offset": [
+          112.5,
+          -64.5
+        ]
+      },
+      "color": [
+        0.78,
+        0.77,
+        0.73
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.12,
+      "z": 7.0,
+      "comment": "Maus-Heck -> DE9 Port 1 rechts am A500; Offsets relativ zum jeweiligen Objekt-Anker"
+    },
+    {
+      "id": "CABLE_JOYSTICK_BLACK_V01",
+      "requires_asset": "JOYSTICK_COMPETITION_PRO",
+      "always": true,
+      "start": {
+        "object": "joystick",
+        "offset": [
+          -0.5,
+          -2.5
+        ]
+      },
+      "end": {
+        "object": "computer",
+        "offset": [
+          107.5,
+          -75.5
+        ]
+      },
+      "color": [
+        0.14,
+        0.13,
+        0.13
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.08,
+      "z": 7.0,
+      "comment": "Laeuft hinter dem A500 durch zu DE9 Port 2 rechts (Kabel-z 7 < Gehaeuse-z 10)"
+    },
+    {
+      "id": "CABLE_DRIVE_BEIGE_V01",
+      "requires_hardware": "external_drive",
+      "requires_asset": "DRIVE_COMMODORE_A1011",
+      "start": {
+        "object": "external_drive",
+        "offset": [
+          91.0,
+          -11.5
+        ]
+      },
+      "end": {
+        "object": "computer",
+        "offset": [
+          -46.0,
+          -110.5
+        ]
+      },
+      "color": [
+        0.8,
+        0.76,
+        0.66
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.15,
+      "z": 7.0,
+      "comment": "Zum DB23-Floppy-Port an der A500-RUECKSEITE — Ende liegt hinter dem Gehaeuse"
+    },
+    {
+      "id": "CABLE_MONITOR_RGB_V01",
+      "requires_asset": "MONITOR_COMMODORE_1084S",
+      "requires_model": {
+        "monitor_model": "commodore_1084s"
+      },
+      "always": true,
+      "start": {
+        "object": "computer",
+        "offset": [
+          -1.0,
+          -110.5
+        ]
+      },
+      "end": {
+        "object": "monitor",
+        "offset": [
+          2.0,
+          -42.5
+        ]
+      },
+      "color": [
+        0.22,
+        0.22,
+        0.24
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.3,
+      "z": 6.0,
+      "comment": "RGB DB23 vom A500-Heck zum 1084S — beide Enden hinter den Gehaeusen"
+    },
+    {
+      "id": "CABLE_MONITOR_AC_V01",
+      "requires_asset": "MONITOR_COMMODORE_1084S",
+      "requires_model": {
+        "monitor_model": "commodore_1084s"
+      },
+      "always": true,
+      "start": {
+        "object": "monitor",
+        "offset": [
+          -72.5,
+          -44.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          -8.0,
+          -1.0
+        ]
+      },
+      "color": [
+        0.1,
+        0.1,
+        0.11
+      ],
+      "thickness": 4.0,
+      "segments": 26.0,
+      "slack": 1.32,
+      "floor_contact": true,
+      "floor_y": 958.0,
+      "floor_roughness": 4.0,
+      "floor_surface": "carpet",
+      "z": 5.0,
+      "comment": "Netzkabel des 1084S — eigener Kaltgeraetestecker in den Mehrfachverteiler. Belegung der 4 Dosen: Lampe, Amiga-Netzteil, Monitor, 1 frei."
+    },
+    {
+      "id": "CABLE_MONITOR_RGB_1901_V01",
+      "requires_asset": "MONITOR_COMMODORE_1901",
+      "requires_model": {
+        "monitor_model": "commodore_1901"
+      },
+      "always": true,
+      "start": {
+        "object": "computer",
+        "offset": [
+          -1.0,
+          -110.5
+        ]
+      },
+      "end": {
+        "object": "monitor",
+        "offset": [
+          2.0,
+          -40.0
+        ]
+      },
+      "color": [
+        0.24,
+        0.23,
+        0.25
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.3,
+      "z": 6.0,
+      "comment": "RGB vom A500-Heck zum Commodore 1901 — nur aktiv, wenn der 1901 der gewaehlte Monitor ist."
+    },
+    {
+      "id": "CABLE_MONITOR_AC_1901_V01",
+      "requires_asset": "MONITOR_COMMODORE_1901",
+      "requires_model": {
+        "monitor_model": "commodore_1901"
+      },
+      "always": true,
+      "start": {
+        "object": "monitor",
+        "offset": [
+          -61.0,
+          -44.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          -8.0,
+          -1.0
+        ]
+      },
+      "color": [
+        0.1,
+        0.1,
+        0.11
+      ],
+      "thickness": 4.0,
+      "segments": 26.0,
+      "slack": 1.32,
+      "floor_contact": true,
+      "floor_y": 958.0,
+      "floor_roughness": 4.0,
+      "floor_surface": "carpet",
+      "z": 5.0,
+      "comment": "Netzkabel des 1901 in denselben Verteiler-Slot wie das 1084S-Kabel (es ist immer nur EIN Monitor aktiv)."
+    },
+    {
+      "id": "CABLE_MONITOR_RGB_1942_V01",
+      "requires_asset": "MONITOR_COMMODORE_1942",
+      "requires_model": {
+        "monitor_model": "commodore_1942"
+      },
+      "always": true,
+      "start": {
+        "object": "computer",
+        "offset": [
+          -1.0,
+          -110.5
+        ]
+      },
+      "end": {
+        "object": "monitor",
+        "offset": [
+          2.0,
+          -42.0
+        ]
+      },
+      "color": [
+        0.22,
+        0.22,
+        0.24
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.3,
+      "z": 6.0,
+      "comment": "RGB/Multisync-Signalkabel zum Commodore 1942; nur mit der aktiven 1942-Variante sichtbar."
+    },
+    {
+      "id": "CABLE_MONITOR_AC_1942_V01",
+      "requires_asset": "MONITOR_COMMODORE_1942",
+      "requires_model": {
+        "monitor_model": "commodore_1942"
+      },
+      "always": true,
+      "start": {
+        "object": "monitor",
+        "offset": [
+          -66.0,
+          -45.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          -8.0,
+          -1.0
+        ]
+      },
+      "color": [
+        0.1,
+        0.1,
+        0.11
+      ],
+      "thickness": 4.0,
+      "segments": 26.0,
+      "slack": 1.32,
+      "floor_contact": true,
+      "floor_y": 958.0,
+      "floor_roughness": 4.0,
+      "floor_surface": "carpet",
+      "z": 5.0,
+      "comment": "Eigenes Netzkabel des 1942; ersetzt optisch das Kabel des eingelagerten Monitors."
+    },
+    {
+      "id": "CABLE_MONITOR_RGB_MULTISYNC17_V01",
+      "requires_asset": "MONITOR_MULTISYNC_17",
+      "requires_model": {
+        "monitor_model": "multisync_17"
+      },
+      "always": true,
+      "start": {
+        "object": "computer",
+        "offset": [
+          -1.0,
+          -110.5
+        ]
+      },
+      "end": {
+        "object": "monitor",
+        "offset": [
+          2.0,
+          -45.0
+        ]
+      },
+      "color": [
+        0.16,
+        0.17,
+        0.19
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.26,
+      "z": 6.0,
+      "comment": "Spaetes geschirmtes HiRes-Signalkabel des 17-Zoll-Multisync."
+    },
+    {
+      "id": "CABLE_MONITOR_AC_MULTISYNC17_V01",
+      "requires_asset": "MONITOR_MULTISYNC_17",
+      "requires_model": {
+        "monitor_model": "multisync_17"
+      },
+      "always": true,
+      "start": {
+        "object": "monitor",
+        "offset": [
+          -75.0,
+          -47.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          -8.0,
+          -1.0
+        ]
+      },
+      "color": [
+        0.08,
+        0.08,
+        0.09
+      ],
+      "thickness": 4.0,
+      "segments": 26.0,
+      "slack": 1.3,
+      "floor_contact": true,
+      "floor_y": 958.0,
+      "floor_roughness": 4.0,
+      "floor_surface": "carpet",
+      "z": 5.0,
+      "comment": "Netzkabel des spaeten 17-Zoll-Multisync; nur die aktive Monitorvariante belegt den sichtbaren Strang."
+    },
+    {
+      "id": "CABLE_LAMP_DARKGRAY_V01",
+      "requires_asset": "DESK_LAMP_CLASSIC",
+      "always": true,
+      "start": {
+        "object": "desk_lamp",
+        "offset": [
+          -40.5,
+          -32.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          0.0,
+          0.0
+        ]
+      },
+      "color": [
+        0.24,
+        0.24,
+        0.25
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.28,
+      "floor_contact": true,
+      "floor_y": 952.0,
+      "floor_roughness": 4.5,
+      "floor_surface": "carpet",
+      "z": 5.0,
+      "comment": "Netzkabel verschwindet links neben der Lampe hinter der Tisch-Hinterkante (at_y = Kante); Ende wandert horizontal mit der Lampe"
+    },
+    {
+      "id": "CABLE_PHONE_BEIGE_V01",
+      "requires_asset": "TELEPHONE_MASTER",
+      "always": true,
+      "start": {
+        "object": "phone",
+        "offset": [
+          16.5,
+          -53.0
+        ]
+      },
+      "end": {
+        "socket": "TELEFONDOSE_01",
+        "offset": [
+          0.0,
+          0.0
+        ]
+      },
+      "color": [
+        0.82,
+        0.78,
+        0.7
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.14,
+      "z": 6.0,
+      "comment": "TAE-Kabel vom Telefon in die Telefondose an der Wand.",
+      "style": "smooth"
+    },
+    {
+      "id": "CABLE_MODEM_DATA_V01",
+      "requires_hardware": "modem",
+      "requires_asset": "MODEM_2400_MASTER",
+      "always": true,
+      "start": {
+        "object": "modem",
+        "offset": [
+          -42.0,
+          -39.5
+        ]
+      },
+      "end": {
+        "object": "computer",
+        "offset": [
+          52.0,
+          -121.5
+        ]
+      },
+      "color": [
+        0.2,
+        0.2,
+        0.22
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.2,
+      "z": 6.0,
+      "comment": "Serielles Modemkabel zum A500 (RS-232). Endet hinter dem Gehaeuse."
+    },
+    {
+      "id": "CABLE_MODEM_TAE_V01",
+      "requires_hardware": "modem",
+      "requires_asset": "MODEM_2400_MASTER",
+      "always": true,
+      "start": {
+        "object": "modem",
+        "offset": [
+          -32.5,
+          -39.5
+        ]
+      },
+      "end": {
+        "object": "modem",
+        "offset": [
+          -329.5,
+          2.0
+        ],
+        "at_y": 596.0
+      },
+      "color": [
+        0.82,
+        0.78,
+        0.7
+      ],
+      "thickness": 3.0,
+      "segments": 24.0,
+      "slack": 1.3,
+      "z": 6.0,
+      "comment": "Telefonleitung des Modems: faellt rechts hinter die Tisch-Hinterkante."
+    },
+    {
+      "id": "CABLE_PHONE_COIL_V01",
+      "requires_asset": "TELEPHONE_MASTER",
+      "always": true,
+      "start": {
+        "object": "phone",
+        "offset": [
+          -37.0,
+          -26.5
+        ]
+      },
+      "end": {
+        "object": "phone",
+        "offset": [
+          -52.0,
+          -45.5
+        ]
+      },
+      "color": [
+        0.86,
+        0.85,
+        0.82
+      ],
+      "thickness": 3.0,
+      "segments": 18.0,
+      "slack": 1.55,
+      "z": 13.0,
+      "comment": "Spiral-Hoererschnur: vom Telefonkoerper zum aufliegenden Hoerer.",
+      "style": "coil",
+      "coils": 16.0
+    },
+    {
+      "id": "CABLE_PSU_DC_V01",
+      "requires_asset": "AMIGA_POWER_SUPPLY_MASTER_V01",
+      "start": {
+        "object": "power_supply",
+        "offset": [
+          -1.5,
+          -80.5
+        ]
+      },
+      "end": {
+        "object": "computer",
+        "offset": [
+          -120.0,
+          -108.5
+        ]
+      },
+      "color": [
+        0.1,
+        0.1,
+        0.11
+      ],
+      "thickness": 4.0,
+      "segments": 24.0,
+      "slack": 1.22,
+      "z": 7.0,
+      "comment": "DC-Ausgang (Amiga Round-DIN) vorne -> A500-Netzbuchse. Eigenes Kabel-Asset AMIGA_POWER_DC_CABLE_MASTER_V01."
+    },
+    {
+      "id": "CABLE_PSU_AC_V01",
+      "requires_asset": "AMIGA_POWER_SUPPLY_MASTER_V01",
+      "start": {
+        "object": "power_supply",
+        "offset": [
+          7.5,
+          -33.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          25.0,
+          -1.0
+        ]
+      },
+      "color": [
+        0.08,
+        0.08,
+        0.09
+      ],
+      "thickness": 4.0,
+      "segments": 26.0,
+      "slack": 1.3,
+      "floor_contact": true,
+      "floor_y": 964.0,
+      "floor_roughness": 4.0,
+      "floor_surface": "carpet",
+      "z": 6.0,
+      "comment": "AC-Eingang (IEC C14) hinten -> Mehrfachverteiler/Wand. Eigenes Kabel-Asset POWER_CABLE_EU_MASTER_V01."
+    },
+    {
+      "id": "CABLE_STRIP_MAINS_V01",
+      "start": {
+        "socket": "SOCKET_STRIP_01",
+        "offset": [
+          -30.0,
+          -4.0
+        ]
+      },
+      "end": {
+        "socket": "SOCKET_WALL_01",
+        "offset": [
+          0.0,
+          0.0
+        ]
+      },
+      "color": [
+        0.07,
+        0.07,
+        0.08
+      ],
+      "thickness": 4.0,
+      "segments": 26.0,
+      "slack": 1.2,
+      "floor_contact": true,
+      "floor_y": 948.0,
+      "floor_roughness": 3.5,
+      "floor_surface": "carpet",
+      "z": 5.0,
+      "comment": "Netzkabel des Mehrfachverteilers in die Wandsteckdose."
+    }
+  ],
+  "perspective": {
+    "near_y": 775.0,
+    "far_y": 590.0,
+    "far_scale": 0.78,
+    "comment": "Tiefenskalierung des Compositors: Tischobjekte schrumpfen zur Hinterkante"
+  },
+  "comment_quads": "Editierbare Flaechen-Vierecke (Deko-Modus: Ecken ziehen, Q = ein/aus, F8 = speichern). Zonen-Namen, die hier existieren (tisch, regal, ...), klemmen ihre Objekte in das Viereck; 'tisch' steuert zusaetzlich die Tiefenskalierung. Alt-Schluessel desk_quad/regal_quad sind migriert.",
+  "comment_hotspots": "Klickflaechen des Zimmers als 4-Eck-Polygone (auch schraeg/vertikal). Deko-Modus: weisse Eck-Griffe ziehen = Form, Mittelgriff = verschieben, T = ein/aus, F8 = speichern. Aktionen u. a.: computer/window/magazine/sleep/map/stereo/joystick_repair. Aenderungen wirken beim naechsten Betreten des Zimmers.",
+  "sockets": [
+    {
+      "id": "SOCKET_STRIP_01",
+      "type": "strip",
+      "pos": [
+        758.0,
+        885.5
+      ],
+      "outlets": 4.0
+    },
+    {
+      "id": "TELEFONDOSE_01",
+      "type": "wall",
+      "pos": [
+        452.0,
+        576.0
+      ],
+      "outlets": 1.0
+    },
+    {
+      "id": "SOCKET_WALL_01",
+      "type": "wall",
+      "pos": [
+        491.0,
+        573.5
+      ],
+      "outlets": 2.0
+    }
+  ]
+}

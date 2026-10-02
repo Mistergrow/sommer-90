@@ -1,0 +1,153 @@
+{
+  "schema": "sommer_basic.features.v1",
+  "product_id": "sommer_basic",
+  "display_name": "Sommer BASIC",
+  "year_from": 1990,
+  "year_to": 1999,
+  "release_status_values": ["runtime_implemented", "playtest", "planned"],
+  "annual_profiles": [
+    {
+      "year": 1990,
+      "version": "1.0",
+      "hardware_profile": "amiga_500_ocs_1mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 400, "max_bank_kb": 128, "max_colors": 16, "max_screen_width": 320, "max_screen_height": 256},
+      "introduced_symbols": ["PRINT", "INPUT", "IF", "ELSE", "FOR", "NEXT", "GOSUB", "RETURN", "DIM", "DATA", "READ", "RESTORE", "SCREEN", "WINDOW", "PALETTE", "PLOT", "LINE", "BOX", "CIRCLE", "SPRITE", "SAMPLE", "PLAY", "CHANNEL", "VOLUME", "MODPLAY", "MODSTOP", "KEY$", "MOUSEX", "MOUSEY", "MOUSEBUTTON", "JOY", "JOYX", "JOYY", "OPEN", "CLOSE", "INPUT#", "PRINT#", "EOF", "BANK", "LOADBANK"]
+    },
+    {
+      "year": 1991,
+      "version": "1.5",
+      "hardware_profile": "amiga_500_ecs_1mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 800, "max_bank_kb": 256, "max_colors": 32, "max_screen_width": 320, "max_screen_height": 256},
+      "introduced_symbols": ["WHILE", "WEND", "BLIT", "BOB", "PAN", "GET", "PUT", "SEEK", "SPRITEBANK", "SAMPLEBANK"]
+    },
+    {
+      "year": 1992,
+      "version": "2.0",
+      "hardware_profile": "amiga_500_ecs_1mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 1200, "max_bank_kb": 512, "max_colors": 32, "max_screen_width": 640, "max_screen_height": 256},
+      "introduced_symbols": ["TILEMAP", "SCROLL", "MAPBANK"]
+    },
+    {
+      "year": 1993,
+      "version": "2.5",
+      "hardware_profile": "amiga_1200_aga_2mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 2000, "max_bank_kb": 2048, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": ["FUNCTION", "SUB", "TYPE"]
+    },
+    {
+      "year": 1994,
+      "version": "2.7",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 3000, "max_bank_kb": 3072, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": []
+    },
+    {
+      "year": 1995,
+      "version": "2.8",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 4000, "max_bank_kb": 4096, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": []
+    },
+    {
+      "year": 1996,
+      "version": "3.0",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 5000, "max_bank_kb": 6144, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": []
+    },
+    {
+      "year": 1997,
+      "version": "3.1",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 6000, "max_bank_kb": 8192, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": []
+    },
+    {
+      "year": 1998,
+      "version": "3.2",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 8000, "max_bank_kb": 12288, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": []
+    },
+    {
+      "year": 1999,
+      "version": "3.5",
+      "hardware_profile": "amiga_1200_aga_hdd_4mb",
+      "installed_modules": ["language_core", "graphics_2d", "audio_4ch", "input", "virtual_files", "asset_banks"],
+      "limits": {"max_source_lines": 10000, "max_bank_kb": 16384, "max_colors": 256, "max_screen_width": 640, "max_screen_height": 512},
+      "introduced_symbols": []
+    }
+  ],
+  "features": [
+    {"id":"core_print","symbol":"PRINT","category":"core","kind":"statement","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PRINT Ausdruck [; Ausdruck ...]","release_status":"runtime_implemented"},
+    {"id":"core_input","symbol":"INPUT","category":"core","kind":"statement","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"INPUT [Frage;] Variable [, Variable ...]","release_status":"runtime_implemented"},
+    {"id":"core_if","symbol":"IF","category":"core","kind":"control","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"IF Bedingung THEN Anweisung [ELSE Anweisung]","release_status":"runtime_implemented"},
+    {"id":"core_else","symbol":"ELSE","category":"core","kind":"control_keyword","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"IF ... THEN ... ELSE ...","release_status":"runtime_implemented"},
+    {"id":"core_for","symbol":"FOR","category":"core","kind":"control","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"FOR Variable = Start TO Ende [STEP Schritt]","release_status":"runtime_implemented"},
+    {"id":"core_next","symbol":"NEXT","category":"core","kind":"control_end","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"NEXT [Variable]","release_status":"runtime_implemented"},
+    {"id":"core_while","symbol":"WHILE","category":"core","kind":"control","year_from":1991,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"WHILE Bedingung","release_status":"runtime_implemented"},
+    {"id":"core_wend","symbol":"WEND","category":"core","kind":"control_end","year_from":1991,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"WEND","release_status":"runtime_implemented"},
+    {"id":"core_gosub","symbol":"GOSUB","category":"core","kind":"control","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"GOSUB Zeilennummer","release_status":"runtime_implemented"},
+    {"id":"core_return","symbol":"RETURN","category":"core","kind":"control_end","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"RETURN [Ausdruck]","release_status":"runtime_implemented"},
+    {"id":"core_function","symbol":"FUNCTION","category":"core","kind":"declaration","year_from":1993,"module":"language_core","hardware_profile":"amiga_500_ecs_1mb","min_ram_kb":1024,"chipsets":["ECS","AGA"],"requires_hdd":false,"signature":"FUNCTION Name(Parameter) ... END FUNCTION","release_status":"runtime_implemented"},
+    {"id":"core_sub","symbol":"SUB","category":"core","kind":"declaration","year_from":1993,"module":"language_core","hardware_profile":"amiga_500_ecs_1mb","min_ram_kb":1024,"chipsets":["ECS","AGA"],"requires_hdd":false,"signature":"SUB Name(Parameter) ... END SUB","release_status":"runtime_implemented"},
+    {"id":"core_dim","symbol":"DIM","category":"core","kind":"declaration","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"DIM Feld(Groesse) | Variable AS Datentyp","release_status":"runtime_implemented"},
+    {"id":"core_type","symbol":"TYPE","category":"core","kind":"declaration","year_from":1993,"module":"language_core","hardware_profile":"amiga_500_ecs_1mb","min_ram_kb":1024,"chipsets":["ECS","AGA"],"requires_hdd":false,"signature":"TYPE Name ... END TYPE","release_status":"runtime_implemented"},
+    {"id":"core_data","symbol":"DATA","category":"core","kind":"statement","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"DATA Wert [, Wert ...]","release_status":"runtime_implemented"},
+    {"id":"core_read","symbol":"READ","category":"core","kind":"statement","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"READ Variable [, Variable ...]","release_status":"runtime_implemented"},
+    {"id":"core_restore","symbol":"RESTORE","category":"core","kind":"statement","year_from":1990,"module":"language_core","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"RESTORE [Zeilennummer]","release_status":"runtime_implemented"},
+
+    {"id":"graphics_screen","symbol":"SCREEN","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"SCREEN Breite, Hoehe [, Farben]","release_status":"runtime_implemented"},
+    {"id":"graphics_window","symbol":"WINDOW","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"WINDOW X, Y, Breite, Hoehe [, Titel]","release_status":"runtime_implemented"},
+    {"id":"graphics_palette","symbol":"PALETTE","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PALETTE Index, Farbe","release_status":"runtime_implemented"},
+    {"id":"graphics_plot","symbol":"PLOT","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PLOT X, Y [, Farbe]","release_status":"runtime_implemented"},
+    {"id":"graphics_line","symbol":"LINE","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"LINE X1, Y1, X2, Y2 [, Farbe]","release_status":"runtime_implemented"},
+    {"id":"graphics_box","symbol":"BOX","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"BOX X, Y, Breite, Hoehe [, Farbe]","release_status":"runtime_implemented"},
+    {"id":"graphics_circle","symbol":"CIRCLE","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"CIRCLE X, Y, Radius [, Farbe]","release_status":"runtime_implemented"},
+    {"id":"graphics_blit","symbol":"BLIT","category":"graphics","kind":"statement","year_from":1991,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"BLIT Bank, QX, QY, Breite, Hoehe, ZX, ZY","release_status":"runtime_implemented"},
+    {"id":"graphics_sprite","symbol":"SPRITE","category":"graphics","kind":"statement","year_from":1990,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"SPRITE Nummer, X, Y, Bild [, Sichtbar]","release_status":"runtime_implemented"},
+    {"id":"graphics_bob","symbol":"BOB","category":"graphics","kind":"statement","year_from":1991,"module":"graphics_2d","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"BOB Nummer, X, Y, Bild","release_status":"runtime_implemented"},
+    {"id":"graphics_tilemap","symbol":"TILEMAP","category":"graphics","kind":"statement","year_from":1992,"module":"graphics_2d","hardware_profile":"amiga_500_ecs_1mb","min_ram_kb":1024,"chipsets":["ECS","AGA"],"requires_hdd":false,"signature":"TILEMAP Bank, Breite, Hoehe [, Tilegroesse]","release_status":"runtime_implemented"},
+    {"id":"graphics_scroll","symbol":"SCROLL","category":"graphics","kind":"statement","year_from":1992,"module":"graphics_2d","hardware_profile":"amiga_500_ecs_1mb","min_ram_kb":1024,"chipsets":["ECS","AGA"],"requires_hdd":false,"signature":"SCROLL X, Y","release_status":"runtime_implemented"},
+
+    {"id":"audio_sample","symbol":"SAMPLE","category":"audio","kind":"statement","year_from":1990,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"SAMPLE Nummer, Bank","release_status":"runtime_implemented"},
+    {"id":"audio_play","symbol":"PLAY","category":"audio","kind":"statement","year_from":1990,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PLAY Sample [, Kanal]","release_status":"runtime_implemented"},
+    {"id":"audio_channel","symbol":"CHANNEL","category":"audio","kind":"statement","year_from":1990,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"CHANNEL Kanal, Aktiv","release_status":"runtime_implemented"},
+    {"id":"audio_volume","symbol":"VOLUME","category":"audio","kind":"statement","year_from":1990,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"VOLUME Kanal, Wert","release_status":"runtime_implemented"},
+    {"id":"audio_pan","symbol":"PAN","category":"audio","kind":"statement","year_from":1991,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PAN Kanal, Position","release_status":"runtime_implemented"},
+    {"id":"audio_modplay","symbol":"MODPLAY","category":"audio","kind":"statement","year_from":1990,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"MODPLAY Dateiname","release_status":"runtime_implemented"},
+    {"id":"audio_modstop","symbol":"MODSTOP","category":"audio","kind":"statement","year_from":1990,"module":"audio_4ch","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"MODSTOP","release_status":"runtime_implemented"},
+
+    {"id":"input_key","symbol":"KEY$","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"KEY$","release_status":"runtime_implemented"},
+    {"id":"input_mouse_x","symbol":"MOUSEX","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"MOUSEX","release_status":"runtime_implemented"},
+    {"id":"input_mouse_y","symbol":"MOUSEY","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"MOUSEY","release_status":"runtime_implemented"},
+    {"id":"input_mouse_button","symbol":"MOUSEBUTTON","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"MOUSEBUTTON","release_status":"runtime_implemented"},
+    {"id":"input_joy","symbol":"JOY","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"JOY","release_status":"runtime_implemented"},
+    {"id":"input_joy_x","symbol":"JOYX","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"JOYX","release_status":"runtime_implemented"},
+    {"id":"input_joy_y","symbol":"JOYY","category":"input","kind":"function","year_from":1990,"module":"input","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"JOYY","release_status":"runtime_implemented"},
+
+    {"id":"file_open","symbol":"OPEN","category":"file","kind":"statement","year_from":1990,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"OPEN Dateiname FOR Modus AS Kanal","release_status":"runtime_implemented"},
+    {"id":"file_close","symbol":"CLOSE","category":"file","kind":"statement","year_from":1990,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"CLOSE Kanal","release_status":"runtime_implemented"},
+    {"id":"file_input","symbol":"INPUT#","category":"file","kind":"statement","year_from":1990,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"INPUT# Kanal, Variable","release_status":"runtime_implemented"},
+    {"id":"file_print","symbol":"PRINT#","category":"file","kind":"statement","year_from":1990,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PRINT# Kanal, Ausdruck","release_status":"runtime_implemented"},
+    {"id":"file_get","symbol":"GET","category":"file","kind":"statement","year_from":1991,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"GET Kanal, Position, Variable","release_status":"runtime_implemented"},
+    {"id":"file_put","symbol":"PUT","category":"file","kind":"statement","year_from":1991,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"PUT Kanal, Position, Ausdruck","release_status":"runtime_implemented"},
+    {"id":"file_seek","symbol":"SEEK","category":"file","kind":"statement","year_from":1991,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"SEEK Kanal, Position","release_status":"runtime_implemented"},
+    {"id":"file_eof","symbol":"EOF","category":"file","kind":"function","year_from":1990,"module":"virtual_files","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"EOF(Kanal)","release_status":"runtime_implemented"},
+
+    {"id":"bank_create","symbol":"BANK","category":"bank","kind":"statement","year_from":1990,"module":"asset_banks","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"BANK Nummer, Bytes","release_status":"runtime_implemented"},
+    {"id":"bank_load","symbol":"LOADBANK","category":"bank","kind":"statement","year_from":1990,"module":"asset_banks","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"LOADBANK Nummer, Dateiname","release_status":"runtime_implemented"},
+    {"id":"bank_sprite","symbol":"SPRITEBANK","category":"bank","kind":"statement","year_from":1991,"module":"asset_banks","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"SPRITEBANK Nummer","release_status":"runtime_implemented"},
+    {"id":"bank_sample","symbol":"SAMPLEBANK","category":"bank","kind":"statement","year_from":1991,"module":"asset_banks","hardware_profile":"amiga_500_ocs_1mb","min_ram_kb":1024,"chipsets":["OCS","ECS","AGA"],"requires_hdd":false,"signature":"SAMPLEBANK Nummer","release_status":"runtime_implemented"},
+    {"id":"bank_map","symbol":"MAPBANK","category":"bank","kind":"statement","year_from":1992,"module":"asset_banks","hardware_profile":"amiga_500_ecs_1mb","min_ram_kb":1024,"chipsets":["ECS","AGA"],"requires_hdd":false,"signature":"MAPBANK Nummer","release_status":"runtime_implemented"}
+  ]
+}
